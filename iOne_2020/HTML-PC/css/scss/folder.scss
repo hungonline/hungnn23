@@ -436,6 +436,18 @@
                 }
                 &.true{
                     .answer-true,.percent-bar{display: block;}
+                    &::before{
+                        content: "";
+                        background: linear-gradient(180deg, #222222 0%, rgba(34, 34, 34, 0) 100%);
+                        position: absolute;
+                        bottom: 0;
+                        height: 80%;
+                        left: 8px;
+                        right: 8px;
+                        border-radius: 4px;
+                        opacity: 0.7;
+                        transform: rotate(180deg);
+                    }
                 }
             }
             .count{
@@ -447,7 +459,7 @@
         }
         &5{
             h4{
-                color: #6441A5;font-size: 18px;font-weight: 400;line-height: 1.2;
+                color: #6441A5;font-size: 18px;font-weight: 400;line-height: 1.2;margin-top: 20px;
             }
             .gird {margin-top: 24px!important;}
             .items{

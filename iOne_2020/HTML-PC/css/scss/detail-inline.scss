@@ -528,6 +528,18 @@
             }
             &.true{
                 .answer-true,.percent-bar{display: block;}
+                &::before{
+                    content: "";
+                    background: linear-gradient(180deg, #222222 0%, rgba(34, 34, 34, 0) 100%);
+                    position: absolute;
+                    bottom: 0;
+                    height: 80%;
+                    left: 8px;
+                    right: 8px;
+                    border-radius: 4px;
+                    opacity: 0.7;
+                    transform: rotate(180deg);
+                }
             }
         }
         .count{
