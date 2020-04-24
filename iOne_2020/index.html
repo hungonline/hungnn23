@@ -1,0 +1,46 @@
+<head>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <title>
+        Pages List
+    </title>
+    <link rel="stylesheet" href="_app/index-partials/demo.css" media="all" />
+</head>
+  <h1 class="index__title">Pages List</h1>
+  <section class="index__section">
+            <ul class="index__list">
+              <h2 class="index__section-heading">HTML-PC</h2>
+              <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/box_folder.html">box_folder.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail_interview.html">detail_interview.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail_photo_darkmode.html">detail_photo_darkmode.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail_photo.html">detail_photo.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail_tuvan.html">detail_tuvan.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail-infographics.html">detail-infographics.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail-live-tong-thuat.html">detail-live-tong-thuat.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail-live.html">detail-live.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail-quiz.html">detail-quiz.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail-review.html">detail-review.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail-video.html">detail-video.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/detail.html">detail.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/folder_movies.html">folder_movies.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/folder_new.html">folder_new.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/folder_photo.html">folder_photo.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/folder_video.html">folder_video.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/home.html">home.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/tag.html">tag.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="HTML-PC/topic.html">topic.html</a></li>
+                          </ul>
+            </section>
+          <script>
+    const headingList = document.querySelectorAll('.index__section-heading');
+    for (const el of headingList) {
+      el.parentNode.parentNode.insertBefore(el, el.parentNode);
+    }
+
+    const homeItemList = document.querySelectorAll('.index__item-link[href*="index"], .index__item-link[href*="home"]');
+    for (const el of homeItemList) {
+      el.parentNode.parentNode.insertBefore(el.parentNode, el.parentNode.parentNode.firstChild)
+    }
+</script>

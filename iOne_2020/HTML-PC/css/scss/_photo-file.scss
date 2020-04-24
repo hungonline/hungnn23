@@ -1,0 +1,83 @@
+.banner-in-content{
+    width: 100%;
+    float: left;
+    padding: 10px 0 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid $color-solid;
+    border-bottom: 1px solid $color-solid;
+    text-align: center;
+}
+
+.photo-dark{
+    .page-detail{
+        &.detail-photo{
+            .footer-content{
+                .save{
+                    background: none;
+                    border: 1px solid #757575;
+                    color: #BDBDBD;
+                    svg{fill: #BDBDBD;}
+                    &:hover{
+                        border: 1px solid #BDBDBD;
+                        color: #f7f7f7;
+                        svg{fill: #f7f7f7;}
+                    }
+                    &.active{
+                        color: #BDBDBD;
+                        svg{fill: #BDBDBD;}
+                        &:hover{
+                            border: 1px solid #BDBDBD;
+                            color: #f7f7f7;
+                            svg{fill: #f7f7f7;}
+                        }
+                    }
+                }
+
+                .back-folder{
+                    .icon-svg{fill: #E5E5E5;}
+                        .tip{
+                            color: #222 !important;
+                            background: #FFFFFF;
+                            border: 1px solid #E5E5E5;
+                        }  
+                    &:hover{background: none;
+                        .icon-svg{fill: #fff;}
+                    }
+                }    
+
+                .social{
+                    .txt{color: #757575;}
+                    a{
+                        background: none;
+                        border: 1px solid #757575;
+                      
+                   
+                    &:hover{
+                        border: 1px solid #BDBDBD;
+                        svg{fill: #E5E5E5;
+                            &.ic-facebook{fill: #E5E5E5;}
+                            &.ic-twitter{fill: #E5E5E5;}
+                        }
+                    }
+                    .tip{
+                        color: #222 !important;
+                        background: #FFFFFF;
+                        border: 1px solid #E5E5E5;
+                    }    
+                }
+                }
+            }
+            .box_brief_info{background: #272727;}
+        }
+    }
+    .banner-in-content{
+        border-top: 1px solid #757575;
+        border-bottom: 1px solid #757575;
+    }
+    .fck_detail{
+        .banner-ads{border-top: 1px solid #757575;border-bottom: 1px solid #757575;}
+    }
+    .btn_guicauhoi_detail{background: #333; color: #f7f7f7;
+        .icon-svg{fill: #BDBDBD;}
+    }
+}
