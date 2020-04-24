@@ -164,6 +164,32 @@
         }
     }
     .author {color: #000;margin-bottom: 20px;}
+    .link-detail{
+        padding: 29px 24px;
+        background: #F7F7F7;
+        border-radius: 0px 0px 8px 8px;
+        display: block;
+        position: relative;
+        margin: 0 -57px 0 -57px;
+        .next{
+            background: var(--border);
+            border-radius: 0px 0px 8px 0px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 57px;
+            line-height: 77px;
+            text-align: center;
+            svg{
+                width: 25px;height: 25px;
+            }
+        }
+        &:hover{
+            color: #222;
+            .next{background: #F2C94C;}
+        }
+    }
     .quiz-new{
         .gird{
             display: flex;flex-wrap: wrap;text-align: center;
@@ -452,34 +478,6 @@
                         }
                     }
                 }
-            }
-        }
-
-
-        .link-detail{
-            padding: 29px 24px;
-            background: #F7F7F7;
-            border-radius: 0px 0px 8px 8px;
-            display: block;
-            position: relative;
-            margin: 0 -57px 0 -57px;
-            .next{
-                background: var(--border);
-                border-radius: 0px 0px 8px 0px;
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                width: 57px;
-                line-height: 77px;
-                text-align: center;
-                svg{
-                    width: 25px;height: 25px;
-                }
-            }
-            &:hover{
-                color: #222;
-                .next{background: #F2C94C;}
             }
         }
     }

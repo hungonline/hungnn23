@@ -3457,7 +3457,7 @@ body.hidden {
             margin-bottom: 5px;
             font-weight: 700;
         }
-
+        span.error{color: #029B9C;}
         .item_input {
             .input_control {
                 padding: 0 10px;
@@ -3477,7 +3477,7 @@ body.hidden {
                 }
 
                 &--error {
-                    border-color: $color1 !important;
+                    border-color: #029B9C !important;
                 }
             }
 
@@ -3716,7 +3716,7 @@ body.hidden {
     }
 
     p {
-        color: $color1;
+        color:#029B9C;
         font-size: 14px;
         margin-top: 6px;
 
@@ -3791,10 +3791,7 @@ body.hidden {
     line-height: 160%;
 
     .upload_img & {
-        font-size: 12px;
-        border: 1px dashed #F9B3AB;
-        padding: 16px;
-        border-radius: 6px;
+        font-size: 14px;
     }
 
     strong {
@@ -3815,7 +3812,6 @@ body.hidden {
     font-size: 16px;
     line-height: 140%;
     font-weight: bold;
-    color: $color1;
     display: block;
     margin-bottom: 16px;
 
@@ -4542,7 +4538,8 @@ body.hidden {
         background: #029B9C;
         color: #fff;
         font-size: 16px;
-        border-radius: 5px;
+        border-radius: 20px;
+        padding: 10px 25px;
     }
 }
 
