@@ -3509,12 +3509,11 @@ body.hidden {
 
         .link {
             .input_control {
-                color: #F9B3AB;
                 font-size: 14px;
 
-                &::placeholder {
-                    color: #F9B3AB;
-                }
+                // &::placeholder {
+                //     color: #F9B3AB;
+                // }
             }
         }
 
@@ -3789,7 +3788,7 @@ body.hidden {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 160%;
-
+    color: #029B9C;
     .upload_img & {
         font-size: 14px;
     }
