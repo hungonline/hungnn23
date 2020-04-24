@@ -538,20 +538,31 @@ body.hidden {
     position: relative;
     background: url('images/graphics/hero-bg.png') no-repeat center;
     background-size: cover;
-    @media (max-width: 767px) {
-        height: 502px;
-        background-image: url('images/graphics/hero-bg_m.png');
-        background-position: right center;
-        background-size: cover;
-        margin-bottom: 10px;
+    @media (max-width: 1025px) {
+        height: 250px;
+        margin-bottom: 0;
     }
+    // @media (max-width: 767px) {
+    //     height: 502px;
+    //     background-image: url('images/graphics/hero-bg_m.png');
+    //     background-position: right center;
+    //     background-size: cover;
+    //     margin-bottom: 10px;
+    // }
     @media (max-width: 590px) {
-        height: 160px;
+        height: 430px;
         background-image: url(images/graphics/hero-bg_m2.png);
-        background-position: right center;
+        background-position: center  top;
         background-size: cover;
         &.big{
-            height: 378px;
+            height: 580px;
+            background-image: url(images/graphics/hero-bg_m.png);
+        }
+    }
+    @media (max-width: 480px) {
+        height: 300px;
+        &.big{
+            height: 507px;
             background-image: url(images/graphics/hero-bg_m.png);
         }
     }
@@ -694,6 +705,21 @@ body.hidden {
     font-size: 16px;
     color: #064444;
     strong{font-size: 20px;}
+    @media (max-width: 767px) {
+        display: block;
+    }
+    @media (max-width: 590px) {
+        margin-top: -10px;
+    }
+    @media (max-width: 480px) {
+        margin-top: -50px;
+    }
+    @media (max-width: 420px) {
+        margin-top: -110px;
+    }
+    @media (max-width: 380px) {
+        margin-top: -150px;
+    }
 }
 
 .section_main_container .banner_home {
