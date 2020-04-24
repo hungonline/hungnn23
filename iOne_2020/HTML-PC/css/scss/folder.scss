@@ -143,6 +143,7 @@
     border: 1px solid rgba(0, 0, 0, 0.1);border-radius: 8px;
     padding: 0 57px;
     color: #4F4F4F;font-size:16px;
+    position: relative;
     .title{font: 600 22px var(--font1);color: #222222;margin-bottom: 15px;}
     .head_cate {
         background: rgba(189, 189, 189, 0.2);
@@ -162,7 +163,7 @@
             }
         }
     }
-    .author {color: #000;}
+    .author {color: #000;margin-bottom: 20px;}
     .quiz-new{
         .gird{
             display: flex;flex-wrap: wrap;text-align: center;
@@ -204,20 +205,30 @@
             font-size: 16px;line-height: 1.4;
             margin: 0 -57px 24px -57px;
             .item{
-                background: var(--white);border: 1px solid var(--border);
-                padding: 12px 16px;
-                margin-bottom: 20px;
+                margin-bottom: 8px;
                 &:last-child{margin-bottom: 0;}
-                &.big{padding: 24px 24px 8px 24px;}
-            }
-            label.item{
-                display: block;cursor: pointer;
-                &:hover,&.active{
-                    background: var(--bg-agray);
-                }
             }
             h4{margin-bottom: 15px;}
             p{margin-top: 20px;}
+        }
+        .btn_next_prev{
+            display: flex;
+            justify-content: space-between;
+            .btn_ione{
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                background: #fff;
+                padding: 0 30px;
+            }
+            .active{
+                background: #F2C94C;
+                border: 1px solid #F2C94C;
+                &:hover{
+                    background: #DFAB0E;
+                }
+            }
+        }
+        .btn_ione{
+            svg{color: #222;width: 20px;height: 20px;}
         }
         &1{
             .item{
@@ -239,13 +250,25 @@
             }
         }
         &2{
-            .answer-quiz{margin-top: 20px;}
-            .percent-bar{
-                position: relative;
-                padding-right: 50px;
+            .answer-quiz{
                 margin-top: 20px;
+                background: #fff;
+                padding: 0 57px;
+                label.item{
+                    display: block;cursor: pointer;background: #F7F7F7;border-radius: 2px;padding:12px 20px;
+                    &:hover,&.active{
+                        background: #E5E5E5;
+                    }
+                }
+            }
+            .percent-bar{
+                position: absolute;
+                padding-right: 50px;
+                top: 37px;
+                left: 187px;
+                right: 200px;
                 .main-bar-per{
-                    height: 10px;
+                    height: 8px;
                     background: #E5E5E5;
                     border-radius: 29px;
                     width: 100%;
@@ -263,9 +286,8 @@
                 .number-per{
                     width: 40px;
                     position: absolute;
-                    font-weight: bold;
                     font-family: Arial;
-                    top: -9px;
+                    top: -6px;
                     right: 0;
                     font-size: 14px;
                     color: #000000;

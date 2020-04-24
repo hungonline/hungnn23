@@ -1313,6 +1313,7 @@ body.hidden {
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        .thumb_art{border-radius: 10px 10px 0 0;}
     }
     .art_item{
         .thumb_art{
@@ -2759,7 +2760,7 @@ body.hidden {
 
 .position-sticky {
     position: sticky;
-    top: 30px;
+    top: 100px;
     z-index: 2;
 }
 
