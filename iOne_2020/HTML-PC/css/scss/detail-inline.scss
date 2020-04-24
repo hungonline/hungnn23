@@ -380,6 +380,37 @@
     }
     &2{
         .answer-quiz{margin-top: 20px;}
+        .percent-bar{
+            position: relative;
+            padding-right: 50px;
+            margin-top: 20px;
+            .main-bar-per{
+                height: 10px;
+                background: #E5E5E5;
+                border-radius: 29px;
+                width: 100%;
+                display: block;
+                position: relative;
+            }
+            .real-bar-per{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background: #F53520;
+                border-radius: 29px;
+            }
+            .number-per{
+                width: 40px;
+                position: absolute;
+                font-weight: bold;
+                font-family: Arial;
+                top: -9px;
+                right: 0;
+                font-size: 14px;
+                color: #000000;
+            }
+        }
     }
     &3{
         .gird{

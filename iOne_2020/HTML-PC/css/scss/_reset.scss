@@ -146,6 +146,9 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     transition-duration: 200ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    &:hover{
+        background: #DFAB0E;
+    }
 }
 .error_mess {
     color: #9f224e;

@@ -3528,8 +3528,6 @@ body.hidden {
 
             .item_input {
                 .flex {
-                    justify-content: flex-end;
-
                     @media (max-width: 991px) and (min-width: 768px) {
                         // margin: 0 -40px;
                     }
@@ -3539,7 +3537,7 @@ body.hidden {
 
 
             .action {
-                margin-left: 10px;  
+                margin-right: 10px; margin-bottom: 10px;
                 button{
                     display: inline-flex;
                     align-items: center;
@@ -3592,14 +3590,13 @@ body.hidden {
     }
 
     .form__footer {
-        align-items: flex-end;
 
         @media (min-width: 768px) {
             flex-wrap: nowrap;
         }
 
         .form-note {
-            margin-bottom: 24px
+            margin-bottom: 0
         }
 
         .col {
@@ -3776,9 +3773,15 @@ body.hidden {
 
 .form__footer {
     margin-top: 50px;
-    padding-top: 20px;
+    padding: 20px 0;
     background: #B1AC89;
     border-radius: 0 0 10px 10px;
+    .item_row_form{margin-top: 30px;
+        .item_input{margin-top: 15px;}
+    }
+    @media (min-width: 1200px) {
+        padding: 20px 120px;
+    }
 }
 
 .form-note {
