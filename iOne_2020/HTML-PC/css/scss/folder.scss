@@ -354,6 +354,22 @@
                 background: #FFFFFF;padding: 24px;
                 p{margin-bottom: 15px;}
                 .gird {margin-top: 0!important;}
+                .item{
+                    &:hover{
+                        &::before{
+                            content: "";
+                            background: linear-gradient(180deg, #222222 0%, rgba(34, 34, 34, 0) 100%);
+                            position: absolute;
+                            bottom: 0;
+                            height: 80%;
+                            left: 8px;
+                            right: 8px;
+                            border-radius: 4px;
+                            opacity: 0.7;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
             }
             .answer-true{
                 position: absolute;
@@ -420,20 +436,6 @@
             }
             .item{
                 *{transition: 0.5s ease;}
-                &:hover{
-                    &::before{
-                        content: "";
-                        background: linear-gradient(180deg, #222222 0%, rgba(34, 34, 34, 0) 100%);
-                        position: absolute;
-                        bottom: 0;
-                        height: 80%;
-                        left: 8px;
-                        right: 8px;
-                        border-radius: 4px;
-                        opacity: 0.7;
-                        transform: rotate(180deg);
-                    }
-                }
                 &.true{
                     .answer-true,.percent-bar{display: block;}
                     &::before{
