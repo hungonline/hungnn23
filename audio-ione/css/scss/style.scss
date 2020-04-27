@@ -1386,6 +1386,11 @@ body.hidden {
             font-family: $font1;
             font-size: 18px;
 
+            svg {
+                color: #666;
+                margin-left: 4px;
+            }
+
             a {
                 color: #333333;
             }
@@ -1459,6 +1464,7 @@ body.hidden {
                 bottom: 0;
                 right: 0;
                 position: absolute;
+                z-index: -1;
             }
         }
     }

@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1587547177010');
-	src: url('iconfont.eot?#iefix-1587547177010') format('embedded-opentype'),
-		url('iconfont.woff2?1587547177010') format('woff2'),
-		url('iconfont.woff?1587547177010') format('woff'),
-		url('iconfont.ttf?1587547177010') format('truetype');
+	src: url('iconfont.eot?1587983885260');
+	src: url('iconfont.eot?#iefix-1587983885260') format('embedded-opentype'),
+		url('iconfont.woff2?1587983885260') format('woff2'),
+		url('iconfont.woff?1587983885260') format('woff'),
+		url('iconfont.ttf?1587983885260') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -92,20 +92,24 @@ Glyphs list
 			content: '\ea0f';
 		}
 
-		 .iconfont-superscript21:before {
+		 .iconfont-sound-1:before {
 			content: '\ea10';
 		}
 
-		 .iconfont-test:before {
+		 .iconfont-superscript21:before {
 			content: '\ea11';
 		}
 
-		 .iconfont-twiter - Copy:before {
+		 .iconfont-test:before {
 			content: '\ea12';
 		}
 
-		 .iconfont-twiter:before {
+		 .iconfont-twiter - Copy:before {
 			content: '\ea13';
+		}
+
+		 .iconfont-twiter:before {
+			content: '\ea14';
 		}
 
 		
