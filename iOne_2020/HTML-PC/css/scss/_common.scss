@@ -85,6 +85,7 @@ body::-webkit-scrollbar-track {
             svg {
                 width: 20px;
                 height: 20px;
+                margin-right: -3px;
             }
         }
     }
@@ -212,6 +213,7 @@ body::-webkit-scrollbar-track {
         background: var(--colormain);
         opacity: .1;
         animation: fading 1.5s infinite;
+        border-radius: 4px;
     }
 
     .title-news {
