@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1587351993040');
-	src: url('iconfont.eot?#iefix-1587351993040') format('embedded-opentype'),
-		url('iconfont.woff2?1587351993040') format('woff2'),
-		url('iconfont.woff?1587351993040') format('woff'),
-		url('iconfont.ttf?1587351993040') format('truetype');
+	src: url('iconfont.eot?1587974912960');
+	src: url('iconfont.eot?#iefix-1587974912960') format('embedded-opentype'),
+		url('iconfont.woff2?1587974912960') format('woff2'),
+		url('iconfont.woff?1587974912960') format('woff'),
+		url('iconfont.ttf?1587974912960') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -92,136 +92,120 @@ Glyphs list
 			content: '\ea0f';
 		}
 
-		 .iconfont-comment3:before {
+		 .iconfont-Data-Empty:before {
 			content: '\ea10';
 		}
 
-		 .iconfont-comment4:before {
+		 .iconfont-Facebook:before {
 			content: '\ea11';
 		}
 
-		 .iconfont-Data-Empty:before {
+		 .iconfont-Flip:before {
 			content: '\ea12';
 		}
 
-		 .iconfont-Facebook:before {
+		 .iconfont-inforgraphic:before {
 			content: '\ea13';
 		}
 
-		 .iconfont-Flip:before {
+		 .iconfont-Interactive:before {
 			content: '\ea14';
 		}
 
-		 .iconfont-inforgraphic:before {
+		 .iconfont-like:before {
 			content: '\ea15';
 		}
 
-		 .iconfont-inforgraphic2:before {
+		 .iconfont-like2:before {
 			content: '\ea16';
 		}
 
-		 .iconfont-Interactive:before {
+		 .iconfont-link:before {
 			content: '\ea17';
 		}
 
-		 .iconfont-like:before {
+		 .iconfont-mail:before {
 			content: '\ea18';
 		}
 
-		 .iconfont-like2:before {
+		 .iconfont-Minus:before {
 			content: '\ea19';
 		}
 
-		 .iconfont-link:before {
+		 .iconfont-next:before {
 			content: '\ea1a';
 		}
 
-		 .iconfont-mail:before {
+		 .iconfont-picture:before {
 			content: '\ea1b';
 		}
 
-		 .iconfont-Minus:before {
+		 .iconfont-Pin:before {
 			content: '\ea1c';
 		}
 
-		 .iconfont-next:before {
+		 .iconfont-play:before {
 			content: '\ea1d';
 		}
 
-		 .iconfont-picture:before {
+		 .iconfont-play2:before {
 			content: '\ea1e';
 		}
 
-		 .iconfont-Pin:before {
+		 .iconfont-Plus:before {
 			content: '\ea1f';
 		}
 
-		 .iconfont-play:before {
+		 .iconfont-prev:before {
 			content: '\ea20';
 		}
 
-		 .iconfont-play2:before {
+		 .iconfont-Quiz:before {
 			content: '\ea21';
 		}
 
-		 .iconfont-Plus:before {
+		 .iconfont-search:before {
 			content: '\ea22';
 		}
 
-		 .iconfont-prev:before {
+		 .iconfont-sent2:before {
 			content: '\ea23';
 		}
 
-		 .iconfont-review:before {
+		 .iconfont-share:before {
 			content: '\ea24';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-share2:before {
 			content: '\ea25';
 		}
 
-		 .iconfont-sent:before {
+		 .iconfont-sync:before {
 			content: '\ea26';
 		}
 
-		 .iconfont-sent2:before {
+		 .iconfont-Trend:before {
 			content: '\ea27';
 		}
 
-		 .iconfont-share:before {
+		 .iconfont-Twitter:before {
 			content: '\ea28';
 		}
 
-		 .iconfont-share2:before {
+		 .iconfont-twitter2:before {
 			content: '\ea29';
 		}
 
-		 .iconfont-sync:before {
+		 .iconfont-user:before {
 			content: '\ea2a';
 		}
 
-		 .iconfont-Trend:before {
+		 .iconfont-view:before {
 			content: '\ea2b';
 		}
 
-		 .iconfont-Twitter:before {
-			content: '\ea2c';
-		}
-
-		 .iconfont-twitter2:before {
-			content: '\ea2d';
-		}
-
-		 .iconfont-user:before {
-			content: '\ea2e';
-		}
-
-		 .iconfont-view:before {
-			content: '\ea2f';
-		}
-
 		 .iconfont-Zoom:before {
-			content: '\ea30';
+			content: '\ea2c';
 		}
 
 		

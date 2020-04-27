@@ -95,7 +95,9 @@ body::-webkit-scrollbar-track {
 
         span {
             margin-right: 16px;
+        }
 
+        .comment {
             svg {
                 width: 20px;
                 height: 20px;
@@ -120,6 +122,12 @@ body::-webkit-scrollbar-track {
         line-height: 48px;
         display: block;
         text-align: center;
+        transition: 0.4s ease;
+
+        &:hover {
+            background: rgba(163, 170, 199, 0.6);
+            color: #222;
+        }
     }
 
     &.full-thumb {
