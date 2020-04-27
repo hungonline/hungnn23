@@ -1,0 +1,975 @@
+<!-- build:title -->Covid-19
+<!-- /build:title -->
+<!-- build:head2 -->
+<link rel="stylesheet" href="https://s1.vnecdn.net/vnexpress/restruct/c/v404/v2/wcomment/pc/vne/comment_v4.css"
+    media="all" />
+<!-- /build:head2 -->
+<!-- build:content -->
+<section class="section section_1 white">
+    <div class="container">
+        <h2 class="title_cate center" style="color: #222;">
+            Covid-19 trên thế giới
+        </h2>
+        <div class="red center mb20" style="color: #4F4F4F;">
+            Tính đến 17h00, 18/3/2020 (Tổng cộng có 856,851 ca nhiễm)
+        </div>
+
+        <div class="count-covid-thegioi flex">
+            <div class="item nhiem">
+                <label>Nhiễm</label>
+                <strong>1,056,851</strong>
+                <p>+11,682</p>
+            </div>
+            <div class="item tuvong">
+                <label>Tử vong</label>
+                <strong>42,096</strong>
+                <p>+11,682</p>
+            </div>
+            <div class="item khoi">
+                <label>Khỏi</label>
+                <strong>177,132</strong>
+                <p>+11,682</p>
+            </div>
+        </div>
+
+        <div class="box-chart-covid row">
+            <div class="col-md-12 mb30">
+                <h3 class="title-line">Ca đang điều trị</h3>
+                <div class="placeholder-demo"></div>
+            </div>
+            <div class="col-md-6 col-xs-12 mb30">
+                <h3 class="title-line">Mức độ tăng trưởng</h3>
+                <div class="placeholder-demo"></div>
+            </div>
+            <div class="col-md-6 col-xs-12 mb30">
+                <h3 class="title-line">Số trường hợp theo ngày</h3>
+                <div class="placeholder-demo"></div>
+            </div>
+        </div>
+
+        <div class="box-hot-new">
+            <marquee direction="left" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
+                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
+                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
+                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+            </marquee>
+        </div>
+        <div class="box-hot-new mobile">
+            <div class="mq">
+                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
+                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
+                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
+                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+            </div>
+        </div>
+
+        <div class="box-thongke box-thongke-thegioi">
+            <p class="head">Tính đến 17h00, 18/3/2020, nguồn: WorldOMeters</p>
+            <div class="flex">
+                <div class="item active">
+                    <span>Ca nhiễm</span>
+                    <strong>1,056,851</strong>
+                </div>
+                <div class="item">
+                    <spa>Ca nhẹ</spa>
+                    <strong>605,326</strong>
+                </div>
+                <div class="item">
+                    <span>Ca nặng</span>
+                    <strong>32,297</strong>
+                </div>
+                <div class="item tu-vong">
+                    <span>Tử vong</span>
+                    <strong>42,096</strong>
+                </div>
+                <div class="item ty-le">
+                    <span>tử vong / nhiễm</span>
+                    <strong>4.91%</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section_main3">
+    <div class="container">
+        <div class="flex justify-content-between mb24">
+            <div class="section_main3__left">
+                <div class="wrap-border">
+                    <ul class="list-quocgia" id="list-quocgia">
+                        <div class="flex-head">
+                            <h4 class="title-cate">Thống kê theo quốc gia</h4>
+                            <form action="" method="get" id="search" class="search">
+                                <span class="twitter-typeahead" style="position: relative; display: inline-block;">
+                                    <input id="keywordHeader" class="search-input" type="text" name="q"
+                                        placeholder="Bạn có thắc mắc gì?" autocomplete="off">
+                                </span>
+                                <span class="search-icon">
+                                    <i class="iconfont-search"></i>
+                                </span>
+                            </form>
+                            <li class="flex pin-menu">
+                                <div class="td">Quốc gia</div>
+                                <div class="td">Nhiễm</div>
+                                <div class="td">Mới</div>
+                                <div class="td">Tử vong</div>
+                                <div class="td">Mới</div>
+                                <div class="td">Khỏi</div>
+                            </li>
+                        </div>
+                        <li class="flex">
+                            <div class="td">Mỹ</div>
+                            <div class="td">400,546</div>
+                            <div class="td">
+                                <div class="bg bg-nhiem">+211</div>
+                            </div>
+                            <div class="td">12,857</div>
+                            <div class="td">
+                                <div class="bg bg-tuvong">+16</div>
+                            </div>
+                            <div class="td">21,711</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Tây Ban Nha</div>
+                            <div class="td">141,942</div>
+                            <div class="td"></div>
+                            <div class="td">14,045</div>
+                            <div class="td"></div>
+                            <div class="td">43,208</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Italy</div>
+                            <div class="td">135,586</div>
+                            <div class="td"></div>
+                            <div class="td">17,127</div>
+                            <div class="td"></div>
+                            <div class="td">24,392</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Pháp</div>
+                            <div class="td">109,069</div>
+                            <div class="td"></div>
+                            <div class="td">10,328</div>
+                            <div class="td"></div>
+                            <div class="td">19,337</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Đức</div>
+                            <div class="td">107,663</div>
+                            <div class="td"></div>
+                            <div class="td">2,016</div>
+                            <div class="td"></div>
+                            <div class="td">36,081</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Trung Quốc</div>
+                            <div class="td">81,802</div>
+                            <div class="td">
+                                <div class="bg bg-nhiem">+62</div>
+                            </div>
+                            <div class="td">3,333</div>
+                            <div class="td">
+                                <div class="bg bg-tuvong">+2</div>
+                            </div>
+                            <div class="td">77,279</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Iran</div>
+                            <div class="td">62,589</div>
+                            <div class="td"></div>
+                            <div class="td">3,872</div>
+                            <div class="td"></div>
+                            <div class="td">27,039</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Anh</div>
+                            <div class="td">55,242</div>
+                            <div class="td"></div>
+                            <div class="td">6,159</div>
+                            <div class="td"></div>
+                            <div class="td">135</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Thổ Nhĩ Kỳ</div>
+                            <div class="td">34,109</div>
+                            <div class="td"></div>
+                            <div class="td">725</div>
+                            <div class="td"></div>
+                            <div class="td">1,582</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Thụy Sỹ</div>
+                            <div class="td">22,328</div>
+                            <div class="td">
+                                <div class="bg bg-nhiem">+75</div>
+                            </div>
+                            <div class="td">824</div>
+                            <div class="td">
+                                <div class="bg bg-tuvong">+3</div>
+                            </div>
+                            <div class="td">8,704</div>
+                        </li>
+                        <li class="flex">
+                            <div class="td">Bỉ</div>
+                            <div class="td">22,194</div>
+                            <div class="td"></div>
+                            <div class="td">2,035</div>
+                            <div class="td"></div>
+                            <div class="td">4,157</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Hà Lan</div>
+                            <div class="td">19,580</div>
+                            <div class="td"></div>
+                            <div class="td">2,101</div>
+                            <div class="td"></div>
+                            <div class="td">250</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Canada</div>
+                            <div class="td">17,897</div>
+                            <div class="td"></div>
+                            <div class="td">381</div>
+                            <div class="td"></div>
+                            <div class="td">4,028</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Hà Lan</div>
+                            <div class="td">19,580</div>
+                            <div class="td"></div>
+                            <div class="td">2,101</div>
+                            <div class="td"></div>
+                            <div class="td">250</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Canada</div>
+                            <div class="td">17,897</div>
+                            <div class="td"></div>
+                            <div class="td">381</div>
+                            <div class="td"></div>
+                            <div class="td">4,028</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Hà Lan</div>
+                            <div class="td">19,580</div>
+                            <div class="td"></div>
+                            <div class="td">2,101</div>
+                            <div class="td"></div>
+                            <div class="td">250</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Canada</div>
+                            <div class="td">17,897</div>
+                            <div class="td"></div>
+                            <div class="td">381</div>
+                            <div class="td"></div>
+                            <div class="td">4,028</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Hà Lan</div>
+                            <div class="td">19,580</div>
+                            <div class="td"></div>
+                            <div class="td">2,101</div>
+                            <div class="td"></div>
+                            <div class="td">250</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Canada</div>
+                            <div class="td">17,897</div>
+                            <div class="td"></div>
+                            <div class="td">381</div>
+                            <div class="td"></div>
+                            <div class="td">4,028</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Hà Lan</div>
+                            <div class="td">19,580</div>
+                            <div class="td"></div>
+                            <div class="td">2,101</div>
+                            <div class="td"></div>
+                            <div class="td">250</div>
+                        </li>
+                        <li class="flex show-table" style="display:none;">
+                            <div class="td">Canada</div>
+                            <div class="td">17,897</div>
+                            <div class="td"></div>
+                            <div class="td">381</div>
+                            <div class="td"></div>
+                            <div class="td">4,028</div>
+                        </li>
+                    </ul>
+                    <div class="shrink-overflow-gradient"></div>
+                    <div class="btn-load">
+                        <a href="javascript:void(0);" class="xem-them" title="Xem thêm">Xem thêm</a>
+                        <a href="javascript:void(0);" class="rut-gon" title="Rút gọn" style="display:none;">Rút gọn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section_main3__right">
+                <div class="wrap-border thong-ke-quocgia">
+                    <div class="item">
+                        <label>Quốc gia & vùng lãnh thổ có ca nhiễm</label>
+                        <strong>205</strong>
+                    </div>
+                    <div class="item">
+                        <label>Thời gian ủ bệnh (ngày)</label>
+                        <strong>2-14</strong>
+                        <span>(Có thể tới 27 ngày)</span>
+                    </div>
+                    <div class="item nhiem-benh">
+                        <label>Nhiễm / 1 triệu người</label>
+                        <strong>111.5</strong>
+                        <span>(Tính theo tổng dân số thế giới)</span>
+                    </div>
+                    <div class="item tu-vong">
+                        <label>Tử vong / 1 triệu người</label>
+                        <strong>5.5</strong>
+                        <span>(Tính theo tổng dân số thế giới)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-quantam wrap-border mb30">
+            <h4 class="title_lbl"><a href="#">Những thắc mắc thường gặp về Covid-19 &nbsp;<i
+                        class="iconfont-next"></i></a></h4>
+            <h4 class="lbl"><i class="iconfont-chart"></i>Câu hỏi được quan tâm nhiều:</h4>
+            <ul>
+                <li>
+                    <h3><a href="#" title="">Lây nhiễm</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Chính sách cách ly</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Xét nghiệm Covid như thế nào?</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Cách ly như nào để không lây nhiễm</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Khai báo y tế thế nào</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Lây nhiễm</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Chính sách cách ly</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Xét nghiệm Covid như thế nào?</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Cách ly như nào để không lây nhiễm</a></h3>
+                </li>
+                <li>
+                    <h3><a href="#" title="">Khai báo y tế thế nào</a></h3>
+                </li>
+                <li class="placeholder"><a href="#" title=""></a></li>
+                <li class="placeholder"><a href="#" title=""></a></li>
+            </ul>
+        </div>
+
+        <div class="list_news">
+            <h2 class="title_lbl line"><span>Tin mới nhất</span></h2>
+            <div class="flex">
+                <article class="art_item animated animatedFadeInUp fadeInUp">
+                    <div class="thumb_art thumb_full">
+                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
+                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
+                            bùng
+                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
+                        <span class="time">1h trước</span>
+                    </div>
+                </article>
+                <article class="art_item">
+                    <div class="thumb_art thumb_full">
+                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
+                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
+                            bùng
+                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
+                        <span class="time">1h trước</span>
+                    </div>
+                </article>
+                <article class="art_item">
+                    <div class="thumb_art thumb_full">
+                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
+                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
+                            bùng
+                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
+                        <span class="time">1h trước</span>
+                    </div>
+                </article>
+                <article class="art_item">
+                    <div class="thumb_art thumb_full">
+                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
+                    </div>
+                    <div class="content">
+                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
+                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
+                            bùng
+                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
+                        <span class="time">1h trước</span>
+                    </div>
+                </article>
+            </div>
+            <div class="center load-more">
+                <a href="#" class="btn">Xem thêm tin tức &nbsp;<i class="iconfont-next"></i></a>
+            </div>
+        </div>
+
+        <div class="container flex justify-content-between mt30">
+            <div class="section_main__left">
+                <!-- BOX COMMENT -->
+                <div class="box_comment_vne width_common">
+                    <div class="flex head_comment">
+                        <div class="ykien_vne width_common">
+                            <div class="left"><strong>Bình luận</strong> (15)</div>
+                        </div>
+                        <div class="filter_coment width_common">
+                            <a class="active" href="#">Quan tâm nhất</a>
+                            <a href="#">Mới nhất</a>
+                        </div>
+                    </div>
+                    <div class="main_show_comment width_common mb10" id="list_comment">
+                        <div class="comment_item width_common">
+                            <div class="user_status">
+                                <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
+                                    target="_blank" title="Xem trang ý kiến của Duy Tuấn">
+                                    <img class="img_avatar"
+                                        src="https://a.vnecdn.net/avatar/c60x60/7/d6/6/8265582653_1426053068.jpg">
+                                    <div class="info_avata_cmt"><a href="https://my.vnexpress.net/users/feed/1029823738"
+                                            class="avata_coment" target="_blank"><img
+                                                src="https://s.vnecdn.net/myvne/i/v1/graphics/img_60x60.gif"
+                                                alt="Đang tải ảnh đại diện"></a>
+                                        <p><a href="https://my.vnexpress.net/users/feed/1029823738"
+                                                target="_blank"><strong>tackehoa922016</strong></a> - <span
+                                                class="txt_666">162 ý kiến</span></p>
+                                        <p><a
+                                                href="https://vnexpress.net/y-kien/taxi-truyen-thong-chuyen-sang-mo-hinh-grab-cung-kho-song-3965339.html?commentid=31432758">Tài
+                                                xế công nghệ chỉ là cái vỏ, việc tài xế truyền thống là thay đổi cung
+                                                cách
+                                                phục vụ hành khách đi mới được. ...</a></p>
+                                        <p class="txt_666">10:26 10/8</p>
+                                        <p><strong><a
+                                                    href="https://vnexpress.net/y-kien/taxi-truyen-thong-chuyen-sang-mo-hinh-grab-cung-kho-song-3965339.html?commentid=31432758">'Taxi
+                                                    truyền thống chuyển sang mô hình Grab cũng khó sống'</a></strong>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="content-comment">
+                                <p><span class="txt-name"><a class="nickname"
+                                            href="https://my.vnexpress.net/users/feed/1002615300"
+                                            title="Xem trang ý kiến của Duy Tuấn" target="_blank">SunShine</a></span>Nếu
+                                    chỉ
+                                    cách chức không thì quá nhẹ, phải xử công bằng, <a href="#"
+                                        class="link_text_com">Nếu
+                                        chỉ cách chức không thì quá nhẹ, phải xử công bằng</a> , <a href="#"
+                                        class="link_text_com link_hide">« liên kết đã ẩn»</a> quan cũng như dân, làm một
+                                    chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên chống lại
+                                    rồi
+                                    chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có công bằng ko? <a
+                                        href="#" class="icon_show_full_comment"><i class="ic ic-plus-square"></i></a>
+                                </p>
+                                <p style="display: none;"> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan
+                                    cũng
+                                    như dân, làm một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng
+                                    lên
+                                    chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có công
+                                    bằng
+                                    ko? <a href="#" class="icon_show_full_comment"><i
+                                            class="ic  ic-minus-square"></i></a>
+                                </p>
+                                <p class="block_like_web width_common">
+                                    <a id="20396428" class="link_thich" href="javascript:;" rel="20396428"><span
+                                            class="total_like" href="javascript:;">1,491</span><i
+                                            class="ic ic-like"></i></a>
+                                    <a id="20396428" class="link_reply" href="javascript:;" rel="20396428"
+                                        parent="20396428">Trả lời</a>
+                                    <span href="javascript:;" rel="20396428" class="share_cmt_fb">Chia sẻ
+                                        <span class="block_share_cmt_fb" data-id="20396509">
+                                            <a class="item_social item_fb" data-type="facebook" href="javascript:;"
+                                                title="Chia sẻ phản hồi lên facebook"><i class="ic ic-facebook"></i></a>
+                                            <a data-type="twitter" class="item_social item_twit" href="javascript:;"
+                                                title="Chia sẻ phản hồi lên twitter"><i class="ic ic-twitter"></i></a>
+                                        </span>
+                                    </span>
+                                    <span class="time-com">2h trước</span>
+                                    <a href="#" class="report-comment">Vi phạm</a>
+                                </p>
+
+                                <!--INPUT COMMENT-->
+                                <div class="input_comment reply_input_comment width_common">
+                                    <form>
+                                        <div class="box-area-input width_common">
+                                            <textarea placeholder="Ý kiến của bạn" class="block_input"></textarea>
+                                            <span class="note-count-text">1901 / 2000 ký tự</span>
+                                        </div>
+                                        <div class="width_common block_relative">
+                                            <div class="right block_btn_send">
+                                                <button type="submit" class="btn_send_comment btn_vne"
+                                                    id="comment_post_button">Gửi</button>
+                                            </div>
+                                            <div class="like_google" style="display: block;">
+                                                <div class="google_name"><a class="avata_coment"
+                                                        href="https://my.vnexpress.net/users/feed/1003137688"
+                                                        target="_blank"><img
+                                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"
+                                                            alt=""></a><span>Hung Nguyen</span></div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--END INPUT COMMENT-->
+
+                            </div>
+
+                            <div class="sub_comment width_common clearfix">
+                                <div class="comment_item width_common">
+                                    <div class="user_status">
+                                        <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
+                                            target="_blank" title="Xem trang ý kiến của Duy Tuấn">D</a>
+                                    </div>
+                                    <div class="content-comment">
+                                        <p><span class="txt-name"><a class="nickname"
+                                                    href="https://my.vnexpress.net/users/feed/1002615300"
+                                                    title="Xem trang ý kiến của Duy Tuấn" target="_blank">Duy
+                                                    Tuấn</a></span><span class="reply_name">@Lưu Thanh Nhân </span>Nếu
+                                            chỉ
+                                            cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm một
+                                            chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên
+                                            chống
+                                            lại rồi chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có
+                                            công
+                                            bằng ko? <a href="#" class="icon_show_full_comment"><i
+                                                    class="ic ic-plus-square"></i></a></p>
+                                        <p style="display: none;"> Nếu chỉ cách chức không thì quá nhẹ, phải xử công
+                                            bằng,
+                                            quan cũng như dân, làm một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan
+                                            cửa
+                                            nát, phải đứng lên chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có
+                                            cách
+                                            chức, kiểm điểm. có công bằng ko? <a href="#"
+                                                class="icon_show_full_comment"><i class="ic  ic-minus-square"></i></a>
+                                        </p>
+                                        <p class="block_like_web width_common">
+                                            <a id="20396428" class="link_thich" href="javascript:;" rel="20396428"><span
+                                                    class="total_like" href="javascript:;">1,491</span><i
+                                                    class="ic ic-like"></i></a>
+                                            <a id="20396428" class="link_reply" href="javascript:;" rel="20396428"
+                                                parent="20396428">Trả lời</a>
+                                            <span href="javascript:;" rel="20396428" class="share_cmt_fb">Chia sẻ
+                                                <span class="block_share_cmt_fb" data-id="20396509">
+                                                    <a class="item_social item_fb" data-type="facebook"
+                                                        href="javascript:;" title="Chia sẻ phản hồi lên facebook"><i
+                                                            class="ic ic-facebook"></i></a>
+                                                    <a data-type="twitter" class="item_social item_twit"
+                                                        href="javascript:;" title="Chia sẻ phản hồi lên twitter"><i
+                                                            class="ic ic-twitter"></i></a>
+                                                </span>
+                                            </span>
+                                            <span class="time-com">08:08 24/02</span>
+                                            <a href="#" class="report-comment">Vi phạm</a>
+                                        </p>
+
+                                        <p class="count-reply"><a href="#">18 trả lời</a></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="comment_item width_common">
+                                    <div class="user_status">
+                                        <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
+                                            target="_blank" title="Xem trang ý kiến của Duy Tuấn">D</a>
+
+
+                                    </div>
+                                    <div class="content-comment">
+                                        <p><span class="txt-name"><a class="nickname"
+                                                    href="https://my.vnexpress.net/users/feed/1002615300"
+                                                    title="Xem trang ý kiến của Duy Tuấn" target="_blank">Duy
+                                                    Tuấn</a></span> Nếu chỉ cách chức không thì quá nhẹ, phải xử công
+                                            bằng,
+                                            quan cũng như dân, làm một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan
+                                            cửa
+                                            nát, phải đứng lên chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có
+                                            cách
+                                            chức, kiểm điểm. có công bằng ko? <a href="#"
+                                                class="icon_show_full_comment"><i class="ic ic-plus-square"></i></a></p>
+                                        <p style="display: none;"> Nếu chỉ cách chức không thì quá nhẹ, phải xử công
+                                            bằng,
+                                            quan cũng như dân, làm một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan
+                                            cửa
+                                            nát, phải đứng lên chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có
+                                            cách
+                                            chức, kiểm điểm. có công bằng ko? <a href="#"
+                                                class="icon_show_full_comment"><i class="ic  ic-minus-square"></i></a>
+                                        </p>
+                                        <p class="block_like_web width_common">
+                                            <a id="20396428" class="link_thich" href="javascript:;" rel="20396428"><span
+                                                    class="total_like" href="javascript:;">1,491</span><i
+                                                    class="ic ic-like"></i></a>
+                                            <a id="20396428" class="link_reply" href="javascript:;" rel="20396428"
+                                                parent="20396428">Trả lời</a>
+                                            <span href="javascript:;" rel="20396428" class="share_cmt_fb">Chia sẻ
+                                                <span class="block_share_cmt_fb" data-id="20396509">
+                                                    <a class="item_social item_fb" data-type="facebook"
+                                                        href="javascript:;" title="Chia sẻ phản hồi lên facebook"><i
+                                                            class="ic ic-facebook"></i></a>
+                                                    <a data-type="twitter" class="item_social item_twit"
+                                                        href="javascript:;" title="Chia sẻ phản hồi lên twitter"><i
+                                                            class="ic ic-twitter"></i></a>
+                                                </span>
+                                            </span>
+                                            <span class="time-com">08:08 24/02</span>
+                                            <a href="#" class="report-comment">Vi phạm</a>
+                                        </p>
+
+                                        <p class="count-reply"><a href="#">18 trả lời</a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <p class="count-reply"><a href="#">18 trả lời</a></p>
+                        </div>
+
+                        <div class="comment_item width_common">
+                            <div class="user_status">
+                                <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
+                                    target="_blank" title="Xem trang ý kiến của Duy Tuấn">D</a>
+
+
+                            </div>
+                            <div class="content-comment">
+                                <p><span class="txt-name"><a class="nickname"
+                                            href="https://my.vnexpress.net/users/feed/1002615300"
+                                            title="Xem trang ý kiến của Duy Tuấn" target="_blank">Duy Tuấn</a></span>
+                                    Nếu
+                                    chỉ cách chức <svg class="icon icon_emoji emoji-4">
+                                        <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-4"></use>
+                                    </svg> <svg class="icon icon_emoji emoji-4">
+                                        <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-5"></use>
+                                    </svg> không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm một chuyện mà
+                                    gây
+                                    ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên chống lại rồi chịu tù tội,
+                                    vậy
+                                    mà người gây ra chỉ có cách chức, kiểm điểm. có công bằng ko? <a href="#"
+                                        class="icon_show_full_comment"><i class="ic ic-plus-square"></i></a></p>
+                                <div class="width_common box_news_on_comment flex">
+                                    <div class="thumb_on_com">
+                                        <a href="#" class="img_thumb_com img_5x3"><img src="images/graphics/thumb1.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="info_news_on_com">
+                                        <h3 class="title_on_com"><a href="#" class="title_news_com">Bùi Tiến Dũng:
+                                                ‘Trách
+                                                nhiệm đè nặng trước quả luân lưu quyết định’<span class="name_site"> -
+                                                    VnExpress</span></a></h4>
+                                            <p class="lead_on_com">Chuyên trang thông tin giải trí, tin tức âm nhạc, hậu
+                                                trường sân khấu, kịch, điện ảnh, lịch chiếu phim</p>
+                                    </div>
+                                </div>
+                                <p class="block_like_web width_common">
+                                    <a id="20396428" class="link_thich" href="javascript:;" rel="20396428"><span
+                                            class="total_like" href="javascript:;">1,491</span><i
+                                            class="ic ic-like"></i></a>
+                                    <a id="20396428" class="link_reply" href="javascript:;" rel="20396428"
+                                        parent="20396428">Trả lời</a>
+                                    <span href="javascript:;" rel="20396428" class="share_cmt_fb">Chia sẻ
+                                        <span class="block_share_cmt_fb" data-id="20396509">
+                                            <a class="item_social item_fb" data-type="facebook" href="javascript:;"
+                                                title="Chia sẻ phản hồi lên facebook"><i class="ic ic-facebook"></i></a>
+                                            <a data-type="twitter" class="item_social item_twit" href="javascript:;"
+                                                title="Chia sẻ phản hồi lên twitter"><i class="ic ic-twitter"></i></a>
+                                        </span>
+                                    </span>
+                                    <span class="time-com">08:08 24/02</span>
+                                    <a href="#" class="report-comment">Vi phạm</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="view_more_coment width_common"><a href="javascript:;">Xem thêm 2 bình luận</a></div>
+                        <div class="width_common pagination">
+                            <div class="paging right flexbox">
+                                <div class="select-page">
+                                    <span class="selected-page">Trang</span>
+                                </div>
+                                <div class="button-page flexbox">
+                                    <a href="#" class="btn-page prev-page disable"><svg class="ic ic-arrow-left">
+                                            <use xlink:href="css/images/graphics/icon-vne.svg#Arrow-Left-1"></use>
+                                        </svg></a>
+                                    <form action="">
+                                        <input type="text" class="btn-page type_page" value="1" id="inputPage">
+                                    </form>
+                                    <a href="#" class="btn-page next-page"><svg class="ic ic-arrow-right">
+                                            <use xlink:href="css/images/graphics/icon-vne.svg#Arrow-Right-1"></use>
+                                        </svg></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--INPUT COMMENT-->
+                    <div class="input_comment width_common">
+                        <form>
+                            <div class="box-area-input width_common">
+                                <textarea placeholder="Ý kiến của bạn" class="block_input"></textarea>
+                                <span class="note-count-text">1901 / 2000 ký tự</span>
+                            </div>
+
+                            <div class="box_emoji">
+                                <svg class="icon icon_emoji emoji-icon">
+                                    <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-icon"></use>
+                                </svg>
+                                <div class="list_emoji">
+                                    <ul class="ul_emoji">
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-1">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-1"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-2">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-2"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-3">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-3"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-4">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-4"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-5">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-5"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-6">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-6"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-7">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-7"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-8">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-8"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-9">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-9"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-10">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-10"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-11">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-11"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-12">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-12"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-13">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-13"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-14">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-14"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-15">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-15"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-16">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-16"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-17">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-17"></use>
+                                            </svg>
+                                        </li>
+
+                                        <li class="item_emoji">
+                                            <svg class="icon icon_emoji emoji-18">
+                                                <use xlink:href="css/images/graphics/symbol-defs.svg#emoji-18"></use>
+                                            </svg>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="width_common block_relative">
+                                <div class="left block_not_login not-vne">
+                                    <p class="error_lk">Chỉ có thể gửi liên kết từ <a href="#">VnExpress.net</a> và <a
+                                            href="#">Ngoisao.net</a></p>
+                                </div>
+                                <div class="right block_btn_send">
+                                    <button type="submit" class="btn_send_comment btn_vne"
+                                        id="comment_post_button">Gửi</button>
+                                </div>
+                                <div class="like_google" style="display: block;">
+                                    <div class="google_name"><a class="avata_coment"
+                                            href="https://my.vnexpress.net/users/feed/1003137688" target="_blank"><img
+                                                src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"
+                                                alt=""></a><span>Hung Nguyen</span></div>
+                                </div>
+                            </div>
+
+                            <div class="width_common block_relative">
+                                <div class="left block_not_login">
+                                    <p class="error_lk">Cần đăng nhập để gửi liên kết. Hãy <a href="#">đăng nhập</a>
+                                        hoặc <a href="#">tạo tài khoản</a></p>
+                                </div>
+                                <div class="right block_btn_send">
+                                    <button type="submit" class="btn_send_comment btn_vne"
+                                        id="comment_post_button">Gửi</button>
+                                </div>
+
+                            </div>
+
+                            <div class="width_common block_relative">
+                                <div class="left block_not_login">
+                                    <p>Hãy <a href="#">đăng nhập</a> hoặc <a href="#">tạo tài khoản</a></p>
+                                </div>
+                                <div class="right block_btn_send">
+                                    <button type="submit" class="btn_send_comment btn_vne"
+                                        id="comment_post_button">Gửi</button>
+                                </div>
+
+                            </div>
+
+
+                            <div class="width_common block_relative">
+                                <div class="left block_not_login block_anonymous">
+                                    <div class="box_input_txt width_common">
+                                        <input type="text" placeholder="Họ và tên" class="input_anonymous">
+                                    </div>
+                                </div>
+                                <div class="right block_btn_send">
+                                    <button type="submit" class="btn_send_comment btn_vne"
+                                        id="comment_post_button">Gửi</button>
+                                </div>
+
+                            </div>
+
+                            <div class="width_common block_relative">
+                                <div class="left block_not_login block_anonymous">
+                                    <div class="left input_50">
+                                        <div class="box_input_txt width_common">
+                                            <input type="email" placeholder="Email" class="input_anonymous">
+                                            <span class="error-mess width_common">Hãy nhập email</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="left input_50">
+                                        <div class="box_input_txt width_common">
+                                            <input type="text" placeholder="Họ và tên" class="input_anonymous">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right block_btn_send">
+                                    <button type="submit" class="btn_send_comment btn_vne"
+                                        id="comment_post_button">Gửi</button>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                    <!--END INPUT COMMENT-->
+
+                </div>
+
+            </div>
+            <div class="section_main__right">
+                <div class="mb30 sticky" style="top: 60px;">
+                    <img src="https://via.placeholder.com/300x250" alt="Covid-19">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /build:content -->
+<!-- build:script2 -->
+<script>
+    $('.btn-load .xem-them').click(function () {
+        $(this).hide();
+        $('.btn-load .rut-gon').show();
+        $('.show-table').removeAttr("style");
+        $('.btn-load').css({
+            'position': 'sticky',
+        });
+        $('.shrink-overflow-gradient').hide();
+        $('.section_main3__right .wrap-border').css({
+            'height': 'auto',
+        });
+    });
+    $('.btn-load .rut-gon').click(function () {
+        $(this).hide();
+        $('.btn-load .xem-them').show();
+        $('.show-table').css({
+            'display': 'none',
+        });
+        $('.btn-load').css({
+            'position': 'sticky',
+        });
+        $('.shrink-overflow-gradient').show();
+        $('.section_main3__right .wrap-border').css({
+            'height': '100%',
+        });
+    });
+    $('.search-pin').remove();
+</script>
+<!-- /build:script2 -->

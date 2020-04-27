@@ -1,0 +1,54 @@
+/**WIDGET COVID 2, 4**/
+.widget-covid-024{
+    *{margin: 0; padding: 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;}
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    width: 100%; float: left;
+    margin-bottom: 20px;
+    font-family: arial !important;
+    border: 1px solid #e5e5e5;
+    padding: 15px;
+    font-feature-settings: 'pnum' on , 'lnum' on;
+    background: #fff;
+    .info-txt{width: 100%; float: left; display: flex; font-size: 12px; line-height: 14px; color: #757575; padding-top: 10px; border-top: 1px solid #e5e5e5;
+        .source{margin-left: auto;}
+    }
+
+  
+    .top-head-cov{width: 100%;float: left;display: flex;font-size: 12px; line-height: 14px; color: #757575;
+        .txt-top{font-family: "Merriweather", Arial, sans-serif; font-size: 16px; line-height: 140%; color: #222; font-weight: bold;}
+        .info-txt-top{margin-left: auto; margin-bottom: 0;
+            .flash{display: inline-block; vertical-align: top; margin: 0 10px; color: #e5e5e5;}
+        }
+    }
+    .wrap-chart-covid{width: 100%;float: left; margin-top: 15px;}
+    &.widget-covid-04{
+        .top-head-cov{border-bottom: 1px solid #e5e5e5; padding-bottom: 15px; 
+          
+        }
+    }   
+    .bottom-cov{width: 100%;float: left;display: flex;font-size: 12px; line-height: 14px; color: #757575; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e5e5e5;
+        .info-txt-bottom{
+            .flash{display: inline-block; vertical-align: top; margin: 0 10px; color: #e5e5e5;}
+        }
+    }
+}
+@import 'placeholder.scss';
+.box-placeholder{
+    &.widget-covid-024{
+      
+        .wrap-chart-covid .text{height: 250px; border-radius: 0;}
+      
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    .widget-covid-024{
+        .top-head-cov{font-size: 14px; line-height: 130%; flex-wrap: wrap;
+            .txt-top{font-size: 18px; line-height: 160%;}
+            .info-txt-top{margin-left: inherit; width: 100%; margin-top: 5px;
+                
+            }
+        }
+        .bottom-cov{font-size: 14px; line-height: 130%;}
+    }
+  } 
