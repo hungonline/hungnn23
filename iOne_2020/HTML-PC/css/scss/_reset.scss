@@ -14,22 +14,29 @@ body {
 }
 
 .container {
-    max-width: 1080px;margin: 0 auto;position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .width_common {
     width: 100%;
     float: left;
 }
-.flex{
-    display: flex;flex-wrap: wrap;
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
-.space-between{
+
+.space-between {
     justify-content: space-between;
 }
+
 .inner_section {
     padding-left: 15px;
     padding-right: 15px;
@@ -54,13 +61,15 @@ a {
 
 a:hover {
     text-decoration: none;
-    color:#FF4B2B;
+    color: #FF4B2B;
 }
-button{
+
+button {
     border: none;
     outline: none;
     cursor: pointer;
 }
+
 .icon-svg {
     width: 16px;
     height: 16px;
@@ -68,6 +77,7 @@ button{
     vertical-align: middle;
     color: var(--gray3)
 }
+
 .ic {
     width: 16px;
     height: 16px;
@@ -75,6 +85,7 @@ button{
     display: inline-block;
     vertical-align: middle;
 }
+
 img {
     border: 0px;
     font-size: 0;
@@ -88,7 +99,12 @@ li {
     list-style-type: none;
 }
 
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"], textarea, select {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
     background: #fff;
     width: 100%;
     height: 40px;
@@ -101,6 +117,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
+
 .form_main .input_element {
     width: 100%;
     float: left;
@@ -119,6 +136,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     font-size: 15px;
     outline: none
 }
+
 .btn_vne {
     background: #9F224E;
     border-radius: 3px;
@@ -134,6 +152,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
+
 .btn_ione {
     background: #F2C94C;
     border-radius: 2px;
@@ -146,16 +165,19 @@ input[type="text"], input[type="password"], input[type="email"], input[type="tel
     transition-duration: 200ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-    &:hover{
+
+    &:hover {
         background: #DFAB0E;
     }
 }
+
 .error_mess {
     color: #9f224e;
     font-size: 13px;
     line-height: 15px;
     margin-top: 5px;
 }
+
 .clear {
     clear: both;
     font-size: 0;
@@ -200,9 +222,11 @@ html {
 .txt_center {
     text-align: center;
 }
+
 .txt_left {
     text-align: left;
 }
+
 .txt_right {
     text-align: right;
 }
@@ -230,27 +254,35 @@ html {
 .txt_11 {
     font-size: 11px;
 }
+
 .txt_12 {
     font-size: 12px;
 }
+
 .txt_13 {
     font-size: 13px;
 }
+
 .txt_14 {
     font-size: 14px;
 }
+
 .txt_15 {
     font-size: 15px;
 }
+
 .txt_16 {
     font-size: 16px;
 }
+
 .txt_17 {
     font-size: 17px;
 }
+
 .txt_18 {
     font-size: 18px;
 }
+
 .txt_20 {
     font-size: 20px;
 }
@@ -278,6 +310,7 @@ html {
 .mt20 {
     margin-top: 20px;
 }
+
 .mt30 {
     margin-top: 30px;
 }
@@ -293,15 +326,19 @@ html {
 .mb20 {
     margin-bottom: 20px;
 }
+
 .mb24 {
     margin-bottom: 24px;
 }
+
 .mb30 {
-    margin-bottom: 30px!important;
+    margin-bottom: 30px !important;
 }
+
 .mb39 {
-    margin-bottom: 39px!important;
+    margin-bottom: 39px !important;
 }
+
 .mb40 {
     margin-bottom: 40px;
 }
@@ -336,7 +373,8 @@ html {
     width: 100%;
     background: var(--colormain);
 
-    img,video {
+    img,
+    video {
         object-position: center;
         object-fit: cover;
         position: absolute;
@@ -347,9 +385,10 @@ html {
         width: 100%;
         height: 100%;
     }
-    
+
 }
-.embed-container img{
+
+.embed-container img {
     object-position: center;
     object-fit: cover;
     position: absolute;
@@ -358,11 +397,13 @@ html {
     left: 0;
     right: 0;
     width: 100%;
-    height: 100%!important
+    height: 100% !important
 }
+
 .thumb_5x3 {
     padding-bottom: 60%;
 }
+
 .thumb_5x4 {
     padding-bottom: 73.3%;
 }
@@ -383,24 +424,29 @@ html {
     position: relative;
     overflow: hidden;
 }
+
 .play-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    svg{
+
+    svg {
         color: #fff;
         width: 60px;
         height: 60px;
     }
 }
+
 .thumb_5x5 {
     padding-bottom: 100%;
 }
+
 .thumb_2x3 {
     padding-bottom: 150%;
 }
+
 #to_top {
     width: 36px;
     height: 36px;
@@ -413,11 +459,13 @@ html {
     border-radius: 50%;
     z-index: 99;
     display: none;
-    svg{
+
+    svg {
         width: 23px;
         height: 23px;
         transform: rotate(-90deg);
     }
+
     i {
         color: #666;
     }
@@ -439,88 +487,5 @@ html {
 
     &:after {
         clear: both;
-    }
-}
-
-
-.ic-live {
-    display: inline-block;
-    vertical-align: middle;
-    color: #e78dac;
-}
-
-.ic-live:before {
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    display: block;
-    position: relative;
-    width: 8px;
-    height: 8px;
-    content: '';
-    margin-right: 5px;
-    vertical-align: initial;
-    -webkit-animation: live-pulse 1s infinite;
-    -moz-animation: live-pulse 1s infinite;
-    -o-animation: live-pulse 1s infinite;
-    animation: live-pulse 1s infinite;
-    float: left;
-}
-.ic-live:after {
-    content: 'Trực tiếp';
-    font-family: arial;
-    font-style: normal;
-    color: #9f224e;
-}
-.ic-live.not-start:before {
-    background: var(--gray3);
-    box-shadow: 0 0 0 rgba(117,117,117,0.4);
-    -webkit-animation: live-pulse-2 1s infinite;
-    -moz-animation: live-pulse-2 1s infinite;
-    -o-animation: live-pulse-2 1s infinite;
-    animation: live-pulse-2 1s infinite;
-}
-.ic-live.not-start:after {
-    content: 'Chưa bắt đầu';
-    color: #222;
-}
-@-webkit-keyframes live-pulse {
-    0% {
-        background-color: #e78dac
-    }
-
-    50% {
-        background-color: white
-    }
-
-    100% {
-        background-color: #e78dac
-    }
-}
-
-@-moz-keyframes live-pulse {
-    0% {
-        background-color: #e78dac
-    }
-
-    50% {
-        background-color: white
-    }
-
-    100% {
-        background-color: #e78dac
-    }
-}
-
-@keyframes live-pulse {
-    0% {
-        background-color: #e78dac
-    }
-
-    50% {
-        background-color: white
-    }
-
-    100% {
-        background-color: #e78dac
     }
 }
