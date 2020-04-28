@@ -47,11 +47,11 @@
             scrollContainer.scrollbar();
         }
     }
-	//resizeSite
-	function resizeSite() {
+    //resizeSite
+    function resizeSite() {
         var heightVideo = $('#player_playing').height() - 64;
         $('.detail_right .scrollbar-inner').height(heightVideo);
-	}
+    }
     //onCLick
     function onCLick() {
         $('.search-btn').click(function () {
@@ -64,10 +64,10 @@
                 $('.search-wrap').fadeOut();
             }
         });
-        $(".all-menu-tablet").click(function(){
+        $(".all-menu-tablet").click(function () {
             $(this).toggleClass("close-menu-tablet");
         });
-        $(".all-menu").click(function(){
+        $(".all-menu").click(function () {
             $(".main-nav").toggleClass("show-all-menu");
         });
         $('.dark_night').click(function () {
@@ -90,8 +90,8 @@
             //   delay: 5000,
             // },
             navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             pagination: {
                 el: '.swiper-pagination',
@@ -124,6 +124,16 @@
         });
 
     }
+    var header = document.getElementById("wrap-main-nav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("pin");
+        } else {
+            header.classList.remove("pin");
+        }
+    }
 
 
     $(function () {
@@ -132,7 +142,10 @@
         onCLick();
         slideSwiper();
     });
+    window.onscroll = function () {
+        myFunction()
+    };
     $(window).on('load resize', function () {
-		resizeSite()
-	});
+        resizeSite()
+    });
 })(jQuery);
