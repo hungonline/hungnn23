@@ -47,6 +47,12 @@
                         color: var(--colormain);
                     }
                 }
+
+                &:hover {
+                    a {
+                        color: #7043A9;
+                    }
+                }
             }
         }
     }
