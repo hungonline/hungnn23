@@ -11,10 +11,12 @@ body {
     font-size: 14px;
     line-height: 1.4;
     background: var(--white);
+    max-width: 575px;
+    margin: 0 auto;
 }
 
 .container {
-    max-width: 1080px;
+    padding: 0 24px;
     margin: 0 auto;
     position: relative;
 }
@@ -61,13 +63,7 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #FF4B2B;
-}
-
-button {
-    border: none;
-    outline: none;
-    cursor: pointer;
+    color: #004f8b;
 }
 
 .icon-svg {
@@ -75,15 +71,7 @@ button {
     height: 16px;
     fill: currentColor;
     vertical-align: middle;
-    color: var(--gray3)
-}
-
-.ic {
-    width: 16px;
-    height: 16px;
-    fill: #757575;
-    display: inline-block;
-    vertical-align: middle;
+    color: var(--colormain)
 }
 
 img {
@@ -99,83 +87,12 @@ li {
     list-style-type: none;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-    background: #fff;
-    width: 100%;
-    height: 40px;
-    border: 1px solid #e5e5e5;
-    font-size: 15px;
-    padding: 0 12px;
-    outline: none;
+input,
+textarea {
     font-family: arial;
-    transition-duration: 200ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.form_main .input_element {
-    width: 100%;
-    float: left;
-    position: relative
-}
-
-.form_main .input_main {
-    width: 100%;
-    float: left;
-    background: #FFFFFF;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    height: 40px;
-    padding: 0 10px;
-    color: #333;
-    font-size: 15px;
-    outline: none
-}
-
-.btn_vne {
-    background: #9F224E;
-    border-radius: 3px;
-    cursor: pointer;
+    font-size: 11px;
     border: none;
-    height: 40px;
-    font-size: 15px;
-    color: #fff;
-    font-weight: 700;
-    line-height: 40px;
-    padding: 0 35px;
-    transition-duration: 200ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.btn_ione {
-    background: #F2C94C;
-    border-radius: 2px;
-    cursor: pointer;
-    border: none;
-    height: 40px;
-    font-size: 14px;
-    line-height: 40px;
-    padding: 0 35px;
-    transition-duration: 200ms;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-
-    &:hover {
-        background: #DFAB0E;
-    }
-}
-
-.error_mess {
-    color: #9f224e;
-    font-size: 13px;
-    line-height: 15px;
-    margin-top: 5px;
+    background: none;
 }
 
 .clear {
@@ -202,13 +119,13 @@ h3,
 }
 
 h1 {
-    line-height: 24px;
+    line-height: 1.3;
 }
 
 h2,
 h3,
 h4 {
-    line-height: 16px;
+    line-height: 1.3;
 }
 
 html {
@@ -311,10 +228,6 @@ html {
     margin-top: 20px;
 }
 
-.mt30 {
-    margin-top: 30px;
-}
-
 .mb10 {
     margin-bottom: 10px;
 }
@@ -332,7 +245,7 @@ html {
 }
 
 .mb30 {
-    margin-bottom: 30px !important;
+    margin-bottom: 30px;
 }
 
 .mb39 {
@@ -341,6 +254,10 @@ html {
 
 .mb40 {
     margin-bottom: 40px;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
 }
 
 .space_bottom_10 {
@@ -364,6 +281,9 @@ html {
     padding-right: 0;
 }
 
+.border-radius-0 {
+    border-radius: 0 !important;
+}
 
 .thumb {
     display: block;
@@ -373,31 +293,16 @@ html {
     width: 100%;
     background: var(--colormain);
 
-    img,
-    video {
-        object-position: center;
+    img {
+        width: 100%;
+        float: left;
         object-fit: cover;
         position: absolute;
-        top: 0;
-        bottom: 0;
         left: 0;
-        right: 0;
+        top: 0;
         width: 100%;
         height: 100%;
     }
-
-}
-
-.embed-container img {
-    object-position: center;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100% !important
 }
 
 .thumb_5x3 {
@@ -416,35 +321,17 @@ html {
     }
 }
 
-.thumb-video {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.play-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-
-    svg {
-        color: #fff;
-        width: 60px;
-        height: 60px;
-    }
-}
-
 .thumb_5x5 {
     padding-bottom: 100%;
 }
 
 .thumb_2x3 {
     padding-bottom: 150%;
+}
+
+section,
+.section {
+    clear: both;
 }
 
 #to_top {
@@ -460,12 +347,6 @@ html {
     z-index: 99;
     display: none;
 
-    svg {
-        width: 23px;
-        height: 23px;
-        transform: rotate(-90deg);
-    }
-
     i {
         color: #666;
     }
@@ -474,6 +355,7 @@ html {
 .sticky {
     position: sticky;
     top: 0;
+    z-index: 9;
 }
 
 .clearfix {
@@ -487,5 +369,109 @@ html {
 
     &:after {
         clear: both;
+    }
+}
+
+
+.ic-live {
+    font-size: 9px;
+    text-transform: uppercase;
+    height: 15px;
+    line-height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #e78dac;
+}
+
+.ic-live:before {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    content: '';
+    margin-right: 5px;
+    vertical-align: initial;
+    -webkit-animation: live-pulse 1s infinite;
+    -moz-animation: live-pulse 1s infinite;
+    -o-animation: live-pulse 1s infinite;
+    animation: live-pulse 1s infinite;
+    float: left;
+}
+
+@-webkit-keyframes live-pulse {
+    0% {
+        background-color: #e78dac
+    }
+
+    50% {
+        background-color: white
+    }
+
+    100% {
+        background-color: #e78dac
+    }
+}
+
+@-moz-keyframes live-pulse {
+    0% {
+        background-color: #e78dac
+    }
+
+    50% {
+        background-color: white
+    }
+
+    100% {
+        background-color: #e78dac
+    }
+}
+
+@keyframes live-pulse {
+    0% {
+        background-color: #e78dac
+    }
+
+    50% {
+        background-color: white
+    }
+
+    100% {
+        background-color: #e78dac
+    }
+}
+
+.btn_vne {
+    background: #9F224E;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0 35px;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.btn_ione {
+    background: #F2C94C;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    padding: 0 35px;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+
+    &:hover {
+        background: #DFAB0E;
     }
 }

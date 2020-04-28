@@ -47,11 +47,11 @@
             scrollContainer.scrollbar();
         }
     }
-	//resizeSite
-	function resizeSite() {
+    //resizeSite
+    function resizeSite() {
         var heightVideo = $('#player_playing').height() - 64;
         $('.detail_right .scrollbar-inner').height(heightVideo);
-	}
+    }
     //onCLick
     function onCLick() {
         $('.search-btn').click(function () {
@@ -64,12 +64,7 @@
                 $('.search-wrap').fadeOut();
             }
         });
-        $(".all-menu-tablet").click(function(){
-            $(this).toggleClass("close-menu-tablet");
-        });
-        $(".all-menu").click(function(){
-            $(".main-nav").toggleClass("show-all-menu");
-        });
+
         $('.dark_night').click(function () {
             if (!$(this).hasClass('active')) {
                 $(this).addClass('active');
@@ -80,36 +75,36 @@
             }
         });
     }
+
+    function viewMore() {
+        $('.js-view-more').on('click', function (e) {
+            e.preventDefault();
+            $(this).closest('.js-anchor').addClass('active')
+        });
+    }
     //scrollBar
     function slideSwiper() {
         var slide_style_slide = new Swiper('.box_style_slide .swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 15,
+            slidesPerView: 1,
+            spaceBetween: 0,
             loop: true,
             // autoplay: {
             //   delay: 5000,
             // },
             navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            // breakpoints: {
-            //   1190: {
-            //     slidesPerView: 3,
-            //   },
-            //   768: {
-            //     slidesPerView: 2,
-            //   }
-            // }
+
         });
 
         /**SLIDE SECTION PHOTO**/
         var swiper_slide_photo = new Swiper('#js_slider_photo', {
-            slidesPerView: 'auto',
+            slidesPerView: 1,
             spaceBetween: 0,
             loop: true,
             centeredSlides: true,
@@ -131,8 +126,9 @@
         scrollBar();
         onCLick();
         slideSwiper();
+        viewMore();
     });
     $(window).on('load resize', function () {
-		resizeSite()
-	});
+        resizeSite()
+    });
 })(jQuery);
