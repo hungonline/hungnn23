@@ -92,7 +92,7 @@ body::-webkit-scrollbar-track {
 
     .description {
         color: var(--gray1);
-        margin-bottom: 13px;
+        margin-bottom: 15px;
     }
 
     .status {
@@ -329,6 +329,7 @@ body::-webkit-scrollbar-track {
             color: #282828;
             background: #fff;
             position: relative;
+            cursor: default;
         }
     }
 }
@@ -347,6 +348,7 @@ body::-webkit-scrollbar-track {
         padding-top: 2px;
         position: relative;
         z-index: 2;
+        display: flex;
 
         li {
             display: inline-block;

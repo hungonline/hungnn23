@@ -10,16 +10,17 @@ $color-solid:#E5E5E5;
   --font1: 'Barlow';
   --font2: 'Lora';
   --vne-color: #9F224E;
+  --ione-color: #7043A9;
   --blue: #076DB6;
   --white: #fff;
   --colormain: #222222;
   --color1: #666;
-  --white:#fff;
+  --white: #fff;
   --gray: #CCC;
   --gray1: #4F4F4F;
   --gray2: #BDBDBD;
   --gray3: #757575;
-  --bg-detail:#FCFAF6;
+  --bg-detail: #FCFAF6;
   --bg-agray: #f7f7f7;
   --bg-agray1: #E5E5E5;
   --bg-agray2: #F6F7FB;
@@ -29,37 +30,43 @@ $color-solid:#E5E5E5;
 
 @mixin cubic-transition($delay, $duration, $property) {
   transition: {
-      duration: $duration;
-      property: $property;
-      timing-function: cubic-bezier(.7,1,.7,1);
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
   }
 }
+
 /* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
-%has_transition{
+%has_transition {
   @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
 }
-%flexbox{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-}
-.flexbox{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-}
-.no-flexbox{display: inherit;}
 
-%clearfix{
-&:after{
-      content: '';
-      display: table;
-  clear: both;
+%flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
+
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.no-flexbox {
+  display: inherit;
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 

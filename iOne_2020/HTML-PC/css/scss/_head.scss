@@ -14,6 +14,10 @@
     z-index: 989;
     height: 60px;
 
+    .icon-svg {
+        color: var(--gray1);
+    }
+
     &.pin {
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     }
@@ -50,7 +54,7 @@
 
                 &:hover {
                     a {
-                        color: #7043A9;
+                        color: var(--ione-color);
                     }
                 }
             }
