@@ -4,6 +4,21 @@
     .sticky {
         top: 70px
     }
+
+    .box_category {
+        float: left;
+        width: 100%;
+    }
+
+    .title-box-category {
+        font: bold 18px/1.4 var(--font2);
+        margin-bottom: 25px;
+        position: relative;
+        background: url(images/icons/star1.svg) no-repeat 0;
+        background-size: 15px;
+        padding-left: 25px;
+    }
+
 }
 
 .box-xemnhieunhat {
