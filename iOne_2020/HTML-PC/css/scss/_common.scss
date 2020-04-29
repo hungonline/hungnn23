@@ -196,6 +196,7 @@ body::-webkit-scrollbar-track {
         .thumb {
             opacity: .1;
             animation: fading 1.5s infinite;
+            background: var(--colormain);
         }
     }
 
