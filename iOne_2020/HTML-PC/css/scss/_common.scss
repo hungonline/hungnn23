@@ -659,12 +659,13 @@ body::-webkit-scrollbar-track {
 }
 
 // Reset Comment
-.box_comment_vne {
+.box_comment_vne,
+.box_comment_ione {
     margin-bottom: 24px !important;
 
     .ykien_vne {
         background: url(images/icons/star1.svg) no-repeat 0;
-        font: bold 18px/1.4 var(--font2);
+        font: bold 24px/1.4 var(--font2);
         padding: 4px 0 4px 24px;
         color: var(--colormain);
     }
@@ -781,6 +782,10 @@ body::-webkit-scrollbar-track {
     }
 
     .paging .button-page {
+        svg {
+            display: none !important
+        }
+
         .btn-page {
             border: 1px solid var(--border) !important;
         }
@@ -789,32 +794,33 @@ body::-webkit-scrollbar-track {
             color: var(--colormain) !important;
         }
     }
+
 }
 
-.head_comment {
-    align-items: center;
+// .head_comment {
+//     align-items: center;
 
-    .ykien_vne {
-        width: 40% !important;
-        font-size: 24px;
-    }
+//     .ykien_vne {
+//         width: 40% !important;
+//         font-size: 24px;
+//     }
 
-    .filter_coment {
-        width: 60% !important;
-        text-align: right;
-        margin-top: 0 !important;
-        border-bottom: 0;
-        padding-bottom: 0;
+//     .filter_coment {
+//         width: 60% !important;
+//         text-align: right;
+//         margin-top: 0 !important;
+//         border-bottom: 0;
+//         padding-bottom: 0;
 
-        a {
-            margin: 0 0 0 15px !important;
+//         a {
+//             margin: 0 0 0 15px !important;
 
-            &::after {
-                display: none;
-            }
-        }
-    }
-}
+//             &::after {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
 
 // End Reset Comment
 
