@@ -1,0 +1,231 @@
+.dark_mode {
+    --bg-agray2: #000000;
+    --white: #222;
+    --border: #282828;
+    --colormain: #fff;
+    --gray1: #e5e5e5;
+    --bg-agray1: #222;
+    background: var(--bg-agray2);
+
+    .wrap-main-nav {
+        border-top: 1px solid var(--border);
+        background: var(--bg-agray2);
+    }
+
+    .box_comment_vne {
+        --border: rgba(255, 255, 255, 0.36);
+    }
+
+    .cate_top_video {
+        background: #000000;
+
+        .head_cate .category .cate {
+            border: 1px solid #222222;
+        }
+    }
+}
+
+.title_star {
+    font: bold 24px/1.4 var(--font2);
+    color: #282828;
+    margin-bottom: 20px;
+    position: relative;
+    background: url(images/icons/star1.svg)no-repeat 0;
+    padding-left: 18px;
+    display: flex;
+    align-items: center;
+
+    a {
+        padding: 0 15px 0 10px;
+    }
+
+    &.line {
+        a {
+            color: #282828;
+            position: relative;
+        }
+    }
+}
+
+.head_cate {
+    width: 100%;
+
+    .title_star {
+        width: 100%;
+    }
+
+    .category-list {
+        margin-right: -24px;
+        margin-bottom: 16px;
+        overflow-x: scroll;
+        @include hide-scrollbar;
+    }
+
+    ul {
+        white-space: nowrap;
+
+        li {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid rgba(196, 196, 196, 1);
+            border-radius: 4px;
+            margin-right: 5px;
+
+            &:last-child {
+                margin-right: 24px;
+            }
+
+            >* {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 160%;
+
+            }
+        }
+    }
+}
+
+// ================================
+
+.box-placeholder {
+    .thumb-art {
+        .thumb {
+            opacity: .1;
+            animation: fading 1.5s infinite;
+        }
+    }
+
+    .number {
+        background: var(--colormain);
+        height: 20px;
+        width: 25px;
+        opacity: .1;
+        animation: fading 1.5s infinite;
+    }
+
+    .title-news,
+    .description,
+    .status {
+        background: var(--colormain);
+        opacity: .1;
+        animation: fading 1.5s infinite;
+    }
+
+    .title-news {
+        height: 30px;
+    }
+
+    .description {
+        height: 50px;
+        width: 85%;
+    }
+
+    .status {
+        height: 20px;
+        width: 60%;
+    }
+}
+
+.pagination {
+    padding: 54px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 100%;
+    justify-content: center;
+
+    a {
+        color: var(--gray1);
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        border: 1px solid #E5E5E5;
+        display: inline-block;
+        margin: 0 3px;
+
+        &.active,
+        &:hover {
+            background: var(--gray1);
+            color: #fff;
+            border: 1px solid var(--gray1);
+
+            svg {
+                color: #fff;
+            }
+        }
+    }
+
+    .pagination_btn {
+        line-height: 32px;
+    }
+}
+
+/**Breakcrum**/
+.breadcrumb {
+    float: left;
+
+    li {
+        position: relative;
+        display: inline-block;
+        line-height: 16px;
+        font-size: 14px;
+        color: var(--gray3);
+        margin-right: 25px;
+
+        h3,
+        h4 {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        a {
+            display: inline-block;
+            color: var(--gray3);
+
+        }
+
+        &:after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-top: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+            transform: rotate(45deg);
+            position: absolute;
+            left: -19px;
+            top: 5px;
+        }
+
+        &:first-child {
+            a {
+                color: var(--colormain);
+            }
+
+            &:after {
+                content: none;
+            }
+
+        }
+    }
+}
+
+.location-stamp {
+    color: var(--gray3) !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 12px;
+    letter-spacing: -0.5px;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        width: 7px;
+        height: 1px;
+        background: var(--gray3);
+        right: -8px;
+    }
+}

@@ -6,7 +6,11 @@ body {
 
 .wrap-main-nav .container {
     max-width: 1741px;
-    padding: 0 10px;
+    padding: 0 30px;
+
+    @media (max-width: 1080px) {
+        padding: 0 10px;
+    }
 }
 
 .cate_top_video {
@@ -17,7 +21,11 @@ body {
     .container {
         max-width: 1741px;
         margin: 0 auto;
-        padding: 0 10px;
+        padding: 0 30px;
+
+        @media (max-width: 1080px) {
+            padding: 0 10px;
+        }
     }
 
     .head_cate {
@@ -107,7 +115,11 @@ body {
 .top_detail {
     max-width: 1741px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 30px;
+
+    @media (max-width: 1080px) {
+        padding: 0 10px;
+    }
 
     .warp_video {
         float: left;

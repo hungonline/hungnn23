@@ -1,0 +1,11 @@
+@import 'var.scss';
+
+.folder_photo {
+	.container {
+		padding: 0;
+	}
+
+	.item-news:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
