@@ -5,55 +5,55 @@
 		overflow: hidden;
 	}
 
-	.banner_home {
-		max-width: 1920px;
-		margin: 0 auto;
+	// .banner_home {
+	// 	max-width: 1920px;
+	// 	margin: 0 auto;
 
-		&:before {
-			content: '';
-			height: 633px;
-			position: absolute;
-			left: -4000px;
-			width: 4000px;
-			background: #FEDBD7;
-			top: 0;
-		}
+	// 	&:before {
+	// 		content: '';
+	// 		height: 633px;
+	// 		position: absolute;
+	// 		left: -4000px;
+	// 		width: 4000px;
+	// 		background: #FEDBD7;
+	// 		top: 0;
+	// 	}
 
-		&:after {
-			content: '';
-			height: 657px;
-			position: absolute;
-			width: 4000px;
-			right: -4000px;
-			background: #FEDBD7;
-			top: 0;
-		}
-	}
+	// 	&:after {
+	// 		content: '';
+	// 		height: 657px;
+	// 		position: absolute;
+	// 		width: 4000px;
+	// 		right: -4000px;
+	// 		background: #FEDBD7;
+	// 		top: 0;
+	// 	}
+	// }
 
-	.page__heading {
-		max-width: 1920px;
-		margin: 0 auto;
+	// .page__heading {
+	// 	max-width: 1920px;
+	// 	margin: 0 auto;
 
-		&:before {
-			content: '';
-			height: 207px;
-			position: absolute;
-			left: -4000px;
-			width: 4000px;
-			background: #FFEDEB;
-			top: 0;
-		}
+	// 	&:before {
+	// 		content: '';
+	// 		height: 207px;
+	// 		position: absolute;
+	// 		left: -4000px;
+	// 		width: 4000px;
+	// 		background: #FFEDEB;
+	// 		top: 0;
+	// 	}
 
-		&:after {
-			content: '';
-			height: 226px;
-			position: absolute;
-			width: 4000px;
-			right: -4000px;
-			background: #FFEDEB;
-			top: 0;
-		}
-	}
+	// 	&:after {
+	// 		content: '';
+	// 		height: 226px;
+	// 		position: absolute;
+	// 		width: 4000px;
+	// 		right: -4000px;
+	// 		background: #FFEDEB;
+	// 		top: 0;
+	// 	}
+	// }
 }
 
 @media (max-width: 1199px) {
@@ -327,9 +327,10 @@
 }
 
 @media (max-width: 767px) {
-	body{
+	body {
 		background: #E6E0D5;
 	}
+
 	.page_dk .info_home {
 		margin-top: 20px;
 	}
@@ -453,7 +454,7 @@
 		top: -15px;
 		background-size: 98px;
 		background-position: right top;
-	
+
 	}
 
 	.vote_hot .inner:after {
@@ -558,15 +559,24 @@
 			a {
 				margin: 5px 0 0 50px
 			}
-			img{display: none;}
-			.logo-mobile{display: block;width: 280px;}
+
+			img {
+				display: none;
+			}
+
+			.logo-mobile {
+				display: block;
+				width: 280px;
+			}
 		}
-		.tai-tro{
+
+		.tai-tro {
 			display: flex;
 			position: absolute;
 			top: 10px;
 			left: 170px;
 		}
+
 		.adress {
 			font-size: 14px;
 			left: 154px;
@@ -600,7 +610,7 @@
 		.col_right {
 			width: calc(100% + 30px);
 			margin: 0 -15px;
-			background:#064343;
+			background: #064343;
 			padding: 5px 0;
 
 			.nav {
@@ -623,7 +633,10 @@
 				padding-right: 10px;
 
 				li {
-					a{color: #fff;}
+					a {
+						color: #fff;
+					}
+
 					&:first-child {
 						a {
 							padding-left: 15px;
@@ -634,14 +647,21 @@
 		}
 	}
 
-	.the_le_home,.vong_sk_home  {
+	.the_le_home,
+	.vong_sk_home {
 		.title_line {
 			text-align: left;
+
 			span {
-				&::before,&::after{display: none;}
+
+				&::before,
+				&::after {
+					display: none;
+				}
 			}
 		}
 	}
+
 	.title_line {
 		margin-bottom: 20px;
 	}
@@ -871,6 +891,7 @@
 	.section_footer {
 		padding: 30px 0;
 		background: url(images/graphics/bg-footer.png);
+
 		.container {
 			display: block;
 			text-align: center;
@@ -1418,9 +1439,11 @@
 }
 
 @media (max-width: 767px) {
-	.comment-stream.bg_color{
-		padding: 0;background: none;
+	.comment-stream.bg_color {
+		padding: 0;
+		background: none;
 	}
+
 	.page_thele .gird_flex {
 		margin-bottom: 30px;
 	}
@@ -1443,31 +1466,47 @@
 		flex-shrink: 0;
 		align-self: baseline;
 	}
-	.thumb_full{margin-bottom: 10px;}
+
+	.thumb_full {
+		margin-bottom: 10px;
+	}
+
 	.box_stream .art_item {
 		.title_news {
 			font-size: 16px !important;
 		}
 	}
 }
+
 @media (max-width: 410px) {
-	.section_header{
-		.tai-tro{
+	.section_header {
+		.tai-tro {
 			font-size: 13px;
-			img{width: 75px;}
+
+			img {
+				width: 75px;
+			}
 		}
 	}
 }
 
 @media (max-width: 380px) {
-	.section_header{
-		.lbl_logo a{margin: 5px 0 0 43px;}
-		.tai-tro{
+	.section_header {
+		.lbl_logo a {
+			margin: 5px 0 0 43px;
+		}
+
+		.tai-tro {
 			left: initial;
 			right: 10px;
-			img{width: 65px;margin-right: 4px;}
+
+			img {
+				width: 65px;
+				margin-right: 4px;
+			}
 		}
 	}
+
 	.page_dk .form__footer .col:first-child {
 		padding: 0 15px;
 	}
