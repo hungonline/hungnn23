@@ -29,6 +29,11 @@ body::-webkit-scrollbar-track {
     margin-right: 24px;
     border-radius: 2px;
     overflow: hidden;
+
+    @media (max-width:979px) {
+        width: 200px;
+        margin-right: 15px;
+    }
 }
 
 .item-news {
@@ -93,6 +98,10 @@ body::-webkit-scrollbar-track {
     .description {
         color: var(--gray1);
         margin-bottom: 15px;
+
+        a {
+            color: var(--gray1);
+        }
     }
 
     .status {
@@ -337,12 +346,13 @@ body::-webkit-scrollbar-track {
 
 .head_cate {
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 
     .title_star {
         margin: 0 32px 0 0;
         position: relative;
         z-index: 2;
+        font-size: 34px;
     }
 
     ul {
@@ -531,6 +541,7 @@ body::-webkit-scrollbar-track {
 
     .pagination_btn {
         line-height: 32px;
+
     }
 }
 

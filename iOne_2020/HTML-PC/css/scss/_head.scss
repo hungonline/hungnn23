@@ -192,10 +192,31 @@
                 }
             }
 
+            &::after {
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                background: rgba(0, 0, 0, .75);
+                bottom: -100vh;
+                left: 0;
+                content: '';
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                transition-duration: 700ms;
+                transition-property: all;
+                transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+            }
+
             &.show-all-menu {
                 top: 100%;
                 visibility: visible;
                 opacity: 1;
+
+                &::after {
+                    opacity: 1;
+                    visibility: visible;
+                }
             }
         }
     }

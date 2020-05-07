@@ -1,0 +1,24 @@
+/*background: url("images/graphics/demo.gif") no-repeat 0 0;*/
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+/* line 12, E:/SVN/PR_2017/SEAGames29/Spec/HTML/assets/css/_var.scss */
+#to_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.1); }
+  /* line 23, E:/SVN/PR_2017/SEAGames29/Spec/HTML/assets/css/_var.scss */
+  #to_top .ic {
+    color: #999;
+    vertical-align: middle;
+    line-height: 30px; }
+  /* line 24, E:/SVN/PR_2017/SEAGames29/Spec/HTML/assets/css/_var.scss */
+  #to_top::after {
+    display: none; }
+
+/*# sourceMappingURL=_var.css.map */

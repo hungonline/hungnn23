@@ -108,7 +108,7 @@
 
     .item {
         width: 50%;
-        padding: 24px 15px;
+        padding: 24px 15px 45px 15px;
         border-right: 1px solid var(--border);
 
         &:last-child {
@@ -121,13 +121,17 @@
         margin-bottom: 0;
         padding-bottom: 0;
 
+        .thumb-art {
+            margin-bottom: 15px;
+        }
+
         .title-news {
             font-size: 20px;
         }
     }
 
     &_2 {
-        padding: 24px 0;
+        padding: 24px 0 35px 0;
 
         .item {
             padding: 0 15px;
@@ -185,11 +189,11 @@
             margin-bottom: 0;
 
             a {
-                padding: 80px 20px 15px 20px;
+                padding: 80px 20px 10px 20px;
                 display: block;
 
                 @media (max-width: 1025px) {
-                    padding: 50px 15px 15px 15px;
+                    padding: 50px 15px 10px 15px;
                 }
 
                 @media (max-width: 860px) {
@@ -199,7 +203,11 @@
         }
 
         .status {
-            padding: 0 20px 20px 20px;
+            padding: 0 20px 30px 20px;
+
+            * {
+                color: var(--bg-agray1)
+            }
 
             @media (max-width: 1025px) {
                 padding: 0 15px 15px 15px;

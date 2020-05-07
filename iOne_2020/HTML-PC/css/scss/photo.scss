@@ -1,5 +1,9 @@
 @import "var.scss";
 
+.wrap-main-nav {
+    border-bottom: 0;
+}
+
 .cate_top_photo {
     background: var(--white);
     text-align: center;
@@ -43,7 +47,7 @@
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 
             * {
-                color: #fff;
+                color: #e5e5e5;
             }
         }
 
@@ -81,6 +85,7 @@
                 margin-left: 40px;
                 flex-grow: 3;
                 text-align: right;
+                font-size: 0;
 
                 a {
                     background: #222222;
@@ -90,6 +95,7 @@
                     height: 30px;
                     line-height: 30px;
                     text-align: center;
+                    margin-right: 4px;
                 }
 
                 @media (max-width: 860px) {
@@ -144,6 +150,10 @@
                     .status {
                         .share_bookmard {
                             text-align: left;
+
+                            a {
+                                margin-right: 8px;
+                            }
                         }
                     }
                 }

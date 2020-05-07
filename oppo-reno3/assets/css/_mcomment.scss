@@ -1,0 +1,210 @@
+.txt_blue {
+  color: #004f8b!important;
+}
+  .ykien_vne{
+    background: #eaeaea;
+    position: relative;
+    text-rendering: geometricPrecision;
+    padding: 5px 10px;
+    font: 400 15px/26px arial;
+    color: #0064b2;
+    .left {
+        white-space: nowrap;
+    }
+  }
+  .filter_coment_mobile {
+    float: right;
+    position: relative;
+    /*.ic{
+      display: inline-block;
+      vertical-align: middle;
+    }*/
+    .sub_filter_cmt {
+      width: 150px;
+      background: #fff;
+      border: 1px solid #d9d9d9;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      a{
+        display: block;
+        padding: 5px 10px;
+      }
+    }
+}
+.comment_item{
+  padding: 10px;
+  &.hight_light{
+    background: #f8f8f8;
+  }
+    p {
+      padding-bottom: 2px;
+      font: 400 16px/22px arial;
+        word-wrap: break-word;
+  }
+    .user_status{
+        .left{
+            &.txt_11{font-size: 14px; padding-top: 4px;}
+        }
+    }     
+  .avata_coment {
+    width: 24px;
+    margin: 0 10px 0 0;
+    float: left;
+  }
+  .block_like_web {
+    width: 100%;
+    float: right;
+    text-align: right;
+    padding: 5px 0 0;
+    font-size: 12px;
+    position: relative;
+    a{
+      font-size: 12px;
+    /*&.share_cmt_fb{
+      .ic{
+        font-size: 8px;
+      }
+    }*/
+    }
+    /*.block_share_cmt_fb{
+      position: absolute; top: 24px; right: 0;
+      display: none;
+      z-index: 3;
+      .item_social{
+        float: right;
+        margin: 0 0 0 10px;
+      }
+    }*/
+  }
+  a.link_thich {
+    position: relative;
+    color: #004F8B!important;
+    /*.ic{
+      color: $vne_color;
+      font-size: 15px;
+    }*/
+      .ic-like,.ic-unlike{
+      width: 15px;height: 15px;background-position: -338px -47px;margin-top: -4px;
+    }
+      .ic-unlike{
+     background-position: -338px -47px; /*margin-top: 0;*/ filter: grayscale(1); opacity: 0.5; 
+    }
+    &.unlike{
+      color: #858585!important;
+      /*.ic{
+        color: #858585!important;
+      }*/
+        b{color: #004F8B!important;}
+    }
+  /*  &::after{
+      width:1px;
+      height: 14px;
+      background: #d9d9d9;
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px 0 10px;
+    }*/
+      b{font-size: 14px;}
+    }
+}
+.icon_show_full_comment {
+    display: inline-block;
+    margin: 0 0 0 3px;background: none;
+    /*.ic{
+      color: #999;
+    }*/
+}
+
+.box_comment_vne .sub_comment {
+    padding: 5px 0 0 20px;
+
+    .sub_comment_item {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px dotted #e2e2e3;
+    }
+}
+.box_comment_vne .comment_item .txt_view_more {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    a{
+      /*text-decoration: underline;*/
+        font-weight: 700;
+    }
+}
+.box_comment_vne .reply_name{color: #999;
+    font-style: italic;
+  }
+  .box_comment_vne .view_more_coment {
+    width: 100%;
+    float: left;
+    height: 32px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;  
+    &::before{
+      width: 100%; height: 1px; background: #eee; content: "";
+      position: absolute; top: 50%; left: 0;
+    }
+    a{
+      background: #eee;
+      padding: 0 20px;
+      font: 700 12px/32px arial;
+      color: #666;
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+}
+.input_comment {
+    padding: 10px;
+    background: #f5f5f5;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+
+    textarea {
+      font: 400 16px/18px arial;
+      background: #fff;
+      border: 1px solid #c5c5c5;
+      width: 100%;
+      height: 70px;
+      color: #666;
+      overflow: hidden;
+      padding: 5px 0 0 5px;
+    }
+    .avata_coment {
+        width: 24px;
+        margin: 0 10px 0 0;
+        float: left;
+        height: 24px;
+        img{
+          width: 24px; height: 24px;
+        }
+    }
+    span{display: inline-block; margin-top: 4px;}
+    &.reply_input_comment{
+      background: none;
+      padding: 5px 0;
+    }
+}
+.btn_send_comment{float: right; margin-top: 10px;}
+.block_relative{position: relative;}
+.like_google {
+    position: absolute;
+    right: 75px;
+    top: 5px;
+    width: auto;
+    z-index: 99;
+    .google_name {
+      cursor: pointer;
+      font: 700 14px arial;
+      min-width: 80px;
+      padding: 5px;
+  }
+}

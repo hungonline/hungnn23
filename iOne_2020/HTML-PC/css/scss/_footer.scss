@@ -1,28 +1,39 @@
-.footer{
+.footer {
     background: #121212;
-    .footer_top{
+
+    .footer_top {
         border-bottom: 2px solid rgba(255, 255, 255, 0.1);
         padding: 100px 0 50px;
-        
+
         align-items: center;
-        .logo_left{
+
+        .logo_left {
             margin-right: 100px;
-            a{display: inline-block;margin-right: 48px;}
+
+            a {
+                display: inline-block;
+                margin-right: 48px;
+            }
         }
-        .contact{
-            font: bold 16px var(--font2);color: #fff;
+
+        .contact {
+            font: bold 16px var(--font2);
+            color: #fff;
             flex-grow: 3;
             text-align: right;
         }
     }
-    .footer_copyright{
-        padding: 36px 0;
+
+    .footer_copyright {
+        padding: 25px 0 36px 0;
         justify-content: space-between;
         align-items: center;
-        color: #fff;font-family: var(--font1);
+        color: #fff;
+        font-family: var(--font1);
     }
-    .social{
-        a{
+
+    .social {
+        a {
             background: #4F4F4F;
             border-radius: 50%;
             text-align: center;
@@ -30,24 +41,36 @@
             height: 36px;
             line-height: 33px;
             color: #fff;
-            display: inline-block;margin-left: 6px;
-            svg{
+            display: inline-block;
+            margin-left: 6px;
+
+            svg {
                 color: #fff;
             }
         }
     }
-    @media (max-width: 860px){
-        .footer_top{
+
+    @media (max-width: 860px) {
+        .footer_top {
             padding: 40px 0;
-            .logo_left{margin-right: 0;
-                a{margin-right: 20px;}
+
+            .logo_left {
+                margin-right: 0;
+
+                a {
+                    margin-right: 20px;
+                }
             }
         }
     }
 }
-.banner-bottom-home{
+
+.banner-bottom-home {
     margin-top: 15px;
     background: var(--bg-agray2);
-    display: flex; width: 100%; justify-content: center;
-    transition: none 0s ease 0s; padding: 30px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    transition: none 0s ease 0s;
+    padding: 30px 10px;
 }

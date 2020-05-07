@@ -1,7 +1,7 @@
 @import "var.scss";
 
 body {
-    background: #f7f7f7;
+    background: #F4F4F4;
 }
 
 .wrap-main-nav .container {
@@ -116,6 +116,8 @@ body {
     max-width: 1741px;
     margin: 0 auto;
     padding: 0 30px;
+    position: relative;
+    z-index: 2;
 
     @media (max-width: 1080px) {
         padding: 0 10px;
@@ -260,11 +262,11 @@ body {
         .content {
             background: var(--white);
             border-radius: 0px 0px 4px 4px;
-            padding: 16px;
+            padding: 15px;
         }
 
         .title-news {
-            font: 400 16px/1.3 var(--font1);
+            font: 400 16px/1.3 Arial;
             overflow: hidden;
             height: 40px;
             text-overflow: ellipsis;
@@ -343,6 +345,15 @@ body {
             font-size: 24px;
         }
 
+        .description {
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical
+        }
+
         .status {
             padding-bottom: 22px;
             margin-bottom: 24px;
@@ -391,7 +402,7 @@ body {
 
                     .thumb-art {
                         width: 323px;
-                        margin-right: 16px;
+                        margin-right: 15px;
                     }
 
                     .title-news {
@@ -411,6 +422,7 @@ body {
 
                         span {
                             margin-right: 10px;
+                            margin-bottom: 5px;
                         }
                     }
                 }

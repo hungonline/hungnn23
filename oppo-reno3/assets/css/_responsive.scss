@@ -1,0 +1,218 @@
+@media screen and (max-width: 1169px) {
+  .link_taitro {
+    display: none;
+  }
+  .col_left_small {
+    display: none;
+  }
+  .col_right_large {
+    width: 100%;
+  }
+  .row_with_line::before {
+    display: none;
+  }
+  .main_menu_seagame {
+    ul {
+      li {
+        padding-right: 23px;
+        &:first-child {
+          a {
+            &::before {
+              left: -25px;
+              border-bottom: 50px solid #000;
+              border-left: 25px solid transparent;
+            }
+          }
+        }
+      }
+    }
+    &::after {
+      right: -1490px;
+    }
+  }
+
+  /**VIDEO ANH**/
+  .section_top_media {
+    padding-bottom: 0;
+  }
+  .video_info_right {
+    width: 40%;
+  }
+  .list_news_media {
+    margin-left: -20px;
+    .art_item {
+      padding-left: 20px;
+      width: 24.7125%;
+    }
+  }
+
+  .row_lichthidau {
+    .col_left_small {
+      display: block;
+      width: 68%;
+    }
+    .chose_lichthidau {
+      margin-bottom: 0;
+      background: #f7f7f7 url(images/graphics/arrow_select.png) no-repeat 98%
+        12px;
+    }
+    .sticky_inner {
+      position: static !important;
+      width: 100% !important;
+    }
+    .block_footbal {
+      padding-top: 0;
+    }
+  }
+  .item_date_bongda {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main_menu_seagame ul {
+    float: left;
+  }
+
+  .box_ads_top,
+  .col_right_sea {
+    display: none;
+  }
+  .col_left_sea,
+  .col_left_medium {
+    width: 100%;
+  }
+  .col_left_sea {
+    padding-right: 0;
+  }
+  .block_topstory_hinhanh .art_item_top {
+    padding-right: 0;
+  }
+
+  // .main_menu_seagame {
+  //   padding-left: 0;
+  //   overflow-x: scroll;
+  //   -webkit-overflow-scrolling: touch;
+  //   white-space: nowrap;
+  //   -webkit-backface-visibility: hidden;
+  //   backface-visibility: hidden;
+  //   &::after {
+  //     display: none;
+  //   }
+  //   ul {
+  //     display: flex;
+  //     vertical-align: middle;
+  //     width: auto;
+  //     white-space: nowrap;
+  //     li {
+  //       a {
+  //         &::before,
+  //         &::after {
+  //           display: none;
+  //         }
+  //       }
+  //       &.menu_hide {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .art_item_top {
+    width: 100%;
+  }
+  .block_topstory_hinhanh .top_news_right {
+    margin: 0 -10px;
+  }
+  .block_topstory_hinhanh .top_news_right .art_item {
+    width: 25%;
+    padding: 0 10px;
+  }
+  .block_lichbongda {
+    margin-top: 0;
+  }
+
+  .list_news_seagame {
+    .thumb_art.thumb_medium {
+      width: 26.483%;
+    }
+  }
+
+  .block_topstory_hinhanh .top_news_right {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  .ft-botl {
+    display: block;
+  }
+
+  .list_news_media {
+    .art_item {
+      width: 24.6125%;
+    }
+  }
+
+  .row_lichthidau {
+    .col_left_small {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 860px) {
+  .page_live #col_750,
+  .page_live .box_timestamp,
+  .page_live .col_300 {
+    width: 100%;
+  }
+  .page_live #col_300 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block_topstory_hinhanh {
+    .art_item_top {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .top_news_right {
+      width: 100%;
+      max-width: 100%;
+      float: left;
+      .art_item {
+        width: 33.3333333%;
+        margin-bottom: 0;
+      }
+      .thumb_art.thumb_medium {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+      .title_news_res {
+        clear: both;
+        height: auto;
+        margin-top: 0;
+      }
+    }
+  }
+  .ft-botl {
+    display: none;
+  }
+  .ft-botm {
+    display: block;
+  }
+
+  .list_news_media {
+    .art_item {
+      width: 24.5125%;
+    }
+  }
+
+  .item_match_bongda .col_match.col_group,
+  .item_match_bongda .col_match.col_tran {
+    display: none;
+  }
+  .item_match_bongda .col_match.col_team {
+    width: 80%;
+  }
+}
