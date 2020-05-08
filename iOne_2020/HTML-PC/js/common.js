@@ -135,12 +135,37 @@
         }
     }
 
+    //magnificPopup
+    function magnificPopup() {
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true,
+            mainClass: 'mfp-with-zoom',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            removalDelay: 300,
+        });
+        $('.magnific_popup .magnific_thumb').magnificPopup({
+            type: 'image',
+            midClick: true,
+            mainClass: 'mfp-with-zoom',
+            gallery: {
+                enabled: false,
+            }
+        });
+
+    }
+
 
     $(function () {
         backToTop();
         scrollBar();
         onCLick();
         slideSwiper();
+        magnificPopup();
     });
     window.onscroll = function () {
         myFunction()

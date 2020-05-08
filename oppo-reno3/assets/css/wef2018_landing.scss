@@ -173,10 +173,10 @@ $color_hover: #004f8b;
 
 .section_container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1130px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   clear: both;
 }
@@ -420,8 +420,8 @@ $color_hover: #004f8b;
 .main_menu_seagame {
   position: relative;
   background: #fff;
-  margin: 0 -10px;
-  width: calc(100% + 20px);
+  margin: 0 -15px;
+  width: calc(100% + 30px);
   padding: 10px 10px 5px 10px;
 
   .logo {
@@ -2019,7 +2019,7 @@ div#information-content {
   margin-top: 30px;
 
   .list_news_tinkhac .art_item {
-    width: 20%;
+    width: 25%;
     padding: 0 10px;
   }
 }
@@ -7840,6 +7840,7 @@ figcaption p,
 .footer .section_container,
 section:not(.section_top) .section_container {
   background: #fff;
+  overflow: hidden;
 }
 
 .footer {
@@ -8093,8 +8094,8 @@ section:not(.section_top) .section_container {
   }
 
   &.folder {
-    margin: 0px -10px 20px -10px;
-    width: calc(100% + 20px);
+    margin: 0px -15px 20px -15px;
+    width: calc(100% + 30px);
 
     .art_item {
       width: 33.33%;

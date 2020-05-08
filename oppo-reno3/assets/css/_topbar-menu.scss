@@ -8,6 +8,10 @@
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
     transform: translateY(0);
+
+    .section_container {
+        overflow: visible !important;
+    }
 }
 
 .topbar.nav-up {
