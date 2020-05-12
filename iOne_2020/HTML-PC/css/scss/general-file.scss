@@ -61,8 +61,8 @@
 
         .item-news.full-thumb {
             border-bottom: 1px solid var(--border);
-            margin-bottom: 15px;
-            padding-bottom: 25px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
 
             .thumb-art {
                 width: 100%;
@@ -286,6 +286,7 @@
 
         .title-news {
             font-size: 18px;
+            margin-bottom: 10px;
         }
     }
 
@@ -481,7 +482,7 @@
 
     .head_cate {
         border-bottom: 1px solid var(--border);
-        padding-bottom: 15px;
+        padding-bottom: 16px;
 
         .title_star {
             margin-right: 0;

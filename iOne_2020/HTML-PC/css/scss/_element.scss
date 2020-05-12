@@ -110,22 +110,12 @@
 
                     .comment {
                         color: #fff;
-                        background: rgba(47, 128, 237, 0.2);
-                        border-radius: 2px;
-                        font-size: 12px;
-                        font-weight: 400;
-                        height: 34px;
-                        line-height: 34px;
-                        padding: 0 15px 0 10px;
-                        display: inline-block;
-                        vertical-align: text-bottom;
-                        margin-left: 5px;
+                        font-size: 16px;
 
                         svg {
                             color: #fff;
-                            width: 18px;
-                            height: 18px;
-                            margin-right: 3px;
+                            width: 16px;
+                            height: 16px;
                         }
                     }
                 }
@@ -178,6 +168,11 @@
 
                 .thumb-art {
                     margin-bottom: 12px;
+
+                    .icon-svg {
+                        width: 16px;
+                        height: 16px;
+                    }
                 }
 
                 &:last-child {

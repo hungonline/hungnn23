@@ -88,9 +88,8 @@ body::-webkit-scrollbar-track {
             margin-left: 3px;
 
             svg {
-                width: 20px;
-                height: 20px;
-                margin-right: -3px;
+                width: 12px;
+                height: 12px;
             }
         }
     }
@@ -121,9 +120,8 @@ body::-webkit-scrollbar-track {
 
         .comment {
             svg {
-                width: 20px;
-                height: 20px;
-                margin-right: -3px;
+                width: 12px;
+                height: 12px;
             }
         }
 
@@ -352,7 +350,6 @@ body::-webkit-scrollbar-track {
         margin: 0 32px 0 0;
         position: relative;
         z-index: 2;
-        font-size: 34px;
     }
 
     ul {
@@ -390,6 +387,12 @@ body::-webkit-scrollbar-track {
     &.line {
         border-bottom: 1px solid var(--border);
         padding-bottom: 15px;
+    }
+}
+
+.container.mt30 {
+    .head_cate .title_star {
+        font-size: 32px
     }
 }
 
@@ -731,9 +734,13 @@ body::-webkit-scrollbar-track {
         }
     }
 
+    .box_input_txt .input_anonymous {
+        font-size: 14px !important
+    }
+
     .btn_vne,
     .btn_send_comment {
-        background: linear-gradient(20.77deg, #F2709C -37.57%, #FF9472 129.68%) !important;
+        background: var(--ione-color) !important;
         font-size: 14px !important;
         font-weight: 400 !important;
         width: 100px !important;

@@ -172,8 +172,18 @@ body {
             background: var(--white);
             float: right;
 
+            .scroll-element.scroll-y {
+                opacity: 0;
+            }
+
             .scroll-wrapper {
                 padding-right: 10px !important;
+
+                &:hover {
+                    .scroll-element.scroll-y {
+                        opacity: 1;
+                    }
+                }
             }
 
             .ykien_vne {
@@ -209,13 +219,19 @@ body {
                 .social {
                     a {
                         display: inline-block;
-                        background: var(--bg-agray1);
+                        background: var(--bg-agray);
                         width: 30px;
                         height: 30px;
                         text-align: center;
                         line-height: 30px;
                         border-radius: 2px;
                         margin-left: 5px;
+
+                        svg {
+                            color: var(--gray1);
+                            width: 14px;
+                            height: 14px;
+                        }
                     }
                 }
             }
@@ -368,7 +384,7 @@ body {
             font-weight: 400;
             height: 30px;
             line-height: 30px;
-            padding: 0 10px 0 6px;
+            padding: 0 6px 0 5px;
             display: inline-block;
             vertical-align: text-bottom;
 
@@ -422,7 +438,6 @@ body {
 
                         span {
                             margin-right: 10px;
-                            margin-bottom: 5px;
                         }
                     }
                 }

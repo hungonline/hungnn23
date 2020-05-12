@@ -1275,14 +1275,6 @@ body.hidden {
         }
     }
 
-    @media (max-width: 767px) {
-        .title_btn {
-            h3 {
-                font-weight: bold;
-                text-align: center;
-            }
-        }
-    }
 
     &.folder {
         .title_line {
@@ -1422,7 +1414,7 @@ body.hidden {
         .art_item {
             width: 33.33%;
 
-            @media (max-width: 767px) {
+            @media (max-width: 979px) {
                 width: 50%;
             }
         }
@@ -2878,11 +2870,56 @@ body.hidden {
     width: 100%;
     display: block;
 
-    @media (max-width: 767px) {
+    @media (max-width: 979px) {
         font-size: 30px;
     }
 }
 
+.page__heading {
+    .flex {
+        justify-content: space-between;
+
+        .title_page {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+    .search-ione {
+        margin: 0;
+
+        @media (max-width: 480px) {
+            margin: 15px 0;
+        }
+    }
+}
+
+.search-ione {
+    width: 250px;
+    position: relative;
+    margin: 0 auto 10px;
+
+    input {
+        height: 32px;
+        line-height: 32px;
+        border-radius: 16px;
+        border: 1px solid #E5E5E5;
+        padding: 0 30px 0 14px;
+        margin: 0;
+    }
+
+    .btn-search-vne {
+        position: absolute;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        background: none;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
+}
 
 .page_thele {
     position: relative;
@@ -3104,6 +3141,10 @@ body.hidden {
 
 .box_stream,
 .vong_sk_home {
+    .title_line {
+        margin-bottom: 20px;
+    }
+
     .pagination {
         text-align: center;
         clear: both;
@@ -3139,6 +3180,22 @@ body.hidden {
             color: #E5E5E5
         }
 
+        .pa_prev {
+            &::before {
+                content: '\ea02';
+                font-family: 'iconfont';
+                color: #E5E5E5;
+            }
+        }
+
+        .pa_next {
+            &::before {
+                content: '\ea0a';
+                font-family: 'iconfont';
+                color: #E5E5E5;
+            }
+        }
+
         @media (max-width: 767px) {
             margin-top: 5px;
 
@@ -3156,6 +3213,7 @@ body.hidden {
         }
     }
 }
+
 
 
 .fillter {

@@ -7,6 +7,16 @@
 
     &_left {
         width: 453px;
+        position: relative;
+
+        &::before {
+            content: "";
+            border-left: 1px solid var(--border);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -20px;
+        }
 
         .item-news {
             .title-news {
@@ -23,14 +33,6 @@
         padding-left: 20px;
         display: flex;
         flex-wrap: wrap;
-
-        &::before {
-            content: "";
-            border-left: 1px solid var(--border);
-            position: absolute;
-            top: 0;
-            bottom: 0;
-        }
 
         .item-news {
             width: 50%;
@@ -293,10 +295,11 @@
             width: 57px;
             line-height: 77px;
             text-align: center;
+            transition: 0.4s ease;
 
             svg {
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
             }
         }
 
@@ -304,7 +307,11 @@
             color: #222;
 
             .next {
-                background: #F2C94C;
+                background: var(--ione-color);
+
+                svg {
+                    color: #fff
+                }
             }
         }
     }
@@ -369,11 +376,10 @@
         }
 
         .answer-quiz {
-            background: #F6F7FB;
             padding: 24px 57px;
             font-size: 16px;
             line-height: 1.4;
-            margin: 0 -57px 24px -57px;
+            margin: 0 -57px 0 -57px;
 
             .item {
                 margin-bottom: 8px;
@@ -593,7 +599,7 @@
                     height: 21px;
                     position: absolute;
                     left: -29px;
-                    top: 2px;
+                    top: -2px;
                     border-radius: 50%;
                     border: 1px solid #fff;
                 }
@@ -602,7 +608,7 @@
                     content: "";
                     position: absolute;
                     left: -20px;
-                    top: 6px;
+                    top: 2px;
                     width: 4px;
                     height: 10px;
                     border: solid var(--white);
@@ -664,7 +670,7 @@
                         background: linear-gradient(180deg, #222222 0%, rgba(34, 34, 34, 0) 100%);
                         position: absolute;
                         bottom: 0;
-                        height: 80%;
+                        height: 100%;
                         left: 8px;
                         right: 8px;
                         border-radius: 4px;
