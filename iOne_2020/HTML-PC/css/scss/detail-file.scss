@@ -86,13 +86,13 @@
 
             &.active {
                 svg {
-                    fill: var(--blue);
+                    fill: var(--colormain);
                 }
+            }
 
-                &:hover {
-                    svg {
-                        fill: #087CCE;
-                    }
+            &:hover {
+                svg {
+                    color: var(--colormain)
                 }
             }
         }
@@ -166,15 +166,8 @@
 
                 svg {
                     align-self: center;
-                    width: 12px;
-                    height: 12px;
-                }
-
-                &.mail {
-                    svg {
-                        width: 14px;
-                        height: 14px;
-                    }
+                    width: 14px;
+                    height: 14px;
                 }
 
                 &.share-link {
@@ -186,15 +179,7 @@
 
                 &:hover {
                     svg {
-                        fill: var(--blue);
-
-                        &.ic-facebook {
-                            fill: #3B5999;
-                        }
-
-                        &.ic-twitter {
-                            fill: #55ACEE;
-                        }
+                        fill: var(--colormain);
                     }
                 }
 
