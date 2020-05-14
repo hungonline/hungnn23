@@ -15,10 +15,14 @@
         border: 1px solid var(--border);background: #FFFFFF;border-radius: 2px;
         li{margin-top: 5px; width: 32px;
             a{
-                width: 32px; height: 32px;justify-content: center; position: relative;
+                width: 32px;
+                height: 32px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
                 .icon-svg{align-self: center;width: 20px;height: 20px;}
             &:hover{
-                .icon-svg{fill: #fff;}
+                svg{fill: #fff;}
             }    
             &.social_fb{
                 .icon-svg{width: 16px;height: 16px;}
@@ -501,7 +505,6 @@
             left: 24px;
             right: 24px;
             padding-right: 40px;
-            display: none;
             .number-per{
                 width: 30px;
                 position: absolute;
