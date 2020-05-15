@@ -137,7 +137,7 @@
 
 .wrap-sub-nav {
     background: #F6F7FB;
-    padding: 0 24px;
+    padding: 0 0 0 24px;
 
     .head_cate {
         display: flex;
@@ -153,6 +153,7 @@
             background-repeat: no-repeat;
             margin-bottom: 0;
             font-size: 22px;
+            flex-shrink: 0;
 
             a {
                 color: #222222;

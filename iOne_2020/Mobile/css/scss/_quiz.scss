@@ -592,3 +592,83 @@
         }
     }
 }
+
+.answer-quiz {
+	background: #F6F7FB;
+	font-size: 16px;
+	line-height: 1.4;
+
+	.item {
+		margin-bottom: 8px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	h4 {
+		margin-bottom: 15px;
+	}
+
+	p {
+		margin-top: 20px;
+	}
+}
+
+.btn_next_prev {
+	display: flex;
+	justify-content: space-between;
+
+	&.justify-content-end {
+		justify-content: flex-end;
+	}
+
+	.btn_ione {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		background: #fff;
+		padding: 0 30px;
+	}
+
+	.active {
+		background: #F2C94C;
+		border: 1px solid #F2C94C;
+
+		&:hover {
+			background: #DFAB0E;
+		}
+	}
+}
+
+.btn_ione {
+	svg {
+		color: #222;
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.answer-list {
+	margin-bottom: 16px;
+
+	.item {
+		display: block;
+		width: 100%;
+		background: #F7F7F7;
+		border-radius: 2px;
+		padding: 12px 16px;
+
+		+.item {
+			margin-top: 10px;
+		}
+	}
+}
+
+.author+.question-quiz {
+	margin-top: -16px;
+}
+
+.quiz-new {
+	.swiper-pagination {
+		bottom: -5px;
+	}
+}

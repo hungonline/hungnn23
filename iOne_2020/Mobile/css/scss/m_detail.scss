@@ -1,6 +1,7 @@
 @import 'var.scss';
 @import 'fck.scss';
 @import 'quiz.scss';
+@import 'review.scss';
 
 .input_comment_full {
     width: 100%;
@@ -32,7 +33,12 @@
     justify-content: flex-end;
 }
 
+.page-detail,
 .article_detail {
+    .box_quiz .main-quiz {
+        padding: 0;
+    }
+    
     ~.box-tag-topic {
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -246,7 +252,7 @@
         }
 
         a {
-            font: 400 15px/1.6 "Merriweather", serif;
+            font: 400 15px/1.6 Arial, serif;
             color: #1607B6;
             text-decoration: none;
         }

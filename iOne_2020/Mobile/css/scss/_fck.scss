@@ -410,7 +410,10 @@
     width: 50%;
     float: left;
     margin: 0;
-    padding: 5px
+    padding: 5px;
+    .thumb {
+        padding-bottom: 56.65%;
+    }
 }
 
 .block_tinlienquan_temp .item_tinlq_temp .thumb img {
@@ -3022,8 +3025,7 @@ body.show .sticky_guicauhoi {
 }
 
 .box_oceanbank .item_tr {
-    min-width: 500px;
-    max-width: 590px;
+    max-width: 100%;
     float: left;
     border-top: 1px solid #f1f1f1;
     text-align: left;
@@ -5323,6 +5325,8 @@ body.show .sticky_guicauhoi {
         margin: 20px 0 0 6px
     }
 }
+
+
 
 @media screen and (min-width: 500px) {
     .pswp__caption {
