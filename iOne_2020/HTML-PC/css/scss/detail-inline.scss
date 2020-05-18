@@ -20,30 +20,30 @@
                 justify-content: center;
                 align-items: center;
                 position: relative;
-                .icon-svg{align-self: center;width: 20px;height: 20px;}
+                svg {
+                    align-self: center;
+                }
             &:hover{
-                svg{fill: #fff;}
+                svg{fill: var(--colormain);}
             }    
-            &.social_fb{
-                .icon-svg{width: 16px;height: 16px;}
-                &:hover{background: #3b5998 ; border: 1px solid #3b5998 ;}
+            &.social_comment {
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            &.link,
+            &.social_save{
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
             }
 
-            &.social_twit{
-                .icon-svg{width: 16px;height: 16px;}
-                &:hover{background: #00acee;border: 1px solid #00acee;}
-            }
-            &.link{
-                &:hover{background: orange;border: 1px solid orange;}
-            }
             &.social_save{
-                &:hover{background: red;border: 1px solid red}
                 &.active{
                     .icon-svg{fill: #076DB6;}
                 }
-            }
-            &.social_comment{
-                &:hover{background: #B52759;border: 1px solid #B52759;}
             }
             .number_cmt{font-size: 12px; color: var( --gray3); position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);}
 

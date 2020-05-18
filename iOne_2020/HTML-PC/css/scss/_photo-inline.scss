@@ -123,8 +123,30 @@
         margin-right: 10px;
         justify-content: center;
 
-        .icon-svg {
-            align-self: center
+        svg {
+            align-self: center;
+        }
+
+        &:hover {
+            svg {
+                fill: var(--colormain);
+            }
+        }
+
+        &.luutin,
+        &.social_save {
+            svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+        &.social_save {
+            &.active {
+                .icon-svg {
+                    fill: #076DB6;
+                }
+            }
         }
 
         &.luutin {
@@ -145,37 +167,8 @@
                 background: #076DB6;
                 border: 1px solid #076DB6;
 
-                .icon-svg {
+                svg {
                     fill: #fff;
-                }
-            }
-        }
-
-        &:hover {
-            &.fb {
-                .icon-svg {
-                    fill: #3B5999;
-                }
-            }
-
-            &.tw {
-                .icon-svg {
-                    fill: #55ACEE;
-                }
-            }
-
-            &.luutin {
-                .icon-svg {
-                    fill: #087CCE;
-                }
-
-                &.active {
-                    background: #087CCE;
-                    border: 1px solid #087CCE;
-
-                    .icon-svg {
-                        fill: #fff;
-                    }
                 }
             }
         }
@@ -184,6 +177,11 @@
     .count_com_hoz {
         align-items: center;
 
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+
         .circle_s {
             margin-right: 0;
         }
@@ -191,12 +189,6 @@
         .number_cmt {
             padding-left: 5px;
             color: var(--gray3);
-        }
-
-        &:hover {
-            .icon-svg {
-                fill: #B52759;
-            }
         }
     }
 }
