@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
+    <meta name="description" content="VnExpress, tin tức, tin the gioi, tin nhanh, tin tuc viet nam, doc bao"/>
     <link rel="canonical" href="/article.html">
     <!--<link rel="shortcut icon" href="amp_favicon.png">-->
     <title>AMP VnExpress 2020</title>
@@ -91,45 +91,47 @@
         <!--<div class="btn_control_menu">
             <span class="hamburger"></span>
         </div>-->
-        <button class="btn_control_menu" on="tap:sidebar.open">
+        <button name="btn-open-menu" aria-label="Open Menu" class="btn_control_menu" on="tap:sidebar.open">
             <span class="hamburger"></span>
         </button>
     </header>
     <!--END HEADER-->
     <section class="inner_section section-btn-sub flexbox">
-        <a href="#" class="btn-link btn-lasted active"><svg class="ic ic-24h"><use xlink:href="images/icon-vne.svg#time"></use></svg>Mới nhất</a>
+        <a href="#" class="btn-link btn-lasted"><svg class="ic ic-24h"><use xlink:href="images/icon-vne.svg#time"></use></svg>Mới nhất</a>
         <a href="#" class="btn-link btn-view">Xem nhiều</a>
         <a href="#" class="btn-link btn-evne"><svg class="ic ic-evne"><use xlink:href="images/icon-vne.svg#letter-E"></use></svg>International</a>
     </section>
     <!--BREAKCRUM-->
     <section id="breadcrum" class="section navigation_scroll nav_user section_nav section_nav_v2">  
         <amp-carousel height="40" layout="fixed-height" type="carousel" class="menu_bread">
+            <ul>
         <li>
-            <h4><a class="icon_home icon_home_v2" href="#">
+            <h4><a class="icon_home icon_home_v2" href="https://vnexpress.net" title="Home">
                 <span class="ico-home"><svg class="ic ic-home"><use xlink:href="images/icon-vne.svg#Home"></use></svg></span>
             </a></h4>
         </li>
         <li>
-            <h4><a href="#">Thời sự</a></h4>
+            <a href="#">Thời sự</a>
         </li>
         <li>
-            <h4><a href="#">Góc nhìn</a></h4>
+            <a href="#">Góc nhìn</a>
         </li>
         <li>
-            <h4><a href="#">Thế giới</a></h4>
+            <a href="#">Thế giới</a>
         </li>
         <li>
-            <h4><a href="#">Video</a></h4>
+            <a href="#">Video</a>
         </li>
         <li>
-            <h4><a href="#">Kinh doanh</a></h4>
+            <a href="#">Kinh doanh</a>
         </li>
         <li>
-            <h4><a href="#">Giải trí</a></h4>
+            <a href="#">Giải trí</a>
         </li>
         <li>
-            <h4><a href="#">Thể thao</a></h4>
+            <a href="#">Thể thao</a>
         </li>
+    </ul>
         </amp-carousel>
     </section>
 
@@ -419,7 +421,7 @@
             <div class="ykien_vne width_common"><strong>Ý kiến</strong> (15)</div>
             <div class="main_show_comment width_common">
                 <div class="comment_item width_common">
-                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002642505" title="Xem trang ý kiến của Võ Trí Công" target="_blank" rel="noopener">D</a>
+                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002642505" title="Xem trang ý kiến của Võ Trí Công" rel="noopener">D</a>
                     
                     <p class="ctn_comment"><span class="user_name_cmt">Quang Dũng</span> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như
                         dân, làm một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên chống lại
@@ -506,9 +508,9 @@
         </header>
         <article class="art_item art_featured art_medium art_with_border">
             <div class="inner_section content_title">
-                <h4 class="title_news clearfix">
+                <h3 class="title_news clearfix">
                     <a href="#" title="">Nhiều trẻ em Việt đang uống kháng sinh không cần thiết</a>
-                </h4>
+                </h3>
             </div>
             <div class="thumb_art thumb_full">
                 <a href="#" class="thumb_img thumb_5x3"><amp-img src="images/320-192.jpg" width="320" height="192" layout="responsive" alt="this"></amp-img><span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
@@ -529,24 +531,24 @@
 
         <div class="list_news_common list_news_common_v2 inner_section width_common">
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Những rạp phim nằm ngoài cuộc chơi </a>
-                </h4>
+                </h3>
             </article>
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Đề xuất thu phí trở lại cao tốc TP HCM - Trung Lương</a>
-                </h4>
+                </h3>
             </article>
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Những rạp phim nằm ngoài cuộc chơi </a>
-                </h4>
+                </h3>
             </article>
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Đề xuất thu phí trở lại cao tốc TP HCM - Trung Lương</a>
-                </h4>
+                </h3>
             </article>
         </div>
 
@@ -560,9 +562,9 @@
         </header>
         <article class="art_item art_featured art_medium art_with_border">
             <div class="inner_section content_title">
-                <h4 class="title_news clearfix">
+                <h3 class="title_news clearfix">
                     <a href="#" title="">Nhiều trẻ em Việt đang uống kháng sinh không cần thiết</a>
-                </h4>
+                </h3>
             </div>
             <div class="thumb_art thumb_full">
                 <a href="#" class="thumb_img thumb_5x3"><amp-img src="images/320-192.jpg" width="320" height="192" layout="responsive" alt="this"></amp-img><span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
@@ -583,24 +585,24 @@
 
         <div class="list_news_common list_news_common_v2 inner_section width_common">
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Những rạp phim nằm ngoài cuộc chơi </a>
-                </h4>
+                </h3>
             </article>
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Đề xuất thu phí trở lại cao tốc TP HCM - Trung Lương</a>
-                </h4>
+                </h3>
             </article>
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Những rạp phim nằm ngoài cuộc chơi </a>
-                </h4>
+                </h3>
             </article>
             <article class="art_item">
-                <h4 class="title_news">
+                <h3 class="title_news">
                     <a href="detail.html">Đề xuất thu phí trở lại cao tốc TP HCM - Trung Lương</a>
-                </h4>
+                </h3>
             </article>
         </div>
 
@@ -619,7 +621,7 @@
                     <a id="auto_left_menu_share_fb" href="#" class="item_social item_fb">
                         <i class="ic ic-facebook"></i>
                     </a>
-                    <a href="#" class="item_social item_youtube"><i class="ic-youtube" style="display: inline-block;vertical-align: middle;"><amp-img src="images/youtube-ico.svg" alt="" width="24" height="24"></amp-img></i></a>
+                    <a href="#" class="item_social item_youtube"><i class="ic-youtube"><amp-img src="images/youtube-ico.svg" alt="" width="24" height="24"></amp-img></i></a>
                     <a href="#" class="item_social item_rss">
                         <i class="ic ic-rss"></i>
                     </a>
@@ -746,19 +748,19 @@
         side="left">
         <nav id="main_menu" class="main_menu">
             <div class="header_menu width_common">
-                <button class="close_main_menu" on="tap:sidebar.close"><i class="ic ic-false"></i></button>
+                <button name="btn-close-menu" aria-label="Close Button" class="close_main_menu" on="tap:sidebar.close"><i class="ic ic-false"></i></button>
                 
                 <div class="block_swich_en_mobile right">
                     Phiên bản: <a href="https://e.vnexpress.net" title="VnExpress International – Vietnam and ASEAN news"
-                        target="_blank"><i class="ic ic-vnexpress"></i>VnExpress International – Vietnam and ASEAN news</a>
+                        ><i class="ic ic-vnexpress"></i>VnExpress International – Vietnam and ASEAN news</a>
                 </div>
             </div>
             <div class="block_scoll_menu width_common">
                 <div class="block_search width_common">
                     <div id="search">
                         <input maxlength="80" name="q" class="input_form" placeholder="Tìm kiếm" type="text">
-                        <button type="submit" class="btn_search" value=""><i class="ic ic-search"></i></button>
-                        <button type="reset" class="btn_reset"><i class="ic ic-false"></i></button>
+                        <button name="btn-search" type="submit" class="btn_search" value=""><i class="ic ic-search"></i></button>
+                        <button name="btn-reset" type="reset" class="btn_reset"><i class="ic ic-false"></i></button>
                     </div>
                 </div>
                 <div class="list_menu width_common">
@@ -766,8 +768,8 @@
                     <li><a data-medium="Menu-Home" href="/" class="link_item_panel" title="Trang nhất" data-itm-source="#vn_source=
                     Home&amp;vn_campaign=Sidebar&amp;vn_medium=Menu-Home&amp;vn_term=Mobile">Trang nhất</a></li>
                     <li>
-                    <a href="https://twitter.com/VnEnews" title="Twitter" target="_blank" rel="noopener" class="item_social btn_twitter item_twit"><i class="ic ic-twitter"></i></a>
-                    <a href="https://www.facebook.com/congdongvnexpress/" title="Cộng đồng Vnexpress" target="_blank" rel="noopener" class="item_social btn_facebook item_fb"><i class="ic ic-facebook"></i></a>
+                    <a href="https://twitter.com/VnEnews" title="Twitter" rel="noopener" class="item_social btn_twitter item_twit"><i class="ic ic-twitter"></i></a>
+                    <a href="https://www.facebook.com/congdongvnexpress/" title="Cộng đồng Vnexpress" rel="noopener" class="item_social btn_facebook item_fb"><i class="ic ic-facebook"></i></a>
                     <a href="/rss" title="Rss" class="item_social item_rss"><i class="ic ic-rss"></i></a>
                     </li>
                     </ul>
