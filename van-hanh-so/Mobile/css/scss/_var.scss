@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Semibold.woff2') format('woff2'),
+    url('fonts/Averta-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Bold.eot');
+  src: url('fonts/Averta-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Averta-Bold.woff2') format('woff2'),
+    url('fonts/Averta-Bold.woff') format('woff'),
+    url('fonts/Averta-Bold.ttf') format('truetype'),
+    url('fonts/Averta-Bold.svg#Averta-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Light.eot');
+  src: url('fonts/Averta-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Averta-Light.woff2') format('woff2'),
+    url('fonts/Averta-Light.woff') format('woff'),
+    url('fonts/Averta-Light.ttf') format('truetype'),
+    url('fonts/Averta-Light.svg#Averta-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Black.woff2') format('woff2'),
+    url('fonts/Averta-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Regular.woff2') format('woff2'),
+    url('fonts/Averta-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Scss Document */
+$font1: 'Averta';
+$font2: 'Averta',
+;
+$color1: #F37021;
+$color_border: #E5E5E5;
+$color_hover: #004f8b;
+$vne_color: #9F224E;
+$url: "images" !default;
+
+/*background: url("#{$url}/graphics/demo.gif") no-repeat 0 0;*/
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
+  }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target==0 {
+    @return 0
+  }
+
+  @return $target / $context+0rem;
+}
+
+$base-size: 16px;
+$lh: 1.313;
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: calculateRem($size);
+}
+
+/**Apply: "font-size: px_to_rem(16px)" or "font: 400 px_to_rem(16px) arial;" **/
+
+svg.icon,
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon {
+  &.goal {
+    color: #FFD30F;
+  }
+}
+
+.hcvang {
+  color: #FFD30F;
+}
+
+.hcbac {
+  color: #BDBDBD;
+}
+
+.hcdong {
+  color: #D65A1B;
+}
+
+%clearfix {
+  clear: both;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%wcm {
+  float: left;
+  width: 100%;
+}
+
+%flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%bgsvg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%flex-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

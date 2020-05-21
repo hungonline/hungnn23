@@ -1,0 +1,153 @@
+@media screen and (min-device-width: 1600px) and (max-device-width: 2400px) {}
+
+@media (max-width: 1139px) {
+	.col_left {
+		width: calc(100% - 320px);
+		padding-right: 30px;
+	}
+
+	.page_detail .sidebar_1 {
+		width: calc(100% - 300px);
+		padding-right: 30px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.art_item {
+		.title_news {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+
+		.description {
+			font-size: 14px;
+			line-height: 1.6;
+		}
+	}
+
+	.art_item_top {
+		.box_info_top {
+			.title_news {
+				font-size: 25px;
+				line-height: 1.4;
+			}
+		}
+	}
+
+	.block_feature_news {
+		.top_news_right {
+			.title_news {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+		}
+	}
+
+	.block_video,
+	.block_img {
+		.art_item_top {
+			.title_news {
+				font-size: 20px;
+				line-height: 1.5;
+			}
+		}
+	}
+
+	.block_img {
+		.art_item_top {
+			width: calc(100% - 215px)
+		}
+
+		.list_news {
+			width: 215px
+		}
+	}
+
+	.section4 {
+		.copyright {
+			width: 45%;
+		}
+
+		.social {
+			width: 30%
+		}
+	}
+
+	footer {
+		.row_menu ul {
+			width: 120px;
+		}
+	}
+}
+
+
+@media (max-width: 979px) {
+
+	.row_home {
+		.col_left {
+			width: 100%;
+			padding-right: 0;
+		}
+
+		.col_right {
+			width: 100%;
+			// display: none;
+		}
+	}
+}
+
+
+@media (max-width: 768px) {
+	.col_left {
+		width: 100%;
+		padding-right: 0 !important;
+		margin-bottom: 10px;
+	}
+
+	.col_right {
+		width: 100%;
+	}
+
+	.page_detail .sidebar_1 {
+		width: 100% !important;
+		padding-right: 0 !important
+	}
+
+	.page_detail .sidebar_2 {
+		width: 100% !important;
+	}
+
+
+	.list_news_ft {
+		.art_item {
+			width: 33.33%;
+
+			.thumb_art {
+				width: 240px;
+				margin-right: 15px;
+			}
+
+			.title_news {
+				font-size: 18px;
+				line-height: 1.5
+			}
+
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6) {
+				display: none
+			}
+		}
+	}
+
+	.thumb_art.thumb_small {
+		width: 240px;
+	}
+
+	.thumb_art.thumb_small+.content .title_news {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+}
+
+@media \0screen\,screen\9 {}
