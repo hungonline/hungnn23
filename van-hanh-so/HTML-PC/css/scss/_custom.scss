@@ -68,6 +68,11 @@ h6 {
 
       .title_news {
         font: 600 18px/1.4 "Averta";
+        margin-bottom: 10px;
+      }
+
+      .description {
+        margin-bottom: 0;
       }
 
       &:last-child {
@@ -104,7 +109,7 @@ h6 {
     flex-wrap: wrap;
 
     .art_item {
-      margin-bottom: 5px;
+      margin-bottom: 15px;
 
       .title_news {
         font: 600 15px/1.4 "Averta";
@@ -472,8 +477,13 @@ h6 {
     font-size: 18px
   }
 
+  .art_item__group {
+    margin-bottom: 10px;
+  }
+
   .description {
     color: #454545;
+    margin-bottom: 0;
   }
 }
 
@@ -496,18 +506,14 @@ h6 {
     }
 
     .content {
-      padding: 30px 20px;
+      padding: 15px 20px;
     }
 
     .title_news {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 1.4;
       font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    &__time {
-      font-size: 15px
+      margin-bottom: 10px;
     }
   }
 
@@ -563,7 +569,7 @@ h6 {
 }
 
 .box_banner {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   .items {
     display: block;
@@ -603,7 +609,7 @@ h6 {
       z-index: 2;
       top: 50%;
       transform: translate(0, -50%);
-      color: #333333;
+      color: #222;
       font-size: 16px;
       font-weight: 300;
       left: 20%;
@@ -613,18 +619,19 @@ h6 {
 
       p {
         margin-bottom: 15px;
+        line-height: 1.5;
       }
 
       h2 {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 21px;
         margin-bottom: 5px;
       }
 
       h3 {
         font-weight: 900;
-        font-size: 34px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        margin-bottom: 10px;
       }
     }
 
@@ -651,7 +658,19 @@ h6 {
 .section_giaiphap {
   background: #F8F8F9;
   padding: 45px 0;
-  margin-bottom: 50px;
+
+  .owl-carousel {
+    &::before {
+      content: "";
+      background: url(images/graphics/bg_giaiphap.png) no-repeat;
+      background-size: contain;
+      width: 227px;
+      height: 227px;
+      position: absolute;
+      top: -35px;
+      left: -45px;
+    }
+  }
 
   .owl-stage-outer {
     padding-bottom: 35px;
@@ -727,6 +746,10 @@ h6 {
         color: #fff;
       }
     }
+  }
+
+  .owl-dots {
+    display: none
   }
 
   .owl-nav {
@@ -807,7 +830,7 @@ h6 {
 
 .title_cate {
   font-weight: 900;
-  font-size: 34px;
+  font-size: 30px;
   margin-bottom: 30px;
 
   &.bold {
@@ -1610,10 +1633,11 @@ h6 {
 
   .description,
   .news_lead {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: #666666;
-    margin-top: 0;
+    margin-bottom: 10px;
+
   }
 
   &__comment {
@@ -1627,11 +1651,11 @@ h6 {
 
   &__time {
     color: #757575;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   &__group {
-    margin-bottom: 10px;
+    margin: 0;
     display: flex;
     align-items: center;
 
