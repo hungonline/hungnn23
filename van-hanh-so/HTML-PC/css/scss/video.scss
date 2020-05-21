@@ -39,14 +39,14 @@
 
 .list_video {
 	@extend %flex-wrap;
-	margin: 0 -10px;
+	margin: 0 -15px;
 
 	.art_item {
 		width: calc(100%/3);
 		vertical-align: top;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 		font-size: 16px;
-		padding: 0 10px;
+		padding: 0 15px;
 
 		.thumb_art {
 			border-radius: 3px;
@@ -54,8 +54,8 @@
 		}
 
 		.title_news {
-			margin-bottom: 0;
-			font-size: 18px;
+			margin-bottom: 0 !important;
+			font-size: 15px !important;
 			line-height: 1.313;
 
 			a {
