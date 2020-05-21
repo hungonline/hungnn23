@@ -704,7 +704,8 @@ h6 {
     .content {
       transition: 0.4s ease;
       background: #FFFFFF;
-      font-size: 20px;
+      font-size: 18px;
+      line-height: 1.5;
       position: absolute;
       height: 100%;
       border: 3px solid #F37021;
@@ -739,6 +740,8 @@ h6 {
       background: #FFFFFF;
       height: 67px;
       border: 1px solid #F3F6FC;
+      font-size: 13px;
+      line-height: 1.5;
       font-weight: bold;
       text-transform: uppercase;
       position: absolute;
