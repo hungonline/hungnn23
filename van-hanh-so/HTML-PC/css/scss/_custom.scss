@@ -383,6 +383,7 @@ h6 {
   background-position: center top 114px;
   padding-top: 0px;
   background: none;
+  margin-bottom: 5px;
 
   &.page_detail {
     background-attachment: unset;
@@ -556,6 +557,14 @@ h6 {
   }
 }
 
+.list_news_gird3 {
+  .art_item {
+    .thumb_art {
+      border-radius: 0
+    }
+  }
+}
+
 /*end Block Story ====================*/
 
 
@@ -587,7 +596,7 @@ h6 {
 }
 
 .box_banner {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   .items {
     display: block;
@@ -675,7 +684,7 @@ h6 {
 
 .section_giaiphap {
   background: #F8F8F9;
-  padding: 45px 0;
+  padding: 40px 0;
 
   .owl-carousel {
     &::before {
@@ -987,6 +996,8 @@ h6 {
       p {
         margin-bottom: 0;
         font-size: 14px;
+        font-family: arial;
+        color: #999;
       }
     }
 
@@ -1710,7 +1721,7 @@ h6 {
 .section_footer {
   background: $color1;
   overflow: hidden;
-  height: 100px;
+  height: 70px;
 
   .container {
     height: 100%;
@@ -2021,8 +2032,7 @@ h6 {
     height: 16px;
     stroke-width: 0;
     stroke: currentColor;
-    fill: currentColor;
-    color: rgba(255, 255, 255, 0.75);
+    fill: #93908A;
     position: relative;
   }
 
@@ -2041,37 +2051,21 @@ h6 {
   }
 
   .face {
-    border-radius: 100px;
-    background: #3b5999;
-    border-color: #3b5999;
+    border-radius: 50%;
     padding: 0 15px;
-    color: #fff;
-
-    // @include sm {
-    //     padding: 0;
-    //     width: 32px;
-    //     text-align: center;
-
-    //     span {
-    //         display: none;
-    //     }
-    // }
   }
 
   .twitter {
     width: 32px;
-    border-radius: 51px;
+    border-radius: 50%;
     text-align: center;
-    background: #55acee;
-    border-color: #55acee;
-    color: #fff;
     font: outline;
   }
 
   .social_btn,
   .save {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid #bdbdbd;
 
@@ -2082,6 +2076,17 @@ h6 {
 
   &__icons {
     float: left;
+
+    .face {
+      background: $color1;
+      color: #fff;
+      border-radius: 100px;
+      border: 0;
+
+      svg {
+        fill: #fff
+      }
+    }
   }
 
   // version 3
@@ -2149,7 +2154,7 @@ h6 {
   .comment {
     border: 0 !important;
     background: transparent !important;
-    border-bottom: 3px solid #55acee !important;
+    border-bottom: 1px solid #E0E0E0 !important;
 
     span {
       display: block !important;
@@ -2791,7 +2796,7 @@ h6 {
   width: 50px;
   float: left;
   top: 150px;
-  margin-top: 500px !important;
+  margin-top: 100px !important;
   text-align: center;
   border-bottom: 0 !important;
 
@@ -2815,7 +2820,6 @@ h6 {
       display: inline-block;
       line-height: normal;
       height: auto;
-      font-size: 18px;
       color: #222;
       margin-top: 10px;
     }
@@ -2829,11 +2833,6 @@ h6 {
   }
 }
 
-.social_share_new .col_right a {
-  width: 26px !important;
-  height: 26px;
-  line-height: 26px;
-}
 
 .standard_detail_article {
   @extend %clearfix;
@@ -2933,18 +2932,8 @@ h6 {
   a {
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 3px solid #55acee;
+    border-bottom: 3px solid #F37021;
     position: relative;
-
-    &:after {
-      content: "";
-      height: 3px;
-      width: 70px;
-      background: #222;
-      position: absolute;
-      bottom: -3px;
-      left: 0;
-    }
   }
 }
 
@@ -3193,6 +3182,7 @@ h6 {
     a {
       width: 26px !important;
       height: 26px !important;
+      line-height: 24px;
       text-align: center;
       padding: 0 !important;
       margin-right: 0;
@@ -3202,7 +3192,6 @@ h6 {
       svg {
         width: 14px;
         height: 14px;
-        top: -5px;
         margin-right: 0;
       }
 
