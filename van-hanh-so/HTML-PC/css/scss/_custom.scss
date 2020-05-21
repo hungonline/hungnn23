@@ -906,6 +906,16 @@ h6 {
   background: linear-gradient(180deg, #F8F8F9 1.22%, rgba(248, 248, 249, 0) 100%);
   padding: 30px 0;
 
+  .min-container {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      text-align: left
+    }
+  }
+
   p {
     font: 300 16px $font1;
     color: #333333;
