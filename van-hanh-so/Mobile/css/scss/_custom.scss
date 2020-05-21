@@ -2619,6 +2619,7 @@ img {
 
   p {
     margin-bottom: 15px;
+    line-height: 1.5
   }
 
   h2 {
@@ -2643,6 +2644,10 @@ img {
       position: absolute;
       bottom: 0;
     }
+  }
+
+  .btn_vne {
+    display: inline-block
   }
 }
 
