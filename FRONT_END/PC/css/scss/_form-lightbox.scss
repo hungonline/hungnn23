@@ -417,12 +417,12 @@ button::-moz-focus-inner {
   .form {
     width: 653px;
     width: calc(100% - 297px);
-    padding: 0px 83.5px 30px 83.5px;
+    padding: 30px 83.5px 30px 83.5px;
 
     .tab {
       text-align: center;
       justify-content: center;
-      margin: 0 -83.5px 35px -83.5px;
+      margin: -30px -83.5px 35px -83.5px;
       border-bottom: 1px solid #eaeaea;
 
       .login {
