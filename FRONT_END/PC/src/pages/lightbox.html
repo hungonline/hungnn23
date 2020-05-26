@@ -1,0 +1,454 @@
+<!-- build:title -->Lightbox thông báo
+<!-- /build:title -->
+<!-- build:head -->
+<link href="css/order.css" rel="stylesheet" type="text/css" />
+<!-- /build:head -->
+<!-- build:content -->
+
+<!-- MAIN CONTAINER -->
+<section class="main-container clearfix mt30">
+    <div class="container box-list-normal">
+        <div class="mt30"></div>
+        <p class="mb20"><a href="#login-popup" class="open-popup-link">Lightbox đăng nhập/đăng ký</a></p>
+        <p class="mb20"><a href="#address-popup" class="open-popup-link">Lightbox tạo địa chỉ đơn hàng</a></p>
+        <p class="mb20"><a href="#notifi-popup" class="open-popup-link">Lightbox thông báo</a></p>
+    </div>
+</section>
+<!-- END MAIN CONTAINER -->
+
+<!--POPUP ĐĂNG NHẬP/ĐĂNG KÝ-->
+<div id="login-popup" class="login-popup white-popup">
+    <div class="content_poup">
+        <div class="flex">
+            <div class="tien_ich">
+                <ul>
+                    <li>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#like"></use>
+                        </svg>
+                        <h4>Chi phí minh bạch</h4>
+                    </li>
+                    <li>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#dam-bao"></use>
+                        </svg>
+                        <h4>Hàng hóa được đảm bảo</h4>
+                    </li>
+                    <li>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#date"></use>
+                        </svg>
+                        <h4>Giao hàng từ 10 - 15 ngày làm việc</h4>
+                    </li>
+                    <li>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#tietkiem"></use>
+                        </svg>
+                        <h4>Mua càng nhiều, tiết kiệm càng nhiều</h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="form">
+                <div class="tab flex">
+                    <a class="login active" href="#tab-dn">Đăng nhập</a>
+                    <a class="resign" href="#tab-dk">Tạo tài khoản</a>
+                </div>
+                <div id="tab-dn" class="tab-content">
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#mail"></use>
+                        </svg>
+                        <input type="" class="form-control error" id="" placeholder="Nhập địa chỉ Email" name="">
+                        <span class="error">Thông báo lỗi</span>
+                    </div>
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#padlock"></use>
+                        </svg>
+                        <input type="" class="form-control" id="" placeholder="Nhập mật khẩu" name="">
+                    </div>
+                    <a class="request-pass txt_666" href="">Quên mật khẩu?</a>
+                    <button class="btn bg-green">Đăng nhập</button>
+                    <div class="login-social">
+                        <h3 class="center"><span>Hoặc đăng nhập bằng</span></h3>
+                        <div class="flex">
+                            <a href=""><img src="images/graphics/btn-face.svg"></a>
+                            <a href=""><img src="images/graphics/btn-google.svg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab-dk" class="tab-content" style="display: none;">
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#user"></use>
+                        </svg>
+                        <input type="text" class="form-control error" placeholder="Nhập họ và tên" name="">
+                        <span class="error">Thông báo lỗi</span>
+                    </div>
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#mail"></use>
+                        </svg>
+                        <input type="" class="form-control" id="" placeholder="Nhập địa chỉ Email" name="">
+                    </div>
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#smartphone"></use>
+                        </svg>
+                        <input type="number" class="form-control" id="" placeholder="Nhập số điện thoại" name="">
+                    </div>
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#padlock"></use>
+                        </svg>
+                        <input type="" class="form-control" placeholder="Nhập mật khẩu từ 6 đến 32 ký tự" name="">
+                    </div>
+                    <div class="form-group icon-visible">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#padlock"></use>
+                        </svg>
+                        <input type="password" class="form-control" placeholder="Nhập lại mật khẩu" name="">
+                    </div>
+                    <div class="form-group capcha">
+                        <span class="img_capcha"><img src="images/graphics/capcha.png" title="amz"></span>
+                        <input type="" class="form-control" placeholder="Nhập mã CAPCHA" name="">
+                    </div>
+                    <label class="confir_res">
+                        Nhận các thông tin và chương trình khuyến mãi qua email.
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <button class="btn yellow">Tạo tài khoản</button>
+                    <p class="mt10">Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo <a href=""
+                            style="color: #00A3FF">điều kiện sử dụng và chính sách của Chúng tôi</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END POPUP ĐĂNG NHẬP/ĐĂNG KÝ-->
+
+<!--POPUP TẠO ĐỊA CHỈ GIAO HÀNG-->
+<div id="address-popup" class="address-popup white-popup">
+    <div class="content_poup">
+        <h2 class="title_form txt_22">Tạo địa chỉ giao hàng</h2>
+        <div class="form form_default">
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#user"></use>
+                </svg>
+                <input type="text" class="form-control error" id="" placeholder="Nhập họ và tên" name="">
+                <span class="error">Thông báo lỗi</span>
+            </div>
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#mail"></use>
+                </svg>
+                <input type="" class="form-control" id="" placeholder="Nhập địa chỉ Email" name="">
+            </div>
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#smartphone"></use>
+                </svg>
+                <input type="number" class="form-control" id="" placeholder="Nhập số điện thoại" name="">
+            </div>
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#compass"></use>
+                </svg>
+                <select class="form-control select2" name="" id="">
+                    <option value="">Tỉnh/Thành</option>
+                    <option value="">Hà Nội</option>
+                    <option value="">Hồ Chí Minh</option>
+                </select>
+            </div>
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#map"></use>
+                </svg>
+                <select class="form-control select2" name="" id="">
+                    <option value="">Quận/Huyện</option>
+                    <option value="">Hà Nội</option>
+                    <option value="">Hồ Chí Minh</option>
+                </select>
+            </div>
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#vector"></use>
+                </svg>
+                <select class="form-control select2" name="" id="">
+                    <option value="">Phường/Xã</option>
+                    <option value="">Hà Nội</option>
+                    <option value="">Hồ Chí Minh</option>
+                </select>
+            </div>
+            <div class="form-group icon-visible">
+                <svg class="icon-us">
+                    <use xlink:href="images/icons/icon.svg#address"></use>
+                </svg>
+                <input type="" class="form-control" id="" placeholder="Địa chỉ gia hàng" name="">
+            </div>
+
+            <label class="confir_res mt20 mb30">
+                Sử dụng địa chỉ này làm mặc định
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <div class="control_btn">
+                <button class="btn cancel agray">Hủy bỏ</button>
+                <button class="btn confirm">Giao hàng đến địa chỉ này</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END POPUP TẠO ĐỊA CHỈ GIAO HÀNG-->
+
+<!--POPUP THÔNG BÁO mfp-hide-->
+<div id="notifi-popup" class="notifi-popup white-popup">
+    <div class="content_poup center">
+        <p class="mb15"><img src="images/graphics/verifiler.png"></p>
+        <p class="txt_18">Cập nhật thông tin thành công</p>
+    </div>
+</div>
+<!--END POPUP THÔNG BÁO-->
+<!--POPUP THÔNG BÁO mfp-hide-->
+<div id="notifi-popup" class="notifi-popup white-popup">
+    <div class="content_poup center">
+        <p class="mb15"><img src="images/icons/success.png"></p>
+        <p class="txt_18">Cập nhật thông tin thành công</p>
+    </div>
+</div>
+<!--END POPUP THÔNG BÁO-->
+<!--POPUP THÔNG BÁO mfp-hide-->
+<div id="notifi-popup" class="notifi-popup white-popup max-popup">
+    <div class="content_poup">
+        <h2 class="title_form txt_22 mb30">Sửa địa Thông tin giao hàng</h2>
+        <div class="page-payer">
+            <ul class="pay-list-user">
+                <li class="checked">
+                    <div class="warp">
+                        <label class="lbl confir_res">
+                            <span class="default">Địa chỉ mặc định</span>
+                            <h3>Mai văn dinh</h3>
+                            <p><span>Địa chỉ:</span> 17 duy tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội,
+                                Việt
+                                Nam</p>
+                            <div class="bottom">
+                                <div class="phone"><span>Điện thoại:</span> 0869966206</div>
+                                <div class="option">
+                                    <a class="select" href="#">
+                                        Chọn địa chỉ này
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="warp">
+                        <label class="lbl confir_res">
+                            <a class="delete">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#delete"></use>
+                                </svg>
+                            </a>
+                            <h3>Mai văn dinh</h3>
+                            <p><span>Địa chỉ:</span> 17 duy tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội,
+                                Việt
+                                Nam</p>
+                            <div class="bottom">
+                                <div class="phone"><span>Điện thoại:</span> 0869966206</div>
+                                <div class="option">
+                                    <a class="select" href="#">
+                                        Chọn địa chỉ này
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="warp">
+                        <label class="lbl confir_res">
+                            <h3>Mai văn dinh</h3>
+                            <p><span>Địa chỉ:</span> 17 duy tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội,
+                                Việt
+                                Nam</p>
+                            <div class="bottom">
+                                <div class="phone"><span>Điện thoại:</span> 0869966206</div>
+                                <div class="option">
+                                    <a class="select" href="#">
+                                        Chọn địa chỉ này
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="warp">
+                        <label class="lbl confir_res">
+                            <h3>Mai văn dinh</h3>
+                            <p><span>Địa chỉ:</span> 17 duy tân, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội,
+                                Việt
+                                Nam</p>
+                            <div class="bottom">
+                                <div class="phone"><span>Điện thoại:</span> 0869966206</div>
+                                <div class="option">
+                                    <a class="select" href="#">
+                                        Chọn địa chỉ này
+                                    </a>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="center mb30">
+                <a class="add_address btn" href="javascript:;">+ &nbsp;Thêm địa chỉ giao hàng mới</a>
+            </div>
+            <div class="center mb30">
+                <a class="add_address btn" href="javascript:;" style="padding: 0 40px;">Thu gọn</a>
+            </div>
+            <div class="form form_default">
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#user"></use>
+                    </svg>
+                    <input type="text" class="form-control error" id="" placeholder="Nhập họ và tên" name="">
+                    <span class="error">Thông báo lỗi</span>
+                </div>
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#mail"></use>
+                    </svg>
+                    <input type="" class="form-control" id="" placeholder="Nhập địa chỉ Email" name="">
+                </div>
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#smartphone"></use>
+                    </svg>
+                    <input type="number" class="form-control" id="" placeholder="Nhập số điện thoại" name="">
+                </div>
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#compass"></use>
+                    </svg>
+                    <select class="form-control select2" name="" id="">
+                        <option value="">Tỉnh/Thành</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Hồ Chí Minh</option>
+                    </select>
+                </div>
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#map"></use>
+                    </svg>
+                    <select class="form-control select2" name="" id="">
+                        <option value="">Quận/Huyện</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Hồ Chí Minh</option>
+                    </select>
+                </div>
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#vector"></use>
+                    </svg>
+                    <select class="form-control select2" name="" id="">
+                        <option value="">Phường/Xã</option>
+                        <option value="">Hà Nội</option>
+                        <option value="">Hồ Chí Minh</option>
+                    </select>
+                </div>
+                <div class="form-group icon-visible">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#address"></use>
+                    </svg>
+                    <input type="" class="form-control" id="" placeholder="Địa chỉ gia hàng" name="">
+                </div>
+
+                <label class="confir_res mt20 mb30">
+                    Sử dụng địa chỉ này làm mặc định
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <div class="control_btn">
+                    <button class="btn cancel agray">Hủy bỏ</button>
+                    <button class="btn confirm">Giao hàng đến địa chỉ này</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END POPUP THÔNG BÁO-->
+
+<!--POPUP THÔNG BÁO mfp-hide-->
+<div id="notifi-popup" class="notifi-popup white-popup max-popup">
+    <div class="content_poup">
+        <h2 class="title_form txt_22 mb30">Thông tin chuyển khoản thanh toán</h2>
+        <ul class="info-bank mb15">
+            <li>
+                <div>
+                    Số tài khoản
+                </div>
+                <div class="medium">
+                    0451000448199
+                </div>
+            </li>
+            <li>
+                <div>
+                    Chủ tài khoản
+                </div>
+                <div class="medium">
+                    Công ty cổ phần US Express
+                </div>
+            </li>
+            <li>
+                <div>
+                    Ngân hàng
+                </div>
+                <div class="medium">
+                    Vietcombank CN Thành Công, Hà Nội
+                </div>
+            </li>
+            <li>
+                <div>
+                    Số tiền chuyển khoản
+                </div>
+                <div class="color_green2 medium">
+                    1,232,109 đ
+                </div>
+            </li>
+            <li>
+                <div>
+                    Nội dung chuyển khoả
+                </div>
+                <div class="color_green2 medium">
+                    UAM-0D08081 CHUYEN KHOAN MUA HO
+                </div>
+            </li>
+        </ul>
+
+        <div class="note-popup">
+            <p>LƯU Ý:</p>
+            <ul>
+                <li><em>Bạn vui lòng thành toán trong vòng <strong class="color_green2 medium">1giờ</strong>. US Express
+                        có tài
+                        khoản ở hầu hết tất
+                        cả các ngân hàng
+                        lớn để bạn có thể chuyển khoản thuận tiện nhất.</em></li>
+                <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển
+                    khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển
+                    khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                <li>Bạn vui lòng điền chính xác thông tin chuyển khoản bao gồm “Số tiền chuyển khoản” & “Nội dung chuyển
+                    khoản” để việc đặt hàng diễn ra nhanh chóng.</li>
+                <li>Bạn có thể thực hiện chuyển khoản thanh toán tại quầy giao dịch ngân hàng, qua mobile banking, cây
+                    ATM, hoặc chuyển khoản qua internet <a class="line-color"><em>tại đây</em></a>.</li>
+            </ul>
+        </div>
+        <div class="center"><button class="btn confirm">Xác nhận đã chuyển khoản</button></div>
+    </div>
+</div>
+
+<!-- /build:content -->

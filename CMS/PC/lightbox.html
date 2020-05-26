@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>
+        CMS Template
+
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- build:head -->
+
+</head>
+
+<body class="homepage">
+
+    <!--HEADER-->
+    <section id="topbar" class="section top_bar">
+        <div class="flex container align-center">
+            <a class="logo" href="#"><img src="images/graphics/logo.svg"></a>
+            <div class="header-right">
+                <ul>
+                    <li class="setting">
+                        <a href="javascript:void(0);">
+                            <strong>Thiết lập</strong>
+                            <i class="iconfont-setting"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#"><i class="fa fa-user"></i>Quản lý người dùng</a></li>
+                            <li><a href="#"><i class="fa fa-reply-all"></i>Phân quyền nhóm</a></li>
+                            <li><a href="#"><i class="fa fa-file-word-o"></i>Danh sách chuyên mục</a></li>
+                        </ul>
+                    </li>
+                    <li class="user-name menu-bar onclick-togle">
+                        <a class="lk-user-name" href="#" title="Hùng Nguyễn">
+                            <strong>Chào: cuongle</strong>
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#login-popup" class="open-popup"><i class="fa fa-sign-in"></i>Đăng nhập</a>
+                            </li>
+                            <li><a href="#add-user-popup" class="open-popup"><i class="fa fa-key"></i>Đổi mật khẩu</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-align-left"></i>Xem báo cáo cuối ngày</a></li>
+                            <li><a href="#"><i class="fa fa-reply-all"></i>Chọn hóa đơn trả hàng</a></li>
+                            <li><a href="#"><i class="fa fa-file-word-o"></i>Lập phiếu thu</a></li>
+                            <li><a href="#"><i class="fa fa-upload"></i>Imporrt</a></li>
+                            <li><a href="#"><i class="fa fa-eye-slash"></i>Tùy chọn hiển thị</a></li>
+                            <li><a href="#"><i class="fa fa-list-alt"></i>Quản lý</a></li>
+                            <li><a href="#"><i class="fa fa-external-link"></i>Đăng xuất</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER-->
+    <section class="section head-top">
+        <div class="flex container">
+            <div class="header-tab tab-default">
+                <ul class="flex">
+                    <li><a href="#" class="active">Tổng quan</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Khách hàng</a></li>
+                    <li>
+                        <a href="#">Sản phẩm</a>
+                        <ul class="lever2">
+                            <li><a href="#"><i class="fa fa-files-o"></i>&nbsp;Quản lý đơn hàng</a></li>
+                            <li><a href="#"><i class="fa fa-floppy-o"></i>&nbsp;Tạo đơn hàng</a></li>
+                            <li><a href="#"><i class="fa fa-qrcode"></i>&nbsp;Scan order US</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tra cứu</a></li>
+                </ul>
+            </div>
+            <div class="wrap-notifi">
+                <a class="notifi" href="#">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="coutn">8</span>
+                    <span>Thông báo</span>
+                </a>
+                <div class="list">
+                    <span class="note">Thông báo từ hệ thống</span>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <strong class="color-main">cuongle</strong> vừa thêm 2 sản phẩm vào giỏ hàng cách đây 15
+                                phút nhưng chưa tạo đơn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Đơn UAM-8B858 được khởi tạo thành công cách đây 1 tiếng nhưng chưa thanh
+                                toán</a>
+                        </li>
+                        <li>
+                            <a>
+                                Sản phẩm <span class="color-main">Kirkland Signature Ibuprofen IB, 200 mg., 1,000
+                                    Caplets</span> vừa được published
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"></div>
+    
+
+<!--SECTION CONTAINER -->
+
+<section class="section clearfix mt40">
+    <div class="container">
+        <p class="mt20">
+            <a href="#popup-thongbao" class="open-popup">Popup thông báo</a>
+        </p>
+        <p class="mt20">
+            <a href="#add-user-popup" class="open-popup">Thêm người dùng</a>
+        </p>
+        <p class="mt20">
+            <a href="#add-nhom-quyen" class="open-popup">Thêm nhóm quyền</a>
+        </p>
+    </div>
+</section>
+
+
+<!--POPUP THONG BÁO -->
+<div id="popup-thongbao" class="white-popup">
+    <div class="content_lightbox">
+        <div class="head red">
+            Xác nhận khóa tài khoản
+        </div>
+        <p>Bạn có chắc chắn muốn ngừng hoạt động nhân viên này? Thông tin và giao dịch của nhân viên vẫn sẽ được giữ.
+        </p>
+        <div class="form-default">
+            <div class="form-group align-right mt20 block">
+                <button type="submit" class="btn btn-default red"><i class="fa fa-check"></i>Đồng ý</button>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÔNG BÁO-->
+<div class="white-popup">
+    <div class="content_lightbox">
+        <div class="head red">
+            Reset mật khẩu thành công !
+        </div>
+        <div class="row align-center">
+            <div class="col-5">Mật khẩu mới</div>
+            <div class="col-7" style="font-size: 50px">97525</div>
+        </div>
+        <div class="form-default">
+            <div class="form-group align-right mt20 block">
+                <button type="submit" class="btn btn-default red"><i class="fa fa-check"></i>Đồng ý</button>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÔNG BÁO-->
+<div class="white-popup">
+    <div class="content_lightbox">
+        <div class="head red">
+            Thông báo từ hệ thống
+        </div>
+        <p>Xin vui lòng liên hệ với bộ phận kỹ thuật để được cấp tài khoản</p>
+        <div class="form-default">
+            <div class="form-group align-right align-center justify-between mt20">
+                <div><i class="fa fa-phone" style="border: 1px solid #333;
+                        border-radius: 50%;
+                        width: 16px;
+                        height: 16px;
+                        text-align: center;
+                        line-height: 16px;
+                        font-size: 11px;
+                        margin-right: 5px;">
+                    </i>
+                    Hỗ trợ: 1900.633.600
+                </div>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÊM NHÓM QUYỀN-->
+<div id="add-nhom-quyen" class="white-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Thêm nhóm quyền
+        </div>
+        <div class="form-default">
+            <div class="form-group">
+                <label class="lbl">Tên nhóm</label>
+                <div class="wrap_input">
+                    <input type="text" class="form-control error" id="">
+                    <span class="error">Thông báo lỗi</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lbl">Mô tả</label>
+                <div class="wrap_input">
+                    <input type="text" class="form-control" id="" placeholder="Nhập mô tả">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lbl">Trạng thái</label>
+                <div class="wrap_input">
+                    <select class="form-control">
+                        <option>Chọn trạng thái</option>
+                        <option>Bình thường</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group align-right mt20 block">
+                <button type="submit" class="btn btn-default bg-main"><i class="fa fa-floppy-o"></i>Lưu</button>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<div id="add-nhom-quyen" class="white-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Thêm nhóm hàng
+        </div>
+        <div class="form-default">
+            <div class="form-group">
+                <label class="lbl">Tên nhóm</label>
+                <div class="wrap_input">
+                    <input type="text" class="form-control error" id="">
+                    <span class="error">Thông báo lỗi</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lbl">Nhóm cha</label>
+                <div class="wrap_input">
+                    <select class="form-control">
+                        <option>Laptop, tablet</option>
+                        <option>Màn hình</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="form-group align-right mt20 block">
+                <button type="submit" class="btn btn-default bg-main"><i class="fa fa-floppy-o"></i>Lưu</button>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÊM THUỘC TÍNH-->
+<div class="white-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Thêm thuộc tính
+        </div>
+        <div class="form-default">
+            <div class="form-group">
+                <label class="lbl">Tên thuộc tính</label>
+                <div class="wrap_input">
+                    <input type="text" class="form-control" id="" value="Dung lượng">
+                </div>
+            </div>
+            <div class="form-group align-right mt20 block">
+                <button type="submit" class="btn btn-default bg-main"><i class="fa fa-floppy-o"></i>Lưu</button>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+
+<!--POPUP THÊM THUỘC TÍNH-->
+<div class="white-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Link chi tiết sản phẩm
+        </div>
+        <div class="form-default2">
+            <div class="form-group">
+                <label class="lbl">Link</label>
+                <div class="wrap_input">
+                    <input type="text" class="form-control" id=""
+                        value="https://www.amazon.com/Fire-TV-Stick-4K-with-Alexa-Voice-Remote/dp/B079Q...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="lbl">Nhãn hàng</label>
+                <div class="wrap_input">
+                    <select class="form-control">
+                        <option>--- Chọn nhãn hàng ---</option>
+                        <option>Bình thường</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group flex-end mt20 block">
+                <i class="fa fa-refresh fa-spin" style="color:#1E5846"></i>
+                <button type="submit" class="btn btn-default bg-main">Đồng ý</button>
+                <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ qua</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP QUẢN LÝ NHÓM HÀNG-->
+<div class="white-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Nhóm hàng
+        </div>
+        <div class="widget-menu">
+            <div class="form-group">
+                <button type="button" class="btn" data-action="expand-all">Mở rộng</button>
+                <button type="button" class="btn" data-action="expand-all">Thu gọn</button>
+            </div>
+            <div class="wrap-widget">
+                <div class="widget-header">
+                    <h4><i class="fa fa-bars"></i>Danh sách chuyên mục</h4>
+                </div>
+                <ul class="dd-list">
+                    <li class="lever1">
+                        <button class="colspan active" data-action="collapse" type="button"><i
+                                class="fa fa-plus"></i></button>
+                        <div class="dd-handle">
+                            <a href="javascrip:;">Đồ điện tử và công nghệ</a>
+                            <div class="control">
+                                <a href=""><img src="images/icons/sql.png"></a>
+                                <a href=""><img src="images/icons/edit.png"></a>
+                            </div>
+                        </div>
+                        <ul class="expand lever2" style="display: block;">
+                            <li>
+                                <button class="colspan active" data-action="collapse" type="button"><i
+                                        class="fa fa-plus"></i></button>
+                                <div class="dd-handle">
+                                    <a href="">Mẹ & Bé</a>
+                                    <div class="control">
+                                        <a href=""><img src="images/icons/sql.png"></a>
+                                        <a href=""><img src="images/icons/edit.png"></a>
+                                    </div>
+                                </div>
+                                <ul class="expand lever3" style="display: block;">
+                                    <li>
+                                        <button class="colspan" data-action="collapse" type="button"><i
+                                                class="fa fa-plus"></i></button>
+                                        <div class="dd-handle">
+                                            <a href="">Đồ dùng cho bé</a>
+                                            <div class="control">
+                                                <a href=""><img src="images/icons/sql.png"></a>
+                                                <a href=""><img src="images/icons/edit.png"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="colspan active" data-action="collapse" type="button"><i
+                                                class="fa fa-plus"></i></button>
+                                        <div class="dd-handle">
+                                            <a href="">Dành cho bà bầu</a>
+                                            <div class="control">
+                                                <a href=""><img src="images/icons/sql.png"></a>
+                                                <a href=""><img src="images/icons/edit.png"></a>
+                                            </div>
+                                        </div>
+                                        <ul class="expand lever4" style="display: block;">
+                                            <li>
+                                                <div class="dd-handle">
+                                                    <a href="">Bổ sung dinh dưỡng</a>
+                                                    <div class="control">
+                                                        <a href=""><img src="images/icons/sql.png"></a>
+                                                        <a href=""><img src="images/icons/edit.png"></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="dd-handle">
+                                                    <a href="">Quần áo mẹ bầu</a>
+                                                    <div class="control">
+                                                        <a href=""><img src="images/icons/sql.png"></a>
+                                                        <a href=""><img src="images/icons/edit.png"></a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <button class="colspan" data-action="collapse" type="button"><i
+                                        class="fa fa-plus"></i></button>
+                                <div class="dd-handle active">
+                                    <a href="">Laptop, tablet</a>
+                                    <div class="control">
+                                        <a href=""><img src="images/icons/sql.png"></a>
+                                        <a href=""><img src="images/icons/edit.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="colspan" data-action="collapse" type="button"><i
+                                        class="fa fa-plus"></i></button>
+                                <div class="dd-handle active">
+                                    <a href="">Laptop, tablet</a>
+                                    <div class="control">
+                                        <a href=""><img src="images/icons/sql.png"></a>
+                                        <a href=""><img src="images/icons/edit.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="colspan" data-action="collapse" type="button"><i
+                                        class="fa fa-plus"></i></button>
+                                <div class="dd-handle active">
+                                    <a href="">Laptop, tablet</a>
+                                    <div class="control">
+                                        <a href=""><img src="images/icons/sql.png"></a>
+                                        <a href=""><img src="images/icons/edit.png"></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lever1">
+                        <button class="colspan" data-action="collapse" type="button"><i class="fa fa-plus"></i></button>
+                        <div class="dd-handle">
+                            <a href="javascrip:;">Đồ gia dụng</a>
+                            <div class="control">
+                                <a href=""><img src="images/icons/sql.png"></a>
+                                <a href=""><img src="images/icons/edit.png"></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÊM MỚI NHÓM HÀNG-->
+<div class="white-popup add-nhom-hang">
+    <div class="content_lightbox">
+        <div class="head bg-gray">
+            Thêm mới cấp con cho mục Mẹ & Bé
+        </div>
+        <div class="nav mb15">Usexpress.vn -> Mẹ & Bé</div>
+        <div class="wrap mb20">
+            <div class="form-default">
+                <div class="form-group">
+                    <label class="lbl">Tên nhóm <span class="obligatory">*</span></label>
+                    <div class="wrap_input">
+                        <input type="text" class="form-control" id="" value="Đồ dùng cho bé" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="lbl">Vị trí</label>
+                    <div class="wrap_input">
+                        <div class="sl_giohang">
+                            <button class="giam_sl" id="minus-btn">-</button>
+                            <input type="text" id="qty_input" class="qty_input" value="1" min="1">
+                            <button class="tang_sl" id="plus-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="lbl">Hiển thị</label>
+                    <div class="wrap_input">
+                        <label class="check-list inline">
+                            <input type="checkbox" checked="">
+                            <span class="checkmark"></span>
+                            Header
+                        </label>
+                        <label class="check-list inline">
+                            <input type="checkbox" checked="">
+                            <span class="checkmark"></span>
+                            Footer
+                        </label>
+                        <label class="check-list inline">
+                            <input type="checkbox" checked="">
+                            <span class="checkmark"></span>
+                            Home
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group male">
+                    <label class="lbl">Trạng thái</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Bình thường</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Khóa/tạm dừng</label>
+                </div>
+                <div class="form-group">
+                    <label class="lbl">
+                        Kích thước
+                        <span class="txt_12 gray mt5">(Chấp nhận ảnh jpg, gif, png)</span>
+                    </label>
+                    <div class="wrap_input">
+                        <div class="flex flex_btn">
+                            <select class="form-control" style="width: 150px;">
+                                <option>80x80</option>
+                                <option>80x80</option>
+                            </select>
+                            <a class="edit btn" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                            <a class="add btn" href="#">+</a>
+                        </div>
+                        <div class="import-img center mt20" style="width: 150px;">
+                            <label class="choose choose-wrap">
+                                <input type="file" name="myFile">
+                                <div class="choose-content">
+                                    <img src="images/icons/camera.png">
+                                    <span>80x80</span>
+                                </div>
+                            </label>
+                            <label class="choose mb10">
+                                <input type="file" name="myFile" style="display: none;">
+                                <a class="btn">Upload ảnh</a>
+                            </label>
+                            <div>
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <div class="div_btn2 mt20">
+                                    <button type="submit" class="btn btn-default red">Save Edit</button>
+                                    <button type="submit" class="btn btn-default cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="lbl">
+                        Ảnh hiển thị
+                    </label>
+                    <div class="wrap_input">
+                        <div class="row list-choose">
+                            <div class="col-md-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Đại diện
+                                </label>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Banner
+                                </label>
+                            </div>
+                            <div class="col-md-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Đại diện
+                                </label>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Banner
+                                </label>
+                            </div>
+                            <div class="col-md-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Đại diện
+                                </label>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Banner
+                                </label>
+                            </div>
+                            <div class="col-md-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Đại diện
+                                </label>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Banner
+                                </label>
+                            </div>
+                            <div class="col-md-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Đại diện
+                                </label>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Banner
+                                </label>
+                            </div>
+                            <div class="col-md-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Đại
+                                    diện
+                                </label>
+                                <label class="check-list inline">
+                                    <input type="checkbox" checked="">
+                                    <span class="checkmark"></span>
+                                    Banner
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group align-right mt10 mb0 block">
+                    <button type="submit" class="btn btn-default cancel"><i class="fa fa-floppy-o"></i>Lưu</button>
+                    <button type="submit" class="btn btn-default cancel"><i class="fa fa-trash"></i>Xóa</button>
+                    <button type="submit" class="btn btn-default cancel"><i class="fa fa-lock"></i>Khóa chuyên
+                        mục</button>
+                    <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ
+                        qua</button>
+                </div>
+                <div class="form-group align-right mt10 mb0 block">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-floppy-o"></i>Lưu</button>
+                    <button type="submit" class="btn btn-default red"><i class="fa fa-trash"></i>Xóa</button>
+                    <button type="submit" class="btn btn-default red"><i class="fa fa-lock"></i>Khóa chuyên
+                        mục</button>
+                    <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ
+                        qua</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<div class="white-popup min-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Thêm kích thước
+        </div>
+        <div class="form-default2">
+            <div class="form-group">
+                <label class="lbl">Kích cỡ</label>
+                <div class="wrap_input row">
+                    <div class="col-6" style="padding: 0 3px"><input type="text" class="form-control" id=""
+                            placeholder="Width"></div>
+                    <div class="col-6" style="padding: 0 3px"><input type="text" class="form-control" id=""
+                            placeholder="Height"></div>
+                    <span class="error" style="padding: 0 3px">Thông báo lỗi</span>
+                </div>
+            </div>
+            <div class="form-group flex-end mt20 block">
+                <button type="submit" class="btn btn-default bg-main">Thêm</button>
+                <button type="submit" class="btn btn-default cancel">Đóng</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<div class="white-popup min-popup">
+    <div class="content_lightbox">
+        <div class="head">
+            Sửa kích thước
+        </div>
+        <div class="form-default2">
+            <div class="form-group">
+                <label class="lbl">Kích cỡ</label>
+                <div class="wrap_input row">
+                    <div class="col-6" style="padding: 0 3px"><input type="text" class="form-control" id="" value="80">
+                    </div>
+                    <div class="col-6" style="padding: 0 3px"><input type="text" class="form-control" id="" value="80">
+                    </div>
+                    <span class="error" style="padding: 0 3px">Thông báo lỗi</span>
+                </div>
+            </div>
+            <div class="form-group flex-end mt20 block">
+                <button type="submit" class="btn btn-default bg-main">Thêm</button>
+                <button type="submit" class="btn btn-default cancel">Đóng</button>
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÊM KHÁCH HÀNG-->
+<div id="add-user-popup" class="user-popup popup-width2 white-popup">
+    <div class="content_lightbox">
+        <p>Thêm người dùng</p>
+        <div class="flex">
+            <div class="up-file mb15">
+                <div class="ava default mb10">
+                    <!-- <i class="fa fa-camera-retro"></i> -->
+                    <img src="images/icons/camera.png">
+                </div>
+                <div class="ava mb10" style="display: none">
+                    <span class="thumb_img thumb_5x5">
+                        <img src="images/graphics/img_2.jpg">
+                    </span>
+                </div>
+                <label class="choose">
+                    <input type="file" name="myFile">
+                    chọn ảnh
+                </label>
+
+            </div>
+            <div class="form-default row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="lbl">Họ tên</label>
+                        <div class="wrap_input">
+                            <input type="text" class="form-control" id="">
+                            <span class="error txt_11" style="display: none;">Loi nhap thong tin</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Tên đăng nhập</label>
+                        <div class="wrap_input">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Mật khẩu</label>
+                        <div class="wrap_input">
+                            <input type="password" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Gõ lại mật khẩu</label>
+                        <div class="wrap_input">
+                            <input type="password" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Vai trò</label>
+                        <div class="wrap_input">
+                            <select class="form-control">
+                                <option>- Chọn vai trò -</option>
+                                <option>Bình thường</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Ngày sinh</label>
+                        <div class="datepicker-wrap">
+                            <input id="datepicker" class="datepicker-input form-control" type="text" value="11/12/2019">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="lbl">Điện thoại</label>
+                        <div class="wrap_input">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Địa chỉ</label>
+                        <div class="wrap_input">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Email</label>
+                        <div class="wrap_input">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                    <div class="form-group male">
+                        <label class="lbl">Giới tính</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Nam</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Nữ</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Ghi chú</label>
+                        <div class="wrap_input">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group align-right col-12 mt20 block">
+                    <button type="submit" class="btn btn-default"><i class="fa fa-floppy-o"></i>Lưu</button>
+                    <button type="submit" class="btn btn-default cancel"><i class="fa fa-ban"></i>Bỏ qua</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="warp-dotted mt20">
+            <label class="lbl-text">
+                Bảo mật
+            </label>
+            <div class="row">
+                <div class="col-md-7 form-default">
+                    <span class="icon-changer"><img src="images/icons/changer.svg"></span>
+                    <div>Đổi mật khẩu</div>
+                    <div class="txt_666 mb15 txt_13">Bạn nên sử dụng mật khẩu mạnh mà mình chưa sử dụng ở đâu khác</div>
+                    <div class="form-group">
+                        <label class="lbl">Mật khẩu hiện tại</label>
+                        <div class="wrap_input">
+                            <input type="password" class="form-control" id="" value="1232325645">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Mật khẩu mới</label>
+                        <div class="wrap_input">
+                            <input type="password" class="form-control" id="" value="1232325645">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="lbl">Gõ lại mật khẩu mới</label>
+                        <div class="wrap_input">
+                            <input type="password" class="form-control" id="" value="1232325645">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 align-right"><button type="submit" class="btn btn-default"><i
+                            class="fa fa-floppy-o"></i>Lưu</button></div>
+
+            </div>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--POPUP THÊM SẢN PHẨM-->
+<div id="add-prodcut-popup" class="add-prodcut-popup popup-width2 white-popup">
+    <div class="content_lightbox">
+        <p class="txt_16">Thêm sản phẩm</p>
+        <div class="wrap-tab">
+            <div class="tab-default">
+                <a href="#tab1" class="active">Thông tin</a>
+                <a href="#tab2">Mô tả chi tiết</a>
+            </div>
+            <div class="tab-content">
+                <div id="tab1">
+                    <div class="form-default2 row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="lbl">
+                                    Link nguồn
+                                    <a style="color: #666;" href="#" data-toggle="tooltip" data-placement="top" title=""
+                                        data-original-title="Hệ thống sẽ tự động crawler theo link truyền vào">
+                                        <i class="fa fa-exclamation-circle"></i>
+                                    </a>
+                                </label>
+                                <div class="wrap_input">
+                                    <input type="text" class="form-control" id=""
+                                        value="https://www.amazon.com/dp/168437281X/ref=sspa_dk_detail_3?psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzREkyRFBFRE......">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="form-group pr30">
+                                <label class="lbl">Mã sản phẩm</label>
+                                <div class="wrap_input">
+                                    <input type="text" class="form-control error" id="" value="B06ZY4KH8S">
+                                </div>
+                                <div class="notifi fa fa-exclamation-circle"></div>
+                            </div>
+                            <div class="form-group pr30">
+                                <label class="lbl">Tên sản phẩm</label>
+                                <div class="wrap_input">
+                                    <input type="text" class="form-control" id=""
+                                        value="Hanes Men's Ecosmart Fleece Sweatshirt">
+                                </div>
+                                <div class="notifi fa fa-exclamation-circle"></div>
+                            </div>
+                            <div class="form-group pr60">
+                                <label class="lbl">Nhãn hàng</label>
+                                <div class="wrap_input">
+                                    <select class="form-control">
+                                        <option>--- Lựa chọn ---</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <a class="add" href="#">+</a>
+                                <div class="notifi fa fa-exclamation-circle"></div>
+                            </div>
+                            <div class="form-group pr60">
+                                <label class="lbl">Thương hiệu</label>
+                                <div class="wrap_input">
+                                    <select class="form-control">
+                                        <option>--- Lựa chọn ---</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <a class="add" href="#">+</a>
+                                <div class="notifi fa fa-exclamation-circle"></div>
+                            </div>
+                            <div class="form-group pr100">
+                                <label class="lbl">Đơn vị tính</label>
+                                <div class="wrap_input">
+                                    <select class="form-control">
+                                        <option>Chiếc</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <a class="edit" href="#"><i class="fa fa-pencil-square-o"></i></a>
+                                <a class="add" href="#">+</a>
+                                <div class="notifi fa fa-exclamation-circle"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb15">
+                            <div class="form-group">
+                                <label class="lbl">Giá gốc
+                                    <a style="color: #666;" href="#" data-toggle="tooltip" data-placement="top" title=""
+                                        data-original-title="Giá gốc của sản phẩm">
+                                        <i class="fa fa-exclamation-circle"></i>
+                                    </a>
+                                </label>
+                                <div class="wrap_input">
+                                    <input type="text" class="form-control align-right" id="" value="200,000,000">
+                                    <div class="flex stop_sell mt10">
+                                        <label class="check-list mr10 txt_13">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                            Ngừng bán
+                                        </label>
+                                        <a style="color: #666;" href="#" data-toggle="tooltip" data-placement="right"
+                                            title="Sản phẩm sẽ được khóa lại và không xuất hiện trên mặt trang">
+                                            <i class="fa fa-exclamation-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7 mb15">
+                            <p>Ảnh sản phẩm <span class="gray">(Chấp nhận ảnh đuôi jpg, png, gif)</span></p>
+                            <div class="manage-color">
+                                <div class="flex list">
+                                    <div class="items magnific_popup">
+                                        <a class="thumb_img thumb_1x1 magnific_thumb">
+                                            <img src="images/graphics/sp1.png">
+                                        </a>
+                                    </div>
+                                    <div class="items magnific_popup">
+                                        <a class="thumb_img thumb_1x1 magnific_thumb">
+                                            <img src="images/graphics/sp1.png">
+                                        </a>
+                                    </div>
+                                    <div class="items magnific_popup">
+                                        <a class="thumb_img thumb_1x1 magnific_thumb">
+                                            <img src="images/graphics/sp1.png">
+                                        </a>
+                                    </div>
+                                    <div class="items magnific_popup">
+                                        <a class="thumb_img thumb_1x1 magnific_thumb">
+                                            <img src="images/graphics/sp1.png">
+                                        </a>
+                                    </div>
+                                    <div class="items import">
+                                        <label class="choose choose-wrap">
+                                            <input type="file" name="myFile">
+                                            <div class="choose-content">
+                                                <img src="images/icons/images.png">
+                                                <span>+ Thêm</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-wrap mb20">
+                        <h3 class="title_down_up onclick-togle">
+                            Thông tin phí mua hộ
+                            <a class="down-up fa fa-angle-down"></a>
+                        </h3>
+                        <div class="wap expand">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label class="line-bottom">Phí pound đầu tiên</label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="line-bottom">150,000</label>
+                                </div>
+                                <div class="col-sm-5 col-11">
+                                    <label class="line-bottom">Hàng hóa đặc biệt bao gồm các sản phẩm của Apple(trừ phụ
+                                        kiện); máy tính, điện thoại, máy tính bảng và các sản phẩm có giá trị cao trên
+                                        200$.</label>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                    line-height: 35px;
+                                    text-align: center;">×</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label class="line-bottom">Phí đặc biệt</label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="line-bottom">1,000,000</label>
+                                </div>
+                                <div class="col-sm-5 col-11">
+                                    <label class="line-bottom">Sản phẩm có giá trị cao trên 200$.</label>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                    line-height: 35px;
+                                    text-align: center;">×</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label class="line-bottom">Phí luxury</label>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label class="line-bottom">1,000,000</label>
+                                </div>
+                                <div class="col-sm-5 col-11">
+                                    <label class="line-bottom">Hàng hóa đặc biệt bao gồm các sản phẩm của Apple(trừ phụ
+                                        kiện)</label>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                    line-height: 35px;
+                                    text-align: center;">×</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-wrap mb20">
+                        <h3 class="title_down_up onclick-togle">
+                            Thuộc tính sản phẩm
+                            <a class="down-up fa fa-angle-down"></a>
+                        </h3>
+                        <div class="wap form-default2 expand">
+                            <div class="form-group row mb0">
+                                <div class="col-sm-4 mb10">
+                                    <select class="form-control">
+                                        <option>Kích thước</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-11 mb10">
+                                    <div class="tag-input">
+                                        <div class="tag-item">
+                                            30 m <a class="delete" href="#">×</a>
+                                        </div>
+                                        <div class="tag-item">
+                                            50 m <a class="delete" href="#">×</a>
+                                        </div>
+                                        <input type="text" class="form-control" id=""
+                                            placeholder="Nhập giá trị và nhấn enter...">
+                                    </div>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                line-height: 35px;
+                                text-align: center;">×</a>
+                            </div>
+                            <div class="form-group row mb0">
+                                <div class="col-sm-4 mb10">
+                                    <select class="form-control">
+                                        <option>Màu sắc</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 col-11 mb10">
+                                    <div class="tag-input">
+                                        <div class="tag-item">
+                                            Da cam <a class="delete" href="#">×</a>
+                                        </div>
+                                        <div class="tag-item">
+                                            Nâu <a class="delete" href="#">×</a>
+                                        </div>
+                                        <input type="text" class="form-control" id=""
+                                            placeholder="Nhập giá trị và nhấn enter...">
+                                    </div>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                line-height: 35px;
+                                text-align: center;">×</a>
+                            </div>
+                            <a class="btn btn-default white">+ Tạo thuộc tính</a>
+                        </div>
+                    </div>
+                    <div class="border-wrap mb20">
+                        <h3 class="title_down_up onclick-togle">
+                            Danh sách hàng hóa cùng loại (4)
+                            <a class="down-up fa fa-angle-down"></a>
+                        </h3>
+                        <div class="wap table-responsive table-default expand">
+                            <table class="table table-nowrap no-border-input">
+                                <tr>
+                                    <th style="width:150px">Tên</th>
+                                    <th>Mã sản phẩm</th>
+                                    <th>Giá gốc</th>
+                                    <th>Phí pound đầu tiên</th>
+                                    <th>Phí đặc biệt</th>
+                                    <th>Phí luxury</th>
+                                    <th></th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <td>30 m - Da cam</td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="Mã hàng tự động">
+                                        </td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td>
+                                            <a class="delete" href="" style="color: #B40000;">×</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 m - Nâu</td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="Mã hàng tự động">
+                                        </td>
+                                        <td><input type="text" class="form-control" id="" value="10,000,00"></td>
+                                        <td><input type="text" class="form-control" id="" value="200,000"></td>
+                                        <td><input type="text" class="form-control" id="" value="500,000"></td>
+                                        <td><input type="text" class="form-control" id="" value="100,000"></td>
+                                        <td><a class="delete" href="" style="color: #B40000;">×</a> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 m - Da cam</td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="Mã hàng tự động">
+                                        </td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td>
+                                            <a class="delete" href="" style="color: #B40000;">×</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>30 m - Da cam</td>
+                                        <td>
+                                            <input type="text" class="form-control" id="" placeholder="Mã hàng tự động">
+                                        </td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td><input type="text" class="form-control" id=""></td>
+                                        <td>
+                                            <a class="delete" href="" style="color: #B40000;">×</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="border-wrap mb20">
+                        <h3 class="title_down_up onclick-togle">
+                            Cấu hình vị trí hiển thị
+                            <a style="color: #666;" href="#" data-toggle="tooltip" data-placement="right" title=""
+                                data-original-title="Thiết lập sản phẩm sẽ hiển thị trong nhóm hàng">
+                                <i class="fa fa-exclamation-circle"></i>
+                            </a>
+                            <a class="down-up fa fa-angle-down"></a>
+                        </h3>
+                        <div class="wap form-default2 expand">
+                            <div class="form-group row mb0">
+                                <div class="col-sm-6 col-11 mb10">
+                                    <select class="form-control">
+                                        <option>Chọn nhóm hàng...</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                line-height: 35px;
+                                text-align: center;">×</a>
+                            </div>
+                            <div class="form-group row mb0">
+                                <div class="col-sm-6 mb10">
+                                    <select class="form-control">
+                                        <option>Đồ điện tử và công nghệ</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2 col-11 mb10" style="padding: 0;">
+                                    <select class="form-control">
+                                        <option>Thứ tự</option>
+                                        <option>Bình thường</option>
+                                    </select>
+                                </div>
+                                <a class="delete" href="" style="color: #B40000;width: 20px;
+                                line-height: 35px;
+                                text-align: center;">×</a>
+                            </div>
+                            <a class="btn btn-default white">+ Tạo vị trí</a>
+                        </div>
+                    </div>
+                    <div class="form-group align-right mt20 block">
+                        <button type="submit" class="btn btn-default crawl"><i
+                                class="iconfont-crawl"></i>Crawler</button>
+                        <button type="submit" class="btn btn-default bg-main"><i class="fa fa-floppy-o"></i>Lưu</button>
+                        <button type="submit" class="btn btn-default cancel"><i class="fa fa-minus-circle"></i>Bỏ
+                            qua</button>
+                    </div>
+                </div>
+                <div id="tab2" style="display: none;">
+                    <h3 class="title_down_up mb0">
+                        Mô tả
+                    </h3>
+                    <div class="mb20">
+                        <img src="images/graphics/editor.png">
+                    </div>
+                    <h3 class="title_down_up mb0">
+                        Thông số
+                    </h3>
+                    <div class="mb20">
+                        <img src="images/graphics/editor.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--POPUP PHÂN LOẠI SẢN PHẨM-->
+<div class="add-prodcut-popup popup-width2 white-popup">
+    <div class="content_lightbox">
+        <p class="txt_16">Phân loại sản phẩm</p>
+        <div class="wrap-tab">
+            <div class="tab-default">
+                <a href="#phanloai1" class="active">Tải về Bản Mẫu</a>
+                <a href="#phanloai2">Mô tả chi tiết</a>
+            </div>
+            <div class="tab-content">
+                <div id="phanloai1">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label class="radio radio-block mb30">
+                                <input type="radio" name="optradio" checked="">
+                                <span class="checkmark"></span>
+                                Bản mẫu crawl link sản phẩm
+                                <p class="gray txt_13">Bản mẫu cơ bản chứa các trường bắt buộc để liệt kê link sản phẩm
+                                    sẽ đi crawler. Bản mẫu này có thể được sử dụng cho bất kỳ nhãn hàng nào</p>
+                            </label>
+                            <label class="radio radio-block">
+                                <input type="radio" name="optradio">
+                                <span class="checkmark"></span>
+                                Bản mẫu import sản phẩm
+                                <p class="gray txt_13">Bản mẫu cơ bản chứa các trường bắt buộc để liệt kê link sản phẩm
+                                    sẽ đi crawler. Bản mẫu này có thể được sử dụng cho bất kỳ nhãn hàng nào</p>
+                            </label>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="background: #F3F3F3;padding: 10px;height: 100%;">
+                                <p><strong>Hướng dẫn:</strong></p>
+                                <strong>Mẫu:</strong>
+                                <div>Bạn có thể tải xuống mẫu ngoại tuyến, lưu ý rằng mẫu chỉ có thể được chỉnh sửa trên
+                                    máy tính có hệ điều hành Windows.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group mt20">
+                        <button type="submit" class="btn btn-default bg-main">Tải về</button>
+                    </div>
+                </div>
+                <div id="phanloai2" style="display: none;">
+                    <p>Sau khi hoàn thành chỉnh sửa, vui lòng đăng tập tin Excel lên. Bạn có thể kiểm tra những sản phẩm
+                        mới tạo 1 lần nữa ở bên dưới trước khi gửi yêu cầu crawler</p>
+                    <div class="flex align-center">
+                        <label class="choose mb0">
+                            <input type="file" name="myFile" style="display: none;">
+                            <a class="btn-default" style="color: #fff;cursor: pointer;">Chọn tập tin</a>
+                        </label>
+                        <div class="gray">&nbsp;&nbsp;&nbsp;Kích cỡ tối đa: 10.0 MB - Định dạng: xlsx</div>
+                    </div>
+                    <div class="table-responsive table-default mt20 mb20">
+                        <table class="table table-nowrap table-border">
+                            <thead>
+                                <tr class="bg-gray">
+                                    <th>Link crawler <strong>(125)</strong></th>
+                                    <th style="width:100px">Nhãn hàng</th>
+                                    <th>Hoạt động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a
+                                            href="#">https://www.amazon.com/Crayola-Washable-Classic-Painting-Supplies/dp/B00004UBH2/ref=zg_bs_toys-and-games_home...</a>
+                                    </td>
+                                    <td>Amazon</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-default white">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a
+                                            href="#">https://www.amazon.com/Crayola-Washable-Classic-Painting-Supplies/dp/B00004UBH2/ref=zg_bs_toys-and-games_home...</a>
+                                    </td>
+                                    <td>Amazon</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-default white">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a
+                                            href="#">https://www.amazon.com/Crayola-Washable-Classic-Painting-Supplies/dp/B00004UBH2/ref=zg_bs_toys-and-games_home...</a>
+                                    </td>
+                                    <td>Amazon</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-default white">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a
+                                            href="#">https://www.amazon.com/Crayola-Washable-Classic-Painting-Supplies/dp/B00004UBH2/ref=zg_bs_toys-and-games_home...</a>
+                                    </td>
+                                    <td>Amazon</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-default white">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a
+                                            href="#">https://www.amazon.com/Crayola-Washable-Classic-Painting-Supplies/dp/B00004UBH2/ref=zg_bs_toys-and-games_home...</a>
+                                    </td>
+                                    <td>Amazon</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-default white">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a
+                                            href="#">https://www.amazon.com/Crayola-Washable-Classic-Painting-Supplies/dp/B00004UBH2/ref=zg_bs_toys-and-games_home...</a>
+                                    </td>
+                                    <td>Amazon</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-default white">Xóa</button>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="warp_gray mb15">
+                        <div class="search-wrapper mb15" style="max-width:300px">
+                            <form action="" id="search">
+                                <input type="text" class="input_search border" name="" value=""
+                                    placeholder="Tên nhóm hàng">
+                                <span class="search-btn">
+                                    <button type="submit">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#search"></use>
+                                        </svg>
+                                    </button>
+                                </span>
+                            </form>
+                        </div>
+                        <div class="row list_cate">
+                            <ul class="col-md-4 scrollbar-inner">
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                            <ul class="col-md-4 scrollbar-inner">
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                            <ul class="col-md-4 scrollbar-inner">
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Thời Trang Nữ <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sản phẩm nổi bật</a></li>
+                                <li><a href="#">Thời Trang Nam <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="#">Sức Khỏe & Sắc Đẹp <i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex align-center mb15">
+                        Đã chọn :
+                        <ul class="flex nav color">
+                            <li>Thời Trang Nữ <i class="fa fa-angle-right"></i></li>
+                            <li>Trang điểm mắt <i class="fa fa-angle-right"></i></li>
+                            <li>Quần tây</li>
+                        </ul>
+                    </div>
+                    <div class="text-right mb15">
+                        <button type="submit" class="btn btn-default bg-main"><i class="iconfont-send"></i>Gửi yêu
+                            cầu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top"><i class="ic ic-caret-up"></i></a>
+
+    <div class="mask-content"></div>
+
+    <div id="add-user-popup" class="user-popup popup-width2 white-popup mfp-hide">
+        <div class="content_lightbox">
+            <p>Người dùng</p>
+            <div class="flex">
+                <div class="up-file mb15">
+                    <div class="ava">
+                        <span class="thumb_img thumb_5x5">
+                            <img src="images/graphics/img_4.jpg">
+                        </span>
+                    </div>
+                    <label class="choose">
+                        <input type="file" name="myFile">
+                        chọn ảnh
+                    </label>
+
+                </div>
+                <div class="form-default row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="lbl">Họ tên</label>
+                            <input type="text" class="form-control" id="" placeholder="Nhập họ và tên">
+                            <span class="error txt_11" style="display: none;">Loi nhap thong tin</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Mật khẩu</label>
+                            <input type="password" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Gõ lại mật khẩu</label>
+                            <input type="password" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Vai trò</label>
+                            <select class="form-control">
+                                <option>- Chọn vai trò -</option>
+                                <option>Bình thường</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Ngày sinh</label>
+                            <div class="datepicker-wrap">
+                                <input id="datepicker" class="datepicker-input form-control" type="text"
+                                    value="11/12/2019">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="lbl">Điện thoại</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Địa chỉ</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Email</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group male">
+                            <label class="lbl">Giới tính</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Nam</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Nữ</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Ghi chú</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+
+                    <div class="form-group align-right col-12 mt20 block">
+                        <button type="submit" class="btn btn-default"><i class="fa fa-floppy-o"></i>Lưu</button>
+                        <button type="submit" class="btn btn-default cancel"><i class="fa fa-ban"></i>Bỏ qua</button>
+                    </div>
+                </div>
+                <div class="warp-dotted">
+                    <div class="lbl-text">Bảo mật</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="flex flex-form-default">
+                                <span class="icon-changer"><i class="fa fa-key"></i></span>
+                                <div class="form-default">
+                                    <div>Đổi mật khẩu</div>
+                                    <p class="gray">Bạn nên sử dụng mật khẩu mạnh mà mình chưa sử dụng ở đâu
+                                        khác</p>
+                                    <div class="form-group">
+                                        <label class="lbl">Mật khẩu hiện tại</label>
+                                        <input type="password" class="form-control" id="" value="2348972348923">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="lbl">Mật khẩu mới</label>
+                                        <input type="password" class="form-control" id="" value="2348972348923">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="lbl">Gõ lại mật khẩu mới</label>
+                                        <input type="password" class="form-control" id="" value="2348972348923">
+                                        <span class="error txt_11">Mật khẩu gõ lại không khớp với mật khẩu mới</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-floppy-o"></i>Lưu</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="login-popup" class="login-popup white-popup mfp-hide">
+        <div class="content_lightbox">
+            <div class="head center">
+                <div>Đăng nhập hệ thống</div>
+                <a class="logo" href="#"><img src="images/graphics/logo.svg"></a>
+            </div>
+            <div class="form-default">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-group mt25 txt_12">
+                    <label class="check-list mb10 mr25">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Duy trì đăng nhập
+                    </label>
+                    <div>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+                    <a class="quen-mk gray" href="#">Quên mật khẩu</a>
+                </div>
+                <div class="bottom-btn flex">
+                    <a href="#"><i class="fa fa-sign-in"></i>Đăng nhập</a>
+                    <a href="#" style="background: #FFAA00;"><i class="fa fa-user-plus"></i>Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/zebra_datepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</body>
+
+</html>

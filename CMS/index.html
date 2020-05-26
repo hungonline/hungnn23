@@ -1,0 +1,36 @@
+<head>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <title>
+        Pages List
+    </title>
+    <link rel="stylesheet" href="_app/index-partials/demo.css" media="all" />
+</head>
+  <h1 class="index__title">Pages List</h1>
+  <section class="index__section">
+            <ul class="index__list">
+              <h2 class="index__section-heading">PC</h2>
+              <li class="index__item"><a class="index__item-link" target="_blank" href="PC/home.html">home.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/lightbox.html">lightbox.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/login.html">login.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/nguoi-dung.html">nguoi-dung.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/nhom-quyen.html">nhom-quyen.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/phanloai_sanpham.html">phanloai_sanpham.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/quan-ly-khach-hang.html">quan-ly-khach-hang.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/quan-lychien-dich.html">quan-lychien-dich.html</a></li>
+                          <li class="index__item"><a class="index__item-link" target="_blank" href="PC/san-pham.html">san-pham.html</a></li>
+                          </ul>
+            </section>
+          <script>
+    const headingList = document.querySelectorAll('.index__section-heading');
+    for (const el of headingList) {
+      el.parentNode.parentNode.insertBefore(el, el.parentNode);
+    }
+
+    const homeItemList = document.querySelectorAll('.index__item-link[href*="index"], .index__item-link[href*="home"]');
+    for (const el of homeItemList) {
+      el.parentNode.parentNode.insertBefore(el.parentNode, el.parentNode.parentNode.firstChild)
+    }
+</script>
