@@ -1,0 +1,21 @@
+.section_s1 {
+    margin-bottom: 60px;
+
+    .warp {
+
+        border: 1px solid #eaeaea;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .row {
+        justify-content: center;
+        text-align: center
+    }
+
+    p {
+        font-size: 20px;
+        color: #242424;
+        margin-top: 30px;
+    }
+}
