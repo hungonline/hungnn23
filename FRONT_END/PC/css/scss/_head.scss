@@ -143,6 +143,10 @@
 	.name {
 		font-weight: 400;
 		font-size: 13px;
+		max-width: 95px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 
 	.notifi {
