@@ -35,13 +35,13 @@
 }
 
 @font-face {
-  font-family: 'Merriweather';
-  src: url('fonts/Merriweather/Merriweather-Bold.eot');
-  src: url('fonts/Merriweather/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Merriweather/Merriweather-Bold.woff') format('woff'),
-    url('fonts/Merriweather/Merriweather-Bold.ttf') format('truetype'),
-    url('fonts/Merriweather/Merriweather-Bold.svg#Merriweather-Bold') format('svg');
-  font-weight: 700;
+  font-family: 'SF_Pro_Display';
+  src: url('fonts/Display/SFProDisplay-Bold.eot');
+  src: url('fonts/Display/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Display/SFProDisplay-Bold.woff2') format('woff2'),
+    url('fonts/Display/SFProDisplay-Bold.woff') format('woff'),
+    url('fonts/Display/SFProDisplay-Bold.ttf') format('truetype'),
+    url('fonts/Display/SFProDisplay-Bold.svg#SFProDisplay-Bold') format('svg');
+  font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }

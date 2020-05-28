@@ -1,11 +1,12 @@
 :root {
     --black: #161616;
-    --color_main: #27BECE;
-    --color_main_hover: #27BECE;
-    --color_main_active: #27BECE;
+    --color_main: #06C1D4;
+    --color_main_hover: #06C1D4;
+    --color_main_active: #06C1D4;
     --color_main_hover: #D1F5F9;
     --white: #fff;
     --dark_gray: #171C27;
+    --dark_blue: #242368;
     --gray600: #414956;
     --gray500: #7A8088;
     --gray200: #D2D7E1;
@@ -19,7 +20,7 @@
     --font2: 'Merriweather';
 }
 
-$color-main:#27BECE;
+$color-main:#06C1D4;
 $color-main2:#008C9B;
 $color-1: #ec7965;
 
@@ -27,7 +28,7 @@ $color1:#F6F6F6;
 $color1-hover:#ECECEC;
 $color1-active:#d3d3d3;
 
-$color2:#27BECE;
+$color2:#06C1D4;
 $color2-hover:#008C9B;
 $color2-active:#177AC8;
 
@@ -52,7 +53,7 @@ $color7-hover:#DA6A15;
 $color7-active:#B45811;
 
 $color8:#000000;
-$color8-hover:#27BECE;
+$color8-hover:#06C1D4;
 $color8-active:#008C9B;
 
 @mixin cubic-transition($delay, $duration, $property) {
