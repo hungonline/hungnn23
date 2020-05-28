@@ -458,6 +458,13 @@
 }
 
 .product-review {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 70px;
+        transform: translate(0, 0%);
+    }
+
     .list-product {
         border-left: 0;
         border-bottom: 0;
