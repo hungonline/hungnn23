@@ -299,89 +299,91 @@
 }
 */
 
+.dark_mode.detail-photo {
+    padding-top: 100px;
+    background-color: #17191A;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 20px;
+
+    .bg-cover {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: block;
+        height: 325px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+
+        &:before {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            background: linear-gradient(180deg, rgba(23, 25, 26, 0.45) 0%, #17191A 100%);
+        }
+
+    }
+
+    .list-news {
+        border-left: 1px solid #777;
+    }
+
+    .list-news li:before {
+        background: #BDBDBD;
+    }
+
+    .item_slide_show,
+    .wrap_pic {
+        .desc_cation {
+            color: #e5e5e5;
+        }
+
+        .block_thumb_slide_show,
+        .block_thumb_wrap {
+            background: #222 !important;
+        }
+    }
+
+    &:before {
+        content: '';
+        width: 100%;
+        height: 10px;
+        background: rgba(23, 25, 26, 0.3);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    }
+
+    &:after {
+        content: '';
+        width: 100%;
+        height: 10px;
+        background: rgba(23, 25, 26, 0.1);
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+
+    .topic-detail {
+        border-top: 1px solid #757575;
+        color: #757575;
+    }
+
+    .wrap_video {
+        margin-bottom: 35px;
+    }
+}
+
+
 .photo-dark {
     .page-detail {
-        &.detail-photo {
-            padding-top: 100px;
-            background-color: #17191A;
-            background-position: top center;
-            background-repeat: no-repeat;
-            position: relative;
-            margin-bottom: 20px;
-
-            .bg-cover {
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                text-align: center;
-                display: block;
-                height: 325px;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: top center;
-
-                &:before {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    content: '';
-                    background: linear-gradient(180deg, rgba(23, 25, 26, 0.45) 0%, #17191A 100%);
-                }
-
-            }
-
-            .list-news {
-                border-left: 1px solid #777;
-            }
-
-            .list-news li:before {
-                background: #BDBDBD;
-            }
-
-            .item_slide_show,
-            .wrap_pic {
-                .desc_cation {
-                    color: #e5e5e5;
-                }
-
-                .block_thumb_slide_show,
-                .block_thumb_wrap {
-                    background: #222;
-                }
-            }
-
-            &:before {
-                content: '';
-                width: 100%;
-                height: 10px;
-                background: rgba(23, 25, 26, 0.3);
-                position: absolute;
-                bottom: -10px;
-                left: 0;
-            }
-
-            &:after {
-                content: '';
-                width: 100%;
-                height: 10px;
-                background: rgba(23, 25, 26, 0.1);
-                position: absolute;
-                bottom: -20px;
-                left: 0;
-            }
-
-            .topic-detail {
-                border-top: 1px solid #757575;
-                color: #757575;
-            }
-
-            .wrap_video {
-                margin-bottom: 35px;
-            }
-        }
 
         .breadcrumb li {
             color: #BDBDBD;
@@ -530,6 +532,19 @@
         }
     }
 }*/
+}
 
+.lazy-blur {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
 
+.lazy-unblur {
+    opacity: 0;
+    -webkit-filter: unset;
+    filter: unset;
+    will-change: opacity;
+    -webkit-transition: opacity 1s ease-out;
+    -o-transition: opacity 1s ease-out;
+    transition: opacity 1s ease-out;
 }

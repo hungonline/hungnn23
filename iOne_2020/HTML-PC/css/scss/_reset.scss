@@ -29,6 +29,7 @@ body {
 .flex {
     display: flex;
     flex-wrap: wrap;
+    clear: both;
 }
 
 .d-flex {
@@ -379,7 +380,7 @@ html {
     height: 1px;
     position: relative;
     width: 100%;
-    background: #BDBDBD;
+    background: #f4f4f4;
 
     img,
     video {

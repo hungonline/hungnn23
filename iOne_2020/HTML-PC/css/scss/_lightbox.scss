@@ -129,6 +129,18 @@
   display: none;
 }
 
+/*
+button.mfp-close {
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: none;
+  z-index: 1046;
+  touch-action: manipulation; }
+*/
 
 button::-moz-focus-inner {
   padding: 0;
@@ -142,7 +154,6 @@ button::-moz-focus-inner {
   line-height: 30px;
   border-radius: 50%;
   position: absolute;
-  opacity: 1;
   right: -15px;
   top: -15px;
   text-decoration: none;
@@ -263,6 +274,7 @@ button::-moz-focus-inner {
   line-height: 60px;
   margin: 0 -30px 25px;
   font-family: $font-title;
+  @extend %font-fea;
   font-weight: bold;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -279,6 +291,23 @@ button::-moz-focus-inner {
 
   p {
     margin-bottom: 30px;
+  }
+
+  .bullet {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 10px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: #999;
+      border-radius: 50%;
+      left: 0;
+      top: 10px;
+    }
   }
 
   .input-form {
@@ -389,11 +418,16 @@ button::-moz-focus-inner {
     margin-bottom: 0;
     border: none;
     text-align: center;
+
+    .btn_vne {
+      width: 140px;
+      font-size: 17px;
+    }
   }
 
   .rating {
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     width: 100%;
   }
 
@@ -408,6 +442,7 @@ button::-moz-focus-inner {
     resize: none;
     color: #222;
   }
+
 }
 
 .vote_rating_box {
@@ -426,7 +461,6 @@ button::-moz-focus-inner {
     margin-bottom: 10px;
     color: #757575;
     line-height: 16px;
-    width: 100%;
     float: left;
   }
 
@@ -458,6 +492,88 @@ button::-moz-focus-inner {
   float: left;
 }
 
+.item-point {
+  min-width: 155px;
+  margin-right: 35px;
+
+  .row-number {
+    align-items: center;
+  }
+
+  .star-point {
+    margin-right: 10px;
+
+    .ic {
+      width: 40px;
+      height: 40px;
+      fill: #F2C94C;
+    }
+  }
+
+  .number-star {
+    font-size: 18px;
+    color: #757575;
+
+    .point-bold {
+      font-size: 24px;
+      font-weight: 700;
+      color: #222;
+    }
+
+    .point-small {
+      line-height: 26px;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+  }
+
+  .txt-point {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  &.point-your {
+    margin-right: 0;
+    cursor: pointer;
+
+    .star-point {
+      .ic {
+        fill: #E5E5E5;
+      }
+    }
+
+    .number-star {
+      .point-bold {
+        color: #757575;
+      }
+    }
+
+    &.your-rate {
+      .star-point {
+        .ic {
+          fill: #0887E2;
+        }
+      }
+
+      .number-star {
+        .point-bold {
+          color: #222;
+        }
+      }
+    }
+  }
+}
+
+.title-rate-pop {
+  font: 700 18px/160% $font-title;
+  text-align: left;
+  margin-bottom: 15px !important;
+  @extend %font-fea;
+}
+
 .block_one_start {
   width: 40px;
   height: 40px;
@@ -485,7 +601,7 @@ button::-moz-focus-inner {
   .star.hover,
   .star:hover {
     .ic {
-      fill: #F2C94C;
+      fill: #0887E2;
     }
   }
 
@@ -624,8 +740,19 @@ button::-moz-focus-inner {
     .count-vote {
       margin-left: 0;
       margin-bottom: 0;
-      float: none;
-      margin-top: inherit;
+      float: left;
+      margin-top: 15px;
+      width: 100%;
+      text-align: right;
+      font-size: 14px;
+    }
+
+    .title_bx {
+      font-size: 18px;
+    }
+
+    .txt-kq-vote {
+      font-size: 17px;
     }
   }
 }

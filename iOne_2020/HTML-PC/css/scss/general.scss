@@ -3,17 +3,16 @@
 // @import "fonts/iconfont/iconfont.css";
 @import "var.scss";
 @import "reset.scss";
-@import "swiper.scss";
-@import "scrollbar.scss";
+@import "common.scss";
 @import "placeholder.scss";
-@import "lightbox.scss";
+@import "icon-vne.scss";
+
 // ======= HEADER =======
+@import "taskbar-myvne.scss";
 @import "head.scss";
 @import "menu.scss";
-// ==== Element Style  ======
-@import "common.scss";
-@import "icon-vne.scss";
-@import "element.scss";
 @import "box_300.scss";
+// ==== Element inline  ======
+@import "inline.scss";
 @import "footer.scss";
 @import "responsive.scss";
