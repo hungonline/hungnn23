@@ -68,7 +68,7 @@
         margin-bottom: 18px;
 
         .ic-live:before {
-            top: 13px;
+            top: 12px;
             margin-right: 7px;
         }
 
@@ -107,42 +107,23 @@
                 border: 1px solid var(--border);
                 margin-left: 10px;
                 justify-content: center;
+                align-items: center;
 
-                .icon-svg {
+                svg {
                     align-self: center;
                 }
 
-                &.fb {
-                    &:hover {
-                        .icon-svg {
-                            fill: #3B5999;
-                        }
+                &:hover {
+                    svg {
+                        fill: var(--colormain)
                     }
-
                 }
 
-                &.tw {
-                    &:hover {
-                        .icon-svg {
-                            fill: #55ACEE;
-                        }
-                    }
-
-                }
-
-                &.luutin {
-                    &:hover {
-                        .icon-svg {
-                            fill: #076DB6;
-                        }
-                    }
-
-                }
 
                 &.luutin.active {
                     &:hover {
-                        .icon-svg {
-                            fill: #fff;
+                        svg {
+                            fill: var(--colormain)
                         }
                     }
 
@@ -295,6 +276,7 @@
     }
 
     .social-block {
+        margin-top:10px;
         float: left;
         line-height: normal;
         align-items: center;
@@ -365,63 +347,37 @@
         margin-bottom: 20px;
         border: 1px solid var(--border);
 
-        .Image {
-            text-align: center;
-            color: var(--gray1);
-            font-size: 14px;
-            padding-top: 15px;
-        }
-
         p {
             font: 400 18px arial;
-            margin: 15px 0 0 0;
+            margin: 0 0 1em;
             line-height: 160%;
 
         }
 
-        .social-block {
-            margin: 20px 0;
-        }
-
         .header-block {
-            background: var(--colormain);
-            margin: -24px -24px 0 -24px;
-            padding: 12.5px 24px;
-
-            p {
-                font: bold 18px var(--font1);
-                margin: 0;
-                color: #fff;
-            }
-
-            .icon-svg {
-                position: absolute;
-                right: 24px;
-                top: 15px;
-                color: #fff;
-            }
+            padding-right: 25px;
         }
     }
 
-    &.detail-interview {
-        .block-pin {
-            .header-block {
-                background: #fff;
-                padding: 28px 24px;
+    // &.detail-interview {
+    //     .block-pin {
+    //         .header-block {
+    //             background: #fff;
+    //             padding: 28px 24px;
 
-                p {
-                    font: bold 18px var(--font2);
-                    margin: 0;
-                    color: var(--colormain);
-                }
+    //             p {
+    //                 font: bold 18px var(--font2);
+    //                 margin: 0;
+    //                 color: var(--colormain);
+    //             }
 
-                .icon-svg {
-                    color: var(--gray3);
-                    top: 32px;
-                }
-            }
-        }
-    }
+    //             .icon-svg {
+    //                 color: var(--gray3);
+    //                 top: 32px;
+    //             }
+    //         }
+    //     }
+    // }
 
     .block-item,
     .block-pin {
@@ -602,7 +558,7 @@
 .header-block {
     position: relative;
 
-    .ic-pin {
+    svg {
         position: absolute;
         top: 5px;
         right: 5px;
@@ -635,12 +591,12 @@
             height: 48px;
             line-height: 48px;
             text-align: center;
-            background: var(--white);
+            background: var(--bg-agray1);
             color: var(--colormain);
 
             &.active {
-                color: var(--white);
-                background: var(--colormain);
+                color: var(--colormain);
+                background: var(--white);
             }
         }
     }
@@ -1087,6 +1043,7 @@
 
     textarea.input_main {
         height: 120px;
+        padding: 10px;
     }
 
     .btn_vne {

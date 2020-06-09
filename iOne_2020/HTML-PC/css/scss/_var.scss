@@ -27,6 +27,12 @@ $color-solid:#E5E5E5;
   --border: #E5E5E5;
 }
 
+%font-fea {
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+  -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+  -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}
 
 @mixin cubic-transition($delay, $duration, $property) {
   transition: {

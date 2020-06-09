@@ -1,4 +1,6 @@
 @import "var.scss";
+@import "scrollbar-ss.scss";
+@import "lightbox.scss";
 
 body {
     background: #F4F4F4;
@@ -51,6 +53,10 @@ body {
 
             a {
                 color: var(--gray1);
+            }
+
+            &.active {
+                font-weight: bold;
             }
         }
     }
@@ -216,6 +222,10 @@ body {
                     }
                 }
 
+                .social {
+                    display: flex;
+                }
+
                 .comment {
                     svg {
                         width: 12px;
@@ -239,6 +249,20 @@ body {
                             width: 14px;
                             height: 14px;
 
+                        }
+
+                        &:hover {
+                            background: var(--bg-agray1);
+
+                            svg {
+                                fill: var(--colormain);
+                            }
+                        }
+                    }
+
+                    .save {
+                        a {
+                            margin-left: 0;
                         }
                     }
                 }
@@ -378,10 +402,47 @@ body {
             -webkit-box-orient: vertical
         }
 
-        .status {
+        .flex_line {
             padding-bottom: 22px;
             margin-bottom: 24px;
             border-bottom: 1px solid var(--border);
+            justify-content: space-between;
+            align-items: center;
+
+            .social {
+                a {
+                    display: inline-block;
+                    background: var(--gray3);
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 2px;
+                    margin-left: 5px;
+
+                    svg {
+                        fill: var(--white);
+                        width: 14px;
+                        height: 14px;
+
+                    }
+
+                    &:hover {
+                        background: var(--bg-agray1);
+
+                        svg {
+                            fill: var(--colormain);
+                        }
+                    }
+                }
+
+                &.save {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+            }
+
         }
 
         .comment {

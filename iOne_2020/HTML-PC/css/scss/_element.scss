@@ -1,36 +1,6 @@
-// STREAM
-.box_stream {
-    width: 780px;
-    width: calc(100% - 300px);
-    padding-right: 35px;
-
-    .item-news {
-        border-bottom: 1px solid var(--border);
-        margin-bottom: 24px;
-        padding-bottom: 24px;
-
-        .title-news {
-            font-size: 22px;
-            margin-bottom: 15px;
-        }
-
-        &.last-item {
-            padding-bottom: 0;
-            border-bottom: 0
-        }
-    }
-
-    @media (max-width:979px) {
-        width: 100%;
-        padding-right: 0;
-    }
-}
-
-
 // BOX VIDEO HOME
 .box-video-home {
     background: #222;
-    ;
     padding: 25px 0 65px 0;
 
     .head_cate {

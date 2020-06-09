@@ -1,0 +1,109 @@
+$containerWidth: 1254; // rộng container
+$containerGap: 15; // khoảng cách 2 bên container
+$colGap: 30; // khoảng cách 2 bên của column
+$colMax: 12; // Số column của grid
+$breakpoints: (default: xs,
+    rotate: 480,
+    sm: 768,
+    md: 992,
+    lg: 1200);
+
+// Reset body
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Ví dụ với container rộng 1200px, ở đây ta thay bằng biến $containerWidth
+.container {
+    max-width: $containerWidth * 1px;
+    margin: auto;
+}
+
+// Container full chiều rộng
+.container-fluid {
+    width: 100%;
+}
+
+// Container padding 2 bên là 15px
+.container,
+.container-fluid {
+    padding-left: $containerGap * 1px;
+    padding-right: $containerGap * 1px;
+    position: relative;
+}
+
+// Tạo row để fix khoảng cách 2 bên bằng với khoảng cách 2 bên của column và fix chiều cao do column float: left tạo ra bên dưới
+.row {
+    margin-left: -($colGap / 2) * 1px;
+    margin-right: -($colGap / 2) * 1px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// Column cho khoảng cách 30px
+[class*="col-"] {
+    padding-left: ($colGap / 2) * 1px;
+    padding-right: ($colGap / 2) * 1px;
+}
+
+// Với grid là 12 column thì col-xs-3 sẽ là 25%
+
+@for $i from 1 through $colMax {
+    .col-xs-#{$i} {
+        width: (100 * $i) / $colMax * 1%;
+    }
+}
+
+@media (min-width: 480px) {
+    // col-sm-x >= 480px
+}
+
+@media (min-width: 768px) {
+    // col-sm-x >= 768px
+}
+
+@media (min-width: 992px) {
+    // col-md-x >= 992px
+}
+
+@media (min-width: 1200px) {
+    // col-lg-x >= 1200px
+}
+
+@mixin column($nameCol) {
+    @for $i from 1 through $colMax {
+        .col-#{$nameCol}-#{$i} {
+            width: (100 * $i) / $colMax * 1%;
+        }
+    }
+}
+
+@each $key,
+$val in $breakpoints {
+    @if ($key=='default') {
+        // Dùng hàm map-get của scss để lấy value
+        $colDefault: map-get($breakpoints, 'default');
+        @include column($colDefault);
+    }
+
+    @else {
+        @media (min-width: $val * 1px) {
+            @include column($key);
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @import "var.scss";
+@import "lightbox.scss";
 
 .wrap-main-nav {
     border-bottom: 0;
@@ -32,7 +33,6 @@
 
     .item-news {
         border-radius: 4px;
-        overflow: hidden;
         height: 100%;
 
         .thumb-art {
@@ -86,6 +86,7 @@
                 flex-grow: 3;
                 text-align: right;
                 font-size: 0;
+                position: relative;
 
                 a {
                     background: #222222;
@@ -96,6 +97,43 @@
                     line-height: 30px;
                     text-align: center;
                     margin-right: 4px;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        fill: #fff;
+                    }
+
+                    &:hover {
+                        svg {
+                            fill: #757575
+                        }
+                    }
+                }
+
+                .social {
+                    position: absolute;
+                    z-index: 2;
+                    top: 38px;
+                    right: -85px;
+                    transition: 0.4s ease;
+                    background: rgba(0, 0, 0, 0.8);
+                    width: 153px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        margin-right: 0;
+                        background: none;
+                        height: 40px;
+                        line-height: 40px;
+
+                        svg {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
                 }
 
                 @media (max-width: 860px) {
@@ -151,6 +189,10 @@
                         .share_bookmard {
                             text-align: left;
 
+                            .social {
+                                left: 0;
+                            }
+
                             a {
                                 margin-right: 8px;
                             }
@@ -188,6 +230,10 @@
                     .status {
                         .share_bookmard {
                             text-align: left;
+
+                            .social {
+                                left: 0;
+                            }
                         }
                     }
                 }
