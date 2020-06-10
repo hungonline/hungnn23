@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "jquery": "2.2.4",
+    "jquery": "3.5.0",
     "jquery.scrollbar": "0.2.10",
     "magnific-popup": "^1.1.0",
     "stickyfill": "^1.1.1",
