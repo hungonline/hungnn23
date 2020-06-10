@@ -33,7 +33,7 @@ a:focus {
 }
 
 a {
-  color: var(--dark_gray);
+  color: var(--black);
   text-decoration: none;
   outline: 1;
 
@@ -477,6 +477,10 @@ html {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .thumb_img {
