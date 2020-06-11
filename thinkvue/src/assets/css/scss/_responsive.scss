@@ -161,9 +161,7 @@
     }
 }
 
-
-
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     main {
         padding-top: 16px;
     }
@@ -171,6 +169,13 @@
     main.page-home {
         padding-top: 0;
     }
+
+    .breadcrumb {
+        display: none
+    }
+}
+
+@media (max-width: 480px) {
 
     .product-review {
         .items {
@@ -195,10 +200,6 @@
                 display: none
             }
         }
-    }
-
-    .breadcrumb {
-        display: none
     }
 
     .folder-show {

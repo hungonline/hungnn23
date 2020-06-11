@@ -1,5 +1,5 @@
 :root {
-  --black: #161616;
+  --black: #0E0E0E;
   --color_main: #06C1D4;
   --color_main_hover: #06C1D4;
   --color_main_active: #06C1D4;
@@ -412,89 +412,6 @@
       height: 20px; }
     .box-vote .vote .btn-default {
       margin-top: 10px; } }
-
-.box-comment, .box-vote {
-  font-size: 14px;
-  margin-bottom: 60px; }
-  .box-comment p, .box-vote p {
-    margin-bottom: 5px; }
-  .box-comment .list-comments__items, .box-vote .list-comments__items {
-    margin-top: 20px;
-    position: relative; }
-    .box-comment .list-comments__items .ava, .box-vote .list-comments__items .ava {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-right: 16px;
-      float: left; }
-    .box-comment .list-comments__items .comment_mini, .box-vote .list-comments__items .comment_mini {
-      overflow: hidden;
-      border-bottom: 1px solid var(--gray100);
-      padding-bottom: 16px;
-      margin-bottom: 16px; }
-      .box-comment .list-comments__items .comment_mini .name, .box-vote .list-comments__items .comment_mini .name {
-        font-size: 16px;
-        margin-bottom: 5px;
-        display: flex; }
-        .box-comment .list-comments__items .comment_mini .name ul, .box-vote .list-comments__items .comment_mini .name ul {
-          margin: -3px 8px 0 0; }
-          .box-comment .list-comments__items .comment_mini .name ul li, .box-vote .list-comments__items .comment_mini .name ul li {
-            display: inline-block; }
-            .box-comment .list-comments__items .comment_mini .name ul li svg, .box-vote .list-comments__items .comment_mini .name ul li svg {
-              width: 20px;
-              height: 20px; }
-            .box-comment .list-comments__items .comment_mini .name ul li.active svg, .box-vote .list-comments__items .comment_mini .name ul li.active svg {
-              color: var(--color_main); }
-      .box-comment .list-comments__items .comment_mini .comment_textarea, .box-vote .list-comments__items .comment_mini .comment_textarea {
-        margin-top: 10px; }
-        .box-comment .list-comments__items .comment_mini .comment_textarea textarea, .box-vote .list-comments__items .comment_mini .comment_textarea textarea {
-          height: 60px; }
-        .box-comment .list-comments__items .comment_mini .comment_textarea .submit-comment, .box-vote .list-comments__items .comment_mini .comment_textarea .submit-comment {
-          position: static;
-          float: right;
-          margin-top: 10px; }
-    .box-comment .list-comments__items .reply, .box-vote .list-comments__items .reply {
-      display: flex;
-      align-items: center; }
-      .box-comment .list-comments__items .reply_a, .box-vote .list-comments__items .reply_a {
-        color: var(--color_main); }
-      .box-comment .list-comments__items .reply .date, .box-vote .list-comments__items .reply .date {
-        font-size: 12px;
-        color: var(--gray500);
-        margin-left: 6px; }
-    .box-comment .list-comments__items .comment_reply, .box-vote .list-comments__items .comment_reply {
-      padding-left: 88px; }
-  .box-comment .list-comments .view-all:hover, .box-vote .list-comments .view-all:hover {
-    color: #008C9B; }
-  .box-comment .comment_textarea, .box-vote .comment_textarea {
-    position: relative;
-    font-size: 0;
-    margin-bottom: 28px; }
-    .box-comment .comment_textarea textarea, .box-vote .comment_textarea textarea {
-      background: var(--gray50);
-      height: 120px;
-      padding: 16px;
-      width: 100%;
-      border: 1px solid var(--gray50);
-      border-radius: 4px;
-      resize: none;
-      outline: 0; }
-    .box-comment .comment_textarea .submit-comment, .box-vote .comment_textarea .submit-comment {
-      width: 63px;
-      text-align: center;
-      height: 36px;
-      background: var(--color_main);
-      border-radius: 56px;
-      border: 0;
-      outline: 0;
-      position: absolute;
-      bottom: 20px;
-      right: 16px;
-      cursor: pointer; }
-  .box-comment .view-more, .box-vote .view-more {
-    display: block;
-    margin-top: 30px; }
 
 .sticky_detail {
   background: #FBFBFB;

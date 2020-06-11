@@ -89,4 +89,5 @@ export default {
 
 <style>
 @import "../assets/css/product.css";
+@import "../assets/css/comment.css";
 </style>

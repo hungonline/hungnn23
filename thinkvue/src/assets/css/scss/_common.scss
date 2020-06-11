@@ -17,7 +17,7 @@ body::-webkit-scrollbar-track {
     margin-bottom: 24px;
     font-weight: bold;
     line-height: 1;
-    color: var(--dark_gray);
+    color: #0E0E0E;
 
     .view {
         color: var(--color_main);
@@ -361,6 +361,12 @@ main {
         }
     }
 
+    &.gird_2col {
+        .items {
+            width: 50%;
+        }
+    }
+
     &.gird_4col {
         .items {
             width: 25%;
@@ -483,8 +489,9 @@ main {
 
         &.home {
             a {
-                svg {
+                img {
                     width: 65px;
+                    opacity: 0.6;
                 }
             }
         }
@@ -503,7 +510,7 @@ main {
 
         &.active {
             a {
-                color: var(--black);
+                color: #000;
             }
         }
     }
@@ -558,6 +565,14 @@ main {
 
         &:after {
             display: block;
+        }
+    }
+
+    &.cricle {
+        padding-left: 25px;
+
+        .checkmark {
+            border-radius: 50%;
         }
     }
 }
@@ -752,6 +767,111 @@ main {
 
 #width_tmp_select {
     display: none;
+}
+
+/*loadding-new and live plus*/
+.loadding-new {
+    text-align: center;
+    margin: 35px 0;
+    font-size: 16px;
+
+    span {
+        display: block;
+    }
+
+    .sk-child {
+        margin: 0 2px;
+        width: 11px;
+        height: 11px;
+        background: var(--color_main);
+        border-radius: 100%;
+        display: inline-block;
+        -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+        animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+    }
+
+    .sk-bounce1 {
+        -webkit-animation-delay: -0.32s;
+        animation-delay: -0.32s;
+    }
+
+    .sk-bounce2 {
+        -webkit-animation-delay: -0.16s;
+        animation-delay: -0.16s;
+    }
+}
+
+@-webkit-keyframes sk-three-bounce {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes sk-three-bounce {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp
 }
 
 // POPUP

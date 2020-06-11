@@ -2,6 +2,7 @@
   <div class="page-folder">
     <Breadcrumb />
     <section class="container folder-show clearfix">
+      <ProductBrand />
       <h1 class="title_cate hidden-md">
         <span>Máy tính xách tay</span>
       </h1>
@@ -16,6 +17,7 @@
 <script>
 import $ from "jquery";
 import Breadcrumb from "@/views/layout/Breadcrumb.vue";
+import ProductBrand from "@/components/Products/Category/ProductBrand.vue";
 import ProductSidebarFilter from "@/components/Products/Category/ProductSidebarFilter.vue";
 import ProductList from "@/components/Products/Category/ProductList.vue";
 
@@ -23,6 +25,7 @@ export default {
   name: "ProductFolder",
   components: {
     Breadcrumb,
+    ProductBrand,
     ProductSidebarFilter,
     ProductList
   },

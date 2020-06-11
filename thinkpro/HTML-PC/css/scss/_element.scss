@@ -1161,6 +1161,7 @@
 .section-thuonghieu {
     margin-bottom: 40px;
     position: relative;
+    margin-top: -15px;
 
     .breadcrumb {
         margin-bottom: 34px;
@@ -1223,9 +1224,9 @@
 
     .img-detail {
         position: absolute;
-        width: 630px;
+        width: 632px;
         right: 0;
-        top: 20px;
+        top: -35px;
 
         img {
             width: 100%;
@@ -1262,7 +1263,7 @@
     @media (max-width: 991px) {
         display: flex;
         flex-wrap: wrap;
-        margin: -16px -16px 30px -16px;
+        margin: 0px -16px 30px -16px;
 
         .breadcrumb {
             display: none !important
@@ -1319,6 +1320,10 @@
             width: 100%;
             order: 1;
         }
+    }
+
+    @media (max-width: 576px) {
+        margin-top: -16px;
     }
 }
 
@@ -1789,8 +1794,13 @@
 }
 
 .box_stream {
+    display: flex;
+    flex-wrap: wrap;
+
     .art_item {
         margin-bottom: 24px;
+        float: left;
+        width: 100%;
 
         .ava {
             float: left;
