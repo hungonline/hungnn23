@@ -1,0 +1,161 @@
+@media (max-width:1199px) {
+    .box_stream {
+        width: calc(100% - 300px);
+    }
+
+    .box_300 {
+        width: 300px;
+    }
+
+    .title-cate {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .footer_2 {
+        display: block;
+    }
+
+    .section.page {
+        padding: 50px 0;
+    }
+
+    .section.padding_mobile {
+        padding: 0
+    }
+
+    .container2 {
+        max-width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media (max-width:991px) {
+    .section.page {
+        padding: 30px 0;
+    }
+
+    .section.padding_mobile {
+        padding: 0
+    }
+
+    .box_stream {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .box_300 {
+        display: none
+    }
+
+    .thumb-art {
+        width: 200px;
+        margin-right: 15px;
+    }
+
+    .thumb_5x2 {
+        padding-bottom: 60%;
+    }
+
+    .item-news {
+        .title-news {
+            font-size: 18px
+        }
+
+        .content {
+            padding: 10px 20px 0 0;
+        }
+    }
+
+    .btn-default {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:767px) {
+    .padding_60 {
+        padding: 30px 0
+    }
+
+    .section_vechungtoi {
+        margin-top: 0;
+    }
+
+    .slide_duan {
+        padding: 0 50px;
+
+    }
+
+    .section.page {
+        overflow: hidden;
+    }
+
+    .banner-home {
+        padding: 15px;
+
+        .logo {
+            width: 220px;
+            margin: 0 auto 20px;
+        }
+
+        h2 {
+            font-size: 16px
+        }
+
+        .btn-default {
+            max-width: 200px;
+        }
+    }
+
+    .box_300 {
+        display: block;
+        width: 100%;
+    }
+
+    .thumb-art {
+        width: 150px;
+    }
+
+    .list_article {
+        .item-news {
+            margin-bottom: 20px;
+        }
+    }
+
+    .item-news {
+        .title-news {
+            font-size: 16px
+        }
+
+        .description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            display: none;
+        }
+
+        .continue {
+            display: none
+        }
+
+        .thumb-art .tag {
+            padding: 4px 5px;
+            font-size: 10px
+        }
+    }
+
+    .form-default {
+        .form-group {
+            margin-bottom: 20px;
+        }
+    }
+}

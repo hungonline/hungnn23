@@ -1,0 +1,93 @@
+// Var detail VNE
+$vne_color: #9F224E;
+$url: "images" !default;
+
+$vne_color_hover: #087CCE;
+$font-title: 'Roboto',
+sans-serif;
+$color-solid:#E5E5E5;
+
+:root {
+  --font1: 'Roboto',
+    sans-serif;
+  --font2: 'Roboto',
+    sans-serif;
+  --orange: #f37f29;
+  --green: #089256;
+  --blue: #076DB6;
+  --white: #fff;
+  --colormain: #000;
+  --white: #fff;
+  --dark: #333;
+  --gray600: #495261;
+  --gray500: #858B93;
+  --gray200: #D7DCE5;
+  --gray100: #F4F6F9;
+  --gray50: #F4F6F9;
+  --gray10: #FBFBFB;
+  --bg-detail: #FCFAF6;
+  --bg-agray: #f7f7f7;
+  --bg-agray1: #E5E5E5;
+  --bg-agray2: #F6F7FB;
+  --border: #E5E5E5;
+}
+
+
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
+  }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+%has_transition {
+  @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+%flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.no-flexbox {
+  display: inherit;
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
