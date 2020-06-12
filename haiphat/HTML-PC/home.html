@@ -1190,10 +1190,15 @@
             'opacity': '1'
         });
     }, 3000);
+    $('.section_banner').fadeOut();
     $('.pre-loading .closes').click(function () {
         $('#fullpage, #pin_sukien, #wrap-main-nav, footer, .footer_2, .pin_sukien').css({
             'opacity': '1'
-        });;
+        });
+        $('.section_banner').fadeIn();
+        $("html, body").animate({
+            scrollTop: 10
+        });
         $('.pre-loading').css({
             'width': '0',
             'height': '0'

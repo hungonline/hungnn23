@@ -109,18 +109,18 @@
         });
     }
 
-    function onHover() {
-        $('.slide_giaithuong .swiper-slide').hover(function () {
-            if ($(this).css('margin-top') == '60px') {
-                $(this).css('margin-top', '0px');
-                $(this).next('.swiper-slide').css('margin-top', '60px');
-            }
-            if ($(this).css('margin-top') == '0px') {
-                $(this).css('margin-top', '60px');
-                $(this).next('.swiper-slide').css('margin-top', '0px');
-            }
-        });
-    }
+    // function onHover() {
+    //     $('.slide_giaithuong .swiper-slide').hover(function () {
+    //         if ($(this).css('margin-top') == '60px') {
+    //             $(this).css('margin-top', '0px');
+    //             $(this).next('.swiper-slide').css('margin-top', '60px');
+    //         }
+    //         if ($(this).css('margin-top') == '0px') {
+    //             $(this).css('margin-top', '60px');
+    //             $(this).next('.swiper-slide').css('margin-top', '0px');
+    //         }
+    //     });
+    // }
     //Slider
     function slideSwiper() {
         var section_banner = new Swiper('.section_banner .swiper-container', {
@@ -250,7 +250,7 @@
         backToTop();
         // scrollBar();
         onCLick();
-        onHover();
+        // onHover();
         slideSwiper();
         magnificPopup();
         tabs();
