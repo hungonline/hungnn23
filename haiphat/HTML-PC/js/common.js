@@ -261,42 +261,48 @@
 })(jQuery);
 
 $(document).ready(function () {
-    (function () {
-        // 'use strict';
-        var section = document.querySelectorAll('.item_tl');
-        var sections = {};
-        var i = 0;
-        Array.prototype.forEach.call(section, function (e) {
-            sections[e.id] = e.offsetTop;
-        });
+    var lastId,
+			topMenu = $("#top-menu"),
+			topMenuHeight = topMenu.outerHeight()-200,
+			// All list items
+			menuItems = topMenu.find("a"),
+			// Anchors corresponding to menu items
+			scrollItems = menuItems.map(function(){
+			  var item = $($(this).attr("href"));
+			  if (item.length) { return item; }
+			});
 
-        window.onscroll = function () {
-            var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+		// Bind click handler to menu items
+		// so we can get a fancy scroll animation
+		menuItems.click(function(e){
+		  var href = $(this).attr("href"),
+			  offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+		  $('html, body').stop().animate({ 
+			  scrollTop: offsetTop
+		  }, 300);
+		  e.preventDefault();
+		});
 
-            for (i in sections) {
-                if (sections[i] <= scrollPosition) {
-                    document.querySelector('.nav_cate .active').setAttribute('class', ' ');
-                    document.querySelector('a[href*=' + i + ' ]').setAttribute('class', 'active');
-                }
-            }
-        };
-    })();
-    $(document).ready(function () {
-        $('.menu_left_tl a[href*=#]').bind('click', function (e) {
-            e.preventDefault(); // prevent hard jump, the default behavior
-
-            var target = $(this).attr('href'); // Set the target as variable
-
-            // perform animated scrolling by getting top-position of target-element and set it as scroll target
-            $('html, body')
-                .stop()
-                .animate({
-                        scrollTop: $(target).offset().top - 80
-                    },
-                    600
-                );
-
-            return false;
-        });
-    });
+		// Bind to scroll
+		$(window).scroll(function(){
+		   // Get container scroll position
+		   var fromTop = $(this).scrollTop()+topMenuHeight;
+		   
+		   // Get id of current scroll item
+		   var cur = scrollItems.map(function(){
+			 if ($(this).offset().top < fromTop)
+			   return this;
+		   });
+		   // Get the id of the current element
+		   cur = cur[cur.length-1];
+		   var id = cur && cur.length ? cur[0].id : "";
+		   
+		   if (lastId !== id) {
+			   lastId = id;
+			   // Set/remove active class
+			   menuItems
+				 .parent().removeClass("active")
+				 .end().filter("[href='#"+id+"']").parent().addClass("active");
+		   }                   
+		});
 });

@@ -194,26 +194,25 @@
 .menu_left_tl {
     position: fixed;
     top: 30%;
-    left: 40px;
+    left: 40px;z-index: 99;
 
-    .nav_cate {
-        text-align: center;
-
-        a {
-            display: block;
-            background: var(--orange);
-            width: 6px;
-            height: 6px;
-            margin: 25px auto;
-            box-shadow: 0px 1px 3px #fff;
-
-            &.active {
-                width: 10px;
-                height: 10px;
-            }
+    a {
+        display: block;
+        background: var(--orange);
+        width: 6px;
+        height: 6px;
+        margin: 25px auto;
+        box-shadow: 0px 1px 3px #fff;
+    }
+    li.active {
+        a{
+            width: 10px;
+            height: 10px;
         }
     }
-
+    @media (max-width:1280px) {
+        left: 20px;
+    }
     @media (max-width:991px) {
         display: none
     }
@@ -839,6 +838,7 @@ body.fp-viewing-6 {
 
 .section_giaithuong {
     padding-bottom: 0;
+    padding-top: 80px;
 
     &::before {
         content: "";
@@ -851,6 +851,7 @@ body.fp-viewing-6 {
 }
 
 #sec4 {
+    .heading_text{margin-bottom: 100px;}
     .container {
         &::before {
             content: "";
