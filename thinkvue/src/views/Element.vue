@@ -25,27 +25,27 @@
         <ul class="list-star">
           <li class="active">
             <svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#star1" />
+              <use xlink:href="../assets/images/icons/icon.svg#star1" />
             </svg>
           </li>
           <li class="active">
             <svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#star1" />
+              <use xlink:href="../assets/images/icons/icon.svg#star1" />
             </svg>
           </li>
           <li class="active">
             <svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#star1" />
+              <use xlink:href="../assets/images/icons/icon.svg#star1" />
             </svg>
           </li>
           <li class="active">
             <svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#star1" />
+              <use xlink:href="../assets/images/icons/icon.svg#star1" />
             </svg>
           </li>
           <li>
             <svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#star1" />
+              <use xlink:href="../assets/images/icons/icon.svg#star1" />
             </svg>
           </li>
         </ul>

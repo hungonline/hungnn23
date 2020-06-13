@@ -15,3 +15,6 @@ export default {
   }
 };
 </script>
+<style>
+@import "../assets/css/article.css";
+</style>

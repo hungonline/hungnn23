@@ -340,79 +340,6 @@
     .content-bottom .view-full:hover a {
       color: #008C9B; }
 
-.box-vote {
-  border-bottom: 1px solid var(--gray100);
-  padding-bottom: 40px;
-  margin-bottom: 24px; }
-  .box-vote__head {
-    margin-bottom: 90px; }
-    .box-vote__head .flex {
-      justify-content: space-between; }
-  .box-vote .vote span {
-    margin: 1px 16px 0 0;
-    font-size: 52px;
-    font-weight: bold; }
-  .box-vote .vote ul li {
-    display: inline-block; }
-    .box-vote .vote ul li svg {
-      width: 32px;
-      height: 32px; }
-    .box-vote .vote ul li.active svg {
-      color: var(--color_main); }
-  .box-vote .vote .line {
-    margin: 6px 0 0 10px;
-    font-size: 14px; }
-  .box-vote .vote-chart {
-    width: 210px; }
-    .box-vote .vote-chart ul li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 15px; }
-      .box-vote .vote-chart ul li .number {
-        position: absolute;
-        font-size: 14px;
-        left: 0;
-        top: -10px; }
-      .box-vote .vote-chart ul li .chart {
-        background: var(--gray50);
-        border-radius: 4px;
-        height: 4px;
-        position: relative; }
-        .box-vote .vote-chart ul li .chart span {
-          background: var(--color_main);
-          border-radius: 4px;
-          height: 4px;
-          position: absolute;
-          left: 0; }
-          .box-vote .vote-chart ul li .chart span.chart_90 {
-            width: 90%; }
-          .box-vote .vote-chart ul li .chart span.chart_80 {
-            width: 80%; }
-          .box-vote .vote-chart ul li .chart span.chart_70 {
-            width: 70%; }
-          .box-vote .vote-chart ul li .chart span.chart_60 {
-            width: 60%; }
-          .box-vote .vote-chart ul li .chart span.chart_50 {
-            width: 50%; }
-          .box-vote .vote-chart ul li .chart span.chart_40 {
-            width: 40%; }
-          .box-vote .vote-chart ul li .chart span.chart_30 {
-            width: 30%; }
-          .box-vote .vote-chart ul li .chart span.chart_20 {
-            width: 20%; }
-          .box-vote .vote-chart ul li .chart span.chart_10 {
-            width: 10%; }
-          .box-vote .vote-chart ul li .chart span.chart_5 {
-            width: 5%; }
-  @media (max-width: 1025px) {
-    .box-vote .vote span {
-      font-size: 24px; }
-    .box-vote .vote ul li svg {
-      width: 20px;
-      height: 20px; }
-    .box-vote .vote .btn-default {
-      margin-top: 10px; } }
-
 .sticky_detail {
   background: #FBFBFB;
   padding: 30px 0;
@@ -516,37 +443,6 @@
   .page-detail .title-product {
     margin-bottom: 0 !important; }
   .page-detail .code {
-    display: block; }
-
-  .box-comment, .box-vote,
-  .box-vote {
-    padding-bottom: 16px;
-    margin-bottom: 16px; }
-    .box-comment .list-comments__items .ava, .box-vote .list-comments__items .ava,
-    .box-vote .list-comments__items .ava {
-      width: 32px;
-      height: 32px; }
-    .box-comment .list-comments__items .comment_reply, .box-vote .list-comments__items .comment_reply,
-    .box-vote .list-comments__items .comment_reply {
-      padding-left: 48px; }
-
-  .box-vote__head {
-    margin: 32px 0; }
-    .box-vote__head .vote {
-      width: 60%;
-      padding-right: 20px; }
-      .box-vote__head .vote .flex {
-        display: block; }
-      .box-vote__head .vote span {
-        display: block; }
-      .box-vote__head .vote ul {
-        margin-bottom: 10px; }
-      .box-vote__head .vote .line {
-        font-size: 12px;
-        margin-left: 0; }
-    .box-vote__head .vote-chart {
-      width: 40%; }
-    .box-vote__head .btn-default {
-      display: block; } }
+    display: block; } }
 
 /*# sourceMappingURL=product.css.map */

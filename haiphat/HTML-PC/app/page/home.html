@@ -286,7 +286,7 @@
                         <article class="item-news full-thumb">
                             <img src="images/graphics/giai-thuong1.png">
                             <h3 class="title-news">
-                                Sản giao dịch bất động sản tiêu biểu <strong>2015</strong>
+                                Top 10 đơn vị phân phối bất động sản xuất sắc nhất Việt Nam năm 2017 <strong>Thành tựu</strong>
                             </h3>
                         </article>
                     </div>
@@ -294,7 +294,7 @@
                         <article class="item-news full-thumb">
                             <img src="images/graphics/giai-thuong2.png">
                             <h3 class="title-news">
-                                Sản bất động sản tiêu biểu <strong>2016</strong>
+                                Top 10 đơn vị phân phối bất động sản xuất sắc nhất Việt Nam năm 2017 <strong>Thành tựu</strong>
                             </h3>
                         </article>
                     </div>
@@ -302,7 +302,7 @@
                         <article class="item-news full-thumb">
                             <img src="images/graphics/giai-thuong3.png">
                             <h3 class="title-news">
-                                Sản bất động sản tiêu biểu <strong>2017</strong>
+                                Top 10 đơn vị phân phối bất động sản xuất sắc nhất Việt Nam năm 2017 <strong>Thành tựu</strong>
                             </h3>
                         </article>
                     </div>
@@ -310,7 +310,7 @@
                         <article class="item-news full-thumb">
                             <img src="images/graphics/giai-thuong4.png">
                             <h3 class="title-news">
-                                Sản bất động sản tiêu biểu <strong>2018</strong>
+                                Top 10 đơn vị phân phối bất động sản xuất sắc nhất Việt Nam năm 2017 <strong>Thành tựu</strong>
                             </h3>
                         </article>
                     </div>
@@ -318,7 +318,7 @@
                         <article class="item-news full-thumb">
                             <img src="images/graphics/giai-thuong1.png">
                             <h3 class="title-news">
-                                Sản bất động sản tiêu biểu <strong>2015</strong>
+                                Top 10 đơn vị phân phối bất động sản xuất sắc nhất Việt Nam năm 2017 <strong>Thành tựu</strong>
                             </h3>
                         </article>
                     </div>
@@ -1026,7 +1026,10 @@
         <button type="button" class="btn_reset">×</button>
         <span>Đóng</span>
     </a>
-    <img src="images/graphics/screen2.jpg">
+    <video id="myvideo" preload="auto" autoplay="true" loop="loop" muted volume="0">
+        <source src="video/file.mp4?autoplay=1" type="video/mp4">
+    </video>
+    <!-- <img src="images/graphics/screen2.jpg"> -->
 </div>
 
 
@@ -1034,6 +1037,7 @@
 
 <!-- build:script2 -->
 <script>
+    document.getElementById('myvideo').play();
     setTimeout(function () {
         $('.pre-loading.loader1').fadeOut();
         $('.pre-loading.loader2').fadeIn();

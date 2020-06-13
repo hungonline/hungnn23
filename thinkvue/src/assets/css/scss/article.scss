@@ -1,0 +1,122 @@
+
+@import "var.scss";
+.list-article {
+    .art_item {
+        margin-bottom: 24px;
+        position: relative;
+
+        .ava {
+            margin-bottom: 24px;
+        }
+
+        .content {
+            .tag {
+                font-size: 14px;
+                margin-bottom: 16px;
+
+                .folder {
+                    font-weight: 600;
+                    margin-right: 16px;
+                }
+            }
+
+            .title_news {
+                font-size: 24px;
+                margin-bottom: 16px;
+            }
+
+            .description {
+                color: var(--gray600);
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            padding: 0 16px;
+
+            &.art_item_top {
+                padding: 0
+            }
+
+            .ava {
+                margin-bottom: 8px;
+            }
+
+            .content {
+                .tag {
+                    margin-bottom: 8px;
+                }
+
+                .title_news {
+                    font-size: 20px !important;
+                    margin-bottom: 8px;
+                }
+
+                .description {
+                    font-size: 16px
+                }
+            }
+        }
+
+
+    }
+
+    .gird {
+        display: flex;
+        flex-wrap: wrap;
+
+        &_2 {
+            margin: 0 -16px;
+
+            .art_item {
+                width: 50%;
+                padding: 16px;
+                margin-bottom: 8px;
+                transition: 0.5s ease;
+
+                &:hover {
+                    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+
+    .art_item_top {
+        .content {
+            .title_news {
+                font-size: 32px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .gird_2 {
+            margin-bottom: 16px;
+
+            .art_item {
+                width: 100%;
+                margin-bottom: 0;
+                border-bottom: 1px solid var(--gray100);
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        .art_item.art_item_top {
+            border-bottom: 0;
+            margin-bottom: 16px;
+
+            &::before {
+                content: "";
+                background: var(--gray100);
+                height: 1px;
+                left: -16px;
+                right: -16px;
+                position: absolute;
+                bottom: -16px;
+            }
+        }
+    }
+}
