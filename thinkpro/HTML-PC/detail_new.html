@@ -1111,7 +1111,18 @@
 
 </script>
 
-    <div class="clearfix"></div>
+    <script>
+        $('form.search input[name="keyword"], form.search input[name="q"]').on('keyup', (e) => {
+            let query = $(e.currentTarget).val();
+            if (query.length) {
+                $(e.currentTarget).parents('form').addClass('active');
+                return;
+            } else {
+                $(e.currentTarget).parents('form').removeClass('active');
+                return;
+            }
+        });
+    </script>
 </body>
 
 </html>
