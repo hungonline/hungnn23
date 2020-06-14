@@ -1,3 +1,20 @@
+@media (max-width:1400px) {
+    .container{max-width: 1100px;}
+    .container2{max-width: 100%;}
+    .wrap-main-nav .main-nav .parent>li{margin-left: 25px;}
+    .heading_text{
+        margin: 0 auto 45px;
+        .title_line{font-size: 30px;margin-bottom: 10px;}
+    }
+    .title-cate{font-size: 30px;}
+    .item-news{
+        .title-news{font-size: 16px;}
+        .number{font-size: 30px;}
+    }
+    .slide_article .item-news{margin-bottom: 0;}
+    .slide_doitac::before{top: -98px;}
+}
+
 @media (max-width:1199px) {
     .box_stream {
         width: calc(100% - 300px);
