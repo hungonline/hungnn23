@@ -140,7 +140,8 @@ select {
 }
 
 .min-container {
-  max-width: 807px !important;
+  max-width: 808px !important;
+  margin: 0 auto;
 }
 
 html {
@@ -210,6 +211,7 @@ html {
   transition: 0.5s ease;
   box-shadow: none;
   text-align: center;
+  cursor: pointer;
 
   &:hover {
     color: var(--dark_gray);
@@ -217,6 +219,25 @@ html {
 
   &.gray {
     background: var(--gray200);
+  }
+
+  &.oranger {
+    background: var(--oranger);
+    border: 1px solid var(--oranger);
+    color: #fff
+  }
+
+  &.white {
+    background: #fff;
+    border: 1px solid var(--gray100);
+  }
+
+  &.full {
+    width: 100%;
+  }
+
+  &.color-white {
+    color: #fff
   }
 
   &.mfp-close {
@@ -231,6 +252,10 @@ html {
 
 .no_wrap {
   white-space: nowrap;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
 }
 
 .mb5 {
@@ -289,8 +314,16 @@ html {
   margin-top: 15px;
 }
 
+.mt16 {
+  margin-top: 16px;
+}
+
 .mt20 {
   margin-top: 20px;
+}
+
+.mt24 {
+  margin-top: 24px;
 }
 
 .mt25 {
@@ -345,6 +378,14 @@ html {
 
 .txt_16 {
   font-size: px_to_rem(16px);
+}
+
+.txt_18 {
+  font-size: px_to_rem(18px);
+}
+
+.txt_20 {
+  font-size: px_to_rem(20px);
 }
 
 .txt_25 {

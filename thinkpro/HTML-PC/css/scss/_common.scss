@@ -210,11 +210,20 @@ main {
                 margin-top: 10px;
                 padding: 0 10px;
                 transition: 0.5s ease;
+                font-size: 14px;
+                height: 36px;
+                line-height: 36px;
+                width: 100%;
             }
 
             .add-compare {
                 background: #fff;
                 border: 1px solid var(--dark_gray);
+            }
+
+            .block {
+                display: block;
+                width: 100%;
             }
         }
 
@@ -241,6 +250,8 @@ main {
             font-size: 14px;
             text-decoration: line-through;
         }
+
+
 
         .code {
             color: var(--gray500);
@@ -491,7 +502,6 @@ main {
             a {
                 img {
                     width: 65px;
-                    opacity: 0.6;
                 }
             }
         }
@@ -569,10 +579,55 @@ main {
     }
 
     &.cricle {
-        padding-left: 25px;
-
         .checkmark {
             border-radius: 50%;
+        }
+    }
+
+    &.inline {
+        display: inline-block;
+        margin-right: 24px;
+    }
+}
+
+.txt_16 {
+    .check-list {
+        .text {
+            font-size: 16px
+        }
+
+        .checkmark {
+            border-radius: 0;
+        }
+
+        &.cricle {
+            padding-left: 28px;
+
+            .checkmark {
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.table-responsive {
+    width: 100%;
+}
+
+.table-default {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td {
+        border: 1px solid #E3E7EF;
+        color: #0E0E0E;
+        padding: 13px 16px;
+    }
+
+    .border_0 {
+        td {
+            border: 0;
         }
     }
 }
@@ -886,6 +941,38 @@ main {
             border-bottom: 1px solid var(--gray100);
             padding-bottom: 10px;
             margin-bottom: 10px;
+        }
+    }
+}
+
+.form-default {
+    .row {
+        margin: 0 -8px;
+
+        [class*="col-"] {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+
+        .form-control {
+            background: var(--gray50);
+            padding: 10px 16px;
+            height: 48px;
+            box-shadow: none;
+            color: #000;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        select.form-control {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: var(--gray50) url(images/icons/download.svg) no-repeat right 10px top 10px;
         }
     }
 }

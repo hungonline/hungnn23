@@ -42,6 +42,10 @@
 
 
 @media (max-width: 1025px) {
+    .breadcrumb {
+        margin-bottom: 30px;
+    }
+
     .mb56 {
         margin-bottom: 24px;
     }
@@ -53,14 +57,14 @@
 
 
     .btn-default {
-        line-height: 36px;
-        height: 36px;
+        // line-height: 36px;
+        // height: 36px;
         padding: 0 25px;
 
-        &.mfp-close {
-            height: 36px;
-            line-height: 36px;
-        }
+        // &.mfp-close {
+        //     height: 36px;
+        //     line-height: 36px;
+        // }
     }
 }
 
@@ -168,6 +172,10 @@
 
     main.page-home {
         padding-top: 0;
+    }
+
+    .title_cate {
+        font-size: 20px;
     }
 
     .breadcrumb {
