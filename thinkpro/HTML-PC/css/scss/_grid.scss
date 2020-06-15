@@ -59,6 +59,7 @@ body {
 [class*="col-"] {
     padding-left: ($colGap / 2) * 1px;
     padding-right: ($colGap / 2) * 1px;
+    width: 100%;
 }
 
 // Với grid là 12 column thì col-xs-3 sẽ là 25%

@@ -32,7 +32,20 @@ body::-webkit-scrollbar-track {
         font-weight: 400;
     }
 }
-
+.icon.bg-blue{
+    background: #EBF5F7;
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    svg{
+        width: 48px;
+        height: 48px;
+        fill: var(--color_main);
+    }
+}
 .view-more {
     text-align: center;
 
