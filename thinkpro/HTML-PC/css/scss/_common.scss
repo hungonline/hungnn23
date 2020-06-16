@@ -32,7 +32,8 @@ body::-webkit-scrollbar-track {
         font-weight: 400;
     }
 }
-.icon.bg-blue{
+
+.icon.bg-blue {
     background: #EBF5F7;
     width: 88px;
     height: 88px;
@@ -40,12 +41,14 @@ body::-webkit-scrollbar-track {
     text-align: center;
     margin: 0 auto 16px;
     border-radius: 50%;
-    svg{
+
+    svg {
         width: 48px;
         height: 48px;
         fill: var(--color_main);
     }
 }
+
 .view-more {
     text-align: center;
 
@@ -547,7 +550,7 @@ main {
     margin-bottom: 8px;
 
     .text {
-        color: var(--dark_gray);
+        color: #000000;
         display: inline-block;
         font-size: 14px;
         font-weight: 400;
@@ -560,7 +563,7 @@ main {
         left: 0;
         height: 20px;
         width: 20px;
-        border: 2px solid var(--dark_gray);
+        border: 2px solid #000000;
         border-radius: 3px;
 
         &:after {
@@ -611,6 +614,7 @@ main {
 
         .checkmark {
             border-radius: 0;
+            top: 2px;
         }
 
         &.cricle {

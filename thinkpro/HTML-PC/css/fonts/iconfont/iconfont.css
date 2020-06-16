@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1592282734434');
-	src: url('iconfont.eot?#iefix-1592282734434') format('embedded-opentype'),
-		url('iconfont.woff2?1592282734434') format('woff2'),
-		url('iconfont.woff?1592282734434') format('woff'),
-		url('iconfont.ttf?1592282734434') format('truetype');
+	src: url('iconfont.eot?1592301342302');
+	src: url('iconfont.eot?#iefix-1592301342302') format('embedded-opentype'),
+		url('iconfont.woff2?1592301342302') format('woff2'),
+		url('iconfont.woff?1592301342302') format('woff'),
+		url('iconfont.ttf?1592301342302') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -528,28 +528,32 @@ Glyphs list
 			content: '\ea7c';
 		}
 
-		 .iconfont-star1:before {
+		 .iconfont-smile:before {
 			content: '\ea7d';
 		}
 
-		 .iconfont-think-logo:before {
+		 .iconfont-star1:before {
 			content: '\ea7e';
 		}
 
-		 .iconfont-thinkpad:before {
+		 .iconfont-think-logo:before {
 			content: '\ea7f';
 		}
 
-		 .iconfont-truck1:before {
+		 .iconfont-thinkpad:before {
 			content: '\ea80';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-truck1:before {
 			content: '\ea81';
 		}
 
-		 .iconfont-youtube:before {
+		 .iconfont-user:before {
 			content: '\ea82';
+		}
+
+		 .iconfont-youtube:before {
+			content: '\ea83';
 		}
 
 		
