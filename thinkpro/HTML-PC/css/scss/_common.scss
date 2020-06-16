@@ -107,11 +107,14 @@ body::-webkit-scrollbar-track {
 main {
     padding-top: 24px;
 }
-
+.border-warp{
+    border: 1px solid var(--gray100);
+}
+.padding_24{padding: 24px;}
 .mb56 {
     margin-bottom: 56px;
 }
-
+.ml_16{margin-left: 16px;}
 .dropdown-content {
     display: none;
     position: absolute;

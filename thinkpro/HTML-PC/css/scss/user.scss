@@ -1,0 +1,38 @@
+@import "var.scss";
+
+.account-information{
+    font-size: 16px;
+    &__left{
+        width: 209px;
+    }
+    &__right{
+        width: 1015px;
+        width: calc(100% - 209px);
+    }
+    .menu__nav{
+        font-size: 16px;
+        border-left: 1px solid #E3E7EF;padding-left: 10px;
+        li{
+            margin-bottom: 16px;position: relative;
+            a{
+                display: block;
+            }
+            svg{
+                width: 24px;height: 24px;margin-right: 5px;vertical-align: top;
+            }
+            &.active{
+                &::before{
+                    content: "";
+                    background: var(--color_main);
+                    position: absolute;
+                    left: -13px;
+                    width: 3px;
+                    height: 24px;
+                }
+                a{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
