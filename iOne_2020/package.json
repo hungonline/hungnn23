@@ -12,6 +12,7 @@
     "browser-sync": "^2.26.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^4.0.2",
     "gulp-consolidate": "^0.2.0",
     "gulp-iconfont": "^10.0.3",
     "gulp-index": "^0.2.0",
@@ -26,7 +27,7 @@
     "gulp-wait": "0.0.2",
     "run-sequence": "^1.1.2",
     "underscore": "^1.9.1",
-    "yargs": "^15.0.2"
+    "yargs": "^15.3.1"
   },
   "dependencies": {}
 }

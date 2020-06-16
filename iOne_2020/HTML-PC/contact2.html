@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="wih2h=device-wih2h, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description"
+        content="iOne.net chuyên trang tổng hợp tin tức giải trí showbiz, đời sống, chiêm tinh, tử vi, xu hướng thời trang và các sự kiện nổi bật trong và ngoài nước dành cho giới trẻ.">
+    <meta name="keywords" content="iOne, Việt Nam">
+    <title>
+        iOne Redesign
+
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/font.css" media="all" />
+    <link rel="stylesheet" href="css/general.css" media="all" />
+
+    <link rel="stylesheet" href="css/folder.css" media="all" />
+
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+    <!-- BANNER ADS TOP -->
+    <section class="section banner-top-home">
+        <img src="images/graphics/banner-top.jpg" />
+    </section>
+    <!-- END BANNER ADS TOP -->
+    <section id="wrap-main-nav" class="section wrap-main-nav sticky">
+        <div class="container flex">
+            <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
+            <a class="logo" href="#" title="#"><img src="images/graphics/logo_ione.svg" /> </a>
+            <nav class="main-nav">
+                <ul class="parent">
+                    <li class="active">
+                        <h3><a href="#" title="">News</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">Stars</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">Movies & Muzik</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">style</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">Horoscopes</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">Funland</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">Girls & Boys</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">Video</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="#" title="">photos</a></h3>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right-head">
+                <div class="search-btn">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                    <svg class="icon-svg close">
+                        <use xlink:href="images/icons/icon.svg#close2"></use>
+                    </svg>
+                </div>
+                <div id="myvne_taskbar">
+                    <div id="myvne" class="myvne_taskbar myvne_login_button">
+                        <a href="#" class="log_txt" title="Đăng nhập"><svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#User"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-wrap">
+            <div class="container">
+                <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--container contact -->
+    <section class="section page-contact mb70">
+        <div class="container mt30">
+            <div class="head_cate">
+                <h1 class="title_star">
+                    <a href="#">Gửi chia sẻ</a>
+                </h1>
+            </div>
+            <div class="flex">
+                <div class="col">
+                    <form action="" class="page-contact__form">
+                        <div class="form-group">
+                            <label for="">Họ tên*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Tiêu đề*</label>
+                            <input type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-upload">File đính kèm</label>
+                            <!-- <label for="contact-upload" class="upload-btn">
+                            <input type="file" style="display: none;" id="contact-upload">
+                            <span>Upload file</span>
+                            <span>+</span>
+                        </label> -->
+                            <label for="contact-upload" class="upload-btn">
+                                <input type="hidden" id="thumbnail_url" name="thumbnail_url" value="">
+                                <div id="fine-uploader-gallery" class="">
+                                    <div>
+                                        <div class="qq-uploader-selector qq-uploader qq-gallery">
+                                            <div class="qq-upload-list-selector qq-upload-list" role="region"
+                                                aria-live="polite" aria-relevant="additions removals"></div>
+                                            <div class="item_upload qq-upload-button-selector qq-upload-button"
+                                                style="position: relative; overflow: hidden; direction: ltr;">
+                                                <div class="wih2h_common box-upload-attach">
+                                                    <div class="area-drop-file">
+                                                        <span>Upload file</span>
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                                <input qq-button-id="e011062f-3928-42f1-b37e-40c1b8233715"
+                                                    title="file input" multiple="" type="file" name="qqfile"
+                                                    accept=".jpeg, .jpg, .png, .doc, .docx, .txt, .xls, .xlsx, .pdf, .ppt, .pptx"
+                                                    style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0; height: 100%;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/template" id="qq-template-gallery">
+                                    <div class="qq-uploader-selector qq-uploader qq-gallery">
+                                        <div class="qq-upload-list-selector qq-upload-list" role="region" aria-live="polite" aria-relevant="additions removals">
+                                            <div class="item_upload img_up">
+                                                <span class="remove_upload qq-btn qq-upload-cancel-selector qq-upload-cancel">&times;</span>
+                                                <span class="qq-upload-spinner-selector Fqq-upload-spinner"></span>
+                                                <div class="qq-thumbnail-wrapper">
+                                                    <img class="qq-thumbnail-selector" qq-max-size="98" qq-server-scale>
+                                                </div>
+                                                <span class="remove_pic qq-upload-cancel-selector qq-upload-cancel"><i class="ic ic-false"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="item_upload qq-upload-button-selector qq-upload-button">                     
+                                            <div class="wih2h_common box-upload-attach">
+                                                <div class="area-drop-file">
+                                                    <span>Upload file</span>
+                                                <span>+</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </script>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-upload">Nội dung lời nhắn</label>
+                            <textarea name="editor1" id="" cols="30" rows="8"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn">Gửi lời nhắn</button>
+                            <button class="btn cancel">Xóa trắng</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <div class="page-contact__share">
+                        <h2 class="title">Cẩm nang gửi bài viết</h2>
+                        <div class="list_share">
+                            <ul>
+                                <li class=" active">
+                                    <h3 class="active"><a href="javascript:;" title="">1. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf" style="display:block">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">2. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End container contact -->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex footer_top">
+                <div class="logo_left">
+                    <a href="#" title=""><img style="margin-top:10px" src="images/graphics/logo_vne.svg" /></a>
+                    <a href="#" title=""><img src="images/graphics/logo_ns.svg" /></a>
+                </div>
+                <a href="#" title=""><img src="images/graphics/logo_ione2.svg" /></a>
+                <a class="contact" href="#" title="">Liên hệ toà soạn</a>
+            </div>
+            <div class="flex footer_copyright">
+                <div>© Copyright 2019 iOne.vnexpress.net, All rights reserved</div>
+                <div class="social">
+                    <a class="face" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Facebook"></use>
+                        </svg></a>
+                    <a class="twitter" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Twitter"></use>
+                        </svg></a>
+                    <a class="in" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#twitter2"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+        <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#arrow01"></use>
+        </svg>
+    </a>
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+
+    <script src="//cdn.ckeditor.com/4.14.0/basic/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+    <div class="clearfix"></div>
+    <script>
+        $('.list_share').find('h3').click(
+            function () {
+                if ($(this).next().css('display') == 'none') {
+                    $('.inf').slideUp();
+                    $(this).next().stop(true, true).slideDown();
+                    $('.list_share li').removeClass('active');
+                    $(this).parent().addClass('active');
+
+                } else {
+                    $(this).parent().find('.inf').slideUp();
+                    $('.list_share li').removeClass('active');
+                }
+            }
+        )
+    </script>
+</body>
+
+</html>

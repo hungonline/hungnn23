@@ -10,8 +10,16 @@ body {
     max-width: 1741px;
     padding: 0 30px;
 
+    .right-head {
+        right: 30px;
+    }
+
     @media (max-width: 1080px) {
         padding: 0 10px;
+
+        .right-head {
+            right: 10px;
+        }
     }
 }
 
@@ -178,6 +186,21 @@ body {
             background: var(--white);
             float: right;
 
+            #box_comment_vne {
+                overflow-x: hidden;
+            }
+
+            .ss-scroll {
+                right: calc(-100% - 2px) !important;
+                opacity: 0;
+            }
+
+            &:hover {
+                .ss-scroll {
+                    opacity: 1;
+                }
+            }
+
             .scroll-element.scroll-y {
                 opacity: 0;
             }
@@ -245,7 +268,7 @@ body {
                         margin-left: 5px;
 
                         svg {
-                            fill: var(--colormain);
+                            fill: #222222;
                             width: 14px;
                             height: 14px;
 
@@ -648,6 +671,7 @@ body {
             width: calc(100% - 424px);
             border-radius: 4px 0px 0px 4px;
             margin-right: 0;
+            overflow: visible
         }
 
         .content {

@@ -871,6 +871,10 @@
 .box_top_review {
   margin-bottom: 35px;
 
+  .inner_content_review {
+    margin-top: 30px !important;
+  }
+
   &.box-placeholder {
     .box_shopping_review {
       background: none;
@@ -900,6 +904,7 @@
 .box_gallery_review {
   width: 780px;
   width: calc(100% - 300px);
+  margin-bottom: 0 !important;
 
   &.box_gallery_review_full {
     width: 100%;
@@ -910,7 +915,7 @@
 
 .box_shopping_review {
   width: 300px;
-  padding: 25px 24px;
+  padding: 20px 24px 10px;
   font-family: arial;
   color: #F7F7F7;
 
@@ -1096,6 +1101,8 @@
   }
 
   .list_txt {
+    margin-bottom: 0 !important;
+
     li {
       color: #222;
       position: relative;
@@ -1235,7 +1242,7 @@
   .table {
     width: 100%;
     border: 1px solid #E5E5E5;
-    border-collapse: collapse;
+    border-bottom: 0;
     border-spacing: 0;
   }
 
@@ -1278,7 +1285,7 @@
           &:first-child {
             font-weight: bold;
             width: 200px;
-            padding-left: 12px;
+            padding-left: 12px !important;
           }
         }
       }

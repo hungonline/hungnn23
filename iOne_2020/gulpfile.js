@@ -14,6 +14,7 @@ var wait = require('gulp-wait');
 var svgSprite = require('gulp-svg-sprite');
 var template = require('gulp-template-html');
 var index = require('gulp-index');
+var changed = require('gulp-changed');
 var fs = require('fs');
 
 var argv = require('yargs').argv;
@@ -56,7 +57,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
-    }))
+    }))    
     .pipe(wait(500))
     .pipe(sass({
       outputStyle: 'compressed'
@@ -156,6 +157,7 @@ gulp.task('svg', ['svg-combine', 'svg-iconfont'], function (done) {
 // Build template
 gulp.task("build-template", function () {
   return gulp.src(rootDir + '/app/page/*.html')
+    .pipe(changed(rootDir + '/css'))
     .pipe(template(rootDir + '/app/template/main.html'))
     .pipe(gulp.dest(rootDir));
 });

@@ -11,6 +11,12 @@ body {
     font-size: 14px;
     line-height: 1.4;
     background: var(--white);
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
 
 .container {

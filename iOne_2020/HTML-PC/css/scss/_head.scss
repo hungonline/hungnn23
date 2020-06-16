@@ -11,7 +11,7 @@
 .wrap-main-nav {
     border-bottom: 1px solid var(--border);
     background: var(--white);
-    z-index: 989;
+    z-index: 991;
     height: 60px;
 
     .icon-svg {
@@ -24,6 +24,8 @@
 
     .logo {
         width: 72px;
+        top: 14px;
+        position: absolute;
     }
 
     &>.container {
@@ -33,7 +35,13 @@
     }
 
     .main-nav {
+        width: 100%;
+        text-align: center;
+
         .parent {
+            display: flex;
+            justify-content: center;
+
             li {
                 display: inline-block;
 
@@ -63,6 +71,9 @@
 
     .right-head {
         margin-top: -5px;
+        position: absolute;
+        right: 10px;
+        top: 20px;
     }
 
     .search-btn {
@@ -133,6 +144,10 @@
     #myvne_taskbar {
         display: inline-block;
         margin-left: 15px;
+
+        .name_user_av {
+            display: none !important
+        }
     }
 
     @media (max-width: 979px) {
@@ -160,14 +175,20 @@
     }
 
     @media (max-width: 768px) {
+        .logo {
+            left: 50%;
+            margin-left: -35px;
+        }
+
         .all-menu-tablet {
             display: block;
         }
 
         .main-nav {
+            text-align: left;
             width: 100%;
             left: 0;
-            background: #f7f7f7;
+            background: var(--bg-agray);
             padding: 20px 10px 10px 10px;
             box-shadow: 0 1px 3px rgba(80, 80, 80, .2), 0 3px 5px rgba(80, 80, 80, .15);
             position: absolute;

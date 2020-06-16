@@ -2,6 +2,7 @@
 <!-- /build:title -->
 <!-- build:head2 -->
 <link rel="stylesheet" href="css/folder.css" media="all" />
+<link rel="stylesheet" href="css/folder_vote.css" media="all" />
 <!-- /build:head2 -->
 <!-- build:content -->
 <section class="container mt30">
@@ -789,6 +790,130 @@
             </a>
         </div>
 
+
+        <div class="box_quiz clearfix mb40">
+            <div class="head_cate flex">
+                <h2 class="title_star">
+                    <a href="#">Quiz</a>
+                </h2>
+                <div class="social">
+                    <a class="face" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Facebook"></use>
+                        </svg></a>
+                    <a class="twitter" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Twitter"></use>
+                        </svg></a>
+                    <a class="link" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#link"></use>
+                        </svg></a>
+                </div>
+            </div>
+            <div style="width: 100%" class="width_common box_category vote_rating_box thamdo box_100"
+                id="boxthamdoykien">
+                <div class="width_common title-box-category title-box-small">
+                    <h4 class="inner-title">Thăm dò</h4>
+
+                    <span class="count-vote"><strong>6</strong> biểu quyết</span>
+
+                </div>
+                <div class="content_box_category box_bg_gray width_common">
+                    <div class="title_bx width_common">Bạn thích số mấy</div>
+
+                    <div class="item_row_bx width_common" style="">
+                        <label for="_i81191" class="label_check">
+                            <input onclick="vneVote.CheckThisVote(this)" id="_i81191" name="answer_21260" value="81191"
+                                type="checkbox" class="radio_check">
+                            <span>số 1</span>
+                        </label>
+                    </div>
+
+                    <div class="item_row_bx width_common" style="">
+                        <label for="_i81192" class="label_check">
+                            <input onclick="vneVote.CheckThisVote(this)" id="_i81192" name="answer_21260" value="81192"
+                                type="checkbox" class="radio_check">
+                            <span>Số 2</span>
+                        </label>
+                    </div>
+
+                    <div class="item_row_bx width_common" style="">
+                        <label for="_i81193" class="label_check">
+                            <input onclick="vneVote.CheckThisVote(this)" id="_i81193" name="answer_21260" value="81193"
+                                type="checkbox" class="radio_check">
+                            <span>Số 3</span>
+                        </label>
+                    </div>
+
+                    <div class="box_button width_common">
+                        <button id="btn_add_vote_21260"
+                            onclick="vneVote.insertvoteOK(21260); if(typeof(_gaq) != 'undefined'){_gaq.push(['_trackEvent', 'Home', 'Click Biểu quyết', 'Box Thăm dò ý kiến 21260']);}  return false;"
+                            class="btn_vne btn_disable btn_normal btn_vote_rate">Biểu quyết</button>
+                        <a href="javascript:void(0);" id="_btnResult" rel="nofollow"
+                            onclick="vneVote.animateResults(21260); if(typeof(_gaq) != 'undefined'){_gaq.push(['_trackEvent', 'Home', 'Click Xem kết quả', 'Box Thăm dò ý kiến 21260']);} return false;"
+                            class="btn_vne btn_normal btn_view_cancel btn_vote_rate btn_ketqua">Xem kết quả</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box_quiz clearfix mb40">
+            <div class="head_cate flex">
+                <h2 class="title_star">
+                    <a href="#">Quiz</a>
+                </h2>
+                <div class="social">
+                    <a class="face" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Facebook"></use>
+                        </svg></a>
+                    <a class="twitter" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Twitter"></use>
+                        </svg></a>
+                    <a class="link" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#link"></use>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="box_category width_common vote_rating_box">
+                <div class="width_common title-box-category title-box-small">
+                    <h4 class="inner-title">Thăm dò</h4><span class="count-vote">Đã có <strong>18.033</strong> lượt
+                        biểu quyết</span>
+                </div>
+                <div class="width_common content-box-category">
+                    <div class="title_bx width_common">Theo bạn việc học và thi của trẻ Việt Nam hiện nay là?</div>
+                    <div class="width_common item-kq-vote">
+                        <div class="width_common txt-kq-vote flexbox">
+                            <span class="option-txt">Ngọc Lan&nbsp;&nbsp;&nbsp;5%</span>
+                            <span class="count-vote-kq">15.600 phiếu</span>
+                        </div>
+                        <div class="item_row_bx width_common kq-vote flexbox max-vote">
+                            <label class="percent-vote" style="width: 70%;"></label>
+                        </div>
+                    </div>
+
+                    <div class="width_common item-kq-vote max-vote">
+                        <div class="width_common txt-kq-vote flexbox">
+                            <span class="option-txt">Nhiều áp lực, chương trình học nặng hơn
+                                trước&nbsp;&nbsp;&nbsp;70%</span>
+                            <span class="count-vote-kq">15.600 phiếu</span>
+                        </div>
+                        <div class="item_row_bx width_common kq-vote flexbox">
+                            <label class="percent-vote" style="width: 70%;"></label>
+                        </div>
+                    </div>
+
+                    <div class="width_common item-kq-vote">
+                        <div class="width_common txt-kq-vote flexbox">
+                            <span class="option-txt">Ngọc Lan&nbsp;&nbsp;&nbsp;5%</span>
+                            <span class="count-vote-kq">15.600 phiếu</span>
+                        </div>
+                        <div class="item_row_bx width_common kq-vote flexbox max-vote">
+                            <label class="percent-vote" style="width: 70%;"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 
         <article class="item-news box-placeholder last-item">
             <div class="thumb-art">

@@ -641,7 +641,8 @@
 
 /**DETAIL QUIZ NEW**/
 .quiz-new {
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    text-align: left;
 
     .gird {
         display: flex;
@@ -779,6 +780,7 @@
             position: relative;
             padding-right: 50px;
             margin-top: 20px;
+            width: 50%;
 
             .main-bar-per {
                 height: 10px;
@@ -844,6 +846,7 @@
 
         .answer-quiz {
             margin-top: 10px;
+            margin-bottom: 20px;
         }
     }
 
@@ -987,7 +990,9 @@
     }
 
     &5 {
-        h4 {
+
+        h4,
+        .title {
             color: #6441A5;
             font-size: 18px;
             font-weight: bold;

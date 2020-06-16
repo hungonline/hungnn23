@@ -41,12 +41,12 @@
     }
 
     //scrollBar
-    function scrollBar() {
-        var scrollContainer = $(".scrollbar-inner");
-        if (scrollContainer.length > 0) {
-            scrollContainer.scrollbar();
-        }
-    }
+    // function scrollBar() {
+    //     var scrollContainer = $(".scrollbar-inner");
+    //     if (scrollContainer.length > 0) {
+    //         scrollContainer.scrollbar();
+    //     }
+    // }
     //resizeSite
     function resizeSite() {
         var heightVideo = $('#player_playing').height() - 64;
@@ -162,7 +162,7 @@
 
     $(function () {
         backToTop();
-        scrollBar();
+        // scrollBar();
         onCLick();
         slideSwiper();
         magnificPopup();

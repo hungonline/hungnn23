@@ -19,6 +19,18 @@
 .container {
     max-width: 1920px;
     padding: 0 30px;
+
+    .right-head {
+        right: 30px;
+    }
+
+    @media (max-width: 1080px) {
+        padding: 0 10px;
+
+        .right-head {
+            right: 10px;
+        }
+    }
 }
 
 .list-photo {
@@ -205,7 +217,7 @@
 
     &_mode2 {
         li {
-            &:last-child {
+            &:nth-child(3) {
                 width: 50%;
 
                 .item-news {

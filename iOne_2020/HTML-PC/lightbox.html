@@ -26,6 +26,94 @@
 </head>
 
 <body class="homepage">
+    <section class="section switch_version">
+        <div class="container">
+            <a class="text-sw" href="#"><span>←</span> Trở về phiên bản hiện tại</a>
+            <span class="close-sw">×</span>
+        </div>
+    </section>
+    <div class="button-vote-version slideup">
+        <a href="#">Đánh giá phiên bản mới <span>→</span></a>
+        <span class="close-vote">×</span>
+    </div>
+    <!--SWITCH VERSION-->
+    <style>
+        .switch_version {
+            background: #E5E5E5;
+            height: 40px;
+            color: #4F4F4F;
+            font-size: 14px;
+        }
+
+        .switch_version a {
+            color: #4F4F4F;
+        }
+
+        .switch_version a span {
+            font-family: monospace;
+        }
+
+        .switch_version .container {
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+
+        .switch_version .close-sw {
+            margin-left: auto;
+            cursor: pointer;
+            font-family: -webkit-body;
+            font-size: 30px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .button-vote-version {
+            position: fixed;
+            right: 113px;
+            bottom: -101%;
+            transition: all .4s ease-out;
+            z-index: 9;
+        }
+
+        .button-vote-version.slideup {
+            bottom: 0;
+        }
+
+        .button-vote-version a {
+            height: 48px;
+            display: block;
+            background: #7043A9;
+            border-radius: 3px 3px 0 0;
+            font-size: 18px;
+            line-height: 48px;
+            font-weight: 700;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .button-vote-version a span {
+            font-family: monospace;
+        }
+
+        .button-vote-version .close-vote {
+            color: #4f4f4f;
+            font-family: -webkit-body;
+            font-size: 25px;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            cursor: pointer;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+        }
+    </style>
+
     <!-- BANNER ADS TOP -->
     <section class="section banner-top-home">
         <img src="images/graphics/banner-top.jpg" />

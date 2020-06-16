@@ -351,6 +351,7 @@
         }
     }
 
+
     &:before {
         content: '';
         width: 100%;
@@ -378,6 +379,10 @@
 
     .wrap_video {
         margin-bottom: 35px;
+    }
+
+    .fig-picture {
+        background: none !important
     }
 }
 

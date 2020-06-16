@@ -554,6 +554,12 @@ h6 {
         }
     }
 
+    .pa_prev {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
     .pagination_btn {
         line-height: 32px;
 
@@ -672,11 +678,76 @@ h6 {
     }
 }
 
+.btn_vne {
+    background: #9F224E;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0 35px;
+    @extend %has_transition;
+
+    &:hover {
+        background: #B52759;
+    }
+
+    &.btn_normal {
+        font-weight: 400;
+    }
+
+    &.btn_full {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    &.btn_disable {
+        background: #F7F7F7;
+        color: #BDBDBD;
+    }
+
+    &.btn_grey {
+        background: #E5E5E5;
+        color: #222;
+    }
+
+    &.btn_blue {
+        background: #076DB6;
+        color: #fff;
+    }
+
+    &.btn_view_cancel {
+        background: none;
+        color: #757575;
+        text-decoration: underline;
+        padding: 0 15px;
+
+        &:hover {
+            color: #087CCE;
+        }
+    }
+
+    .ic {
+        margin-top: -3px;
+        margin-right: 8px;
+    }
+}
+
+
 // Reset Comment
+.empty-comment p {
+    font-size: 14px !important
+}
+
 .box_comment_vne,
 .box_comment_ione {
     margin-bottom: 24px !important;
-    overflow-x: hidden;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
 
     .ykien_vne {
         background: url(images/icons/star1.svg) no-repeat 0;
@@ -840,6 +911,11 @@ h6 {
 //     }
 // }
 
+.box_comment_pin .like_google,
+#box_comment .box_comment_pin .like_google {
+    max-width: calc(100% - 110px) !important;
+}
+
 // End Reset Comment
 
 /*loadding-new and live plus*/
@@ -947,8 +1023,7 @@ h6 {
 }
 
 
-body.dark_mode,
-.page-detail.dark_mode {
+.dark_mode {
     --bg-agray2: #121212;
     --white: #222;
     --border: #757575;
@@ -976,8 +1051,28 @@ body.dark_mode,
     .item_slide_show .block_thumb_slide_show {
         background: none !important
     }
+
+    .comment_item .txt-name .nickname {
+        color: #fff !important
+    }
+
+    .wrap-main-nav .main-nav .parent li a {
+        color: #e5e5e5
+    }
+
+    &.wrap-main-nav {
+        background: #222222;
+        border-bottom: 0;
+    }
 }
 
+@media (max-width: 768px) {
+    .dark_mode {
+        .wrap-main-nav .main-nav {
+            background: var(--white);
+        }
+    }
+}
 
 
 
@@ -992,6 +1087,11 @@ body.dark_mode,
     text-align: center;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
+}
+
+.lg-outer,
+.lg-backdrop {
+    z-index: 9999 !important;
 }
 
 // Margin, Padding

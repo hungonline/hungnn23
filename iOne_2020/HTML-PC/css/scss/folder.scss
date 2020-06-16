@@ -150,6 +150,10 @@
     font-size: 16px;
     position: relative;
 
+    .box_category {
+        margin-bottom: 30px;
+    }
+
     .title {
         font: 600 22px var(--font1);
         color: #222222;
@@ -227,6 +231,8 @@
     }
 
     .quiz-new {
+        text-align: left;
+
         .gird {
             display: flex;
             flex-wrap: wrap;
@@ -340,6 +346,14 @@
                 width: 20px;
                 height: 20px;
             }
+
+            &.next {
+                svg {
+                    width: 14px;
+                    height: 14px;
+                    margin-left: 3px;
+                }
+            }
         }
 
         &1 {
@@ -397,6 +411,7 @@
                 position: relative;
                 padding-right: 50px;
                 margin-bottom: 30px;
+                width: 50%;
 
                 .main-bar-per {
                     height: 8px;
@@ -461,6 +476,7 @@
 
             .answer-quiz {
                 margin-top: 10px;
+                margin-bottom: 20px;
             }
         }
 
@@ -603,7 +619,9 @@
         }
 
         &5 {
-            h4 {
+
+            h4,
+            .title {
                 color: #6441A5;
                 font-size: 18px;
                 font-weight: 400;
