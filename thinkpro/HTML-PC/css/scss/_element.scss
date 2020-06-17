@@ -507,14 +507,13 @@
             border-bottom: 0;
 
             .ava {
-                width: 200px;
-                height: 200px;
+                width: 207px;
+                height: 207px;
                 padding-bottom: 0;
                 margin-right: 16px;
                 margin-bottom: 0;
             }
 
-            .date,
             .note {
                 display: none
             }
@@ -522,7 +521,16 @@
             .content {
                 width: 410px;
 
-                .view-detail {
+                .name {
+                    height: inherit;
+                }
+
+                .ch {
+                    display: none
+                }
+
+                .view-detail,
+                .code {
                     display: block;
                 }
             }
@@ -544,12 +552,13 @@
                 width: 220px;
             }
 
-            &:hover {
-                .content_2 {
-                    .btn-default {
-                        display: block
-                    }
+            .content_2 {
+                .btn-default {
+                    display: block
                 }
+            }
+
+            &:hover {
 
                 .more {
                     box-shadow: none;
@@ -1535,7 +1544,7 @@
         padding-right: 30px;
 
         &::before {
-            content: '\ea72';
+            content: '\ea76';
             font-family: 'iconfont';
             position: absolute;
             right: 12px;
@@ -1545,7 +1554,7 @@
 
         &.active {
             &::before {
-                content: '\ea6b';
+                content: '\ea6e';
             }
         }
     }
