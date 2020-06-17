@@ -136,12 +136,14 @@ main {
 .list-product {
     margin: 0;
     border-left: 1px solid var(--gray100);
+    border-top: 1px solid var(--gray100);
 
     .items {
         width: 20%;
         padding: 16px;
         border: 1px solid var(--gray100);
         border-left: 0;
+        border-top: 0;
         position: relative;
         transition: 0.5s ease;
         color: var(--gray500);
@@ -404,8 +406,10 @@ main {
     }
 
     &.gird_4col {
+        border-top: 1px solid var(--gray100);
         .items {
             width: 25%;
+            border-top: 0;
         }
     }
 
@@ -429,11 +433,9 @@ main {
     }
 
     @media (max-width: 480px) {
-        border-bottom: 1px solid var(--gray100);
 
         .items {
             width: 50%;
-            border-bottom: 0;
             padding: 10px;
 
             .ava {
@@ -1061,6 +1063,9 @@ main {
     .sk-bounce2 {
         -webkit-animation-delay: -0.16s;
         animation-delay: -0.16s;
+    }
+    @media (max-width: 414px) {
+        margin:24px 0
     }
 }
 

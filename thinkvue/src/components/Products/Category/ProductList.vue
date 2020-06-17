@@ -25,7 +25,7 @@
     <div class="list-product gird gird_4col row">
       <div class="items" v-for="n in 24" :key="n">
         <a class="ava" href>
-          <img src="../../../assets/css/images/graphics/sp2.jpg" />
+          <img src="../../../assets/images/graphics/sp1.jpg" />
           <span class="status txt_12 bg-oranger">Đang về</span>
         </a>
         <div class="content">
@@ -58,6 +58,7 @@
             <img src="../../../assets/images/icons/color.svg" />
             Nhiều màu sắc
           </div>
+          <div class="changer_color"><div>Trắng</div><ul><li class="active"><a href="#"><img src="../../../assets/images/graphics/product-slide.jpg"></a></li><li><a href="#"><img src="/img/product-slide.538b40e9.jpg"></a></li></ul></div>
         </div>
       </div>
     </div>

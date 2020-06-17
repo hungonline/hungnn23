@@ -466,8 +466,7 @@
     }
 
     .list-product {
-        border-left: 0;
-        border-bottom: 0;
+        border: 0;
     }
 
     .items {
@@ -654,9 +653,10 @@
     }
 
     .list-product {
-        border-left: 0;
-        border-bottom: 0;
-
+        border: 0;
+        .items{
+            border-top: 1px solid var(--gray100);
+        }
         .col-md-4 {
             padding: 0 35px;
         }
