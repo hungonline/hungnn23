@@ -64,6 +64,13 @@
             <p>Windows bản quyền</p>
           </div>
         </div>
+        <div class="content_2">
+          <div class="price">
+            <strong>27.990.000đ</strong>
+            <div class="price_old">35.000.000đ</div>
+          </div>
+          <a class="btn-default add-cart block" href="#">Thêm vào giỏ hàng</a>
+        </div>
       </div>
     </div>
     <div class="view-more view-more__border">
