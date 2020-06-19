@@ -166,6 +166,10 @@
 }
 
 @media (max-width: 576px) {
+    .hidden-sm {
+        display: none;
+    }
+
     main {
         padding-top: 16px;
     }
@@ -184,6 +188,9 @@
 }
 
 @media (max-width: 480px) {
+    .hidden-sx {
+        display: none;
+    }
 
     .product-review {
         .items {

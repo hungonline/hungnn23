@@ -9,6 +9,7 @@ import ProductSearch from "../views/ProductSearch.vue";
 import ProductFolder from "../views/ProductFolder.vue";
 import ProductOrder from "../views/ProductOrder.vue";
 import ProductCart from "../views/ProductCart.vue";
+import ProductTraGop from "../views/ProductTraGop.vue";
 import ProductCartNull from "../views/ProductCartNull.vue";
 import PageUser from "../views/PageUser.vue";
 import PageNotifi from "../views/PageNotifi.vue";
@@ -63,6 +64,11 @@ const routes = [{
     path: "/product-cart",
     name: "ProductCart",
     component: ProductCart
+  },
+  {
+    path: "/tra-gop",
+    name: "ProductTraGop",
+    component: ProductTraGop
   },
   {
     path: "/product-null",

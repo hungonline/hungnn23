@@ -654,9 +654,11 @@
 
     .list-product {
         border: 0;
-        .items{
+
+        .items {
             border-top: 1px solid var(--gray100);
         }
+
         .col-md-4 {
             padding: 0 35px;
         }
@@ -1798,8 +1800,34 @@
         font-weight: 600;
 
         .option {
+            margin-top: 8px;
+
             a {
                 margin-left: 24px;
+            }
+        }
+
+        @media (max-width: 1025px) {
+            .option {
+                margin-top: 2px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            justify-content: center;
+            text-align: center;
+
+            .title_cate {
+                width: 100%;
+            }
+
+            .option {
+                margin-top: 0;
+                margin-bottom: 15px;
+
+                a {
+                    margin: 0 10px;
+                }
             }
         }
     }

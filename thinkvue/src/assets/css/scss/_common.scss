@@ -407,6 +407,7 @@ main {
 
     &.gird_4col {
         border-top: 1px solid var(--gray100);
+
         .items {
             width: 25%;
             border-top: 0;
@@ -475,7 +476,6 @@ main {
 }
 
 .list-product__like {
-    border-bottom: 1px solid var(--gray100);
     border-left: 0;
 
     .items {
@@ -484,6 +484,7 @@ main {
         flex-wrap: wrap;
         border-bottom: 0;
         border-left: 1px solid var(--gray100);
+        border-bottom: 1px solid var(--gray100);
 
         .ava {
             width: 207px;
@@ -603,6 +604,7 @@ main {
 
         @media (max-width: 480px) {
             margin-bottom: 16px;
+            border-top: 1px solid var(--gray100);
             border-bottom: 1px solid var(--gray100);
             border-left: 1px solid var(--gray100);
 
@@ -636,6 +638,7 @@ main {
     }
 
     @media (max-width: 480px) {
+        border-top: 0;
         border-bottom: 0;
         border-left: 0
     }
@@ -1064,8 +1067,9 @@ main {
         -webkit-animation-delay: -0.16s;
         animation-delay: -0.16s;
     }
+
     @media (max-width: 414px) {
-        margin:24px 0
+        margin: 24px 0
     }
 }
 
