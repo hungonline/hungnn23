@@ -586,10 +586,13 @@ body.fp-viewing-6 {
     &.star {
         padding-bottom: 20px;
         background: url(images/graphics/star-line.png) no-repeat center bottom;
+        @media (min-width:1731px) {
+            padding-bottom: 10px;
+        }
     }
 
     @media (min-width:1731px) {
-        font-size: 50px
+        font-size: 45px
     }
 }
 
@@ -631,7 +634,7 @@ body.fp-viewing-6 {
         padding: 0 300px 0 100px;
 
         .title_line {
-            font-size: 50px;
+            font-size: 45px;
         }
 
         .description {
@@ -1340,16 +1343,12 @@ body.fp-viewing-6 {
     .item-news {
         margin-bottom: 15px;
         padding: 5px;
-
+        .thumb-art{
+            border: 3px solid transparent;
+        }
         &:hover {
-            &::before {
-                content: "";
+            .thumb-art {
                 border: 3px solid var(--orange);
-                position: absolute;
-                top: 0;
-                bottom: -5px;
-                left: 0;
-                right: 0;
             }
         }
 
@@ -1611,6 +1610,22 @@ body.fp-viewing-6 {
 
         @media (min-width:1731px) {
             width: 365px;
+            .description{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 10;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+        }
+        @media screen and (min-device-width: 1300px) and (max-device-width: 1730px) {
+            .description{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 8;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
         }
     }
 
@@ -1621,10 +1636,11 @@ body.fp-viewing-6 {
         @media (min-width:1731px) {
             width: calc(100% - 730px);
         }
-
         .content {
             height: 220px;
-
+            @media screen and (min-device-width: 1300px) and (max-device-width: 1730px) {
+                height: auto;
+            }
             @media (max-width:1199px) {
                 .description {
                     -webkit-line-clamp: 3;
@@ -1657,7 +1673,7 @@ body.fp-viewing-6 {
 
     .content {
         padding: 25px;
-
+        @media screen and (min-device-width: 1300px) and (max-device-width: 1730px) {padding: 15px;}
         .info {
             display: flex;
             flex-wrap: wrap;

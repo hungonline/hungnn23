@@ -171,7 +171,7 @@
         var slide_article = new Swiper('.slide_article .swiper-container', {
             slidesPerView: 3,
             slidesPerColumn: 2,
-            spaceBetween: 32,
+            spaceBetween: 15,
             loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
