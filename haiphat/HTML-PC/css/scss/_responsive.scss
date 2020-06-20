@@ -1,18 +1,335 @@
-@media (max-width:1400px) {
-    .container{max-width: 1100px;}
-    .container2{max-width: 100%;}
-    .wrap-main-nav .main-nav .parent>li{margin-left: 25px;}
-    .heading_text{
+@media (min-height:900px) and (max-device-height: 1100px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1600px;
+    }
+
+    .item_tl {
+        min-height: 100vh
+    }
+
+    .container2 {
+        max-width: 1730px;
+    }
+
+    .padding_60 {
+        padding: 90px 0;
+    }
+
+    .menu_left_tl {
+        left: calc((100% - 1730px)/2 - 40px);
+    }
+
+    .section_linhvuc {
+        padding-bottom: 60px;
+
+        .heading_text {
+            margin-bottom: 20px;
+        }
+
+        .thumb_5x4 {
+            padding-bottom: 46%;
+        }
+    }
+
+    .section_duan {
+        padding-top: 90px;
+
+        .slide_duan {
+            .item-news {
+                padding: 0 10px
+            }
+
+            .thumb_2x3 {
+                padding-bottom: 96%;
+            }
+        }
+
+        .heading_text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .section_giaithuong {
+        padding-bottom: 30px !important;
+        .heading_text{margin-bottom: 20px;}
+        &::before {
+            bottom: 250px
+        }
+    }
+
+    .section_vechungtoi {
+        padding-top: 150px;
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+
+    #sec6 {
+        padding-bottom: 20px;
+
+        .title-cate {
+            margin-bottom: 20px;
+        }
+    }
+
+    #sec7 {
+        padding-bottom: 0px;
+
+        .heading_text {
+            margin-bottom: 40px;
+        }
+    }
+
+
+    .slide_article {
+
+        .item-news {
+            margin-bottom: 0;
+        }
+
+        .thumb_5x3 {
+            padding-bottom: 48.25%;
+        }
+    }
+
+    .section-khachhang {
+        padding-bottom: 20px;
+
+        .title-cate {
+            margin-bottom: 30px;
+        }
+
+        .custom_left {
+            .thumb_2x3 {
+                padding-bottom: 140%;
+            }
+        }
+
+
+        .thumb_5x4 {
+            padding-bottom: 60%;
+        }
+    }
+    .slide_doitac{
+        padding: 0 300px 0 90px;
+        &::before {
+            top: -110px;right: 260px;
+        }
+    }
+    #sec9 {
+        padding-top: 60px;
+    }
+
+    .footer .flex_top {
+        max-width: 1280px;
+        font-size: 18px;
+
+        h3 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .btn-default {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-device-width: 1300px) and (max-device-width: 1730px) {
+    .container {
+        max-width: 1150px;
+    }
+
+    .container2 {
+        max-width: 1245px;
+    }
+
+    .item_tl {
+        min-height: 100vh;
+    }
+
+    .heading_text {
+        padding: 0 140px 0 80px;
+    }
+
+    .menu_left_tl {
+        left: calc((100% - 1245px)/2 - 30px);
+    }
+
+    .section_linhvuc {
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+        .heading_text {
+            margin-bottom: 20px;
+        }
+
+        .thumb_5x4 {
+            padding-bottom: 56.25%;
+        }
+    }
+
+    .section_duan {
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+        .slide_duan {
+            .item-news {
+                padding: 0 10px
+            }
+
+            .thumb_2x3 {
+                padding-bottom: 120%;
+            }
+        }
+
+        .heading_text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .section_giaithuong {
+        padding-bottom: 30px !important;
+
+        .heading_text {
+            margin-bottom: 50px !important;
+        }
+
+        &::before {
+            bottom: 150px
+        }
+    }
+
+    .section_vechungtoi {
+        padding-top: 100px;
+        margin-top: 0;
+    }
+
+    #sec6 {
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+        .title-cate {
+            margin-bottom: 0px;
+        }
+    }
+
+    #sec7 {
+        padding-bottom: 0px;
+        padding-top: 90px;
+
+        .heading_text {
+            margin-bottom: 40px;
+        }
+    }
+
+    .slide_doitac::before {
+        top: -110px
+    }
+
+    .slide_article {
+        .swiper-slide {
+            margin-top: 5px !important;
+        }
+
+        .item-news {
+            margin-bottom: 0px;
+
+            .content {
+                padding: 10px 0px 0 10px;
+            }
+        }
+
+        .thumb_5x3 {
+            padding-bottom: 56.25%;
+            ;
+        }
+    }
+
+    .section-khachhang {
+        padding-bottom: 20px;
+        padding-top: 90px;
+
+        .title-cate {
+            margin-bottom: 20px;
+        }
+
+        .custom_left {
+            .thumb_2x3 {
+                padding-bottom: 150%;
+            }
+        }
+
+
+        .thumb_5x4 {
+            padding-bottom: 50%;
+        }
+    }
+
+    #sec9 {
+        padding-top: 60px;
+    }
+
+
+    .slide_doitac {
+        padding: 0 150px 0 90px;
+    }
+
+    .wrap-main-nav .main-nav .parent>li {
+        margin-left: 25px;
+    }
+
+    .heading_text {
         margin: 0 auto 45px;
-        .title_line{font-size: 30px;margin-bottom: 10px;}
+
+        .title_line {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
     }
-    .title-cate{font-size: 30px;}
-    .item-news{
-        .title-news{font-size: 16px;}
-        .number{font-size: 30px;}
+
+    .title-cate {
+        font-size: 30px;
     }
-    .slide_article .item-news{margin-bottom: 0;}
-    .slide_doitac::before{top: -98px;}
+
+    .item-news {
+        .title-news {
+            font-size: 16px;
+        }
+
+        .number {
+            font-size: 30px;
+        }
+    }
+
+
+    .slide_doitac::before {
+        top: -98px;
+        right: 120px;
+    }
+}
+
+@media screen and (min-device-height: 800px) and (max-device-height: 900px) {
+
+    .section_linhvuc,
+    .section_duan,
+    .section_giaithuong,
+    .section_vechungtoi,
+    #sec6,
+    #sec7,
+    .section-khachhang {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:1280px) {
+    .menu_left_tl {
+        left: 10px;
+    }
 }
 
 @media (max-width:1199px) {
@@ -40,7 +357,11 @@
     .section.page {
         padding: 50px 0;
     }
-    .section.padding_mobile.section_banner {padding-top: 100px;}
+
+    .section.padding_mobile.section_banner {
+        padding-top: 100px;
+    }
+
     .section.padding_mobile {
         padding: 0;
     }
@@ -56,7 +377,11 @@
     .section.page {
         padding: 30px 0;
     }
-    .section.padding_mobile.section_banner {padding-top: 80px;}
+
+    .section.padding_mobile.section_banner {
+        padding-top: 80px;
+    }
+
     .section.padding_mobile {
         padding: 0;
     }
