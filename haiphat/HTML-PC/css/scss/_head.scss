@@ -107,7 +107,14 @@
                 @media (min-width:1731px) {
                     margin-left: 40px;
                     h3{
-                        &>a{font-size: 16px;}
+                        &>a{
+                            font-size: 16px;
+                            height: 80px;
+                            line-height: 84px;
+                        }
+                    }
+                    .level2{
+                        top: 78px;
                     }
                 }
                 @media (min-width: 992px) {
