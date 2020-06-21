@@ -645,7 +645,7 @@
     height: 60px;
     z-index: 998;
     background: var(--white);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--gray100);
     padding: 0 16px;
 
     &.header_cloned {
