@@ -216,10 +216,6 @@ main {
                 margin-bottom: 6px;
             }
 
-            .code {
-                display: none
-            }
-
             .price {
                 font-size: 14px;
                 margin-bottom: 10px;
@@ -304,12 +300,6 @@ main {
         .changer_color {
             color: #000;
             display: none;
-            position: absolute;
-            bottom: 10px;
-
-            div {
-                display: none
-            }
 
             ul {
                 display: flex;
@@ -317,12 +307,25 @@ main {
                 li {
                     display: inline-block;
                     margin: 6px 8px 0 0;
-                    border: 1px solid var(--gray100);
+                    border: 1px solid transparent;
 
-                    a {
+                    a,.mode {
                         display: block;
                         width: 32px;
                         height: 32px;
+                        position: relative;
+                        img{
+                            max-height: 90%;
+                            max-width: 90%;
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
                     }
 
                     &.active,
@@ -339,7 +342,7 @@ main {
             position: absolute;
             bottom: -1px;
             display: none;
-            padding: 10px 16px 10px 16px;
+            padding: 16px;
             left: -1px;
             right: -1px;
             border: 1px solid var(--gray100);
@@ -375,8 +378,23 @@ main {
                 margin: 3px 0 0 0;
             }
         }
-
+        .more_btn{
+            padding: 12px 16px;
+            background: #fff;
+            margin: 10px -16px -16px -16px;
+            .btn-default{
+                font-size: 14px;
+                height: 36px;
+                line-height: 35px;
+                width: 100%;
+                padding: 0 5px;
+                margin: 4px 0;
+            }
+        }
         &:hover {
+            .name{
+                color: $color2
+            }
             .note {
                 display: none;
             }
@@ -391,7 +409,7 @@ main {
                 overflow: visible;
                 transform: translateY(100%);
             }
-
+            
             .ava img {
                 transform: translateY(-5px);
             }

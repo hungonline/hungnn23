@@ -247,8 +247,8 @@
 			slidesPerView: 8,
 			spaceBetween: 8,
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+				nextEl: '.swiper-th-next',
+				prevEl: '.swiper-th-prev',
 			},
 			breakpoints: {
 				480: {
@@ -341,8 +341,8 @@
 
 		$(".product-review .swiper-slide").mouseover(function () {
 			$(".product-review .swiper-container").css({
-				"padding-bottom": "214px",
-				"margin-bottom": "-214px",
+				"padding-bottom": "300px",
+				"margin-bottom": "-300px",
 				"z-index": "8"
 			});
 		});
@@ -354,9 +354,9 @@
 		});
 		$(".product-slide .swiper-slide").mouseover(function () {
 			$(".product-slide .swiper-container").css({
-				"padding-bottom": "214px",
-				"margin-bottom": "-214px",
-				"z-index": "8"
+				"padding-bottom": "300px",
+				"margin-bottom": "-300px",
+				"z-index": "9"
 			});
 		});
 		$(".product-slide .swiper-slide").mouseout(function () {

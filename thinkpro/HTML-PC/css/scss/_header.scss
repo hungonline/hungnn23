@@ -11,8 +11,8 @@
         position: relative;
         z-index: 10;
         background: var(--white);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-
+        // box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+        border-bottom: 1px solid var(--gray100);
         .f-wrap {
             height: 72px;
             display: flex;
