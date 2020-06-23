@@ -130,6 +130,16 @@
       }
     });
     
+    $('.onclick >a').click(function () {  
+      $('.onclick >div').slideUp();
+      if($(this).next().css('display') == 'none'){
+        $(this).next().slideDown();
+      }
+      else{
+        $(this).next().slideUp();   
+      }       
+    });
+
     $(document).click(function () {
       $(".dropdown .dropbtn").removeClass('active');
       $(".dropdown").find('.dropdown-content').slideUp();
@@ -328,6 +338,14 @@
     });
   }
 
+	function datepicker() {
+		$('.datepicker-input').Zebra_DatePicker({
+			format: 'd/m/Y'
+		});
+
+	}
+
+
 	$(function () {
 		backToTop();
 		scrollBar();
@@ -338,6 +356,7 @@
 		tabContainer();
 		slideSwiper();
 		loginForm();
+		datepicker();
 	});
 
 	$(window).on('load resize', function () {
