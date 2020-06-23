@@ -79,13 +79,13 @@
 
     hr {
         border-top: 1px solid var(--gray100);
-        margin: 24px 0 16px 0;
+        margin: 16px 0;
     }
 
     .lable-title {
         font-weight: 600;
         font-size: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 15px;
     }
 
     .border.radius {
@@ -106,6 +106,7 @@
 
     .price {
         color: #D4002B;
+        font-weight: 600;
 
         .iconfont-tag {
             margin-right: 4px;
@@ -137,8 +138,21 @@
         line-height: 1.5;
     }
 
+    .thuong-hieu {
+        margin-bottom: 15px;
+
+        svg {
+            fill: #007DB8;
+            width: 26px;
+            height: 26px;
+            vertical-align: bottom;
+            margin-left: 2px;
+        }
+    }
+
     .flex_2 {
         justify-content: space-between;
+        margin-bottom: 25px;
 
         .description {
             width: 287px;
@@ -234,6 +248,10 @@
     }
 
     .qua-tang {
+        p {
+            margin-bottom: 8px;
+        }
+
         .icon-svg {
             width: 20px;
             height: 20px;
@@ -388,10 +406,10 @@
     }
 
     .tag {
-        color: #fff;
         height: 28px;
         line-height: 28px;
         padding: 0 14px;
+
     }
 }
 

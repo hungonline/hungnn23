@@ -309,12 +309,14 @@ main {
                     margin: 6px 8px 0 0;
                     border: 1px solid transparent;
 
-                    a,.mode {
+                    a,
+                    .mode {
                         display: block;
                         width: 32px;
                         height: 32px;
                         position: relative;
-                        img{
+
+                        img {
                             max-height: 90%;
                             max-width: 90%;
                             width: auto;
@@ -378,11 +380,13 @@ main {
                 margin: 3px 0 0 0;
             }
         }
-        .more_btn{
+
+        .more_btn {
             padding: 12px 16px;
             background: #fff;
             margin: 10px -16px -16px -16px;
-            .btn-default{
+
+            .btn-default {
                 font-size: 14px;
                 height: 36px;
                 line-height: 35px;
@@ -391,10 +395,12 @@ main {
                 margin: 4px 0;
             }
         }
+
         &:hover {
-            .name{
+            .name {
                 color: $color2
             }
+
             .note {
                 display: none;
             }
@@ -409,7 +415,7 @@ main {
                 overflow: visible;
                 transform: translateY(100%);
             }
-            
+
             .ava img {
                 transform: translateY(-5px);
             }
@@ -988,34 +994,50 @@ main {
 // End Swiper Slide
 
 .box_count {
-    display: flex;
+    margin-top: 10px;
 
     label {
-        margin-right: 10px;
+        width: 100%;
+        color: #414956;
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: block
     }
 
     #countdown {
+        display: flex;
+
         .item_countdown {
             display: inline-block;
-            margin-right: 10px;
             position: relative;
-
-            &::before {
-                content: ":";
-                position: absolute;
-                right: -10px;
-                font-size: 18px;
-                top: -4px;
-            }
+            text-align: center;
 
             span {
-                display: inline-block;
-                color: var(--color_main);
-                margin-right: 4px;
+                background: var(--color_main);
+                display: block;
+                color: var(--black);
+                position: relative;
+                height: 36px;
+                line-height: 36px;
+                width: 50px;
+                font-size: 16px;
+                font-weight: 600;
+
+                &::before {
+                    content: ":";
+                    position: absolute;
+                    right: 0px;
+                    font-size: 20px;
+                    top: -2px;
+                }
             }
 
             .text {
-                display: inline-block;
+                margin-top: 4px;
+                display: block;
+                font-size: 12px;
+                color: #414956;
+                font-weight: 400
             }
 
             &.phut {
@@ -1024,8 +1046,24 @@ main {
                 }
             }
 
-            &.giay {
+            &.ngay {
                 display: none
+            }
+
+            &.gio {
+                span {
+                    border-radius: 4px 0 0 4px;
+                }
+            }
+
+            &.giay {
+                span {
+                    border-radius: 0 4px 4px 0;
+
+                    &::before {
+                        display: none
+                    }
+                }
             }
         }
     }
@@ -1166,6 +1204,10 @@ main {
 
 // POPUP
 .thongso-popup {
+    .content_lightbox {
+        padding: 20px 16px 20px 16px;
+    }
+
     .scrollbar-inner {
         max-height: 400px;
         padding-right: 10px;

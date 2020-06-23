@@ -453,29 +453,29 @@
                         <span>4.0 </span>
                         <ul>
                             <li class="active">
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#star1"></use>
-                                </svg>
+                                <a href="javascript:;">
+                                    <img src="images/icons/star-full.svg">
+                                </a>
                             </li>
                             <li class="active">
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#star1"></use>
-                                </svg>
+                                <a href="javascript:;">
+                                    <img src="images/icons/star-full.svg">
+                                </a>
                             </li>
                             <li class="active">
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#star1"></use>
-                                </svg>
+                                <a href="javascript:;">
+                                    <img src="images/icons/star-full.svg">
+                                </a>
                             </li>
                             <li class="active">
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#star1"></use>
-                                </svg>
+                                <a href="javascript:;">
+                                    <img src="images/icons/star-full.svg">
+                                </a>
                             </li>
                             <li>
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#star1"></use>
-                                </svg>
+                                <a href="javascript:;">
+                                    <img src="images/icons/star-none.svg">
+                                </a>
                             </li>
                         </ul>
                         <a class="line" href="#">52 đánh giá</a>
@@ -665,6 +665,12 @@
                 </div>
                 <div class="flex flex_2">
                     <div class="description">
+                        <div class="thuong-hieu">
+                            Thương hiệu:
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#dell"></use>
+                            </svg>
+                        </div>
                         <p>2.4GHz quad‑core 8th‑generation Intel Core i5 processor, Turbo Boost up to 4.1GHz</p>
                         <p>Retina display with True Tone</p>
                         <p>Touch Bar and Touch ID</p>
@@ -716,30 +722,32 @@
                 <hr>
                 <div class="tr qua-tang">
                     <div class="flex flex_coutdown">
-                        <h2 class="lable-title">Khuyến mãi</h2>
+                        <div class="flex_coutdown__text">
+                            <h2 class="lable-title">Khuyến mãi</h2>
+                            <p>
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/icons/icon.svg#gift1"></use>
+                                </svg>
+                                Trừ <strong class="red">2.000.000đ</strong> vào giá bán
+                            </p>
+                            <p>
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/icons/icon.svg#gift1"></use>
+                                </svg>
+                                Nhận quà tặng lên đến <strong class="red">2.000.000đ</strong>
+                            </p>
+                            <p>
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/icons/icon.svg#gift1"></use>
+                                </svg>
+                                Tặng chuột ABC trị giá <strong class="red">2.000.000đ</strong>
+                            </p>
+                        </div>
                         <div class="box_count">
                             <label>Còn lại</label>
                             <div id="countdown">&nbsp;</div>
                         </div>
                     </div>
-                    <p>
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#gift1"></use>
-                        </svg>
-                        Trừ <strong class="red">2.000.000đ</strong> vào giá bán
-                    </p>
-                    <p>
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#gift1"></use>
-                        </svg>
-                        Nhận quà tặng lên đến <strong class="red">2.000.000đ</strong>
-                    </p>
-                    <p>
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#gift1"></use>
-                        </svg>
-                        Tặng chuột ABC trị giá <strong class="red">2.000.000đ</strong>
-                    </p>
                 </div>
                 <hr>
                 <div class="tr qua-tang">
@@ -1588,7 +1596,7 @@
     
 <script>
     /* countdown */
-    var target_date = new Date("Mar 30, 2020").getTime();
+    var target_date = new Date("June 30, 2020").getTime();
     var days, hours, minutes, seconds;
     var countdown = document.getElementById("countdown");
     setInterval(function () {
