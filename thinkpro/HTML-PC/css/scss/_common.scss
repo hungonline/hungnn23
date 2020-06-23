@@ -70,10 +70,10 @@ body::-webkit-scrollbar-track {
             height: 48px;
             line-height: 48px;
             display: inline-block;
-            color: #414956;
+            color: var(--dark_gray);
             font-size: 18px;
             border-radius: 56px;
-            border: 1px solid #E3E7EF;
+            background: var(--color_main);
             padding: 0 30px;
             font-weight: 600;
 

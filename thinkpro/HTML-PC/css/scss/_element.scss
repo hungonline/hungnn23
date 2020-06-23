@@ -1908,6 +1908,7 @@
 
             a {
                 margin-left: 24px;
+                font-size: 14px;
             }
         }
 
@@ -1950,9 +1951,13 @@
             &:last-child {
                 border-bottom: 1px solid #E3E7EF;
             }
-
+            .delete{
+                opacity: 0;
+                svg{fill: var(--black);width: 22px;height: 22px;}
+            }
             &:hover {
                 background: var(--gray50);
+                .delete{opacity: 1;}
             }
 
             &.active {

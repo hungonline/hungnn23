@@ -8,15 +8,45 @@
     @extend .box-comment;
 
     &__head {
-        margin-bottom: 90px;
+        margin-bottom: 55px;
 
-        .flex {
+        &>.flex {
             justify-content: space-between;
+            .vote{
+                width: 500px;
+            }
+            .vote-chart{
+                width: 215px;
+            }
+        }
+        .photograph-user{
+            &__gallery{
+                li{
+                    width: 60px;margin-right: 6px;border-radius: 4px;
+                    overflow: hidden;
+                    .count{
+                        font-size: 18px;
+                        color: #FFFFFF;
+                        position: absolute;
+                        top: 50%;
+                        text-align: center;
+                        left: 0;
+                        right: 0;
+                        transform: translate(0, -50%);
+                    }
+                    &.last-count{
+                        .thumb_img {
+                            background: #7A8088;
+                            img{opacity: 0.3;}
+                        }
+                    }
+                }
+            }
         }
     }
-
+    .title_cate{margin-bottom: 16px;}
     .vote {
-        span {
+        .number {
             margin: 1px 16px 0 0;
             font-size: 52px;
             font-weight: bold;
@@ -225,7 +255,7 @@
                     .submit-comment {
                         position: static;
                         float: right;
-                        margin-top: 10px;
+                        margin-top: 10px;color: #fff;
                     }
                 }
             }
@@ -328,7 +358,7 @@
             outline: 0;
             position: absolute;
             bottom: 20px;
-            right: 16px;
+            right: 16px;color: #fff;
             cursor: pointer;
         }
     }

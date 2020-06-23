@@ -774,10 +774,33 @@
                 <hr>
                 <div class="tr cau_hinh">
                     <h2 class="lable-title">Có 3 cấu hình tùy chọn</h2>
-                    <div class="border radius">
+                    <label class="check-list border radius checked">
                         <div class="row">
                             <div class="col-xs-8">
-                                <label class="txt_12">MPN: 1234567</label>
+                                <div class="flex mb8">
+                                    <label class="txt_12">MPN: 1234567</label>
+                                    <span class="status txt_12 bg-oranger">Đang về</span>
+                                    <div class="date txt_12 oranger">Còn 5 ngày</div>
+                                </div>
+                                <p class="medium">Dell G5 15 5590 i7-9750H</p>
+                                <p class="medium">Ram 8GB <span  style="color:#979797">(Nâng cấp tối đa 64GB)</span></p>
+                                <p class="medium">SSD 128G</p>
+                                <p>HDD 1TB 1660Ti FHD IPS</p>
+                            </div>
+                            <div class="col-xs-4 price tag">
+                                23.990.000đ
+                            </div>
+                        </div>
+                        <input type="checkbox" checked="">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-list border radius">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <div class="flex mb8">
+                                    <label class="txt_12">MPN: 1234567</label>
+                                    <span class="status txt_12 bg-red">-25%</span>
+                                </div>
                                 <p>Dell G5 15 5590 i7-9750H</p>
                                 <p>Ram 8GB</p>
                                 <p>SSD 128G</p>
@@ -787,11 +810,16 @@
                                 23.990.000đ
                             </div>
                         </div>
-                    </div>
-                    <div class="border radius">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-list border radius">
                         <div class="row">
                             <div class="col-xs-8">
-                                <label class="txt_12">MPN: 1234567</label>
+                                <div class="flex mb8">
+                                    <label class="txt_12">MPN: 1234567</label>
+                                    <span class="status txt_12 bg-green">Mới về</span>
+                                </div>
                                 <p>Dell G5 15 5590 i7-9750H</p>
                                 <p>Ram 8GB</p>
                                 <p>SSD 128G</p>
@@ -801,21 +829,10 @@
                                 23.990.000đ
                             </div>
                         </div>
-                    </div>
-                    <div class="border radius">
-                        <div class="row">
-                            <div class="col-xs-8">
-                                <label class="txt_12">MPN: 1234567</label>
-                                <p>Dell G5 15 5590 i7-9750H</p>
-                                <p>Ram 8GB</p>
-                                <p>SSD 128G</p>
-                                <p>HDD 1TB 1660Ti FHD IPS</p>
-                            </div>
-                            <div class="col-xs-4 price tag">
-                                23.990.000đ
-                            </div>
-                        </div>
-                    </div>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    
                 </div>
             </div>
         </div>
@@ -828,6 +845,26 @@
                     <h2 class="title_cate">
                         <span>Đánh giá chi tiết</span>
                     </h2>
+                    <div class="flex tong-quan__uudiem">
+                        <div class="td">
+                            <p class="medium txt_18 mb24">Ưu điểm</p>
+                            <ul>
+                                <li>Vi xử lý mới nhất</li>
+                                <li>Công nghệ màn hình tiên tiến</li>
+                                <li>Khung máy chắc chắn</li>
+                                <li>Thời lượng pin cao</li>
+                            </ul>
+                        </div>
+                        <div class="td nhuoc-diem">
+                            <p class="medium txt_18 mb24">Nhược điểm điểm</p>
+                            <ul>
+                                <li>Vi xử lý mới nhất</li>
+                                <li>Công nghệ màn hình tiên tiến</li>
+                                <li>Khung máy chắc chắn</li>
+                                <li>Thời lượng pin cao</li>
+                            </ul>
+                        </div>
+                    </div>
                     <h3 class="lable-title">1. Thiết kế sang trọng và bền bỉ</h3>
                     <p>Nắp và phần dưới của máy được cấu tạo bởi chất liệu nhôm CNC cao cấp giúp cho chiếc máy trông vừa
                         quyến rũ lại vừa chắc chắn, có thể chiu được những điều kiện khắc nghiệt bên ngoài. Phần khung
@@ -855,17 +892,26 @@
                 </div>
                 <div class="view-full"><a class="hover-a" href="javascript:;">Xem đầy đủ</a></div>
             </div>
-
+            <!-- Box Vote -->
+            <div class="box-tag">
+                <h2 class="title">Tags:</h2>
+                <h3 class="tag-name"><a href="#">dell</a></h3>
+                <h3 class="tag-name"><a href="#">xp2</a></h3>
+                <h3 class="tag-name"><a href="#">2020</a></h3>
+                <h3 class="tag-name"><a href="#">dell</a></h3>
+                <h3 class="tag-name"><a href="#">xp2</a></h3>
+                <h3 class="tag-name"><a href="#">2020</a></h3>
+            </div>
             <!-- Box Vote -->
             <div class="box-vote">
-                <h2 class="title_cate">
-                    <span>Đánh giá của khách hàng</span>
-                </h2>
                 <div class="box-vote__head">
                     <div class="flex">
                         <div class="vote">
+                            <h2 class="title_cate">
+                                <span>Đánh giá của khách hàng</span>
+                            </h2>
                             <div class="flex align-center">
-                                <span>4.0 </span>
+                                <span class="number">4.0 </span>
                                 <ul>
                                     <li class="active">
                                         <svg class="icon-svg">
@@ -895,8 +941,50 @@
                                 </ul>
                                 <a class="line" href="#">52 đánh giá</a>
                             </div>
+                            <div class="photograph-user">
+                                <p class="medium txt_16">Ảnh chụp từ khách hàng</p>
+                                <ul class="photograph-user__gallery">
+                                    <li>
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                        </a>
+                                    </li>
+                                    <li class="last-count">
+                                        <a href="#" class="thumb_img thumb_1x1">
+                                            <img src="images/graphics/product-desc.jpg" alt="product think">
+                                            <span class="count">+18</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="vote-chart">
+                            <a class="btn-default color-white full mb16" href="#">Viết đánh giá</a>
                             <ul>
                                 <li>
                                     <span class="number">5</span>
@@ -931,7 +1019,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="btn-default" href="#">Viết đánh giá</a>
+                    
                 </div>
 
 
@@ -1095,7 +1183,7 @@
                     </div>
                 </div>
                 <div class="view-more view-more__border">
-                    <a href="javascript:;">Xem thêm Đánh giá
+                    <a href="javascript:;" class="btn-default">Xem thêm Đánh giá
                     </a>
                 </div>
 
@@ -1619,6 +1707,13 @@
             seconds + "</span><div class='text'>Giây</div></div> </div>";
 
     }, 0);
+    $(".cau_hinh .check-list").click(function () {
+			if (!$(this).hasClass('active')) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
 </script>
 
     <script>
