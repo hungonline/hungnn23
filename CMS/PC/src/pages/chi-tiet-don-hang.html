@@ -1,0 +1,805 @@
+<!-- build:title -->CMS Template
+<!-- /build:title -->
+
+<!-- build:content -->
+<section class="main-container">
+    <div class="row-main container">
+        <a class="btn_show" href="javascrip:;">Hiển thị danh mục <i class="fa fa-caret-right"></i></a>
+        <div class="detail_item mb20">
+            <h2 class="title-cate">Tìm kiếm đơn hàng</h2>
+            <div class="warp_padding20 flex row-main-head">
+                <div class="search-wrapper">
+                    <form action="" id="search">
+                        <input type="text" class="input_search onclick-togle" name="" value=""
+                            placeholder="Nhập mã đơn hàng cần chuyển...">
+                        <span class="search-btn">
+                            <button type="submit">
+                                <svg class="icon-svg">
+                                    <use xlink:href="images/icons/icon.svg#search"></use>
+                                </svg>
+                            </button>
+                        </span>
+                    </form>
+                </div>
+                <button type="submit" class="btn btn-default bg-main mb10" style="margin-left:10px">
+                    <svg class="icon-svg" style="vertical-align: sub;">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                    Tìm kiếm
+                </button>
+            </div>
+        </div>
+
+        <div class="detail_item mb20">
+            <h2 class="title-cate">Thông tin đơn hàng</h2>
+            <div class="warp_padding20">
+                <div class="form-default form_donhang row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="lbl">Mã đơn hàng</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="UAM-85555">
+                                <span class="error txt_11" style="display: none;">Loi nhap thong tin</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Tên khách hàng</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="Lê Văn Cường">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Địa chỉ</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id=""
+                                    value="Số nhà 14 ngõ ao sen 5 - Hà Đông - Hà Nội">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Số điện thoại</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="0942.066.299">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Tổng giá trị đơn hàng</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control" id="" value="5,000,000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Tỷ giá</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control" id="" value="23,580">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="lbl">Trạng thái đơn</label>
+                            <div class="wrap_input">
+                                <select class="form-control bold">
+                                    <option>Hoàn thành</option>
+                                    <option>Bình thường</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Utm source</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="REFERRAL">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Voucher</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="THAGA152">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Ngày về dự kiến</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="20-05-2020">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Tracking Id</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="5454545454">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Hình thức thanh toán</label>
+                            <div class="wrap_input">
+                                <input type="text" class="form-control bold" id="" value="Chuyển khoản trực tiếp">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Ngày tạo</label>
+                            <div class="datepicker-wrap">
+                                <input id="datepicker" class="datepicker-input form-control bold" type="text"
+                                    value="11/12/2019">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail_item mb20">
+            <h2 class="title-cate">Danh sách sản phẩm</h2>
+            <div class="warp_padding20">
+                <div class="wrap_bg wrap_bg_no-padding mb20">
+                    <div class="table-responsive table-default">
+                        <table class="table table-nowrap table-product">
+                            <thead>
+                                <tr style="background: #ECECEE;">
+                                    <th>STT</th>
+                                    <th>Mã sản phẩm</th>
+                                    <th style="width:350px">Tên sản phẩm</th>
+                                    <th>Giá bán</th>
+                                    <th class="text-right">Phí mua hộ</th>
+                                    <th>Số lượng</th>
+                                    <th>Thành tiền</th>
+                                    <th class="text-center">Tác vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray">
+                                    <td>2</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray active">
+                                    <td>4</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="info-detail">
+                                    <td colspan="8">
+                                        <div class="tab-default">
+                                            <a href="#tab1" class="active">Thông tin</a>
+                                            <a href="#tab2">Lịch sử giá</a>
+                                        </div>
+                                        <div class="wrap">
+                                            <div class="tab-content">
+                                                <div id="tab1">
+                                                    <div class="flex detail-product">
+                                                        <div class="head">
+                                                            <h2>New Apple MacBook Air (13-inch, 8GB RAM, 256GB SSD
+                                                                Storage)
+                                                                - Silver</h2>
+                                                            <span><i class="fa fa-check"></i>Đang bán</span>
+                                                        </div>
+                                                        <div class="col-img">
+                                                            <div class="img">
+                                                                <img src="images/graphics/sanpham.jpg">
+                                                            </div>
+                                                            <div class="thumb">
+                                                                <a href="#"><img src="images/graphics/thumb1.jpg"></a>
+                                                                <a href="#"><img src="images/graphics/thumb2.jpg"></a>
+                                                                <a href="#"><img src="images/graphics/thumb3.jpg"></a>
+                                                                <a href="#"><img src="images/graphics/thumb4.jpg"></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-info form-default">
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Mã hàng hóa:</span>
+                                                                    <span class="col-8">B07AH9874T</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Nhãn hàng:</span>
+                                                                    <span class="col-8">
+                                                                        <img src="images/icons/amzon.png">
+                                                                        <a style="color: #005DA6;" href="">Kiểm tra sản
+                                                                            phẩm</a>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Nhà sản xuất:</span>
+                                                                    <span class="col-8">B07AH9874T</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Giá cũ:</span>
+                                                                    <span class="col-8">B07AH9874T</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Giá mới:</span>
+                                                                    <span class="col-8">
+                                                                        <strong>120.00</strong>
+                                                                        <e class="gray txt_11">(Cập nhật: 05/04/2020
+                                                                            5h:30)
+                                                                        </e>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Giá cũ:</span>
+                                                                    <span class="col-8">B07AH9874T</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Giá cũ:</span>
+                                                                    <span class="col-8">B07AH9874T</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="lbl">
+                                                                    <span class="col-4">Biến thể:</span>
+                                                                    <span class="col-8">
+                                                                        <div>Color: Blue</div>
+                                                                        <div>Size: M</div>
+                                                                        <div>Capacity: 256GB</div>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-description">
+                                                            <div class="title_line">Mô tả</div>
+                                                            <div class="scrollbar-inner">
+                                                                <p>Stunning 13.3-inch Retina display with True Tone
+                                                                    technology Backlit Magic Keyboard and Touch ID
+                                                                    Tenth-generation Intel Core i3 processor Intel Iris
+                                                                    Plus
+                                                                    Graphics Fast SSD storage 8GB of memory Stereo
+                                                                    speakers
+                                                                    with wider stereo</p>
+                                                                <p>Stunning 13.3-inch Retina display with True Tone
+                                                                    technology Backlit Magic Keyboard and Touch ID
+                                                                    Tenth-generation Intel Core i3 processor Intel Iris
+                                                                    Plus
+                                                                    Graphics Fast SSD storage 8GB of memory Stereo
+                                                                    speakers
+                                                                    with wider stereo</p>
+                                                            </div>
+                                                            <div class="title_line">Thông số</div>
+                                                            <div class="scrollbar-inner">
+                                                                <p>Item Package Quantity: 1 Handle/Lever Placement: No
+                                                                    Handle Part Number: BE479 V CEN 622</p>
+                                                                <p>1.1GHz dual-core 10th-generation Intel Core i3
+                                                                    processor
+                                                                    with Turbo Boost up to 3.2GHz or 1.1GHz quad-core
+                                                                    10th-generation Intel Core i5 processor with Turbo
+                                                                    Boost
+                                                                    up to 3.8GHz</p>
+                                                                <p>Item Package Quantity: 1 Handle/Lever Placement: No
+                                                                    Handle Part Number: BE479 V CEN 622</p>
+                                                                <p>1.1GHz dual-core 10th-generation Intel Core i3
+                                                                    processor
+                                                                    with Turbo Boost up to 3.2GHz or 1.1GHz quad-core
+                                                                    10th-generation Intel Core i5 processor with Turbo
+                                                                    Boost
+                                                                    up to 3.8GHz</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="tab2" style="display: none;">
+                                                    <div class="table_crawl_top table-responsive table-default mt20">
+                                                        <table class="table table-nowrap table-border">
+                                                            <thead>
+                                                                <tr class="bg-gray">
+                                                                    <th>Giá gốc</th>
+                                                                    <th>Tỉ giá</th>
+                                                                    <th>VNĐ</th>
+                                                                    <th>Ngày tạo</th>
+                                                                    <th class="text-center">Nguồn tạo</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>16.6$</td>
+                                                                    <td>24.511</td>
+                                                                    <td>406,882</td>
+                                                                    <td>04/05/2020 14:52</td>
+                                                                    <td class="text-center">
+                                                                        <span class="btn btn2 bg-success">App</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="scrollbar_crawl scrollbar-inner height_200">
+                                                        <div class="table-responsive table-default border-line">
+                                                            <table class="table table-nowrap">
+                                                                <thead>
+                                                                    <tr class="bg-gray">
+                                                                        <th>Giá gốc</th>
+                                                                        <th>Tỉ giá</th>
+                                                                        <th>VNĐ</th>
+                                                                        <th>Ngày tạo</th>
+                                                                        <th class="text-center">Nguồn tạo</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span class="btn btn2 bg-success">App</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="bg-gray">
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span
+                                                                                class="btn btn2 bg-agray">hanhnt</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span class="btn btn2 bg-success">App</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span class="btn btn2 bg-success">App</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="bg-gray">
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span
+                                                                                class="btn btn2 bg-agray">hanhnt</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span class="btn btn2 bg-success">App</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span class="btn btn2 bg-success">App</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="bg-gray">
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span
+                                                                                class="btn btn2 bg-agray">hanhnt</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>16.6$</td>
+                                                                        <td>24.511</td>
+                                                                        <td>406,882</td>
+                                                                        <td>04/05/2020 14:52</td>
+                                                                        <td class="text-center">
+                                                                            <span class="btn btn2 bg-success">App</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="bg-gray">
+                                    <td>6</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>585422</td>
+                                    <td class="name_img">
+                                        <div class="flex align-center">
+                                            <div class="ava">
+                                                <img src="images/graphics/thumb4.jpg">
+                                            </div>
+                                            <div class="content">
+                                                <div class="txt_11"><span class="red">[Hủy]-</span> [Lý do Hủy]</div>
+                                                <div><strong>Suppose You Meet a Dinosaur...</strong></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>140,000 &nbsp;<a class="edit blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                    <td class="text-right">
+                                        <div>30,000</div>
+                                        <div class="red txt_11">Phí luxury: 10,000</div>
+                                        <div class="blue txt_11">Phí mua hộ pound đầu: 20,000</div>
+                                    </td>
+                                    <td>2</td>
+                                    <td>1,600,000</td>
+                                    <td class="text-center">
+                                        <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="blue" href=""><i class="fa fa-arrows-alt"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="bold" style="background: #E1E8EA;">
+                                    <td colspan="4" style="padding: 30px;">
+                                        Tổng cộng
+                                    </td>
+                                    <td>200,000,000</td>
+                                    <td>36,000,000</td>
+                                    <td>9</td>
+                                    <td>236,000,000</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <ul id="pagination" class="pagination">
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fa fa-step-backward"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link icon" href="#">
+                                <i class="fa fa-caret-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link icon" href="#">
+                                <i class="fa fa-caret-right"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fa fa-step-forward"></i>
+                            </a>
+                        </li>
+
+                        <span>Hiển thị 1 - 7 trên tổng số 50 hóa đơn</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail_item thongtin_dinhkem mb20">
+            <h2 class="title-cate">Thông tin thêm</h2>
+            <div class="warp_padding20">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb15 italic medium">Tài liệu đơn hàng</div>
+                        <div class="flex align-center mb20">
+                            <label class="choose mb0">
+                                <input type="file" name="myFile" style="display: none;">
+                                <a class="btn-default" style="color: #fff;cursor: pointer;"><i
+                                        class="fa fa-upload"></i>&nbsp;&nbsp;Upload file</a>
+                            </label>
+                            <div class="gray txt_12">&nbsp;&nbsp;&nbsp;Upload nhiều file cùng lúc. Định dạng: .jpg,
+                                .png, .gif,
+                                .pdf, .doc & docx. Dung lượng tối đa 10Mb.</div>
+                        </div>
+                        <div class="row list-choose">
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-4 mb10">
+                                <div class="choose-ava">
+                                    <img src="images/graphics/img_4.jpg">
+                                    <button type="button" class="delete">×</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb15 italic medium">Ghi chú đơn hàng</div>
+                        <ul class="list-note scrollbar-inner">
+                            <li>
+                                <div><strong>Hang trong kho B3 - 05/05/2020 - PD</strong></div>
+                                <div class="txt_12">8-5-2020 10:30 by <strong>hanhsino</strong></div>
+                                <div class="option">
+                                    <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div><strong>Hang trong kho B3 - 05/05/2020 - PD</strong></div>
+                                <div class="txt_12">8-5-2020 10:30 by <strong>hanhsino</strong></div>
+                                <div class="option">
+                                    <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div><strong>Hang trong kho B3 - 05/05/2020 - PD</strong></div>
+                                <div class="txt_12">8-5-2020 10:30 by <strong>hanhsino</strong></div>
+                                <div class="option">
+                                    <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div><strong>Hang trong kho B3 - 05/05/2020 - PD</strong></div>
+                                <div class="txt_12">8-5-2020 10:30 by <strong>hanhsino</strong></div>
+                                <div class="option">
+                                    <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div><strong>Hang trong kho B3 - 05/05/2020 - PD</strong></div>
+                                <div class="txt_12">8-5-2020 10:30 by <strong>hanhsino</strong></div>
+                                <div class="option">
+                                    <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div><strong>Hang trong kho B3 - 05/05/2020 - PD</strong></div>
+                                <div class="txt_12">8-5-2020 10:30 by <strong>hanhsino</strong></div>
+                                <div class="option">
+                                    <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                    &nbsp;&nbsp;
+                                    <a class="delete red" href=""><i class="fa fa-times"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="form-group mt20">
+                            <textarea type="text" class="form-control"
+                                placeholder="Nhập nội dung ghi chú cho đơn hàng..."></textarea>
+                        </div>
+                        <div class="text-right">
+                            <a class="btn-default" href="#"><i class="fa fa-paper-plane-o"></i>&nbsp;&nbsp;Gửi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- /build:content -->
+
+<!-- build:script2 -->
+<script type="text/javascript">
+
+</script>
+<!-- /build:script2 -->

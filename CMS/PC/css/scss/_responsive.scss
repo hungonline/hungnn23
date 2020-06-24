@@ -11,8 +11,8 @@
 
 // Extra large devices (large desktops, 1200px and up) xl
 @media (max-width: 1200px) {
-	.row-main{
-		&_col200{
+	.row-main {
+		&_col200 {
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -22,16 +22,23 @@
 			transition: .4s;
 			transform: translate(-100%);
 		}
-		&_col800{
-			width: 100%;padding-left: 0;
+
+		&_col800 {
+			width: 100%;
+			padding-left: 0;
 		}
 	}
-	.row-main-head{
-		.search-wrapper{max-width: 400px;}
+
+	.row-main-head {
+		.search-wrapper {
+			max-width: 400px;
+		}
 	}
-	.close-menu,.btn_show{
+
+	.close-menu,
+	.btn_show {
 		display: block;
-    }
+	}
 }
 
 @media (max-width: 991px) {
@@ -55,6 +62,15 @@
 		&_col800 {
 			width: 100%;
 			padding-left: 0;
+		}
+	}
+
+	.table-responsive {
+		overflow-x: auto;
+
+		th,
+		td {
+			white-space: nowrap;
 		}
 	}
 
@@ -126,14 +142,6 @@
 
 	.thong_ke_top .col-md-3 {
 		margin: 10px 0
-	}
-
-	.table-responsive {
-
-		th,
-		td {
-			white-space: nowrap;
-		}
 	}
 
 	.info-detail {

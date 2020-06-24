@@ -529,6 +529,18 @@
 
 </script>
 
+    <script>
+        $('.input_search').on('keyup', (e) => {
+            let query = $(e.currentTarget).val();
+            if (query.length) {
+                $(e.currentTarget).parents('.form_suggest').addClass('active');
+                return;
+            } else {
+                $(e.currentTarget).parents('.form_suggest').removeClass('active');
+                return;
+            }
+        });
+    </script>
 </body>
 
 </html>
