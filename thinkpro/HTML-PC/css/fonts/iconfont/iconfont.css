@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1592967164745');
-	src: url('iconfont.eot?#iefix-1592967164745') format('embedded-opentype'),
-		url('iconfont.woff2?1592967164745') format('woff2'),
-		url('iconfont.woff?1592967164745') format('woff'),
-		url('iconfont.ttf?1592967164745') format('truetype');
+	src: url('iconfont.eot?1593011203855');
+	src: url('iconfont.eot?#iefix-1593011203855') format('embedded-opentype'),
+		url('iconfont.woff2?1593011203855') format('woff2'),
+		url('iconfont.woff?1593011203855') format('woff'),
+		url('iconfont.ttf?1593011203855') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -316,248 +316,252 @@ Glyphs list
 			content: '\ea47';
 		}
 
-		 .iconfont-acer:before {
+		 .iconfont-360:before {
 			content: '\ea48';
 		}
 
-		 .iconfont-alienware:before {
+		 .iconfont-acer:before {
 			content: '\ea49';
 		}
 
-		 .iconfont-apple:before {
+		 .iconfont-alienware:before {
 			content: '\ea4a';
 		}
 
-		 .iconfont-apps1:before {
+		 .iconfont-apple:before {
 			content: '\ea4b';
 		}
 
-		 .iconfont-arrow-down:before {
+		 .iconfont-apps1:before {
 			content: '\ea4c';
 		}
 
-		 .iconfont-arrow-left:before {
+		 .iconfont-arrow-down:before {
 			content: '\ea4d';
 		}
 
-		 .iconfont-arrow-right:before {
+		 .iconfont-arrow-left:before {
 			content: '\ea4e';
 		}
 
-		 .iconfont-arrow-up:before {
+		 .iconfont-arrow-right:before {
 			content: '\ea4f';
 		}
 
-		 .iconfont-asterisk1:before {
+		 .iconfont-arrow-up:before {
 			content: '\ea50';
 		}
 
-		 .iconfont-asus:before {
+		 .iconfont-asterisk1:before {
 			content: '\ea51';
 		}
 
-		 .iconfont-camera1:before {
+		 .iconfont-asus:before {
 			content: '\ea52';
 		}
 
-		 .iconfont-cart:before {
+		 .iconfont-camera1:before {
 			content: '\ea53';
 		}
 
-		 .iconfont-cart2:before {
+		 .iconfont-cart:before {
 			content: '\ea54';
 		}
 
-		 .iconfont-cart3:before {
+		 .iconfont-cart2:before {
 			content: '\ea55';
 		}
 
-		 .iconfont-chat:before {
+		 .iconfont-cart3:before {
 			content: '\ea56';
 		}
 
-		 .iconfont-check:before {
+		 .iconfont-chat:before {
 			content: '\ea57';
 		}
 
-		 .iconfont-check3:before {
+		 .iconfont-check:before {
 			content: '\ea58';
 		}
 
-		 .iconfont-clipboard-notes1:before {
+		 .iconfont-check3:before {
 			content: '\ea59';
 		}
 
-		 .iconfont-close:before {
+		 .iconfont-clipboard-notes1:before {
 			content: '\ea5a';
 		}
 
-		 .iconfont-comment-alt-message1:before {
+		 .iconfont-close:before {
 			content: '\ea5b';
 		}
 
-		 .iconfont-delete:before {
+		 .iconfont-comment-alt-message1:before {
 			content: '\ea5c';
 		}
 
-		 .iconfont-dell:before {
+		 .iconfont-delete:before {
 			content: '\ea5d';
 		}
 
-		 .iconfont-envelope-star1:before {
+		 .iconfont-dell:before {
 			content: '\ea5e';
 		}
 
-		 .iconfont-exit1:before {
+		 .iconfont-envelope-star1:before {
 			content: '\ea5f';
 		}
 
-		 .iconfont-fb:before {
+		 .iconfont-exit1:before {
 			content: '\ea60';
 		}
 
-		 .iconfont-filter1:before {
+		 .iconfont-fb:before {
 			content: '\ea61';
 		}
 
-		 .iconfont-gift1:before {
+		 .iconfont-filter1:before {
 			content: '\ea62';
 		}
 
-		 .iconfont-hamburger:before {
+		 .iconfont-gift1:before {
 			content: '\ea63';
 		}
 
-		 .iconfont-heart1:before {
+		 .iconfont-hamburger:before {
 			content: '\ea64';
 		}
 
-		 .iconfont-history1:before {
+		 .iconfont-heart1:before {
 			content: '\ea65';
 		}
 
-		 .iconfont-hp:before {
+		 .iconfont-history1:before {
 			content: '\ea66';
 		}
 
-		 .iconfont-ig:before {
+		 .iconfont-hp:before {
 			content: '\ea67';
 		}
 
-		 .iconfont-image-v1:before {
+		 .iconfont-ig:before {
 			content: '\ea68';
 		}
 
-		 .iconfont-lenovo:before {
+		 .iconfont-image-v1:before {
 			content: '\ea69';
 		}
 
-		 .iconfont-list-ul1:before {
+		 .iconfont-lenovo:before {
 			content: '\ea6a';
 		}
 
-		 .iconfont-location-pin-alt1:before {
+		 .iconfont-list-ul1:before {
 			content: '\ea6b';
 		}
 
-		 .iconfont-meh1:before {
+		 .iconfont-location-pin-alt1:before {
 			content: '\ea6c';
 		}
 
-		 .iconfont-message1:before {
+		 .iconfont-meh1:before {
 			content: '\ea6d';
 		}
 
-		 .iconfont-minus-circle1:before {
+		 .iconfont-message1:before {
 			content: '\ea6e';
 		}
 
-		 .iconfont-minus1:before {
+		 .iconfont-minus-circle1:before {
 			content: '\ea6f';
 		}
 
-		 .iconfont-money:before {
+		 .iconfont-minus1:before {
 			content: '\ea70';
 		}
 
-		 .iconfont-msi:before {
+		 .iconfont-money:before {
 			content: '\ea71';
 		}
 
-		 .iconfont-news:before {
+		 .iconfont-msi:before {
 			content: '\ea72';
 		}
 
-		 .iconfont-notes1:before {
+		 .iconfont-news:before {
 			content: '\ea73';
 		}
 
-		 .iconfont-notifi:before {
+		 .iconfont-notes1:before {
 			content: '\ea74';
 		}
 
-		 .iconfont-phone1:before {
+		 .iconfont-notifi:before {
 			content: '\ea75';
 		}
 
-		 .iconfont-plus-circle1:before {
+		 .iconfont-phone1:before {
 			content: '\ea76';
 		}
 
-		 .iconfont-plus1:before {
+		 .iconfont-plus-circle1:before {
 			content: '\ea77';
 		}
 
-		 .iconfont-razor:before {
+		 .iconfont-plus1:before {
 			content: '\ea78';
 		}
 
-		 .iconfont-sad-cry1:before {
+		 .iconfont-razor:before {
 			content: '\ea79';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-sad-cry1:before {
 			content: '\ea7a';
 		}
 
-		 .iconfont-share-alt1:before {
+		 .iconfont-search:before {
 			content: '\ea7b';
 		}
 
-		 .iconfont-shield-check1:before {
+		 .iconfont-share-alt1:before {
 			content: '\ea7c';
 		}
 
-		 .iconfont-smile-beam1:before {
+		 .iconfont-shield-check1:before {
 			content: '\ea7d';
 		}
 
-		 .iconfont-smile:before {
+		 .iconfont-smile-beam1:before {
 			content: '\ea7e';
 		}
 
-		 .iconfont-star1:before {
+		 .iconfont-smile:before {
 			content: '\ea7f';
 		}
 
-		 .iconfont-think-logo:before {
+		 .iconfont-star1:before {
 			content: '\ea80';
 		}
 
-		 .iconfont-thinkpad:before {
+		 .iconfont-think-logo:before {
 			content: '\ea81';
 		}
 
-		 .iconfont-truck1:before {
+		 .iconfont-thinkpad:before {
 			content: '\ea82';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-truck1:before {
 			content: '\ea83';
 		}
 
-		 .iconfont-youtube:before {
+		 .iconfont-user:before {
 			content: '\ea84';
+		}
+
+		 .iconfont-youtube:before {
+			content: '\ea85';
 		}
 
 		

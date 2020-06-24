@@ -17,11 +17,6 @@
         top: 94px
     }
 
-    .swiper-slide {
-        .thumb_img {
-            padding-bottom: 100%;
-        }
-    }
 
     .list-gallery {
         display: flex;
@@ -146,15 +141,15 @@
     }
 
     &__thumb {
-        width: 534px;
+        width: 600px;
     }
 
     &__info {
-        width: 690px;
-        width: calc(100% - 534px);
+        width: 624px;
+        width: calc(100% - 600px);
         font-size: 14px;
         position: relative;
-        padding-left: 90px;
+        padding-left: 25px;
         line-height: 1.5;
     }
 

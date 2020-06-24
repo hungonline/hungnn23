@@ -260,39 +260,27 @@
 			}
 		});
 
-		var galleryThumbs2 = new Swiper('.slideshow .slideshow__thumbs', {
+		var galleryThumbs2 = new Swiper('.slideshow2 .slideshow2__thumbs .swiper-container', {
 			spaceBetween: 8,
 			slidesPerView: 5,
-			// loopedSlides: 8,
-			direction: 'vertical',
 			freeMode: true,
-			// centeredSlides: true,
 			watchSlidesVisibility: true,
 			watchSlidesProgress: true,
 			speed: 500,
 			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			breakpoints: {
-				767: {
-					direction: 'horizontal',
-				}
+				nextEl: '.swiper-thumbs-next',
+				prevEl: '.swiper-thumbs-prev',
 			}
 		});
-		var galleryTop2 = new Swiper('.slideshow .slideshow__gallery', {
-			// loopedSlides: 8,
-			direction: 'vertical',
+		var galleryTop2 = new Swiper('.slideshow2 .slideshow2__gallery .swiper-container', {
 			speed: 700,
 			thumbs: {
 				swiper: galleryThumbs2,
 			},
-			breakpoints: {
-				767: {
-					direction: 'horizontal',
-					spaceBetween: 0,
-				}
-			}
+			navigation: {
+				nextEl: '.swiper-gallery-next',
+				prevEl: '.swiper-gallery-prev',
+			},
 		});
 
 

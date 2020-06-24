@@ -180,44 +180,16 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  background: var(--gray50);
   width: 56px;
   height: 56px;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 50%;
   z-index: 2;
   cursor: pointer;
   outline: 0;
-
-  &::before {
-    content: '';
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
-    background: var(--gray50);
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    border-radius: 50%;
-  }
-
-  &:hover {
-    &::before {
-      background: var(--color_main);
-      color: #fff;
-    }
-  }
-}
-
-.swiper-button-next {
-  &::before {
-    content: '\ea4e';
-    font-family: 'iconfont';
-  }
-}
-
-.swiper-button-prev {
-  &::before {
-    content: '\ea4d';
-    font-family: 'iconfont';
-  }
+  svg{width: 25px;height: 25px;}
 }
 
 .swiper-button-prev.swiper-button-disabled,

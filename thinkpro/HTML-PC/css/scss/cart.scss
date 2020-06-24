@@ -467,7 +467,7 @@
                 border: 2px solid #E3E7EF;
                 position: relative;
                 height: 64px;
-                border-radius: 4px;
+                border-radius: 4px;cursor: pointer;
             }
 
             img {
@@ -483,7 +483,7 @@
                 margin: auto;
             }
 
-            &.active {
+            &.active, &:hover {
                 a {
                     border: 2px solid #06C1D4;
                 }
