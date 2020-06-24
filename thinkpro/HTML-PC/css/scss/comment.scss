@@ -21,9 +21,8 @@
         }
         .photograph-user{
             &__gallery{
-                display: flex;flex-wrap:wrap;
                 li{
-                    width: 60px;margin-right: 8px;margin-bottom: 8px;border-radius: 4px;
+                    width: 60px;margin-right: 6px;border-radius: 4px;
                     overflow: hidden;
                     .count{
                         font-size: 18px;
@@ -52,25 +51,23 @@
             font-size: 52px;
             font-weight: bold;
         }
-        .align-center{
-            ul {
-                li {
-                    display: inline-block;
-    
-                    svg,img {
-                        width: 32px;
-                        height: 32px;
-                    }
-    
-                    &.active {
-                        svg {
-                            color: var(--color_main)
-                        }
+
+        ul {
+            li {
+                display: inline-block;
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                &.active {
+                    svg {
+                        color: var(--color_main)
                     }
                 }
             }
         }
-
 
         .line {
             margin: 6px 0 0 10px;
