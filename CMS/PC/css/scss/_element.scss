@@ -1041,6 +1041,7 @@ label.radio {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 15px;
+        position: relative;
 
         &.align-right {
             margin-bottom: 0;
@@ -1072,6 +1073,7 @@ label.radio {
         .wrap_input {
             width: 65%;
             width: calc(100% - 120px);
+
         }
 
         .form-control {
@@ -1107,6 +1109,18 @@ label.radio {
         select.form-control {
             padding: 0;
             height: 30px !important;
+        }
+
+        &.icon-block {
+            .form-control {
+                padding-right: 30px;
+            }
+
+            .icon {
+                position: absolute;
+                right: 0;
+                top: 6px;
+            }
         }
 
         &.male {
@@ -1473,7 +1487,7 @@ label.radio {
 }
 
 .content_lightbox {
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
 
     .head {
         font-weight: 500;
