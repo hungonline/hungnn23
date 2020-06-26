@@ -152,6 +152,10 @@
         }
     }
 
+    &__v2 {
+        background: none;
+    }
+
     @media (max-width: 860px) {
         padding: 25px 0;
 
@@ -163,7 +167,6 @@
             }
         }
     }
-
 }
 
 .box-video-home,

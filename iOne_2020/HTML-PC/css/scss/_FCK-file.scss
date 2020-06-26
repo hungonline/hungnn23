@@ -193,6 +193,9 @@
   margin-bottom: 15px;
   position: relative;
   padding-left: 50px;
+  background: url(images/graphics/quote.svg) no-repeat 0 5px;
+
+
 
   .icon-quote {
     position: absolute;
@@ -834,7 +837,6 @@
 .outset-column,
 .inset-column {
   p {
-    font: 400 18px/1.4 arial;
     margin-bottom: 20px;
   }
 

@@ -338,6 +338,10 @@ html {
     margin-bottom: 15px;
 }
 
+.mb16 {
+    margin-bottom: 16px;
+}
+
 .mb20 {
     margin-bottom: 20px;
 }
@@ -386,7 +390,6 @@ html {
     height: 1px;
     position: relative;
     width: 100%;
-    background: #f4f4f4;
 
     img,
     video {
@@ -455,7 +458,8 @@ html {
     }
 }
 
-.thumb_5x5 {
+.thumb_5x5,
+.thumb-1x1 {
     padding-bottom: 100%;
 }
 

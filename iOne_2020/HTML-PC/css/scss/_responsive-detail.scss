@@ -38,7 +38,18 @@
     }
   }
 
-  // .fck_detail figure.tplCaption .fig-picture{padding-bottom: unset !important;}
+  .fck_detail figure.tplCaption .fig-picture {
+    padding-bottom: unset !important;
+
+    video,
+    iframe {
+      position: relative !important;
+      float: left;
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+  }
+
   .fck_detail figure.tplCaption img {
     position: relative !important;
     float: left;

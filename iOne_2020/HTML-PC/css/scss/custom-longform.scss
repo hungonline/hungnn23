@@ -1,5 +1,17 @@
 @import "var.scss";
 
+.mfp-figure:after {
+    background: none !important;
+}
+
+#boxthamdoykien {
+    float: left;
+}
+
+.embed_video_new .box_img_video {
+    margin-bottom: 20px;
+}
+
 .wrap-main-nav>.container {
     .all-menu-tablet {
         height: 53px;
@@ -17,7 +29,11 @@
 }
 
 #to_top {
-    line-height: 25px
+    line-height: 22px;
+
+    .ic {
+        color: #666666;
+    }
 }
 
 .longform_wrapper {
@@ -44,12 +60,11 @@
 .outset-column,
 .inset-column {
     p {
-        font: 400 18px/1.4 arial;
         margin-bottom: 20px;
     }
 
     h3 {
-        font: bold 24px/1.3 var(--font2);
+        // font: bold 24px/1.3 var(--font2);
         margin-bottom: 20px;
     }
 }
@@ -248,4 +263,8 @@
             }
         }
     }
+}
+
+.item-news .status {
+    font-family: Arial, Helvetica, sans-serif;
 }

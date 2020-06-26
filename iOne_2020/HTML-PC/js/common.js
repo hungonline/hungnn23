@@ -86,9 +86,6 @@
             slidesPerView: 3,
             spaceBetween: 15,
             loop: true,
-            // autoplay: {
-            //   delay: 5000,
-            // },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -97,22 +94,23 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            // breakpoints: {
-            //   1190: {
-            //     slidesPerView: 3,
-            //   },
-            //   768: {
-            //     slidesPerView: 2,
-            //   }
-            // }
+        });
+        var quiz_slide = new Swiper('.slide-quiz .swiper-container', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-quiz-next',
+                prevEl: '.swiper-quiz-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
 
+
         /**SLIDE SECTION PHOTO**/
-        var swiper_slide_photo = new Swiper('#js_slider_photo', {
-            slidesPerView: 'auto',
-            spaceBetween: 0,
+        var swiper_slide_photo_v2 = new Swiper('#js_slider_photo', {
             loop: true,
-            centeredSlides: true,
             navigation: {
                 nextEl: '.swiper-button-next-photo',
                 prevEl: '.swiper-button-prev-photo',
@@ -120,8 +118,120 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                // type: 'fraction',
             },
         });
+
+        /**SLIDE SECTION SỰ KIỆN**/
+        var swiper_slide_sukien = new Swiper('#js_slider_sukien', {
+            slidesPerView: 2,
+            spaceBetween: 28,
+            navigation: {
+                nextEl: '.swiper-button-next-sukien',
+                prevEl: '.swiper-button-prev-sukien',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                }
+            }
+        });
+        /**SLIDE SECTION KIDLAB**/
+        var swiper_slide_kidlab = new Swiper('#js_slider_kidlab', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next-kidlab',
+                prevEl: '.swiper-button-prev-kidlab',
+            },
+        });
+        /**SLIDE SECTION FSELL**/
+        var swiper_slide_fsell = new Swiper('#js_slider_fsell', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next-fsell',
+                prevEl: '.swiper-button-prev-fsell',
+            },
+        });
+        /**SLIDE SECTION EWIKI**/
+        var swiper_slide_ewiki = new Swiper('#js_slider_ewiki', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-button-next-ewiki',
+                prevEl: '.swiper-button-prev-ewiki',
+            },
+        });
+
+        /**SLIDE BOX TIN EVNE**/
+        var swiper_slide_evne = new Swiper('.news-evne .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: '.news-evne .swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        /**SLIDE BOX TIN NGOI SAO**/
+        var swiper_slide_ngoisao = new Swiper('.news-ngoisao .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: '.news-ngoisao .swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        /**SLIDE BOX TIN IONE**/
+        var swiper_slide_ione = new Swiper('.news-ione .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: '.news-ione .swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        /**SLIDE BOX SHOP VNE**/
+        var swiper_slide_taitro = new Swiper('#js_slider_taitro', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next-taitro',
+                prevEl: '.swiper-button-prev-taitro',
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+
+                },
+                768: {
+                    slidesPerView: 3,
+
+                },
+            }
+        });
+        /**SLIDE BOX SHOP VNE**/
+        var swiper_slide_shop = new Swiper('#js_slider_shop', {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next-fshop',
+                prevEl: '.swiper-button-prev-fshop',
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 4,
+
+                },
+                768: {
+                    slidesPerView: 3,
+
+                },
+            }
+        });
+
+
+
 
     }
     var header = document.getElementById("wrap-main-nav");
@@ -159,6 +269,26 @@
 
     }
 
+    function onAccordion() {
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            if (acc[i].classList.contains('active')) {
+                acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + 'px';
+            }
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    }
+
 
     $(function () {
         backToTop();
@@ -166,6 +296,7 @@
         onCLick();
         slideSwiper();
         magnificPopup();
+        onAccordion();
     });
     window.onscroll = function () {
         myFunction()

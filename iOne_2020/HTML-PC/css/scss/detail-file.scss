@@ -108,12 +108,22 @@
         }
 
         .back-folder {
+            margin-left: 0;
             width: auto;
             padding: 0 15px;
             margin-right: 10px;
             position: relative;
             @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             overflow: hidden;
+            border: 1px solid var(--border);
+
+            svg {
+                padding: 0
+            }
+
+            &::before {
+                display: none
+            }
 
             .icon-svg {
                 fill: var(--gray3);

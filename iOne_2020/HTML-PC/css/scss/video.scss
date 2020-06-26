@@ -49,6 +49,9 @@ body {
     }
 
     .category {
+        display: flex;
+        clear: both;
+
         .cate {
             font-size: 14px;
             font-weight: 400;
@@ -61,6 +64,7 @@ body {
 
             a {
                 color: var(--gray1);
+                display: block;
             }
 
             &.active {
@@ -140,6 +144,7 @@ body {
     .warp_video {
         float: left;
         width: 100%;
+        position: relative;
 
         .detail_left {
             width: 70.02%;
@@ -185,9 +190,28 @@ body {
             padding: 32px 10px 32px 32px;
             background: var(--white);
             float: right;
+            position: absolute;
+            right: 0;
 
             #box_comment_vne {
                 overflow-x: hidden;
+            }
+
+            .box-tag-topic {
+                &.box-tag {
+                    .lbl {
+                        background: #F7F7F7;
+                        color: #757575;
+
+                        &:before {
+                            border-left-color: #F7F7F7;
+                        }
+                    }
+                }
+
+                .tag {
+                    border: 1px solid #E5E5E5;
+                }
             }
 
             .ss-scroll {
@@ -734,4 +758,18 @@ body {
 
 .banner-bottom-home {
     background: var(--white);
+}
+
+.dark_mode {
+    .top_detail .warp_video .detail_right .box-tag-topic.box-tag .lbl {
+        color: #BDBDBD;
+        background: #4F4F4F;
+
+        &:before {
+            border-left-color: #4F4F4F;
+        }
+    }
+    .top_detail .warp_video .detail_right .box-tag-topic .tag {
+        border: 1px solid #4F4F4F; 
+    }
 }

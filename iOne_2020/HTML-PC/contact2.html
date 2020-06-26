@@ -185,18 +185,8 @@
                         <h2 class="title">Cẩm nang gửi bài viết</h2>
                         <div class="list_share">
                             <ul>
-                                <li class=" active">
-                                    <h3 class="active"><a href="javascript:;" title="">1. Những ai được gửi bài cộng tác
-                                            cho iOne?</a></h3>
-                                    <div class="inf" style="display:block">
-                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
-                                            chúng tôi. Với đội
-                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
-                                            yêu cầu.</p>
-                                    </div>
-                                </li>
-                                <li class="">
-                                    <h3><a href="javascript:;" title="">2. Những ai được gửi bài cộng tác
+                                <li>
+                                    <h3 class="accordion active"><a href="javascript:;" title="">1. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -206,7 +196,7 @@
                                     </div>
                                 </li>
                                 <li class="">
-                                    <h3><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                    <h3 class="accordion"><a href="javascript:;" title="">2. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -216,7 +206,7 @@
                                     </div>
                                 </li>
                                 <li class="">
-                                    <h3><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
+                                    <h3 class="accordion"><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -226,7 +216,7 @@
                                     </div>
                                 </li>
                                 <li class="">
-                                    <h3><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                    <h3 class="accordion"><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -236,7 +226,7 @@
                                     </div>
                                 </li>
                                 <li class="">
-                                    <h3><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
+                                    <h3 class="accordion"><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -246,7 +236,7 @@
                                     </div>
                                 </li>
                                 <li class="">
-                                    <h3><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                    <h3 class="accordion"><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -256,7 +246,17 @@
                                     </div>
                                 </li>
                                 <li class="">
-                                    <h3><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
+                                    <h3 class="accordion"><a href="javascript:;" title="">3. Những ai được gửi bài cộng tác
+                                            cho iOne?</a></h3>
+                                    <div class="inf">
+                                        <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
+                                            chúng tôi. Với đội
+                                            ngũ kỹ thuật hỗ trợ 24/7, tài khoản của bạn sẽ được nâng cấp ngay sau khi có
+                                            yêu cầu.</p>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <h3 class="accordion"><a href="javascript:;" title="">4. Những ai được gửi bài cộng tác
                                             cho iOne?</a></h3>
                                     <div class="inf">
                                         <p>Ngay khi có nhu cầu nâng cấp dung lượng lưu trữ, bạn chỉ cần liên hệ với
@@ -326,20 +326,20 @@
 
     <div class="clearfix"></div>
     <script>
-        $('.list_share').find('h3').click(
-            function () {
-                if ($(this).next().css('display') == 'none') {
-                    $('.inf').slideUp();
-                    $(this).next().stop(true, true).slideDown();
-                    $('.list_share li').removeClass('active');
-                    $(this).parent().addClass('active');
+        // $('.list_share').find('h3').click(
+        //     function () {
+        //         if ($(this).next().css('display') == 'none') {
+        //             $('.inf').slideUp();
+        //             $(this).next().stop(true, true).slideDown();
+        //             $('.list_share li').removeClass('active');
+        //             $(this).parent().addClass('active');
 
-                } else {
-                    $(this).parent().find('.inf').slideUp();
-                    $('.list_share li').removeClass('active');
-                }
-            }
-        )
+        //         } else {
+        //             $(this).parent().find('.inf').slideUp();
+        //             $('.list_share li').removeClass('active');
+        //         }
+        //     }
+        // )
     </script>
 </body>
 

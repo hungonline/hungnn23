@@ -1,10 +1,12 @@
 /*thumb + icon play - overwrite for box video in detail article*/
+
 .embed_video_new {
   position: relative;
 }
 
 .embed_video_new .box_img_video {
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .embed_video_new .icon_blockvideo {

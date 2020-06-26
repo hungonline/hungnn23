@@ -1,7 +1,7 @@
 @import "var.scss";
 @import "swiper.scss";
 // ==== Element block  ======
-@import "element.scss";
+// @import "element.scss";
 @import "box_300.scss";
 @import "vote.scss";
 @import "footer.scss";
@@ -195,7 +195,7 @@
 .box_movies {
     background: #FDF0EE;
     padding: 16px 24px;
-    border-radius: 8px;
+    border-radius: 2px;
     position: relative;
 
     .hoa-tiet {

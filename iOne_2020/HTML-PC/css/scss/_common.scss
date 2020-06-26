@@ -106,11 +106,11 @@ h6 {
     }
 
     .description {
-        color: var(--gray1);
+        color: var(--colormain);
         margin-bottom: 15px;
 
         a {
-            color: var(--gray1);
+            color: var(--colormain);
         }
     }
 
@@ -174,7 +174,7 @@ h6 {
         .thumb-art {
             width: 100%;
             float: none;
-            margin: 0 0 10px 0;
+            margin: 0 0 12px 0;
         }
 
         .content {
@@ -314,11 +314,11 @@ h6 {
 }
 
 .gird_5 {
-    margin: 0 -3.5px;
+    margin: 0 -8px;
 
     .item-news {
         width: 20%;
-        padding: 0 3.5px;
+        padding: 0 8px;
     }
 }
 
@@ -337,7 +337,7 @@ h6 {
     &.line {
         &::before {
             content: "";
-            background: var(--border);
+            background: var(--gray2);
             height: 1px;
             right: 0;
             position: absolute;
@@ -356,7 +356,7 @@ h6 {
 
 .head_cate {
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 
     .title_star {
         margin: 0 32px 0 0;
@@ -478,8 +478,10 @@ h6 {
 }
 
 .box_the_laster {
+    margin-top: 20px;
     margin-bottom: 30px;
     overflow: hidden;
+    float: left;
 
     .wrap {
         border: 1px solid var(--border);
@@ -734,6 +736,18 @@ h6 {
     .ic {
         margin-top: -3px;
         margin-right: 8px;
+    }
+}
+
+.accordion {
+    +* {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    &.active+* {
+        max-height: 1000px;
     }
 }
 
@@ -1052,7 +1066,8 @@ h6 {
         background: none !important
     }
 
-    .comment_item .txt-name .nickname {
+    .comment_item .txt-name .nickname,
+    .empty-comment p {
         color: #fff !important
     }
 
@@ -1063,6 +1078,25 @@ h6 {
     &.wrap-main-nav {
         background: #222222;
         border-bottom: 0;
+    }
+
+    .top_detail .warp_video .detail_right .status_social .social a {
+        background: #4F4F4F;
+
+        svg {
+            fill: #BDBDBD
+        }
+    }
+
+    .top_detail .warp_video .detail_right .status_social,
+    .filter_coment {
+        border-bottom: 1px solid #4F4F4F;
+    }
+}
+
+@media (max-width: 991px) {
+    .hide-ads-tablet {
+        display: none !important
     }
 }
 
