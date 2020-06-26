@@ -1269,7 +1269,30 @@ label.radio {
         border-radius: 0px 3px 3px 0px;
     }
 }
+.list-star{
+    .fa-star{
+        color: #FF8000;
+        &-o{
+            color: #BABABA;
+        }
+    }
+}
+.box-create-api{
+    background: #FFFFFF;
+    border: 1px solid #BABABA;
+    padding: 10px 0;
+    .item{
+        padding: 10px 15px;
+        .tr{
+            display: flex;justify-content: space-between;margin-bottom: 5px;
+            &:last-child{margin-bottom: 0;}
+        }
+        &:nth-child(2n){
+            background: #ECECEE;
+        }
+    }
 
+}
 .form-default2 {
     .form-group {
         display: flex;
@@ -1284,7 +1307,6 @@ label.radio {
             width: 70%;
             width: calc(100% - 100px);
         }
-
         .form-control {
             height: 35px;
             padding-left: 10px;
@@ -1470,6 +1492,7 @@ label.radio {
     line-height: 36px;
     font-size: 25px;
     text-align: center;
+    color: var(--color-main);
 }
 
 //POPUP CUSTOM
@@ -2480,6 +2503,7 @@ label.radio {
 .tooltip.right {
     padding: 0 5px;
     margin-left: 3px;
+    min-width: 140px;
 }
 
 .tooltip.right .tooltip-arrow {
