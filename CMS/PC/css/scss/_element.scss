@@ -1293,18 +1293,7 @@ label.radio {
     }
 
 }
-.form-cauhinh{
-    .form-group{
-        .lbl{
-            width: 150px;
-            text-align: right;
-            padding-right: 15px;
-        }
-        .wrap_input {
-            width: calc(100% - 150px);
-        }
-    }
-}
+
 .form-default2 {
     .form-group {
         display: flex;
@@ -1370,6 +1359,19 @@ label.radio {
             color: #666;
         }
     }
+    &.form-cauhinh{
+        .form-group{
+            .lbl{
+                width: 150px;
+                text-align: right;
+                padding-right: 15px;
+            }
+            .wrap_input {
+                width: calc(100% - 150px);
+            }
+        }
+    }
+
     @media (max-width: 590px) {
         .form-group{
             flex-wrap: wrap;
@@ -1383,6 +1385,21 @@ label.radio {
             }
             .add,.edit{top: 34px;}
             .notifi{top: 30px;}
+        }
+        &.form-cauhinh{
+            .form-group{
+                flex-wrap: wrap;
+                .lbl{
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: 5px;
+                }
+                .wrap_input {
+                    width: 100%;
+                }
+                .add,.edit{top: 34px;}
+                .notifi{top: 30px;}
+            }
         }
     }
 }
