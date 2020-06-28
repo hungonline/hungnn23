@@ -11,7 +11,6 @@
         position: relative;
         z-index: 10;
         background: var(--white);
-        // box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
         border-bottom: 1px solid var(--gray100);
         .f-wrap {
             height: 72px;
@@ -631,6 +630,88 @@
                             &::before {
                                 left: inherit;
                                 right: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.blog{
+            .container{
+                max-width: 100%;
+                padding: 0 42px;
+            }
+            .f-wrap{
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .main-menu{
+                &>li{
+                    display: inline-block;
+                    margin: 0 23px;
+                    position: relative;
+                    &>a{
+                        font-size: 16px;font-weight: bold;
+                        line-height: 72px;
+                        display: block;
+                    }
+                    .level2{
+                        position: absolute;
+                        background: #fff;
+                        box-shadow: 0px 2px 8px rgba(0,0,0,0.25);
+                        border-radius: 8px;
+                        min-width: 300px;
+                        right: -20px;
+                        display: none;
+                        ul{
+                            &::before{
+                                width: 13px;
+                                height: 13px;
+                                border: 1px solid var(--gray100);
+                                border-width: 0 1px 1px 0;
+                                content: '';
+                                position: absolute;
+                                top: -8px;
+                                right: 20px;
+                                background: var(--white);
+                                -webkit-transform: rotate(225deg);
+                                -ms-transform: rotate(225deg);
+                                transform: rotate(225deg);
+                            }
+                            li{
+                                a{
+                                    font-size: 16px;font-weight: bold;
+                                    display: block;
+                                    padding: 15px 16px;border-radius: 0 0 8px 8px;
+                                }
+                                &.active{
+                                    a{ background: #F3F5F8;}
+                                 }
+                            }
+                        }
+
+                    }
+                    &.active{
+                        &>a{
+                            color: var(--color_main);
+                        }
+                    }
+                    &:hover{
+                        .level2{display: block;}
+                    }
+                }
+            }
+            .fs-hdmn{
+                flex-grow:inherit;
+                &>li{
+                    .wrap-fill{
+                        transform: translate(0%, 0);
+                        right: 0;
+                        left: inherit;
+                        ul{
+                            &::before{
+                                right: 20px;
+                                left: inherit;
                             }
                         }
                     }

@@ -505,7 +505,16 @@
             padding: 0 40px;
             font-weight: 600;
             border-radius: 56px;
-            border: 1px solid var(--dark_gray);
+            border: 1px solid #E3E7EF;
+            &:hover {
+                border: 1px solid var(--color_main);
+                background: var(--color_main);
+                color: #fff;
+
+                svg {
+                    color: #fff;
+                }
+            }
         }
 
         &.view-less {
@@ -514,11 +523,6 @@
             padding: 0;
         }
 
-        &:hover {
-            a {
-                color: $color2-hover;
-            }
-        }
     }
     .box-tag{
         display: flex;margin-bottom: 56px;align-items: center;
