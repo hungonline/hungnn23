@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>
+        CMS Template
+
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- build:head -->
+
+</head>
+
+<body class="homepage">
+
+    <!--HEADER-->
+    <section id="topbar" class="section top_bar">
+        <div class="flex container align-center">
+            <a class="logo" href="#"><img src="images/graphics/logo.svg"></a>
+            <div class="header-right">
+                <ul>
+                    <li class="setting">
+                        <a href="javascript:void(0);">
+                            <strong>Thiết lập</strong>
+                            <i class="iconfont-setting"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#"><i class="fa fa-user"></i>Quản lý người dùng</a></li>
+                            <li><a href="#"><i class="fa fa-reply-all"></i>Phân quyền nhóm</a></li>
+                            <li><a href="#"><i class="fa fa-file-word-o"></i>Danh sách chuyên mục</a></li>
+                        </ul>
+                    </li>
+                    <li class="user-name menu-bar onclick-togle">
+                        <a class="lk-user-name" href="#" title="Hùng Nguyễn">
+                            <strong>Chào: cuongle</strong>
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#login-popup" class="open-popup"><i class="fa fa-sign-in"></i>Đăng nhập</a>
+                            </li>
+                            <li><a href="#add-user-popup" class="open-popup"><i class="fa fa-key"></i>Đổi mật khẩu</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-align-left"></i>Xem báo cáo cuối ngày</a></li>
+                            <li><a href="#"><i class="fa fa-reply-all"></i>Chọn hóa đơn trả hàng</a></li>
+                            <li><a href="#"><i class="fa fa-file-word-o"></i>Lập phiếu thu</a></li>
+                            <li><a href="#"><i class="fa fa-upload"></i>Imporrt</a></li>
+                            <li><a href="#"><i class="fa fa-eye-slash"></i>Tùy chọn hiển thị</a></li>
+                            <li><a href="#"><i class="fa fa-list-alt"></i>Quản lý</a></li>
+                            <li><a href="#"><i class="fa fa-external-link"></i>Đăng xuất</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--END HEADER-->
+    <section class="section head-top">
+        <div class="flex container">
+            <div class="header-tab tab-default">
+                <ul class="flex">
+                    <li><a href="#" class="active">Tổng quan</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Khách hàng</a></li>
+                    <li>
+                        <a href="#">Sản phẩm</a>
+                        <ul class="lever2">
+                            <li><a href="#"><i class="fa fa-files-o"></i>&nbsp;Quản lý đơn hàng</a></li>
+                            <li><a href="#"><i class="fa fa-floppy-o"></i>&nbsp;Tạo đơn hàng</a></li>
+                            <li><a href="#"><i class="fa fa-qrcode"></i>&nbsp;Scan order US</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tra cứu</a></li>
+                </ul>
+            </div>
+            <div class="wrap-notifi">
+                <a class="notifi" href="#">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="coutn">8</span>
+                    <span>Thông báo</span>
+                </a>
+                <div class="list">
+                    <span class="note">Thông báo từ hệ thống</span>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <strong class="color-main">cuongle</strong> vừa thêm 2 sản phẩm vào giỏ hàng cách đây 15
+                                phút nhưng chưa tạo đơn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Đơn UAM-8B858 được khởi tạo thành công cách đây 1 tiếng nhưng chưa thanh
+                                toán</a>
+                        </li>
+                        <li>
+                            <a>
+                                Sản phẩm <span class="color-main">Kirkland Signature Ibuprofen IB, 200 mg., 1,000
+                                    Caplets</span> vừa được published
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="view-all" href="#">Xem tất cả</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"></div>
+    
+<section class="main-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 ">
+                <div class="wrap_bg mb20">
+                    <p class="txt_16">Cấu hình sản phẩm</p>
+                    <div class="wrap-tab">
+                        <div class="tab-default">
+                            <a href="#setting-tab1" class="active">Tạo sản phẩm</a>
+                            <a href="#setting-tab2">Tạo bảng mã lệnh</a>
+                        </div>
+                        <div class="tab-content">
+                            <div id="setting-tab1">
+                                <div class="form-default2 form-cauhinh row">
+                                    <div class="red col-12 mb10 txt_12">(Dấu * là dấu bắt buộc phải nhập)</div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl mt0">Label</label>
+                                            <div class="wrap_input">
+                                                <label class="radio mb0 ml5">
+                                                    <input type="radio" name="optradio">
+                                                    <span class="checkmark"></span>
+                                                    Amazon
+                                                </label>
+                                                <label class="radio mb0 ml5">
+                                                    <input type="radio" name="optradio">
+                                                    <span class="checkmark"></span>
+                                                    Costco
+                                                </label>
+                                                <label class="radio mb0 ml5">
+                                                    <input type="radio" name="optradio">
+                                                    <span class="checkmark"></span>
+                                                    Fado
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">Product Id <sup class="red">*</sup></label>
+                                            <div class="wrap_input flex">
+                                                <input type="text" class="form-control" id="" value="B06ZY4KH8S" style="width: 177px;">
+                                                <button type="submit" class="btn btn-default" style="padding: 0 30px;">Edit</button>
+                                                <a class=""><i class="fa fa-refresh fa-spin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Title
+                                                <a style="color: #666;"><i class="fa fa-exclamation-circle"></i></a>
+                                                <sup class="red">*</sup>
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id=""
+                                                    value="It's Earnings That Count: Finding Stocks with Earnings Power for Long-Term Profits 1st Edition">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb15">
+                                        <div class="form-group pr30">
+                                            <label class="lbl">
+                                                Price
+                                                <a style="color: #666;"><i class="fa fa-exclamation-circle"></i></a>
+                                                 <sup class="red">*</sup>
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id="" value="23.57">
+                                            </div>
+                                            <div class="notifi">$</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb15">
+                                        <div class="form-group pr30">
+                                            <label class="lbl">
+                                                Price shipping US
+                                                <a style="color: #666;"><i class="fa fa-exclamation-circle"></i></a>
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id="" value="23.57">
+                                            </div>
+                                            <div class="notifi">$</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  mb15">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Rate (Vietcombank)
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id="" value="23.57">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Image
+                                                <sup class="red">*</sup>
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id=""
+                                                    value="https://images-na.ssl-images-amazon.com/images/I/41-05WeHixL._SX330_BO1,204,203,200_.jpg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">Seller ID <sup class="red">*</sup></label>
+                                            <div class="wrap_input flex">
+                                                <input type="text" class="form-control" id="" value="B06ZY4KH8S" style="width: 177px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Seller Name
+                                                <sup class="red">*</sup>
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">Shipping weight <sup class="red">*</sup></label>
+                                            <div class="wrap_input flex">
+                                                <input type="text" class="form-control" id="" value="11.2" style="width: 110px;">
+                                                <select class="form-control" style="width: 110px;margin-left: 6px;">
+                                                    <option>ounces</option>
+                                                    <option>Bình thường</option>
+                                                </select>
+                                                <div class="flex mt10 ml30">
+                                                    <label class="check-list mr10 txt_13">
+                                                        <input type="checkbox">
+                                                        <span class="checkmark"></span>
+                                                        Hàng Prime
+                                                    </label>
+                                                    <a style="color: #666;" href="#" data-toggle="tooltip" data-placement="right"
+                                                        title="Hàng prime sẽ được chuyển về kho Mỹ từ 1-3 ngày">
+                                                        <i class="fa fa-exclamation-circle"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                       
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Package dimensions
+                                            </label>
+                                            <div class="wrap_input">
+                                                <input type="text" class="form-control" id="" value="7 x 0.6 x 9.1 inches" style="width: 226px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Star
+                                            </label>
+                                            <div class="wrap_input flex">
+                                                <div class="list-star mt10">
+                                                    <a class="fa fa-star" href=""></a>
+                                                    <a class="fa fa-star" href=""></a>
+                                                    <a class="fa fa-star" href=""></a>
+                                                    <a class="fa fa-star-o" href=""></a>
+                                                    <a class="fa fa-star-o" href=""></a>
+                                                </div>
+                                                <input type="text" class="form-control" id="" value="253" style="width: 126px;margin-left: 20px;">
+                                                <div class="mt10 ml10">Ratings</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label class="lbl">
+                                                Description
+                                            </label>
+                                            <div class="wrap_input">
+                                                <textarea class="form-control" style="height: 150px;"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group flex flex-end">
+                                    <i class="fa fa-refresh fa-spin"></i>
+                                    <button type="submit" class="btn btn-default" style="padding: 0 40px;">Create</button>
+                                </div>
+                            </div>
+                            <div id="setting-tab2" style="display: none;">
+                                <div class="form-default2">
+                                    <div class="form-group">
+                                        <div class="flex">
+                                            <input type="text" class="form-control" id="" placeholder="Nhập mã sản phẩm..." style="width:300px">
+                                            <a class="ml20"><i class="fa fa-refresh fa-spin"></i></a>
+                                            <button type="submit" class="btn btn-default" style="padding: 0 30px;">Get detail</button>
+                                            <strong class="blue mt10 ml10">Sample data</strong>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" style="height: 350px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="wrap_bg mb20">
+                    <div class="head color-main mb10">
+                        It's Earnings That Count: Finding Stocks with Earnings Power for Long-Term Profits 1st Edition
+                    </div>
+                    <div class="flex space-between mb10">
+                        <div>
+                            <div>Người bán: Hewitt Heiserman</div>
+                            <div class="list-star mt10">
+                                <a class="fa fa-star" href=""></a>
+                                <a class="fa fa-star" href=""></a>
+                                <a class="fa fa-star" href=""></a>
+                                <a class="fa fa-star-o" href=""></a>
+                                <a class="fa fa-star-o" href=""></a>
+                                <span class="mt10 ml10">253 đánh giá</span>
+                            </div>
+                        </div>
+                        <a href="#" class="color-main">Xem link</a>
+                    </div>
+                    <div class="box-create-api">
+                        <div class="item">
+                            <div class="tr">
+                                <div>Giá sản phẩm trên Amazon:</div>
+                                <div class="price">29.99 $</div>
+                            </div>
+                            <div class="tr">
+                                <div>Phí ship nội địa Mỹ:</div>
+                                <div class="price">1 $</div>
+                            </div>
+                            <div class="tr">
+                                <div>Phí mua hộ từ US Express:</div>
+                                <div class="price">30 $</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tr">
+                                <div><strong>Chi tiết bảng giá phí mua hộ</strong></div>
+                                <div class="price">29.99 $</div>
+                            </div>
+                            <div class="tr">
+                                <div>Phí ship nội địa Mỹ:</div>
+                                <div class="price">1 $</div>
+                            </div>
+                            <div class="tr">
+                                <div>Phí mua hộ từ US Express:</div>
+                                <div class="price">30 $</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="tr">
+                                <div>Tổng giá (đã bao gồm thuế, phí):</div>
+                                <div class="price">29.99 $</div>
+                            </div>
+                            <div class="tr">
+                                <div>Tổng giá bằng VNĐ (đã bao gồm thuế, phí):</div>
+                                <div class="price red"><strong>1,433,341 đ</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wrap_bg mb20">
+                    <div class="placeholder mb10" style="height: 40px;"></div>
+                    <div class="placeholder mb10" style="height: 40px;width: 200px;"></div>
+                    <div class="box-create-api" style="padding:10px;">
+                        <div class="placeholder mb10" style="height: 70px;"></div>
+                        <div class="placeholder mb10" style="height: 70px;"></div>
+                        <div class="placeholder" style="height: 70px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top"><i class="ic ic-caret-up"></i></a>
+
+    <div class="mask-content"></div>
+
+    <div id="add-user-popup" class="user-popup popup-width2 white-popup mfp-hide">
+        <div class="content_lightbox">
+            <p>Người dùng</p>
+            <div class="flex">
+                <div class="up-file mb15">
+                    <div class="ava">
+                        <span class="thumb_img thumb_5x5">
+                            <img src="images/graphics/img_4.jpg">
+                        </span>
+                    </div>
+                    <label class="choose">
+                        <input type="file" name="myFile">
+                        chọn ảnh
+                    </label>
+
+                </div>
+                <div class="form-default row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="lbl">Họ tên</label>
+                            <input type="text" class="form-control" id="" placeholder="Nhập họ và tên">
+                            <span class="error txt_11" style="display: none;">Loi nhap thong tin</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Mật khẩu</label>
+                            <input type="password" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Gõ lại mật khẩu</label>
+                            <input type="password" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Vai trò</label>
+                            <select class="form-control">
+                                <option>- Chọn vai trò -</option>
+                                <option>Bình thường</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Ngày sinh</label>
+                            <div class="datepicker-wrap">
+                                <input id="datepicker" class="datepicker-input form-control" type="text"
+                                    value="11/12/2019">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="lbl">Điện thoại</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Địa chỉ</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Email</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                        <div class="form-group male">
+                            <label class="lbl">Giới tính</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Nam</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Nữ</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="lbl">Ghi chú</label>
+                            <input type="text" class="form-control" id="">
+                        </div>
+                    </div>
+
+                    <div class="form-group align-right col-12 mt20 block">
+                        <button type="submit" class="btn btn-default"><i class="fa fa-floppy-o"></i>Lưu</button>
+                        <button type="submit" class="btn btn-default cancel"><i class="fa fa-ban"></i>Bỏ qua</button>
+                    </div>
+                </div>
+                <div class="warp-dotted">
+                    <div class="lbl-text">Bảo mật</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="flex flex-form-default">
+                                <span class="icon-changer"><i class="fa fa-key"></i></span>
+                                <div class="form-default">
+                                    <div>Đổi mật khẩu</div>
+                                    <p class="gray">Bạn nên sử dụng mật khẩu mạnh mà mình chưa sử dụng ở đâu
+                                        khác</p>
+                                    <div class="form-group">
+                                        <label class="lbl">Mật khẩu hiện tại</label>
+                                        <input type="password" class="form-control" id="" value="2348972348923">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="lbl">Mật khẩu mới</label>
+                                        <input type="password" class="form-control" id="" value="2348972348923">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="lbl">Gõ lại mật khẩu mới</label>
+                                        <input type="password" class="form-control" id="" value="2348972348923">
+                                        <span class="error txt_11">Mật khẩu gõ lại không khớp với mật khẩu mới</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button type="submit" class="btn btn-default"><i class="fa fa-floppy-o"></i>Lưu</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="login-popup" class="login-popup white-popup mfp-hide">
+        <div class="content_lightbox">
+            <div class="head center">
+                <div>Đăng nhập hệ thống</div>
+                <a class="logo" href="#"><img src="images/graphics/logo.svg"></a>
+            </div>
+            <div class="form-default">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="" placeholder="Tên đăng nhập">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-group mt25 txt_12">
+                    <label class="check-list mb10 mr25">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Duy trì đăng nhập
+                    </label>
+                    <div>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+                    <a class="quen-mk gray" href="#">Quên mật khẩu</a>
+                </div>
+                <div class="bottom-btn flex">
+                    <a href="#"><i class="fa fa-sign-in"></i>Đăng nhập</a>
+                    <a href="#" style="background: #FFAA00;"><i class="fa fa-user-plus"></i>Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/zebra_datepicker.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+<script type="text/javascript">
+
+</script>
+
+    <script>
+        $('.input_search').on('keyup', (e) => {
+            let query = $(e.currentTarget).val();
+            if (query.length) {
+                $(e.currentTarget).parents('.form_suggest').addClass('active');
+                return;
+            } else {
+                $(e.currentTarget).parents('.form_suggest').removeClass('active');
+                return;
+            }
+        });
+    </script>
+</body>
+
+</html>
