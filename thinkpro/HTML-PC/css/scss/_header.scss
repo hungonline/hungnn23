@@ -717,6 +717,13 @@
                     }
                 }
             }
+            @media (max-width: 1200px) {
+                .main-menu{
+                    &>li{
+                        margin: 0 15px;
+                    }
+                }
+            }
         }
     }
 }

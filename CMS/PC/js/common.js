@@ -176,6 +176,7 @@
 		onClickTab();
 		datepicker();
 		// select2();
+		$('[data-toggle="tooltip"]').tooltip();
 	});
 
 	$(window).on('load resize', function () {
