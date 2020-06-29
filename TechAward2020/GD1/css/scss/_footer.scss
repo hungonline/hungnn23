@@ -1,0 +1,85 @@
+.section_footer {
+    padding: 20px 0;
+    color: #fff;
+    background: #032161;
+    line-height: 1.6;
+
+    strong {
+        font-weight: 500
+    }
+
+    .flex {
+        align-items: center;
+    }
+
+    .logo {
+        width: 165px;
+    }
+
+    .copy_right {
+        margin-left: 50px;
+    }
+
+    .info {
+        margin-left: 90px;
+    }
+
+    .social_new {
+        flex-grow: 2;
+        text-align: right;
+    }
+
+    @media (max-width: 991px) {
+        background-size: cover;
+        text-align: center;
+        line-height: 1.5;
+
+        .social_new {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .flex {
+            display: block
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 15px;
+
+            img {
+                width: 150px;
+            }
+        }
+
+        .copy_right,
+        .info {
+            margin: 0 0 10px 0
+        }
+
+    }
+}
+
+.social_new {
+    a {
+        display: inline-block;
+        margin-left: 10px;
+        text-align: center;
+        line-height: 36px;
+        width: 32px;
+        height: 32px;
+        color: #fff;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.04986 3.20933C9.14741 0.817767 11.9108 -0.313838 14.3705 0.621002L27.6157 5.65494C30.1917 6.63399 31.7696 9.24197 31.4413 11.9782L29.3039 29.796C29.0749 31.705 27.1344 32.9089 25.3223 32.2661L3.1228 24.3914C0.907931 23.6058 -0.15562 21.0891 0.824598 18.9532L8.04986 3.20933Z' fill='%231D3F8E'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+
+        svg {
+            width: 14px;
+            height: 14px;
+            fill: #fff;
+        }
+
+        &:hover {
+            color: $color2
+        }
+    }
+}

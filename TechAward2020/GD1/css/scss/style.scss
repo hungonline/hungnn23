@@ -1,0 +1,33 @@
+@import "var.scss";
+@import "reset.scss";
+@import "icon-vne.scss";
+@import "font.scss";
+//Plugin
+@import "scrollbar.scss";
+@import "form-lightbox.scss";
+@import "swiper.scss";
+//Layout
+@import "common.scss";
+@import "element.scss";
+@import "header.scss";
+@import "footer.scss";
+
+//==Giai đoạn 1==
+@import "state1.scss";
+
+//==================================Giai đoạn 1==================================
+
+
+// fix POPUP login VNE
+.mfp-myvne .mfp-iframe-scaler {
+    min-height: 445PX;
+}
+
+.mfp-myvne .mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 768px;
+}
+
+/**RESPONSIVE**/
+@import "responsive.scss";

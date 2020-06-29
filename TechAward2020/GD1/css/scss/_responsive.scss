@@ -1,0 +1,124 @@
+@media only screen and (max-width: 2400px) and (min-width: 1600px) {}
+
+@media (max-width: 1024px) {}
+
+
+@media (max-width: 991px) {
+	.title_award {
+		font-size: 30px;
+		margin-bottom: 30px;
+
+		&::before {
+			width: 53px;
+			height: 52px;
+			background-size: contain;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.top_bar {
+		.date {
+			display: none
+		}
+
+		.form_log {
+			&>li {
+				margin-right: 6px;
+				padding-left: 10px;
+			}
+
+			.user {
+				.name {
+					max-width: 100px;
+					overflow: hidden;
+					margin-top: -2px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	//GIAI ĐOẠN 1
+	.title_line,
+	.title_line2 {
+		margin-bottom: 20px;
+	}
+
+	//END GIAI ĐOẠN 1
+}
+
+
+@media (max-width: 590px) {
+
+	//GIAI ĐOẠN 1
+	.title_line {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.popup_awards {
+		.title_line {
+			font-size: 24px;
+		}
+	}
+
+	//END GIAI ĐOẠN 1
+
+}
+
+@media (max-width: 480px) {
+	.top_bar {
+		.logo {
+			width: 132px;
+			margin: 1px 0 0 30px;
+		}
+
+		.form_log {
+			margin: 5px 0 0 0px;
+
+			&>li {
+				padding-left: 6px;
+				margin-right: 0;
+
+				a {
+					font-size: 13px
+				}
+			}
+
+			.user {
+				.name {
+					display: none
+				}
+			}
+		}
+
+		.form_log>li .icon-user img {
+			width: 25px;
+			height: 25px;
+			margin: -5px 2px 0 0;
+		}
+	}
+
+	//GIAI ĐOẠN 1
+
+}
+
+@media (max-width: 340px) {
+
+	.top_bar {
+		.logo {
+			display: none;
+		}
+
+		.logo_mobile {
+			display: inline-block;
+			margin: 0 0 0 30px;
+		}
+	}
+}
+
+@media \0screen\,screen\9 {}
