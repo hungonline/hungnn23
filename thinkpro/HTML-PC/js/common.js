@@ -185,7 +185,7 @@
 			},
 			pagination: {
 				el: '.swiper-pagination',
-				type: 'progressbar',
+				clickable: true,
 			},
 		});
 
@@ -198,8 +198,8 @@
 			},
 			breakpoints: {
 				480: {
-					loop: true,
-					slidesPerView: 1,
+					spaceBetween: 0,
+					slidesPerView: 2,
 				},
 				991: {
 					slidesPerView: 2,

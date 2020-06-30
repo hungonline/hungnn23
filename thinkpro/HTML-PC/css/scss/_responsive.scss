@@ -178,6 +178,24 @@
         padding-top: 0;
     }
 
+    .product-slide {
+
+        .swiper-button-next,
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none
+        }
+    }
+
+    .product-review {
+
+        .swiper-button-next,
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none
+        }
+    }
+
     .title_cate {
         font-size: 20px;
     }
