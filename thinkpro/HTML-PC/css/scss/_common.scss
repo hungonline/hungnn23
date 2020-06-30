@@ -597,6 +597,9 @@ main {
     }
 }
 
+#pin-view-more {
+    height: 10px;
+}
 
 .list-product__like {
     border-left: 0;
@@ -955,7 +958,8 @@ main {
     border-collapse: collapse;
     border-spacing: 0;
 
-    td {
+    td,
+    th {
         border: 1px solid #E3E7EF;
         color: #0E0E0E;
         padding: 13px 16px;
