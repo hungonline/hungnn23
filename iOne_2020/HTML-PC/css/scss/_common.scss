@@ -124,6 +124,10 @@ h6 {
         }
 
         span {
+            span {
+                margin-right: 0 !important;
+            }
+
             a {
                 margin-right: 0;
             }
@@ -324,7 +328,7 @@ h6 {
 
 .title_star {
     font: bold 24px/1.4 var(--font2);
-    color: #282828;
+    color: var(--colormain);
     margin-bottom: 20px;
     position: relative;
     background: url(images/icons/star1.svg)no-repeat 0;
@@ -409,7 +413,7 @@ h6 {
 }
 
 .box-tag-topic {
-    margin: 0 0 17px 0;
+    margin-bottom: 17px !important;
 
     .container {
         padding-top: 27px;

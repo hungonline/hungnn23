@@ -51,8 +51,7 @@
                     padding: 0 16px;
                 }
 
-                &.active,
-                &:hover {
+                &.active {
                     a {
                         font-weight: bold;
                         color: var(--colormain);

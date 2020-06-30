@@ -142,14 +142,13 @@
             }
 
             &:hover {
-                background: #f7f7f7;
                 border: 1px solid var(--border);
 
             }
 
             &.minus {
-                font-size: 0;
-                padding: 0 10px;
+                // font-size: 0;
+                // padding: 0 10px;
 
                 &:hover {
                     overflow: visible;

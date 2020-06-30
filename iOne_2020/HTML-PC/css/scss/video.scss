@@ -716,7 +716,7 @@ body {
 
             a {
                 display: inline-block;
-                background: var(--colormain);
+                background: #222222;
                 width: 30px;
                 height: 30px;
                 text-align: center;
@@ -769,7 +769,8 @@ body {
             border-left-color: #4F4F4F;
         }
     }
+
     .top_detail .warp_video .detail_right .box-tag-topic .tag {
-        border: 1px solid #4F4F4F; 
+        border: 1px solid #4F4F4F;
     }
 }
