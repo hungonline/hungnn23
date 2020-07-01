@@ -212,12 +212,6 @@
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
-			},
-			breakpoints: {
-				480: {
-					loop: true,
-					slidesPerView: 1,
-				}
 			}
 		});
 
