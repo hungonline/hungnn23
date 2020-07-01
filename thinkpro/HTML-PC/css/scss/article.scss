@@ -1,5 +1,5 @@
-
 @import "var.scss";
+
 .list-article {
     .art_item {
         margin-bottom: 24px;
@@ -35,11 +35,13 @@
             padding: 0 16px;
 
             &.art_item_top {
-                padding: 0
+                .ava {
+                    margin-bottom: 16px;
+                }
             }
 
             .ava {
-                margin-bottom: 8px;
+                margin-bottom: 16px;
             }
 
             .content {
@@ -60,13 +62,16 @@
 
 
     }
-    .art_item_top{
+
+    .art_item_top {
         transition: 0.5s ease;
         padding: 16px;
+
         &:hover {
             box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
         }
     }
+
     .gird {
         display: flex;
         flex-wrap: wrap;
@@ -113,6 +118,7 @@
         .art_item.art_item_top {
             border-bottom: 0;
             margin-bottom: 16px;
+            padding: 0 16px;
 
             &::before {
                 content: "";

@@ -52,7 +52,7 @@
 				$('body').removeClass('open-fillter');
 			}
 		});
-		$('.sort-mobile .apply').click(function () {
+		$('.sort-mobile .apply,.back_step .apply,.catalogue_final .cancel').click(function () {
 			$('.sort-mobile .fillter').removeClass('active');
 			$('body').removeClass('open-fillter');
 		});
