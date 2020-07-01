@@ -85,12 +85,16 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
+.form-control,
 textarea,
 select {
   font-family: var(--font_main);
   font-size: 16px;
   width: 100%;
   transition: 0.4s ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 
   @include placeholder {
     color: var(--gray500);

@@ -275,7 +275,7 @@
 
 @media (max-width: 480px) {
     .suport-team {
-        bottom: 0;
+        bottom: 80px;
         top: 0;
         width: 100%;
         left: 0;
@@ -286,7 +286,7 @@
         &.active {
             .content-chat {
                 .scrollbar-inner {
-                    max-height: calc(100vh - 220px);
+                    max-height: calc(100vh - 300px);
                 }
             }
         }

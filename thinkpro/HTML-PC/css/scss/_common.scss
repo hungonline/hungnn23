@@ -464,7 +464,8 @@ main {
             padding: 10px;
 
             .ava {
-                height: 180px !important;
+                height: 160px;
+                padding-bottom: 0;
 
                 .status {
                     font-size: 10px;
@@ -475,10 +476,19 @@ main {
             }
 
             .content {
-                .price {
-                    strong {
-                        font-size: 14px;
-                    }
+                .date {
+                    font-weight: 400
+                }
+
+                .name {
+                    font-size: 14px;
+                    height: 36px;
+                }
+            }
+
+            .price {
+                strong {
+                    font-size: 14px;
                 }
             }
         }
