@@ -217,9 +217,9 @@
 
 		var swiperProduct = new Swiper('.product-slide .swiper-container', {
 			slidesPerView: 5,
-			// autoplay: {
-			// 	delay: 6000,
-			// },
+			autoplay: {
+				delay: 6000,
+			},
 			navigation: {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
