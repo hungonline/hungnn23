@@ -177,9 +177,9 @@
 		});
 		var galleryTop2 = new Swiper('.fs-aslide__left .gallery-top', {
 			loopedSlides: 5,
-			autoplay: {
-				delay: 5000,
-			},
+			// autoplay: {
+			// 	delay: 5000,
+			// },
 			thumbs: {
 				swiper: galleryThumbs2,
 			},
@@ -356,6 +356,13 @@
 			$(this).addClass('active');
 		});
 
+		$('.col_left .catalogue').find('h3').click(function () {
+			if (!$(this).hasClass('active')) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
 		$('.view-full a').click(function (e) {
 			e.preventDefault();
 			if ($('.content-danhgia').hasClass('has-toggle')) {

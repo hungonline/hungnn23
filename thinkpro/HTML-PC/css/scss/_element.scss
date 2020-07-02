@@ -13,7 +13,7 @@
     &__left {
         position: relative;
         border: 1px solid var(--gray200);
-        border-radius: 6px;
+        border-radius: 8px;
         overflow: hidden;
 
         .thumb_5x3 {
@@ -44,7 +44,11 @@
                 color: #fff;
                 line-height: 1.5;
                 cursor: pointer;
-                border-right: 1px solid var(--gray200);
+                border-left: 1px solid var(--gray200);
+
+                &:first-child {
+                    border-left: 0;
+                }
 
                 &::before {
                     content: "";
@@ -1295,6 +1299,10 @@
     .catalogue-wrap {
         top: 70px;
 
+        .back_step {
+            display: none
+        }
+
         .scrollbar-inner {
             max-height: 70vh;
         }
@@ -1744,9 +1752,6 @@
     &__list {
         display: none;
 
-        &.show {
-            display: block;
-        }
     }
 
     h3 {
@@ -1770,6 +1775,10 @@
         &.active {
             &::before {
                 content: '\ea70';
+            }
+
+            &+.catalogue__list {
+                display: block
             }
         }
     }

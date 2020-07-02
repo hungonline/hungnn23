@@ -1,5 +1,17 @@
 @media only screen and (max-width: 2400px) and (min-width: 1600px) {}
 
+@media only screen and (max-width: 1024px) and (min-width: 700px) {
+    footer {
+        padding: 30px 0;
+    }
+
+    .container,
+    .container-fluid {
+        padding: 0 30px;
+    }
+
+}
+
 @media (min-width: 1200px) {
 
 
@@ -27,9 +39,6 @@
 }
 
 @media (max-width: 1254px) {
-    main {
-        overflow: hidden;
-    }
 
     .fs-header {
         .f-hdtop {
@@ -172,6 +181,7 @@
 
     main {
         padding-top: 16px;
+        overflow: hidden;
     }
 
     main.page-home {

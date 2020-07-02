@@ -1,9 +1,8 @@
-
-
-.sticky_zindex{
+.sticky_zindex {
     background: #fff;
     z-index: 998;
 }
+
 .fs-header {
     z-index: 998;
 
@@ -12,6 +11,7 @@
         z-index: 10;
         background: var(--white);
         border-bottom: 1px solid var(--gray100);
+
         .f-wrap {
             height: 72px;
             display: flex;
@@ -461,6 +461,7 @@
                     border: 1px solid var(--gray200);
                     background: var(--gray50);
                     outline: 0;
+                    appearance: none;
 
                     &:focus,
                     &:active {
@@ -636,35 +637,42 @@
                 }
             }
         }
-        &.blog{
-            .container{
+
+        &.blog {
+            .container {
                 max-width: 100%;
                 padding: 0 42px;
             }
-            .f-wrap{
+
+            .f-wrap {
                 justify-content: space-between;
                 flex-wrap: wrap;
             }
-            .main-menu{
-                &>li{
+
+            .main-menu {
+                &>li {
                     display: inline-block;
                     margin: 0 23px;
                     position: relative;
-                    &>a{
-                        font-size: 16px;font-weight: bold;
+
+                    &>a {
+                        font-size: 16px;
+                        font-weight: bold;
                         line-height: 72px;
                         display: block;
                     }
-                    .level2{
+
+                    .level2 {
                         position: absolute;
                         background: #fff;
-                        box-shadow: 0px 2px 8px rgba(0,0,0,0.25);
+                        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
                         border-radius: 8px;
                         min-width: 300px;
                         right: -20px;
                         display: none;
-                        ul{
-                            &::before{
+
+                        ul {
+                            &::before {
                                 width: 13px;
                                 height: 13px;
                                 border: 1px solid var(--gray100);
@@ -678,38 +686,51 @@
                                 -ms-transform: rotate(225deg);
                                 transform: rotate(225deg);
                             }
-                            li{
-                                a{
-                                    font-size: 16px;font-weight: bold;
+
+                            li {
+                                a {
+                                    font-size: 16px;
+                                    font-weight: bold;
                                     display: block;
-                                    padding: 15px 16px;border-radius: 0 0 8px 8px;
+                                    padding: 15px 16px;
+                                    border-radius: 0 0 8px 8px;
                                 }
-                                &.active{
-                                    a{ background: #F3F5F8;}
-                                 }
+
+                                &.active {
+                                    a {
+                                        background: #F3F5F8;
+                                    }
+                                }
                             }
                         }
 
                     }
-                    &.active{
-                        &>a{
+
+                    &.active {
+                        &>a {
                             color: var(--color_main);
                         }
                     }
-                    &:hover{
-                        .level2{display: block;}
+
+                    &:hover {
+                        .level2 {
+                            display: block;
+                        }
                     }
                 }
             }
-            .fs-hdmn{
-                flex-grow:inherit;
-                &>li{
-                    .wrap-fill{
+
+            .fs-hdmn {
+                flex-grow: inherit;
+
+                &>li {
+                    .wrap-fill {
                         transform: translate(0%, 0);
                         right: 0;
                         left: inherit;
-                        ul{
-                            &::before{
+
+                        ul {
+                            &::before {
                                 right: 20px;
                                 left: inherit;
                             }
@@ -717,9 +738,10 @@
                     }
                 }
             }
+
             @media (max-width: 1200px) {
-                .main-menu{
-                    &>li{
+                .main-menu {
+                    &>li {
                         margin: 0 15px;
                     }
                 }
