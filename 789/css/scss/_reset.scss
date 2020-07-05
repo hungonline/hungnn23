@@ -117,6 +117,9 @@ select {
 
 .container{
   overflow: hidden;
+  &.visible{
+    overflow: visible;
+  }
 }
 .min-container{
   max-width: 900px;margin: 0 auto;overflow: hidden;
@@ -297,6 +300,7 @@ html {
   transition: 0.4s ease;
   color: #fff;
   font-weight: 600;
+  display: inline-block;
   height: 50px;
   line-height: 50px;
   padding: 0 70px;

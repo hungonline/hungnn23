@@ -124,6 +124,17 @@
 			}
 		});
 
+		var swipertinhnang = new Swiper('.slide-setting .swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+
 		var swiperlinhvuc = new Swiper('.slide-covan .swiper-container', {
 			slidesPerView: 3,
 			spaceBetween: 50,
@@ -144,7 +155,24 @@
 				},
 			},
 		});
-		
+		var swiperslidedethi = new Swiper('.slide_dethi .swiper-container', {
+			slidesPerView: 2,
+			slidesPerColumn: 2,
+			spaceBetween: 30,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				767: {
+					slidesPerColumn: 1,
+					slidesPerView: 1,
+				},
+				992: {
+					slidesPerColumn: 1,
+				},
+			},
+		  });
 	}
 
 
