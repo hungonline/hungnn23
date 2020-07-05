@@ -6,8 +6,6 @@
         height: 50px;
     }
 
-    .logo {}
-
     .header-right {
         flex-grow: 8;
 
@@ -90,7 +88,118 @@
                 }
             }
         }
+        
     }
+    @media (max-width: 767px) {
+        position: sticky;
+        top: 0;
+        z-index: 98;
+        .all-menu-tablet{
+            display: block;
+        }
+    }
+    @media (max-width: 420px) { 
+        .header-right {
+            &>ul {
+                li {
+                    margin-left: 15px;
+                }
+
+                .setting {
+                    strong {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media (max-width: 340px) {
+        .logo {
+            width: 100px;
+        }
+
+        .header-right {
+            &>ul {
+                li {
+                    margin-left: 10px;
+                }
+            }
+        }
+        .setting{
+            .sub-menu{left: 0;}
+        }
+        
+    }
+
+}
+
+.all-menu-tablet {
+    float: left;
+    width: 40px;
+    height: 33px;
+    text-align: center;
+    margin-left: -10px;
+    margin-top: -10px;
+    cursor: pointer;
+    display: none;
+
+    .hamburger {
+        width: 20px;
+        height: 2px;
+        background: #333;
+        display: inline-block;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            width: 20px;
+            height: 2px;
+            background: #333;
+            position: absolute;
+            left: 0;
+        }
+
+        &:before {
+            top: 6px;
+        }
+
+        &:after {
+            top: 12px;
+        }
+    }
+
+    &.close-menu-tablet {
+        padding-top: 5px;
+
+        .hamburger {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                transform: rotate(-90deg);
+                -webkit-transform: rotate(-90deg);
+                top: 0;
+            }
+        }
+    }
+
+}
+.mask-content {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 92;
+    background: rgba(0,0,0,0.3);
 }
 
 .head-top {
@@ -229,5 +338,78 @@
                 display: block;
             }
         }
+    }
+    @media (max-width: 767px) {
+        display: block;
+        position: fixed;
+        z-index: 998;
+        width: 300px;
+        background: #fff;
+        left: 0;
+        top: 50px;
+        bottom: 0;
+        -webkit-transform: translate(-110%, 0);
+        -ms-transform: translate(-110%, 0);
+        transform: translate(-110%, 0);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+        text-align: left;
+        padding-left: 0;
+        &.show-all-menu{
+            transform: translate(0);
+        }
+        .container {
+            padding: 0;
+        }
+
+        .header-tab {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            ul {
+                display: block;width: 100%;
+                li {
+                    display: block;
+                    border-bottom: 1px solid rgba(204, 204, 204, 0.57);
+                    a {
+                        line-height: 40px;
+                        display: block;
+                        font-size: 15px;color: #333;
+                        &.active{
+                            color: #fff;font-weight: 500;
+                        }
+                    }
+                    &:hover,&:active{
+                        .lever2{
+                            position: static;background: #fff;
+                            li{
+                                padding-left: 15px;
+                                &:last-child{border-bottom: 0;}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .wrap-notifi {
+            position: absolute;
+            top: -47px;
+            right: 15px;
+            display: none;
+        }
+
+        .notifi {
+            color: #222;
+
+            .coutn {
+                display: inline-block;
+            }
+
+            span {
+                display: none;
+            }
+        }
+        
     }
 }

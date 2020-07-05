@@ -1528,6 +1528,15 @@ label.radio {
             margin: 15px 0 0 0;
         }
     }
+    @media (max-width: 380px) {
+        .page-item{margin: 0 3px;}
+    }
+    @media (max-width: 340px) {
+        .page-item{
+            margin: 0 2px;
+            a{font-size: 12px;}
+        }
+    }
 }
 
 .fa-spin {

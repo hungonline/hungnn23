@@ -71,6 +71,20 @@
 			$('body').removeClass('show-menu');
 		});
 
+        $(".all-menu-tablet").click(function () {
+            $(this).toggleClass("close-menu-tablet");
+        });
+        $(".all-menu").click(function () {
+            $(".mask-content").toggle();
+            $(".head-top").toggleClass("show-all-menu");
+        });
+        $(".mask-content").click(function () {
+            $(this).hide();
+            $(".all-menu").removeClass("close-menu-tablet");
+            $(".head-top").removeClass("show-all-menu");
+        });
+
+
 		$(".onclick-togle").click(function () {
 			if (!$(this).hasClass("active")) {
 				$(this).addClass("active");

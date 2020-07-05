@@ -14,7 +14,7 @@
 	.row-main {
 		&_col200 {
 			position: fixed;
-			top: 0;
+			top: 50px;
 			left: 0;
 			bottom: 0;
 			z-index: 22;
@@ -86,60 +86,6 @@
 }
 
 @media (max-width: 767px) {
-	.top_bar {
-		.header-right {
-			padding-right: 40px;
-		}
-	}
-
-	.head-top {
-		.container {
-			padding: 0;
-		}
-
-		.header-tab {
-			display: block;
-			overflow: hidden;
-
-			ul {
-				display: block;
-				overflow-x: scroll;
-				overflow-y: hidden;
-				-webkit-overflow-scrolling: touch;
-				white-space: nowrap;
-				-webkit-backface-visibility: hidden;
-				backface-visibility: hidden;
-				font-size: 0;
-
-				li {
-					a {
-						line-height: 35px;
-						display: inline-block;
-						font-size: 14px;
-					}
-				}
-			}
-		}
-
-		.wrap-notifi {
-			position: absolute;
-			top: -47px;
-			right: 15px;
-		}
-
-		.notifi {
-			color: #222;
-
-			.coutn {
-				display: inline-block;
-			}
-
-			span {
-				display: none;
-			}
-		}
-	}
-
 	.thong_ke_top .col-md-3 {
 		margin: 10px 0
 	}
@@ -158,22 +104,6 @@
 }
 
 @media (max-width: 420px) {
-	.top_bar {
-		.header-right {
-			&>ul {
-				li {
-					margin-left: 15px;
-				}
-
-				.setting {
-					strong {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-
 	.user-popup {
 		.up-file {
 			width: 100%;
@@ -199,21 +129,6 @@
 
 }
 
-@media (max-width: 340px) {
-	.top_bar {
-		.logo {
-			width: 100px;
-		}
-
-		.header-right {
-			&>ul {
-				li {
-					margin-left: 10px;
-				}
-			}
-		}
-	}
-}
 
 @media \0screen\,screen\9 {}
 

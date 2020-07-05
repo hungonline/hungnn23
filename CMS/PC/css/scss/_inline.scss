@@ -295,7 +295,7 @@ body.show-menu {
         transform: translate(0%);
         background: #fff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-        padding-top: 20px;
+        padding: 15px 10px 0 10px;
         width: 300px;
         overflow-y: scroll;
         margin-bottom: 0;
@@ -432,6 +432,14 @@ body.show-menu {
 
                 .checkmark {
                     background: #fff;
+                }
+            }
+        }
+        @media (max-width: 380px) {
+            .form-down{
+                width: 190px;
+                .check-list{
+                    width: 100%;
                 }
             }
         }
