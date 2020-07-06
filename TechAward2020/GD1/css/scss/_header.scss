@@ -269,8 +269,9 @@
             li {
                 display: inline-block;
                 margin-left: 20px;
+                position: relative;
 
-                a {
+                &>a {
                     color: #fff;
                     font-family: $font1;
                     font-size: 16px;
@@ -305,6 +306,42 @@
                     }
                 }
 
+                .level2 {
+                    position: absolute;
+                    background: #021641;
+                    padding: 8px 16px;
+                    text-align: left;
+                    min-width: 170px;
+                    left: 10px;
+                    display: none;
+
+                    a {
+                        display: block;
+                        padding: 8px 0;
+                        color: #FFFFFF;
+
+                        &.active,
+                        &:hover {
+                            color: #FFE74C;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .level2 {
+                        display: block
+                    }
+
+                    &::before {
+                        content: "";
+                        background: #FFE74C;
+                        position: absolute;
+                        height: 3px;
+                        right: 0;
+                        bottom: 0px;
+                        left: 10px;
+                    }
+                }
             }
         }
     }
