@@ -378,6 +378,8 @@
             width: 100%;
             margin-bottom: 100px;
             display: none;
+            padding: 0;
+            border: 0;
 
             &__detail {
                 width: 420px;
@@ -657,6 +659,16 @@
                     .info-product {
                         display: block
                     }
+                }
+            }
+        }
+    }
+
+    @media (max-width:360px) {
+        .slide_binhchon__mobile {
+            .items {
+                .ava {
+                    width: 140px;
                 }
             }
         }
