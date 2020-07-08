@@ -1190,9 +1190,13 @@
 <script>
     function scrollBar() {
         var scrollContainer = $(".scrollbar-inner");
-        if (scrollContainer.length > 0) {
-        scrollContainer.scrollbar();
+            if (scrollContainer.length > 0) {
+            scrollContainer.scrollbar();
         }
     }
+
+    $(function () {
+        scrollBar();
+    });
 </script>
 <!-- /build:script2 -->
