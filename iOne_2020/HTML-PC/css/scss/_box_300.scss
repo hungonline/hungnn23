@@ -61,3 +61,40 @@
     }
 
 }
+
+.box-300-v1 {
+    background: #F6F7FB;
+    padding: 18px 16px 16px 16px;
+
+    .title-box-category {
+        margin-bottom: 16px;
+    }
+
+    .item-news {
+        border-bottom: 1px solid #E5E5E5;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+
+        .description {
+            margin-bottom: 8px;
+        }
+
+        &.full-thumb {
+            .title-news {
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .title-news {
+            margin-bottom: 0;
+            font-size: 16px
+        }
+
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}

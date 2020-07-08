@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Regular.woff2') format('woff2'),
+    url('fonts/Averta-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Semibold.woff2') format('woff2'),
+    url('fonts/Averta-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Bold.eot');
+  src: url('fonts/Averta-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Averta-Bold.woff2') format('woff2'),
+    url('fonts/Averta-Bold.woff') format('woff'),
+    url('fonts/Averta-Bold.ttf') format('truetype'),
+    url('fonts/Averta-Bold.svg#Averta-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+html,
+body {
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  color: #333;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-size: 11pt;
+  font-family: 'Averta';
+}
+
+.txt_center {
+  text-align: center;
+}
+
+.txt_right {
+  text-align: right;
+}
+
+.txt_left {
+  text-align: left;
+}
+
+.agray {
+  color: #666
+}
+
+img {
+  border: 0;
+  font-size: 0;
+  line-height: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  outline: 1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pad70 {
+  padding: 1cm 0.5cm;
+}
+
+.mb2 {
+  margin-bottom: 0.2cm;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.head-print {
+  font-size: 13px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.head-print .item:nth-child(2) {
+  text-align: right
+}
+
+.tr-print .td {
+  padding: 10px 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  width: 40%;
+  font-size: 13px;
+}
+
+.tr-print .td.col-20 {
+  width: 20%;
+}
+
+.tr-print .td:first-child {
+  padding-left: 0;
+}
+
+.tr-print .td:last-child {
+  border-right: 0
+}
+
+.tr-print.none-border-top .td {
+  border-top: 0
+}
+
+/* PRINT A4 */
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #eaeaea;
+}
+
+page[size="A4"] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+page[size="A4"][layout="landscape"] {
+  width: 29.7cm;
+  height: 21cm;
+}
+
+page[size="A3"] {
+  width: 29.7cm;
+  height: 42cm;
+}
+
+page[size="A3"][layout="landscape"] {
+  width: 42cm;
+  height: 29.7cm;
+}
+
+page[size="A5"] {
+  width: 14.8cm;
+  height: 21cm;
+}
+
+page[size="A5"][layout="landscape"] {
+  width: 21cm;
+  height: 14.8cm;
+}
+
+@media print {
+
+  body,
+  page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+/* END PRINT A4 */
+.table-responsive {
+  min-height: .01%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.table thead th {
+  background: #393872;
+  color: #fff;
+  font-size: 9pt;
+  padding: 0.3cm;
+}
+
+.table thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.table thead th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+.table th,
+.table td {
+  padding: 0.3cm;
+  line-height: 1.42857143;
+  vertical-align: top;
+}
+
+.table td {
+  background: #def1f5
+}
+
+@media (max-width: 768px) {}
+
+@media print {
+  .pagebreak {
+    page-break-before: always;
+  }
+}

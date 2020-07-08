@@ -1186,7 +1186,13 @@
 <!-- /build:content -->
 
 <!-- build:script2 -->
+<script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
 <script>
-    
+    function scrollBar() {
+        var scrollContainer = $(".scrollbar-inner");
+        if (scrollContainer.length > 0) {
+        scrollContainer.scrollbar();
+        }
+    }
 </script>
 <!-- /build:script2 -->

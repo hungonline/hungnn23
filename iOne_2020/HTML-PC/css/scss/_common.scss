@@ -761,6 +761,18 @@ h6 {
     font-size: 14px !important
 }
 
+.user_status {
+    z-index: 900 !important;
+}
+
+.block_not_login {
+    width: calc(100% - 100px) !important;
+
+    input {
+        height: 42px !important;
+    }
+}
+
 .box_comment_vne,
 .box_comment_ione {
     margin-bottom: 24px !important;

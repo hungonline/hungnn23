@@ -297,6 +297,7 @@
         slideSwiper();
         magnificPopup();
         onAccordion();
+        cssVars({});
     });
     window.onscroll = function () {
         myFunction()

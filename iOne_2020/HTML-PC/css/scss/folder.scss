@@ -688,6 +688,32 @@
         padding-bottom: 10px;
     }
 
+    &_2 {
+        .quiz-new3 {
+            .gird_2 {
+                margin-bottom: 20px;
+            }
+
+            .gird {
+
+                .item.active,
+                .item:hover {
+                    &::before {
+                        right: 10px;
+                        top: 0px;
+                    }
+
+                    &::after {
+                        right: 18px;
+                        top: 4px;
+                    }
+                }
+            }
+
+        }
+    }
+
+
     .swiper-button-prev,
     .swiper-button-next {
         top: 50%;

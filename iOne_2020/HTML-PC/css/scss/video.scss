@@ -1,6 +1,7 @@
 @import "var.scss";
 @import "scrollbar-ss.scss";
 @import "lightbox.scss";
+@import "scrollbar.scss";
 
 body {
     background: #F4F4F4;
@@ -552,7 +553,13 @@ body {
                         margin-bottom: 0;
                         align-items: center;
 
-                        span {
+                        .comment {
+                            span:last-child {
+                                margin-right: 0;
+                            }
+                        }
+
+                        span:not(:last-child) {
                             margin-right: 10px;
                         }
                     }
