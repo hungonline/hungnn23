@@ -303,8 +303,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .form-group {
   margin-bottom: 15px;
   position: relative;
-  &__button{
-    .btn{
+
+  &__button {
+    .btn {
       position: absolute;
       width: auto;
       font-weight: 400;
@@ -315,13 +316,15 @@ input[type="search"]::-webkit-search-results-decoration {
       right: 0;
       font-size: 13px;
       padding: 0 10px;
-      svg{
-        fill: #fff!important;
+
+      svg {
+        fill: #fff !important;
         margin-right: 5px;
-        position: static!important;
+        position: static !important;
       }
     }
   }
+
   &.capcha {
     .img_capcha {
       position: absolute;
@@ -330,6 +333,7 @@ input[type="search"]::-webkit-search-results-decoration {
       top: 2px;
       border-right: 1px solid #EBEBEB;
     }
+
     .form-control {
       padding-left: 100px;
     }
@@ -641,6 +645,31 @@ html {
   height: 16px;
   vertical-align: middle;
   fill: currentColor;
+
+  &.refresh {
+    -webkit-animation: spin 2.5s linear infinite;
+    -moz-animation: spin 2.5s linear infinite;
+    animation: spin 2.5s linear infinite;
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .sticky {
@@ -681,10 +710,12 @@ html {
 .color_green2 {
   color: var(--green2)
 }
-.underline{
+
+.underline {
   text-decoration: underline;
   text-underline-position: under;
 }
+
 .red {
   color: #DE0028;
 }

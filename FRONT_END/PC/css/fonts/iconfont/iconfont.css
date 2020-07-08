@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1591433204427');
-	src: url('iconfont.eot?#iefix-1591433204427') format('embedded-opentype'),
-		url('iconfont.woff2?1591433204427') format('woff2'),
-		url('iconfont.woff?1591433204427') format('woff'),
-		url('iconfont.ttf?1591433204427') format('truetype');
+	src: url('iconfont.eot?1594173994091');
+	src: url('iconfont.eot?#iefix-1594173994091') format('embedded-opentype'),
+		url('iconfont.woff2?1594173994091') format('woff2'),
+		url('iconfont.woff?1594173994091') format('woff'),
+		url('iconfont.ttf?1594173994091') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -220,64 +220,68 @@ Glyphs list
 			content: '\ea2f';
 		}
 
-		 .iconfont-review:before {
+		 .iconfont-refresh:before {
 			content: '\ea30';
 		}
 
-		 .iconfont-rss:before {
+		 .iconfont-review:before {
 			content: '\ea31';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-rss:before {
 			content: '\ea32';
 		}
 
-		 .iconfont-send_bank:before {
+		 .iconfont-search:before {
 			content: '\ea33';
 		}
 
-		 .iconfont-smartphone:before {
+		 .iconfont-send_bank:before {
 			content: '\ea34';
 		}
 
-		 .iconfont-sosanh:before {
+		 .iconfont-smartphone:before {
 			content: '\ea35';
 		}
 
-		 .iconfont-star-full:before {
+		 .iconfont-sosanh:before {
 			content: '\ea36';
 		}
 
-		 .iconfont-star-half:before {
+		 .iconfont-star-full:before {
 			content: '\ea37';
 		}
 
-		 .iconfont-superscript2:before {
+		 .iconfont-star-half:before {
 			content: '\ea38';
 		}
 
-		 .iconfont-thutuc:before {
+		 .iconfont-superscript2:before {
 			content: '\ea39';
 		}
 
-		 .iconfont-tietkiem:before {
+		 .iconfont-thutuc:before {
 			content: '\ea3a';
 		}
 
-		 .iconfont-upfile:before {
+		 .iconfont-tietkiem:before {
 			content: '\ea3b';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-upfile:before {
 			content: '\ea3c';
 		}
 
-		 .iconfont-vector:before {
+		 .iconfont-user:before {
 			content: '\ea3d';
 		}
 
-		 .iconfont-visa:before {
+		 .iconfont-vector:before {
 			content: '\ea3e';
+		}
+
+		 .iconfont-visa:before {
+			content: '\ea3f';
 		}
 
 		
