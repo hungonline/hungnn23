@@ -87,8 +87,14 @@ p {
 }
 
 .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  clear: both;
 }
 
 .pad70 {
@@ -109,6 +115,9 @@ ul li {
 
 .head-print {
   font-size: 13px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
@@ -142,6 +151,58 @@ ul li {
 .tr-print.none-border-top .td {
   border-top: 0
 }
+
+.tr-print.end .td {
+  width: 75%;
+  padding: 0.2cm 0.3cm;
+  text-align: right;
+  font-size: 12pt;
+}
+
+.tr-print.end .td.col-30 {
+  width: 25%;
+}
+
+.flex-quydinh {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.3cm 0;
+  font-size: 13px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.3cm;
+}
+
+.flex-quydinh .td {
+  width: 35%;
+}
+
+.flex-quydinh .content {
+  width: 65%;
+  color: #666;
+  font-style: italic;
+  padding-left: 30px;
+}
+
+.flex-footer {
+  font-size: 13px;
+}
+
+.flex-footer h3 {
+  margin-bottom: 0.2cm;
+  font-size: 13px;
+}
+
+.flex-footer .td {
+  width: 23%;
+}
+
+.flex-footer .td:first-child {
+  width: 31%;
+}
+
+.flex-footer {}
 
 /* PRINT A4 */
 page {
@@ -200,7 +261,7 @@ page[size="A5"][layout="landscape"] {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .table thead th {
@@ -208,6 +269,7 @@ page[size="A5"][layout="landscape"] {
   color: #fff;
   font-size: 9pt;
   padding: 0.3cm;
+  border-right: 1px solid #fff;
 }
 
 .table thead th:first-child {
@@ -220,14 +282,25 @@ page[size="A5"][layout="landscape"] {
 
 .table th,
 .table td {
-  padding: 0.3cm;
+  padding: 0.2cm 0.3cm;
   line-height: 1.42857143;
   vertical-align: top;
 }
 
 .table td {
-  background: #def1f5
+  background: #def1f5;
+  border-right: 1px solid #fff;
 }
+
+.table .end td {
+  background: none;
+  padding: 0.1cm 0.3cm
+}
+
+.table .bg-white td {
+  background: none;
+}
+
 
 @media (max-width: 768px) {}
 
