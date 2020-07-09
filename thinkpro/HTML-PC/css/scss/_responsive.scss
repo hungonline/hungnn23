@@ -140,6 +140,14 @@
         display: none
     }
 
+    .list-product.show-more {
+        .items {
+            .more {
+                display: block
+            }
+        }
+    }
+
     .breadcrumb {
         margin-bottom: 20px;
     }

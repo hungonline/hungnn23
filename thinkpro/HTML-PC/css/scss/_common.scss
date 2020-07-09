@@ -493,6 +493,14 @@ main {
             }
         }
 
+        &.show-more {
+            .items {
+                .more {
+                    margin: 0 -5px -10px -5px;
+                }
+            }
+        }
+
         &.list-product_5item {
             .items {
                 &:nth-child(5) {
@@ -504,6 +512,25 @@ main {
         &.gird_4col {
             .items {
                 width: 50%;
+            }
+        }
+    }
+
+    &.show-more {
+        .more {
+            position: static;
+            transform: translateY(0%);
+            display: block;
+            border: 0;
+            margin: 0 -16px -16px -16px;
+        }
+
+        .items {
+            &:hover {
+                .more {
+                    transform: translateY(0%);
+                }
+
             }
         }
     }
