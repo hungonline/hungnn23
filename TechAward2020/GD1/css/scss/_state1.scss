@@ -424,11 +424,15 @@
                 ul {
                     li {
                         display: flex;
+                        flex-wrap: wrap;
                         margin-bottom: 8px;
 
                         .td {
+                            width: 60%;
+
                             &:first-child {
                                 width: 40%;
+                                padding-right: 10px;
                             }
                         }
                     }
