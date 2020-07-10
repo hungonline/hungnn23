@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "file": "_icon-vne.css",
-  "sources": [
-    "_icon-vne.scss"
-  ],
-  "mappings": "AACA,UAAU;EAAC,WAAW,EAAC,gBAAiB;EAAC,GAAG,EAAC,0DAAG;EAAwD,GAAG,EAAC,gEAAG,CAA8D,2BAAM,EAAsB,0DAAG,CAAwD,kBAAM,EAAa,2DAAG,CAAyD,cAAM,EAAS,yEAAG,CAAuE,aAAM;EAAQ,WAAW,EAAC,MAAO;EAAC,UAAU,EAAC,MAAO",
-  "names": []
-}
