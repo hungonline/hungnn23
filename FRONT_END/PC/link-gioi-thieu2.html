@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=vietnamese" rel="stylesheet">
     
 <link href="css/user.css" rel="stylesheet" type="text/css" />
+<link href="css/order.css" rel="stylesheet" type="text/css" />
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <!-- build:head2 -->
@@ -551,35 +552,60 @@
                     </div>
                 </header>
                 <ul class="lever1">
-                    <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#user"></use></svg>Thông tin tài khoản</a></li>
-                    <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#thutuc"></use></svg>Quản lý đơn hàng</a></li>
-                    <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#notifi1"></use></svg>Thông báo của tôi</a></li>
-                    <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#address2"></use></svg>Sổ địa chỉ</a></li>
-                    <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#heart2"></use></svg>Sản phẩm yêu thích</a></li>
-                    <li><a href="/" title=""><img class="icon-us" src="images/icons/u-xu.svg">Quản lý U-Xu của tôi</a></li>
-                    <li>
-                        <a href="/" title=""><img class="icon-us" src="images/icons/affiliate.svg">Tài khoản Affiliate của tôi</a>
-                        <ul class="lever2">
-                            <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#link2"></use></svg>Tạo link giới thiệu</a></li>
-                            <li class="active"><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#thutuc"></use></svg>Quản lý đơn hàng Affiliate</a></li>
-                            <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#atm-card"></use></svg>Thông tin thanh toán</a></li>
-                            <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#buy"></use></svg>Đối soát hoa hồng</a></li>
-                            <li><a href="/" title=""><svg class="icon-us"><use xlink:href="images/icons/icon.svg#notifi3"></use></svg>Giới thiệu về US Affiliate</a></li>
-                        </ul> 
+                    <li><a href="/" title=""><svg class="icon-us">
+                                <use xlink:href="images/icons/icon.svg#user"></use>
+                            </svg>Thông tin tài khoản</a></li>
+                    <li><a href="/" title=""><svg class="icon-us">
+                                <use xlink:href="images/icons/icon.svg#thutuc"></use>
+                            </svg>Quản lý đơn hàng</a></li>
+                    <li><a href="/" title=""><svg class="icon-us">
+                                <use xlink:href="images/icons/icon.svg#notifi1"></use>
+                            </svg>Thông báo của tôi</a></li>
+                    <li><a href="/" title=""><svg class="icon-us">
+                                <use xlink:href="images/icons/icon.svg#address2"></use>
+                            </svg>Sổ địa chỉ</a></li>
+                    <li><a href="/" title=""><svg class="icon-us">
+                                <use xlink:href="images/icons/icon.svg#heart2"></use>
+                            </svg>Sản phẩm yêu thích</a></li>
+                    <li><a href="/" title=""><img class="icon-us" src="images/icons/u-xu.svg">Quản lý U-Xu của tôi</a>
                     </li>
-                </ul>      
-                
+                    <li>
+                        <a href="/" title=""><img class="icon-us" src="images/icons/affiliate.svg">Tài khoản Affiliate
+                            của tôi</a>
+                        <ul class="lever2">
+                            <li><a href="/" title=""><svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#link2"></use>
+                                    </svg>Tạo link giới thiệu</a></li>
+                            <li class="active"><a href="/" title=""><svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#thutuc"></use>
+                                    </svg>Quản lý đơn hàng Affiliate</a></li>
+                            <li><a href="/" title=""><svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#atm-card"></use>
+                                    </svg>Thông tin thanh toán</a></li>
+                            <li><a href="/" title=""><svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#buy"></use>
+                                    </svg>Đối soát hoa hồng</a></li>
+                            <li><a href="/" title=""><svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#notifi3"></use>
+                                    </svg>Giới thiệu về US Affiliate</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
             </div>
             <div class="sidebar2 user_management">
                 <div class="detail-dh">
                     <div class="head flex">
                         <h2 class="name"><strong>Quản lý đơn hàng giới thiệu</strong>
-                    </h2></div>
+                        </h2>
+                    </div>
                     <div class="affiliate_fillter flex">
                         <div class="onclick">
                             <a href="javascript:;">
                                 <span>Trạng thái đơn hàng</span>
-                                <svg class="icon-us"><use xlink:href="images/icons/icon.svg#down"></use></svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#down"></use>
+                                </svg>
                             </a>
                             <div class="check-list" style="display: none;">
                                 <div class="options">
@@ -587,31 +613,35 @@
                                     <a href="javascript:;" class="checked">Đã thanh toán</a>
                                     <a href="javascript:;" class="">Hàng đã về thanh toán</a>
                                     <a href="javascript:;" class="">Đã hủy</a>
-                                </div>                                              
-                            </div>                           
-                        </div>                        
+                                </div>
+                            </div>
+                        </div>
                         <div class="onclick">
                             <a href="javascript:;">
                                 <span>Tìm kiếm theo loại ngày</span>
-                                <svg class="icon-us"><use xlink:href="images/icons/icon.svg#down"></use></svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#down"></use>
+                                </svg>
                             </a>
                             <div class="check-list" style="display: none;">
                                 <div class="options">
                                     <a href="javascript:;" class="">Tìm kiếm theo loại ngày</a>
                                     <a href="javascript:;" class="checked">Ngày đặt hàng</a>
                                     <a href="javascript:;" class="">Ngày giao hàng</a>
-                                </div>                                              
-                            </div>                           
-                        </div> 
+                                </div>
+                            </div>
+                        </div>
                         <div class="date-option flex">
                             <div class="datepicker-wrap">
-                                <input id="datepicker" class="datepicker-input form-control" type="text" placeholder="Từ ngày...">
+                                <input id="datepicker" class="datepicker-input form-control" type="text"
+                                    placeholder="Từ ngày...">
                             </div>
                             <div class="datepicker-wrap">
-                                <input id="datepicker" class="datepicker-input form-control" type="text" placeholder="Đến ngày...">
+                                <input id="datepicker" class="datepicker-input form-control" type="text"
+                                    placeholder="Đến ngày...">
                             </div>
-                            <a class="btn btn-search" href="/">Tìm kiếm</a>                
-                        </div>   
+                            <a class="btn btn-search" href="/">Tìm kiếm</a>
+                        </div>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
@@ -641,12 +671,243 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>                
-    
-    
-                </div>   
-            </div>       
-    
+                    </div>
+
+                    <div class="mb30"></div>
+                    <div class="head flex">
+                        <h2 class="name"><strong>Thông tin thanh toán</strong>
+                        </h2>
+                    </div>
+                    <div class="affiliate_thanhtoan center">
+                        <h3 class="mb15 color_green txt_16">Bạn chưa cung cấp thông tin thanh toán</h3>
+                        <p class="mb20">Vui lòng bấm nút "Thêm thông tin thanh toán" bên dưới để US Express có thể chi
+                            trả hoa hồng giới
+                            thiệu cho bạn.</p>
+                        <a class="btn btn_radius" href="/">Thêm thông tin thanh toán</a>
+                        <div class="notifi">
+                            <svg class="icon-us">
+                                <use xlink:href="images/icons/icon.svg#checked"></use>
+                            </svg>
+                            Thông tin thanh toán của bạn đã được cập nhật.</div>
+                        <ul class="info">
+                            <li>
+                                <div class="td">Chủ tài khoản:</div>
+                                <div class="td2">Phạm Văn Chiến</div>
+                            </li>
+                            <li>
+                                <div class="td">Số tài khoản:</div>
+                                <div class="td2">0011004115336</div>
+                            </li>
+                            <li>
+                                <div class="td">Ngân hàng:</div>
+                                <div class="td2">Vietcombank</div>
+                            </li>
+                            <li>
+                                <div class="td">Chi nhánh:</div>
+                                <div class="td2">Sở giao dịch</div>
+                            </li>
+                            <li>
+                                <div class="td">&nbsp;</div>
+                                <div class="td2"><a class="btn" href="/">Cập nhật</a></div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="mb30"></div>
+                    <div class="head flex">
+                        <h2 class="name"><strong>Đối soát thanh toán hoa hồng</strong>
+                        </h2>
+                    </div>
+                    <p class="mb30 txt_13">Hiện tại bạn chưa có thông tin đối soát nào.</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Tháng chốt</br>thanh toán</th>
+                                    <th>Tổng tiền hàng</br>tại Mỹ <svg class="icon-us">
+                                            <use xlink:href="images/icon-us.svg#icon-information-button"></use>
+                                        </svg></th>
+                                    <th>Tổng tiền</br>hoa hồng</th>
+                                    <th class="tk">Tài khoản</th>
+                                    <th class="status">Trạng thái</br>thanh toán</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tháng 07/2019</br><a class="color_green2" href="/">Chi tiết</a></td>
+                                    <td>$979.99</br><span class="price">23,450,000 <em>đ</em></span></td>
+                                    <td><strong>3,450,000 đ</strong></td>
+                                    <td>
+                                        Phạm Văn Chiến</br>
+                                        STK: 0011004115336</br>
+                                        Ngân hàng: Vietcombank</br>
+                                        Chi nhánh: Sở giao dịch
+                                    </td>
+                                    <td>Chưa thanh toán</br><em>Dự kiến:</br>15-20/08/2019</em></td>
+                                </tr>
+                                <tr>
+                                    <td>Tháng 07/2019</br><a class="color_green2" href="/">Chi tiết</a></td>
+                                    <td>$979.99</br><span class="price">23,450,000 <em>đ</em></span></td>
+                                    <td><strong>3,450,000 đ</strong></td>
+                                    <td>
+                                        Phạm Văn Chiến</br>
+                                        STK: 0011004115336</br>
+                                        Ngân hàng: Vietcombank</br>
+                                        Chi nhánh: Sở giao dịch
+                                    </td>
+                                    <td>Đã thanh toán</br>15/07/2019</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="mb30"></div>
+                    <div class="head flex">
+                        <h2 class="name"><strong>Chi tiết đối soát hoa hồng - Tháng 07/2019</strong></h2>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Mã đơn hàng</th>
+                                    <th>Trạng thái</th>
+                                    <th>Ngày đặt hàng</th>
+                                    <th>Ngày nhận hàng</th>
+                                    <th>Tiền hàng tại Mỹ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="color_green2">UAM-9C12345</td>
+                                    <td>Hàng đang về Việt Nam</td>
+                                    <td>19/07/2019</td>
+                                    <td style="color: #666">Dự kiến</br>31/07/2019</td>
+                                    <td>$979.99</br><strong class="price">23,450,000 <em>đ</em></strong></td>
+                                </tr>
+                                <tr>
+                                    <td class="color_green2">UAM-9C12345</td>
+                                    <td>Đã nhận hàng</td>
+                                    <td>19/07/2019</td>
+                                    <td>31/07/2019</td>
+                                    <td>$979.99</br><strong class="price">23,450,000 <em>đ</em></strong></td>
+                                </tr>
+                                <tr class="price_all">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Tổng tiền hàng tại Mỹ</td>
+                                    <td>$979.99</br><strong class="price">23,450,000 <em>đ</em></strong></td>
+                                </tr>
+                                <tr class="price_all">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Tổng tiền hoa hồng
+                                        <a class="color_999">
+                                            <svg class="icon-us">
+                                                <use xlink:href="images/icons/icon.svg#notifi3"></use>
+                                            </svg>
+                                        </a> </br>
+                                        (tạm tính *)</td>
+                                    <td><strong class="price">23,450,000 <em>đ</em></strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="affiliate_note color_666">
+                        <p><strong>* Ghi chú:</strong></p>
+                        <p>- Tổng tiền hoa hồng là số tiền tạm tính, và có thể có sự điều chỉnh sau khi chốt trạng thái
+                            các đơn hàng giới thiệu.</p>
+                        <p>- Sau khi thực hiện đối soát, US Express sẽ thực hiện chi trả hoa hồng vào tài khoản của bạn
+                            vào ngày 15-20 của tháng kế tiếp.</p>
+                    </div>
+                    <a class="back color_green" href="">&lt;&lt; <strong>Quay lại Đối soát thanh toán hoa
+                            hồng</strong></a>
+
+                    <div class="mb30">&nbsp;</div>
+                    <div class="head flex">
+                        <h2 class="name"><strong>Chi tiết đơn hàng giới thiệu</strong></h2>
+                    </div>
+                    <div class="warp-20">
+                        <div class="info-dh flex">
+                            <div class="tt">
+                                <strong>Thông tin đơn hàng</strong>
+                                <div class="warp">
+                                    <strong>Mã đơn hàng: UAM-9H11111</strong>
+                                    <p><span>Ngày đặt hàng: </span>17/09/2019</p>
+                                    <p><span>Ngày nhận hàng: </span>Dự kiến 30/09/2019</p>
+                                    <p><span>Trạng thái đơn hàng: </span>Hàng đang chuyển về Việt Nam</p>
+                                </div>
+                            </div>
+                            <div class="ht">
+                                <strong>Thông tin người đặt hàng</strong>
+                                <div class="warp">
+                                    <strong>Nguyễn Như Hùng</strong>
+                                    <p><span>Email: </span>hungnguyen@gmail.com</p>
+                                    <p><span>Điện thoại: </span>0911111111</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-dh">
+                            <div class="tr thead">
+                                <div class="td sp">Sản phẩm</div>
+                                <div class="td price">Giá tại Mỹ</div>
+                                <div class="td soluong">Số lượng</div>
+                                <div class="td thanhtien">Tổng giá tại Mỹ</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td sp">
+                                    <img class="img" src="images/graphics/sanpham_1.png" alt="">
+                                    <div class="content">
+                                        <h3><a href="/">Kenneth Cole Men Watch Reaction ... 42mm for Business Man in
+                                                Vietnam</a></h3>
+                                        <div class="option">Nhà cung cấp: WorldWatch, từ Amazon</div>
+                                        <div class="option">Màu: Blue, Kích cỡ: XL</div>
+                                    </div>
+                                </div>
+                                <div class="td price">$99.49</div>
+                                <div class="td soluong">02</div>
+                                <div class="td thanhtien price">$198.98</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td sp">
+                                    <img class="img" src="images/graphics/sanpham_1.png" alt="">
+                                    <div class="content">
+                                        <h3><a href="/">Kenneth Cole Men Watch Reaction ... 42mm for Business Man in
+                                                Vietnam</a></h3>
+                                        <div class="option">Màu: Blue, Kích cỡ: XL</div>
+                                    </div>
+                                </div>
+                                <div class="td price">$99.49</div>
+                                <div class="td soluong">02</div>
+                                <div class="td thanhtien price">$198.98</div>
+                            </div>
+                            <div class="tr end">
+                                <div class="td td1">
+                                    <div>Tổng tiền hàng tại Mỹ</div>
+                                    <div>&nbsp;</div>
+                                </div>
+                                <div class="td">
+                                    <div class="price">$248.98</div>
+                                    <div><strong class="price red">44,800,000 <em>đ</em></strong></div>
+                                </div>
+                                <div class="btn-back">
+                                    <a class="back color_green" href="">&lt;&lt; <strong>
+                                            Quay lại Quản lý đơn hàng giới thiệu</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

@@ -1651,3 +1651,113 @@
 }
 
 /*END QUẢN LÝ ĐƠN HÀNG*/
+
+.list-dh {
+	.tr {
+		display: inherit;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #EBEBEB;
+
+		&.thead {
+			.td {
+				font-weight: bold;
+				padding: 12px 0
+			}
+		}
+
+		.td {
+			padding: 16px 0;
+			width: 15.5%;
+			font-size: 14px;
+
+			&.sp {
+				width: 53.5%;
+				padding-right: 10px;
+
+				.img {
+					width: 60px;
+					float: left;
+					margin-right: 12px;
+				}
+
+				h3 {
+					overflow: hidden;
+					font-size: 14px;
+					font-weight: 400;
+					margin-bottom: 10px;
+				}
+
+				.content {
+					overflow: hidden;
+					color: #6F6F6F;
+					font-size: 12px;
+				}
+
+				.tag {
+					color: #333;
+					margin-bottom: 10px;
+				}
+
+				.option {
+					display: block;
+					margin-bottom: 8px;
+				}
+
+				.tracking {
+					color: var(--green2);
+					display: inline-block;
+					border-bottom: 1px solid;
+				}
+			}
+		}
+	}
+
+	.end {
+		border-bottom: 0;
+		display: block;
+		text-align: right;
+
+		.td {
+			display: inline-block;
+			width: 22%;
+
+			&>div {
+				padding: 5px 0;
+			}
+
+			.price {
+				strong {
+					font-size: 16px;
+					color: var(--green2);
+				}
+			}
+
+			.togle-in {
+				position: absolute;
+			}
+		}
+
+		.btn-back {
+			.back {
+				float: left;
+				margin-top: 5px;
+			}
+
+			.btn {
+				background: var(--green2);
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 13px;
+				padding: 6px 30px;
+				min-width: 160px;
+				text-align: center;
+			}
+		}
+	}
+}
