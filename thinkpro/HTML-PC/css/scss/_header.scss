@@ -1397,7 +1397,7 @@
 }
 
 .open-header {
-    .header {
+    .header,.sticky_zindex {
         z-index: 9999;
     }
 
