@@ -55,11 +55,38 @@
         display: none
     }
 
+    #myvne_taskbar {
+        display: inline-block;
+        margin-left: 15px;
+
+        .myvne_form_log {
+            margin-top: 2px;
+        }
+
+        .log_txt {
+            height: 32px;
+            line-height: 32px;
+            color: #4f4f4f;
+
+            .ic-user {
+                fill: #bdbdbd;
+                margin-right: 5px;
+                margin-top: -2px;
+            }
+        }
+
+        a {
+            &:hover {
+                color: #222;
+            }
+        }
+    }
+
     .block-right {
         float: right;
+        display: flex;
 
         .search {
-            float: right;
             width: 265px;
             border-left: 1px solid #ccc;
             padding-left: 15px;

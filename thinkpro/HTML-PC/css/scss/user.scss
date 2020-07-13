@@ -5,6 +5,7 @@
 
     &__left {
         width: 209px;
+        padding-right: 20px;
     }
 
     &__right {
@@ -266,8 +267,16 @@
             margin-right: -15px;
             border-bottom: 1px solid var(--gray100);
 
+            &:last-child {
+                border-bottom: 0
+            }
+
             &.mb40 {
                 margin-bottom: 0 !important;
+            }
+
+            .padding_mobile {
+                padding: 0 15px;
             }
 
             .title_cate {
@@ -294,6 +303,26 @@
                     &+.border-warp {
                         display: block
                     }
+                }
+
+                &_v2 {
+                    font-size: 20px;
+                    margin-top: -10px;
+
+                    svg {
+                        position: static;
+                        display: inline-block;
+                        fill: #06C1D4;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &.active {
+                        svg {
+                            transform: rotate(-90deg);
+                        }
+                    }
+
                 }
             }
         }

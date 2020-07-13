@@ -49,6 +49,14 @@ body::-webkit-scrollbar-track {
     }
 }
 
+.detail_description {
+    p {
+        margin-bottom: 15px;
+        color: #414956;
+        line-height: 1.6;
+    }
+}
+
 .view-more {
     text-align: center;
 
@@ -864,7 +872,7 @@ main {
     flex-wrap: wrap;
     margin-bottom: 1rem;
     list-style: none;
-    margin-bottom: 42px;
+    margin-bottom: 32px;
 
     li {
         a {
@@ -1544,6 +1552,11 @@ main {
             font-size: 16px;
             border-radius: 4px;
 
+            &.disabled {
+                color: #7A8088;
+                background: var(--gray50) url(images/icons/select-down.svg) no-repeat right 10px top 10px;
+            }
+
             &.error {
                 background: #F6D9D6 !important;
                 border: 1px solid var(--red);
@@ -1560,15 +1573,6 @@ main {
             resize: none;
         }
 
-        .form-control {
-            background: var(--gray50);
-            padding: 10px 16px;
-            height: 48px;
-            box-shadow: none;
-            color: #000;
-            font-size: 16px;
-            border-radius: 4px;
-        }
 
         select.form-control {
             -webkit-appearance: none;

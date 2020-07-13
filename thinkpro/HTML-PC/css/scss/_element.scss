@@ -1696,7 +1696,7 @@
         color: #7A8088;
         font-size: 24px;
         font-weight: bold;
-        line-height: 64px;
+        line-height: 60px;
         display: inline-block;
         padding: 0 16px;
         position: relative;
@@ -1742,6 +1742,126 @@
         }
     }
 }
+
+.box-tra-cuu {
+    display: flex;
+
+    .level {
+        border-right: 1px solid var(--gray100);
+        min-width: 210px;
+        padding-bottom: 100px;
+
+        h3 {
+            display: block;
+            font-weight: 600;
+            padding: 13.5px 16px;
+            border-bottom: 1px solid var(--gray100);
+        }
+
+        .lbl {
+            display: block;
+            font-weight: 600;
+            padding: 10px 16px;
+        }
+
+        .item {
+            display: block;
+            padding: 13.5px 16px;
+            position: relative;
+
+            &:hover,
+            &.active {
+                background: #D1F5F9;
+                color: #0E0E0E;
+                font-weight: 600;
+
+                &::before {
+                    content: "";
+                    border-top: 24px solid transparent;
+                    border-bottom: 24px solid transparent;
+                    border-left: 8px solid #D1F5F9;
+                    position: absolute;
+                    right: -8px;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .last-level {
+        border-right: 0;
+        width: 100%;
+
+        .item {
+            padding: 8px 16px;
+
+            &:hover,
+            &.active {
+                background: none;
+                font-weight: 400;
+                text-decoration-line: underline;
+                color: #27BECE;
+
+                &::before {
+                    display: none
+                }
+            }
+        }
+    }
+
+    .select-wrap {
+        margin-top: 65px;
+        width: 100%;
+        text-align: center
+    }
+
+    &__mobile {
+        display: none;
+
+        .level {
+            font-size: 16px;
+
+            .lbl {
+                font-weight: 600;
+                font-size: 16px;
+                display: block;
+                margin-top: 20px;
+            }
+
+            .item {
+                padding: 5px 0;
+                display: block;
+
+                &:hover,
+                &.active {
+                    font-weight: 400;
+                    text-decoration-line: underline;
+                    color: #27BECE;
+                }
+            }
+
+        }
+    }
+
+    @media (max-width: 991px) {
+        display: none;
+
+        &__mobile {
+            display: block;
+            border: 0;
+
+            .select-wrap {
+                text-align: center;
+                margin-top: 80px;
+
+                .icon-svg {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
 
 .box_left {
     width: 624px;

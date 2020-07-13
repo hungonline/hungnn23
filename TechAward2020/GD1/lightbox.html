@@ -34,7 +34,7 @@
             <a href="#" class="logo_mobile"><img src="images/graphics/logo_vne_f.jpg" alt="vne"></a>
             <div class="date">Thứ sáu, 22/3/2019</div>
             <div class="block-right">
-                <ul class="form_log" style="display: none">
+                <!-- <ul class="form_log" style="display: none">
                     <li class="user">
                         <a href="javascript:;">
                             <span class="icon-user">
@@ -57,7 +57,7 @@
                         </a>
                     </li>
                     <li class="notification"><a class="myvne_logout" href="javascript:;">Đăng xuất</a></li>
-                </ul>
+                </ul> -->
                 <div class="search">
                     <form action="http://timkiem.vnexpress.net/thethao" method="get" id="search">
                         <input type="text" name="q" value="Tìm kiếm" maxlength="80" class="search-input"
@@ -72,6 +72,67 @@
                         </span>
                     </form>
                 </div>
+                <div id="myvne_taskbar" style="display: none">
+                    <div id="myvne" class="myvne_taskbar myvne_login_button">
+                        <a href="javascript:void(0);" class="log_txt" title="Đăng nhập"><svg class="ic ic-user">
+                                <use xlink:href="css/images/graphics/icon-vne.svg#User"></use>
+                            </svg> Đăng nhập</a>
+                    </div>
+                </div>
+                <div id="myvne_taskbar">
+                    <div id="myvne" class="myvne_taskbar">
+                        <div class="myvne_container" id="myvne_user_logged">
+                            <ul class="myvne_form_log logged">
+                                <li class="myvne_user" id="myvne_profile_tool">
+                                    <a href="javascript:void(0);" id="myvne_avatar_taskbar" class="myvne_avatar"> <span
+                                            class="avatar_inner"><img
+                                                src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
+                                                width="25" height="25" alt=""></span> <span class="name_user_av">Như
+                                            Hùng</span> </a>
+                                    <ul class="myvne_user_status" style="display:none;">
+                                        <li class="li_bd li_account"> <span class="avatar_sub"><img
+                                                    src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
+                                                    width="25" height="25" alt=""></span> <span class="name_sub">Như
+                                                Hùng</span> </li>
+                                        <li><a href="https://my.vnexpress.net/users/feed/1014352662"
+                                                title="Hoạt động bình luận">Hoạt
+                                                động bình luận</a></li>
+                                        <li><a href="https://my.vnexpress.net/users/tin-da-luu" title="Tin đã lưu">Tin
+                                                đã lưu</a></li>
+                                        <li class="li_bd"><a href="https://my.vnexpress.net/users/tin-da-doc"
+                                                title="Tin đã xem">Tin đã
+                                                xem</a></li>
+                                        <li class="li_bd"><a id="myvne_update_profile_link"
+                                                href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
+                                                title="Tài khoản của tôi">Tài
+                                                khoản của tôi</a></li>
+                                        <li><a href="https://my.vnexpress.net/qua-tang" title="Quà tặng">Quà tặng</a>
+                                        </li>
+                                        <li class="li_bd"><a href="https://kidlab.vnexpress.net/"
+                                                title="Kid-lab">Kid-lab</a></li>
+                                        <li><a href="javascript:void(0);" id="myvne_logout_link">Thoát</a></li>
+                                    </ul>
+                                </li>
+                                <li class="myvne_notification" id="myvne_notify_show">
+                                    <a class="myvne_icon_bell_click"><i class="ic ic-bell myvne_icon_bell"></i></a><span
+                                        id="myvne_notify_area"></span>
+                                    <div id="myvne_notify_box" class="myvne_content_notification" style="display:none;">
+                                        <ul id="myvne_notify_lists" class="scrollbar-macosx">
+                                            <li class="myvne_loading">Loading</li>
+                                        </ul>
+                                        <ul id="myvne_notify_viewmore_area" style="display:none"> <span
+                                                id="myvne_loading_viewmore" style="display: none;">Loading</span> <a
+                                                href="javascript:void(0);" id="myvne_notify_viewmore"
+                                                class="myvne_notification-viewmore" style="display:none;">Xem
+                                                thêm</a> </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -154,6 +215,7 @@
         <div class="content_lightbox">
             <p>Bạn đã bình chọn sản phẩm:</p>
             <h2 class="name">iPhone Xs Max</h2>
+            <div class="line-bottom"></div>
             <form>
                 <div class="form-group">
                     <label for="email">Vui lòng nhập số người bình chọn giống bạn:</label>

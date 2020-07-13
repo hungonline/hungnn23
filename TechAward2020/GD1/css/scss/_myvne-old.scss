@@ -285,6 +285,87 @@ div#myvne_close_popup {
 		height: 11px;
 		background-position: -90px 0;
 	}
+
+	&.myvne_taskbar_v2{
+		ul.myvne_form_log{height: 25px; font-size: 0; margin-top: 2px;
+			li{border-left: none; line-height: 25px;
+				a{
+					&.myvne_link_create{background: #9F224E; color: #fff; border-radius: 3px; padding: 0 15px; line-height: 25px;}
+				}
+				.myvne_content_notification{
+					ul{
+						li{line-height: 15px;}
+					}
+				} 
+			&:last-child{padding-right: 0;}
+			}
+		&.myvne_contact{margin-top: 0;}
+		
+			
+		}
+		.myvne_form_log{
+			&.logged{margin-top: 0;}
+		} 
+		.block_search_web{width: 195px;
+			.txt_input{
+				border: 1px solid #E5E5E5; border-right: 0; height: 25px !important; margin: 0; border-radius: 3px 3px 0 3px;
+			}
+		}
+		.icon_seach_web{width: 25px;height: 25px;border: none;margin-top: 0;border: 1px solid #E5E5E5; border-left: 0; border-radius: 0 3px 3px 0;}
+		.myvne_avatar{width: auto; padding: 2px 25px 2px 10px; overflow: visible;
+			.avatar_inner{width: 25px;height: 25px;background: #C4C4C4; overflow: hidden; margin-top: -4px; line-height: 25px; text-align: center; border-radius: 50%; display: inline-block; vertical-align: middle; margin-right: 5px;
+				
+				font-size: 18px; font-family: 'arial', sans-serif; text-transform: uppercase; font-weight: 700;color: #fff;
+				img{width: 25px;height: 25px;position: static;}
+			}
+			.name_user_av{max-width: 65px; overflow: hidden;margin-top: -2px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				display: inline-block; vertical-align: middle;
+			}
+			&:after{right: 15px;}
+			&.active{
+				background: #fff;
+			}
+		}
+		.myvne_notification{
+			
+		}
+
+		#myvne_user_logged{
+			.block_search_web{width: 149px; margin-right: 0; margin-top: 2px;}
+			.myvne_user{line-height: 29px; height: 29px;}
+		}
+		.myvne_user_status{
+			height: auto;
+			top: 29px;
+			left: auto;
+			right: -25px;
+			margin-top: 0;
+			min-width: 270px; background: #fff; border: none;
+			-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+			box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+			padding: 0 15px;
+			li{line-height: inherit; padding: 0;
+				&.li_bd{border-bottom: 1px solid #E5E5E5; padding: 0 0 10px 0; margin-bottom: 10px;}
+				&.li_account{display: flex; align-items: center; padding: 15px 0;}
+				a{font-size: 15px; color: #4F4F4F; padding: 10px 0; position: relative; width: 100%;
+					.number_sub{opacity: 0.4;}
+				}
+				&:last-child{
+					a{padding-bottom: 20px;}
+				}
+			}
+			.avatar_sub{
+				width: 48px;height: 48px;background: #E5E5E5;text-align: center; line-height: 48px; font-size: 20px; color: #fff;
+				overflow: hidden; border-radius: 50%; font-weight: 700; text-transform: uppercase;
+				img{width: 48px;height: 48px;}	
+			}
+			.name_sub{width: calc(100% - 48px); padding-left: 10px; color: #4F4F4F; font-size: 16px; font-weight: 700;}
+		}
+
+	}
 }
 .myvne_thumb {
     float: left;
@@ -320,6 +401,7 @@ div#myvne_close_popup {
     }
 	
 }
+#myvne_taskbar.myvne_taskbar_v2 ul.myvne_form_log li.myvne_notification{line-height: 29px !important;}
 @media screen and (max-width: 1000px){
 	#myvne_taskbar{
 		.myvne_contact, .block_search_web, .myvne_avatar span, .myvne_link{display: none;} 
@@ -397,4 +479,9 @@ div#myvne_close_popup {
 		height: 20px;
 		background-position: -30px -120px  !important;
 	}
+
+	#myvne_taskbar.myvne_taskbar_v2 ul.myvne_form_log{height: 44px; margin-top: 0;}
+	#myvne_taskbar.myvne_taskbar_v2{border-bottom: none;}
+	#myvne_taskbar.myvne_taskbar_v2 .myvne_avatar .name_user_av{display: none;}
+	#myvne_taskbar.myvne_taskbar_v2 .myvne_avatar,#myvne_taskbar.myvne_taskbar_v2 ul.myvne_form_log li{line-height: 44px;}
 }

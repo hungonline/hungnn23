@@ -123,7 +123,8 @@
                     </ul>
                     <div class="btn-bottom">
                         <a class="btn-skew blue" href="#"><span>Xem thêm</span></a>
-                        <a class="btn-skew yellow" href="#"><span>Bình chọn</span></a>
+                        <a class="btn-skew yellow success" href="#"><span><i class="checked"></i>Đã bình chọn</span></a>
+                        <!-- <a class="btn-skew yellow" href="#"><span>Bình chọn</span></a> -->
                     </div>
                 </div>
             </div>
@@ -635,10 +636,14 @@
             <div class="box-player-video">
                 <article class="item-news full-thumb">
                     <div class="thumb-art">
-                        <a class="thumb_img thumb_16x9" href="#">
-                            <span class="play-icon"></span>
+                        <div class="box_img_video embed-container">
+                            <!-- <span class="play-icon"></span> -->
                             <img src="images/graphics/thumb_5x3.png">
-                        </a>
+                            <div class="icon_blockvideo">
+                                <div class="img_icon">&nbsp;</div>
+                                <div class="image_icon_center">&nbsp;</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="content">
                         <h3 class="title-news">
@@ -667,6 +672,12 @@
                     <div class="content">
                         <h3 class="title-news">
                             <a href="" title="">Startup tận dụng công nghệ để xoay sở trong Covid-19</a>
+                            <a href="#" class="count_cmt">
+                                <svg class="ic ic-comment">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Comment-Reg"></use>
+                                </svg>&nbsp;
+                                84
+                            </a>
                         </h3>
                     </div>
                 </article>
