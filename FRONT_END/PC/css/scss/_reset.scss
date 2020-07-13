@@ -118,6 +118,10 @@ a:hover {
     outline: 0;
   }
 
+  .refresh {
+    vertical-align: text-bottom;
+  }
+
   &:hover {
     background: #37A07F;
     color: #fff;
@@ -741,6 +745,10 @@ html {
   color: #666;
 }
 
+.color_999 {
+  color: #999
+}
+
 .fs {
   font-size: 0
 }
@@ -760,7 +768,7 @@ html {
 .price {
   em {
     font-style: inherit;
-    // border-bottom: 1px solid;
+    border-bottom: 1px solid;
     display: inline-block;
     line-height: 0.9;
   }
