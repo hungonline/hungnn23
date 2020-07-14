@@ -759,8 +759,20 @@ main {
             }
 
             .content_2 {
+                width: 100%;
+                padding-right: 5px;
+                text-align: right;
+
                 .btn-default {
                     display: none;
+                }
+
+                .add-compare {
+                    display: inline-block;
+                    background: var(--color_main);
+                    color: #fff;
+                    border: 0;
+                    width: 180px;
                 }
             }
 

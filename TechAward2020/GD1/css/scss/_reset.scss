@@ -128,16 +128,16 @@ html {
 }
 
 #to_top {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 3px;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
-  display: none;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 26px;
-  background: #fff;
 }
 
 .gray {

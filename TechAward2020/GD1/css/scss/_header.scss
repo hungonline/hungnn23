@@ -188,7 +188,7 @@
     }
 }
 
-
+// MyVne Mobile
 #myvne_taskbar.myvne_taskbar_mobile {
     position: absolute;
     height: 44px;
@@ -197,6 +197,14 @@
     top: -9px;
     z-index: 9991;
     display: none;
+
+    .myvne_form_log {
+        margin-top: 0;
+
+        .av_no_img {
+            margin-top: 14px;
+        }
+    }
 
     .icon-arrow {
         position: absolute;
@@ -679,6 +687,12 @@
         background: url(images/icons/icon_vne.svg) no-repeat;
         display: inline-block;
         vertical-align: middle;
+    }
+
+    i.ic-user {
+        background-position: -611px -193px;
+        width: 18px;
+        height: 18px;
     }
 
     i.ic-bell {
