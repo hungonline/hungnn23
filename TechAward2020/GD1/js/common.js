@@ -125,7 +125,15 @@
 			$(".tab-content .lotrinh").not(tab).css("display", "none");
 			$(tab).fadeIn();
 		});
-
+		$('.slide_binhchon .swiper-slide .ava').hover(function () {
+			var el_ID = $(this).attr("data-id");
+			$('.slide_binhchon .swiper-container .ava').removeClass('active');
+			$('.tab-content-slide .info-product').removeClass('active');
+			$(this).addClass('active');
+			$('#' + el_ID + '-content').addClass("active");
+			// }, function () {
+			// 	$('.info-product').removeClass("active");
+		});
 
 		$(document).on("click", ".ava", function () {
 			var el_ID = $(this).attr("data-id");
@@ -184,12 +192,12 @@
 
 	function swiper() {
 		var swiperbinhchon = new Swiper('.slide_binhchon .swiper-container', {
-			slidesPerView: 7,
+			slidesPerView: 6,
 			spaceBetween: 0,
-			centeredSlides: true,
+			// centeredSlides: true,
 			touchRatio: 0.2,
 			slideToClickedSlide: true,
-			loop: true,
+			// loop: true,
 			// loopedSlides: 7,
 			navigation: {
 				nextEl: '.swiper-bc-next',

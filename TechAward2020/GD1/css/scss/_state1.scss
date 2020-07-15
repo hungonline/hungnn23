@@ -27,7 +27,7 @@
         line-height: 1.6;
         float: left;
         width: 100%;
-        margin-top: 150px;
+        margin-top: 80px;
 
         .logo {
             position: absolute;
@@ -84,8 +84,10 @@
     }
 
     @media (min-width: 1600px) {
-        height: 80vh;
-        height: calc(100vh - 174px);
+        background: #021E56 url(images/graphics/bg_banner.png) no-repeat center top -120px;
+        background-size: cover;
+        height: 75vh;
+        height: calc(100vh - 265px);
     }
 
     @media (max-width: 1025px) {
@@ -202,6 +204,11 @@
     position: relative;
     overflow: hidden;
 
+    .swiper-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
     &__mobile {
         display: none
     }
@@ -286,7 +293,7 @@
             }
         }
 
-        &-active,
+        // &-active,
         &:hover {
             .ava {
                 img {
@@ -296,7 +303,7 @@
             }
         }
 
-        &-active {
+        &:hover {
 
             .title,
             .btn-skew {
@@ -345,6 +352,7 @@
     background: linear-gradient(180deg, #021A4C -4.23%, #090823 62%, #021A4C 100%);
     min-height: 800px;
     position: relative;
+    padding-top: 30px;
 
     &::before {
         content: "";

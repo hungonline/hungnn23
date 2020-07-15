@@ -46,6 +46,20 @@
         }
     }
 
+    .list-product {
+        border: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .items {
+            width: 48%;
+            width: calc(50% - 8px);
+            margin-bottom: 16px;
+            border: 1px solid var(--gray100);
+        }
+    }
+
     @media (max-width: 767px) {
         padding: 20px;
     }
@@ -69,7 +83,10 @@
             }
         }
     }
+
 }
+
+
 
 .white-popup.popup-width {
     max-width: 800px;
