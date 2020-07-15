@@ -57,6 +57,10 @@
             width: calc(50% - 8px);
             margin-bottom: 16px;
             border: 1px solid var(--gray100);
+
+            &:hover {
+                border: 1px solid #06C1D4;
+            }
         }
     }
 
