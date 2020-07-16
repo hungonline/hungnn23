@@ -1535,7 +1535,7 @@
 .sort-fillter {
     justify-content: space-between;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
 
     &__left {
         strong {
@@ -1552,7 +1552,7 @@
     }
 
     &__right {
-        margin-top: -5px;
+        margin-top: -12px;
 
         a {
             width: 36px;
@@ -1900,7 +1900,7 @@
         margin-bottom: 8px;
         position: relative;
         cursor: pointer;
-        padding-right: 30px;
+        padding-right: 60px;
 
         &::before {
             content: '\ea78';
@@ -1938,8 +1938,8 @@
 
         .cancel {
             position: absolute;
-            right: 10px;
-            top: 12px;
+            right: 15px;
+            top: 17px;
             text-decoration: underline;
             text-underline-position: under;
         }
@@ -1961,7 +1961,7 @@
 
 .sort-mobile {
     font-size: 16px;
-    margin-bottom: 22px;
+    margin-bottom: 10px;
     display: none;
 
     strong {
@@ -2462,7 +2462,7 @@
     input {
         width: 100%;
         height: 40px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 300;
         padding: 0 60px 0 15px;
         border: 1px solid transparent;
@@ -2510,11 +2510,42 @@
 
             li {
                 a {
-                    padding: 15px 24px;
+                    padding: 15px 34px 15px 24px;
                     display: block;
                     font-size: 16px;
                     border-bottom: 1px solid var(--gray100);
+                    position: relative;
+
+                    svg {
+                        transform: rotate(180deg);
+                        position: absolute;
+                        right: 20px;
+                        top: 18px;
+                    }
+
+                    strong {
+                        font-weight: 600
+                    }
+
+                    @media (max-width: 991px) {
+                        padding: 12px 20px 12px 15px;
+                        font-size: 14px;
+
+                        svg {
+                            right: 15px;
+                            top: 12px;
+                        }
+                    }
                 }
+            }
+        }
+
+        &__show {
+            display: block;
+            margin: 10px 0 30px 0;
+
+            .scrollbar-inner {
+                box-shadow: none;
             }
         }
     }

@@ -818,18 +818,48 @@
     }
 }
 
+#box_menu_before {
+    float: left;
+    width: 100%;
+    height: 1px;
+}
+
 .section_header {
     background: $color1;
-    height: 124px;
     position: sticky;
     top: 0;
     z-index: 999;
+    transition: 0.3s ease;
+
+    &.pin {
+        background: #021A4C;
+        padding-bottom: 5px;
+
+        .lbl_logo {
+            margin-top: 12px;
+
+            img {
+                width: 120px;
+            }
+        }
+
+        .col_right {
+            margin-top: 0px;
+
+            .tr_top {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+            }
+        }
+    }
 
     .lbl_logo {
         margin-top: 25px;
 
         img {
-            width: 165px;
+            width: 177px;
+            transition: all 300ms ease;
         }
     }
 
@@ -983,6 +1013,18 @@
 
     @media (max-width: 991px) {
         height: 100%;
+
+
+        &.pin {
+            padding-bottom: 0;
+
+            .lbl_logo {
+                position: absolute;
+                opacity: 0;
+                z-index: -1;
+                margin-top: 0;
+            }
+        }
 
         &__folder {
             background: #021E56 !important;

@@ -92,24 +92,6 @@
 			removalDelay: 300,
 		});
 	}
-	//fixSticky
-	function fixStickyIE() {
-		var stickyElements = $('.sticky');
-		if (stickyElements.length > 0) {
-			Stickyfill.add(stickyElements);
-		}
-		$("<div id='box_menu_before'></div>").insertBefore(".section_header .col_right");
-		$(window).scroll(function () {
-			var top_start = $("#box_menu_before").position().top + 120;
-			if ($(window).scrollTop() >= top_start) {
-				$('.section_header').addClass('sticky');
-			} else if ($(window).scrollTop() <= top_start) {
-
-				$('.section_header').removeClass('sticky');
-			}
-		});
-
-	}
 
 	//Tab_lotrinh
 	function tabLotrinh() {
@@ -195,8 +177,8 @@
 			slidesPerView: 6,
 			spaceBetween: 0,
 			// centeredSlides: true,
-			touchRatio: 0.2,
-			slideToClickedSlide: true,
+			// touchRatio: 0.2,
+			// slideToClickedSlide: true,
 			// loop: true,
 			// loopedSlides: 7,
 			navigation: {
@@ -206,6 +188,9 @@
 			breakpoints: {
 				480: {
 					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 4,
 				},
 				1280: {
 					slidesPerView: 5,
@@ -272,21 +257,31 @@
 			}
 
 		});
-
 	}
+	var header = document.getElementById("wrap-main-nav");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("pin");
+		} else {
+			header.classList.remove("pin");
+		}
+	}
+
 
 	$(function () {
 		closeMenu();
 		backToTop();
 		scrollBar();
 		magnificPopup();
-		fixStickyIE();
-		// actionMenu();
 		tabLotrinh();
 		swiper();
 		grallerySlide();
 	});
-
+	window.onscroll = function () {
+		myFunction()
+	};
 	$(window).on('load resize', function () {
 		resizeSite()
 	});

@@ -262,13 +262,57 @@
     }
 
     @media (max-width: 590px) {
+        margin-bottom: 0px;
+
         .title_award {
             margin-bottom: 35px;
         }
 
+        .title {
+            text-align: center;
+            position: relative;
+
+            .line {
+                display: inline-block;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    background: url(images/icons/line1.png) no-repeat;
+                    position: absolute;
+                    background-size: contain;
+                    width: 70px;
+                    height: 7px;
+                    left: -90px;
+                    z-index: 2;
+                    top: 22px;
+
+                }
+
+                &::after {
+                    content: "";
+                    background: url(images/icons/line2.png) no-repeat;
+                    position: absolute;
+                    background-size: contain;
+                    width: 70px;
+                    height: 7px;
+                    right: -90px;
+                    z-index: 2;
+                    top: 22px;
+
+                }
+            }
+        }
+
         .btn-skew {
             margin-bottom: 24px;
-            margin-left: -20px;
+            height: 45px;
+            line-height: 45px;
+            padding: 0 5px;
+
+            &::after {
+                height: 45px;
+            }
         }
 
         .don_vi_vang {
@@ -1509,6 +1553,7 @@
     .btn-page {
         width: 40px;
         height: 40px;
+        font-size: 14px;
         min-width: 40px !important;
         text-align: center;
         line-height: 40px;
@@ -1522,6 +1567,8 @@
         &:hover {
             color: #03256C;
             border: 1px solid #03256C;
+            font-weight: 400;
+            background: none;
 
             svg {
                 color: #03256C;
@@ -1529,8 +1576,20 @@
         }
 
         .ic {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #26364E;
+            border-top: 1px solid #26364E;
+            transform: rotate(135deg);
+            position: absolute;
+            left: 12px;
+            top: 14px;
+            opacity: 1;
+        }
+
+        .ic-caret-left {
+            transform: rotate(-45deg);
+            left: 16px;
         }
     }
 

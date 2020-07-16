@@ -1,8 +1,7 @@
 .hero_banner {
     background: #021E56 url(images/graphics/bg_banner.png) no-repeat;
     background-size: cover;
-    height: 600px;
-    height: calc(100vh - 174px);
+    height: 680px;
 
     .section_header {
         background: none;
@@ -14,10 +13,6 @@
             background: #021E56;
             width: 100%;
             margin-bottom: 0;
-
-            // &+.hero_banner__text {
-            //     margin-top: 274px;
-            // }
         }
     }
 
@@ -27,7 +22,7 @@
         line-height: 1.6;
         float: left;
         width: 100%;
-        margin-top: 80px;
+        margin-top: 100px;
 
         .logo {
             position: absolute;
@@ -86,8 +81,8 @@
     @media (min-width: 1600px) {
         background: #021E56 url(images/graphics/bg_banner.png) no-repeat center top -120px;
         background-size: cover;
-        height: 75vh;
-        height: calc(100vh - 265px);
+        height: 750px;
+        height: calc(100vh - 240px);
     }
 
     @media (max-width: 1025px) {
@@ -104,7 +99,9 @@
     }
 
     @media (max-width: 991px) {
-        height: 620px;
+        height: 430px;
+        background: #021E56 url(images/graphics/bg_banner.png) no-repeat center;
+        background-size: cover;
 
         .section_header {
             background: #021e56;
@@ -118,12 +115,11 @@
             .logo-mobile {
                 display: block;
                 text-align: center;
-                margin-top: 55px;
             }
 
             .content {
                 float: none;
-                margin: 120px auto 0;
+                margin: 40px auto 0;
                 text-align: center;
 
                 .title {
@@ -144,7 +140,7 @@
     }
 
     @media (max-width: 590px) {
-        background: url(images/graphics/bg_banner2.png) no-repeat center 0;
+        background: url(images/graphics/bg_banner2.png) no-repeat center;
         background-size: cover;
 
         .content {
@@ -233,16 +229,65 @@
         width: 34.86px;
         height: 73.5px;
         outline: 0;
+
+
+        &::before {
+            content: "";
+            border-left: 1px solid #FFE74C;
+            border-top: 1px solid #FFE74C;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            transform: rotate(135deg);
+            top: 25px;
+            z-index: 2;
+
+        }
+
+        &::after {
+            content: "";
+            background: #021641;
+            transform: skew(-5deg);
+            border-radius: 3px;
+            width: 34.86px;
+            height: 73.5px;
+            position: absolute;
+            opacity: 0.3;
+        }
+
+        &:hover {
+            &::after {
+                opacity: 0.8;
+            }
+        }
     }
 
     .swiper-bc-next {
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='35' height='74' viewBox='0 0 35 74' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg filter='url(%23filter0_b)'%3e%3cpath d='M34.8557 5.4114C34.8557 2.87665 32.5282 0.981065 30.0459 1.49423L3.19022 7.04624C1.3325 7.43029 4.19617e-05 9.0664 4.19617e-05 10.9634V69.0884C4.19617e-05 71.6231 2.3276 73.5187 4.80986 73.0055L31.6655 67.4535C33.5233 67.0695 34.8557 65.4334 34.8557 63.5364V5.4114Z' fill='%23021641'/%3e%3c/g%3e%3cpath d='M11.6186 18.2694L27.3378 34.3304L11.6186 50.3913' stroke='%23FFE74C'/%3e%3cdefs%3e%3cfilter id='filter0_b' x='-1.99994' y='-0.590088' width='38.8557' height='75.6798' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeGaussianBlur in='BackgroundImage' stdDeviation='1'/%3e%3cfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur'/%3e%3cfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur' result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");
         right: 160px;
+
     }
 
     .swiper-bc-prev {
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='35' height='74' viewBox='0 0 35 74' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg filter='url(%23filter0_b)'%3e%3cpath d='M0 5.4114C0 2.87665 2.32756 0.981065 4.80981 1.49423L31.6655 7.04624C33.5232 7.43029 34.8557 9.0664 34.8557 10.9634V69.0884C34.8557 71.6231 32.5281 73.5187 30.0459 73.0055L3.19018 67.4535C1.33246 67.0695 0 65.4334 0 63.5364V5.4114Z' fill='%23021641'/%3e%3c/g%3e%3cpath d='M23.2371 18.2694L7.51788 34.3304L23.2371 50.3913' stroke='%23FFE74C'/%3e%3cdefs%3e%3cfilter id='filter0_b' x='-2' y='-0.590088' width='38.8557' height='75.6798' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeGaussianBlur in='BackgroundImage' stdDeviation='1'/%3e%3cfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur'/%3e%3cfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur' result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");
         left: 160px;
+
+        &::after {
+            transform: skew(5deg);
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+            left: 11px;
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 1;
+
+        &::before {
+            border-left: 1px solid rgba(255, 231, 76, 0.3);
+            border-top: 1px solid rgba(255, 231, 76, 0.3);
+        }
+
     }
 
     .swiper-slide {
@@ -352,7 +397,11 @@
     background: linear-gradient(180deg, #021A4C -4.23%, #090823 62%, #021A4C 100%);
     min-height: 800px;
     position: relative;
-    padding-top: 30px;
+    padding-top: 10px;
+
+    .wrap-margin {
+        margin-top: -100px;
+    }
 
     &::before {
         content: "";
@@ -488,6 +537,7 @@
         }
 
         @media (max-width: 991px) {
+
             .info-product__img {
                 right: 0;
                 max-width: 300px;
@@ -507,6 +557,12 @@
             .info-product__detail {
                 width: 100%;
             }
+        }
+    }
+
+    @media (max-width:991px) {
+        .wrap-margin {
+            margin-top: 0;
         }
     }
 
@@ -805,6 +861,7 @@
         height: 62px;
         position: absolute;
         left: -25px;
+        top: -6px
     }
 }
 

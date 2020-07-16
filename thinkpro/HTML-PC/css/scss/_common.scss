@@ -1555,6 +1555,23 @@ main {
             width: 100%;
         }
 
+        .input-wrap-tag {
+            width: 100%;
+            background: var(--gray50);
+            border-radius: 4px;
+            padding: 13px 16px;
+
+            li {
+                display: inline-block;
+                font-weight: 600;
+                margin-right: 15px;
+
+                .iconfont-close {
+                    margin-left: 5px;
+                }
+            }
+        }
+
         .form-control {
             background: var(--gray50);
             padding: 10px 16px;

@@ -17,7 +17,10 @@
         rel="shortcut icon" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=vietnamese"
         rel="stylesheet">
-    <!-- build:head2 -->
+    
+<link type="text/css" rel="stylesheet" href="css/article.css" />
+<link type="text/css" rel="stylesheet" href="css/comment.css" />
+
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css" media="all" /> -->
     <link rel="stylesheet" href="css/style.css" media="all" />
     <!-- build:head -->
@@ -424,597 +427,259 @@
     <!--END HEADER-->
 
     
-<main id="main" class="page-home">
+<main id="main">
     <section class="container clearfix">
-        <p class="mt20">
-            <a href="#vote-popup" class="open-popup">Popup đánh giá</a>
-        </p>
-        <p class="mt20">
-            <a href="#otp-popup" class="open-popup">Popup nhập mã OPT</a>
-        </p>
-        <p class="mt20">
-            <a href="#otp-popup2" class="open-popup">Popup nhập mã OPT và tên</a>
-        </p>
-        <p class="mt20">
-            <a href="#thongso-popup" class="open-popup">Popup thông số</a>
-        </p>
-        <p class="mt20">
-            <a href="#order-popup" class="open-popup">Popup đặt hàng thành công</a>
-        </p>
-        <p class="mt20">
-            <a href="#login-popup" class="open-popup">Popup Login</a>
-        </p>
-
-        <p class="mt40"></p>
-    </section>
-
-    <!--POPUP Login-->
-    <div id="login-popup" class="hide-close login-popup white-popup">
-        <div class="content_lightbox">
-            <div class="flex tab-login tab-default">
-                <a class="active" href="#dang-nhap">Đăng nhập</a>
-                <a href="#dang-ky">Tạo tài khoản</a>
-            </div>
-            <div class="tab-container">
-                <div id="dang-nhap" class="width-login">
-                    <div class="form-default">
-                        <div class="center">
-                            <div class="icon bg-blue">
-                                <svg class="icon-svg">
-                                    <use xlink:href="images/icons/icon.svg#smile"></use>
-                                </svg>
-                            </div>
-                            <p class="color-gray mb30">
-                                Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích và nhận ưu đãi hấp dẫn.
-                            </p>
-                        </div>
-                        <div class="form-group mb24">
-                            <label class="block" for="inputEmail">Số điện thoại / Email</label>
-                            <div class="input-wrap">
-                                <input type="email" id="inputEmail" class="form-control">
-                                <span class="error" style="display: none;">Thông báo lỗi</span>
-                            </div>
-                        </div>
-                        <div class="form-group mb24">
-                            <label class="block" for="inputEmail">Mật khẩu</label>
-                            <div class="input-wrap">
-                                <input type="password" class="form-control error" value="1234567890">
-                                <span class="error">Mật khẩu không chính xá, nhập lại mật khẩu hoặc đăng nhập bằng số
-                                    điện thoại / email khác</span>
-                            </div>
-                        </div>
-                        <div class="form-group flex space-between txt_16 mb24">
-                            <label class="check-list">
-                                <span class="text">Tự động đăng nhập lần sau</span>
-                                <input type="checkbox" checked="">
-                                <span class="checkmark"></span>
-                            </label>
-                            <a class="hover-a" href="#">Quên mật khẩu?</a>
-                        </div>
-                        <div class="button-bottom flex">
-                            <a class="btn btn-default color-white" href="javascript:;">Tiếp tục</a>
-                        </div>
-                    </div>
-                </div>
-                <div id="dang-ky" style="display: none;">
-                    <div class="width-login__2">
-                        <div class="form-default">
-                            <div class="center">
-                                <div class="icon bg-blue">
-                                    <svg class="icon-svg">
-                                        <use xlink:href="images/icons/icon.svg#smile"></use>
-                                    </svg>
-                                </div>
-                                <p class="color-gray mb30">
-                                    Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm
-                                    yêu thích và nhận ưu đãi hấp dẫn.
-                                </p>
-                            </div>
-                            <div class="form-group mb24">
-                                <label class="block" for="inputEmail">Số điện thoại</label>
-                                <div class="input-wrap">
-                                    <input type="text" id="" class="form-control" placeholder="Số điện thoại của bạn">
-                                </div>
-                            </div>
-                            <div class="button-bottom flex">
-                                <a class="btn btn-default color-white" href="javascript:;">Tạo tài khoản</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--POPUP OTP-->
-    <div id="otp-popup" class="hide-close white-popup">
-        <div class="content_lightbox">
-            <div class="mb30">
-                <a class="back_step" href="">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                    </svg>
+        <ol class="breadcrumb hidden-md">
+            <li class="breadcrumb-item home">
+                <a href="index.html">
+                    <img src="images/graphics/logo.svg">
                 </a>
-            </div>
-            <p class="txt_16 mb10"><strong>Nhập mã OTP được gửi tới điện thoại / email</strong></p>
-            <div class="form-default">
-                <div class="form-group mb24">
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" value="224456">
-                    </div>
-                </div>
-            </div>
-            <div class="button-bottom flex mt50">
-                <a class="btn btn-default color-white" href="javascript:;">Tiếp tục</a>
-            </div>
-        </div>
-    </div>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="">Hỏi đáp</a>
+            </li>
+        </ol>
+        <div class="faq-page flex">
+            <div class="faq-page__head">
+                <h1 class="title_cate">
+                    <span>Hỏi đáp</span>
+                </h1>
+                <div class="form-default">
+                    <form action="" method="get" class="search box-search-suggest">
+                        <input class="fs-stxt onclick-togle search-input" type="text" name="q" placeholder="Tìm câu hỏi"
+                            autocomplete="off" maxlength="50">
+                        <div class="suggest-search">
+                            <ul class="scrollbar-inner">
+                                <li>
+                                    <a href="#">
+                                        <span class="color-main">Tìm kiếm kết quả cho </span><strong>“Adorable
+                                            Home”</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#arrow-left"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-    <!--POPUP OTP-->
-    <div class="hide-close white-popup">
-        <div class="content_lightbox">
-            <div class="mb30">
-                <a class="back_step" href="">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                    </svg>
-                </a>
-            </div>
-            <p class="center color-gray">
-                Số điện thoại <span class="medium">0987654321</span> đã tồn tại. </br>Dùng tài khoản này để đăng nhập?
-            </p>
-            <div class="button-bottom flex mt30">
-                <a class="btn btn-default color-white" href="javascript:;">Tiếp tục</a>
-            </div>
-        </div>
-    </div>
-
-    <!--POPUP OTP-->
-    <div id="otp-popup2" class="hide-close white-popup">
-        <div class="content_lightbox">
-            <div class="mb30">
-                <a class="back_step" href="">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                    </svg>
-                </a>
-            </div>
-            <div class="form-default">
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Tên của bạn</strong></label>
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Tên của bạn">
-                    </div>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Nhập mã OTP để đăng nhập và gửi đánh
-                            giá</strong></label>
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Mã OTP">
-                    </div>
-                </div>
-            </div>
-            <div class="button-bottom flex">
-                <a class="btn btn-default color-white" href="javascript:;">Xong</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="hide-close white-popup">
-        <div class="content_lightbox">
-            <div class="mb30">
-                <a class="back_step" href="">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                    </svg>
-                </a>
-            </div>
-            <p class="txt_16 mb10"><strong></strong></p>
-            <div class="form-default">
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Mật khẩu mới</strong></label>
-                    <div class="input-wrap">
-                        <input type="password" id="inputEmail" class="form-control"
-                            placeholder="Mật khẩu ít nhất 8 ký tự">
-                    </div>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Nhập lại mật khẩu</strong></label>
-                    <div class="input-wrap">
-                        <input type="password" id="inputEmail" class="form-control"
-                            placeholder="Mật khẩu ít nhất 8 ký tự">
-                    </div>
-                </div>
-            </div>
-            <div class="button-bottom flex mt50">
-                <a class="btn btn-default color-white" href="javascript:;">Xong</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="hide-close white-popup">
-        <div class="content_lightbox">
-            <div class="mb30">
-                <a class="back_step" href="">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                    </svg>
-                </a>
-            </div>
-            <p class="txt_16 mb10"><strong></strong></p>
-            <div class="form-default">
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Họ và tên</strong></label>
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Họ và tên của bạn">
-                    </div>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Email</strong></label>
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Email của bạn">
-                    </div>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Mật khẩu mới</strong></label>
-                    <div class="input-wrap">
-                        <input type="password" id="inputEmail" class="form-control"
-                            placeholder="Mật khẩu ít nhất 8 ký tự">
-                    </div>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Nhập lại mật khẩu</strong></label>
-                    <div class="input-wrap">
-                        <input type="password" id="inputEmail" class="form-control"
-                            placeholder="Mật khẩu ít nhất 8 ký tự">
-                    </div>
-                </div>
-                <div class="color-gray center">
-                    ThinkPro cam kết bảo mật thông tin của khách hàng. </br> Xem <a class="color-gray decoration"
-                        href="#">Điều khoản và điều kiện sử dụng dịch vụ.</a>
-                </div>
-            </div>
-            <div class="button-bottom flex mt30">
-                <a class="btn btn-default color-white" href="javascript:;">Xong</a>
-            </div>
-        </div>
-    </div>
-
-    <!--POPUP Đánh giá-->
-    <div id="vote-popup" class="white-popup">
-        <div class="content_lightbox center">
-            <p class="txt_20 mb20"><strong>Đánh giá của bạn về sản phẩm</strong></p>
-            <ul class="list-star">
-                <li class="active">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#star1"></use>
-                    </svg>
-                </li>
-                <li class="active">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#star1"></use>
-                    </svg>
-                </li>
-                <li class="active">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#star1"></use>
-                    </svg>
-                </li>
-                <li class="active">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#star1"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#star1"></use>
-                    </svg>
-                </li>
-            </ul>
-            <div class="form-default">
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Bình luận của bạn</strong></label>
-                    <div class="input-wrap">
-                        <textarea class="form-control textarea" placeholder="Mời bạn để lại bình luận"></textarea>
-                        <span class="error" style="display: none;">Thông báo lỗi</span>
-                    </div>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Số điện thoại</strong></label>
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Nhập số điện thoại">
-                        <span class="error" style="display: none;">Thông báo lỗi</span>
-                    </div>
-                </div>
-            </div>
-            <div class="button-bottom flex">
-                <a class="btn btn-default color-white" href="javascript:;">Gửi đánh giá</a>
-            </div>
-        </div>
-    </div>
-    <!--POPUP Thông số-->
-    <div id="thongso-popup" class="thongso-popup white-popup">
-        <div class="content_lightbox">
-            <p class="txt_20 mb20 center"><strong>Thông số chi tiết</strong></p>
-            <ul class="scrollbar-inner">
-                <p class="txt_16 mb15 medium">Bộ vi xử lý</p>
-                <li>
-                    <div>Công nghệ CPU</div>
-                    <div>Comet Lake</div>
-                </li>
-                <li>
-                    <div>Loại</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <p class="txt_16 mt20 mb15 medium">Ram, ổ cứng</p>
-                <li>
-                    <div>Công nghệ CPU</div>
-                    <div>Comet Lake</div>
-                </li>
-                <li>
-                    <div>Loại</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <p class="txt_16 mt20 mb15 medium">màn hình</p>
-                <li>
-                    <div>Công nghệ CPU</div>
-                    <div>Comet Lake</div>
-                </li>
-                <li>
-                    <div>Loại</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-                <li>
-                    <div>Tốc độ CPU</div>
-                    <div>CPU i5 - 1021U</div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!--POPUP ORDER-->
-    <div id="order-popup" class="white-popup" style="max-width:500px">
-        <div class="content_lightbox">
-            <p class="txt_20 mb20 center"><strong>Đặt hàng thành công</strong></p>
-            <div class="center">
-                <div class="icon bg-blue">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#check"></use>
-                    </svg>
-                </div>
-                <p class="mb40">
-                    Cảm ơn khách hàng <strong>Nguyễn Vũ Ân</strong> đã đặt hàng tại ThinkPro. Mã đơn hàng của anh là
-                    <strong class="color-main">12309MV</strong>. Trong vòng 24h nhân viên ThinkPro sẽ gọi điện xác nhận
-                    đặt hàng cho anh.
-                </p>
-            </div>
-            <div style="background: #FBFBFB;border-radius: 4px;padding: 20px 18px;margin-bottom: 30px;">
-                <div class="txt_20 mb16"><strong class="medium">Thông tin đặt hàng</strong></div>
-                <div class="mb16">
-                    Người nhận: Anh <strong class="medium">Nguyễn Vũ
-                        Ân</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SDT: <strong
-                        class="medium">0123456789</strong>
-                </div>
-                <div class="mb16">
-                    Email: <strong class="medium">113/30 Phạm Hùng, P.22, Q. Bình Thạnh, TP.HCM</strong>
-                </div>
-                <div class="mb16">
-                    Nhận hàng tại: <strong class="medium">113/30 Phạm Hùng, P.22, Q. Bình Thạnh, TP.HCM</strong>
-                </div>
-                <div>
-                    Tổng tiền thanh toán: <strong class="medium red txt_18">37.990.000đ</strong>
-                </div>
-            </div>
-            <div class="center">
-                <a class="btn btn-default color-white mb16" href="javascript:;" style="width:280px;">Trở về trang
-                    chủ</a>
-                <a class="btn btn-default white" href="javascript:;" style="width:280px;">Xem lịch sử đơn hàng</a>
-            </div>
-        </div>
-    </div>
-
-    <!--POPUP Thêm sản phẩm so sánh-->
-    <div class="white-popup" style="max-width:560px">
-        <div class="content_lightbox">
-            <p class="txt_20 mb20 center"><strong>Thêm sản phẩm so sánh</strong></p>
-            <div class="center txt_14 mb24">Bạn có thể thêm 1 sản phẩm để so sánh</div>
-            <div class="form-default">
-                <form action="" method="get" class="search box-search-suggest">
-                    <input class="fs-stxt onclick-togle search-input" type="text" name="q" placeholder="Tên sản phẩm"
-                        autocomplete="off" maxlength="50">
-                    <div class="suggest-search">
-                        <ul class="scrollbar-inner">
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                            <li><a href="#">Dell XPS 13 7390 (2019)</a></li>
-                        </ul>
-                    </div>
-
-                    <button type="submit" class="search-button">
+                        <button type="submit" class="search-button">
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <a class="btn-default color-white" href="javascript:;">
                         <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#search"></use>
+                            <use xlink:href="images/icons/icon.svg#plus1"></use>
                         </svg>
-                    </button>
-                </form>
-                <div class="list-product mt24">
-                    <div class="items">
-                        <a class="ava" href="">
-                            <img src="images/graphics/sp2.jpg">
-                            <span class="status txt_12 bg-oranger">Đang về</span>
-                        </a>
-                        <div class="content">
-                            <div class="date txt_12 oranger mb5">Còn 5 ngày</div>
-                            <h4 class="name">
-                                <a href="#">Dell XPS 13 7390 (2019) - Hàng chính hãng</a>
-                            </h4>
-                            <span class="txt_12 code">MPN: 1234567</span>
-                            <div class="price">
-                                <strong>27.990.000đ</strong>
-                                <div class="price_old">
-                                    35.000.000đ
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="items">
-                        <a class="ava" href="">
-                            <img src="images/graphics/sp2.jpg">
-                            <span class="status txt_12 bg-oranger">Đang về</span>
-                        </a>
-                        <div class="content">
-                            <div class="date txt_12 oranger mb5">Còn 5 ngày</div>
-                            <h4 class="name">
-                                <a href="#">Dell XPS 13 7390 (2019) - Hàng chính hãng</a>
-                            </h4>
-                            <span class="txt_12 code">MPN: 1234567</span>
-                            <div class="price">
-                                <strong>27.990.000đ</strong>
-                                <div class="price_old">
-                                    35.000.000đ
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="center">
-                    <a class="btn btn-default color-white" href="javascript:;" style="width:188px;">Thêm</a>
+                        Thêm câu hỏi
+                    </a>
                 </div>
             </div>
-        </div>
-    </div>
-    <!--POPUP Thêm câu hỏi-->
-    <div class="white-popup" style="max-width:560px">
-        <div class="content_lightbox">
-            <p class="txt_20 mb20 center"><strong>Thêm câu hỏi</strong></p>
-            <div class="form-default">
-                <form action="" method="get" class="search box-search-suggest">
-                    <input class="search-input" type="text" name="q" placeholder="Thêm câu hỏi" autocomplete="off"
-                        maxlength="50" style=" height: 56px;">
-                    <div class="suggest-search suggest-search__show">
-                        <ul class="scrollbar-inner">
+            <div class="faq-page__left">
+                <div class="sticky">
+                    <div class="catalogue catalogue_final">
+                        <h3>Bộ lọc được áp dụng</h3>
+                        <a class="cancel" href="#">Bỏ lọc</a>
+                        <ul>
                             <li>
-                                <a href="#">
-                                    Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
-                                    <svg class="icon-svg">
-                                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                                    </svg>
-                                </a>
+                                windows7 <a class="iconfont-close"></a>
                             </li>
                             <li>
-                                <a href="#">
-                                    Hướng dẫn chơi game <strong>Adorable Home</strong> toàn tập?
-                                    <svg class="icon-svg">
-                                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                                    </svg>
-                                </a>
+                                coronavirus <a class="iconfont-close"></a>
+                            </li>
+                            <li>
+                                macos <a class="iconfont-close"></a>
                             </li>
                         </ul>
                     </div>
-                </form>
-
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Tag</strong></label>
-                    <ul class="input-wrap-tag">
-                        <li>
-                            windows7 <a href="#" class="iconfont-close"></a>
-                        </li>
-                        <li>
-                            windows7 <a href="#" class="iconfont-close"></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-group mb24">
-                    <label class="block" for="inputEmail"><strong>Số điện thoại</strong></label>
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" placeholder="Nhập số điện thoại">
-                        <span class="error" style="display: none;">Thông báo lỗi</span>
+                    <h2>Tags phổ biến</h2>
+                    <div class="tag">
+                        <h3><a href="#">#windows7</a></h3>
+                        <h3><a href="#">#ios</a></h3>
+                        <h3><a href="#">#coronavirus</a></h3>
+                        <h3><a href="#">#windows7</a></h3>
+                        <h3><a href="#">#ios</a></h3>
+                        <h3><a href="#">#coronavirus</a></h3>
+                        <h3><a href="#">#coronavirus</a></h3>
+                        <h3><a href="#">#windows7</a></h3>
+                        <h3><a href="#">#ios</a></h3>
+                        <h3><a href="#">#coronavirus</a></h3>
                     </div>
                 </div>
-                <div class="center">
-                    <a class="btn btn-default color-white" href="javascript:;" style="width:188px;">Gửi câu hỏi</a>
+            </div>
+            <div class="faq-page__right">
+                <div class="box-comment">
+                    <div class="list-comments cm_hoidap">
+                        <div class="list-comments__items">
+                            <h3 class="title">Dell Inspiron 5767 chơi game ngon không?</h3>
+                            <div class="author">
+                                <div class="txt_16 medium">Đỗ Minh Thiện</div>
+                                <span class="date">2 tháng trước</span>
+                            </div>
+                            <div class="reply txt_16 medium mb15">
+                                <span class="reply_number">1 trả lời</span>
+                                <a class="reply_a" href="#">Trả lời</a>
+                            </div>
+                            <div class="comment_textarea">
+                                <textarea rows="1" name="val[text]" class="js_comment_feed_textarea"
+                                    id="js_feed_comment_form_textarea_246"
+                                    placeholder="Mời bạn để lại bình luận"></textarea>
+                                <button href="javascript:;" class="btn submit-comment">
+                                    Gửi
+                                </button>
+                            </div>
+                            <div class="ava">
+                                <img src="images/graphics/Avatar.png" alt="">
+                            </div>
+                            <div class="comment_mini">
+                                <h3 class="name">ThinkPro</h3>
+                                <div class="date">2 tháng trước</div>
+                            </div>
+                            <div class="description">
+                                Qua trải nghiệm AMD Radeon R7 M445 có thể chơi được các tựa game sau: Need For Speed The
+                                Run.CALL OF DUTY INFINITE
+                                WARFARE. GTA V. ... <a class="color-main" href="#">xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="list-comments__items">
+                            <h3 class="title">Dell Inspiron 5767 chơi game ngon không?</h3>
+                            <div class="author">
+                                <div class="txt_16 medium">Đỗ Minh Thiện</div>
+                                <span class="date">2 tháng trước</span>
+                            </div>
+                            <div class="reply txt_16 medium mb15">
+                                <span class="reply_number">1 trả lời</span>
+                                <a class="reply_a" href="#">Trả lời</a>
+                            </div>
+                            <div class="ava">
+                                <img src="images/graphics/Avatar.png" alt="">
+                            </div>
+                            <div class="comment_mini">
+                                <h3 class="name">ThinkPro</h3>
+                                <div class="date">2 tháng trước</div>
+                            </div>
+                            <div class="description">
+                                <p>Với thông tin Microsoft đưa ra vào 14 tháng 1 năm 2020, sẽ ngừng hỗ trợ cung cấp các
+                                    bản
+                                    cập nhật và hỗ trợ kỹ thuật cho Windows 7. Cũng chính vì vậy mà bạn nên lưu ý vấn đề
+                                    này
+                                    cho máy tính đang sử dụng làm công vụ làm việc chính.</p>
+                                <p>Microsoft cũng khuyên bạn nên chuyển sang Windows 10 trước thời điểm tháng 1/2020 để
+                                    tránh tình trạng khi bạn cần 1 dịch vụ hoặc 1 sự hỗ trợ nào đó mà không thể, vì bạn
+                                    đang
+                                    sử dụng Windows cũ.</p>
+                                Tất nhiên, bạn vẫn có thể tiếp tục sử dụng Windows 7, nhưng sau khi việc hỗ trợ kết
+                                thúc,
+                                máy tính của bạn trở nên dễ bị tổn thương hơn trước các rủi ro về bảo mật và virus. Bởi
+                                máy
+                                tính của bạn sẽ không còn nhận được các bản cập nhật phần mềm, bao gồm các bản cập nhật
+                                bảo
+                                mật từ Microsoft.
+                            </div>
+                        </div>
+                        <div class="list-comments__items">
+                            <h3 class="title">Dell Inspiron 5767 chơi game ngon không?</h3>
+                            <div class="author">
+                                <div class="txt_16 medium">Đỗ Minh Thiện</div>
+                                <span class="date">2 tháng trước</span>
+                            </div>
+                            <div class="reply txt_16 medium mb15">
+                                <span class="reply_number">1 trả lời</span>
+                                <a class="reply_a" href="#">Trả lời</a>
+                            </div>
+                            <div class="ava">
+                                <img src="images/graphics/Avatar.png" alt="">
+                            </div>
+                            <div class="comment_mini">
+                                <h3 class="name">ThinkPro</h3>
+                                <div class="date">2 tháng trước</div>
+                            </div>
+                            <div class="description">
+                                Qua trải nghiệm AMD Radeon R7 M445 có thể chơi được các tựa game sau: Need For Speed The
+                                Run.CALL OF DUTY INFINITE
+                                WARFARE. GTA V. ... <a class="color-main" href="#">xem thêm</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="section loadding-new">
+                        <div class="sk-child sk-bounce1"></div>
+                        <div class="sk-child sk-bounce2"></div>
+                        <div class="sk-child sk-bounce3"></div>
+                        <span>Tải thêm câu hỏi</span>
+                    </div>
+                </div>
+                <div class="box-faq-article">
+                    <div class="sticky">
+                        <h2>Câu hỏi nổi bật</h2>
+                        <h3><a href="#">ThinkPro có khuyến mãi gì trong tháng ba?</a></h3>
+                        <h3><a href="#">Mua hàng trả góp bằng thẻ tín dụng có phải thanh toán những
+                                khoản phí nào?</a>
+                        </h3>
+                        <h3><a href="#">In trên máy tính ra từ Zalo phải làm sao?</a></h3>
+                        <h3><a href="#">ThinkPro có khuyến mãi gì trong tháng ba?</a></h3>
+                        <h3><a href="#">Mua hàng trả góp bằng thẻ tín dụng có phải thanh toán những
+                                khoản phí nào?</a>
+                        </h3>
+                        <h3><a href="#">In trên máy tính ra từ Zalo phải làm sao?</a></h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--POPUP OTP-->
-    <div class="hide-close white-popup">
-        <div class="content_lightbox">
-            <div class="mb30">
-                <a class="back_step" href="">
-                    <svg class="icon-svg">
-                        <use xlink:href="images/icons/icon.svg#arrow-left"></use>
-                    </svg>
-                </a>
-            </div>
-            <p class="txt_16 mb10"><strong>Nhập mã OTP để đăng nhập và gửi đánh giá</strong></p>
-            <div class="form-default">
-                <div class="form-group mb24">
-                    <div class="input-wrap">
-                        <input type="email" id="inputEmail" class="form-control" value="224456">
-                    </div>
-                </div>
-                <div class="form-group flex space-between txt_16 mb24">
-                    <label class="check-list">
-                        <span class="text">Tự động đăng nhập cho lần sau</span>
-                        <input type="checkbox" checked="">
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-            </div>
-            <div class="button-bottom flex mt50">
-                <a class="btn btn-default color-white" href="javascript:;">Tiếp tục</a>
-            </div>
-        </div>
-    </div>
-
-
-
-
+    </section>
 </main>
 
 
@@ -1387,9 +1052,6 @@
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     
-<script>
-
-</script>
 
     <script>
         $('form.search input[name="keyword"], form.search input[name="q"]').on('keyup', (e) => {
