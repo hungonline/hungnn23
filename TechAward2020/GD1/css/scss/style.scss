@@ -24,6 +24,22 @@
     min-height: 445PX;
 }
 
+@media (max-width: 576px) {
+    .mfp-myvne .mfp-iframe-scaler {
+        min-height: 100vh;
+    }
+
+    .mfp-myvne button.mfp-close {
+        font-size: 35px;
+        font-family: -webkit-body;
+        color: #BDBDBD;
+        top: 0px !important;
+        right: 0px;
+        background: none !important;
+    }
+}
+
+
 .mfp-myvne .mfp-iframe-holder .mfp-content {
     line-height: 0;
     width: 100%;

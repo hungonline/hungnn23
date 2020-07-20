@@ -867,7 +867,7 @@
 
 .box_giaithuong {
     justify-content: space-between;
-    margin-bottom: 90px;
+    margin-bottom: 24px;
 
     &_content {
         width: 576px;
@@ -904,7 +904,6 @@
     }
 
     @media (max-width: 1025px) {
-        margin-bottom: 40px;
 
         &_content {
             width: calc(100% - 400px);
@@ -942,8 +941,230 @@
     }
 }
 
+
+.box_giaithuong_v2 {
+    background: rgba(2, 22, 65, 0.3);
+    border: 1px solid rgba(6, 190, 225, 0.5);
+    padding: 40px 10px 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+
+    .logo {
+        width: 215px;
+        padding-right: 45px;
+    }
+
+    .content {
+        width: 590px;
+        width: calc(100% - 415px);
+        position: relative;
+        position: relative;
+        padding: 0 40px;
+
+        &::before {
+            content: "";
+            background: rgba(170, 170, 170, 0.34);
+            position: absolute;
+            width: 1px;
+            top: -10px;
+            height: 330px;
+            left: 0;
+        }
+
+        .btn-skew {
+            margin-left: 10px;
+        }
+
+        .vinh-danh {
+            background: #EEEEEE;
+            color: #222222;
+            padding: 0 10px;
+            margin-bottom: 40px;
+            font-size: 18px;
+
+            &::after {
+                background: #EEEEEE;
+            }
+        }
+
+        .th {
+            margin-bottom: 35px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            color: #FFFFFF;
+            font: 500 28px $font1;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            color: #FFE74C;
+            margin-bottom: 35px;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .view {
+            color: #06BEE1;
+
+            &::after {
+                background: #021641;
+                border: 1px solid #06BEE1;
+            }
+        }
+    }
+
+    .ava {
+        width: 200px;
+    }
+
+    @media (max-width: 991px) {
+        padding: 20px;
+
+        .logo {
+            display: none
+        }
+
+        .content {
+            width: calc(100% - 200px);
+            padding-left: 0;
+
+            .vinh-danh,
+            .th,
+            .description {
+                margin-bottom: 20px;
+            }
+
+            &::before {
+                display: none
+            }
+        }
+    }
+
+    @media (max-width:576px) {
+        .content {
+            width: calc(100% - 150px);
+
+            h4 {
+                font-size: 18px;
+            }
+
+            .description {
+                font-size: 16px
+            }
+        }
+
+        .ava {
+            width: 150px;
+        }
+    }
+
+    @media (max-width:480px) {
+        .content {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .ava {
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+.list-giaithuong {
+    background: #021641;
+    border: 1px solid rgba(6, 190, 225, 0.5);
+    border-radius: 4px;
+
+    .title {
+        color: #FFE74C;
+        font: bold 24px $font1;
+        border-bottom: 1px solid rgba(230, 233, 243, 0.2);
+        padding: 40px 0 15px 40px;
+    }
+
+    .table-responsive {
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            color: #EEEEEE;
+
+            tr {
+
+                td {
+                    padding: 15px 15px 15px 40px;
+                    font-size: 16px;
+
+                    &:first-child {
+                        color: #98A6D0;
+                        font-size: 14px;
+                    }
+                }
+
+                .txt_14 {
+                    color: #AAAAAA;
+                    margin-top: 5px;
+                }
+
+                .img {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 60px;
+                        margin-right: 10px;
+                    }
+                }
+
+                &:nth-child(2n) {
+                    td {
+                        background: #021E56;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:767px) {
+        .title {
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        .table-responsive {
+            overflow-y: hidden;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            min-height: .01%;
+            overflow-x: auto;
+
+            table {
+                tr {
+                    td {
+                        white-space: nowrap;
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
 .box_techtalks {
     margin-bottom: 90px;
+    margin-top: 90px;
 
     .wrapper-box-video {
         .item-news {
@@ -1100,6 +1321,7 @@
     }
 
     @media (max-width: 991px) {
+        margin-top: 40px;
 
         .wrapper-box-video {
             .box-player-video {

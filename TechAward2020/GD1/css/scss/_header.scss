@@ -195,7 +195,6 @@
     z-index: 201;
     right: 5px;
     top: -9px;
-    z-index: 9991;
     display: none;
 
     .myvne_form_log {
@@ -1075,6 +1074,8 @@
                 backface-visibility: hidden;
 
                 li {
+                    margin-left: 15px;
+
                     a {
                         font-size: 14px
                     }
