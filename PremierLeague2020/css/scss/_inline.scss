@@ -1,5 +1,6 @@
 .section_banner_cover {
     margin-bottom: 20px;
+    margin-top: -63px;
 
     .bg_img_cover {
         height: 100vh;
@@ -281,11 +282,58 @@
                 margin-bottom: 10px;
 
                 &:nth-child(2) {
+
                     .item-news {
                         width: 100%;
+                        border-bottom: 1px solid #E5E5E5;
+                        padding-bottom: 10px;
 
                         .thumb_5x4 {
                             padding-bottom: 60%;
+                        }
+
+                        .thumb-art {
+                            float: left;
+                            width: 170px;
+                            margin-right: 15px;
+                        }
+
+                        .content {
+                            position: static;
+                            background: none;
+                            overflow: hidden;
+                            padding: 0;
+
+                            &.placeholder {
+                                background: var(--colormain);
+                            }
+                        }
+
+                        .status {
+                            margin-bottom: 0;
+                            color: #949494;
+                            margin-bottom: 10px;
+
+                            .icon {
+                                width: 16px;
+                                height: 16px;
+                                line-height: 15px;
+                                background: none;
+                                margin: -3px 8px 0 0;
+                            }
+                        }
+
+                        .title-news {
+                            font-size: 15px;
+
+                            a {
+                                color: #222222;
+                            }
+                        }
+
+                        &:last-child {
+                            border-bottom: 0;
+                            padding-bottom: 0;
                         }
                     }
 
@@ -297,6 +345,24 @@
                         .item-news {
                             margin-bottom: 10px;
                         }
+                    }
+
+                    @media (max-width:360px) {
+                        .item-news {
+                            .thumb-art {
+                                width: 140px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2n) {
+                li {
+                    order: 1;
+
+                    &:nth-child(2) {
+                        order: 2;
                     }
                 }
             }

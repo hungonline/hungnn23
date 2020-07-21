@@ -23,48 +23,49 @@
 </head>
 
 <body class="homepage">
-    <section class="section section_banner_cover">
-        <div class="bg_img_cover img_gradient">
-            <div class="img_cover zoom" style="background-image: url('images/graphics/banner.png');"></div>
-            <div class="top-bar flex">
-                <a href="#" class="back">
-                    <svg class="ic ic-arrow-up">
-                        <use xlink:href="css/images/graphics/icon-vne.svg#Arrow-Right-2"></use>
-                    </svg>
-                    Thể thao
-                </a>
-                <h1 class="logo">
-                    <a href="#" title="vnExpress">
-                        <img src="images/graphics/logo.svg" alt="vnExpress" />
-                    </a>
-                </h1>
-                <div class="social">
-                    <a href="#" class="face">
-                        <svg class="ic ic-arrow-up">
-                            <use xlink:href="css/images/graphics/icon-vne.svg#Facebook"></use>
-                        </svg>
-                    </a>
-                    <a href="#" class="twiter">
-                        <svg class="ic ic-arrow-up">
-                            <use xlink:href="css/images/graphics/icon-vne.svg#Twitter"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="text-post">
-                <h2 class="title wow fadeInUpSlow">Premier League 2020</h2>
-                <h3 class="wow fadeInDownSlow">
-                    Cùng nhìn lại Ngoại hạng Anh </br>Mùa giải 2019-2020
-                </h3>
-            </div>
-            <a class="scroll-next" href="">
-                <span>Cuộn xuống để</br> xem tiếp</span>
-                <img src="images/icons/scroll.svg" alt="vnExpress">
+    <div id="top-bar" class="top-bar sticky flex">
+        <a href="#" class="back">
+            <svg class="ic ic-arrow-up">
+                <use xlink:href="css/images/graphics/icon-vne.svg#Arrow-Right-2"></use>
+            </svg>
+            Thể thao
+        </a>
+        <h1 class="logo">
+            <a href="#" title="vnExpress">
+                <img src="images/graphics/logo.svg" alt="vnExpress" />
+            </a>
+        </h1>
+        <div class="social">
+            <a href="#" class="face">
+                <svg class="ic ic-arrow-up">
+                    <use xlink:href="css/images/graphics/icon-vne.svg#Facebook"></use>
+                </svg>
+            </a>
+            <a href="#" class="twiter">
+                <svg class="ic ic-arrow-up">
+                    <use xlink:href="css/images/graphics/icon-vne.svg#Twitter"></use>
+                </svg>
             </a>
         </div>
-    </section>
-
+    </div>
     
+
+<section class="section section_banner_cover">
+    <div class="bg_img_cover img_gradient">
+        <div class="img_cover zoom" style="background-image: url('images/graphics/banner.png');"></div>
+        <div class="text-post">
+            <h2 class="title wow fadeInUpSlow">Premier League 2020</h2>
+            <h3 class="wow fadeInDownSlow">
+                Cùng nhìn lại Ngoại hạng Anh </br>Mùa giải 2019-2020
+            </h3>
+        </div>
+        <a class="scroll-next" href="">
+            <span>Cuộn xuống để</br> xem tiếp</span>
+            <img src="images/icons/scroll.svg" alt="vnExpress">
+        </a>
+    </div>
+</section>
+
 <section class="section list_stream">
     <ul>
         <li>
@@ -73,6 +74,7 @@
                     <a class="thumb thumb_5x4" href="" title="#">
                     </a>
                 </div>
+                <div class="content placeholder" style="height: 40px"></div>
             </article>
         </li>
         <li>
@@ -81,6 +83,7 @@
                     <a class="thumb thumb_2x3" href="" title="#">
                     </a>
                 </div>
+                <div class="content placeholder" style="height: 40px"></div>
             </article>
             <div class="list">
                 <article class="item-news full-thumb">
@@ -88,12 +91,14 @@
                         <a class="thumb thumb_5x4" href="" title="#">
                         </a>
                     </div>
+                    <div class="content placeholder" style="height: 40px"></div>
                 </article>
                 <article class="item-news full-thumb">
                     <div class="thumb-art placeholder">
                         <a class="thumb thumb_5x4" href="" title="#">
                         </a>
                     </div>
+                    <div class="content placeholder" style="height: 40px"></div>
                 </article>
             </div>
         </li>
@@ -1104,11 +1109,10 @@
 
     <!--Footer-->
     <footer class="footer flex">
-        <a href="#" title="vnExpress">
+        <a class="logo" href="#" title="vnExpress">
             <img src="images/graphics/logo.svg" alt="vnExpress">
         </a>
         <div class="copyright">© 1997-2020 VnExpress. Toàn bộ bản quyền thuộc VnExpress</div>
-        <div class="none"></div>
     </footer>
     <!--End Footer-->
 
@@ -1122,6 +1126,7 @@
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.wow.min.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     
 <script>
