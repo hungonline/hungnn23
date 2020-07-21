@@ -21,7 +21,11 @@
 
 // fix POPUP login VNE
 .mfp-myvne .mfp-iframe-scaler {
-    min-height: 445PX;
+    min-height: 445px;
+}
+
+.mfp-myvne.mfp-wrap {
+    z-index: 9993;
 }
 
 @media (max-width: 576px) {

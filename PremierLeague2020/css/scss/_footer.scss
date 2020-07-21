@@ -1,0 +1,25 @@
+.footer {
+    background: #0C0B0B url(images/graphics/bg-footer.png) no-repeat;
+    padding: 40px 100px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #757575;
+
+    @media (max-width:991px) {
+        padding: 20px 15px;
+
+        .none {
+            display: none
+        }
+    }
+
+    @media (max-width:767px) {
+        display: block;
+        text-align: center;
+
+        .copyright {
+            margin-top: 15px;
+        }
+    }
+}
