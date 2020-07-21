@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1592473276574');
-	src: url('iconfont.eot?#iefix-1592473276574') format('embedded-opentype'),
-		url('iconfont.woff2?1592473276574') format('woff2'),
-		url('iconfont.woff?1592473276574') format('woff'),
-		url('iconfont.ttf?1592473276574') format('truetype');
+	src: url('iconfont.eot?1594280453349');
+	src: url('iconfont.eot?#iefix-1594280453349') format('embedded-opentype'),
+		url('iconfont.woff2?1594280453349') format('woff2'),
+		url('iconfont.woff?1594280453349') format('woff'),
+		url('iconfont.ttf?1594280453349') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -184,72 +184,76 @@ Glyphs list
 			content: '\ea26';
 		}
 
-		 .iconfont-Save-1:before {
+		 .iconfont-Rss:before {
 			content: '\ea27';
 		}
 
-		 .iconfont-Save:before {
+		 .iconfont-Save-1:before {
 			content: '\ea28';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-Save:before {
 			content: '\ea29';
 		}
 
-		 .iconfont-sent2:before {
+		 .iconfont-search:before {
 			content: '\ea2a';
 		}
 
-		 .iconfont-share:before {
+		 .iconfont-sent2:before {
 			content: '\ea2b';
 		}
 
-		 .iconfont-share2:before {
+		 .iconfont-share:before {
 			content: '\ea2c';
 		}
 
-		 .iconfont-star-full:before {
+		 .iconfont-share2:before {
 			content: '\ea2d';
 		}
 
-		 .iconfont-star-left:before {
+		 .iconfont-star-full:before {
 			content: '\ea2e';
 		}
 
-		 .iconfont-star-right:before {
+		 .iconfont-star-left:before {
 			content: '\ea2f';
 		}
 
-		 .iconfont-sync:before {
+		 .iconfont-star-right:before {
 			content: '\ea30';
 		}
 
-		 .iconfont-Trend:before {
+		 .iconfont-sync:before {
 			content: '\ea31';
 		}
 
-		 .iconfont-Twitter:before {
+		 .iconfont-Trend:before {
 			content: '\ea32';
 		}
 
-		 .iconfont-twitter2:before {
+		 .iconfont-Twitter:before {
 			content: '\ea33';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-twitter2:before {
 			content: '\ea34';
 		}
 
-		 .iconfont-view:before {
+		 .iconfont-user:before {
 			content: '\ea35';
 		}
 
-		 .iconfont-Youtube:before {
+		 .iconfont-view:before {
 			content: '\ea36';
 		}
 
-		 .iconfont-Zoom:before {
+		 .iconfont-Youtube:before {
 			content: '\ea37';
+		}
+
+		 .iconfont-Zoom:before {
+			content: '\ea38';
 		}
 
 		

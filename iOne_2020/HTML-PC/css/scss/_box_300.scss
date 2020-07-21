@@ -27,6 +27,28 @@
 
 }
 
+.box_guibai {
+    position: relative;
+    border: 1px solid var(--border);
+    background: var(--bg-agray2);
+    padding: 7px 105px 7px 20px;
+    font-size: 14px;
+
+    &::before {
+        content: "";
+        background: url(images/icons/icon-send.svg) no-repeat;
+        position: absolute;
+        right: 0;
+        top: -25px;
+        width: 100px;
+        height: 80px;
+    }
+
+    a {
+        color: var(--ione-color)
+    }
+}
+
 .box-xemnhieunhat {
     .item-news {
         border-bottom: 1px solid var(--border);

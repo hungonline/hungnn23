@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description"
+        content="iOne.net chuyên trang tổng hợp tin tức giải trí showbiz, đời sống, chiêm tinh, tử vi, xu hướng thời trang và các sự kiện nổi bật trong và ngoài nước dành cho giới trẻ.">
+    <meta name="keywords" content="iOne, Việt Nam">
+    <title>
+        iOne Redesign
+
+    </title>
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link rel="stylesheet" href="css/font.css" media="all" />
+    <link rel="stylesheet" href="css/general.css" media="all" />
+    
+<link rel="stylesheet" href="css/folder.css" media="all" />
+
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+    <section class="section switch_version">
+        <div class="container">
+            <a class="text-sw" href="#"><span>←</span> Trở về phiên bản hiện tại</a>
+            <span class="close-sw">×</span>
+        </div>
+    </section>
+    <div class="button-vote-version slideup">
+        <a href="#">Đánh giá phiên bản mới <span>→</span></a>
+        <span class="close-vote">×</span>
+    </div>
+    <!--SWITCH VERSION-->
+    <style>
+        .switch_version {
+            background: #E5E5E5;
+            height: 40px;
+            color: #4F4F4F;
+            font-size: 14px;
+        }
+
+        .switch_version a {
+            color: #4F4F4F;
+        }
+
+        .switch_version a span {
+            font-family: monospace;
+        }
+
+        .switch_version .container {
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+
+        .switch_version .close-sw {
+            margin-left: auto;
+            cursor: pointer;
+            font-family: -webkit-body;
+            font-size: 30px;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .button-vote-version {
+            position: fixed;
+            right: 113px;
+            bottom: -101%;
+            transition: all .4s ease-out;
+            z-index: 9;
+        }
+
+        .button-vote-version.slideup {
+            bottom: 0;
+        }
+
+        .button-vote-version a {
+            height: 48px;
+            display: block;
+            background: #7043A9;
+            border-radius: 3px 3px 0 0;
+            font-size: 18px;
+            line-height: 48px;
+            font-weight: 700;
+            padding: 0 20px;
+            color: #fff;
+        }
+
+        .button-vote-version a span {
+            font-family: monospace;
+        }
+
+        .button-vote-version .close-vote {
+            color: #4f4f4f;
+            font-family: -webkit-body;
+            font-size: 25px;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            cursor: pointer;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 50%;
+        }
+    </style>
+
+    <!-- BANNER ADS TOP -->
+    <section class="section banner-top-home hide-ads-tablet">
+        <img src="images/graphics/banner-top.jpg" />
+    </section>
+    <!-- END BANNER ADS TOP -->
+    <section id="wrap-main-nav" class="section wrap-main-nav sticky">
+        <div class="container flex">
+            <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
+            <h1 class="logo"><a href="#" title="iOne - Trang thông tin giải trí dành riêng cho giới trẻ"><img
+                        src="images/graphics/logo_ione.svg" alt="iOne - Trang thông tin giải trí dành riêng cho giới
+                        trẻ" /></a></h1>
+            <nav class="main-nav">
+                <ul class="parent">
+                    <li class="active">
+                        <a href="#" title="">News</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Stars</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Movies & Muzik</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">style</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Horoscopes</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Funland</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Girls & Boys</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">Video</a>
+                    </li>
+                    <li>
+                        <a href="#" title="">photos</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="right-head">
+                <a class="logo-kpopdance" href="https://ione.net/cover-dance-2020" title="Kpop dance">
+                    <img width="62" alt="KPOP" src="https://s.vnecdn.net/ione/i/v14/graphics/logo-kpop.png"
+                        class="lazyLoaded" data-was-processed="true">
+                </a>
+                <div class="search-btn">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#search"></use>
+                    </svg>
+                    <svg class="icon-svg close">
+                        <use xlink:href="images/icons/icon.svg#close2"></use>
+                    </svg>
+                </div>
+                <div id="myvne_taskbar">
+                    <div id="myvne" class="myvne_taskbar myvne_login_button">
+                        <a href="#" class="log_txt" title="Đăng nhập"><svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#user"></use>
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-wrap">
+            <div class="container">
+                <input type="text" class="search-wrap-input" placeholder="Tìm kiếm...">
+            </div>
+        </div>
+    </section>
+
+
+    
+
+<!--container 404-->
+<section class="section page-rss mt20">
+    <div class="container">
+        <div class="head_cate">
+            <h1 class="title_star">
+                <a href="#">RSS</a>
+            </h1>
+        </div>
+        <strong class="sub-title-page">Khái niệm RSS</strong>
+        <p>RSS ( viết tắt từ Really Simple Syndication ) là một tiêu chuẩn định dạng tài liệu dựa trên XML nhằm giúp
+            người sử dụng dễ dàng cập nhật và tra cứu thông tin một cách nhanh chóng và thuận tiện nhất bằng cách tóm
+            lược thông tin vào trong một đoạn dữ liệu ngắn gọn, hợp chuẩn.</p>
+        <p>Dữ liệu này được các chương trình đọc tin chuyên biệt ( gọi là News reader) phân tích và hiển thị trên máy
+            tính của người sử dụng. Trên trình đọc tin này, người sử dụng có thể thấy những tin chính mới nhất, tiêu đề,
+            tóm tắt và cả đường link để xem toàn bộ tin.</p>
+        <strong class="sub-title-page">Kênh do VnExpress cung cấp</strong>
+        <div class="wrap-list-rss">
+            <ul class="list-rss">
+                <li>
+                    <a href="/rss/tin-moi-nhat.rss" title="Trang chủ">Trang chủ
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/rss/the-gioi.rss" title="Thế giới">Thế giới
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/thoi-su.rss" title="Thời sự">Thời sự
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/kinh-doanh.rss" title="Kinh doanh">Kinh doanh <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/rss/startup.rss" title="Startup">Startup
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/giai-tri.rss" title="Giải trí">Giải trí
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/the-thao.rss" title="Thể thao">Thể thao
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/phap-luat.rss" title="Pháp luật">Pháp luật
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/giao-duc.rss" title="Giáo dục">Giáo dục
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/tin-moi-nhat.rss" title="Tin mới nhất">Tin mới nhất
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/tin-noi-bat.rss" title="Tin nổi bật">Tin nổi bật
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list-rss">
+                <li><a href="/rss/suc-khoe.rss" title="Sức khỏe">Sức khỏe
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/gia-dinh.rss" title="Đời sống">Đời sống
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/du-lich.rss" title="Du lịch">Du lịch
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/khoa-hoc.rss" title="Khoa học">Khoa học
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/so-hoa.rss" title="Số hóa">Số hóa
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a></li>
+                <li><a href="/rss/oto-xe-may.rss" title="Xe">Xe
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/y-kien.rss" title="Ý kiến">Ý kiến
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/tam-su.rss" title="Tâm sự">Tâm sự
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/cuoi.rss" title="Cười">Cười
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="/rss/tin-xem-nhieu.rss" title="Tin xem nhiều">Tin xem nhiều
+                        <span class="icon-rss">RSS
+                            <svg class="icon-svg">
+                                <use xlink:href="images/icons/icon.svg#Rss"></use>
+                            </svg>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <strong class="sub-title-page">Điều khoản sử dụng</strong>
+        <p>Các nguồn kênh tin được cung cấp miễn phí cho các cá nhân và các tổ chức phi lợi nhuận. Chúng tôi yêu cầu bạn
+            cung cấp rõ các thông tin cần thiết khi bạn sử dụng các nguồn kênh tin này từ VnExpress.</p>
+        <p>VnExpress có quyền yêu cầu bạn ngừng cung cấp và phân tán thông tin dưới dạng này ở bất kỳ thời điểm nào và
+            với bất kỳ lý do nào.</p>
+    </div>
+</section>
+<!--End container 404-->
+
+
+
+    <!-- BANNER ADS TOP -->
+    <section class="section banner-bottom-home">
+        <img src="images/graphics/banner-top.jpg" />
+    </section>
+    <!-- END BANNER ADS TOP -->
+    <!--Footer-->
+    <footer class="footer_v2">
+        <div class="container">
+            <div class="flex footer_top">
+                <a class="logo" href="#" title="">
+                    <img src="images/graphics/logo_ione2.svg" />
+                    <span>Chuyên mục dành cho giới trẻ của VnExpress</span>
+                </a>
+                <div class="logo_left">
+                    <a href="#" title=""><img style="margin-top:10px" src="images/graphics/logo_vne_v2.svg" /></a>
+                    <a href="#" title=""><img src="images/graphics/logo_ns_v2.svg" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div class="container">
+                <div>
+                    <p>© Copyright 2019 iOne.vnexpress.net, All rights reserved</p>
+                    <p>® VnExpress giữ bản quyền nội dung trên website này</p>
+                </div>
+                <div class="social">
+                    <div class="text"><a href="">Liên hệ toà soạn</a></div>
+                    <a class="face" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Facebook"></use>
+                        </svg></a>
+                    <a class="twitter" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Twitter"></use>
+                        </svg></a>
+                    <a class="in" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Instagram"></use>
+                        </svg></a>
+                    <a class="in" href="#"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#Youtube"></use>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!--End Footer-->
+
+
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+        <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#arrow01"></use>
+        </svg>
+    </a>
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/svgxuse.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/css-vars-ponyfill.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+    
+<script>
+
+</script>
+
+    <div class="clearfix"></div>
+    <script>
+
+    </script>
+</body>
+
+</html>

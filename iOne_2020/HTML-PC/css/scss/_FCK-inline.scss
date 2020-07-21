@@ -213,9 +213,9 @@ title-news a.title_topic {
   table.tplCaption {
     min-width: 100%;
 
-    tr {
-      background: var(--bg-agray);
-    }
+    // tr {
+    //   background: var(--bg-agray);
+    // }
 
     tr+tr {
       background: none;
@@ -268,7 +268,7 @@ title-news a.title_topic {
       display: flex;*/
       display: table;
       justify-content: center;
-      background: var(--bg-agray);
+      // background: var(--bg-agray);
       text-align: center;
     }
 
@@ -589,7 +589,6 @@ padding: 20px;
   margin-bottom: 50px;
 
   .block_thumb_wrap {
-    background: var(--bg-agray);
     min-width: 670px;
     max-width: 100%;
     margin: 0 auto;

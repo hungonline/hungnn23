@@ -1,7 +1,7 @@
 /* Scss Document */
 .page-detail {
     &.detail-photo {
-        padding: 30px 0;
+        padding: 30px 0 15px 0;
         background: var(--bg-detail);
         border-bottom: 1px solid #E0E0E0;
 
@@ -34,7 +34,7 @@
             margin-bottom: 24px;
 
             .block_thumb_slide_show {
-                background: #F0EEEA;
+                // background: #F0EEEA;
                 min-width: 670px;
                 max-width: 100%;
                 margin: 0 auto;
@@ -345,10 +345,10 @@
             color: #e5e5e5;
         }
 
-        .block_thumb_slide_show,
-        .block_thumb_wrap {
-            background: #222 !important;
-        }
+        // .block_thumb_slide_show,
+        // .block_thumb_wrap {
+        //     background: #222 !important;
+        // }
     }
 
 

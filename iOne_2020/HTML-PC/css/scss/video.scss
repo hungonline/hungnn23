@@ -1,7 +1,7 @@
 @import "var.scss";
 @import "scrollbar-ss.scss";
 @import "lightbox.scss";
-@import "scrollbar.scss";
+// @import "scrollbar.scss";
 
 body {
     background: #F4F4F4;
@@ -71,53 +71,71 @@ body {
             &.active {
                 font-weight: bold;
             }
+
+            &.all {
+                padding-right: 24px;
+                border-right: 1px solid var(--border);
+            }
         }
+
     }
 
     .dark_night {
-        background: #282828;
-        border-radius: 100px;
-        color: var(--bg-agray1);
-        height: 28px;
-        font-size: 12px;
-        padding-left: 30px;
-        width: 106px;
+        display: inline-flex;
+        align-items: center;
         line-height: 28px;
         position: relative;
-        transition: 0.3s ease;
+        transition: all 0.3s ease;
+
+        span {
+            background: #4f4f4f;
+            border-radius: 100px;
+            color: var(--bg-agray1);
+            height: 24px;
+            font-size: 12px;
+            width: 48px;
+            height: 24px;
+            display: inline-block;
+            margin-left: 10px;
+            transition: 0.3s ease;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                left: 3px;
+                top: 3px;
+                background: #FFFFFF;
+                border-radius: 50%;
+                transition: 0.3s ease;
+            }
+        }
 
         &:hover {
-            color: #fff;
+            color: inherit;
         }
 
         &::before {
-            content: "";
-            background: linear-gradient(22.11deg, #F2709C 6.43%, #FF9472 91.51%);
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            position: absolute;
-            left: 4px;
-            top: 5px;
-            transition: 0.3s ease;
-        }
-
-        &::after {
-            content: "Chế độ tối";
+            content: "Bản tối";
         }
 
         &.active {
-            padding: 0 24px 0 10px;
-            background: #FFFFFF;
-            color: #222222;
+            color: #fff;
 
-            &::before {
-                left: 84px;
-                background: linear-gradient(90deg, #FF416C 0%, #FF464C 49.84%, #FF4B2B 100%);
+            span {
+                background: #7043A9;
+                color: #ffffff;
+
+                &::before {
+                    right: 3px;
+                    left: auto;
+                }
             }
 
-            &::after {
-                content: "Chế độ sáng";
+            &::before {
+                content: "Bản sáng";
             }
         }
     }
@@ -230,8 +248,20 @@ body {
                 opacity: 0;
             }
 
+            .scroll-element.scroll-x {
+                display: none
+            }
+
             .scroll-wrapper {
                 padding-right: 10px !important;
+
+                &>.scroll-content {
+                    margin-right: 0 !important;
+
+                    @-moz-document url-prefix() {
+                        margin-right: -26px !important;
+                    }
+                }
 
                 &:hover {
                     .scroll-element.scroll-y {
@@ -254,6 +284,33 @@ body {
                 margin-bottom: 24px;
             }
 
+            .flex_youtube {
+                justify-content: space-between;
+                margin-bottom: 8px;
+
+                .author {
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: var(--colormain);
+                    margin-bottom: 10px;
+                }
+
+                .resign-youtube {
+                    color: #4F4F4F;
+                    font-size: 13px;
+                    background: var(--bg-agray);
+                    border-radius: 35px;
+                    padding: 4px 8px;
+                    margin-bottom: 10px;
+
+                    svg {
+                        fill: #FF0000;
+                        vertical-align: text-top;
+                        margin-right: 2px;
+                    }
+                }
+            }
+
             .status_social {
                 padding-bottom: 22px;
                 border-bottom: 1px solid var(--border);
@@ -264,9 +321,25 @@ body {
                 .status {
                     color: var(--gray3);
 
+                    .datetime {
+                        display: inline-block;
+                        font-size: 12px;
+                        padding-right: 10px;
+                        margin-right: 8px;
+                        border-right: 1px solid var(--border);
+                    }
+
                     span {
                         font-size: 12px;
-                        margin-right: 10px;
+                        margin-right: 8px;
+
+                        span {
+                            margin-right: 0 !important;
+                        }
+
+                        a {
+                            color: var(--gray3);
+                        }
                     }
                 }
 
@@ -290,7 +363,7 @@ body {
                         text-align: center;
                         line-height: 30px;
                         border-radius: 2px;
-                        margin-left: 5px;
+                        margin-right: 5px;
 
                         svg {
                             fill: #222222;
@@ -306,12 +379,23 @@ body {
                                 fill: var(--colormain);
                             }
                         }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
                     }
 
                     .save {
                         a {
                             margin-left: 0;
                         }
+                    }
+                }
+
+                @media (max-width: 1620px) {
+                    .status {
+                        margin-bottom: 10px;
+                        width: 100%;
                     }
                 }
             }
@@ -369,6 +453,14 @@ body {
             -webkit-line-clamp: 2;
             display: -webkit-box;
             -webkit-box-orient: vertical;
+        }
+    }
+
+    &_all {
+        margin-bottom: 10px;
+
+        .item-news {
+            margin-bottom: 24px;
         }
     }
 }
