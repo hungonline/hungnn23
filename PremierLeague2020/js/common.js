@@ -53,12 +53,6 @@
 
     $(function () {
         backToTop();
-        $('.grid').isotope({
-            itemSelector: '.grid-item',
-            masonry: {
-                columnWidth: 100
-            }
-        });
     });
     window.onscroll = function () {
         myFunction()
