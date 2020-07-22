@@ -1,5 +1,5 @@
 .top-bar {
-    padding: 13px 100px;
+    padding: 6.5px 100px;
     justify-content: space-between;
     align-items: center;
     color: #949494;
@@ -10,12 +10,7 @@
 
     &.pin {
         background: #fff;
-        padding: 6.5px 100px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-
-        &+.section_banner_cover {
-            margin-top: -50px;
-        }
     }
 
     a {
