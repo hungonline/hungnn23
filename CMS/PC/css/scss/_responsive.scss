@@ -102,7 +102,28 @@
 	// 	.tab-content{max-width: 400px;}
 	// }
 }
-
+@media (max-width: 590px) {
+	.row-main-head{
+		.search-wrapper{
+			max-width: 100%;
+			width: 100%;
+		}
+		.btn-default{
+			margin-left: 0!important;
+		}
+	}
+}
+@media (max-width: 375px) {
+	.row-main-head{
+		.down-up{
+			width: 100%;
+			.form-down{
+				right: initial;
+				left: 0;
+			}
+		}
+	}
+}
 @media (max-width: 420px) {
 	.user-popup {
 		.up-file {

@@ -449,6 +449,19 @@ body.show-menu {
     }
 }
 
+.bg-serach-main {
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 20px;
+
+    .search-wrapper {
+        input {
+            border: 1px solid #CCCCCC;
+        }
+    }
+}
+
 .detail_item {
     .title-cate {
         font-weight: bold;

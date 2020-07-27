@@ -317,6 +317,10 @@ html {
 .btn {
   font-size: 13px;
 
+  &:focus {
+    box-shadow: none;
+  }
+
   i {
     margin-right: 5px;
   }

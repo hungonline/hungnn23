@@ -2084,6 +2084,25 @@
         margin-bottom: 25px;
     }
 
+    #grallery {
+        .thumb_img {
+            background: none;
+
+            img {
+                max-height: 90%;
+                max-width: 90%;
+                width: auto;
+                height: auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+
     .gallery-thumbs {
         margin-top: 10px;
         margin-bottom: 20px;
