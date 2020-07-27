@@ -7,7 +7,7 @@
     <meta name="description" content="design 2018">
     <meta name="keywords" content="design 2018">
     <title>
-        Link giới thiệu
+        Quản lý đơn hàng
 
     </title>
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
@@ -540,7 +540,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="user_management affiliate_setting flex">
+        <div class="user_management flex">
             <div class="sidebar1">
                 <header>
                     <div class="avatar">
@@ -555,7 +555,7 @@
                     <li><a href="/" title=""><svg class="icon-us">
                                 <use xlink:href="images/icons/icon.svg#user"></use>
                             </svg>Thông tin tài khoản</a></li>
-                    <li><a href="/" title=""><svg class="icon-us">
+                    <li class="active"><a href="/" title=""><svg class="icon-us">
                                 <use xlink:href="images/icons/icon.svg#thutuc"></use>
                             </svg>Quản lý đơn hàng</a></li>
                     <li><a href="/" title=""><svg class="icon-us">
@@ -576,7 +576,7 @@
                             <li><a href="/" title=""><svg class="icon-us">
                                         <use xlink:href="images/icons/icon.svg#link2"></use>
                                     </svg>Tạo link giới thiệu</a></li>
-                            <li class="active"><a href="/" title=""><svg class="icon-us">
+                            <li><a href="/" title=""><svg class="icon-us">
                                         <use xlink:href="images/icons/icon.svg#thutuc"></use>
                                     </svg>Quản lý đơn hàng Affiliate</a></li>
                             <li><a href="/" title=""><svg class="icon-us">
@@ -593,318 +593,210 @@
                 </ul>
 
             </div>
-            <div class="sidebar2">
+            <div class="sidebar2 padding_15">
                 <div class="detail-dh">
-                    <div class="head flex">
-                        <h2 class="name"><strong>Quản lý đơn hàng giới thiệu</strong>
-                        </h2>
+                    <div>
+                        <h2 class="txt_18 medium mb10">ĐƠN HÀNG CỦA TÔI</h2>
+                        <div class="flex head-info">
+                            <div>Mã đơn hàng: <strong class="color_green medium">944786279</strong></div>
+                            <div class="txt_666">Ngày mua : 17/07/2019</div>
+                            <div class="txt_666">Tổng tiền : 709.000 đ</div>
+                        </div>
                     </div>
-                    <div class="affiliate_fillter flex">
-                        <div class="onclick">
-                            <a href="javascript:;">
-                                <span>Trạng thái đơn hàng</span>
-                                <svg class="icon-us">
-                                    <use xlink:href="images/icons/icon.svg#down"></use>
-                                </svg>
-                            </a>
-                            <div class="check-list" style="display: none;">
-                                <div class="options">
-                                    <a href="javascript:;" class="">Chờ thanh toán</a>
-                                    <a href="javascript:;" class="checked">Đã thanh toán</a>
-                                    <a href="javascript:;" class="">Hàng đã về thanh toán</a>
-                                    <a href="javascript:;" class="">Đã hủy</a>
+                    <div class="confirm1">
+                        <div class="txt_18 mb20 mt20 color_green">Đơn hàng của bạn đang được chúng tôi mua hộ :
+                        </div>
+                        <div class="step-dh flex">
+                            <div class="step step1 active">
+                                <div class="icon">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#payment"></use>
+                                    </svg>
                                 </div>
+                                <p>Đã thanh toán</p>
+                                <span>04:15 01/03/2019</span>
                             </div>
-                        </div>
-                        <div class="onclick">
-                            <a href="javascript:;">
-                                <span>Tìm kiếm theo loại ngày</span>
-                                <svg class="icon-us">
-                                    <use xlink:href="images/icons/icon.svg#down"></use>
-                                </svg>
-                            </a>
-                            <div class="check-list" style="display: none;">
-                                <div class="options">
-                                    <a href="javascript:;" class="">Tìm kiếm theo loại ngày</a>
-                                    <a href="javascript:;" class="checked">Ngày đặt hàng</a>
-                                    <a href="javascript:;" class="">Ngày giao hàng</a>
+                            <div class="step step2">
+                                <div class="icon">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#plane"></use>
+                                    </svg>
                                 </div>
+                                <p>Hàng đang chuyển về Việt Nam</p>
+                                <span>09:43 13/06/2019</span>
+                            </div>
+                            <div class="step step3">
+                                <div class="icon">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#shipped"></use>
+                                    </svg>
+                                </div>
+                                <p>Thông quan - Đang giao hàng</p>
+                                <span>09:43 13/06/2019</span>
+                            </div>
+                            <div class="step step5">
+                                <div class="icon">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#box"></use>
+                                    </svg>
+                                </div>
+                                <p>Đơn hàng hoàn thành</p>
+                                <span>09:43 13/06/2019</span>
                             </div>
                         </div>
-                        <div class="date-option flex">
-                            <div class="datepicker-wrap">
-                                <input id="datepicker" class="datepicker-input form-control" type="text"
-                                    placeholder="Từ ngày...">
-                            </div>
-                            <div class="datepicker-wrap">
-                                <input id="datepicker" class="datepicker-input form-control" type="text"
-                                    placeholder="Đến ngày...">
-                            </div>
-                            <a class="btn btn-search" href="/">Tìm kiếm</a>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Mã đơn hàng</th>
-                                    <th>Trạng thái</th>
-                                    <th>Ngày đặt hàng</th>
-                                    <th>Ngày nhận hàng</th>
-                                    <th>Tiền hàng tại Mỹ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="color_green"><strong>UAM-9C12345</strong></td>
-                                    <td>Hàng đang về Việt Nam</td>
-                                    <td>19/07/2019</td>
-                                    <td style="color: #666">Dự kiến<br>31/07/2019</td>
-                                    <td>$979.99<br><strong class="price">23,450,000 <em>đ</em></strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="color_green"><strong>UAM-9C12345</strong></td>
-                                    <td>Đã nhận hàng</td>
-                                    <td>19/07/2019</td>
-                                    <td>31/07/2019</td>
-                                    <td>$979.99<br><strong class="price">23,450,000 <em>đ</em></strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
 
-                    <div class="mb30"></div>
-                    <div class="head flex">
-                        <h2 class="name"><strong>Thông tin thanh toán</strong>
-                        </h2>
-                    </div>
-                    <div class="affiliate_thanhtoan center">
-                        <h3 class="mb15 color_green txt_16">Bạn chưa cung cấp thông tin thanh toán</h3>
-                        <p class="mb20">Vui lòng bấm nút "Thêm thông tin thanh toán" bên dưới để US Express có thể chi
-                            trả hoa hồng giới
-                            thiệu cho bạn.</p>
-                        <a class="btn btn_radius" href="/">Thêm thông tin thanh toán</a>
-                        <div class="notifi">
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#checked"></use>
-                            </svg>
-                            Thông tin thanh toán của bạn đã được cập nhật.</div>
-                        <ul class="info">
-                            <li>
-                                <div class="td">Chủ tài khoản:</div>
-                                <div class="td2">Phạm Văn Chiến</div>
+                        <div class="flex space-between align-center">
+                            <h2 class="txt_18 medium mb10">ĐƠN HÀNG CỦA TÔI</h2>
+                            <div class="search-wrapper mb15">
+                                <input type="text" class="input_search" name="" value="" placeholder="Nhập mã đơn hàng">
+                                <button class="search-btn" type="submit">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#search"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="table-responsive table-default">
+                            <table class="table">
+                                <thead>
+                                    <tr class="bg-gray">
+                                        <th>Mã đơn hàng</th>
+                                        <th>Ngày mua</th>
+                                        <th style="width:400px">Sản phẩm</th>
+                                        <th>Tổng tiền</th>
+                                        <th class="text-right">Trạng thái</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đang xử lý</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đang xử lý
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">
+                                            <div>Đơn hàng chờ</div>
+                                            <a class="btn-buy">Thanh toán</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279
+                                        </td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đã hủy
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đang xử lý
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đang xử lý
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đang xử lý
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="color_green medium">944786279</td>
+                                        <td>20/07/2019</td>
+                                        <td>
+                                            Camera chống trộm Xiaomi 360° 1080P Mi
+                                            Home (Trắng) - Hàng Chính Hãng
+                                        </td>
+                                        <td>709.000 ₫</td>
+                                        <td class="text-right">Đang xử lý
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <ul id="pagination" class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#prev2"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li>
-                                <div class="td">Số tài khoản:</div>
-                                <div class="td2">0011004115336</div>
+                            <li class="page-item">
+                                <a class="page-link icon" href="#">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#prev1"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li>
-                                <div class="td">Ngân hàng:</div>
-                                <div class="td2">Vietcombank</div>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link icon" href="#">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#next1"></use>
+                                    </svg>
+                                </a>
                             </li>
-                            <li>
-                                <div class="td">Chi nhánh:</div>
-                                <div class="td2">Sở giao dịch</div>
-                            </li>
-                            <li>
-                                <div class="td">&nbsp;</div>
-                                <div class="td2"><a class="btn" href="/">Cập nhật</a></div>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg class="icon-us">
+                                        <use xlink:href="images/icons/icon.svg#next2"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
+
                     </div>
-
-
-                    <div class="mb30"></div>
-                    <div class="head flex">
-                        <h2 class="name"><strong>Đối soát thanh toán hoa hồng</strong>
-                        </h2>
-                    </div>
-                    <p class="mb30 txt_13">Hiện tại bạn chưa có thông tin đối soát nào.</p>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Tháng chốt</br>thanh toán</th>
-                                    <th>Tổng tiền hàng</br>tại Mỹ <svg class="icon-us">
-                                            <use xlink:href="images/icon-us.svg#icon-information-button"></use>
-                                        </svg></th>
-                                    <th>Tổng tiền</br>hoa hồng</th>
-                                    <th class="tk">Tài khoản</th>
-                                    <th class="status">Trạng thái</br>thanh toán</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Tháng 07/2019</br><a class="color_green2" href="/">Chi tiết</a></td>
-                                    <td>$979.99</br><span class="price">23,450,000 <em>đ</em></span></td>
-                                    <td><strong>3,450,000 đ</strong></td>
-                                    <td>
-                                        Phạm Văn Chiến</br>
-                                        STK: 0011004115336</br>
-                                        Ngân hàng: Vietcombank</br>
-                                        Chi nhánh: Sở giao dịch
-                                    </td>
-                                    <td>Chưa thanh toán</br><em>Dự kiến:</br>15-20/08/2019</em></td>
-                                </tr>
-                                <tr>
-                                    <td>Tháng 07/2019</br><a class="color_green2" href="/">Chi tiết</a></td>
-                                    <td>$979.99</br><span class="price">23,450,000 <em>đ</em></span></td>
-                                    <td><strong>3,450,000 đ</strong></td>
-                                    <td>
-                                        Phạm Văn Chiến</br>
-                                        STK: 0011004115336</br>
-                                        Ngân hàng: Vietcombank</br>
-                                        Chi nhánh: Sở giao dịch
-                                    </td>
-                                    <td>Đã thanh toán</br>15/07/2019</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="mb30"></div>
-                    <div class="head flex">
-                        <h2 class="name"><strong>Chi tiết đối soát hoa hồng - Tháng 07/2019</strong></h2>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Mã đơn hàng</th>
-                                    <th>Trạng thái</th>
-                                    <th>Ngày đặt hàng</th>
-                                    <th>Ngày nhận hàng</th>
-                                    <th>Tiền hàng tại Mỹ</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="color_green2">UAM-9C12345</td>
-                                    <td>Hàng đang về Việt Nam</td>
-                                    <td>19/07/2019</td>
-                                    <td style="color: #666">Dự kiến</br>31/07/2019</td>
-                                    <td>$979.99</br><strong class="price">23,450,000 <em>đ</em></strong></td>
-                                </tr>
-                                <tr>
-                                    <td class="color_green2">UAM-9C12345</td>
-                                    <td>Đã nhận hàng</td>
-                                    <td>19/07/2019</td>
-                                    <td>31/07/2019</td>
-                                    <td>$979.99</br><strong class="price">23,450,000 <em>đ</em></strong></td>
-                                </tr>
-                                <tr class="price_all">
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Tổng tiền hàng tại Mỹ</td>
-                                    <td>$979.99</br><strong class="price">23,450,000 <em>đ</em></strong></td>
-                                </tr>
-                                <tr class="price_all">
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Tổng tiền hoa hồng
-                                        <a class="color_999">
-                                            <svg class="icon-us">
-                                                <use xlink:href="images/icons/icon.svg#notifi3"></use>
-                                            </svg>
-                                        </a> </br>
-                                        (tạm tính *)</td>
-                                    <td><strong class="price">23,450,000 <em>đ</em></strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="affiliate_note color_666">
-                        <p><strong>* Ghi chú:</strong></p>
-                        <p>- Tổng tiền hoa hồng là số tiền tạm tính, và có thể có sự điều chỉnh sau khi chốt trạng thái
-                            các đơn hàng giới thiệu.</p>
-                        <p>- Sau khi thực hiện đối soát, US Express sẽ thực hiện chi trả hoa hồng vào tài khoản của bạn
-                            vào ngày 15-20 của tháng kế tiếp.</p>
-                    </div>
-                    <a class="back color_green" href="">&lt;&lt; <strong>Quay lại Đối soát thanh toán hoa
-                            hồng</strong></a>
-
-                    <div class="mb30">&nbsp;</div>
-                    <div class="head flex">
-                        <h2 class="name"><strong>Chi tiết đơn hàng giới thiệu</strong></h2>
-                    </div>
-                    <div class="warp-20">
-                        <div class="info-dh flex">
-                            <div class="tt">
-                                <strong>Thông tin đơn hàng</strong>
-                                <div class="warp">
-                                    <strong>Mã đơn hàng: UAM-9H11111</strong>
-                                    <p><span>Ngày đặt hàng: </span>17/09/2019</p>
-                                    <p><span>Ngày nhận hàng: </span>Dự kiến 30/09/2019</p>
-                                    <p><span>Trạng thái đơn hàng: </span>Hàng đang chuyển về Việt Nam</p>
-                                </div>
-                            </div>
-                            <div class="ht">
-                                <strong>Thông tin người đặt hàng</strong>
-                                <div class="warp">
-                                    <strong>Nguyễn Như Hùng</strong>
-                                    <p><span>Email: </span>hungnguyen@gmail.com</p>
-                                    <p><span>Điện thoại: </span>0911111111</p>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="list-dh">
-                            <div class="tr thead">
-                                <div class="td sp">Sản phẩm</div>
-                                <div class="td price">Giá tại Mỹ</div>
-                                <div class="td soluong">Số lượng</div>
-                                <div class="td thanhtien">Tổng giá tại Mỹ</div>
-                            </div>
-                            <div class="tr">
-                                <div class="td sp">
-                                    <img class="img" src="images/graphics/sanpham_1.png" alt="">
-                                    <div class="content">
-                                        <h3><a href="/">Kenneth Cole Men Watch Reaction ... 42mm for Business Man in
-                                                Vietnam</a></h3>
-                                        <div class="option">Nhà cung cấp: WorldWatch, từ Amazon</div>
-                                        <div class="option">Màu: Blue, Kích cỡ: XL</div>
-                                    </div>
-                                </div>
-                                <div class="td price">$99.49</div>
-                                <div class="td soluong">02</div>
-                                <div class="td thanhtien price">$198.98</div>
-                            </div>
-                            <div class="tr">
-                                <div class="td sp">
-                                    <img class="img" src="images/graphics/sanpham_1.png" alt="">
-                                    <div class="content">
-                                        <h3><a href="/">Kenneth Cole Men Watch Reaction ... 42mm for Business Man in
-                                                Vietnam</a></h3>
-                                        <div class="option">Màu: Blue, Kích cỡ: XL</div>
-                                    </div>
-                                </div>
-                                <div class="td price">$99.49</div>
-                                <div class="td soluong">02</div>
-                                <div class="td thanhtien price">$198.98</div>
-                            </div>
-                            <div class="tr end">
-                                <div class="td td1">
-                                    <div>Tổng tiền hàng tại Mỹ</div>
-                                    <div>&nbsp;</div>
-                                </div>
-                                <div class="td">
-                                    <div class="price">$248.98</div>
-                                    <div><strong class="price red">44,800,000 <em>đ</em></strong></div>
-                                </div>
-                                <div class="btn-back">
-                                    <a class="back color_green" href="">&lt;&lt; <strong>
-                                            Quay lại Quản lý đơn hàng giới thiệu</strong>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
                 </div>
             </div>
 

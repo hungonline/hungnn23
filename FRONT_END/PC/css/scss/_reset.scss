@@ -78,7 +78,7 @@ a:focus {
 }
 
 .box_category {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   float: left;
   width: 100%;
 }
@@ -270,6 +270,10 @@ img {
 ul,
 li {
   list-style-type: none;
+}
+
+input {
+  outline: 0
 }
 
 input,
