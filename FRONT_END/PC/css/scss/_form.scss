@@ -76,8 +76,60 @@
         }
     }
 
+    .form-control {
+        padding: 10px;
+    }
+
     .form-group {
         margin-bottom: 17px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .lbl {
+            width: 150px;
+            margin-top: 12px;
+        }
+
+        .wrap-input {
+            width: calc(100% - 150px);
+        }
+
+        &.male {
+            .lbl {
+                margin-top: 0;
+            }
+
+            .radio-inline {
+                margin-right: 15px;
+
+                input {
+                    margin-right: 4px;
+                }
+            }
+        }
+
+        &.year {
+            .wrap-input {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .item {
+                width: 130px;
+            }
+        }
+
+        &.control_btn {
+            .wrap-input {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .btn {
+                border-radius: 10px;
+                padding: 0px 40px;
+            }
+        }
     }
 
     .control_btn {
@@ -222,9 +274,10 @@
             margin-top: 20px;
             height: 42px;
         }
-        .form-group{
-            &__button{
-                .btn{
+
+        .form-group {
+            &__button {
+                .btn {
                     width: auto;
                     border-radius: 0 10px 10px 0;
                     margin: 0;
@@ -233,6 +286,7 @@
 
             }
         }
+
         .login-social {
             margin-top: 25px;
 

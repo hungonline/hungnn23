@@ -233,6 +233,23 @@
 		}
 	}
 
+	.delete {
+		position: absolute;
+		right: 15px;
+		top: 20px;
+		background: #EBEBEB;
+		width: 18px;
+		height: 18px;
+		z-index: 2;
+		text-align: center;
+		border-radius: 50%;
+		color: #fff;
+
+		&:hover {
+			background: #236852;
+		}
+	}
+
 	.sale {
 		display: block;
 		background: #DE0028;

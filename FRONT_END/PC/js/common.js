@@ -372,6 +372,9 @@
     slideSwiper();
     loginForm();
     datepicker();
+    $('[data-toggle="tooltip"]').tooltip({
+      html: true
+    });
   });
 
   $(window).on('load resize', function () {

@@ -8,7 +8,7 @@
 	.sidebar1 {
 		width: 233px;
 		border-right: 1px solid #F2F2F2;
-		padding-bottom: 80px;
+		padding-bottom: 30px;
 		padding-right: 0;
 
 		header {
@@ -50,18 +50,30 @@
 		}
 
 		.lever1 {
-			padding-right: 10px;
+			padding: 0 8px;
 
 			li {
 				a {
-					padding: 10px 15px;
+					padding: 10px 6px;
 					display: block;
 					position: relative;
+
+					.count {
+						background: #FFAA00;
+						border-radius: 10px;
+						color: #236852;
+						font-size: 14px;
+						width: 36px;
+						height: 17px;
+						display: inline-block;
+						text-align: center;
+						margin-left: 3px;
+					}
 				}
 
 				.icon-us {
 					vertical-align: text-top;
-					margin-right: 8px;
+					margin-right: 4px;
 					fill: #666666;
 				}
 
@@ -71,12 +83,49 @@
 					margin-right: 6px;
 				}
 
+				&.img-icon {
+					.icon-us.active {
+						display: none
+					}
+				}
+
 				&.active {
 					background: #37A07F;
 					border-radius: 6px;
 
+					&.img-icon {
+						.icon-us {
+							display: none
+						}
+
+						.icon-us.active {
+							display: inline-block
+						}
+					}
+
 					a {
 						color: #fff;
+
+						&::before {
+							content: "";
+							background: #236852;
+							border-radius: 0px 6px 6px 0px;
+							position: absolute;
+							width: 12px;
+							height: 38px;
+							top: 0;
+							right: 0;
+						}
+
+						&::after {
+							content: "";
+							border-top: 4px solid transparent;
+							border-bottom: 4px solid transparent;
+							border-left: 5px solid #fff;
+							position: absolute;
+							right: 3px;
+							top: 15px;
+						}
 					}
 
 					.icon-us {
@@ -87,7 +136,7 @@
 		}
 
 		.lever2 {
-			padding: 0 0px 0 20px;
+			padding: 0 0px 0 15px;
 			margin-top: 5px;
 
 			li {
@@ -128,7 +177,7 @@
 			}
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 991px) {
 			width: 100%;
 			border-right: 0;
 			padding-bottom: 10px;
@@ -145,11 +194,28 @@
 			padding: 15px;
 		}
 
-		@media (max-width: 1025px) {
+		&.padding_20 {
 			padding: 20px;
 		}
 
-		@media (max-width: 768px) {
+		.pay-list-user {
+			margin: 0 -30px;
+
+			li {
+				padding: 0 15px;
+				margin-bottom: 30px;
+			}
+		}
+
+		@media (max-width: 1025px) {
+			padding: 20px;
+
+			.pay-list-user {
+				margin: 0 -10px;
+			}
+		}
+
+		@media (max-width: 991px) {
 			width: 100%;
 		}
 	}
@@ -185,6 +251,10 @@
 			}
 		}
 	}
+}
+
+.form-customer {
+	max-width: 600px;
 }
 
 .fillter-us {
@@ -317,6 +387,7 @@
 }
 
 .detail-dh {
+
 	.head {
 		background: #F9F9F9;
 		border-left: 8px solid var(--green2);
@@ -335,6 +406,40 @@
 			width: 30%;
 			text-align: right;
 			margin-top: 4px;
+		}
+	}
+
+	.head-between {
+		justify-content: space-between;
+		border-bottom: 1px solid #EBEBEB;
+		margin-bottom: 20px;
+
+		.tab-default {
+			font-size: 16px;
+
+			a {
+				margin: 0 10px;
+
+				&.active {
+					border-bottom: 1px solid #FFAA00;
+				}
+			}
+		}
+
+		.cancel {
+			color: #FFAA00;
+
+			i {
+				vertical-align: text-bottom;
+				margin-right: 4px;
+			}
+
+		}
+
+		.head-info {
+			&>div {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -384,6 +489,7 @@
 			color: var(--border);
 			margin-bottom: 20px;
 			position: relative;
+			padding: 0 10px;
 
 			&:before {
 				content: "";
@@ -453,9 +559,13 @@
 
 			&.success {
 				&:before {
-					background: var(--green2);
+					background: var(--green1);
 				}
 			}
+		}
+
+		@media (max-width: 1025px) {
+			margin: 0px -10px 20px -10px;
 		}
 	}
 
@@ -527,6 +637,38 @@
 					text-align: right;
 				}
 			}
+		}
+	}
+}
+
+.customer-dh {
+	border-bottom: 1px solid #EBEBEB;
+
+	.item {
+		width: 50%;
+		padding: 16px;
+		border-left: 1px solid #EBEBEB;
+		line-height: 1.5;
+
+		&:first-child {
+			border-left: 0;
+		}
+
+		.btn {
+			border: 1px solid #236852;
+			border-radius: 6px;
+			background: #FFFFFF;
+			color: #236852;
+			font-size: 14px;
+			height: 30px;
+			line-height: 30px;
+			float: right;
+			padding: 0px 30px;
+		}
+
+		.cancel {
+			border: 1px solid #999999;
+			color: #666666;
 		}
 	}
 }
