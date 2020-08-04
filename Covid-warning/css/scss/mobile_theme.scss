@@ -1,0 +1,1018 @@
+/* Scss Document */
+@import "m-topbar-menu.scss";
+@import "m-left-menu-mobile.scss";
+
+.hidde-pc,
+.all-menu-tablet,
+#myvne_taskbar.myvne_taskbar_mobile {
+    display: none
+}
+
+.hidde-mobile {
+    display: block
+}
+
+// fix POPUP login VNE
+.mfp-myvne .mfp-iframe-scaler {
+    min-height: 445px;
+}
+
+.mfp-myvne.mfp-wrap {
+    z-index: 9993;
+}
+
+@media (max-width: 576px) {
+    .mfp-myvne .mfp-iframe-scaler {
+        min-height: 100vh;
+    }
+
+    .mfp-myvne button.mfp-close {
+        font-size: 35px;
+        font-family: -webkit-body;
+        color: #BDBDBD;
+        top: 0px !important;
+        right: 0px;
+        background: none !important;
+    }
+}
+
+
+.mfp-myvne .mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 768px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .hidde-pc,
+    .all-menu-tablet,
+    .btn_control_menu {
+        display: block
+    }
+
+    .top-header .logo {
+        margin-left: 35px;
+    }
+
+    .hidde-mobile,
+    .link_logo,
+    .social-com .myvne_tablet_save,
+    .footer-content .myvne_save_for_later {
+        display: none !important
+    }
+
+    .box-head-tablet .social-com .count_com_hoz {
+        width: 32px;
+        overflow: hidden;
+    }
+
+    .page-detail .list-topic .item-news {
+        width: 50%;
+        margin-bottom: 15px;
+        padding-bottom: 0;
+
+        .meta-news {
+            display: none
+        }
+
+        &:nth-child(5) {
+            display: none;
+        }
+    }
+
+    body {
+        background: none;
+    }
+
+    .section_container {
+        max-width: 590px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        clear: both;
+    }
+
+    .section_top,
+    .fixed+.section_main {
+        padding-top: 0;
+    }
+
+    .topbar .logo {
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+
+    .section_top {
+        .bg-white {
+            background: #F7F7F7;
+            padding-right: 0;
+        }
+    }
+
+    .main_menu_seagame {
+        position: relative;
+        height: 44px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        background: #F7F7F7;
+        margin-bottom: 0;
+
+        ul li {
+            float: none;
+            padding-right: 20px;
+
+            a {
+                font-family: Arial;
+            }
+        }
+    }
+
+    .wrapper-topstory-folder {
+        &.wrapper-topstory-folder-v2 {
+            min-height: 100px;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: 0;
+            margin-bottom: 4px;
+
+            .article-topstory {
+                .thumb-art {
+                    width: calc(100% + 30px) !important;
+                    margin: 0 -15px 15px -15px !important;
+                }
+
+                .content {
+                    margin: -15px -15px 0 -15px;
+                }
+            }
+
+            .list-sub-feature {
+                li {
+                    width: 100%;
+                    border-bottom: 1px solid #E2E2E2;
+                    margin-bottom: 16px;
+                    padding-bottom: 16px;
+
+                    .thumb-art {
+                        display: block;
+                        width: 160px;
+                    }
+
+                    .title_news {
+                        font-size: 16px;
+                        font-weight: 400
+                    }
+
+                    .description,
+                    .meta-news {
+                        display: none
+                    }
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .list-news-subfolder {
+        .item-news-common {
+            border-top: 1px solid #E2E2E2;
+            padding-top: 16px;
+            margin-top: 16px;
+
+            .thumb-art {
+                width: 160px;
+                margin: 0 10px 0 0;
+                float: left;
+            }
+
+            .title-news {
+                font-size: 16px;
+            }
+
+            .description,
+            .meta-news {
+                display: none
+            }
+
+            &:first-of-type {
+                border-top: 0;
+            }
+        }
+    }
+
+    .section_video {
+        padding: 15px 0 20px 0;
+        width: calc(100% + 30px);
+        margin: 0 -15px 0 -15px;
+        max-width: initial;
+
+        .wrapper-box-video {
+            flex-wrap: wrap;
+
+            .box-player-video {
+                width: 100%;
+                border-bottom: 1px solid #E2E2E2;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+
+                .title-news {
+                    font-size: 18px;
+                }
+
+                .thumb-video {
+                    width: calc(100% + 30px);
+                    margin: 0 -15px 0 -15px;
+                }
+            }
+
+            .box-scroll-video {
+                width: 100%;
+                padding-left: 0 !important;
+
+                .item-news {
+                    .thumb-art {
+                        width: 140px;
+                        margin: 0 10px 0 0;
+                        float: left;
+                    }
+
+                    .title-news {
+                        font-size: 14px;
+                    }
+
+                    &:last-of-type {
+                        border-bottom: 0;
+                        padding-bottom: 0px;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .box_thacmac {
+        height: 169px;
+    }
+
+
+    .m_top_banner {
+        img {
+            width: 100%;
+            float: left;
+        }
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    .section_top.fixed {
+        position: static;
+    }
+
+    .title_line {
+        text-align: left;
+
+        a {
+            padding-left: 0;
+        }
+    }
+
+    .col_right_sea {
+        display: block;
+        width: 100%;
+    }
+
+    .box-tuvan img {
+        width: 100%;
+    }
+
+    .block_topstory.block_feature_news.folder .first_art_item_top {
+        flex-direction: column;
+
+        .art_item_top__info {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+    .list_news_seagame .thumb_art.thumb_medium {
+        width: 140px;
+    }
+
+    .col_left_sea .list_news_seagame .art_item .title_news_res {
+        margin-top: 0;
+
+        a {
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+
+    .news_lead_res {
+        display: none;
+    }
+
+    .ads_content {
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .title-box a {
+        font-size: 20px;
+    }
+
+    .wrap_block_topstory {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .page-detail.top-detail {
+        .social_pin {
+            display: none
+        }
+
+        .sidebar-1,
+        .sidebar-2 {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 0;
+        }
+    }
+
+
+    .block_cungchuyenmuc .list_news_tinkhac .art_item {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list_news_tinkhac {
+        width: 100%;
+        margin: 0;
+
+        .thumb_art {
+            width: 140px;
+            float: left;
+            margin: 0 10px 0 0;
+        }
+
+        .art_item {
+            margin-bottom: 20px;
+        }
+
+        .title_news_res {
+            a {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .form-contact .row_50 .input-form {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .form-contact .row_50 .input-form:last-of-type {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .box-lienhe {
+        margin-bottom: 20px;
+    }
+
+    .fck_detail figure.tplCaption video {
+        position: static !important;
+        width: 100% !important;
+    }
+
+    .photo-dark .page-detail.detail-photo {
+        padding-top: 20px;
+    }
+
+
+    // MyVnE
+    #myvne_taskbar.myvne_taskbar_pc {
+        display: none
+    }
+
+    // MyVne Mobile
+    #myvne_taskbar.myvne_taskbar_mobile {
+        position: absolute;
+        height: 44px;
+        z-index: 201;
+        right: 5px;
+        top: -9px;
+        display: block;
+        z-index: 9991;
+
+        .myvne_form_log {
+            margin-top: 0;
+
+            .av_no_img {
+                margin-top: 14px;
+            }
+        }
+
+        .icon-arrow {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 14px;
+            height: 7px;
+            right: 0;
+            margin: auto;
+            display: none;
+
+            &:before {
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-bottom: 5px solid #fff;
+                content: "";
+                bottom: 0;
+                left: 2px;
+                position: absolute;
+                z-index: 2;
+            }
+
+            &:after {
+                width: 0;
+                height: 0;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 7px solid #eee;
+                content: "";
+                left: 0;
+                bottom: 0;
+                position: absolute;
+            }
+        }
+
+        ul.myvne_form_log {
+            li.myvne_user {
+                float: right;
+                height: 50px;
+                margin: 0;
+                line-height: 50px;
+                position: relative;
+
+                a.myvne_icon {
+                    display: block;
+                    height: 50px;
+                    line-height: 50px !important;
+                    text-align: center;
+                    padding: 0 10px;
+
+                    &.myvne_avatar {
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                            line-height: 50px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                        }
+
+                        .av_no_img {
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #fff;
+                            background: #BDBDBD;
+                            width: 18px;
+                            height: 18px;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 18px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                        }
+                    }
+                }
+
+                &.active {
+                    .ic-user {
+                        background-position: -54px -193px;
+                    }
+
+                    .ic-bell {
+                        background-position: -270px -192px;
+                    }
+
+                    .icon-arrow {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .badged {
+            position: absolute;
+            font-size: 9px !important;
+            padding: 2px 3px 1px 3px;
+            line-height: 1 !important;
+            background-color: #004f8b;
+            color: #fff;
+            top: 20px;
+            left: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .input_form {
+            color: #333;
+        }
+
+        .block_sub_myvne {
+            text-align: left;
+            width: 100vw;
+            min-width: 320px;
+            max-width: 590px;
+            position: absolute;
+            background: #fff;
+            max-height: 100vh;
+            top: 44px;
+            right: -5px;
+            line-height: initial;
+            display: none;
+            scroll-behavior: smooth;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            overflow: scroll;
+            -webkit-overflow-scrolling: touch;
+            z-index: 9999;
+
+            &.block_sub_log {
+                padding: 15px;
+            }
+
+            -webkit-box-shadow: -2px 3px 5px 0px rgba(153, 153, 153, 0.7);
+            -moz-box-shadow: -2px 3px 5px 0px rgba(153, 153, 153, 0.7);
+            box-shadow: -2px 3px 5px 0px rgba(153, 153, 153, 0.7);
+        }
+
+        .close-lb {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 5px;
+            right: 4px;
+            cursor: pointer;
+        }
+
+        .header_sub_myvne {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+
+            .m_page_title {
+                margin-bottom: 10px;
+
+                h2 {
+                    font-size: 20px !important;
+                    line-height: 25px !important;
+                    padding-right: 40px;
+                }
+            }
+
+            .pre-text {
+                padding: 0 0 15px;
+                position: relative;
+                font-size: 14px;
+                line-height: 20px;
+                color: #666;
+
+                a {
+                    color: #004f8b;
+                    text-decoration: underline;
+
+                    &.edit_profile {
+                        color: #999999;
+                        text-decoration: none;
+                        display: inline-block;
+                        margin-left: 20px;
+                        font-size: inherit !important;
+                        line-height: inherit !important;
+                    }
+                }
+            }
+        }
+
+        .li_pass {
+            position: relative;
+
+            .input_form {
+                padding-right: 70px;
+            }
+        }
+
+        .showpass-btn {
+            position: absolute;
+            right: 12px;
+            top: 25px;
+            color: #004f8b;
+            display: block;
+            font-size: 14px;
+            padding: 10px 0;
+        }
+
+        .check_form {
+            input {
+                float: left;
+                margin-right: 5px;
+            }
+
+            label {
+                float: left;
+
+                a {
+                    text-decoration: underline;
+                    color: #666;
+                }
+            }
+
+            color: #666;
+            font-size: 14px;
+
+            .forget_pass {
+                font-size: 14px;
+                color: #666;
+            }
+        }
+
+        .btn_vne {
+            width: 100%;
+            text-align: center;
+        }
+
+        .or_text {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+
+            &::before {
+                content: "";
+                height: 1px;
+                width: 100%;
+                background-color: #eee;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            }
+
+            h4 {
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 0 23px;
+                background-color: #fff;
+                display: inline-block;
+                margin: 0 auto;
+                z-index: 1;
+                position: relative;
+            }
+        }
+
+        .social_login {
+            a {
+                display: block;
+                position: relative;
+                width: 47%;
+                padding: 10px;
+                font-size: 16px;
+
+                &.face_login {
+                    border: 1px solid #3b589c;
+                }
+
+                &.google_login {
+                    border: 1px solid #da5542;
+                }
+
+                .ic {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                }
+
+                .ic-facebook {
+                    width: 17px;
+                    height: 18px;
+                    background-position: -126px -192px;
+                }
+
+                .ic-google-plus {
+                    width: 18px;
+                    height: 18px;
+                    background-position: -144px -192px;
+                }
+            }
+        }
+
+        .copyright_myvne {
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            padding-top: 15px;
+            border-top: 1px solid #e7e7e7;
+            margin-top: 30px;
+        }
+
+        ul.list-items {
+            font-size: 18px;
+        }
+
+        ul.list-items li {
+            padding-left: 20px;
+            width: 100%;
+            float: left;
+            line-height: 22px;
+            position: relative;
+
+            &::before {
+                width: 6px;
+                height: 6px;
+                background: #ccc;
+                content: "";
+                position: absolute;
+                top: 7px;
+                left: 0;
+            }
+        }
+
+        ul.list-items li:not(:last-child) {
+            padding-bottom: 30px;
+        }
+
+        .download_pdf {
+            display: inline-block;
+        }
+
+        .block_sub_loged {
+            .header_sub_myvne {
+                padding: 15px;
+            }
+        }
+
+        .menu_profile {
+            border-bottom: 1px solid #ccc;
+
+            li {
+                width: 50%;
+                padding-right: 15px;
+                float: left;
+
+                &:nth-child(even) {
+                    padding-right: 0;
+                }
+
+                a {
+                    display: block;
+                    padding: 12px 0;
+                    font-size: 18px !important;
+                    line-height: inherit !important;
+                    border-bottom: 1px solid #e7e7e7;
+                }
+
+                &:last-child,
+                &:nth-last-child(2) {
+                    a {
+                        border: none;
+                    }
+                }
+            }
+
+            &.other_link {
+                border-bottom: none;
+
+                li {
+                    a {
+                        border: none;
+                        color: #999999;
+                        font-size: 16px !important;
+                        line-height: inherit !important;
+                    }
+                }
+            }
+        }
+
+        .loged {
+            .header_sub_myvne {
+                margin-bottom: 0;
+            }
+        }
+
+        .box_saved_news {
+            background: #f7f7f7;
+            float: left;
+            margin: 0 -15px 0 -15px;
+            padding: 0 15px;
+
+        }
+
+        .head_box {
+            border-bottom: 1px solid #e7e7e7;
+            font-size: 16px;
+            padding: 10px 0;
+
+            a {
+                color: #999;
+            }
+        }
+
+        .list_news_saved {
+            li {
+                width: 100%;
+                float: left;
+
+                a {
+                    display: block;
+                    padding: 10px 0;
+                    font-size: 18px;
+                    border-bottom: 1px solid #e7e7e7;
+
+                    span {
+                        display: block;
+                        color: #999;
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                }
+
+                &.read_pass {
+                    a {
+                        color: #aaa;
+                    }
+                }
+            }
+        }
+
+        .logout_link {
+            display: block;
+            width: 100%;
+            float: left;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px !important;
+            line-height: inherit !important;
+            color: #999;
+        }
+
+        ul.myvne_form_log li.notify_myvne {
+            .block_sub_myvne {
+                right: -45px;
+            }
+
+            .head_box {
+                padding-top: 0;
+                border: none;
+            }
+        }
+
+        .view_more_myvne {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            color: #999;
+            padding: 10px 0;
+        }
+
+        // span.ic,
+        // i.ic,
+        // .content_goithutoasoan a::after,
+        // .ic-comment::before {
+        //     width: 14px;
+        //     height: 14px;
+        //     background: url(images/graphics/icon_vne.svg) no-repeat;
+        //     display: inline-block;
+        //     vertical-align: middle;
+        // }
+
+        i.ic-user {
+            background-position: -611px -193px;
+            width: 18px;
+            height: 18px;
+        }
+
+        i.ic-bell {
+            width: 18px;
+            height: 18px;
+            background-position: -252px -192px;
+        }
+
+        i.ic-false {
+            width: 18px;
+            height: 18px;
+            background-position: -72px -192px;
+        }
+
+        .loged {
+            .block_sub_myvne {
+                max-height: 80vh;
+            }
+        }
+
+        &.myvne_taskbar_v2 {
+
+            .myvne_user_status {
+                li {
+                    width: 100%;
+                    float: left;
+
+                    &.li_bd {
+                        border-bottom: 1px solid #E5E5E5;
+                        padding: 0 0 10px 0;
+                        margin-bottom: 10px;
+                    }
+
+                    &.li_account {
+                        display: flex;
+                        align-items: center;
+                        padding: 0 0 15px 0;
+                    }
+
+                    a {
+                        font-size: 15px;
+                        color: #4F4F4F;
+                        padding: 10px 0;
+                        position: relative;
+                        width: 100%;
+                        display: block;
+
+                        .number_sub {
+                            opacity: 0.4;
+                        }
+                    }
+
+                    &:last-child {
+                        a {}
+                    }
+                }
+
+                .avatar_sub {
+                    width: 48px;
+                    height: 48px;
+                    background: #E5E5E5;
+                    text-align: center;
+                    line-height: 48px;
+                    font-size: 20px;
+                    color: #fff;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    font-weight: 700;
+                    text-transform: uppercase;
+
+                    img {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+
+                .name_sub {
+                    width: calc(100% - 48px);
+                    padding-left: 10px;
+                    color: #4F4F4F;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .myvne_thumb {
+            float: left;
+            margin-right: 10px;
+        }
+    }
+
+    @import "m-footer.scss";
+}
