@@ -534,7 +534,17 @@ label.radio {
     td {
         padding: 12px 15px;
     }
-
+    td.phi_muaho{
+        &>div{
+            display: flex;
+            justify-content: flex-end;
+        }
+        span{width: 50px;}
+        .price{
+            width: 200px;text-align: right;display: inline-block;margin-right: 10px;
+            
+        }
+    }
     tr {
         th {
             border-top: 0;
@@ -2614,7 +2624,8 @@ label.radio {
         background: #FFFFFF;
         padding: 4px;
         border: 0;
-        top: -40px;
+        left: 40px;
+        top: 0px;
         z-index: -1;
 
         img {
