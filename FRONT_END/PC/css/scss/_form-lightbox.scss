@@ -282,7 +282,7 @@ button::-moz-focus-inner {
 }
 
 .content_poup {
-  padding: 25px;
+  padding: 20px;
   background: #fff;
   @extend .radius10;
   overflow: hidden;
@@ -318,6 +318,12 @@ button::-moz-focus-inner {
     li {
       padding: 0 10px;
     }
+  }
+}
+
+.margin_center{
+  .btn{
+    margin: 0 30px 10px 30px;width: 240px;
   }
 }
 
