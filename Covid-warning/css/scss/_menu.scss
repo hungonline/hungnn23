@@ -1,0 +1,146 @@
+.top-header {
+    background: #fff;
+    @media screen and (max-width: 1129px){
+        &.sticky{
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+}
+
+.link_logo {
+    text-align: center;
+    display: block;
+    padding: 130px 10px 80px 10px;
+
+}
+
+#box_menu_before {
+    float: left;
+    width: 100%;
+    height: 1px;
+}
+
+.section_top {
+    // .link_logo {
+    //     position: absolute;
+    //     top: 80px;
+    //     left: 20px;
+    //     right: 20px;
+    //     text-align: center;
+    // }
+
+    .link_logo--pin {
+        display: none;
+    }
+
+    &.fixed {
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        z-index: 98;
+        transition-duration: 250ms;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+
+        .box_menu {
+            margin-top: 0;
+        }
+
+        .main_menu_seagame {
+            .logo {
+                display: block
+            }
+
+            ul {
+                text-align: right
+            }
+        }
+
+        .logo_seagame .link_logo--pin {
+            display: block;
+            max-width: 160px;
+            position: relative;
+        }
+
+        .main_menu_seagame {
+            margin-bottom: 0;
+            border-bottom: 0
+        }
+        @media screen and (max-width: 1129px){
+            box-shadow:none;position:static;
+        }
+    }
+}
+
+
+.main_menu_seagame {
+    padding: 15px 0;
+
+    .logo {
+        position: absolute;
+        display: none;
+        top: 10px;
+    }
+
+    ul {
+        float: left;
+        width: 100%;
+        text-align: left;
+
+        li {
+            display: inline-block;
+            padding-right: 36px;
+
+            a {
+                display: block;
+                padding-bottom: 5px;
+                color: #666;
+                position: relative;
+                z-index: 9;
+                outline: none;
+                font-family: Arial;
+                font-size: 16px;
+            }
+
+            &:last-child {
+                padding-right: 0px;
+            }
+
+            &.active {
+                a {
+                    color: #EB7B41;
+                    font-weight: bold;
+
+                    &:after {
+                        content: '';
+                        height: 2px;
+                        width: 100%;
+                        background: #EB7B41;
+                        position: absolute;
+                        bottom: -3px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 979px) {
+        ul {
+            li {
+                padding-right: 15px;
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    .inner-footer {
+        padding-top: 40px;
+        margin-top: 50px;
+    }
+}
