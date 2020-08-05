@@ -207,6 +207,16 @@
 	}
 }
 
+.product-care{
+	background: #F5F5F5;padding: 20px 0;
+	.title-label{
+		border-bottom: 0;
+		text-transform: uppercase;
+		margin: 0 0 5px -10px;
+	}
+	.swiper-scrollbar{display: none;}
+}
+
 .product-item {
 	background: #fff;
 	padding: 15px;
