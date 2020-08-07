@@ -1233,6 +1233,22 @@ label.radio {
             }
         }
     }
+
+    @media (max-width: 576px) {
+        padding: 15px 10px;
+        .form-group {
+            .lbl {
+                width: 100%;
+                text-align: left;
+                padding-right: 0;margin-bottom: 6px;
+            }
+
+            .wrap_input,
+            .datepicker-wrap {
+                width: 100%;
+            }
+        }
+    }
 }
 
 

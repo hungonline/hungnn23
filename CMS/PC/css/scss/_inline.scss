@@ -522,6 +522,23 @@ body.show-menu {
                 }
             }
         }
+        @media (max-width: 576px) {
+            .col-md-6 {
+                padding: 0 15px;
+            }
+
+            .form-group {
+                .lbl {
+                    width: 100%;
+                    padding-right: 0;text-align: left;margin-bottom: 5px;
+                }
+
+                .wrap_input,
+                .datepicker-wrap {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
