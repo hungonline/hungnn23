@@ -517,9 +517,6 @@ label.radio {
         }
     }
 
-    td {
-        vertical-align: middle;
-    }
 
     tr.active {
         border: 1px solid #005DA6;
@@ -554,6 +551,9 @@ label.radio {
 
     .name_img {
         width: 165px;
+        .align-center{
+            align-items: flex-start;
+        }
     }
 
     .bg-main2 {
