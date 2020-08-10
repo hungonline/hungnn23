@@ -104,6 +104,20 @@ select {
   float: right;
 }
 
+.hidden-mobile {
+  display: none
+}
+
+@media (max-width:590px) {
+  .hidden-pc {
+    display: none
+  }
+
+  .hidden-mobile {
+    display: block
+  }
+}
+
 .relative {
   position: relative;
 }
