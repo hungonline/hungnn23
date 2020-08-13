@@ -181,6 +181,8 @@ a:hover {
 
 button {
   font-family: "Roboto", sans-serif;
+  outline: 0;
+  cursor: pointer;
 }
 
 .section {
@@ -754,7 +756,9 @@ html {
 .bg_gray {
   background: #f8f8f6;
 }
-
+.bg-white{
+  background: #fff;
+}
 .txt_000 {
   color: #000
 }
