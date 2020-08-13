@@ -358,7 +358,7 @@ input[type="search"]::-webkit-search-results-decoration {
   @extend .radius10;
   height: 40px;
   padding: 0 10px;
-  color: #666666;
+  color: #242424;
   font-size: 14px;
   width: 100%;
   outline: 0;
@@ -659,6 +659,12 @@ html {
 .mt40 {
   margin-top: 40px;
 }
+.m-l-10{margin-left: 10px;}
+.m-l-20{margin-left: 20px;}
+.m-r-10{margin-right: 10px;}
+.m-r-20{margin-right: 20px;}
+
+
 
 .icon-us {
   width: 16px;
