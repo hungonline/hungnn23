@@ -830,6 +830,9 @@ span.spanDateTime i {
                 transform: rotate(90deg);
             }
         }
+        @media (max-width: 1200px){
+            font-size: 18px;margin-bottom: 20px;
+        }
     }
     .out-expand{
         font-size: 16px;
