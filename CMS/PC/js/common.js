@@ -55,12 +55,12 @@
 		});
 	}
 	//fixSticky
-	function fixStickyIE() {
-		var stickyElements = $('.sticky');
-		if (stickyElements.length > 0) {
-			Stickyfill.add(stickyElements);
-		}
-	}
+	// function fixStickyIE() {
+	// 	var stickyElements = $('.sticky');
+	// 	if (stickyElements.length > 0) {
+	// 		Stickyfill.add(stickyElements);
+	// 	}
+	// }
 
 	//OnCLick
 	function onClickTongle() {
@@ -185,7 +185,7 @@
 	$(function () {
 		scrollBar();
 		magnificPopup();
-		fixStickyIE();
+		// fixStickyIE();
 		onClickTongle();
 		onClickTab();
 		datepicker();

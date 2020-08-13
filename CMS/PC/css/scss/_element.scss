@@ -511,9 +511,15 @@ label.radio {
     }
 
     .name_img {
+        .flex {}
+
         .ava {
             width: 35px;
-            margin-right: 6px;
+            margin-right: 7px;
+        }
+
+        .content {
+            width: calc(100% - 42px);
         }
     }
 

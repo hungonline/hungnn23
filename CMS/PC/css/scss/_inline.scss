@@ -1,5 +1,4 @@
 .main-container {
-    overflow: hidden;
     padding-top: 20px;
 }
 
@@ -281,6 +280,7 @@
     font-size: 25px;
     top: 7px;
     display: none;
+    z-index: 2;
 }
 
 .btn_show {
@@ -522,6 +522,7 @@ body.show-menu {
                 }
             }
         }
+
         @media (max-width: 576px) {
             .col-md-6 {
                 padding: 0 15px;
@@ -530,7 +531,9 @@ body.show-menu {
             .form-group {
                 .lbl {
                     width: 100%;
-                    padding-right: 0;text-align: left;margin-bottom: 5px;
+                    padding-right: 0;
+                    text-align: left;
+                    margin-bottom: 5px;
                 }
 
                 .wrap_input,
