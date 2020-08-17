@@ -3,7 +3,7 @@
     border-bottom: 1px solid #eaeaea;
 
     .flex.container {
-        height: 50px;
+        height: 60px;
     }
 
     .header-right {
@@ -12,7 +12,9 @@
         &>ul {
             text-align: right;
             margin-bottom: 0;
-
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
             &>li {
                 display: inline-block;
                 margin-left: 25px;
@@ -34,6 +36,13 @@
                 &:hover {
                     .sub-menu {
                         display: block;
+                    }
+                }
+                &.ty-gia{
+                    border-right: 1px solid rgba(225, 225, 225, 0.6);
+                    padding: 7px 25px 0 0;
+                    @media (max-width: 767px) {
+                        display: none;
                     }
                 }
             }
