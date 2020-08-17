@@ -103,6 +103,7 @@
 	// }
 }
 @media (max-width: 590px) {
+	.hidden-mobile{display: none!important;}
 	.row-main-head{
 		.search-wrapper{
 			max-width: 100%;
@@ -110,6 +111,16 @@
 		}
 		.btn-default{
 			margin-left: 0!important;
+		}
+	}
+	.form-default{
+		.form-group{
+			.lbl{
+				width: 100%;margin-bottom: 5px;font-weight: 500;
+			}
+			.wrap_input{
+				width: 100%;
+			}
 		}
 	}
 }

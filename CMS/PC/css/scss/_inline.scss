@@ -355,9 +355,18 @@ body.show-menu {
     }
 
     &.scrollbar-inner {
-        max-height: 236px;
         margin-right: -10px;
         padding-right: 10px;
+
+        @media (min-width: 992px) {
+            height: calc(100vh - 620px);
+        }
+    }
+}
+
+.hoat_dong {
+    .list-notifi {
+        height: 300px;
     }
 }
 
