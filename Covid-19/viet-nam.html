@@ -16,7 +16,11 @@
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
         rel="shortcut icon" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900&display=swap" rel="stylesheet">
-    <!-- build:head2 -->
+    
+<link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/general-inline.css" media="all"
+    rel="stylesheet" />
+<link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/general-file.css" media="all" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css" media="all" />
     <!-- build:head -->
 </head>
@@ -170,19 +174,6 @@
         <div class="red center mb20">
             Tính đến 17h00, 18/3/2020 (Tổng cộng có 134 ca dương tính)
         </div>
-
-        <!-- <div class="count-covid flex">
-            <div class="item nhiem">
-                <strong>134</strong>nhiễm
-            </div>
-            <div class="item tuvong">
-                <strong>0</strong>tử vong
-            </div>
-            <div class="item khoi">
-                <strong>17</strong>khỏi
-            </div>
-        </div> -->
-
         <div class="count-covid-thegioi flex">
             <div class="item nhiem">
                 <label>Nhiễm</label>
@@ -201,8 +192,6 @@
                 <strong>177,132</strong>
             </div>
         </div>
-
-
         <div class="box-hot-new">
             <marquee direction="left" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
                 <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
@@ -223,53 +212,129 @@
                 <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
             </div>
         </div>
-
-        <div class="box-chart-covid row">
-            <div class="col-md-6 col-xs-12 mb24">
-                <h3 class="title-line">Mức độ tăng trưởng</h3>
-                <div class="placeholder-demo"></div>
+        <div class="box-chart-covid flex">
+            <div class="map mb24">
+                <img src="images/graphics/map.png" alt="">
             </div>
-            <div class="col-md-6 col-xs-12 mb24">
-                <h3 class="title-line">Số trường hợp theo ngày</h3>
-                <div class="placeholder-demo"></div>
-            </div>
-        </div>
-
-        <div class="box-thongke">
-            <p class="head">Tính đến 17h00, 18/3/2020, nguồn: <strong>Bộ Y Tế</strong></p>
-            <div class="flex">
-                <div class="item active">
-                    <strong>24,311</strong>
-                    <span>Đã xét nghiệm</span>
+            <div class="chart-warp mb24">
+                <div class="item mb40">
+                    <h3 class="title-line">Số ca đang điều trị</h3>
+                    <div class="placeholder-demo" style="height: 200px"></div>
+                </div>
+                <div class="item mb40">
+                    <h3 class="title-line">Tổng số ca</h3>
+                    <div class="placeholder-demo" style="height: 200px"></div>
                 </div>
                 <div class="item">
-                    <strong>134</strong>
-                    <span>Dương tính</span>
-                </div>
-                <div class="item">
-                    <strong>24,177</strong>
-                    <span>Âm tính</span>
-                </div>
-                <div class="item">
-                    <strong>1200</strong>
-                    <span>Chờ kết quả</span>
-                </div>
-                <div class="item ty-le">
-                    <strong>0,56%</strong>
-                    <span>Tỷ lệ dương tính*</span>
+                    <h3 class="title-line">Số ca theo ngày</h3>
+                    <div class="placeholder-demo" style="height: 200px"></div>
                 </div>
             </div>
         </div>
-        <div class="note text-right mt15" style="color: #4F4F4F;">* Tỷ lệ dương được tính bằng số lượng kết quả dương
-            tính
-            trên tổng số thử nghiệm
-            được thực
-            hiện, ngoại trừ các thử nghiệm vẫn đang chờ xử lý.</div>
     </div>
 </section>
 
+<section class="section section_container">
+    <div class="container has_border flex">
+        <hgroup class="width_common title-box-category sohoa">
+            <h2 class="parent-cate"><a class="inner-title" href="/so-hoa">Tin tức</a></h2>
+            <h3 class="sub-cate"><a href="#">Thắc mắc thường gặp</a></h3>
+            <h3 class="sub-cate"><a href="#">Thống kê</a></h3>
+            <h3 class="sub-cate"><a href="#">Tuyến đầu chống dịch</a></h3>
+        </hgroup>
+        <div class="width_common section_box_cate flexbox">
+            <div class="col-boxcate colbox-left">
+                <article class="item-news full-thumb">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                            <span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Infographic"></use>
+                                </svg></span>
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Quốc hội xin ý kiến đại biểu về thời gian cấm bán rượu,
+                            bia</a></h4>
+                    <p class="description">Ký giả Gabriel Tan của Fox Sports Asia chọn ra những cầu thủ có ảnh hưởng
+                        lớn nhất đến kết quả trong bốn trận bán kết vừa qua<span class="meta-news"><a href="#"
+                                class="count_cmt"><svg class="ic ic-comment">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Comment-Reg"></use>
+                                </svg>84</a></span></p>
+                </article>
+            </div>
+            <div class="col-boxcate colbox-center">
+                <article class="item-news full-thumb">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                            <span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Infographic"></use>
+                                </svg></span>
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Quốc hội xin ý kiến đại biểu về thời gian cấm bán rượu,
+                            bia</a></h4>
+                </article>
+                <article class="item-news full-thumb">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                            <span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Infographic"></use>
+                                </svg></span>
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Quốc hội xin ý kiến đại biểu về thời gian cấm bán rượu,
+                            bia</a></h4>
+                </article>
+            </div>
+            <div class="col-boxcate colbox-right">
+                <article class="item-news">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
+                    </h4>
+                </article>
+                <article class="item-news">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
+                    </h4>
+                </article>
+                <article class="item-news">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
+                    </h4>
+                </article>
+                <article class="item-news">
+                    <div class="thumb-art">
+                        <a href="#" class="thumb thumb-5x3">
+                            <img src="images/graphics/thumb5x3.png" alt="">
+                        </a>
+                    </div>
+                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
+                    </h4>
+                </article>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
 <section class="section section_main2">
-    <div class="container">
+    <div class="container has_border">
         <div class="flex justify-content-between mb24">
             <div class="section_main2__left">
                 <div class="wrap-border">
@@ -721,65 +786,9 @@
                 <li class="placeholder"><a href="#" title=""></a></li>
             </ul>
         </div>
-
-        <div class="list_news">
-            <h2 class="title_lbl line"><span>Tin mới nhất</span></h2>
-            <div class="flex">
-                <article class="art_item">
-                    <div class="thumb_art thumb_full">
-                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
-                    </div>
-                    <div class="content">
-                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
-                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
-                            bùng
-                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
-                        <span class="time">1h trước</span>
-                    </div>
-                </article>
-                <article class="art_item">
-                    <div class="thumb_art thumb_full">
-                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
-                    </div>
-                    <div class="content">
-                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
-                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
-                            bùng
-                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
-                        <span class="time">1h trước</span>
-                    </div>
-                </article>
-                <article class="art_item">
-                    <div class="thumb_art thumb_full">
-                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
-                    </div>
-                    <div class="content">
-                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
-                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
-                            bùng
-                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
-                        <span class="time">1h trước</span>
-                    </div>
-                </article>
-                <article class="art_item">
-                    <div class="thumb_art thumb_full">
-                        <a class="thumb_img thumb_5x3" href="#"><img alt="" src=""></a>
-                    </div>
-                    <div class="content">
-                        <h4 class="title_news"><a href="#">Nguy cơ Covid-19 tái bùng phát tại châu Á</a></h4>
-                        <div class="description">Các quốc gia châu Á đã vượt qua đỉnh Covid-19 có thể đối mặt với đợt
-                            bùng
-                            phát thứ hai khi những người nhiễm nCoV trở về từ nước ngoài.</div>
-                        <span class="time">1h trước</span>
-                    </div>
-                </article>
-            </div>
-            <div class="center load-more">
-                <a href="#" class="btn">Xem thêm tin tức &nbsp;<i class="iconfont-next"></i></a>
-            </div>
-        </div>
     </div>
 </section>
+
 
 
 
@@ -1083,25 +1092,6 @@
             $(this).parent('li').find('.content').slideUp('fast');
         }
     });
-
-    // $('.list-hospital .lever1').find('h3').click(function () {
-    //     if (!$(this).hasClass("active")) {
-    //         $(this).addClass("active");
-    //         $(this).next('.inf').slideDown();
-    //     } else {
-    //         $(this).removeClass("active");
-    //         $(this).next('.inf').slideUp();
-    //     }
-    // });
-    // $('.list-hospital .lever2').find('h4').click(function () {
-    //     if (!$(this).hasClass("active")) {
-    //         $(this).addClass("active");
-    //         $(this).next('div').slideDown();
-    //     } else {
-    //         $(this).removeClass("active");
-    //         $(this).next('div').slideUp();
-    //     }
-    // });
 </script>
 
     <div class="clearfix"></div>

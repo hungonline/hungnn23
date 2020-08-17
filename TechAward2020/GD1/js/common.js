@@ -179,8 +179,8 @@
 			// centeredSlides: true,
 			// touchRatio: 0.2,
 			// slideToClickedSlide: true,
-			// loop: true,
-			// loopedSlides: 7,
+			loop: true,
+			loopedSlides: 7,
 			navigation: {
 				nextEl: '.swiper-bc-next',
 				prevEl: '.swiper-bc-prev',
