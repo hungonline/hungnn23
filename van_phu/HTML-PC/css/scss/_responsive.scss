@@ -85,6 +85,8 @@
     }
 
     .banner-home {
+        overflow: hidden;
+
         .item {
             height: calc(100vh - 55px);
         }
@@ -128,19 +130,57 @@
         margin-bottom: 50px !important;
     }
 
+    .banner-home {
+        .item {
+            height: 350px;
+        }
+
+        .text-post {
+            text-shadow: 1px 1px 1px #000;
+            font-weight: bold;
+            top: 40%;
+        }
+
+        .btn-default {
+            height: 38px;
+            line-height: 38px;
+            font-size: 13px;
+            padding: 0 10px;
+            text-shadow: 0px 0px 0px #000;
+            font-weight: 400;
+        }
+    }
+
     .btn-default.xem-them {
         height: 48px;
         line-height: 48px;
         padding: 0 20px;
     }
 
-    .title-category {
-        margin-bottom: 15px;
-    }
-
     .box_300 {
         display: block;
         padding-left: 0;
         border-left: 0
+    }
+
+    .title-category {
+        padding-left: 25px;
+        margin-bottom: 20px;
+
+        &__center,
+        &__v2 {
+            .title {
+                &::before {
+                    top: -20px;
+                    left: -40px;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+
+    .tab-duan {
+        margin-top: 40px;
     }
 }

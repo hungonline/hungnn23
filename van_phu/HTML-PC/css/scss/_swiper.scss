@@ -186,10 +186,11 @@
   height: 48px;
   z-index: 2;
   cursor: pointer;
-  border-radius:50%;
+  border-radius: 50%;
   text-align: center;
   line-height: 48px;
   outline: 0;
+
   svg {
     color: #274C98;
     width: 25px;
@@ -338,7 +339,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #089256;
+  background: #D1A32C;
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {

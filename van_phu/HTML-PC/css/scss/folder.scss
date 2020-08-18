@@ -142,8 +142,8 @@
                 justify-content: center;
                 background: rgba(255, 255, 255, 0.8);
                 z-index: 3;
-                transition: all .4s ease 0s;
-                transform: scale(.7);
+                transition: all .7s ease 0s;
+                transform: scale(.8);
                 opacity: 0;
                 visibility: hidden;
             }
@@ -591,20 +591,33 @@
             a {
                 color: #505565;
                 font-size: 16px;
-                line-height: 76px;
+                line-height: 80px;
                 padding: 0 20px;
                 display: block;
-                border-top: 3px solid transparent;
+                position: relative;
 
                 @media (max-width:1169px) {
                     padding: 0 10px;
+                }
+
+                @media (max-width:991px) {
+                    line-height: 55px;
                 }
             }
 
             &.active {
                 a {
                     font-weight: bold;
-                    border-top: 3px solid #D1A32C;
+
+                    &:before {
+                        content: '';
+                        background: #D1A32C;
+                        height: 3px;
+                        width: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
                 }
             }
         }
@@ -725,7 +738,7 @@
         text-align: justify;
 
         h3 {
-            font-size: 40px;
+            font-size: 30px;
             color: #D1A32C;
             line-height: 1.4;
             margin-bottom: 15px;
@@ -1759,12 +1772,16 @@
         }
     }
 
-    .col-md-3 {
+    .swiper-container {
+        padding-bottom: 50px;
+        margin-top: 40px;
+    }
+
+    .swiper-slide {
         text-align: center;
-        padding: 0 50px;
+        padding: 0 30px;
         color: #8B90A0;
         font-size: 14px;
-        margin-top: 40px;
 
         .year {
             color: #D1A32C;
@@ -1776,14 +1793,14 @@
             font-size: 18px;
             color: #fff;
         }
+
+        @media (max-width:576px) {
+            padding: 0 10px;
+        }
     }
 
     @media (max-width:991px) {
         padding: 60px 0;
-
-        .col-md-3 {
-            padding: 0 10px;
-        }
     }
 }
 
@@ -1880,31 +1897,6 @@
 
 .slide-cty-thanhvien {
     margin-bottom: 160px;
-
-    .swiper-container {
-        &::before {
-            content: "";
-            background: linear-gradient(90deg, #FFFFFF 4.89%, rgba(255, 255, 255, 0) 109.92%);
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: calc((100%)/5);
-            z-index: 2;
-        }
-
-        &::after {
-            content: "";
-            background: linear-gradient(90deg, #FFFFFF 4.89%, rgba(255, 255, 255, 0) 109.92%);
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: calc((100%)/5);
-            z-index: 2;
-        }
-    }
 
     .swiper-slide {
         background: #F9F9F9;
