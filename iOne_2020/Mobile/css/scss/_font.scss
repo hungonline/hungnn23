@@ -1,3 +1,385 @@
+// New icon VNE  =================
+
+
+span.ic,.ic,.content_goithutoasoan a::after,.ic-comment::before {
+  width: 14px;
+  height: 14px;
+  background: url("images/graphics/icon_vne.svg") no-repeat;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.ic-pdf {
+  width: 18px;
+  height: 18px;
+  background-position: -288px -192px
+}
+
+.ic-comment::before {
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-position: -1px -63px;
+  float: left;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: .2
+}
+
+.ic-comment {
+  background: none;
+  width: auto;
+  height: auto
+}
+
+.ic-comment span {
+  font: 400 14px/12px arial !important;
+  margin-left: 2px;
+  margin-top: -1px;
+  background: #fff;
+  float: left;
+  color: #076DB6
+}
+
+.ic-ads {
+  width: 16px;
+  height: 16px;
+  background: url(images/graphics/ad.svg) no-repeat 0 0;
+  background-size: contain
+}
+
+.bg_gray .ic-comment span {
+  background: #f4f4f4
+}
+
+.ic-audio {
+  width: 14px;
+  background-position: -22px -62px
+}
+
+.ic-video {
+  width: 12px;
+  background-position: -39px -63px
+}
+
+.ic-photo {
+  width: 14px;
+  background-position: -52px -63px
+}
+
+.ic-infographic {
+  background-position: -271px -21px
+}
+
+.ic-ios {
+  width: 20px;
+  height: 24px;
+  background-position: -146px -260px
+}
+
+.ic-android {
+  width: 22px;
+  height: 24px;
+  background-position: -169px -260px
+}
+
+.ic-arrow-down {
+  width: 8px;
+  height: 5px;
+  background-position: -2px -4px
+}
+
+.ic-arrow-up {
+  width: 8px;
+  height: 5px;
+  background-position: -14px -4px
+}
+
+.ic-refresh {
+  width: 18px;
+  height: 18px;
+  background-position: -162px -192px
+}
+
+.ic-sucess {
+  width: 32px !important;
+  height: 32px !important;
+  background-position: 0 -334px !important
+}
+
+.ic-expand {
+  width: 14px;
+  height: 14px;
+  background-position: -80px -62px
+}
+
+.ic-email {
+  width: 16px;
+  height: 12px;
+  background-position: -192px -127px
+}
+
+.ic-tag {
+  width: 17px;
+  height: 14px;
+  background-position: -593px -194px
+}
+
+.ic-caret-down {
+  height: 12px;
+  background-position: -210px -2px
+}
+
+.ic-like,.ic-unlike {
+  background-position: -95px -63px;
+  width: 13px;
+  height: 12px
+}
+
+.ic-unlike {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
+}
+
+.ic-plus-square {
+  background-position: -48px 0;
+  width: 12px;
+  height: 12px
+}
+
+.ic-minus-square {
+  width: 12px;
+  height: 12px;
+  background-position: -60px 0
+}
+
+.ic-caret-left {
+  width: 18px;
+  height: 18px;
+  background-position: -180px -192px
+}
+
+.ic-caret-right {
+  width: 12px;
+  background-position: -197px 0
+}
+
+.ic-caret-up {
+  width: 16px;
+  height: 11px;
+  background-position: -32px -128px
+}
+
+.ic-twitter {
+  background-position: -120px -260px;
+  width: 24px;
+  height: 24px
+}
+
+.ic-user {
+  background-position: -611px -193px;
+  width: 18px;
+  height: 18px
+}
+
+.ic-vnexpress {
+  width: 16px;
+  height: 18px;
+  background-position: -415px -192px
+}
+
+.ic-facebook {
+  width: 24px;
+  height: 24px;
+  background-position: -72px -260px
+}
+
+.ic-false {
+  width: 18px;
+  height: 18px;
+  background-position: -72px -192px
+}
+
+.ic-bell {
+  width: 18px;
+  height: 18px;
+  background-position: -252px -192px
+}
+
+.ic-google-plus {
+  width: 24px;
+  height: 24px;
+  background-position: -312px -260px
+}
+
+.ic-play {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #fff
+}
+
+.ic-font-adj {
+  width: 25px;
+  height: 16px;
+  background-position: -629px -192px;
+  margin-top: -4px
+}
+
+.ic-share {
+  width: 14px;
+  height: 14px;
+  background-position: -225px -127px
+}
+
+.ic-print {
+  width: 14px;
+  height: 14px;
+  background-position: -209px -128px
+}
+
+.ic-android-2 {
+  background-position: -106px -49px
+}
+
+.ic-app {
+  background-position: -121px -47px
+}
+
+.ic-apple {
+  width: 13px;
+  background-position: -137px -47px
+}
+
+.ic-bookmark {
+  width: 9px;
+  height: 16px;
+  background-position: -83px -126px
+}
+
+.ic-edit {
+  width: 28px;
+  height: 22px;
+  background-position: -609px -339px
+}
+
+.ic-instagram {
+  width: 13px;
+  height: 13px;
+  background-position: -361px -1px
+}
+
+.ic-linkedin {
+  width: 13px;
+  height: 13px;
+  background-position: -391px -1px
+}
+
+.ic-menu {
+  width: 18px;
+  height: 12px;
+  background-position: -18px -195px
+}
+
+.ic-pinterest-p {
+  background-position: -512px 0;
+  width: 11px
+}
+
+.ic-rss {
+  background-position: -339px -263px;
+  width: 20px;
+  height: 20px
+}
+
+.ic-search {
+  width: 17px;
+  height: 18px;
+  background-position: -108px -192px
+}
+
+.ic-true {
+  background-position: -241px -129px;
+  width: 13px;
+  height: 11px
+}
+
+.ic-window {
+  background-position: -76px -47px
+}
+
+.ic-interactive {
+  background-position: -260px -40px;
+  width: 14px;
+  height: 22px
+}
+
+.ic-info-2 {
+  background-position: -369px -71px;
+  width: 9px;
+  height: 25px
+}
+
+.ic-print {
+  background-position: -555px 0
+}
+
+.ic-fun {
+  background-position: -67px -62px;
+  width: 13px;
+  height: 17px
+}
+
+.ic-double-arrow-down {
+  background-position: -524px -25px;
+  width: 10px;
+  height: 10px
+}
+
+span.ic-before-n-after {
+  background-position: -643px -337px;
+  width: 26px;
+  height: 26px
+}
+
+.ic-flip {
+  background-position: -418px -66px;
+  width: 27px;
+  height: 30px
+}
+
+.ic-edit-2 {
+  width: 13px;
+  height: 13px;
+  background-position: -560px -78px
+}
+
+svg.ic {
+  width: 16px;
+  height: 16px;
+  fill: #757575;
+  display: inline-block;
+  vertical-align: middle
+}
+
+svg.ic-in-title {
+  width: 14px;
+  height: 14px;
+  fill: #757575;
+  margin-right: 5px;
+  margin-top: -1.4%
+}
+
+.ic-male {
+  fill: #0083D6 !important
+}
+
+.ic-fermale {
+  fill: #D71450 !important
+}
+
 /**FONT ICON**/
 @font-face {
     font-family: 'vnexpress-icon';

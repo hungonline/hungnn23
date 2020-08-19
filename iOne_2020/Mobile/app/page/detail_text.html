@@ -7,9 +7,48 @@
 <link rel="stylesheet" href="css/m_detail-inline.css" media="all" />
 <!-- /build:head2 -->
 <!-- build:content -->
-
+<header id="header_sticky" class="section" data-component-runtime="js"
+    data-component-function="headerSticky" data-component-input="{}" data-component-excute="1">
+    <a href="" class="humberger-btn">
+        <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#humberger"></use>
+        </svg>
+        <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#close2"></use>
+        </svg>
+    </a>
+    <div class="block_share_sticky right">
+        <a href="javascript:;" title="Facebook" class="btn_facebook item_social item_fb"><i
+                class="ic ic-facebook"></i></a>
+        <a class="btn_twitter item_social item_twit" rel="nofollow" href="javascript:;" id="twitter"
+            data-url="https://vnexpress.net/evn-dang-ghi-so-dien-nhu-the-nao-4121080.html"
+            title="Chia sẻ bài viết lên twitter"><i class="ic ic-twitter"></i></a>
+        <div class="luu_tin right myvne_save_for_later" data-token="2da8fa421e1a96a95576e42a649b369f" data-article-id="4120906"><i class="ic ic-bookmark"></i></div>
+        <a href="#box_comment_vne" title="Comment" class="left count_comment_total">
+            <span class="item_social"><i class="ic ic-comment ic-x ic-invert"></i></span>
+            <span class="count_comment txt_num_comment mobile_detail widget-comment-4120641-1" style="">50</span>
+        </a>
+    </div>
+</header>
 <section class="section wrap-sub-nav sticky">
     <div class="head_cate head_cate--sub flex">
+        <a href="" class="humberger-btn">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#humberger"></use>
+            </svg>
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#close2"></use>
+            </svg>
+        </a>
+        <div class="home-item">
+            <h3>
+                <a href="#" title="">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#home"></use>
+                    </svg>
+                </a>
+            </h3>
+        </div>
         <h2 class="title_star ">
             <a href="#">News</a>
         </h2>
@@ -169,14 +208,6 @@
 
     <div class="inner_section">
         <div class="header-content width_common">
-            <ul class="breadcrumb">
-                <li>
-                    <h4><a href="#">Thể thao</a></h4>
-                </li>
-                <li>
-                    <h4><a href="#">AFF Cup</a></h4>
-                </li>
-            </ul>
             <span class="date">Thứ sáu, 7/12/2018, 00:59 (GMT+7)</span>
         </div>
         <h1 class="title-detail">Quang Hải là một trong năm ngôi sao sáng nhất bán kết AFF Cup</h1>
@@ -373,17 +404,32 @@
 
     <!--social_share-->
     <div class="social_share_new width_common ">
+        <a class="back-btn" href="javascript:;">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#arrow02"></use>
+            </svg>
+            Back
+        </a>
         <a class="save" href="javascript:;">
-            <svg id="Save-1" width="16" height="16" viewBox="0 0 32 32">
-                <title>Save-1</title>
-                <path
-                    d="M16 23.669l8 4.799v-26.456c-0.036-0.002-0.075-0.004-0.117-0.006-0.226-0.009-0.443-0.007-0.715-0.004-0.147 0.001-0.311 0.003-0.501 0.003h-13.333c-0.19 0-0.353-0.001-0.501-0.003-0.272-0.002-0.489-0.004-0.715 0.004-0.042 0.002-0.081 0.004-0.117 0.006v26.456l8-4.799zM6 32v-29.995c0-2.027 1-2.002 2.909-2.002 0.139 0.001 0.28 0.002 0.424 0.002h13.333c0.144 0 0.285-0.001 0.424-0.002 1.635-0.014 2.909-0.025 2.909 2.002v29.995l-10-5.999-10 5.999z">
-                </path>
+             <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#bookmard2"></use>
             </svg>
             Lưu
         </a>
-        <a class="comment" href="javascript:;">
-            <strong>177</strong> bình luận
+    </div>
+    <!-- Khi user đã lưu bài  -->
+    <div class="social_share_new width_common ">
+        <a class="back-btn" href="javascript:;">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#arrow02"></use>
+            </svg>
+            Back
+        </a>
+        <a class="save active" href="javascript:;">
+             <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#bookmard"></use>
+            </svg>
+            Lưu
         </a>
     </div>
     <!--End social_share-->
@@ -767,17 +813,18 @@
     </div>
 </section>
 
+<div class="container">
+    <div class="box_guibai mb20 mt30">
+        Báo tin, gửi bài, tâm sự với iOne <a href="#">tại đây</a>
+    </div>
+</div>
+
 <section class="list-news">
     <div class="container">
         <h2 class="title_star ">
             <a href="#">The Lastest</a>
         </h2>
         <article class="item-news full-thumb">
-            <div class="thumb-art">
-                <a class="thumb thumb_5x3" href="" title="#">
-                    <img src="images/graphics/thumb1.jpg">
-                </a>
-            </div>
             <div class="content">
                 <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
@@ -797,13 +844,14 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
             <div class="content">
                 <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
@@ -823,17 +871,18 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
             <div class="content">
-                <h2 class="title-news">
+                <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
+                </h1>
                 <div class="description">
                     Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
                     trình Miss World 2019, sáng 17/12.
@@ -849,17 +898,18 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
             <div class="content">
-                <h2 class="title-news">
+                <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
+                </h1>
                 <div class="description">
                     Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
                     trình Miss World 2019, sáng 17/12.
@@ -875,38 +925,18 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
-            <div class="content">
-                <h2 class="title-news">
-                    <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
-                <div class="description">
-                    Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
-                    trình Miss World 2019, sáng 17/12.
-                </div>
-                <div class="flex status">
-                    <span>2h trước</span>
-                    <span><a href="">Movies &amp; Muzik</a></span>
-                    <span class="comment">
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#comment2"></use>
-                        </svg>
-                        132
-                    </span>
-                </div>
-            </div>
+            <a class="see-more" href="">Đọc tiếp</a>
         </article>
         <article class="item-news full-thumb">
             <div class="content">
-                <h2 class="title-news">
+                <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
+                </h1>
                 <div class="description">
                     Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
                     trình Miss World 2019, sáng 17/12.
@@ -922,6 +952,39 @@
                     </span>
                 </div>
             </div>
+            <div class="thumb-art">
+                <a class="thumb thumb_5x3" href="" title="#">
+                    <img src="images/graphics/thumb1.jpg">
+                </a>
+            </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
+            <div class="content">
+                <h1 class="title-news">
+                    <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
+                </h1>
+                <div class="description">
+                    Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
+                    trình Miss World 2019, sáng 17/12.
+                </div>
+                <div class="flex status">
+                    <span>2h trước</span>
+                    <span><a href="">Movies &amp; Muzik</a></span>
+                    <span class="comment">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#comment2"></use>
+                        </svg>
+                        132
+                    </span>
+                </div>
+            </div>
+            <div class="thumb-art">
+                <a class="thumb thumb_5x3" href="" title="#">
+                    <img src="images/graphics/thumb1.jpg">
+                </a>
+            </div>
+            <a class="see-more" href="">Đọc tiếp</a>
         </article>
     </div>
 </section>
@@ -935,6 +998,9 @@
                 <div class="thumb-art">
                     <a class="thumb thumb_5x5" href="" title="#">
                         <img src="images/graphics/thumb1.jpg">
+                        <span class="icon_thumb"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#play2"></use>
+                        </svg></span>
                     </a>
                 </div>
                 <div class="content">

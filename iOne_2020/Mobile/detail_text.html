@@ -28,47 +28,220 @@
 
 <body class="">
   <!-- BANNER ADS TOP -->
+  <section class="section switch_version">
+    <div class="container">
+      <a class="text-sw" href="#"><span>←</span> Trở về phiên bản hiện tại</a>
+      <span class="close-sw">×</span>
+    </div>
+  </section>
   <section class="section banner-top-home">
     <img src="images/graphics/banner-top.jpg" />
   </section>
   <!-- END BANNER ADS TOP -->
   <section class="section header-top">
     <div class="container flex">
-      <a href="" class="humberger-btn"><svg class="icon-svg">
+      <a href="" class="humberger-btn">
+        <svg class="icon-svg">
           <use xlink:href="images/icons/icon.svg#humberger"></use>
-        </svg></a>
+        </svg>
+        <svg class="icon-svg">
+          <use xlink:href="images/icons/icon.svg#close2"></use>
+        </svg>
+      </a>
       <a class="logo" href="#" title="#"><img src="images/graphics/logo_ione.svg" />
       </a>
       <div class="right-head">
-        <div class="search-btn d-none">
+        <a class="kpop-logo" href=""><img src="images/graphics/kpop.png" alt=""></a>
+        <a href="" class="search-btn">
           <svg class="icon-svg">
             <use xlink:href="images/icons/icon.svg#search"></use>
           </svg>
-          <svg class="icon-svg close">
+          <svg class="icon-svg">
             <use xlink:href="images/icons/icon.svg#close2"></use>
           </svg>
-        </div>
-        <div id="myvne_taskbar">
-          <div id="myvne" class="myvne_taskbar myvne_login_button">
-            <a href="#" class="log_txt" title="Đăng nhập"><svg class="icon-svg">
-                <use xlink:href="images/icons/icon.svg#user"></use>
-              </svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
+        </a>
+        <!-- <div id="myvne_taskbar" style="display: none;">
+          <ul class="myvne_form_log">
+            <li class="myvne_user"> <a href="javascript:;" title="Login" class="myvne_icon myvne_login_button"><i
+                  class="ic ic-user"></i></a> <i class="icon-arrow"></i> </li>
+          </ul>
+        </div> -->
 
-    <div class="search-wrap">
-      <div class="container">
-        <input type="text" class="search-wrap-input" placeholder="Tìm kiếm..." />
+        <div id="myvne_taskbar" style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+          <ul class="myvne_form_log loged">
+            <li class="myvne_user" id="myvne_profile_tool"> <a href="javascript:void(0);" id="myvne_avatar_taskbar"
+                class="myvne_icon myvne_avatar"><img
+                  src="//a.vnecdn.net/avatar/tmp/2019/06/04/1872462829_1559612315.jpg" width="25" height="25"
+                  alt=""></a> <i class="icon-arrow"></i>
+              <div class="block_sub_myvne block_sub_log myvne_user_status_mobile" style="display: none;">
+                <div class="width_common header_sub_myvne">
+                  <div class="m_page_title">
+                    <h2>Hòa Nguyễn</h2>
+                  </div>
+                  <div class="pre-text">Tham gia từ 3/4/2017 <a href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
+                      class="edit_profile">Tài khoản của tôi</a></div>
+                </div>
+                <ul class="menu_profile width_common">
+                  <li><a href="https://my.vnexpress.net/users/feed/1026308721">Bình luận</a></li>
+                  <li><a href="https://my.vnexpress.net/qua-tang">Quà tặng</a></li>
+                  <li><a href="https://my.vnexpress.net/users/tin-da-doc">Tin đã xem</a></li>
+                  <li><a href="https://my.vnexpress.net/users/tin-da-luu">Tin đã lưu</a></li>
+                </ul>
+                <ul class="menu_profile width_common other_link mb15">
+                  <li><a href="https://vnexpress.net/lien-he-toa-soan/">Liên hệ tòa soạn</a></li>
+                  <li><a href="https://eclick.vn/">Liên hệ quảng cáo</a></li>
+                </ul>
+                <div class="box_saved_news" id="box_saved_news"></div> <a href="javascript:;" id="myvne_logout_link"
+                  class="logout_link">Thoát</a> <span class="close-lb"><i class="ic ic-false"></i></span>
+              </div>
+            </li>
+            <li class="myvne_user notify_myvne " id="myvne_notify_show"> <a href="javascript:void(0);"
+                class="myvne_icon myvne_icon_bell_click"><i class="ic ic-bell"></i></a> <i class="icon-arrow"></i>
+              <div class="block_sub_myvne block_sub_log" id="myvne_notify_box" style="display: none;">
+                <div class="head_box width_common">
+                  <div class="left"><strong>Thông báo</strong></div>
+                </div>
+                <div class="box_saved_news">
+                  <ul class="list_news_saved width_common" id="myvne_notify_lists"> <a id="myvne_loading_viewmore"
+                      class="logout_link myvne_loading" style="display: none;">Loading</a> </ul> <a
+                    href="javascript:void(0);" id="myvne_notify_viewmore" class="width_common view_more_myvne"
+                    style="display:none;">Xem thêm</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  
+  <div class="search-wrap clearfix">
+    <form action="" class="search-form">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Tìm kiếm thông tin...">
+        <button class="form-button">
+          <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
 
+  <div class="left-nav animated">
+    <form action="" class="search-form">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Tìm kiếm thông tin...">
+        <button class="form-button">
+          <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+    <div class="left-nav__content">
+      <ul class="parent">
+        <li>
+          <h3><a href="#" title="">News</a></h3>
+        </li>
+        <li class="active">
+          <h3><a href="#" title="">Stars</a></h3>
+          <div class="menu-level2">
+              <h4><a class="active" href="">Vietnam</a></h4>
+              <h4><a href="">Asia</a></h4>
+              <h4><a href="">US - UK</a></h4>
+          </div>
+        </li>
+        <li>
+          <h3><a href="#" title="">Movies &amp; Muzik</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">style</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Horoscopes</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Funland</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Girls &amp; Boys</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Video</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">photos</a></h3>
+        </li>
+      </ul>
+      <div class="left-nav__social">
+        <a class="youtube" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#youtube"></use>
+          </svg></a>
+        <a class="face" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#Facebook"></use>
+          </svg></a>
+        <a class="twitter" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#Twitter"></use>
+          </svg></a>
+        <a class="in" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#twitter2"></use>
+          </svg></a>
+      </div>
+      <ul class="parent contact-links">
+        <li>
+          <h3><a href="#" title="">liên hệ toà soạn</a></h3>
+        </li>
+        <!-- <li>
+          <h3><a href="#" title="">chia sẻ</a></h3>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+  
+<header id="header_sticky" class="section" data-component-runtime="js"
+    data-component-function="headerSticky" data-component-input="{}" data-component-excute="1">
+    <a href="" class="humberger-btn">
+        <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#humberger"></use>
+        </svg>
+        <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#close2"></use>
+        </svg>
+    </a>
+    <div class="block_share_sticky right">
+        <a href="javascript:;" title="Facebook" class="btn_facebook item_social item_fb"><i
+                class="ic ic-facebook"></i></a>
+        <a class="btn_twitter item_social item_twit" rel="nofollow" href="javascript:;" id="twitter"
+            data-url="https://vnexpress.net/evn-dang-ghi-so-dien-nhu-the-nao-4121080.html"
+            title="Chia sẻ bài viết lên twitter"><i class="ic ic-twitter"></i></a>
+        <div class="luu_tin right myvne_save_for_later" data-token="2da8fa421e1a96a95576e42a649b369f" data-article-id="4120906"><i class="ic ic-bookmark"></i></div>
+        <a href="#box_comment_vne" title="Comment" class="left count_comment_total">
+            <span class="item_social"><i class="ic ic-comment ic-x ic-invert"></i></span>
+            <span class="count_comment txt_num_comment mobile_detail widget-comment-4120641-1" style="">50</span>
+        </a>
+    </div>
+</header>
 <section class="section wrap-sub-nav sticky">
     <div class="head_cate head_cate--sub flex">
+        <a href="" class="humberger-btn">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#humberger"></use>
+            </svg>
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#close2"></use>
+            </svg>
+        </a>
+        <div class="home-item">
+            <h3>
+                <a href="#" title="">
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#home"></use>
+                    </svg>
+                </a>
+            </h3>
+        </div>
         <h2 class="title_star ">
             <a href="#">News</a>
         </h2>
@@ -228,14 +401,6 @@
 
     <div class="inner_section">
         <div class="header-content width_common">
-            <ul class="breadcrumb">
-                <li>
-                    <h4><a href="#">Thể thao</a></h4>
-                </li>
-                <li>
-                    <h4><a href="#">AFF Cup</a></h4>
-                </li>
-            </ul>
             <span class="date">Thứ sáu, 7/12/2018, 00:59 (GMT+7)</span>
         </div>
         <h1 class="title-detail">Quang Hải là một trong năm ngôi sao sáng nhất bán kết AFF Cup</h1>
@@ -432,17 +597,32 @@
 
     <!--social_share-->
     <div class="social_share_new width_common ">
+        <a class="back-btn" href="javascript:;">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#arrow02"></use>
+            </svg>
+            Back
+        </a>
         <a class="save" href="javascript:;">
-            <svg id="Save-1" width="16" height="16" viewBox="0 0 32 32">
-                <title>Save-1</title>
-                <path
-                    d="M16 23.669l8 4.799v-26.456c-0.036-0.002-0.075-0.004-0.117-0.006-0.226-0.009-0.443-0.007-0.715-0.004-0.147 0.001-0.311 0.003-0.501 0.003h-13.333c-0.19 0-0.353-0.001-0.501-0.003-0.272-0.002-0.489-0.004-0.715 0.004-0.042 0.002-0.081 0.004-0.117 0.006v26.456l8-4.799zM6 32v-29.995c0-2.027 1-2.002 2.909-2.002 0.139 0.001 0.28 0.002 0.424 0.002h13.333c0.144 0 0.285-0.001 0.424-0.002 1.635-0.014 2.909-0.025 2.909 2.002v29.995l-10-5.999-10 5.999z">
-                </path>
+             <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#bookmard2"></use>
             </svg>
             Lưu
         </a>
-        <a class="comment" href="javascript:;">
-            <strong>177</strong> bình luận
+    </div>
+    <!-- Khi user đã lưu bài  -->
+    <div class="social_share_new width_common ">
+        <a class="back-btn" href="javascript:;">
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#arrow02"></use>
+            </svg>
+            Back
+        </a>
+        <a class="save active" href="javascript:;">
+             <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#bookmard"></use>
+            </svg>
+            Lưu
         </a>
     </div>
     <!--End social_share-->
@@ -826,17 +1006,18 @@
     </div>
 </section>
 
+<div class="container">
+    <div class="box_guibai mb20 mt30">
+        Báo tin, gửi bài, tâm sự với iOne <a href="#">tại đây</a>
+    </div>
+</div>
+
 <section class="list-news">
     <div class="container">
         <h2 class="title_star ">
             <a href="#">The Lastest</a>
         </h2>
         <article class="item-news full-thumb">
-            <div class="thumb-art">
-                <a class="thumb thumb_5x3" href="" title="#">
-                    <img src="images/graphics/thumb1.jpg">
-                </a>
-            </div>
             <div class="content">
                 <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
@@ -856,13 +1037,14 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
             <div class="content">
                 <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
@@ -882,17 +1064,18 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
             <div class="content">
-                <h2 class="title-news">
+                <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
+                </h1>
                 <div class="description">
                     Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
                     trình Miss World 2019, sáng 17/12.
@@ -908,17 +1091,18 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
             <div class="content">
-                <h2 class="title-news">
+                <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
+                </h1>
                 <div class="description">
                     Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
                     trình Miss World 2019, sáng 17/12.
@@ -934,38 +1118,18 @@
                     </span>
                 </div>
             </div>
-        </article>
-        <article class="item-news full-thumb">
             <div class="thumb-art">
                 <a class="thumb thumb_5x3" href="" title="#">
                     <img src="images/graphics/thumb1.jpg">
                 </a>
             </div>
-            <div class="content">
-                <h2 class="title-news">
-                    <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
-                <div class="description">
-                    Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
-                    trình Miss World 2019, sáng 17/12.
-                </div>
-                <div class="flex status">
-                    <span>2h trước</span>
-                    <span><a href="">Movies &amp; Muzik</a></span>
-                    <span class="comment">
-                        <svg class="icon-svg">
-                            <use xlink:href="images/icons/icon.svg#comment2"></use>
-                        </svg>
-                        132
-                    </span>
-                </div>
-            </div>
+            <a class="see-more" href="">Đọc tiếp</a>
         </article>
         <article class="item-news full-thumb">
             <div class="content">
-                <h2 class="title-news">
+                <h1 class="title-news">
                     <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
-                </h2>
+                </h1>
                 <div class="description">
                     Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
                     trình Miss World 2019, sáng 17/12.
@@ -981,6 +1145,39 @@
                     </span>
                 </div>
             </div>
+            <div class="thumb-art">
+                <a class="thumb thumb_5x3" href="" title="#">
+                    <img src="images/graphics/thumb1.jpg">
+                </a>
+            </div>
+            <a class="see-more" href="">Đọc tiếp</a>
+        </article>
+        <article class="item-news full-thumb">
+            <div class="content">
+                <h1 class="title-news">
+                    <a href="" title="">Nam thanh nữ tú đến chùa Hà cầu duyên dịp Valentine</a>
+                </h1>
+                <div class="description">
+                    Á hậu Kiều Loan, Tường San và fan đón Lương Thùy Linh từ Anh trở về Việt Nam sau khi kết thúc hành
+                    trình Miss World 2019, sáng 17/12.
+                </div>
+                <div class="flex status">
+                    <span>2h trước</span>
+                    <span><a href="">Movies &amp; Muzik</a></span>
+                    <span class="comment">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#comment2"></use>
+                        </svg>
+                        132
+                    </span>
+                </div>
+            </div>
+            <div class="thumb-art">
+                <a class="thumb thumb_5x3" href="" title="#">
+                    <img src="images/graphics/thumb1.jpg">
+                </a>
+            </div>
+            <a class="see-more" href="">Đọc tiếp</a>
         </article>
     </div>
 </section>
@@ -994,6 +1191,9 @@
                 <div class="thumb-art">
                     <a class="thumb thumb_5x5" href="" title="#">
                         <img src="images/graphics/thumb1.jpg">
+                        <span class="icon_thumb"><svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#play2"></use>
+                        </svg></span>
                     </a>
                 </div>
                 <div class="content">
@@ -1065,37 +1265,128 @@
     <img src="images/graphics/banner-bottom.jpg" />
   </section>
   <!-- END BANNER ADS TOP -->
+  
+  <div class="button-vote-version slideup">
+    <a href="#">Đánh giá phiên bản mới <span>→</span></a>
+    <span class="close-vote">×</span>
+  </div>
+
   <!--Footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer_top">
-        <a href="#" title="" class="footer__logo"><img src="images/graphics/logo_ione2.svg" /></a>
-        <div class="footer__social">
-          <a class="face" href="#"><svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#Facebook"></use>
-            </svg></a>
-          <a class="twitter" href="#"><svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#Twitter"></use>
-            </svg></a>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_top">
+        <a href="#" title="" class="footer__logo"><img src="images/graphics/logo_ione.svg" width="121" /></a>
+        <p class="footer__logo-text">Chuyên mục dành cho giới trẻ của VnExpress</p>
+				<div class="footer__social">
           <a class="in" href="#"><svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#twitter2"></use>
-            </svg></a>
-        </div>
-        <div class="footer__contact">
-          <strong class="">Liên hệ</strong>
-          <a class="contact" href="#" title="">Liên hệ toà soạn</a>
-        </div>
-        <div class="logo_left">
-          <a href="#" title=""><img style="margin-top: 10px;" src="images/graphics/logo_vne.svg" /></a>
-          <a href="#" title=""><img src="images/graphics/logo_ns.svg" /></a>
-        </div>
-      </div>
-      <div class="footer_copyright">
-        <p>© Copyright 2019 iOne.vnexpress.net, All rights reserved</p>
-      </div>
-    </div>
-  </footer>
-  <!--End Footer-->
+            <use xlink:href="images/icons/icon.svg#twitter2"></use>
+          </svg></a>
+					<a class="face" href="#"><svg class="icon-svg">
+							<use xlink:href="images/icons/icon.svg#Facebook"></use>
+						</svg></a>
+					<a class="twitter" href="#"><svg class="icon-svg">
+							<use xlink:href="images/icons/icon.svg#Twitter"></use>
+						</svg></a>
+				</div>
+				<div class="footer__contact">
+					<strong class="">Liên hệ</strong>
+					<a class="contact" href="#" title="">Liên hệ toà soạn</a>
+				</div>
+				<div class="logo_left">
+					<a href="#" title=""><img style="margin-top:10px" src="images/graphics/logo_vne.svg" /></a>
+					<a href="#" title=""><img src="images/graphics/logo_ns.svg" /></a>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<p>© Copyright 2019 iOne.vnexpress.net, All rights reserved <br>® VnExpress giữ bản quyền nội dung trên website này</p>
+			</div>
+		</div>
+	</footer>
+	<!--End Footer-->
+
+
+
+  <style>
+    .switch_version {
+      background: #E5E5E5;
+      height: 40px;
+      color: #4F4F4F;
+      font-size: 14px;
+    }
+
+    .switch_version a {
+      color: #4F4F4F;
+    }
+
+    .switch_version a span {
+      font-family: monospace;
+    }
+
+    .switch_version .container {
+      display: flex;
+      align-items: center;
+      height: 40px;
+    }
+
+    .switch_version .close-sw {
+      margin-left: auto;
+      cursor: pointer;
+      font-family: -webkit-body;
+      font-size: 30px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .button-vote-version {
+      position: fixed;
+      right: 0;
+      width: 100%;
+      bottom: -101%;
+      transition: all .4s ease-out;
+      z-index: 999;
+    }
+
+    .button-vote-version.slideup {
+      bottom: 0;
+    }
+
+    .button-vote-version a {
+      height: 55px;
+      display: block;
+      background: #7043A9;
+      font-size: 18px;
+      line-height: 48px;
+      font-weight: 400;
+      padding: 2px 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .button-vote-version a span {
+      font-family: monospace;
+      font-size: 22px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .button-vote-version .close-vote {
+      color: #fff;
+      font-family: -webkit-body;
+      font-size: 35px;
+      line-height: 24px;
+      position: absolute;
+      top: 14px;
+      right: 15px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .button-vote-version ~ .footer {
+      padding-bottom: 55px;
+    }
+  </style>
+
+  <div class="overlay"></div>
 
   <!--Back to top-->
   <a href="javascript:;" id="to_top"><i class="ic-caret-up"></i></a>

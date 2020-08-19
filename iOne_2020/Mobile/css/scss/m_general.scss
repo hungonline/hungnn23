@@ -4,12 +4,16 @@
 @import "var.scss";
 @import "reset.scss";
 @import "common.scss";
+@import "myvne-2017.scss";
 
 @import "form-lightbox.scss";
+@import 'lightbox.scss';
 @import "swiper.scss";
 @import "scrollbar.scss";
 @import "placeholder.scss";
+@import "vote.scss";
 
+@import "global.scss";
 // ======= HEADER =======
 @import "head.scss";
 
@@ -17,3 +21,4 @@
 
 @import "articles.scss";
 @import "element.scss";
+@import "darkmode.scss";

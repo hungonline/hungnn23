@@ -96,6 +96,10 @@
             display: inline-block;
             margin-right: 12px;
 
+            .dark-img {
+                display: none;
+            }
+
             img {
                 filter: grayscale(100%);
                 opacity: 0.6;
@@ -108,6 +112,7 @@
                 }
             }
         }
+
     }
 
     .search-btn {
@@ -320,4 +325,25 @@
         }
     }
 
+}
+
+.wrap-main-nav {
+     &.dark_mode {
+        .right-head .logo-kpopdance {
+        .dark-img {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.dark_mode {
+    .wrap-main-nav .right-head .logo-kpopdance {
+        img {
+            display: none;
+            &.dark-img {
+                display: inline-block;
+            }
+        }
+    }
 }

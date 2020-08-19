@@ -366,9 +366,9 @@
 .list-thesamenews {
     width: 100%;
     float: left;
-    padding-left: 10px;
     margin-bottom: 20px;
-    border-left: 1px solid #BDBDBD
+    /* padding-left: 10px;
+    border-left: 1px solid #BDBDBD */
 }
 
 .list-thesamenews li {
@@ -497,7 +497,7 @@
 }
 
 .header-tab {
-    font-family: "Merriweather", serif;
+    font-family: v(font2);
     font-size: 16px;
     line-height: 20px
 }
@@ -655,16 +655,12 @@
 }
 
 .top-box-slide .text-top {
-    font-family: "Merriweather", serif;
+    font-family: v(font2);
     font-size: 18px;
     line-height: 23px;
     font-weight: 700;
     padding: 14px 0;
     display: inline-block
-}
-
-.block-pin {
-    padding: 0 15px
 }
 
 .block-pin p {
@@ -682,25 +678,30 @@
     right: 0
 }
 
-.block-pin .header-block .ic-pin.active {
-    fill: #087CCE
-}
-
 .social-block {
-    float: right;
+    float: left;
     font-size: 0;
     line-height: normal;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    align-items: center;
+
+    &:before {
+        content: 'Chia sẻ:';
+        font-size: 14px;
+        color: #4F4F4F;
+        line-height: 160%;
+    }
 }
 
 .social-block a {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background: #fff;
-    border: 1px solid #e5e5e5;
-    margin-left: 10px;
-    justify-content: center
+    border: 1px solid #BDBDBD;
+    margin-left: 8px;
+    justify-content: center;
+    color: #4F4F4F;
 }
 
 .social-block a:before {
@@ -709,11 +710,12 @@
 
 .social-block a .ic {
     align-self: center;
-    fill: #93908A
+    fill: #93908A;
+    background: unset;
 }
 
 .social-block a.fb:hover .ic {
-    fill: #3B5999
+    fill: rgb(52, 74, 122)
 }
 
 .social-block a.tw:hover .ic {
@@ -769,11 +771,15 @@
     height: 12px
 }
 
+.box-insert-article .item-news .thumb-5x3 picture img {
+    padding-bottom: unset;
+}
+
 .score-table {
     background: #5FAE2E;
     padding: 15px 15px 50px 15px;
     color: #fff;
-    font-family: "Merriweather", serif;
+    font-family: v(font2);
     margin-bottom: 25px;
     position: relative;
     flex-wrap: wrap
@@ -997,7 +1003,8 @@
 .detail-live .wrap-notifile {
     justify-content: unset;
     position: fixed;
-    bottom: 20px;
+    // bottom: 20px;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
@@ -1017,7 +1024,7 @@
 }
 
 .detail-live .notifile.new-content {
-    background: #04416D
+    background: #7043A9;
 }
 
 .detail-live .notifile.new-content .ic {
@@ -2048,9 +2055,10 @@ body.show .sticky_guicauhoi {
 .author_mail {
     text-align: right;
     font-size: 1.125rem;
-    color: #d6d6d6;
+    color: #333333;
     margin-bottom: 15px;
-    position: relative
+    position: relative;
+    clear: both;
 }
 
 .author_mail p {
@@ -2093,7 +2101,7 @@ body.show .sticky_guicauhoi {
 }
 
 .box_thesamenews_v2 .title_box_samenews .title_samenews {
-    font: 700 1.1875rem "Merriweather", serif;
+    font: 700 1.1875rem v(font2);
     color: #222;
     line-height: 1.5
 }
@@ -2274,6 +2282,10 @@ body.show .sticky_guicauhoi {
 
 .ykien_vne .left {
     white-space: nowrap
+}
+
+.ykien_vne .left h3 {
+  font-size: inherit !important;
 }
 
 .filter_coment_mobile {
@@ -2768,7 +2780,6 @@ body.show .sticky_guicauhoi {
 .block_tag .tag_item {
     display: block;
     font: 400 14px/36px arial !important;
-    color: #666;
     padding: 0 10px;
     background: #f1f1f1
 }
@@ -5105,7 +5116,7 @@ body.show .sticky_guicauhoi {
 }
 
 .box_shop_vne.option2 .item_shop .info_item_shop .title_item {
-    font: 400 16px "Merriweather", serif;
+    font: 400 16px v(font2);
     height: 41px
 }
 
@@ -5174,9 +5185,6 @@ body.show .sticky_guicauhoi {
     text-align: center
 }
 
-.social_share_new {
-    padding: 0 15px
-}
 
 .social_share_new a {
     border: 1px solid #E5E5E5;
@@ -5202,24 +5210,32 @@ body.show .sticky_guicauhoi {
     padding: 0 20px;
     border: 1px solid #076DB6;
     text-align: center;
-    width: 227px
+    height: 44px;
+    line-height: 44px;
 }
 
 .social_share_new .save {
     padding: 0 15px;
     float: right;
     margin: 0;
-    text-align: center
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 .social_share_new .save.active {
-    background: #076DB6;
-    color: #fff;
-    border: 1px solid #076DB6
+    
 }
 
 .social_share_new .save.active svg {
-    fill: #fff
+    fill: #757575;
 }
 
 .social_share_new .count_like {
@@ -5251,6 +5267,161 @@ body.show .sticky_guicauhoi {
 .social_share_new .like.active svg path {
     fill: #ccc
 }
+
+// Icon live 
+
+.ic-live {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    text-transform: inherit;
+    vertical-align: inherit;
+    margin-right: 7px;
+    position: relative;
+    padding-left: 12px
+  }
+  
+  .ic-live:before {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    width: 8px;
+    height: 8px;
+    content: '';
+    background: #e78dac;
+    box-shadow: 0 0 0 rgba(231,141,172,0.4);
+    vertical-align: initial;
+    -webkit-animation: live-pulse 1s infinite;
+    -moz-animation: live-pulse 1s infinite;
+    -o-animation: live-pulse 1s infinite;
+    animation: live-pulse 1s infinite;
+    float: left
+  }
+  
+  .ic-live:after {
+    content: 'Live';
+    font-family: "Barlow", serif;
+    font-style: normal;
+    color: #e78dac;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .ic-live.not-start:before {
+    background: #757575;
+    box-shadow: 0 0 0 rgba(117,117,117,0.4);
+    -webkit-animation: live-pulse-2 1s infinite;
+    -moz-animation: live-pulse-2 1s infinite;
+    -o-animation: live-pulse-2 1s infinite;
+    animation: live-pulse-2 1s infinite
+  }
+  
+  .ic-live.not-start:after {
+    content: 'Chưa bắt đầu';
+    color: #222
+  }
+  
+  .ic-live.the-end:before {
+    background: #757575;
+    box-shadow: 0 0 0 rgba(117,117,117,0.4);
+    -webkit-animation: live-pulse-2 1s infinite;
+    -moz-animation: live-pulse-2 1s infinite;
+    -o-animation: live-pulse-2 1s infinite;
+    animation: live-pulse-2 1s infinite
+  }
+  
+  .ic-live.the-end:after {
+    content: 'Đã kết thúc' !important;
+    color: #757575
+  }
+  
+  .ic-live.ic-live-title {
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    color: #9F224E !important;
+    margin-right: 5px;
+    font-weight: 700
+  }
+  
+  .ic-live.ic-live-title:after {
+    content: ''
+  }
+  
+  .ic-live.ic-live-title:before {
+    top: 7px
+  }
+  
+  .title_news .ic-live {
+    float: left;
+    margin-top: 3px
+  }
+  
+  @-webkit-keyframes live-pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(231,141,172,0.4)
+    }
+  
+    70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(231,141,172,0)
+    }
+  
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(231,141,172,0)
+    }
+  }
+  
+  @keyframes live-pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(231,141,172,0.4);
+      box-shadow: 0 0 0 0 rgba(231,141,172,0.4)
+    }
+  
+    70% {
+      -moz-box-shadow: 0 0 0 10px rgba(231,141,172,0);
+      box-shadow: 0 0 0 10px rgba(231,141,172,0)
+    }
+  
+    100% {
+      -moz-box-shadow: 0 0 0 0 rgba(231,141,172,0);
+      box-shadow: 0 0 0 0 rgba(231,141,172,0)
+    }
+  }
+  
+  @-webkit-keyframes live-pulse-2 {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(117,117,117,0.4)
+    }
+  
+    70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(117,117,117,0)
+    }
+  
+    100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(117,117,117,0)
+    }
+  }
+  
+  @keyframes live-pulse-2 {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(117,117,117,0.4);
+      box-shadow: 0 0 0 0 rgba(117,117,117,0)
+    }
+  
+    70% {
+      -moz-box-shadow: 0 0 0 10px rgba(117,117,117,0);
+      box-shadow: 0 0 0 10px rgba(117,117,117,0)
+    }
+  
+    100% {
+      -moz-box-shadow: 0 0 0 0 rgba(117,117,117,0);
+      box-shadow: 0 0 0 0 rgba(117,117,117,0)
+    }
+  }
+  
 
 .box_cungchuyenmuc.box_category .list_news_common_v2 .art_item:first-child,
 .box_xemthem.box_category .list_news_common_v2 .art_item:first-child {
@@ -5333,3 +5504,50 @@ body.show .sticky_guicauhoi {
         display: none
     }
 }
+
+/**SLIDE ON DETAIL**/
+.slide_on_detail {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+  
+    .caption-slide {
+      font: 400 14px/160% arial;
+      padding-top: 10px;
+    }
+  
+    .swiper-slide {
+      width: 40%;
+  
+      img {
+        width: 100%;
+        float: left;
+      }
+    }
+  
+    .swiper-button-slide-detail {
+      width: 25px;
+      height: 50px;
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      line-height: 50px;
+      position: absolute;
+      top: 50%;
+      margin-top: -25px;
+      z-index: 1;
+      cursor: pointer;
+  
+      svg {
+        fill: #fff;
+        background: unset;
+      }
+  
+      &.swiper-button-slide-detail-next {
+        right: 0;
+      }
+  
+      &.swiper-button-slide-detail-prev {
+        left: 0;
+      }
+    }
+  }

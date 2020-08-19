@@ -1,9 +1,11 @@
 .section-inner {
-  padding: 0 24px;
+  padding: 0 15px;
 }
 
 .point_review {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 }
 
 .number_review {
@@ -22,10 +24,24 @@
     color: #E5E5E5;
     font-weight: 900;
     line-height: 42px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     span {
       color: #DF9C00;
     }
+  }
+
+  + .list_rating_rev {
+    margin-top: 0;
+  }
+}
+
+.box_shopping_review {
+  &:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
 
@@ -142,36 +158,63 @@
   border-bottom: 1px solid #E5E5E5;
 }
 
+.medium-insert-embeds-navigate {
+  .medium-insert-embed {
+    text-align: left;
+    float: left;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+
+    &::before {
+      content: "Điều hướng nhanh";
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 16px;
+      color: #757575;
+    }
+  }
+  .inner_content_review {
+    float: left;
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+}
+
+
+
 
 .tab_review_text {
-  border-top: 1px solid #E5E5E5;
-  border-bottom: 1px solid #E5E5E5;
-  margin-bottom: 20px;
+  border: none;
+  margin-bottom: 0px !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: #fff;
   width: 100%;
   padding-right: 0;
-  padding-top: 16px;
-
-  ul {
-    white-space: nowrap;
-    overflow-x: auto;
-  }
+  padding-top: 0;
+  font-family: Arial;
+  display: table;
+  white-space: nowrap;
+  overflow-x: auto;
 
   li {
-    color: #757575;
+    color: #222222;
     font-size: 16px;
-    margin: 0 12px;
-    padding: 17.5px 0 !important;
+    padding: 0 !important;
     display: inline-block;
 
     &:first-of-type {
       margin-left: 0;
+      display: none;
     }
     &:last-of-type {
-      margin-right: 24px;
+      margin-right: 15px;
     }
 
     &:before {
@@ -180,6 +223,8 @@
 
     a {
       color: #222;
+      font-size: 16px;
+      line-height: 18px;
 
       &:hover,
       &.active {
@@ -214,6 +259,10 @@
       .img {
         img {
           width: 100%;
+          max-width: 320px;
+          object-fit: contain;
+          margin: 0 auto;
+          max-height: 400px;
         }
 
         h3 {
@@ -232,9 +281,13 @@
         td {
           color: #222222;
           font-size: 16px;
-          vertical-align: top;
+          vertical-align: middle;
           border-bottom: 1px solid #E5E5E5;
           padding: 8px 10px;
+
+          .medium-insert-images figure, .mediumInsert figure, .medium-insert-embeds figure, .mediumInsert-embeds figure {
+            background: #f7f7f7;
+          }
 
           &:first-child {
             width: 100px;
@@ -275,7 +328,38 @@
     }
   }
   .wrapper_slide_thumb {
-    width: calc(100% + 48px) !important;
-    margin: 0 -24px 20px;
+    width: calc(100% + 30px) !important;
+    margin: 0 -15px 20px;
   }
+}
+
+// new update ================ 
+
+.col_text_review .tit_col {
+  font-size: 18px;
+}
+
+.number_review {
+  text-align: left;
+}
+
+.tab_review_text li {
+  float: none;
+
+  &:first-of-type {
+      width: auto;
+  }
+}
+
+.tab_review_text li a {
+  text-decoration: none;
+}
+.tab_review_text label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #757575; 
+}
+
+.box_shopping_review.box_rating_point {
+  padding-left: 10px;
 }

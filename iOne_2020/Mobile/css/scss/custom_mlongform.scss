@@ -1,0 +1,51 @@
+@import 'var.scss';
+@import 'review.scss';
+
+.header-top {
+    .container::before, .container::after {
+        display: none;
+    }
+}
+
+.table-responsive {
+    margin: 0;
+}
+
+.compare_review .table-responsive {
+    margin: 0;
+}
+
+.top_article .time_post_art a {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.outset-column p, .inset-column p {
+    i {
+        color: inherit;
+        font-family: inherit !important;
+        font-style: italic;
+        font-size: inherit !important;
+    }
+}
+
+.box_emoji {
+    top: 5px !important;
+    right: 15px !important;
+}
+
+.input_comment {
+    z-index: 10 !important;
+}
+
+.section-inner.inset-column {
+    .box_comment_vne {
+        margin-top: 20px;
+    }
+
+    .table {
+        td {
+            padding: 5px;
+        }
+    }
+}

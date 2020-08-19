@@ -28,42 +28,176 @@
 
 <body class="">
   <!-- BANNER ADS TOP -->
+  <section class="section switch_version">
+    <div class="container">
+      <a class="text-sw" href="#"><span>←</span> Trở về phiên bản hiện tại</a>
+      <span class="close-sw">×</span>
+    </div>
+  </section>
   <section class="section banner-top-home">
     <img src="images/graphics/banner-top.jpg" />
   </section>
   <!-- END BANNER ADS TOP -->
   <section class="section header-top">
     <div class="container flex">
-      <a href="" class="humberger-btn"><svg class="icon-svg">
+      <a href="" class="humberger-btn">
+        <svg class="icon-svg">
           <use xlink:href="images/icons/icon.svg#humberger"></use>
-        </svg></a>
+        </svg>
+        <svg class="icon-svg">
+          <use xlink:href="images/icons/icon.svg#close2"></use>
+        </svg>
+      </a>
       <a class="logo" href="#" title="#"><img src="images/graphics/logo_ione.svg" />
       </a>
       <div class="right-head">
-        <div class="search-btn d-none">
+        <a class="kpop-logo" href=""><img src="images/graphics/kpop.png" alt=""></a>
+        <a href="" class="search-btn">
           <svg class="icon-svg">
             <use xlink:href="images/icons/icon.svg#search"></use>
           </svg>
-          <svg class="icon-svg close">
+          <svg class="icon-svg">
             <use xlink:href="images/icons/icon.svg#close2"></use>
           </svg>
-        </div>
-        <div id="myvne_taskbar">
-          <div id="myvne" class="myvne_taskbar myvne_login_button">
-            <a href="#" class="log_txt" title="Đăng nhập"><svg class="icon-svg">
-                <use xlink:href="images/icons/icon.svg#user"></use>
-              </svg></a>
-          </div>
-        </div>
-      </div>
-    </div>
+        </a>
+        <!-- <div id="myvne_taskbar" style="display: none;">
+          <ul class="myvne_form_log">
+            <li class="myvne_user"> <a href="javascript:;" title="Login" class="myvne_icon myvne_login_button"><i
+                  class="ic ic-user"></i></a> <i class="icon-arrow"></i> </li>
+          </ul>
+        </div> -->
 
-    <div class="search-wrap">
-      <div class="container">
-        <input type="text" class="search-wrap-input" placeholder="Tìm kiếm..." />
+        <div id="myvne_taskbar" style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+          <ul class="myvne_form_log loged">
+            <li class="myvne_user" id="myvne_profile_tool"> <a href="javascript:void(0);" id="myvne_avatar_taskbar"
+                class="myvne_icon myvne_avatar"><img
+                  src="//a.vnecdn.net/avatar/tmp/2019/06/04/1872462829_1559612315.jpg" width="25" height="25"
+                  alt=""></a> <i class="icon-arrow"></i>
+              <div class="block_sub_myvne block_sub_log myvne_user_status_mobile" style="display: none;">
+                <div class="width_common header_sub_myvne">
+                  <div class="m_page_title">
+                    <h2>Hòa Nguyễn</h2>
+                  </div>
+                  <div class="pre-text">Tham gia từ 3/4/2017 <a href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
+                      class="edit_profile">Tài khoản của tôi</a></div>
+                </div>
+                <ul class="menu_profile width_common">
+                  <li><a href="https://my.vnexpress.net/users/feed/1026308721">Bình luận</a></li>
+                  <li><a href="https://my.vnexpress.net/qua-tang">Quà tặng</a></li>
+                  <li><a href="https://my.vnexpress.net/users/tin-da-doc">Tin đã xem</a></li>
+                  <li><a href="https://my.vnexpress.net/users/tin-da-luu">Tin đã lưu</a></li>
+                </ul>
+                <ul class="menu_profile width_common other_link mb15">
+                  <li><a href="https://vnexpress.net/lien-he-toa-soan/">Liên hệ tòa soạn</a></li>
+                  <li><a href="https://eclick.vn/">Liên hệ quảng cáo</a></li>
+                </ul>
+                <div class="box_saved_news" id="box_saved_news"></div> <a href="javascript:;" id="myvne_logout_link"
+                  class="logout_link">Thoát</a> <span class="close-lb"><i class="ic ic-false"></i></span>
+              </div>
+            </li>
+            <li class="myvne_user notify_myvne " id="myvne_notify_show"> <a href="javascript:void(0);"
+                class="myvne_icon myvne_icon_bell_click"><i class="ic ic-bell"></i></a> <i class="icon-arrow"></i>
+              <div class="block_sub_myvne block_sub_log" id="myvne_notify_box" style="display: none;">
+                <div class="head_box width_common">
+                  <div class="left"><strong>Thông báo</strong></div>
+                </div>
+                <div class="box_saved_news">
+                  <ul class="list_news_saved width_common" id="myvne_notify_lists"> <a id="myvne_loading_viewmore"
+                      class="logout_link myvne_loading" style="display: none;">Loading</a> </ul> <a
+                    href="javascript:void(0);" id="myvne_notify_viewmore" class="width_common view_more_myvne"
+                    style="display:none;">Xem thêm</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
+
+  <div class="search-wrap clearfix">
+    <form action="" class="search-form">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Tìm kiếm thông tin...">
+        <button class="form-button">
+          <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="left-nav animated">
+    <form action="" class="search-form">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Tìm kiếm thông tin...">
+        <button class="form-button">
+          <svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+    <div class="left-nav__content">
+      <ul class="parent">
+        <li>
+          <h3><a href="#" title="">News</a></h3>
+        </li>
+        <li class="active">
+          <h3><a href="#" title="">Stars</a></h3>
+          <div class="menu-level2">
+              <h4><a class="active" href="">Vietnam</a></h4>
+              <h4><a href="">Asia</a></h4>
+              <h4><a href="">US - UK</a></h4>
+          </div>
+        </li>
+        <li>
+          <h3><a href="#" title="">Movies &amp; Muzik</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">style</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Horoscopes</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Funland</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Girls &amp; Boys</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">Video</a></h3>
+        </li>
+        <li>
+          <h3><a href="#" title="">photos</a></h3>
+        </li>
+      </ul>
+      <div class="left-nav__social">
+        <a class="youtube" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#youtube"></use>
+          </svg></a>
+        <a class="face" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#Facebook"></use>
+          </svg></a>
+        <a class="twitter" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#Twitter"></use>
+          </svg></a>
+        <a class="in" href="#"><svg class="icon-svg">
+            <use xlink:href="images/icons/icon.svg#twitter2"></use>
+          </svg></a>
+      </div>
+      <ul class="parent contact-links">
+        <li>
+          <h3><a href="#" title="">liên hệ toà soạn</a></h3>
+        </li>
+        <!-- <li>
+          <h3><a href="#" title="">chia sẻ</a></h3>
+        </li> -->
+      </ul>
+    </div>
+  </div>
 
   
 
@@ -1143,37 +1277,128 @@ End Video livestream-->
     <img src="images/graphics/banner-bottom.jpg" />
   </section>
   <!-- END BANNER ADS TOP -->
+  
+  <div class="button-vote-version slideup">
+    <a href="#">Đánh giá phiên bản mới <span>→</span></a>
+    <span class="close-vote">×</span>
+  </div>
+
   <!--Footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer_top">
-        <a href="#" title="" class="footer__logo"><img src="images/graphics/logo_ione2.svg" /></a>
-        <div class="footer__social">
-          <a class="face" href="#"><svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#Facebook"></use>
-            </svg></a>
-          <a class="twitter" href="#"><svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#Twitter"></use>
-            </svg></a>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_top">
+        <a href="#" title="" class="footer__logo"><img src="images/graphics/logo_ione.svg" width="121" /></a>
+        <p class="footer__logo-text">Chuyên mục dành cho giới trẻ của VnExpress</p>
+				<div class="footer__social">
           <a class="in" href="#"><svg class="icon-svg">
-              <use xlink:href="images/icons/icon.svg#twitter2"></use>
-            </svg></a>
-        </div>
-        <div class="footer__contact">
-          <strong class="">Liên hệ</strong>
-          <a class="contact" href="#" title="">Liên hệ toà soạn</a>
-        </div>
-        <div class="logo_left">
-          <a href="#" title=""><img style="margin-top: 10px;" src="images/graphics/logo_vne.svg" /></a>
-          <a href="#" title=""><img src="images/graphics/logo_ns.svg" /></a>
-        </div>
-      </div>
-      <div class="footer_copyright">
-        <p>© Copyright 2019 iOne.vnexpress.net, All rights reserved</p>
-      </div>
-    </div>
-  </footer>
-  <!--End Footer-->
+            <use xlink:href="images/icons/icon.svg#twitter2"></use>
+          </svg></a>
+					<a class="face" href="#"><svg class="icon-svg">
+							<use xlink:href="images/icons/icon.svg#Facebook"></use>
+						</svg></a>
+					<a class="twitter" href="#"><svg class="icon-svg">
+							<use xlink:href="images/icons/icon.svg#Twitter"></use>
+						</svg></a>
+				</div>
+				<div class="footer__contact">
+					<strong class="">Liên hệ</strong>
+					<a class="contact" href="#" title="">Liên hệ toà soạn</a>
+				</div>
+				<div class="logo_left">
+					<a href="#" title=""><img style="margin-top:10px" src="images/graphics/logo_vne.svg" /></a>
+					<a href="#" title=""><img src="images/graphics/logo_ns.svg" /></a>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<p>© Copyright 2019 iOne.vnexpress.net, All rights reserved <br>® VnExpress giữ bản quyền nội dung trên website này</p>
+			</div>
+		</div>
+	</footer>
+	<!--End Footer-->
+
+
+
+  <style>
+    .switch_version {
+      background: #E5E5E5;
+      height: 40px;
+      color: #4F4F4F;
+      font-size: 14px;
+    }
+
+    .switch_version a {
+      color: #4F4F4F;
+    }
+
+    .switch_version a span {
+      font-family: monospace;
+    }
+
+    .switch_version .container {
+      display: flex;
+      align-items: center;
+      height: 40px;
+    }
+
+    .switch_version .close-sw {
+      margin-left: auto;
+      cursor: pointer;
+      font-family: -webkit-body;
+      font-size: 30px;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .button-vote-version {
+      position: fixed;
+      right: 0;
+      width: 100%;
+      bottom: -101%;
+      transition: all .4s ease-out;
+      z-index: 999;
+    }
+
+    .button-vote-version.slideup {
+      bottom: 0;
+    }
+
+    .button-vote-version a {
+      height: 55px;
+      display: block;
+      background: #7043A9;
+      font-size: 18px;
+      line-height: 48px;
+      font-weight: 400;
+      padding: 2px 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .button-vote-version a span {
+      font-family: monospace;
+      font-size: 22px;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .button-vote-version .close-vote {
+      color: #fff;
+      font-family: -webkit-body;
+      font-size: 35px;
+      line-height: 24px;
+      position: absolute;
+      top: 14px;
+      right: 15px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .button-vote-version ~ .footer {
+      padding-bottom: 55px;
+    }
+  </style>
+
+  <div class="overlay"></div>
 
   <!--Back to top-->
   <a href="javascript:;" id="to_top"><i class="ic-caret-up"></i></a>

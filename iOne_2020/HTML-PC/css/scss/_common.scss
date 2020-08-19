@@ -424,8 +424,8 @@ h6 {
         font: bold 18px var(--font2);
         background: #FAF1ED;
         border-radius: 2px;
-        height: 44px;
-        line-height: 44px;
+        height: 36px;
+        line-height: 36px;
         display: inline-block;
         padding: 0 12px;
         color: #222;
@@ -434,19 +434,20 @@ h6 {
 
         &::before {
             content: "";
-            border-top: 22px solid transparent;
-            border-bottom: 22px solid transparent;
-            border-left: 15px solid #FAF1ED;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            border-left: 18px solid #FAF1ED;
             position: absolute;
-            right: -14px;
+            right: -17px;
         }
     }
 
     .tag {
         border: 1px solid var(--border);
         border-radius: 2px;
-        height: 44px;
-        line-height: 44px;
+        background: #FFFFFF;
+        height: 36px;
+        line-height: 36px;
         display: inline-block;
         padding: 0 16px;
         font-size: 14px;
@@ -461,9 +462,18 @@ h6 {
             color: #fff;
 
             &::before {
-                border-left: 15px solid #222222;
+                border-left: 18px solid #222222;
             }
         }
+    }
+}
+
+.dark_mode {
+    .box-tag-topic {
+        a {
+            color: #222
+        }
+
     }
 }
 

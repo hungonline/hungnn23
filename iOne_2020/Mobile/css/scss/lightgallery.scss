@@ -155,6 +155,7 @@
     transition: .4s;
     transform: translate(0, 105%);
     background: rgba(34, 34, 34, .6);
+    padding-bottom: 16px;
 
     &.show {
         -webkit-transform: translate(0);
@@ -887,7 +888,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom {
     }
 
     .lg-item {
-        background: url("images/icons/loading.gif") no-repeat scroll center center transparent;
+        background: url("images/icons/loading.gif") no-repeat center transparent;
+        background-size: 50px;
         display: none !important;
     }
 
@@ -1219,7 +1221,7 @@ body.lg-on {
     }
 
     #lg-counter {
-        width: 40px;
+        width: 50px;
         position: absolute;
         right: 70px;
 
@@ -1266,7 +1268,7 @@ body.lg-on {
 }
 
 .lg-sub-html_wrapper {
-    padding: 0;
+    padding: 0 0 16px;
     text-align: left;
     font-family: arial;
     position: absolute;
@@ -1316,7 +1318,7 @@ body.lg-on {
     display: block;
     height: 32px;
     width: 100%;
-    background-color: rgba(0, 0, 0, .6);
+    // background-color: rgba(0, 0, 0, .6);
     background-image: url("data:image/svg+xml,%3Csvg width='34' height='10' viewBox='0 0 34 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L17.8 9L33 1' stroke='white'/%3E%3C/svg%3E%0A");
     background-position: center;
     background-repeat: no-repeat;

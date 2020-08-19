@@ -31,9 +31,25 @@
   <!-- END BANNER ADS TOP -->
   <section class="section header-top header-top--ver2 sticky">
     <div class="container flex">
-      <a href="" class="humberger-btn"><svg class="icon-svg">
-          <use xlink:href="images/icons/icon.svg#humberger"></use>
-        </svg></a>
+      <div class="group-nav-btn">
+				<a href="" class="humberger-btn">
+					<svg class="icon-svg">
+					  <use xlink:href="images/icons/icon.svg#humberger"></use>
+					</svg>
+					<svg class="icon-svg">
+					  <use xlink:href="images/icons/icon.svg#close2"></use>
+					</svg>
+				</a>
+				<div class="home-item active">
+					<h3>
+					  <a href="#" title="">
+						<svg class="icon-svg">
+						  <use xlink:href="images/icons/icon.svg#home"></use>
+						</svg>
+					  </a>
+					</h3>
+				</div>
+			</div>
       <h2 class="folder_title">Photo</h2>
       <!-- <a class="logo" href="#" title="#"><img src="images/graphics/logo_ione.svg" /> </a> -->
       <!-- <span href="javascript:;" class="dark_night"><span></span></a> -->
@@ -63,6 +79,76 @@
     </div>
   </section>
 
+  <div class="left-nav animated">
+		<form action="" class="search-form">
+		  <div class="form-group">
+			<input class="form-control" type="text" placeholder="Tìm kiếm thông tin...">
+			<button class="form-button">
+			  <svg class="icon-svg">
+				<use xlink:href="images/icons/icon.svg#search"></use>
+			  </svg>
+			</button>
+		  </div>
+		</form>
+		<div class="left-nav__content">
+		  <ul class="parent">
+			<li>
+			  <h3><a href="#" title="">News</a></h3>
+			</li>
+			<li class="active">
+			  <h3><a href="#" title="">Stars</a></h3>
+			  <div class="menu-level2">
+				  <h4><a class="active" href="">Vietnam</a></h4>
+				  <h4><a href="">Asia</a></h4>
+				  <h4><a href="">US - UK</a></h4>
+			  </div>
+			</li>
+			<li>
+			  <h3><a href="#" title="">Movies &amp; Muzik</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">style</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">Horoscopes</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">Funland</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">Girls &amp; Boys</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">Video</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">photos</a></h3>
+			</li>
+		  </ul>
+		  <ul class="parent contact-links">
+			<li>
+			  <h3><a href="#" title="">liên hệ toà soạn</a></h3>
+			</li>
+			<li>
+			  <h3><a href="#" title="">chia sẻ</a></h3>
+			</li>
+		  </ul>
+		  <div class="left-nav__social">
+			<a class="youtube" href="#"><svg class="icon-svg">
+				<use xlink:href="images/icons/icon.svg#youtube"></use>
+			  </svg></a>
+			<a class="face" href="#"><svg class="icon-svg">
+				<use xlink:href="images/icons/icon.svg#Facebook"></use>
+			  </svg></a>
+			<a class="twitter" href="#"><svg class="icon-svg">
+				<use xlink:href="images/icons/icon.svg#Twitter"></use>
+			  </svg></a>
+			<a class="in" href="#"><svg class="icon-svg">
+				<use xlink:href="images/icons/icon.svg#twitter2"></use>
+			  </svg></a>
+		  </div>
+		</div>
+	  </div>
 
 
   <section class="folder_photo section_photo js-anchor">
@@ -321,7 +407,7 @@
   </footer>
   <!--End Footer-->
 
-
+  <div class="overlay"></div>
   <!--Back to top-->
   <a href="javascript:;" id="to_top"><i class="ic-caret-up"></i></a>
   <!--Jquery lib-->

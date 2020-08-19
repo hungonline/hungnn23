@@ -2,6 +2,11 @@
 @import 'fck.scss';
 @import 'quiz.scss';
 @import 'review.scss';
+@import "vote-new.scss";
+
+.page-detail.top-detail {
+    background: #fcfaf6;
+}
 
 .input_comment_full {
     width: 100%;
@@ -9,9 +14,27 @@
 
 .social_share_new {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+    .back-btn {
+      height: 44px;
+      font-size: 14px;
+      margin-bottom: 0;
+      padding: 0 15px;
+
+      svg {
+          margin-right: 7px;
+          width: 14px;
+      }
+    }
 }
 
+.description {
+    margin-bottom: 16px;
+    color: #333333;
+}
 
 .social_share_new .comment {
     background: #7043A9;
@@ -24,72 +47,9 @@
     }
 }
 
-.social_share_new {
-    padding: 0 24px;
-}
-
 .author_mail p {
     display: flex;
     justify-content: flex-end;
-}
-
-.page-detail,
-.article_detail {
-    .box_quiz .main-quiz {
-        padding: 0;
-    }
-    
-    ~.box-tag-topic {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-
-        .container {
-            display: flex;
-        }
-
-        label {
-            font-family: var(--font2);
-            font-weight: 700;
-            padding: 10px;
-            font-size: 18px;
-            background: #faf1ed;
-            margin-right: 40px;
-            position: relative;
-
-            &:after {
-                content: '';
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 22px 0 22px 20px;
-                border-color: transparent transparent transparent #faf1ed;
-                position: absolute;
-                top: 0;
-                right: -20px;
-            }
-        }
-    }
-
-    .box_quiz {
-        border: none;
-        border-radius: 0;
-        background: unset;
-    }
-}
-
-.fck_detail {
-    .box_quiz {
-
-        .answer-quiz {
-            background: #ffffff;
-            max-height: unset;
-            margin: 0 -24px;
-        }
-
-        .gradient-view:after {
-            display: none;
-        }
-    }
 }
 
 .author_mail p strong {
@@ -173,8 +133,11 @@
 
 #box_tag {
     background: #F6F7FB;
-    padding: 32px 24px;
-    margin-bottom: 0;
+    padding: 32px 15px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .block_tag {
@@ -214,13 +177,13 @@
     }
 
     .block_scroll {
-        margin-right: -24px;
-        width: calc(100% + 24px);
+        margin-right: -15px;
+        width: calc(100% + 15px);
         @include hide-scrollbar;
     }
 
     .list_tag_scroll h3:last-child {
-        padding-right: 24px;
+        padding-right: 15px;
     }
 }
 
@@ -236,8 +199,8 @@
     }
 }
 
-.block-pin {
-    padding: 0 24px;
+.item-news .content ~ .thumb-art {
+    margin-top: 16px;
 }
 
 .list_news_dot {
@@ -272,7 +235,8 @@
 
 .score-table {
     background: linear-gradient(128.55deg, #6441A5 0.53%, #2A0845 81.33%);
-    padding: 28px 24px;
+    padding: 15px 15px 50px 15px;
+    margin: 0 -15px 25px;
 
     .group {
         &:first-child {
@@ -334,4 +298,166 @@
 
 .filter_coment_mobile .sub_filter_cmt {
     z-index: 1;
+}
+
+.video-js .vjs-big-play-button {
+    background-size: 60px !important;
+}
+
+.box_comment_ione {
+    .ykien_vne {
+        background: unset;
+        margin-top: 8px;
+    }
+    .input_comment {
+        background: unset;
+        padding: 0
+    }
+}
+
+.filter_coment {
+    background: unset;
+    margin-top: 0;
+}
+
+.fck_detail #divfirst {
+  z-index: 97 !important;
+  background: unset !important;
+}
+
+.fck_detail #divend {
+  z-index: 97 !important;
+  background: unset !important;
+}
+
+#header_sticky {
+  height: 48px;
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  transform: translateY(-100%);
+  transition-duration: 350ms;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+
+  .btn-noidungchinh {
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+
+    .ic {
+      fill: #93908a;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  .luu_tin {
+    float: left;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    line-height: 23px !important;
+    font-size: 0 !important;
+    background: #ccc;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+
+    .icon-svg {
+      color: #fff;
+      display: none;
+    }
+
+    .ic-bookmark {
+      background-position: -32px -265px;
+      background-color: #fff;
+    }
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      background: url('images/graphics/icon_vne.svg') no-repeat;
+      width: 9px;
+      height: 16px;
+      background-position: -32px -265px;
+      background-color: #fff;
+    }
+  }
+
+  .luu_tin.active {
+    background: #004f8b;
+    border: 1px solid #004f8b;
+
+    &:after {
+      background-position: -56px -265px;
+      background-color: #fff;
+    }
+  }
+
+  .count_comment_total {
+    .item_social {
+      background: #ccc;
+      border: 1px solid #ccc;
+    }
+
+    .count_comment {
+      font: 400 14px/22px arial !important;
+      padding: 0 5px;
+    }
+
+    .ic-comment {
+      &:before {
+        background-position: -6px -267px;
+        background-color: #fff;
+        width: 12px;
+        height: 12px;
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+  }
+
+  i.ic-facebook {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('images/graphics/icon_vne.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    background-position: -72px -260px;
+  }
+  i.ic-twitter {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('images/graphics/icon_vne.svg') no-repeat;
+    background-position: -120px -260px;
+    width: 24px;
+    height: 24px;
+  }
+  i.ic-comment {
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 14px;
+      height: 14px;
+      background: url('images/graphics/icon_vne.svg') no-repeat;
+      background-position: -6px -267px;
+      background-color: #fff;
+      width: 12px;
+      height: 12px;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      opacity: 1;
+    }
+  }
 }
