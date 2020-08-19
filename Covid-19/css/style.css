@@ -5021,6 +5021,7 @@ svg.ic {
   .footer .footer_left .logo {
     margin-bottom: 10px;
     display: block;
+    width: 100%;
   }
 
   .footer .footer_right {
