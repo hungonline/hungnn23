@@ -1,0 +1,80 @@
+/*
+Error: Undefined variable: "$lh".
+        on line 238 of D:/PROJECTS/Ngoisao_redesign/PC/css/scss/_form-lightbox.scss
+        from line 88 of D:\PROJECTS\Ngoisao_redesign\PC\css\scss\video2017_v2.scss
+
+233:                 &.ml0{
+234:                     margin-left: 0;
+235:                 }
+236:             }
+237:         }
+238:         #b_captcha{
+239:             display: inline-block;
+240:             float: left;
+241:             margin-right: 10px;
+242:             height: 40px;
+243:         }
+
+Backtrace:
+D:/PROJECTS/Ngoisao_redesign/PC/css/scss/_form-lightbox.scss:238
+D:\PROJECTS\Ngoisao_redesign\PC\css\scss\video2017_v2.scss:88
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block (2 levels) in visit_import'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `map'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:315:in `block in visit_import'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `block in with_import'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:88:in `with_import'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/bin/sass:18:in `load'
+D:/Setup/Web Dev/KoalaPortable/App/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$lh\".\A         on line 238 of D:/PROJECTS/Ngoisao_redesign/PC/css/scss/_form-lightbox.scss\A         from line 88 of D:\PROJECTS\Ngoisao_redesign\PC\css\scss\video2017_v2.scss\A \A 233:                 &.ml0{\A 234:                     margin-left: 0;\A 235:                 }\A 236:             }\A 237:         }\A 238:         #b_captcha{\A 239:             display: inline-block;\A 240:             float: left;\A 241:             margin-right: 10px;\A 242:             height: 40px;\A 243:         }"; }

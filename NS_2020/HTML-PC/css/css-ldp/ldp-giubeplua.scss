@@ -1,0 +1,571 @@
+@import "../scss/var.scss";
+$color1:#C3996B;
+
+body {}
+
+.bg-banner-ads {
+    background: #fff url(images/banner-chu-u.jpg) no-repeat;
+    background-position: top 0 center;
+    /* background-attachment: fixed; */
+    padding-top: 220px;
+
+    .bg-white {
+        position: relative;
+        background: #fff;
+
+        &::before {
+            content: "";
+            background: #fff;
+            width: 15px;
+            left: -15px;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+
+        &::after {
+            content: "";
+            background: #fff;
+            width: 15px;
+            right: -15px;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }
+}
+
+
+
+.btn_ns {
+    background: #168FD6;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    height: 42px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 42px;
+    padding: 0 35px;
+    transition-duration: 200ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+
+    &:hover {
+        background: #116ba0;
+    }
+}
+
+.btn_view_cancel {
+    background: none;
+    color: #757575;
+    text-decoration: underline;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+#breadcrumb {
+    ul {
+        li {
+            h1 {
+                font: 600 px_to_rem(24px) $fontmain;
+
+                a {
+                    color: $color1
+                }
+            }
+
+            .icon-ns {
+                margin-left: 10px;
+            }
+
+            &.c3 {
+                a {
+                    margin-right: 10px;
+                }
+
+                .icon-ns {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+
+    &+section {
+        .box_300 {
+            margin-top: 0;
+        }
+    }
+}
+
+/*Dich vu Cuoi Dang ky*/
+.form_title {
+    font: 700 px_to_rem(24px) $fontmain;
+    line-height: $lh;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    float: left;
+    margin: 0 -10px;
+    width: calc(100% + 20px);
+
+    .form-group {
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+
+    }
+}
+
+.form-group {
+    font-size: 17px;
+    margin-bottom: 15px;
+
+    >label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+        border: 1px solid #eee;
+        height: 40px;
+        transition: 0.4s ease;
+
+        &:focus {
+            box-shadow: 0;
+            outline: 0;
+            border: 1px solid #ED3D7D;
+        }
+    }
+
+    textarea {
+        padding: 10px;
+        font-size: px_to_rem(17px);
+        width: 100%;
+        min-height: 116px;
+    }
+}
+
+.err {
+    font-size: 14px;
+    color: $color1;
+}
+
+.form-section {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 18px;
+        float: left;
+        width: 188px;
+        padding-right: 27px;
+    }
+
+    &--content {
+        float: left;
+        width: 100%;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+}
+
+.form_select {
+    .btn {
+        float: right;
+        width: 196px;
+        padding: 8px 12px;
+    }
+
+    select {
+        float: left;
+        width: calc(100% - 216px);
+        margin-top: 2px;
+    }
+}
+
+.dichvu_dangky {
+    font-size: px_to_rem(17px);
+
+    .form-group .checkbox {
+        border: none;
+
+        label span:before {
+            width: 15px;
+            height: 15px;
+            top: 1px;
+            left: -25px;
+        }
+
+        label input[type="checkbox"]:checked+svg {
+            top: 3px;
+            left: -1px;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+}
+
+.files-list {
+    display: -webkit-flex-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 8px;
+
+    .item {
+        position: relative;
+        float: left;
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 20%;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+
+        svg {
+            position: absolute;
+            bottom: 4px;
+            color: #dc5ca9;
+            left: 12px;
+        }
+
+        >.form-group {
+            position: absolute;
+            left: 5px;
+            right: 0;
+            bottom: -5px;
+
+            label {
+                color: $color1;
+                position: relative;
+
+                span {
+                    position: relative;
+                    float: left;
+                    padding-left: 26px;
+                }
+
+                input {
+                    display: none;
+                    margin-right: 4px;
+                    margin-top: 1px;
+                    float: left;
+                }
+
+                input[type="radio"]+span:before {
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    top: 0px;
+                    left: 0px;
+                    border: 1px solid #ccc;
+                    border-radius: 2px;
+                }
+
+                input[type="radio"]:checked+span:after {
+                    font: normal normal normal 12px/1 FontAwesome;
+                    content: "\f00c";
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: $color1;
+                    color: #fff;
+                    width: 16px;
+                    height: 16px;
+                    text-align: center;
+                    line-height: 16px;
+                    border-radius: 2px;
+                }
+            }
+
+        }
+
+        >a {
+            position: absolute;
+            bottom: -28px;
+            color: #999999;
+            margin: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+        }
+
+        &_img {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &-inner {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            >a {
+                display: block;
+            }
+        }
+    }
+}
+
+.user-va-checked {
+    font-size: 14px;
+    color: #514E4E;
+    font-family: Arial;
+    display: inline-block;
+
+    a {
+        color: #514E4E;
+        font: 400 14px Arial;
+    }
+
+    svg {
+        vertical-align: text-bottom;
+    }
+
+    &.disabled {
+        svg {
+            color: #AAB1B5
+        }
+    }
+}
+
+.block_share {
+    .user-va-checked {
+        a {
+            width: auto;
+            background: none;
+        }
+
+        .icon-ns {
+            position: static;
+        }
+    }
+}
+
+// Upload v1 
+.img_upload {
+    width: 140px;
+    border: 1px solid #E5E5E5;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.item_upload a span.centering_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+}
+
+#fine-uploader-gallery {
+    width: 100%;
+    margin-top: 15px;
+
+    .item_upload {
+        background: #fff;
+        width: 140px;
+        height: 140px;
+        border: 1px solid #E5E5E5;
+        overflow: hidden;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        position: relative;
+        border-radius: 5px;
+
+        a {
+            .ic_anh {
+                background: url(../images/graphics/camera.svg) no-repeat 0 0;
+                width: 60px;
+                height: 60px;
+                display: inline-block
+            }
+        }
+    }
+
+    .remove_pic {
+        width: 20px;
+        height: 20px;
+        color: #fff;
+        background: #ED3D7D;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        cursor: pointer;
+
+        &::before {
+            content: "×";
+        }
+
+        .ic.ic-false {
+            display: none;
+        }
+    }
+}
+
+.label_img {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    float: left;
+    display: block;
+    background: #fff;
+    height: 0;
+    position: relative;
+    padding-bottom: 100%;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        float: left;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: static;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    .icon_remove {
+        background: #E4265C;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        font-size: 26px;
+        font-family: -webkit-body;
+        line-height: 30px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    &.label_browser {
+        img {
+            width: auto;
+            max-width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+
+// Upload New 
+.box-upload-attach {
+    border: 1px dashed #BDBDBD;
+    border-radius: 3px;
+
+    .area-drop-file {
+        text-align: center;
+        padding: 50px 15px;
+
+        svg {
+            fill: #E5E5E5;
+            width: 40px;
+            height: 40px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 160%;
+            color: #757575;
+            margin-top: 15px;
+            display: block;
+
+            label {
+                cursor: pointer;
+                color: #087CCE;
+                text-decoration: underline;
+            }
+        }
+
+        .input-file {
+            display: none
+        }
+    }
+}
+
+
+
+.form-tindott {
+    .btn_ns {
+        background: #ED3D7D;
+        border-radius: 20px;
+    }
+
+    .input_code {
+        width: 220px;
+        margin-left: 110px;
+        height: 45px;
+    }
+
+    .send {
+        background: #FE5391;
+        height: 45px;
+        width: 103px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 330px;
+        margin: 0 auto 16px;
+
+        .wrap_input {
+            width: 220px;
+        }
+
+        label {
+            color: #000000;
+            font-size: 16px;
+            width: 100px;
+            text-align: right;
+            margin: 14px 10px 0 0;
+        }
+
+        input {
+            border-radius: 20px;
+            height: 45px;
+            border: 1px solid #ED3D7D;
+        }
+    }
+}
