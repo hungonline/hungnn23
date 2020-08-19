@@ -175,12 +175,16 @@
 	function swiper() {
 		var swiperbinhchon = new Swiper('.slide_binhchon .swiper-container', {
 			slidesPerView: 6,
-			spaceBetween: 0,
+			// spaceBetween: 0,
 			// centeredSlides: true,
 			// touchRatio: 0.2,
 			// slideToClickedSlide: true,
-			loop: true,
-			loopedSlides: 7,
+			// loop: true,
+			// loopedSlides: 7,
+			freeMode: true,
+			loopedSlides: 5,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
 			navigation: {
 				nextEl: '.swiper-bc-next',
 				prevEl: '.swiper-bc-prev',
