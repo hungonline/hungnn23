@@ -1,0 +1,11 @@
+.box_300{width: 348px;padding-left: 48px;}
+.box_stream{width: calc(100% - 348px);overflow-x: hidden; max-width: 100%;
+    &_1{
+      .art_item{
+        &:nth-child(1),&:nth-child(2){display:none;}
+      }
+    } 
+    .no-images{
+      .art_item{&:nth-child(1),&:nth-child(2){display:block!important;}}
+    } 
+}

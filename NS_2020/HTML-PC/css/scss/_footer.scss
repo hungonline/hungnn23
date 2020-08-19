@@ -1,0 +1,210 @@
+footer{
+    clear: both;
+     border-top: 1px solid #eaeaea;
+     padding-top: 30px;   
+     .row_menu{
+        font-size: 0;margin-left: -55px;
+        ul{
+           display: inline-block;width: 33.33%;vertical-align: top;padding-left: 55px;margin-bottom: 10px;font-size: px_to_rem(14px);
+           &>a{font: bold px_to_rem(24px) $fontmain2; line-height: $lh; margin-bottom: 20px;position: relative;display:block;
+              span{background: #fff;position: relative;padding-right: 20px;}
+              &:before{
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 2px;
+                  bottom: -7px;
+                  background-image: -webkit-gradient(linear, left top, right top, from(#16d1f2), to(#9dfeaf));
+                  background-image: -o-linear-gradient(left, #16d1f2, #9dfeaf);
+                  background-image: linear-gradient(left, #16d1f2, #9dfeaf);
+              }
+           }
+           h3{
+              font: bold px_to_rem(24px) $fontmain2; line-height: $lh; margin-bottom: 20px;position: relative;
+              &:before{
+                  content: "";
+                  position: absolute;
+                  width: 100%;
+                  height: 2px;
+                  bottom: -7px;
+                  background-image: -webkit-gradient(linear, left top, right top, from(#16d1f2), to(#9dfeaf));
+                  background-image: -o-linear-gradient(left, #16d1f2, #9dfeaf);
+                  background-image: linear-gradient(left, #16d1f2, #9dfeaf);
+              }
+              a{
+                 background: #fff;position: relative;padding-right: 20px;
+              }
+           }
+           li{
+              margin-bottom: 6px;
+              h4{
+                 font-size: 14px;font-weight: 400;font-family: arial;
+              }
+           }
+        }
+        &:nth-child(2){
+          ul{
+           h3,&>a{
+              &:before{
+                background-image: -webkit-gradient(linear, left top, right top, from(#0799ff), to(#21d4fd));
+                background-image: -o-linear-gradient(left, #0799ff, #21d4fd);
+                background-image: linear-gradient(left, #0799ff, #21d4fd);
+              }            
+           }
+          }
+        }
+        &:nth-child(3){
+          ul{
+             h3,&>a{
+                &:before{
+                  background-image: -webkit-gradient(linear, left top, right top, from(#8419fd), to(#57b2fb));
+                  background-image: -o-linear-gradient(left, #8419fd, #57b2fb);
+                  background-image: linear-gradient(left, #8419fd, #57b2fb);
+                }            
+             }
+          }
+        }            
+     }
+  }
+  .footer_top {
+     border-top: 1px solid #eaeaea;
+     border-bottom: 1px solid #eaeaea;
+     padding: 15px 0;
+     margin-top: 20px;
+     font-size: px_to_rem(12px);
+     font-family: arial;
+     a{color: #666;
+        .icon-ns{color: #999;width: 12px;height: 12px;margin: -3px 3px 0 0}
+     }
+     .left{
+       a{position: relative;padding-right: 30px;
+         &:before{
+            content: "";
+            background: #969696;
+            position: absolute;
+            height: 13px;
+            width: 1px;
+            right: 15px;
+         }
+         &:last-child{
+          &:before{display:none;}
+         }
+       }
+     }
+     .back_home{display: inline-block;
+        
+     }
+     .option{
+        float: right;
+        a{
+           display: inline-block;
+           position: relative;
+           padding-left: 30px;
+           &:before{
+              content: "";
+              background: #969696;
+              position: absolute;
+              height: 13px;
+              width: 1px;
+              left: 15px;
+           }
+           &.youtube{
+              &:before{display:none;}
+           }
+           img{
+             vertical-align: text-top;margin-right: 3px;
+           }
+        }
+     }
+  }
+  .copy-right{
+      font-family: arial;
+     .logo{float: left;margin: 20px 30px 0 0; width: 194px;}
+     .address{
+         margin: 28px 0;
+         float: left;
+         font-size: px_to_rem(13px);
+         line-height: 1.35;
+         color: #666;
+         h3{font-size: px_to_rem(13px);}      
+     }
+     .ads_text {
+         width: 100%;
+         float: left;
+         margin-top: 10px;
+         font-size: px_to_rem(12px);
+         span{display: inline-block;vertical-align: middle;
+           .icon-ns{color: #999;width: 12px;height: 12px;margin: 0 4px 0 0}
+         }
+         .qc_text{
+            padding: 5px 10px;
+            background: #ebebeb;
+            margin-right: 10px;
+            border-radius: 3px;         
+         }
+         .ads_icon_text{
+            border-left: 1px solid #d7d7d7;
+            margin-left: 10px;
+            padding-left: 10px;
+            .icon-ns{color: #999;width: 12px;height: 12px;margin: 0 4px 0 0}       
+         }
+     } 
+     .ns_app{
+        float: right;margin-top: 20px;
+        .col_1{
+          float: left;margin-top: 6px;
+          span{color: #666;font: 400 13px arial;display: block;margin-bottom: 12px;}
+          img{float: left;}
+          h6{float: left;font: 700 13px arial;color: #666;margin: 6px 0 0 10px;}
+        }
+        .col_2{
+          float: right;margin-left: 20px;
+          .link_app{
+            float: left;
+            a{display: block;}
+          }
+          .qrcode{
+            float: left;margin-left: 5px;
+          }
+        }
+     }  
+  }
+
+
+/*============STORE NGÔI SAO=========*/
+.box_list_store{
+    .item{
+       .thumb_img{
+          img{
+              max-height: 100%;
+              max-width: 100%;
+              width: auto!important;
+              height: auto;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto;         
+          }
+       }
+       h3{
+          margin: 10px 0;
+          a{font: normal 18px $fontmain}
+       }
+       .price{color: $colormain}
+    }
+    .owl-nav{
+       &>div{
+          position: absolute;top: 60px;padding: 27.5px 10px;
+          background: rgba(22, 143, 214, 0.7);          
+          .icon-ns{
+             color: #fff;
+             margin: 0;
+          }
+       }
+       .owl-prev{left: 0;}
+       .owl-next{right: 0}
+    }
+ }
+ /*============END STORE NGÔI SAO=========*/
