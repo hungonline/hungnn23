@@ -142,33 +142,49 @@
                             <div class="txt_12 gray">Doanh thu thuần</div>
                         </div>
                     </div>
-                    <div class="col-md-3 col-6"">
-                        <div class=" icon"><img width="30" src="images/icons/user-new.png"></div>
-                    <div class="content">
-                        <div class="txt_15 color-main2">12 khách hàng mới</div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-6"">
-                        <div class=" icon"><img width="25" src="images/icons/down.png"></div>
-                <div class="content">
-                    <div class="txt_22 red flex align-center">
-                        <div>-31.21% &nbsp;</div>
-                        <div class="animate-flicker txt_14">
-                            <strong>Warning !!!</strong>
+                    <div class="col-md-3 col-6">
+                        <div class="icon"><img width="25" src="images/icons/dollar.png"></div>
+                        <div class="content" onclick="menu.ViewOrderTemp()" style="cursor:pointer">
+                            <div class="txt_12 gray">
+                                <span id="totalOrderTemp">1 đơn chưa thanh toán</span>
+                            </div>
+                            <div class="color-main txt_22 red" id="totalMoneyTemp">3,004,159</div>
+                            <div class="txt_12 gray">Tổng tiền đơn</div>
                         </div>
                     </div>
-                    <div class="txt_12 gray">So với hôm qua</div>
-                </div>
-            </div>
-            <div class="col-md-3 col-6"">
+                    <div class="col-md-2 col-6"">
+                        <div class=" icon"><img width="30" src="images/icons/user-new.png"></div>
+                        <div class="content">
+                            <div class="txt_15 color-main2">12 khách hàng mới</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6"">
                         <div class=" icon"><img width="25" src="images/icons/up.png"></div>
-            <div class="content">
-                <div class="txt_22 color-main">25%</div>
-                <div class="txt_12 gray">So với cùng kỳ tháng trước</div>
-            </div>
+                        <div class="content">
+                            <div class="txt_12 gray">
+                                Doanh thu thuần
+                            </div>
+                            <div class="txt_22 color-main flex align-center" id="revenuday_increase" style="display: flex;">10%</div>
+                            <div class="txt_12 gray">So với hôm qua</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6"">
+                        <div class="content">
+                            <div class="txt_12 gray">
+                                <span id="totalOrder">900 sản phẩm không tìm thấy</span>
+                            </div>
+                            <div class="txt_22 red flex align-center">
+                                <div>-31.21% &nbsp;</div>
+                                <div class="animate-flicker txt_14">
+                                    <strong>Warning !!!</strong>
+                                </div>
+                            </div>
+                            <div class="txt_12 gray">So với hôm qua</div>
+                        </div>
+                    </div>
+
+                </div>
         </div>
-    </div>
-    </div>
     <div class="wrap_bg mb20">
         <div class="flex-head">
             <h2 class="title_cate">Doanh thu thuần hôm nay</h2>

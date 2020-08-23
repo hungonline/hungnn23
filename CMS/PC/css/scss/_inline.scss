@@ -11,21 +11,74 @@
 }
 
 .thong_ke_top {
-    .col-md-3 {
+    [class *='col-']{
         display: flex;
         align-items: center;
         border-right: 1px solid rgba(225, 225, 225, 0.6);
 
         .icon {
             margin-right: 8px;
+            img{border-radius: 50%;}
         }
 
         .content {
             line-height: 1.2;
+            .txt_22{
+                font-size: 20px;
+                margin: 5px 0;
+            }
         }
 
         &:last-child {
             border-right: 0
+        }
+    }
+    @media (max-width: 1400px) {
+        .row{margin: 0 -8px;}
+        [class *='col-']{
+            padding: 0 8px;
+        }
+    }
+    @media (max-width: 1200px) {
+        [class *='col-']{
+            flex-wrap: wrap;
+            .icon{
+                width: 100%;
+                margin: 0 0 5px 0;
+            }
+        }
+        .txt_15{font-size: 13px;}
+    }
+    @media (max-width: 1025px) {
+        [class *='col-']{
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            margin: 6px 0;
+            &:nth-child(3){
+                border-right: 0;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        [class *='col-']{
+            flex: 0 0 20%;
+            max-width: 20%;
+            &:nth-child(3){
+                border-right: 1px solid rgba(225,225,225,0.6);
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        [class *='col-']{
+            flex-wrap: none;
+            flex: 0 0 50%;
+            max-width: 50%;
+            .icon{
+                width: 30px;
+            }
+            &:nth-child(2),&:nth-child(4){
+                border-right: 0;
+            }
         }
     }
 }
