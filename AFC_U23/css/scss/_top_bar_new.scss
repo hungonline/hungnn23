@@ -205,16 +205,40 @@
 }
 
 
-@media only screen and (max-width: 1369px) and (min-width: 980px) {
+@media only screen and (max-width: 1369px) and (min-width: 1140px) {
 	.header_new {
 		.nav_menu {
 			margin-left: 50px;
 
-			// @media (max-width: 1199px) {
-			// 	max-width: 480px;
-			// 	overflow-x: scroll;
-			// 	white-space: nowrap;
-			// }
+			li {
+				margin-right: 20px;
+			}
+		}
+
+		.container {
+			width: 100%;
+			max-width: 100%;
+			padding-left: 200px;
+
+			&::before {
+				left: -150px;
+			}
+		}
+
+		.col_right {
+			right: 10px;
+		}
+
+		.logo_vne {
+			left: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1139px) and (min-width: 980px) {
+	.header_new {
+		.nav_menu {
+			margin-left: 50px;
 
 			li {
 				margin-right: 20px;
@@ -274,13 +298,13 @@
 		}
 
 		.container {
-			padding-left: 180px !important;
+			padding-left: 200px !important;
 
-			&::before {
-				left: -150px;
-				top: -8px;
-				height: 60px;
-			}
+			// &::before {
+			// 	left: -150px;
+			// 	top: -8px;
+			// 	height: 60px;
+			// }
 		}
 
 		.col_right {
