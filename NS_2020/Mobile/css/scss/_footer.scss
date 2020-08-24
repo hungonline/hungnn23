@@ -1,0 +1,154 @@
+@mixin border-bottom {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+#footer {
+    background: #fff;
+    font-size: 16px;
+    color: var(--gray800);
+    line-height: 1.4;
+    padding-top: 12px;
+}
+
+.footer_nav {
+    margin-bottom: 16px;
+    margin-left: -5px;
+    margin-right: -5px;
+    position: relative;
+    padding-bottom: 5px;
+
+    &::before {
+        content: "";
+        background: var(--border);
+        left: 5px;
+        right: 5px;
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+    }
+
+    li {
+        width: 50%;
+        padding: 0 5px;
+
+        a {
+            color: #1F3347;
+            padding: 9px 0;
+            display: block;
+        }
+    }
+}
+
+.down-app {
+    @include border-bottom;
+
+    a {
+        display: block;
+
+        img {
+            vertical-align: middle
+        }
+    }
+}
+
+.footer_hotline_ads {
+    position: relative;
+
+    .item {
+        width: 50%;
+        @include border-bottom;
+
+        h4 {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--gray600)
+        }
+    }
+}
+
+.footer_address {
+    @include border-bottom;
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    a {
+        color: var(--gray600)
+    }
+
+    .flex {
+        strong {
+            width: 90px;
+        }
+    }
+}
+
+.footer_contact {
+    @include border-bottom;
+
+    .flex {
+        margin: 0 -6px;
+    }
+
+    .item {
+        width: 50%;
+        padding: 0 6px;
+
+        a {
+            background: var(--gray100);
+            border-radius: 3px;
+            color: var(--gray700);
+            font-size: 14px;
+            display: block;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .icon-ns {
+            color: #7A99B8;
+            vertical-align: text-bottom;
+            margin-right: 3px;
+        }
+
+        .eclick {
+            color: #00747B
+        }
+    }
+}
+
+.footer_follow {
+    @include border-bottom;
+
+    .flex {
+        margin: 0 -6px;
+    }
+
+    a {
+        width: 50%;
+        padding: 0 6px;
+        color: var(--gray700);
+        font-size: 14px;
+        display: block;
+
+        .icon {
+            background: #2B9DEE;
+            width: 36px;
+            height: 36px;
+            color: #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 34px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+    }
+}
+
+.copyright {
+    margin-bottom: 30px;
+}

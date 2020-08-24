@@ -1,0 +1,170 @@
+$vne_color: #9F224E;
+$url: "images" !default;
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target==0 {
+    @return 0
+  }
+
+  @return $target / $context+0rem;
+}
+
+$base-size: 16px;
+$lh: 1.313;
+$fontmain:iCielDomaineText;
+$fontmain2:DomaineDisplay;
+$colormain:#178fd6;
+$colormain2:#0064b2;
+$color1:#c85687;
+
+:root {
+  --gray100: #EEF2F6;
+  --gray400: #94B3D1;
+  --gray600: #56738F;
+  --gray700: #3E5974;
+  --gray800: #1F3347;
+  --gray900: #132639;
+  --border: #E5E5E5;
+}
+
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
+  }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+%has_transition {
+  @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+}
+
+@mixin hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin clearfix {
+  clear: both;
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+
+  &:-moz-placeholder {
+    @content
+  }
+
+  &::-moz-placeholder {
+    @content
+  }
+
+  &:-ms-input-placeholder {
+    @content
+  }
+}
+
+@function v($var) {
+  @return var(--#{$var});
+}
+
+%ic_font {
+  line-height: 1;
+  font-size: 15px;
+  font-family: "vnexpress-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.border-bottom {
+  border-bottom: 1px solid v(bg-agray1);
+}
+
+.bg-grey {
+  background: v(bg-agray2);
+
+}
+
+.bg-grey-dark {
+  background: v(bg-agray1);
+}
+
+.w-calc-100 {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px);
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+%flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.no-flexbox {
+  display: inherit;
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%font-fea {
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+  -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+  -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+/**Apply: "font-size: px_to_rem(16px)" or "font: 400 px_to_rem(16px) arial;" **/

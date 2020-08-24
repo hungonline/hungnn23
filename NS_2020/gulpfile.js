@@ -57,7 +57,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(plumber({
       errorHandler: notify.onError("Error: <%= error.message %>")
-    }))    
+    }))
     .pipe(wait(500))
     .pipe(sass({
       outputStyle: 'compressed'
@@ -163,7 +163,7 @@ gulp.task("build-template", function () {
 });
 
 // Build Index Demo
-gulp.task('buildIndex', function() {
+gulp.task('buildIndex', function () {
   return gulp
     .src(['HTML-PC/*.html', 'Mobile/*.html'])
     .pipe(
@@ -179,9 +179,9 @@ gulp.task('buildIndex', function() {
         'section-template': (sectionContent) => `<section class="index__section">
         ${sectionContent}</section>
         `,
-          'section-heading-template': (heading) => `<h2 class="index__section-heading">${heading}</h2>
+        'section-heading-template': (heading) => `<h2 class="index__section-heading">${heading}</h2>
         `,
-          'list-template': (listContent) => `<ul class="index__list">
+        'list-template': (listContent) => `<ul class="index__list">
         ${listContent}</ul>
         `,
         'item-template': (
@@ -202,7 +202,9 @@ gulp.task('watch', function () {
   gulp.watch(rootDir + '/js/**/*.js', browserSync.reload);
   gulp.watch(rootDir + '/images/**/*', browserSync.reload);
   gulp.watch(rootDir + '/app/**/*.html', ['build-template']);
-  gulp.watch(rootDir + '/*.html', {events: ['add']}, ['buildIndex']);
+  gulp.watch(rootDir + '/*.html', {
+    events: ['add']
+  }, ['buildIndex']);
 })
 
 gulp.task('default', function (callback) {
