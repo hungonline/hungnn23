@@ -1,0 +1,515 @@
+@import "myvne-old.scss";
+
+/*Header*/
+.header_new {
+	background: #fff;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 999;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+
+	.container {
+		overflow: visible;
+		padding: 0 100px;
+		max-width: 1110px;
+		height: 60px;
+	}
+
+	.logo_f1 {
+		float: left;
+		margin-top: 13px;
+		color: #fff;
+
+		a {
+			color: #1F447E;
+			font-size: 19.5px;
+			line-height: 118.01%;
+			display: block
+		}
+
+		img {
+			width: 128px;
+		}
+	}
+
+	.logo_vne {
+		position: absolute;
+		top: 14px;
+		left: -100px;
+		width: 150px;
+	}
+
+	// .logo_vne {
+	// 	float: left;
+	// 	width: 150px;
+	// 	margin-right: 20px;
+	// 	margin-top: 14px;
+	// }
+
+	svg {
+		fill: currentColor;
+	}
+
+	.nav_menu {
+		float: left;
+		margin-left: 90px;
+
+		li {
+			display: inline-block;
+			margin-right: 30px;
+
+			a {
+				font: 400 16px $font1;
+				position: relative;
+				font-family: arial;
+				display: block;
+				line-height: 60px;
+			}
+
+			&.active {
+				a {
+					font-weight: 600;
+					color: #1F447E;
+
+					&:before {
+						content: "";
+						background: #1F447E;
+						height: 3px;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						position: absolute;
+					}
+				}
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&.submenu {
+				display: none
+			}
+		}
+	}
+
+	.col_right {
+		position: absolute;
+		right: -130px;
+		top: 15px;
+		width: auto;
+
+		.search {
+			width: 40px;
+			line-height: 30px;
+			text-align: center;
+
+			svg {
+				fill: #757575;
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+
+	#myvne_taskbar {
+		background: none;
+		border: 0;
+		margin-left: 10px;
+		font-family: arial;
+
+		.myvne_register_button {
+			display: none
+		}
+
+		ul.myvne_form_log {
+			&>li {
+				&>a {
+					font-size: 14px;
+					font-family: arial;
+
+					svg {
+						fill: #fff;
+
+						path {
+							stroke: #757575
+						}
+					}
+				}
+
+				.myvne_link {
+					font-size: 16px;
+					color: #757575;
+					border: 1px solid #757575;
+					border-radius: 3px;
+					line-height: 34px;
+					padding: 0 10px;
+					float: right;
+					margin: -7px 0 0 0;
+				}
+			}
+
+			&.logged {
+				li {
+					a.myvne_avatar {
+						padding: 0px 25px 0px 0px;
+
+						&:after {
+							right: 10px;
+						}
+
+						&.active {
+							background: none
+						}
+
+						.name_user_av {
+							max-width: 100px;
+						}
+					}
+				}
+
+				.myvne_notification {
+					margin-right: 10px;
+				}
+
+				.myvne_user_status {
+					right: 10px;
+					top: 45px
+				}
+			}
+		}
+
+		.myvne_form_log {
+			.myvne_user {
+				.myvne_icon {
+					float: left;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.myvne_content_notification {
+			top: 45px
+		}
+	}
+}
+
+.header_new+.section {
+	margin-top: 60px
+}
+
+.box_banner {
+	clear: both;
+}
+
+
+@media only screen and (max-width: 1369px) and (min-width: 980px) {
+	.header_new {
+		.nav_menu {
+			margin-left: 50px;
+
+			// @media (max-width: 1199px) {
+			// 	max-width: 480px;
+			// 	overflow-x: scroll;
+			// 	white-space: nowrap;
+			// }
+
+			li {
+				margin-right: 20px;
+
+				a {
+					font-size: 16px;
+					line-height: 60px
+				}
+
+				&.submenu {
+					display: inline-block
+				}
+			}
+
+			.hide_mobile {
+				display: none
+			}
+
+			.submenu {
+				position: relative;
+
+				svg {
+					fill: #1F447E
+				}
+
+				.level2 {
+					position: absolute;
+					min-width: 210px;
+					top: 60px;
+					display: none;
+					background: #FFFFFF;
+					padding: 0 15px;
+					right: 0;
+					z-index: 3;
+					box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+					a {
+						color: #1F447E;
+						display: block;
+						border-bottom: 1px solid #eaeaea;
+						padding: 12px 0;
+						line-height: inherit;
+
+						&.active {
+							font-weight: bold;
+						}
+					}
+				}
+
+				&:hover,
+				&:focus {
+					.level2 {
+						display: block
+					}
+				}
+			}
+		}
+
+		.container {
+			padding-left: 180px !important;
+
+			&::before {
+				left: -150px;
+				top: -8px;
+				height: 60px;
+			}
+		}
+
+		.col_right {
+			right: 10px !important;
+		}
+
+		.logo_vne {
+			width: 140px;
+			left: 10px !important;
+		}
+	}
+}
+
+@media (max-width: 1139px) {
+	.header_new {
+
+		.nav_menu {
+			li.active a:before {
+				bottom: 0;
+			}
+		}
+
+		.logo_vne {
+			left: 20px;
+		}
+
+		.col_right {
+			right: 10px;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.header_new {
+		.col_right {
+			.login {
+				.search {
+					width: 30px;
+				}
+
+				a {
+					padding: 0 5px;
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+
+	#myvne_taskbar {
+		position: relative;
+		height: 30px;
+
+		ul {
+			li {
+				padding: 0 5px;
+				height: 100%;
+
+				a {
+					padding: 0;
+				}
+			}
+		}
+
+		&.myvne_taskbar_v2 {
+			ul.myvne_form_log {
+				height: 100%;
+				margin-top: 2px;
+				border-left: 0;
+
+				li {
+					line-height: inherit;
+
+					.name_user_av {
+						display: inline-block
+					}
+				}
+
+				&.logged {
+					li.myvne_user {
+						.myvne_avatar {
+							line-height: inherit
+						}
+
+						&:after {
+							display: block;
+							content: "";
+							border-left: 5px solid transparent;
+							border-right: 5px solid transparent;
+							border-top: 5px solid #757575;
+							position: absolute;
+							top: 50%;
+							margin-top: -2.5px;
+							right: 10px;
+						}
+
+						.name_user_av {
+							display: inline-block
+						}
+					}
+				}
+			}
+		}
+
+		.myvne_user {
+			width: auto;
+			height: auto;
+		}
+
+		.myvne_link {
+			display: inline-block;
+			margin-top: 2px;
+		}
+	}
+}
+
+@media (max-width: 979px) {
+	.header_new {
+		height: 108px !important;
+
+		.nav_menu {
+			background: #F3F3F3;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0;
+			top: 60px;
+
+			li {
+				margin: 0 15px;
+
+				a {
+					font-size: 16px;
+					line-height: 48px;
+				}
+			}
+
+			.hide_mobile {
+				display: inline-block
+			}
+
+			.submenu {
+				display: none;
+			}
+		}
+
+		.container {
+			padding-left: 180px;
+
+			&::before {
+				left: -150px;
+				top: -8px;
+				height: 60px;
+			}
+		}
+
+		.col_right {
+			right: 10px;
+		}
+
+		.logo_vne {
+			width: 140px;
+		}
+	}
+}
+
+#search-popup {
+	width: 450px;
+	background: none;
+	overflow: visible;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+
+	.input_form {
+		border: 0;
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		font-size: 22px;
+		background: none;
+		padding-left: 0;
+		height: 40px;
+		color: #fff;
+		font-weight: 400;
+		outline: 0;
+
+		&::-webkit-input-placeholder {
+			color: #fff;
+		}
+
+		&:-ms-input-placeholder {
+			color: #fff;
+		}
+
+		&::placeholder {
+			color: #fff;
+		}
+	}
+
+	.btn_reset {
+		position: absolute;
+		right: 0;
+		top: 12px;
+		background: #BDBDBD;
+		font-family: -webkit-body;
+		font-size: 16px;
+		width: 16px;
+		height: 16px;
+		line-height: 16px;
+		padding-left: 1px;
+		color: #ffff;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		border: 0;
+	}
+
+	.mfp-close {
+		display: block;
+		font-family: -webkit-body;
+		color: #fff;
+		opacity: 1;
+		position: absolute;
+		right: -40px;
+		font-size: 36px;
+		font-weight: bold;
+	}
+}

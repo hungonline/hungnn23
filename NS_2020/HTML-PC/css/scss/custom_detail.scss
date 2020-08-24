@@ -1,0 +1,312 @@
+@import "var.scss";
+@import "box300.scss";
+@import "icon-vne.scss";
+
+.page-detail {
+    &.top-detail {
+        background: none;
+        border-bottom: 0;
+
+        .container {
+            background: #fff;
+        }
+    }
+
+    .header-content {
+        .date {
+            float: left;
+            color: #999;
+            font-size: 13px;
+        }
+    }
+
+    .title-detail {
+        font: 700 2rem iCielDomaineText;
+    }
+
+    .lead {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .block_share_sticky {
+        width: 65px;
+        padding-top: 150px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        left: 0;
+        height: 100%;
+        padding-bottom: 20px;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+        transition-duration: 250ms;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+    }
+
+    .sidebar-2 {
+        .box_300 {
+            margin-top: 0 !important;
+            padding-left: 0;
+            float: left;
+            width: 100%;
+        }
+    }
+}
+
+.fck_detail {
+    font: 400 17px arial;
+}
+
+figure {
+    margin: 0 auto 20px;
+    max-width: 100%;
+    clear: both;
+}
+
+.item-news-common {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    float: left;
+
+    &:first-of-type {
+        border-top: none;
+    }
+}
+
+.item-news {
+    .title-news {
+        font-family: "iCielDomaineText";
+        line-height: 1.5
+    }
+}
+
+.meta-news {
+    /*float: left;*/
+    /*display: inline-block; vertical-align: middle;*/
+    color: #757575;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400 !important;
+
+    .time-public {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .cat {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:hover {
+            color: #087CCE;
+        }
+    }
+
+    .count_cmt,
+    .icon_commend {
+        font-size: 12px;
+        color: #076DB6;
+        display: inline-block;
+        /*vertical-align: top;*/
+        text-decoration: none !important;
+
+        .ic {
+            fill: #bdbdbd;
+            width: 12px;
+            height: 12px;
+            margin-right: 1px;
+        }
+
+        &:hover {
+            color: #087CCE;
+
+            .ic {
+                fill: #999;
+            }
+        }
+    }
+
+    .icon_commend {
+        .ic {
+            margin-right: 0;
+        }
+    }
+
+    .ic-time {
+        vertical-align: top;
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+        fill: #BDBDBD;
+    }
+}
+
+.btn_vne {
+    background: #9F224E;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 0 35px;
+    @extend %has_transition;
+
+    &:hover {
+        background: #B52759;
+    }
+
+    &.btn_normal {
+        font-weight: 400;
+    }
+
+    &.btn_full {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+    &.btn_disable {
+        background: #F7F7F7;
+        color: #BDBDBD;
+    }
+
+    &.btn_grey {
+        background: #E5E5E5;
+        color: #222;
+    }
+
+    &.btn_blue {
+        background: #076DB6;
+        color: #fff;
+    }
+
+    &.btn_view_cancel {
+        background: none;
+        color: #757575;
+        text-decoration: underline;
+        padding: 0 15px;
+
+        &:hover {
+            color: #087CCE;
+        }
+    }
+
+    .ic {
+        margin-top: -3px;
+        margin-right: 8px;
+    }
+}
+
+/*End meta-new*/
+
+
+/*Sticky Social*/
+.block_share.sticky_box {
+    .total {
+        float: left;
+        text-align: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+
+        .bg_agray {
+            background: #f6f6f6;
+            position: relative;
+            padding: 3px 0;
+            margin-bottom: 10px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -6px;
+                left: 9px;
+                width: 0;
+                height: 0;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                border-top: 6px solid #f6f6f6;
+            }
+        }
+
+        .count_share {
+            color: #666;
+        }
+
+        a {
+            margin-bottom: 0;
+            float: none;
+        }
+    }
+}
+
+.block_share.sticky_box a {
+    float: none;
+    clear: both;
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: 0 auto 15px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+
+    svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+.block_share.sticky_box .btn_email+.count_comment {
+    display: none;
+}
+
+.block_share.sticky_box .icon_commend {
+    margin-bottom: 0;
+
+}
+
+.block_share.sticky_box .count_comment {
+    background: transparent;
+    color: #666666;
+    margin: 0 auto;
+    min-width: 32px;
+}
+
+.block_share.sticky_box .count_comment:after {
+    display: none;
+}
+
+#send_mail_author {
+    position: relative;
+    margin-left: 0px;
+    padding-left: 8px;
+
+    &:before {
+        content: "";
+        margin-right: 5px;
+        color: #999;
+        width: 1px;
+        height: 11px;
+        background: #666;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+    }
+}
+
+/* End Sticky Social*/

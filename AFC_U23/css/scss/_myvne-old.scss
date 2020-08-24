@@ -1,0 +1,487 @@
+/**Fancybox myvne**/
+.fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp{padding:0;margin:0;border:0;outline:none;vertical-align:top}.fancybox-wrap{position:absolute;top:0;left:0;z-index:8020}.fancybox-skin{position:relative;color:#444;text-shadow:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.fancybox-opened{z-index:8030}.fancybox-outer,.fancybox-inner{position:relative}.fancybox-inner{overflow:hidden}.fancybox-type-iframe .fancybox-inner{-webkit-overflow-scrolling:touch}.fancybox-error{color:#444;font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;padding:15px;white-space:nowrap}.fancybox-image,.fancybox-iframe{display:block;width:100%;height:100%}.fancybox-image{max-width:100%;max-height:100%}#fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span{background-image:url(images/graphics/fancybox_sprite.png)}#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:8060}#fancybox-loading div{width:44px;height:44px;background:url(images/graphics/fancybox_loading.gif) center center no-repeat}.fancybox-close{position:absolute;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:8040}.fancybox-nav{position:absolute;top:0;width:40%;height:100%;cursor:pointer;text-decoration:none;background:transparent url(images/graphics/blank.gif);-webkit-tap-highlight-color:rgba(0,0,0,0);z-index:8040}.fancybox-prev{left:0}.fancybox-next{right:0}.fancybox-nav span{position:absolute;top:50%;width:36px;height:34px;margin-top:-18px;cursor:pointer;z-index:8040;visibility:hidden}.fancybox-prev span{left:10px;background-position:0 -36px}.fancybox-next span{right:10px;background-position:0 -72px}.fancybox-nav:hover span{visibility:visible}.fancybox-tmp{position:absolute;top:-99999px;left:-99999px;visibility:hidden;max-width:99999px;max-height:99999px;overflow:visible!important}.fancybox-lock{overflow:hidden!important;width:auto}.fancybox-lock body{overflow:hidden!important}.fancybox-lock-test{overflow-y:hidden!important}.fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:8010;background:url(images/graphics/fancybox_overlay.png)}.fancybox-overlay-fixed{position:fixed;bottom:0;right:0}.fancybox-lock .fancybox-overlay{overflow:auto;overflow-y:scroll}.fancybox-title{visibility:hidden;font:normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;text-shadow:none;z-index:8050}.fancybox-opened .fancybox-title{visibility:visible}.fancybox-title-float-wrap{position:absolute;bottom:0;right:50%;margin-bottom:-35px;z-index:8050;text-align:center}.fancybox-title-float-wrap .child{display:inline-block;margin-right:-100%;padding:2px 20px;background:transparent;background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;text-shadow:0 1px 2px #222;color:#FFF;font-weight:700;line-height:24px;white-space:nowrap}.fancybox-title-outside-wrap{position:relative;margin-top:10px;color:#fff}.fancybox-title-inside-wrap{padding-top:10px}.fancybox-title-over-wrap{position:absolute;bottom:0;left:0;color:#fff;padding:10px;background:#000;background:rgba(0,0,0,.8)}/*@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (min-device-pixel-ratio: 1.5){#fancybox-loading,.fancybox-close,.fancybox-prev span,.fancybox-next span{background-image:url(images/graphics/fancybox_sprite.png);background-size:44px 152px}#fancybox-loading div{background-image:url(images/graphics/fancybox_loading.gif);background-size:24px 24px}}*/
+
+.close-lb{
+	background: url(images/graphics/icon_total_01.png) -22px -286px no-repeat;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+#login-vne3 .ttOline, #login-vne4 .ttOline, #login-vne5 .ttOline, #login-vne6 .ttOline, #login-vne7 .ttOline, .ttOline{
+	background: #fff;
+    height: 36px;
+    padding: 8px 20px 0;
+    display: block;
+    overflow: hidden;
+    font: 700 16px arial;
+    color: #000;
+}
+#login-vne4{
+	background: #f4f4f4;
+    padding: 0;
+}
+.login-form {
+    width: 100%;
+    float: left;
+    border: 1px solid #dedede;
+    background: #fff;
+    position: relative;
+    padding: 10px 0;
+}
+.complete-form {
+    padding: 20px;
+    display: block;
+    overflow: hidden;
+    font: 500 14px arial;
+    color: #000;
+    width: auto;
+}
+div#myvne_close_popup {    
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+	&:after{
+		content: '';
+		background: #ccc;
+		width: 15px;
+		height: 1px;
+		position: absolute;
+		top: 15px;
+		left: 8px;
+		transform: rotate(45deg);
+	}
+	&:before{
+		content: '';
+		background: #ccc;
+		width: 15px;
+		height: 1px;
+		position: absolute;
+		top: 15px;
+		left: 8px;
+		transform: rotate(-45deg);
+	}
+}
+/**End Fancybox myvne**/
+
+#myvne_taskbar {
+    background-color: #eee;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 11px;
+    /*z-index: 99;*/
+	position: relative;
+	.myvne_container{
+		height: 100%;
+		max-width: 1000px;
+    	margin: 0 auto;
+	}
+	ul{
+		height: 29px;
+		li{
+			height: 100%;
+			display: inline-block;
+			vertical-align: top;
+			line-height: 29px;
+			padding: 0 5px;
+			border-left: 1px solid #ccc;
+			&:first-child{
+				border-left: none;
+				padding-left: 0;
+			}
+			a{
+    			font-size: 12px;
+				display: inline-block;
+                color: #666;
+			}
+			.ic-m-contact.phone{
+				float: left;
+				margin: 6px 3px 0 0;
+			}
+		}
+	}
+	.myvne_notification{
+		position: relative;
+    	cursor: pointer;
+		.badged {
+			position: absolute;
+			font-size: 9px;
+			padding: 2px;
+			line-height: 1;
+			background-color: #9f224e;
+			color: #fff;
+			top: 2px;
+			right: -7px;
+		}
+	}
+	.myvne_icon_bell{
+		font-size: 20px;
+		display: inline-block;
+		vertical-align: middle;
+		line-height: 1;
+	}
+	.myvne_contact{
+		float: left;
+        color: #666;
+        font-size: 12px;
+        li{
+            /*&:nth-child(2){
+                line-height: 31px;
+                i{
+                    margin-top: -4px;
+                    margin-right: 5px;
+                }
+            }*/
+        }
+	}
+	.myvne_form_log{
+		float: right;
+		font-size: 12px;
+		.myvne_user{
+			position: relative;
+		}
+	}
+	.block_search_web{
+		padding-right: 4px;
+		width: 176px;
+		.txt_input{
+			width: 150px!important;
+			float: left;
+			height: 23px!important;
+			margin-right: -1px;
+		}
+	}
+	.icon_seach_web{
+		background: #fff;
+		float: left;
+		height: 23px;
+		width: 23px;
+		border: 1px solid silver;
+		cursor: pointer;
+		font-size: 0;
+		line-height: 0;
+		margin-top: 3px;
+		.ic{
+			font-size: 12px;
+		}
+	}
+	.item_social{
+		margin-right: 5px;
+		margin-top: 4px!important;
+		line-height: 0;
+		display: inline-block;
+		float: left;
+	}
+	a.dk_nhantin{
+		line-height: 30px;
+	}
+	.icon_nhantin{
+		display: inline-block;
+		width: 22px;
+		height: 20px;
+		background-position: -452px -96px;
+		vertical-align: middle;
+		margin: -2px 5px 0 0;
+		text-align: center;
+		color: #9f224e;
+		line-height: 23px;
+	}
+	.myvne_avatar{
+		height: 100%;
+		padding-right: 15px;
+		width: 65px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		&:after{
+			content: "";
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-top: 5px solid gray;
+			position: absolute;
+			top: 50%;
+			margin-top: -2.5px;
+			right: 0;
+		}
+		img{
+			position: absolute;
+			left: -30px;
+			top: 2px;
+		}
+	}
+	.myvne_user_status{
+		display: none;
+		z-index: 999;
+		position: absolute;
+		background-color: #f8f8f8;
+		border: 1px solid #ccc;
+		top: 30px;
+		left: -32px;
+		min-width: 134px;
+		height: auto;
+		li{
+			padding: 8px 0;
+			width: 100%;
+			float: left;
+			box-sizing: inherit;
+			white-space: nowrap;
+			border: none;
+			a{
+				line-height: 15px;
+				display: block;
+				float: left;
+				width: 90%;
+				float: left;
+				padding: 0 5%;
+			}
+		}
+	}
+	.myvne_content_notification{
+		display: none;
+		position: absolute;
+		width: 450px;
+		right: 0;
+		top: 30px;
+		z-index: 99;
+		background-color: #f8f8f8;
+		border: 1px solid #ccc;
+		max-height: 370px;
+		overflow: auto;
+		ul{
+			height: auto;
+			li{
+				padding: 10px;
+				border-bottom: 1px solid #ccc;
+				line-height: 15px;
+				width: 100%;
+			}
+		}
+		.myvne_wrap_info{
+			overflow: hidden;
+   			display: block;
+		}
+		.myvne_time{
+			margin-top: 5px;
+		}
+	}
+	.myvne_notification-viewmore{
+		text-align: center;
+		font-size: 13px;
+		display: block;
+	}
+	i.ico {
+		background: url(images/icons/icon_login_user.png) no-repeat;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	i.ico.ico_comment {
+		width: 13px;
+		height: 11px;
+		background-position: -90px 0;
+	}
+
+	&.myvne_taskbar_v2{
+		ul.myvne_form_log{height: 25px; font-size: 0; margin-top: 2px;
+			li{border-left: none; line-height: 25px;
+				a{
+					&.myvne_link_create{background: #9F224E; color: #fff; border-radius: 3px; padding: 0 15px; line-height: 25px;}
+				}
+				.myvne_content_notification{
+					ul{
+						li{line-height: 15px;}
+					}
+				} 
+			&:last-child{padding-right: 0;}
+			}
+		&.myvne_contact{margin-top: 0;}
+		
+			
+		}
+		.myvne_form_log{
+			&.logged{margin-top: 0;}
+		} 
+		.block_search_web{width: 195px;
+			.txt_input{
+				border: 1px solid #E5E5E5; border-right: 0; height: 25px !important; margin: 0; border-radius: 3px 3px 0 3px;
+			}
+		}
+		.icon_seach_web{width: 25px;height: 25px;border: none;margin-top: 0;border: 1px solid #E5E5E5; border-left: 0; border-radius: 0 3px 3px 0;}
+		.myvne_avatar{width: auto; padding: 2px 25px 2px 10px; overflow: visible;
+			.avatar_inner{width: 25px;height: 25px;background: #C4C4C4; overflow: hidden; margin-top: -4px; line-height: 25px; text-align: center; border-radius: 50%; display: inline-block; vertical-align: middle; margin-right: 5px;
+				
+				font-size: 18px; font-family: 'arial', sans-serif; text-transform: uppercase; font-weight: 700;color: #fff;
+				img{width: 25px;height: 25px;position: static;}
+			}
+			.name_user_av{max-width: 65px; overflow: hidden;margin-top: -2px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				display: inline-block; vertical-align: middle;
+			}
+			&:after{right: 15px;}
+			&.active{
+				background: #fff;
+			}
+		}
+		.myvne_notification{
+			
+		}
+
+		#myvne_user_logged{
+			.block_search_web{width: 149px; margin-right: 0; margin-top: 2px;}
+			.myvne_user{line-height: 29px; height: 29px;}
+		}
+		.myvne_user_status{
+			height: auto;
+			top: 29px;
+			left: auto;
+			right: -25px;
+			margin-top: 0;
+			min-width: 270px; background: #fff; border: none;
+			-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+			box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.1);
+			padding: 0 15px;
+			li{line-height: inherit; padding: 0;
+				&.li_bd{border-bottom: 1px solid #E5E5E5; padding: 0 0 10px 0; margin-bottom: 10px;}
+				&.li_account{display: flex; align-items: center; padding: 15px 0;}
+				a{font-size: 15px; color: #4F4F4F; padding: 10px 0; position: relative; width: 100%;
+					.number_sub{opacity: 0.4;}
+				}
+				&:last-child{
+					a{padding-bottom: 20px;}
+				}
+			}
+			.avatar_sub{
+				width: 48px;height: 48px;background: #E5E5E5;text-align: center; line-height: 48px; font-size: 20px; color: #fff;
+				overflow: hidden; border-radius: 50%; font-weight: 700; text-transform: uppercase;
+				img{width: 48px;height: 48px;}	
+			}
+			.name_sub{width: calc(100% - 48px); padding-left: 10px; color: #4F4F4F; font-size: 16px; font-weight: 700;}
+		}
+
+	}
+}
+.myvne_thumb {
+    float: left;
+    margin-right: 10px;
+}
+#myvne_user_logged{
+	.block_search_web{
+		margin-right: 28px;
+		width: 146px;
+		.txt_input{width: 120px !important;}
+	}
+    .notify_recentlyread{
+        position: absolute; top: 40px; right:-33px; width: 250px; z-index: 9;
+        a{width: 100%; display: block; background: #004e8b; -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+            padding: 10px 50px 10px 10px;
+            color: #fff; font: 400 14px/1.313 arial;
+            strong{display: block;}
+        }
+        .close_notify{color: #fff; width: 30px; height: 30px; text-align: center; cursor: pointer; line-height: 30px; position: absolute; top: 0; right: 0; font-size: 25px;}
+        &:before{
+            width: 0;
+            height: 0;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-bottom: 10px solid #004e8b;
+            position: absolute; top: -10px; right: 64px;
+            content: '';
+        }
+    }
+	
+}
+#myvne_taskbar.myvne_taskbar_v2 ul.myvne_form_log li.myvne_notification{line-height: 29px !important;}
+@media screen and (max-width: 1000px){
+	#myvne_taskbar{
+		.myvne_contact, .block_search_web, .myvne_avatar span, .myvne_link{display: none;} 
+	}
+	.logged{
+		.myvne_icon{display: none !important;}
+	}
+	#myvne_taskbar{
+		position: absolute;
+		left: auto;
+		right: 0;
+		background-color: transparent;
+		height: 44px;
+		z-index: 99;
+		ul{
+			height: 44px;
+			border-left: 1px solid #ccc;
+			li{
+				height: 44px;
+				line-height: 44px;
+				padding: 0;
+				a{					
+					padding: 0 8px;
+				}
+			}
+		}
+		.myvne_avatar{
+			display: block;
+			background: none;
+			padding:3px 0 0 7px;
+			line-height: 33px;
+			width: auto;
+			img{
+				position: relative;
+				left: auto;
+				top: auto;
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 50%;
+			}
+			&:after{
+				content: none;
+			}
+		}
+		.myvne_user_status{
+			top: auto;
+			left: auto;
+			right: 0;
+			text-align: left;
+			li{
+				height: auto;
+			}
+		}
+		.myvne_notification{
+			i{
+				font-size: 20px;
+				padding: 0 5px;
+			}
+			.badged{right: 7px;}
+		}
+		.myvne_content_notification{
+			right: 0;
+		}
+		.myvne_nofify_item{
+			height: auto !important;
+		}
+	}
+	
+	.myvne_user{
+		text-align: center;
+		width: 35px;
+	}
+	i.ico.ico_user_myvne{
+		width: 16px;
+		height: 20px;
+		background-position: -30px -120px  !important;
+	}
+
+	#myvne_taskbar.myvne_taskbar_v2 ul.myvne_form_log{height: 44px; margin-top: 0;}
+	#myvne_taskbar.myvne_taskbar_v2{border-bottom: none;}
+	#myvne_taskbar.myvne_taskbar_v2 .myvne_avatar .name_user_av{display: none;}
+	#myvne_taskbar.myvne_taskbar_v2 .myvne_avatar,#myvne_taskbar.myvne_taskbar_v2 ul.myvne_form_log li{line-height: 44px;}
+}

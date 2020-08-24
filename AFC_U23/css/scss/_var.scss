@@ -1,0 +1,217 @@
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Semibold.woff2') format('woff2'),
+    url('fonts/Averta-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Black.woff2') format('woff2'),
+    url('fonts/Averta-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('fonts/Averta-Regular.woff2') format('woff2'),
+    url('fonts/Averta-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Scss Document */
+$font1: 'Averta';
+$font2: 'Roboto',
+sans-serif;
+$color1: #1F447E;
+$color_border: #ececec;
+$color_hover: #004f8b;
+$url: "images" !default;
+/*background: url("#{$url}/graphics/demo.gif") no-repeat 0 0;*/
+$vne_color: #9f224e;
+$vne_color_hover: #004f8b;
+$main_width: 1000px;
+$max_width_1000: 750px;
+$max_width_750: 600px;
+$max_width_600: 100%;
+
+%social_btn {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin-left: 5px;
+  display: inline-block;
+
+  i {
+    font-size: 11px;
+    color: #fff;
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: 1px;
+  }
+}
+
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
+  }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+
+
+%ic_font {
+  font-family: "vnexpress-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* box_feedback */
+%box_feedback {
+  width: 100%;
+  background: #eee;
+  display: inline-block;
+  line-height: 40;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  font: 700 14px/40px tahoma;
+
+  .icon_feed_back {
+    float: left;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+
+    /*font-size: 30px;*/
+    /*i{
+			color: #fff;
+			font-size: 30px;
+			display: inline-block;
+			margin-top: 5px;
+		}*/
+    .ic-email {
+      background-position: -476px -69px;
+      width: 30px;
+      height: 23px;
+    }
+  }
+
+  .txt_feedback {
+    text-align: center;
+    display: block;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 15px;
+  text-align: center;
+  background: #E5E5E5;
+  border-radius: 3px;
+  color: #757575;
+  font-size: 13px;
+}
+
+/* End box_feedback */
+
+
+%clearfix {
+  clear: both;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%wcm {
+  float: left;
+  width: 100%;
+}
+
+%flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%bgsvg {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+%flex-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-large-width: 1200px;
+
+@mixin xs {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin not-xs {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin not-sm {
+  @media (max-width: #{$tablet-width - 1}) and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$desktop-large-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin not-md {
+  @media (max-width: #{$desktop-width - 1}) and (min-width: #{$desktop-large-width}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$desktop-large-width}) {
+    @content;
+  }
+}
+
+@mixin not-lg {
+  @media (max-width: #{$desktop-large-width - 1px}) {
+    @content;
+  }
+}

@@ -19,10 +19,6 @@ body {
   font: 400 px_to_rem(14px) arial;
   line-height: $lhbody;
   text-align: left;
-  /*line-height: 1.313;*/
-  overflow-x: hidden;
-  /* -webkit-text-stroke: 0.1px;
-    font-kerning: normal;*/
 }
 
 .body_mobile {
@@ -445,4 +441,46 @@ html {
   height: 1px;
   width: 100%;
   clear: both;
+}
+
+/* ******** Browser ************* */
+
+/*Only Safari*/
+_::-webkit-full-page-media,
+_:future,
+:root .box_stream {
+  width: calc(100% - 349px);
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .featured .art_topstory {
+  width: 65.9%;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .box_tieudiem .list_news {
+  width: 845px;
+}
+
+@media (max-width: 991px) {
+
+  _::-webkit-full-page-media,
+  _:future,
+  :root .box_stream {
+    width: 100%;
+  }
+
+  _::-webkit-full-page-media,
+  _:future,
+  :root .featured .art_topstory {
+    width: 100%;
+  }
+
+  _::-webkit-full-page-media,
+  _:future,
+  :root .box_tieudiem .list_news {
+    width: calc(100% - 255px);
+  }
 }

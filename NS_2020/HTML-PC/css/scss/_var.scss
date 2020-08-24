@@ -1,26 +1,41 @@
 @mixin cubic-transition($delay, $duration, $property) {
-    transition: {
-        duration: $duration;
-        property: $property;
-        timing-function: cubic-bezier(.7,1,.7,1);
-    }
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
+  }
 }
+
+%has_transition {
+  @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+}
+
 @mixin clearfix {
   clear: both;
-  &::before, &::after {
-     display: table;
-     content:"";
-     clear: both;
+
+  &::before,
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
   }
 }
 
 
- /*@include cubic-transition($delay: 0, $duration: 350ms, $property: (transform)); */
+/*@include cubic-transition($delay: 0, $duration: 350ms, $property: (transform)); */
 
 @function px_to_rem($target, $context: $base-size) {
-  @if $target == 0 { @return 0 }
-  @return $target / $context + 0rem;
+  @if $target==0 {
+    @return 0
+  }
+
+  @return $target / $context+0rem;
 }
+
+$vne_color: #9f224e;
+$vne_color_hover: #087CCE;
+$font-title: 'Merriweather',
+serif;
 $base-size: 16px;
 $lh: 1.313;
 $lhbody: 1.45;
@@ -30,34 +45,39 @@ $colormain:#168fd6;
 $colormain2:#0064b2;
 $color-solid:#E5E5E5;
 
-%flexbox{
+%flexbox {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
 }
-.flexbox{
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-}
-.no-flexbox{display: inherit;}
 
-%clearfix{
-&:after{
-      content: '';
-      display: table;
-  clear: both;
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
+
+.no-flexbox {
+  display: inherit;
 }
-%font-fea{
-  font-feature-settings: 'pnum' on , 'lnum' on;
-  -webkit-font-feature-settings: 'pnum' on , 'lnum' on;
-  -moz-font-feature-settings: 'pnum' on , 'lnum' on;
-  -ms-font-feature-settings: 'pnum' on , 'lnum' on;
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%font-fea {
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+  -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+  -ms-font-feature-settings: 'pnum'on, 'lnum'on;
 }
 
 
