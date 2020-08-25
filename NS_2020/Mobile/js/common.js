@@ -171,9 +171,16 @@
             // },
         });
         var swiperQuoTe = new Swiper('#box_quote', {
-            spaceBetween: 12,
+            effect: 'coverflow',
             centeredSlides: true,
             loop: true,
+            coverflowEffect: {
+                rotate: 30,
+            },
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },            
         });
 
         var swiperwedding = new Swiper('#slide_wedding .swiper-container', {

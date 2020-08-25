@@ -486,7 +486,42 @@
         }
     }
 }
+.block_tag{
+    display: flex;
+    flex-wrap: wrap;
+    .txt_tag{
+        color: #56738F;font-weight: 400;font-size: 14px;
+        width: 34px;
+        margin-top: 5px;
+    }
+    .list_tag{
+        width: calc(100% - 34px);
+        padding-left: 12px;
+        h3{
+            font-size: 14px;
+            font-weight: 400;
+            display: inline-block;
+            position: relative;
+            line-height: 30px;
+            padding-right: 28px;
+            &::before{
+                content: "";
+                background: #D8E1EB;
+                width: 1px;
+                height: 12px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                transform: rotate(25deg);
 
+            }
+            a{color: #1F3347;}
+            &:last-child{
+                &::before{display: none;}
+            }
+        }
+    }
+}
 // LOCATION-STAMP
 .location-stamp {
     color: #4f4f4f;
