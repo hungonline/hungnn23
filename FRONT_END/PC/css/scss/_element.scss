@@ -1328,3 +1328,23 @@
 	color: var(--green2);
 	text-decoration: underline;
 }
+
+.error-link{
+	display: flex;
+	flex-wrap: wrap;
+	.col-7{
+		width: 60%;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.col-5{
+		width: 35%;margin-bottom: 30px;
+	}
+	h2{
+		color: #DE0028;
+		font-size: 36px;text-transform: uppercase;
+	}
+	.description{
+		text-align: left;
+	}
+}
