@@ -78,6 +78,9 @@
     padding: 13px 0;
     background: #fff;
     border-top: 1px solid #D8E1EB;
+    &.no-border{
+        border-top: 0;border-radius: 4px;
+    }
 }
 
 .art_item {
@@ -113,7 +116,23 @@
             line-height: 20px;
             padding: 0 5px;
         }
-
+        .play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            margin-left: -18px;
+            margin-top: -18px;
+            text-align: center;
+            svg{
+                width: 32px;
+                height: 32px;
+                color: #fff;
+                opacity: 0.7;
+            }
+        }
         &.thumb_big {
             width: 100%;
             float: none;
@@ -260,7 +279,67 @@
         }
     }
 }
+.box_slide_home {
+    position: relative;
 
+    .swiper-control {
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        display: flex;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: static;
+        color: #56738F
+    }
+}
+.box_kd {
+    .art_item__top {
+        margin-bottom: 0;
+        background: #fff;
+        padding-bottom: 12px;
+        &::before {
+            content: "";
+            background: var(--border);
+            height: 1px;
+            position: absolute;
+            bottom: 12px;
+            left: 12px;
+            right: 12px;
+        }
+    }
+    .tai-tro{
+        color: #56738F;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+        width: 100%;
+        margin-top: -12px;
+        span{
+            margin-right: 12px;
+        }
+    }
+}
+#slide_store{
+    .bg-white{
+        padding:0 12px 12px 12px;
+    }
+    .title_box_category{margin-left: -12px;margin-right: -12px;}
+    .art_item{
+        margin-bottom: 0;
+        .thumb_art{
+            width: 100%;
+            float: none;
+            margin: 0;
+        }
+        .content{
+            padding: 12px 0 0 0;
+            .title_news{font-size: 16px;margin-bottom: 8px;}
+        }
+    }
+}
 .list_news {
     display: flex;
     flex-wrap: wrap;
@@ -298,6 +377,10 @@
     .thumb_art {
         width: 100%;
         float: none;
+        .timer {
+            left: 12px;
+            bottom: 8px
+        }
     }
 
     .content {

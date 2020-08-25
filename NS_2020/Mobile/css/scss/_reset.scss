@@ -22,6 +22,8 @@ body {
   line-height: 1.4;
   overflow-x: hidden;
   background: #EEF2F6;
+  max-width: 590px;
+  margin: 0 auto;
 }
 
 .body_mobile {
@@ -137,7 +139,7 @@ a:hover {
 }
 
 #to_top {
-  opacity: .5;
+  opacity: .8;
   background: #999;
   display: none;
   border: medium none;
@@ -178,7 +180,7 @@ textarea {
   font-size: 11px;
   border: none;
   background: none;
-
+  outline: 0;
 }
 
 input::-webkit-input-placeholder {
@@ -419,7 +421,9 @@ svg.ic,
   color: red;
   font-size: 12px;
 }
-
+.blue{
+  color: #0963C8;
+}
 .bg_gray {
   background: #f8f8f6;
 

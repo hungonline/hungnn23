@@ -26,23 +26,8 @@
     }
 }
 
-.box_kd {
-    .art_item__top {
-        margin-bottom: 0;
-        background: #fff;
-        padding-bottom: 12px;
 
-        &::before {
-            content: "";
-            background: var(--border);
-            height: 1px;
-            position: absolute;
-            bottom: 0;
-            left: 12px;
-            right: 12px;
-        }
-    }
-}
+
 
 .box_tieudiem_home {
     .bg-white {
@@ -156,22 +141,5 @@
                 font-size: 14px;
             }
         }
-    }
-}
-
-.box_slide_home {
-    position: relative;
-
-    .swiper-control {
-        position: absolute;
-        top: 12px;
-        right: 15px;
-        display: flex;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        position: static;
-        color: #56738F
     }
 }

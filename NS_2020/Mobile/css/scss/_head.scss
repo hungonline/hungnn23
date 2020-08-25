@@ -215,6 +215,11 @@ body.fixed {
                         }
                     }
                 }
+                &.active{
+                    a{
+                        color: #0B84DA;font-weight: 600;
+                    }
+                }
             }
         }
     }
@@ -297,6 +302,46 @@ body.fixed {
                 left: 0;
             }
         }
+    }
+    &.main-nav-folder{
+        .main-nav{
+            .parent {
+                li{
+                    &:first-child{
+                        position: relative;
+                        padding-right: 15px;
+                        &::before{
+                            content: "";
+                            border-top: 2px solid #94B3D1;
+                            border-right: 2px solid #94B3D1;
+                            width: 6px;
+                            height: 6px;
+                            position: absolute;
+                            right: 0;
+                            top: 16px;
+                            transform: rotate(45deg);
+                        }
+                        a{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        &.sticky--active{
+            .main-nav{
+                .parent {
+                    li{
+                        &:first-child{
+                            &::before{
+                                top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
 }

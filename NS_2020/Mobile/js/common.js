@@ -176,10 +176,24 @@
             loop: true,
         });
 
-        var swiperSlide = new Swiper('.box_slide_home .swiper-container', {
+        var swiperwedding = new Swiper('#slide_wedding .swiper-container', {
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-wedding-next',
+                prevEl: '.swiper-wedding-prev',
+            },
+        });
+        var swiperRaoVat = new Swiper('#slide_raovat .swiper-container', {
+            navigation: {
+                nextEl: '.swiper-raovat-next',
+                prevEl: '.swiper-raovat-prev',
+            },
+        });
+        var swiperStore = new Swiper('#slide_store .swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 15,
+            navigation: {
+                nextEl: '.swiper-store-next',
+                prevEl: '.swiper-store-prev',
             },
         });
     }

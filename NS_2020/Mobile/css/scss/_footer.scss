@@ -10,6 +10,7 @@
     color: var(--gray800);
     line-height: 1.4;
     padding-top: 12px;
+    padding-bottom: 30px;
 }
 
 .footer_nav {
@@ -48,7 +49,7 @@
         display: block;
 
         img {
-            vertical-align: middle
+            vertical-align: middle;width: 100%;
         }
     }
 }
@@ -147,8 +148,4 @@
             margin-right: 5px;
         }
     }
-}
-
-.copyright {
-    margin-bottom: 30px;
 }
