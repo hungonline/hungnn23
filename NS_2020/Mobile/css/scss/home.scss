@@ -1,4 +1,5 @@
 @import "var.scss";
+@import "swiper.scss";
 
 .box_video_home {
     .box-player-video {
@@ -32,7 +33,6 @@
 .box_tieudiem_home {
     .bg-white {
         padding: 0 12px;
-        border-radius: 4px;
         overflow: hidden;
     }
 
@@ -73,8 +73,9 @@
     .swiper-container {
         padding: 0 30px;
         padding-bottom: 3px;
+
         [class*='swiper-slide-shadow-'] {
-            background: rgba(255, 255, 255 , 0.01);
+            background: rgba(255, 255, 255, 0.01);
         }
     }
 
@@ -87,6 +88,7 @@
         font-size: 16px;
         margin-bottom: 0;
         overflow: hidden;
+
         &::before {
             content: "";
             background: linear-gradient(90deg, #0C99F4 0%, #57E5D5 100%);
@@ -123,7 +125,7 @@
             width: calc(100% - 72px);
 
             h3 {
-                font: 500 16px $fontmain
+                font: 500 16px var(--font-title)
             }
 
             span {

@@ -1,4 +1,4 @@
-$vne_color: #9F224E;
+$vne_color: #076DB6;
 $url: "images" !default;
 
 @function px_to_rem($target, $context: $base-size) {
@@ -10,20 +10,17 @@ $url: "images" !default;
 }
 
 $base-size: 16px;
-$lh: 1.313;
-$fontmain:iCielDomaineText;
-$fontmain2:DomaineDisplay;
-$colormain:#178fd6;
-$colormain2:#0064b2;
-$color1:#c85687;
 
 :root {
+  --font-title: 'iCielDomaineText';
   --gray100: #EEF2F6;
   --gray400: #94B3D1;
   --gray600: #56738F;
   --gray700: #3E5974;
   --gray800: #1F3347;
   --gray900: #132639;
+  --blue: #2B9DEE;
+  --pink: #c85687;
   --border: #E5E5E5;
 }
 

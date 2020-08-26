@@ -1,0 +1,118 @@
+.box-result-percent {
+    .item-result-per {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+
+        .text-ans {
+            font-size: 18px;
+            margin-right: 5px;
+            color: #222;
+        }
+
+        .count-person {
+            text-align: right;
+            font-size: 14px;
+            color: #222;
+
+            .number-person {
+                font-size: 18px;
+                color: #222;
+            }
+        }
+
+        .percent-bar {
+            width: 100%;
+            font-size: 14px;
+            color: $vne_color;
+            text-align: right;
+            padding-right: 55px;
+            position: relative;
+
+            .number-per {
+                width: 40px;
+                position: absolute;
+                top: 5px;
+                right: 0;
+            }
+
+            .main-bar-per {
+                width: 100%;
+                float: left;
+                height: 4px;
+                background: #E5E5E5;
+                border-radius: 3px;
+                position: relative;
+                margin-top: 13px;
+
+                .real-bar-per {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    background: $vne_color;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+        &.result-of-you {
+            .text-ans {
+                color: #222;
+            }
+        }
+    }
+
+    &.box-result-percent-rating {
+        .item-result-per {
+            .text-ans {
+                width: 40px;
+            }
+
+            .percent-bar {
+                width: calc(100% - 150px);
+            }
+        }
+    }
+}
+
+.rate-popup-result {
+    .ques_vote {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 20px;
+
+        p {
+            margin-bottom: 5px;
+
+            &.date_vote {
+                font-size: 14px;
+                line-height: 17px;
+                color: #757575;
+            }
+        }
+    }
+
+    .box-result-percent .item-result-per .text-ans {
+        color: #222;
+    }
+
+    .box-result-percent .item-result-per .percent-bar .number-per {
+        top: 4px;
+    }
+
+    .total_vote {
+        padding-top: 17px;
+        border-top: 1px solid #E5E5E5;
+        text-align: right;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #757575;
+
+        .number-person {
+            color: $vne_color;
+            font-size: 18px;
+        }
+    }
+}

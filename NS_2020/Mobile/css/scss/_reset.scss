@@ -55,8 +55,6 @@ a:focus {
 
 .box_category {
   margin-bottom: 20px;
-  float: left;
-  width: 100%;
 }
 
 .banner_mobile_300x250 {
@@ -71,7 +69,7 @@ a {
 }
 
 a:hover {
-  color: $colormain;
+  color: var(--blue);
 }
 
 .btn {
@@ -86,7 +84,7 @@ a:hover {
   border-radius: 4px;
 
   &_dvc {
-    background: $color1;
+    background: var(--pink);
     color: #fff;
   }
 }
@@ -101,6 +99,8 @@ a:hover {
 
 .bg-white {
   background: #fff;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
 }
 
 .radius-4 {
@@ -121,8 +121,8 @@ a:hover {
 }
 
 .width_common {
-  width: 100%;
   float: left;
+  width: 100%;
 }
 
 .center {
@@ -222,11 +222,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .right {
   float: right;
-}
-
-.width_common {
-  width: 100%;
-  float: left;
 }
 
 .sticky {
@@ -421,9 +416,11 @@ svg.ic,
   color: red;
   font-size: 12px;
 }
-.blue{
+
+.blue {
   color: #0963C8;
 }
+
 .bg_gray {
   background: #f8f8f6;
 
@@ -462,7 +459,7 @@ svg.ic,
 
 .btn_ns {
   font: 400 px_to_rem(16px) arial;
-  background: $colormain;
+  background: var(--blue);
   border: 0;
   color: #fff;
   padding: 8px 15px;
@@ -499,14 +496,23 @@ svg.ic,
   padding-bottom: 60%;
 }
 
-.thumb_img.thumb_5x5 {
+.thumb_img.thumb_5x5,
+.thumb_1x1 {
   padding-bottom: 100%;
 }
 
 .thumb_img img {
   width: 100%;
   float: left;
+  -o-object-fit: cover;
   object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+  -o-object-position: top;
+  object-position: top;
 }
 
 .thumb_video iframe {
@@ -528,7 +534,7 @@ svg.ic,
   line-height: 1.4;
 
   a {
-    color: $colormain
+    color: var(--blue)
   }
 }
 
@@ -541,7 +547,7 @@ svg.ic,
     margin: 0 2px;
     width: 11px;
     height: 11px;
-    background-color: $colormain;
+    background-color: var(--blue);
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
@@ -599,7 +605,7 @@ svg.ic,
   line-height: 15px;
   display: inline-block;
   vertical-align: middle;
-  color: $colormain;
+  color: var(--blue);
 }
 
 .ic-live:before {
@@ -610,7 +616,7 @@ svg.ic,
   width: 13px;
   height: 13px;
   content: '';
-  background: $colormain;
+  background: var(--blue);
   box-shadow: 0 0 0 rgba(23, 143, 214, 0.4);
   margin-right: 5px;
   vertical-align: initial;
@@ -686,9 +692,9 @@ svg.ic,
 
       &:hover,
       &.active {
-        background: $colormain;
+        background: var(--blue);
         color: #fff;
-        border: 1px solid $colormain;
+        border: 1px solid var(--blue);
 
         .icon-ns {
           color: #fff

@@ -26,8 +26,8 @@
         padding: 0 12px;
 
         svg {
-            width: 18px;
-            height: 18px;
+            width: 20px;
+            height: 20px;
             color: #7A99B8;
         }
     }
@@ -215,9 +215,11 @@ body.fixed {
                         }
                     }
                 }
-                &.active{
-                    a{
-                        color: #0B84DA;font-weight: 600;
+
+                &.active {
+                    a {
+                        color: #0B84DA;
+                        font-weight: 600;
                     }
                 }
             }
@@ -303,14 +305,16 @@ body.fixed {
             }
         }
     }
-    &.main-nav-folder{
-        .main-nav{
+
+    &.main-nav-folder {
+        .main-nav {
             .parent {
-                li{
-                    &:first-child{
+                li {
+                    &:first-child {
                         position: relative;
                         padding-right: 15px;
-                        &::before{
+
+                        &::before {
                             content: "";
                             border-top: 2px solid #94B3D1;
                             border-right: 2px solid #94B3D1;
@@ -321,19 +325,21 @@ body.fixed {
                             top: 16px;
                             transform: rotate(45deg);
                         }
-                        a{
+
+                        a {
                             font-weight: bold;
                         }
                     }
                 }
             }
         }
-        &.sticky--active{
-            .main-nav{
+
+        &.sticky--active {
+            .main-nav {
                 .parent {
-                    li{
-                        &:first-child{
-                            &::before{
+                    li {
+                        &:first-child {
+                            &::before {
                                 top: 20px;
                             }
                         }
@@ -375,6 +381,12 @@ body.fixed {
     justify-content: flex-end;
 }
 
+.logo-be {
+    width: 66px;
+    position: absolute;
+    right: 40px;
+}
+
 .search-btn {
     width: 36px;
     height: 48px;
@@ -403,8 +415,12 @@ body.fixed {
     }
 }
 
-.humberger-btn.active~.right-head .search-btn {
-    display: none;
+.humberger-btn.active~.right-head {
+
+    .logo-be,
+    .search-btn {
+        opacity: 0;
+    }
 }
 
 .search-wrap {
@@ -435,8 +451,8 @@ body.fixed {
     }
 
     .icon-ns {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         color: #7A99B8
     }
 }
