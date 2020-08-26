@@ -95,6 +95,7 @@ article {
 	.content {
 		font-family: $fontmain;
 		margin-top: 10px;
+		overflow: hidden;
 
 		.description {
 			font-family: arial
@@ -236,12 +237,17 @@ article {
 }
 
 .list_news {
-	margin-left: -28px;
 	position: relative;
+	margin-left: -14px;
+	margin-right: -14px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	width: calc(100% + 28px);
 
 	.art_item {
 		width: 20%;
-		padding-left: 28px;
+		padding: 0 14px;
 		display: inline-block;
 		vertical-align: top;
 		margin-bottom: 25px;

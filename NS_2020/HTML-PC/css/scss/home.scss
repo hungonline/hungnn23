@@ -60,6 +60,12 @@
           left: 85px;
         }
       }
+
+      &.placeholder {
+        &::before {
+          display: none
+        }
+      }
     }
 
     .content {
