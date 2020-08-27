@@ -1,14 +1,30 @@
 .placeholder {
-  background: var(--colormain);
+  background: #222222;
   opacity: .1;
   animation: fading 1.5s infinite;
   border-radius: 4px;
+  font-size: 0 !important;
 }
 
 .box-placeholder {
   font-size: 0;
   line-height: 0;
+  .thumb_art{background:#fff}
+  .thumb_img,.title_news,.description,.status{
+    background: #222222;
+    opacity: .1;
+    animation: fading 1.5s infinite;
+    border-radius: 4px;
+    overflow: hidden;
+    *{font-size: 0!important;}
+    img,.ic-live:before,svg{display: none;}
+  }
+  .title_news{height: 40px;}
+  .description{height: 60px;}
+  .status{height: 20px;}
+  .xem_them{line-height: 1.4;}
 }
+
 
 .box-placeholder .text {
   display: inline-block;

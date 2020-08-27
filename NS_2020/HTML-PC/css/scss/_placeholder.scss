@@ -9,6 +9,24 @@
 .box-placeholder {
   font-size: 0;
   line-height: 0;
+  .thumb_art{background:#fff}
+  .thumb_big,.thumb_art{
+    .tag{display: none;}
+  }
+  .thumb_img,.title_news,.description,.tag,.number-info,.name,.ava{
+    background: #222222;
+    opacity: .1;
+    animation: fading 1.5s infinite;
+    border-radius: 4px;
+    overflow: hidden;
+    *{font-size: 0!important;}
+    img,.ic-live:before,svg{display: none!important;}
+  }
+  .icon_thumb{display: none;}
+  .title_news{height: 40px;}
+  .description{height: 60px;}
+  .tag,.number-info{height: 20px;width: 60%;}
+  .xem_them{line-height: 1.4;}
 }
 
 .box-placeholder .text {
@@ -308,4 +326,48 @@
   100% {
     opacity: .1;
   }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0)
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp
 }
