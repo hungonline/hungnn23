@@ -10,7 +10,7 @@
   font-size: 0;
   line-height: 0;
   .thumb_art{background:#fff}
-  .thumb_img,.title_news,.description,.status{
+  .thumb_img,.title_news,.description,.status,.ava,.name{
     background: #222222;
     opacity: .1;
     animation: fading 1.5s infinite;
@@ -21,7 +21,7 @@
   }
   .title_news{height: 40px;}
   .description{height: 60px;}
-  .status{height: 20px;}
+  .status,.name{height: 20px;width: 60%;}
   .xem_them{line-height: 1.4;}
 }
 
