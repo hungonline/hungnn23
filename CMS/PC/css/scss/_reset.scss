@@ -76,7 +76,7 @@ select.form-control {
     box-shadow: none;
   }
 }
-
+.form-control:disabled, .form-control[readonly]{background-color:#fff}
 .form-control {
   font-size: 14px;
 }
