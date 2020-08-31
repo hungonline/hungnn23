@@ -129,132 +129,125 @@
 
     //Slide
     function slideSwiper() {
-        /*SLIDE BOX STORE*/
-        var owl_slide_store = $('.box_list_store .owl-carousel');
-        owl_slide_store.owlCarousel({
-            loop: false,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            margin: 28,
-            items: 5,
-            navElement: 'div',
-            nav: true,
-            dots: false,
-            responsive: {
+
+        var swiperTieudiem = new Swiper('#slide-tieudiem', {
+            slidesPerView: 3,
+            spaceBetween: 28,
+            navigation: {
+                nextEl: '.swiper-tieudiem-next',
+                prevEl: '.swiper-tieudiem-prev',
+            },
+        });
+        var swiperTieudung = new Swiper('#slide-tieudung', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-tieudung-next',
+                prevEl: '.swiper-tieudung-prev',
+            },
+        });
+        var swiperTieudung = new Swiper('#slide-wedding', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-wedding-next',
+                prevEl: '.swiper-wedding-prev',
+            },
+        });
+        var swiperGift = new Swiper('#slide-gift', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-gift-next',
+                prevEl: '.swiper-gift-prev',
+            },
+        });
+        var swiperFsell = new Swiper('#slide-fsell', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-fsell-next',
+                prevEl: '.swiper-fsell-prev',
+            },
+        });
+        var swipershopvne = new Swiper('#slide-shopvne', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-shopvne-next',
+                prevEl: '.swiper-shopvne-prev',
+            },
+        });
+        var swiperstore = new Swiper('#slide-store', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-store-next',
+                prevEl: '.swiper-store-prev',
+            },
+        });
+        var swipermolting = new Swiper('#slide-molting', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-molting-next',
+                prevEl: '.swiper-molting-prev',
+            },
+        });
+        var swipermolting = new Swiper('#slide-store2', {
+            slidesPerView: 5,
+            spaceBetween: 28,
+            navigation: {
+                nextEl: '.swiper-store2-next',
+                prevEl: '.swiper-store2-prev',
+            },
+            breakpoints: {
                 700: {
-                    items: 4
+                    slidesPerView: 4,
                 },
                 1100: {
-                    items: 5
+                    slidesPerView: 5,
                 },
             }
-        })
-        $(".box_list_store .owl-prev").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#tail-left"/></svg>');
-        $(".box_list_store .owl-next").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#tail-right"/></svg>');
+        });
+        var swiperproduct = new Swiper('#slide-product .swiper-container', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-product-next',
+                prevEl: '.swiper-product-prev',
+            },
+        });
 
-        /*END SLIDE BOX STORE*/
-
-        /*SLIDE BOX STORE*/
-        var box_slide_service = $('.box_slide_service .owl-carousel');
-        box_slide_service.owlCarousel({
-            // loop: true,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            margin: 20,
-            items: 3,
-            autoWidth: true,
-            // stagePadding: 70,
-            nav: true,
-            dots: false,
-            navElement: 'div',
-            responsive: {
-                700: {
-                    items: 2
-                },
-                1100: {
-                    items: 3
-                },
-            }
-        })
-        $(".box_slide_service .owl-prev").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#small-left"/></svg>');
-        $(".box_slide_service .owl-next").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#small-right"/></svg>');
-
-
-
-        /*END SLIDE BOX STORE*/
-
-        /*SLIDE BOX TIÊU ĐIỂM*/
-        var owl_slide_hot = $('.box_tieudiem .owl-carousel');
-        owl_slide_hot.owlCarousel({
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 7000,
-            margin: 28,
-            items: 3,
-            nav: true,
-            dots: false,
-            navElement: 'div',
-            responsive: {
-                700: {
-                    items: 2
-                },
-                1100: {
-                    items: 3
-                },
-            }
-        })
-        $(".box_tieudiem .owl-prev").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#tail-left"/></svg>');
-        $(".box_tieudiem .owl-next").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#tail-right"/></svg>');
-        /*END SLIDE BOX TIÊU ĐIỂM*/
-
-        /*SLIDE BOX THƯƠNG MẠI*/
-        var owl_slide_tm = $('.box_thuongmai .owl-carousel');
-        owl_slide_tm.owlCarousel({
-            loop: true,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            items: 1,
-            nav: true,
-            navElement: 'div',
-            dots: false
-        })
-        $(".box_thuongmai .owl-prev").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#tail-left"/></svg>');
-        $(".box_thuongmai .owl-next").html('<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#tail-right"/></svg>');
-        /*END SLIDE BOX THƯƠNG MẠI*/
-
-        /*SLIDE BOX SERVICE */
-        var owl_slide_service = $('.box_service .owl-carousel');
-        owl_slide_service.owlCarousel({
-            loop: false,
-            margin: 10,
-            autoplay: false,
-            autoplayTimeout: 7000,
-            items: 8,
-            nav: false,
-            dots: false,
-            navElement: 'div',
-            responsive: {
+        var swiper_wedding_service = new Swiper('.box_service .swiper-container', {
+            slidesPerView: 8,
+            breakpoints: {
                 740: {
-                    items: 5
+                    slidesPerView: 5
                 },
                 992: {
-                    items: 7
+                    slidesPerView: 7
                 },
                 1100: {
-                    items: 8
+                    slidesPerView: 8
                 },
             }
-        })
-        /*END SLIDE BOX SERVICE */
+        });
+        var swiper_wedding = new Swiper('.box_slide_service .swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-service-next',
+                prevEl: '.swiper-service-prev',
+            },
+            breakpoints: {
+                740: {
+                    slidesPerView: 2
+                },
+                1100: {
+                    slidesPerView: 3
+                },
+            }
+        });
 
     }
-
-
     //magnificPopup
     function magnificPopup() {
         $('.open-popup-link').magnificPopup({
             type: 'inline',
-            midClick: true,
+            midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             mainClass: 'mfp-with-zoom',
             fixedContentPos: false,
             fixedBgPos: true,
@@ -263,34 +256,6 @@
             preloader: false,
             removalDelay: 300,
         });
-        $('.magnific_popup .magnific_thumb').magnificPopup({
-            type: 'image',
-            midClick: true,
-            mainClass: 'mfp-with-zoom',
-            gallery: {
-                enabled: false,
-            }
-        });
-
-        if ($('.popup-with-form').length > 0) {
-            $('.popup-with-form').magnificPopup({
-                type: 'inline',
-                preloader: false,
-                focus: '#name',
-
-                // When elemened is focused, some mobile browsers in some cases zoom in
-                // It looks not nice, so we disable it:
-                callbacks: {
-                    beforeOpen: function () {
-                        if ($(window).width() < 700) {
-                            this.st.focus = false;
-                        } else {
-                            this.st.focus = '#name';
-                        }
-                    }
-                }
-            });
-        }
     }
 
 
@@ -355,8 +320,8 @@
         scrollBar();
         onCLick();
         slideSwiper();
-        magnificPopup();
         lightgallery();
+        magnificPopup();
     });
 
     window.onscroll = function () {

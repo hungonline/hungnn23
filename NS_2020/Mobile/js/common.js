@@ -180,7 +180,7 @@
             autoplay: {
                 delay: 6000,
                 disableOnInteraction: false,
-            },            
+            },
         });
 
         var swiperwedding = new Swiper('#slide_wedding .swiper-container', {
@@ -205,6 +205,19 @@
         });
     }
 
+    function magnificPopup() {
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            mainClass: 'mfp-with-zoom',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            removalDelay: 300,
+        });
+    }
 
     $(function () {
         backToTop();
@@ -212,6 +225,7 @@
         stickyDetector();
         headerSticky();
         swiper();
+        magnificPopup();
     });
 
     window.onscroll = function () {

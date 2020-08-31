@@ -59,6 +59,81 @@ select{
   color: #333 !important;
 }
 
+.item-point {
+	min-width: 155px;
+	margin-right: 35px;
+
+	.row-number {
+		align-items: center;
+	}
+
+	.star-point {
+		margin-right: 10px;
+
+		.ic {
+			width: 40px;
+			height: 40px;
+			fill: #F2C94C;
+		}
+	}
+
+	.number-star {
+		font-size: 18px;
+		color: #757575;
+
+		.point-bold {
+			font-size: 24px;
+			font-weight: 700;
+			color: #222;
+		}
+
+		.point-small {
+			line-height: 26px;
+		}
+
+		span {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	}
+
+	.txt-point {
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	&.point-your {
+		margin-right: 0;
+		cursor: pointer;
+
+		.star-point {
+			.ic {
+				fill: #E5E5E5;
+			}
+		}
+
+		.number-star {
+			.point-bold {
+				color: #757575;
+			}
+		}
+
+		&.your-rate {
+			.star-point {
+				.ic {
+					fill: #0887E2;
+				}
+			}
+
+			.number-star {
+				.point-bold {
+					color: #222;
+				}
+			}
+		}
+	}
+}
+
 /* Magnific Popup CSS */
 @import "_magnific-popup.scss";
 .mfp-bg {

@@ -480,6 +480,7 @@
     padding-left: 28px;
     margin: 0;
     overflow: hidden;
+    display: block;
 
     .art_item {
       width: 100%;
@@ -493,11 +494,15 @@
       }
     }
 
-    .owl-nav {
+
+    .swiper-control {
       &>div {
         position: absolute;
         top: 40px;
-        padding: 27.5px 10px;
+        width: 34px;
+        height: 75px;
+        line-height: 75px;
+        border-radius: 0;
         background-image: -moz-linear-gradient(left, rgba(132, 25, 253, 0.8), rgba(87, 178, 251, 0.6));
         background-image: -webkit-gradient(linear, left top, right top, from(rgba(140, 2, 254, 0.8)), to(rgba(87, 178, 251, 0.6)));
         background-image: -webkit-linear-gradient(left, rgba(132, 25, 253, 0.8), rgba(87, 178, 251, 0.6));
@@ -509,28 +514,31 @@
         }
       }
 
-      .owl-prev {
+      .swiper-button-prev {
         left: 28px;
       }
 
-      .owl-next {
+      .swiper-button-next {
         right: 0
       }
     }
+
   }
 }
 
 /*box_quote_home*/
 .box_quote_home {
-  font-size: 0;
-  margin-left: -28px;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin-top: 12px;
+  margin-left: -14px;
+  margin-right: -14px;
 
   .art_item {
     width: 33.33%;
     display: inline-block;
-    padding-left: 28px;
+    padding: 0 14px;
 
     .warp {
       font: 400 px_to_rem(18px) $fontmain;

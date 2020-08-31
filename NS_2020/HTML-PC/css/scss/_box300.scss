@@ -95,7 +95,6 @@
 
          .title_news {
             font: 400 px_to_rem(16px) $fontmain;
-            line-height: $lh;
             margin-bottom: 0;
          }
       }
@@ -359,6 +358,7 @@
 /*box_thuongmai*/
 .box_thuongmai {
    margin-bottom: 28px;
+   position: relative;
 
    .title_box_category {
       margin: 10px 0 15px 0;
@@ -368,10 +368,10 @@
       }
    }
 
-   .owl-nav {
+   .swiper-control {
       &>div {
          position: absolute;
-         top: -54px;
+         top: 0px;
          width: 38px;
          height: 38px;
          line-height: 32px;
@@ -399,11 +399,12 @@
          }
       }
 
-      .owl-prev {
+      .swiper-button-prev {
          right: 42px;
+         left: inherit;
       }
 
-      .owl-next {
+      .swiper-button-next {
          right: 0
       }
    }
@@ -415,15 +416,6 @@
          margin: 0 15px 0 0;
          float: left;
          width: 85px;
-      }
-
-      .content {
-         margin-top: 0;
-
-         .title_news {
-            font: 400 px_to_rem(16px) $fontmain;
-            line-height: $lh;
-         }
       }
    }
 }

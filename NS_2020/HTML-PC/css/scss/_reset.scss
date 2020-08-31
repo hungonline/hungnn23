@@ -386,14 +386,21 @@ html {
 }
 
 .thumb_img img {
-  width: 100%;
-  float: left;
+  object-position: top;
+  -o-object-fit: cover;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .thumb_video iframe {
   object-fit: cover;
-  object-position: center;
+  object-position: top;
   position: absolute;
   top: 0;
   bottom: 0;
