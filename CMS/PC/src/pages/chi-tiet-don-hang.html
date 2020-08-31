@@ -31,7 +31,9 @@
         </div>
 
         <div class="detail_item mb20">
-            <h2 class="title-cate">Thông tin đơn hàng</h2>
+            <div class="title-cate">
+                <span>Thông tin đơn hàng</span>
+            </div>
             <div class="warp_padding20">
                 <div class="form-default form_donhang row">
                     <div class="col-md-6">
@@ -135,7 +137,14 @@
         </div>
 
         <div class="detail_item mb20">
-            <h2 class="title-cate">Danh sách sản phẩm</h2>
+            <h2 class="title-cate flex">
+                <span>Danh sách sản phẩm</span>
+                <div class="btn-right">
+                    <a class="btn btn-default" href="">Tạo sản phẩm</a>
+                    <a class="btn btn-default" href="">Điều chỉnh sản phẩm</a>
+                    <a class="btn btn-default red delete" href="">Xóa điều chỉnh</a>
+                </div>
+            </h2>
             <div class="warp_padding20">
                 <div class="wrap_bg wrap_bg_no-padding mb20">
                     <div class="table-responsive table-default">
@@ -651,6 +660,230 @@
 
                         <span>Hiển thị 1 - 7 trên tổng số 50 hóa đơn</span>
                     </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail_item mb20">
+            <div class="title-cate">
+                <span>Số lần thanh toán</span>
+            </div>
+            <div class="warp_padding20">
+                <div class="wrap_bg wrap_bg_no-padding mb20">
+                    <div class="table-responsive table-default">
+                        <table class="table table-nowrap text-center">
+                            <thead>
+                                <tr style="background: #ECECEE;">
+                                    <th>STT</th>
+                                    <th>Pay Id</th>
+                                    <th style="width: 180px;">Ngày chuyển</th>
+                                    <th style="width: 180px;">Số tiền chuyển</th>
+                                    <th>ID sản phẩm</th>
+                                    <th>Ghi chú</th>
+                                    <th>Tác vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="datepicker-wrap" style="width:100%">
+                                            <input id="datepicker" class="datepicker-input form-control" type="text">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb0">
+                                            <input type="text" class="form-control" id="" placeholder="_ _,_ _,_ _">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb0">
+                                            <select class="form-control" style="height: 30px;">
+                                                <option>Chọn huyện</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb0">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="delete blue" href=""><i class="fa fa-plus-circle"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="red" href=""><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td class="blue">15412,1251</td>
+                                    <td>Khách hàng chuyển khoản qua Payoo</td>
+                                    <td>
+                                        <a class="blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td class="blue">15412,1251</td>
+                                    <td>Giá sản phẩm tăng</td>
+                                    <td>
+                                        <a class="blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td class="blue">15412,1251</td>
+                                    <td>Khách hàng chuyển khoản qua Payoo</td>
+                                    <td>
+                                        <a class="blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td class="blue">15412,1251</td>
+                                    <td>Giá sản phẩm tăng</td>
+                                    <td>
+                                        <a class="blue" href=""><i class="fa fa-pencil"></i></a>
+                                    </td>
+                                </tr>
+                                <tr style="background: #E1E8EA;">
+                                    <td></td>
+                                    <td style="padding: 20px 15px;">
+                                        <strong>Tổng cộng:</strong>
+                                    </td>
+                                    <td></td>
+                                    <td style="padding: 20px 15px;">
+                                        <strong>300,000,000</strong>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail_item mb20">
+            <div class="title-cate">
+                <span>Hoàn tiền</span>
+            </div>
+            <div class="warp_padding20">
+                <div class="wrap_bg wrap_bg_no-padding mb20">
+                    <div class="table-responsive table-default">
+                        <table class="table table-nowrap text-center">
+                            <thead>
+                                <tr style="background: #ECECEE;">
+                                    <th>STT</th>
+                                    <th>Castback Id</th>
+                                    <th style="width: 180px;">Ngày hoàn tiền</th>
+                                    <th style="width: 180px;">Số tiền hoàn trả</th>
+                                    <th>Nhân viên hoàn</th>
+                                    <th>Ghi chú</th>
+                                    <th>Tác vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <div class="datepicker-wrap" style="width:100%">
+                                            <input id="datepicker" class="datepicker-input form-control" type="text">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb0">
+                                            <input type="text" class="form-control" id="" placeholder="_ _,_ _,_ _">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb0">
+                                            <select class="form-control" style="height: 30px;">
+                                                <option>Chọn huyện</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb0">
+                                            <input type="text" class="form-control" id="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a class="delete blue" href=""><i class="fa fa-plus-circle"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="red" href=""><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td>binhtt</td>
+                                    <td>Khách hàng chuyển khoản qua Payoo</td>
+                                    <td>
+                                        <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="red" href=""><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td>binhtt</td>
+                                    <td>Sản phẩm không mua được. Hoàn lại tiền cho khách</td>
+                                    <td>
+                                        <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="red" href=""><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>213</td>
+                                    <td>09/05/2020 14:52</td>
+                                    <td>100,000,000</td>
+                                    <td>binhtt</td>
+                                    <td>Khách không chấp nhận mua sản phẩm tăng giá.</td>
+                                    <td>
+                                        <a class="delete blue" href=""><i class="fa fa-pencil"></i></a>
+                                        &nbsp;&nbsp;
+                                        <a class="red" href=""><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr style="background: #E1E8EA;">
+                                    <td></td>
+                                    <td style="padding: 20px 15px;">
+                                        <strong>Tổng cộng:</strong>
+                                    </td>
+                                    <td></td>
+                                    <td style="padding: 20px 15px;">
+                                        <strong>300,000,000</strong>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

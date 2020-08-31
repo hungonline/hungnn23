@@ -76,7 +76,7 @@ select.form-control {
     box-shadow: none;
   }
 }
-
+.form-control:disabled, .form-control[readonly]{background-color:#fff}
 .form-control {
   font-size: 14px;
 }
@@ -536,10 +536,10 @@ html {
 }
 
 .ml10 {
-  margin-left: 10px;
+  margin-left: 10px!important;
 }
 .ml15 {
-  margin-left: 15px;
+  margin-left: 15px!important;
 }
 .ml20 {
   margin-left: 20px;

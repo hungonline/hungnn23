@@ -536,6 +536,22 @@ body.show-menu {
         line-height: 40px;
         margin: 0;
         padding: 0 15px;
+        &.flex{
+            padding: 6px 10px;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .btn-right{
+            .btn{
+                margin-right: 6px;
+            }
+            .delete{margin-left: 15px;}
+            @media (max-width: 590px) {
+                .delete{margin-left: 0;}
+            }
+        }
     }
 
     .warp_padding20 {
