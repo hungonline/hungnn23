@@ -106,17 +106,20 @@ body.fixed {
         width: calc(100% + 16px);
 
         ul {
-            width: 50%;
-            padding: 0 8px;
+            width: 100%;
+            float: left;
+
         }
 
         &::before {
-            display: none
+            display: none;
         }
 
         li {
-            width: 100%;
-            padding: 0;
+            width: 50%;
+            float: left;
+            padding: 0 8px;
+
 
             &>a {
                 font-weight: bold;
@@ -125,7 +128,7 @@ body.fixed {
             }
 
             .level2 {
-                padding-left: 30px;
+                padding-left: 20px;
 
                 a {
                     position: relative;
