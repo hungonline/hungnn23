@@ -113,6 +113,7 @@ They might well be outsourced to an external stylesheet of course.
 	svg-phone-2-icon { width: 32px; height: 32px; }
 	svg-phone-call-icon { width: 32px; height: 32px; }
 	svg-pin-3-icon { width: 32px; height: 32px; }
+	svg-play2-icon { width: 38px; height: 47px; }
 	svg-print-icon { width: 32px; height: 32px; }
 	svg-quite-happy-e-icon { width: 32px; height: 32px; }
 	svg-quote-icon { width: 32px; height: 32px; }
@@ -287,6 +288,7 @@ for further details on how to create this embeddable sprite variant.
 		<symbol viewBox="0 0 32 32" id="phone-2" xmlns="http://www.w3.org/2000/svg"><path d="M30.57 24.61l-5.156-5.188a1.999 1.999 0 00-2.832-.004L18 24 8 14l4.588-4.588c.78-.78.782-2.046.002-2.828L7.43 1.416a2 2 0 00-2.83 0L.008 6.006 0 6c0 14.36 11.64 26 26 26l4.566-4.566c.78-.78.782-2.042.004-2.824z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="phone-call" xmlns="http://www.w3.org/2000/svg"><path d="M30.57 24.61l-5.156-5.188a1.999 1.999 0 00-2.832-.004L18 24 8 14l4.588-4.588c.78-.78.782-2.046.002-2.828L7.43 1.416a2 2 0 00-2.83 0L.008 6.006 0 6c0 14.36 11.64 26 26 26l4.566-4.566c.78-.78.782-2.042.004-2.824zM32 16h-4c0-6.618-5.382-12-12-12V0c8.822 0 16 7.178 16 16z"/><path d="M24 16h-4c0-2.206-1.794-4-4-4V8c4.412 0 8 3.588 8 8z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="pin-3" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C10.133 0 4 4.533 4 12c0 7.067 10.667 17.867 11.067 18.267.267.267.533.4.933.4s.667-.133.933-.4C17.333 29.867 28 19.067 28 12c0-7.467-6.133-12-12-12zm0 16c-2.267 0-4-1.733-4-4s1.733-4 4-4 4 1.733 4 4-1.733 4-4 4z"/></symbol>
+		<symbol viewBox="0 0 38 47" id="play2" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.51.497a1 1 0 011.011.019l36 22a1 1 0 010 1.706l-36 22A1 1 0 010 45.37v-44A1 1 0 01.51.497zM2 3.152v40.434L35.082 23.37 2 3.152z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="print" xmlns="http://www.w3.org/2000/svg"><path d="M6 0h20v6H6V0zm24 10H2c-1.2 0-2 .8-2 2v12c0 1.2.8 2 2 2h4v4c0 1.2.8 2 2 2h16c1.2 0 2-.8 2-2v-4h4c1.2 0 2-.8 2-2V12c0-1.2-.8-2-2-2zm-8 18H10V18h12v10z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="quite-happy-e" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0zm0 28C9.4 28 4 22.6 4 16S9.4 4 16 4s12 5.4 12 12-5.4 12-12 12z"/><path d="M14 12a2 2 0 11-3.999.001A2 2 0 0114 12zm8 0a2 2 0 11-3.999.001A2 2 0 0122 12zm-6 12c3.4 0 6-2.6 6-6H10c0 3.4 2.6 6 6 6z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="quote" xmlns="http://www.w3.org/2000/svg"><path d="M6.047 9.121c-2.37 2.963-2.712 5.949-2.016 8.038 2.632-2.09 6.289-1.652 8.517.428 2.25 2.102 2.443 5.796 1.008 8.189a6.582 6.582 0 01-5.694 3.225c-5.385 0-7.861-4.75-7.861-10.079 0-3.46.882-6.56 2.646-9.298s4.426-4.947 7.987-6.627l.957 1.865c-2.15.907-3.998 2.326-5.543 4.258zm17.537 0c-2.37 2.963-2.712 5.949-2.016 8.038 1.176-.907 2.453-1.361 3.83-1.361 3.623 0 6.602 2.413 6.602 6.602 0 3.851-2.956 6.602-6.602 6.602-5.385 0-7.861-4.75-7.861-10.079 0-3.46.882-6.56 2.646-9.298s4.426-4.947 7.987-6.627l.957 1.865c-2.15.907-3.998 2.327-5.543 4.258z"/></symbol>
@@ -1407,6 +1409,17 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>pin-3</h2>
+				</li>
+				<li title="play2">
+					<div class="icon-box">
+						
+						<!-- play2 -->
+						<svg class="svg-play2-icon">
+							<use xlink:href="#play2"></use>
+						</svg>
+						
+					</div>
+					<h2>play2</h2>
 				</li>
 				<li title="print">
 					<div class="icon-box">
@@ -3101,6 +3114,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>pin-3</h2>
 				</li>
+				<li title="play2">
+					<div class="icon-box">
+						
+						<!-- play2 -->
+						<svg class="svg-play2-icon">
+							<use xlink:href="icon.svg#play2"></use>
+						</svg>
+						
+					</div>
+					<h2>play2</h2>
+				</li>
 				<li title="print">
 					<div class="icon-box">
 						
@@ -3747,7 +3771,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Mon, 24 Aug 2020 03:16:59 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Tue, 01 Sep 2020 02:05:24 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>

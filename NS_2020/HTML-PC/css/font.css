@@ -1,64 +1,73 @@
 /*FONT FAMILY*/
+
 @font-face {
-    font-family: "vnexpress-font";
-    src: url("fonts/vnexpress-font.eot");
-    src: url("fonts/vnexpress-font.eot?#iefix") format("embedded-opentype"), url("fonts/vnexpress-font.woff") format("woff"), url("fonts/vnexpress-font.ttf") format("truetype"), url("fonts/vnexpress-font.svg#vnexpress-font") format("svg");
+    font-family: 'iCielDomaineText';
+    src: url('fonts/iCielDomaineText-Bold.eot');
+    src: url('fonts/iCielDomaineText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/iCielDomaineText-Bold.woff2') format('woff2'),
+        url('fonts/iCielDomaineText-Bold.woff') format('woff'),
+        url('fonts/iCielDomaineText-Bold.ttf') format('truetype'),
+        url('fonts/iCielDomaineText-Bold.svg#iCielDomaineText-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iCielDomaineText';
+    src: url('fonts/iCielDomaineText-Medium.eot');
+    src: url('fonts/iCielDomaineText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/iCielDomaineText-Medium.woff2') format('woff2'),
+        url('fonts/iCielDomaineText-Medium.woff') format('woff'),
+        url('fonts/iCielDomaineText-Medium.ttf') format('truetype'),
+        url('fonts/iCielDomaineText-Medium.svg#iCielDomaineText-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'iCielDomaineText';
+    src: url('fonts/iCielDomaineText-Regular.eot');
+    src: url('fonts/iCielDomaineText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/iCielDomaineText-Regular.woff2') format('woff2'),
+        url('fonts/iCielDomaineText-Regular.woff') format('woff'),
+        url('fonts/iCielDomaineText-Regular.ttf') format('truetype'),
+        url('fonts/iCielDomaineText-Regular.svg#iCielDomaineText-Regular') format('svg');
     font-weight: normal;
-    font-style: normal; }
-  
-  [data-icon]:before {
-    font-family: "vnexpress-font" !important;
-    content: attr(data-icon);
-    font-style: normal !important;
-    font-weight: normal !important;
-    font-variant: normal !important;
-    text-transform: none !important;
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-  @font-face {
-      font-family: 'iCielDomaineText';
-      src: url('fonts/iCielDomaineText-Bold.eot');
-      src: url('fonts/iCielDomaineText-Bold.eot?#iefix') format('embedded-opentype'),
-          url('fonts/iCielDomaineText-Bold.woff2') format('woff2'),
-          url('fonts/iCielDomaineText-Bold.woff') format('woff'),
-          url('fonts/iCielDomaineText-Bold.ttf') format('truetype'),
-          url('fonts/iCielDomaineText-Bold.svg#iCielDomaineText-Bold') format('svg');
-      font-weight: bold;
-      font-style: normal;
-  }
-  @font-face {
-      font-family: 'iCielDomaineText';
-      src: url('fonts/iCielDomaineText-Medium.eot');
-      src: url('fonts/iCielDomaineText-Medium.eot?#iefix') format('embedded-opentype'),
-          url('fonts/iCielDomaineText-Medium.woff2') format('woff2'),
-          url('fonts/iCielDomaineText-Medium.woff') format('woff'),
-          url('fonts/iCielDomaineText-Medium.ttf') format('truetype'),
-          url('fonts/iCielDomaineText-Medium.svg#iCielDomaineText-Medium') format('svg');
-      font-weight: 500;
-      font-style: normal;
-  }
-  
-  @font-face {
-      font-family: 'iCielDomaineText';
-      src: url('fonts/iCielDomaineText-Regular.eot');
-      src: url('fonts/iCielDomaineText-Regular.eot?#iefix') format('embedded-opentype'),
-          url('fonts/iCielDomaineText-Regular.woff2') format('woff2'),
-          url('fonts/iCielDomaineText-Regular.woff') format('woff'),
-          url('fonts/iCielDomaineText-Regular.ttf') format('truetype'),
-          url('fonts/iCielDomaineText-Regular.svg#iCielDomaineText-Regular') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
-  @font-face {
-      font-family: 'DomaineDisplay';
-      src: url('fonts/iCielDomaineDisplay-Bold.eot');
-      src: url('fonts/iCielDomaineDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-          url('fonts/iCielDomaineDisplay-Bold.woff2') format('woff2'),
-          url('fonts/iCielDomaineDisplay-Bold.woff') format('woff'),
-          url('fonts/iCielDomaineDisplay-Bold.ttf') format('truetype'),
-          url('fonts/iCielDomaineDisplay-Bold.svg#iCielDomaineDisplay-Bold') format('svg');
-      font-weight: bold;
-      font-style: normal;
-  }
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineDisplay';
+    src: url('fonts/iCielDomaineDisplay-Bold.eot');
+    src: url('fonts/iCielDomaineDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/iCielDomaineDisplay-Bold.woff2') format('woff2'),
+        url('fonts/iCielDomaineDisplay-Bold.woff') format('woff'),
+        url('fonts/iCielDomaineDisplay-Bold.ttf') format('truetype'),
+        url('fonts/iCielDomaineDisplay-Bold.svg#iCielDomaineDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("fonts/Merriweather-Regular.eot");
+    src: url("fonts/Merriweather-Regular.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Merriweather-Regular.woff2") format("woff2"),
+        url("fonts/Merriweather-Regular.woff") format("woff"),
+        url("fonts/Merriweather-Regular.ttf") format("truetype"),
+        url("fonts/Merriweather-Regular.svg#Merriweather-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url("fonts/Merriweather-Bold.eot");
+    src: url("fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Merriweather-Bold.woff2") format("woff2"),
+        url("fonts/Merriweather-Bold.woff") format("woff"),
+        url("fonts/Merriweather-Bold.ttf") format("truetype"),
+        url("fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
+    font-weight: 700;
+    font-style: normal
+}

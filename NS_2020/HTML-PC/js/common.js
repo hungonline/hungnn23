@@ -42,10 +42,10 @@
 
     //scrollBar
     function scrollBar() {
-        var scrollContainer = $(".scrollbar-inner");
-        if (scrollContainer.length > 0) {
-            scrollContainer.scrollbar();
-        }
+        var els = document.querySelectorAll('.scrollbar-inner');
+        $.each(els, function (k) {
+            SimpleScrollbar.initEl(els[k]);
+        });
     }
     //resizeSite
     function resizeSite() {

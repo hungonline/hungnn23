@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1598238758794');
-	src: url('iconfont.eot?#iefix-1598238758794') format('embedded-opentype'),
-		url('iconfont.woff2?1598238758794') format('woff2'),
-		url('iconfont.woff?1598238758794') format('woff'),
-		url('iconfont.ttf?1598238758794') format('truetype');
+	src: url('iconfont.eot?1598928427093');
+	src: url('iconfont.eot?#iefix-1598928427093') format('embedded-opentype'),
+		url('iconfont.woff2?1598928427093') format('woff2'),
+		url('iconfont.woff?1598928427093') format('woff'),
+		url('iconfont.ttf?1598928427093') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -408,236 +408,240 @@ Glyphs list
 			content: '\ea5e';
 		}
 
-		 .iconfont-print:before {
+		 .iconfont-play2:before {
 			content: '\ea5f';
 		}
 
-		 .iconfont-quite-happy-e:before {
+		 .iconfont-print:before {
 			content: '\ea60';
 		}
 
-		 .iconfont-quote:before {
+		 .iconfont-quite-happy-e:before {
 			content: '\ea61';
 		}
 
-		 .iconfont-refresh-01:before {
+		 .iconfont-quote:before {
 			content: '\ea62';
 		}
 
-		 .iconfont-refresh-02:before {
+		 .iconfont-refresh-01:before {
 			content: '\ea63';
 		}
 
-		 .iconfont-refresh-19:before {
+		 .iconfont-refresh-02:before {
 			content: '\ea64';
 		}
 
-		 .iconfont-replay:before {
+		 .iconfont-refresh-19:before {
 			content: '\ea65';
 		}
 
-		 .iconfont-round-e-info:before {
+		 .iconfont-replay:before {
 			content: '\ea66';
 		}
 
-		 .iconfont-search-1:before {
+		 .iconfont-round-e-info:before {
 			content: '\ea67';
 		}
 
-		 .iconfont-search-2:before {
+		 .iconfont-search-1:before {
 			content: '\ea68';
 		}
 
-		 .iconfont-select-83:before {
+		 .iconfont-search-2:before {
 			content: '\ea69';
 		}
 
-		 .iconfont-select-84:before {
+		 .iconfont-select-83:before {
 			content: '\ea6a';
 		}
 
-		 .iconfont-send:before {
+		 .iconfont-select-84:before {
 			content: '\ea6b';
 		}
 
-		 .iconfont-settings-gear-64-2:before {
+		 .iconfont-send:before {
 			content: '\ea6c';
 		}
 
-		 .iconfont-settings-gear-64:before {
+		 .iconfont-settings-gear-64-2:before {
 			content: '\ea6d';
 		}
 
-		 .iconfont-shape-star:before {
+		 .iconfont-settings-gear-64:before {
 			content: '\ea6e';
 		}
 
-		 .iconfont-share-2:before {
+		 .iconfont-shape-star:before {
 			content: '\ea6f';
 		}
 
-		 .iconfont-share-26:before {
+		 .iconfont-share-2:before {
 			content: '\ea70';
 		}
 
-		 .iconfont-share-91:before {
+		 .iconfont-share-26:before {
 			content: '\ea71';
 		}
 
-		 .iconfont-share-92:before {
+		 .iconfont-share-91:before {
 			content: '\ea72';
 		}
 
-		 .iconfont-shuffle-98:before {
+		 .iconfont-share-92:before {
 			content: '\ea73';
 		}
 
-		 .iconfont-simple-add:before {
+		 .iconfont-shuffle-98:before {
 			content: '\ea74';
 		}
 
-		 .iconfont-simple-remove:before {
+		 .iconfont-simple-add:before {
 			content: '\ea75';
 		}
 
-		 .iconfont-single-01:before {
+		 .iconfont-simple-remove:before {
 			content: '\ea76';
 		}
 
-		 .iconfont-single-copy-04:before {
+		 .iconfont-single-01:before {
 			content: '\ea77';
 		}
 
-		 .iconfont-slider:before {
+		 .iconfont-single-copy-04:before {
 			content: '\ea78';
 		}
 
-		 .iconfont-small-delete:before {
+		 .iconfont-slider:before {
 			content: '\ea79';
 		}
 
-		 .iconfont-small-down:before {
+		 .iconfont-small-delete:before {
 			content: '\ea7a';
 		}
 
-		 .iconfont-small-left:before {
+		 .iconfont-small-down:before {
 			content: '\ea7b';
 		}
 
-		 .iconfont-small-right:before {
+		 .iconfont-small-left:before {
 			content: '\ea7c';
 		}
 
-		 .iconfont-small-triangle-down:before {
+		 .iconfont-small-right:before {
 			content: '\ea7d';
 		}
 
-		 .iconfont-small-triangle-left:before {
+		 .iconfont-small-triangle-down:before {
 			content: '\ea7e';
 		}
 
-		 .iconfont-small-triangle-right:before {
+		 .iconfont-small-triangle-left:before {
 			content: '\ea7f';
 		}
 
-		 .iconfont-small-triangle-up:before {
+		 .iconfont-small-triangle-right:before {
 			content: '\ea80';
 		}
 
-		 .iconfont-small-up:before {
+		 .iconfont-small-triangle-up:before {
 			content: '\ea81';
 		}
 
-		 .iconfont-square-add-11:before {
+		 .iconfont-small-up:before {
 			content: '\ea82';
 		}
 
-		 .iconfont-square-delete-13:before {
+		 .iconfont-square-add-11:before {
 			content: '\ea83';
 		}
 
-		 .iconfont-square-download:before {
+		 .iconfont-square-delete-13:before {
 			content: '\ea84';
 		}
 
-		 .iconfont-square-remove-12:before {
+		 .iconfont-square-download:before {
 			content: '\ea85';
 		}
 
-		 .iconfont-square-upload:before {
+		 .iconfont-square-remove-12:before {
 			content: '\ea86';
 		}
 
-		 .iconfont-star-half:before {
+		 .iconfont-square-upload:before {
 			content: '\ea87';
 		}
 
-		 .iconfont-stopwatch:before {
+		 .iconfont-star-half:before {
 			content: '\ea88';
 		}
 
-		 .iconfont-tag:before {
+		 .iconfont-stopwatch:before {
 			content: '\ea89';
 		}
 
-		 .iconfont-tail-down:before {
+		 .iconfont-tag:before {
 			content: '\ea8a';
 		}
 
-		 .iconfont-tail-left:before {
+		 .iconfont-tail-down:before {
 			content: '\ea8b';
 		}
 
-		 .iconfont-tail-right:before {
+		 .iconfont-tail-left:before {
 			content: '\ea8c';
 		}
 
-		 .iconfont-tail-up:before {
+		 .iconfont-tail-right:before {
 			content: '\ea8d';
 		}
 
-		 .iconfont-tap-01:before {
+		 .iconfont-tail-up:before {
 			content: '\ea8e';
 		}
 
-		 .iconfont-time-3:before {
+		 .iconfont-tap-01:before {
 			content: '\ea8f';
 		}
 
-		 .iconfont-trash:before {
+		 .iconfont-time-3:before {
 			content: '\ea90';
 		}
 
-		 .iconfont-triangle-left:before {
+		 .iconfont-trash:before {
 			content: '\ea91';
 		}
 
-		 .iconfont-triangle-right:before {
+		 .iconfont-triangle-left:before {
 			content: '\ea92';
 		}
 
-		 .iconfont-tv-2:before {
+		 .iconfont-triangle-right:before {
 			content: '\ea93';
 		}
 
-		 .iconfont-weather-1:before {
+		 .iconfont-tv-2:before {
 			content: '\ea94';
 		}
 
-		 .iconfont-zoom-2:before {
+		 .iconfont-weather-1:before {
 			content: '\ea95';
 		}
 
-		 .iconfont-zoom-88:before {
+		 .iconfont-zoom-2:before {
 			content: '\ea96';
 		}
 
-		 .iconfont-zoom-e:before {
+		 .iconfont-zoom-88:before {
 			content: '\ea97';
 		}
 
-		 .iconfont-zoom:before {
+		 .iconfont-zoom-e:before {
 			content: '\ea98';
+		}
+
+		 .iconfont-zoom:before {
+			content: '\ea99';
 		}
 
 		
