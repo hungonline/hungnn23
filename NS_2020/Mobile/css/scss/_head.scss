@@ -125,14 +125,21 @@ body.fixed {
                 font-weight: bold;
                 border-bottom: 1px solid #D8E1EB;
                 padding: 14px 0;
+                float: left;
+                width: 100%;
             }
 
-            .level2 {
+            .sub_menu {
                 padding-left: 20px;
+                float: left;
+                width: 100%;
+                border-bottom: 1px solid #F7F7F7;
 
                 a {
                     position: relative;
                     padding: 6px 0 6px 10px;
+                    width: 100%;
+                    float: left;
 
                     &::before {
                         content: "";
