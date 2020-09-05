@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1596614538037');
-	src: url('iconfont.eot?#iefix-1596614538037') format('embedded-opentype'),
-		url('iconfont.woff2?1596614538037') format('woff2'),
-		url('iconfont.woff?1596614538037') format('woff'),
-		url('iconfont.ttf?1596614538037') format('truetype');
+	src: url('iconfont.eot?1599294774987');
+	src: url('iconfont.eot?#iefix-1599294774987') format('embedded-opentype'),
+		url('iconfont.woff2?1599294774987') format('woff2'),
+		url('iconfont.woff?1599294774987') format('woff'),
+		url('iconfont.ttf?1599294774987') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -304,20 +304,24 @@ Glyphs list
 			content: '\ea44';
 		}
 
-		 .iconfont-upfile:before {
+		 .iconfont-Up:before {
 			content: '\ea45';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-upfile:before {
 			content: '\ea46';
 		}
 
-		 .iconfont-vector:before {
+		 .iconfont-user:before {
 			content: '\ea47';
 		}
 
-		 .iconfont-visa:before {
+		 .iconfont-vector:before {
 			content: '\ea48';
+		}
+
+		 .iconfont-visa:before {
+			content: '\ea49';
 		}
 
 		

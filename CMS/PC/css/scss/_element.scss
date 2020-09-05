@@ -632,7 +632,15 @@ label.radio {
         border-radius: 5px;
     }
 }
-
+.table-bg-even{
+    tbody {
+        tr{
+            &:nth-child(2n){
+                td{background:#ececec}
+            }
+        }
+    }
+}
 .percent-bar {
     .main-bar-per {
         background: #C4C4C4;
