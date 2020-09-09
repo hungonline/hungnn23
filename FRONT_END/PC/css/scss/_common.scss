@@ -249,6 +249,17 @@
 
 }
 
+.ct_star {
+    display: flex;
+
+    svg {
+        fill: var(--yellow);
+        width: 12px;
+        height: 12px;
+        margin-right: 4px;
+    }
+}
+
 .thumb-art {
     position: relative;
     float: left;

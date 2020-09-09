@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1599294774987');
-	src: url('iconfont.eot?#iefix-1599294774987') format('embedded-opentype'),
-		url('iconfont.woff2?1599294774987') format('woff2'),
-		url('iconfont.woff?1599294774987') format('woff'),
-		url('iconfont.ttf?1599294774987') format('truetype');
+	src: url('iconfont.eot?1599622249230');
+	src: url('iconfont.eot?#iefix-1599622249230') format('embedded-opentype'),
+		url('iconfont.woff2?1599622249230') format('woff2'),
+		url('iconfont.woff?1599622249230') format('woff'),
+		url('iconfont.ttf?1599622249230') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -284,44 +284,48 @@ Glyphs list
 			content: '\ea3f';
 		}
 
-		 .iconfont-superscript2:before {
+		 .iconfont-star-none:before {
 			content: '\ea40';
 		}
 
-		 .iconfont-thutuc:before {
+		 .iconfont-superscript2:before {
 			content: '\ea41';
 		}
 
-		 .iconfont-tietkiem:before {
+		 .iconfont-thutuc:before {
 			content: '\ea42';
 		}
 
-		 .iconfont-twiter:before {
+		 .iconfont-tietkiem:before {
 			content: '\ea43';
 		}
 
-		 .iconfont-Union:before {
+		 .iconfont-twiter:before {
 			content: '\ea44';
 		}
 
-		 .iconfont-Up:before {
+		 .iconfont-Union:before {
 			content: '\ea45';
 		}
 
-		 .iconfont-upfile:before {
+		 .iconfont-Up:before {
 			content: '\ea46';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-upfile:before {
 			content: '\ea47';
 		}
 
-		 .iconfont-vector:before {
+		 .iconfont-user:before {
 			content: '\ea48';
 		}
 
-		 .iconfont-visa:before {
+		 .iconfont-vector:before {
 			content: '\ea49';
+		}
+
+		 .iconfont-visa:before {
+			content: '\ea4a';
 		}
 
 		
