@@ -231,9 +231,10 @@ html {
   fill: currentColor !important;
 }
 
-.comment-count {
+.comment-count,
+.count_cmt {
   color: #16b0e7;
-  font: 400 px_to_rem(12px) arial;
+  font: 400 14px arial;
   margin-left: 2px
 }
 
@@ -402,15 +403,18 @@ html {
   }
 }
 
-.thumb_5x3 {
+.thumb_5x3,
+.thumb-5x3 {
   padding-bottom: 60%;
 }
 
-.thumb_5x5 {
+.thumb_5x5,
+.thumb-5x5 {
   padding-bottom: 100%;
 }
 
-.thumb_16x9 {
+.thumb_16x9,
+.thumb_video {
   padding-bottom: 56.25%;
 }
 

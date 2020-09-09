@@ -89,17 +89,46 @@
 
 .title_news {
 	line-height: $lh !important;
+
+	p {
+		font-size: 12px;
+		color: #514E4E;
+		font-family: Arial;
+		display: inline-block;
+
+		a {
+			color: #514E4E;
+			font: 400 14px Arial;
+		}
+
+		svg {
+			vertical-align: text-bottom;
+			width: 14px !important;
+			height: 14px !important;
+		}
+
+		&.disabled {
+			svg {
+				color: #AAB1B5
+			}
+		}
+	}
 }
 
 article {
 	.content {
 		font-family: $fontmain;
 		margin-top: 10px;
-		overflow: hidden;
 
 		.description {
 			font-family: arial
 		}
+	}
+}
+
+.box_stream {
+	article .content {
+		overflow: hidden;
 	}
 }
 
