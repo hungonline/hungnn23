@@ -173,13 +173,13 @@
         var swiperQuoTe = new Swiper('#box_quote', {
             effect: 'coverflow',
             centeredSlides: true,
+            slidesPerView: 'auto',
             loop: true,
             coverflowEffect: {
                 rotate: 30,
             },
             autoplay: {
                 delay: 6000,
-                disableOnInteraction: false,
             },
         });
 

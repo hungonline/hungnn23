@@ -1,5 +1,4 @@
 @import "var.scss";
-@import "box300.scss";
 
 .top-story {
   font-size: px_to_rem(0px);
@@ -21,6 +20,7 @@
 
     .content {
       width: 100%;
+      overflow: visible;
 
       .title_news {
         font: 500 px_to_rem(16px) $fontmain;
