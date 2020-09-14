@@ -31,6 +31,7 @@ button,
 .embed_video_new,
 .box_img_video {
   cursor: pointer;
+  outline: 0;
 }
 
 a:focus {
@@ -93,8 +94,6 @@ a:hover {
   width: 100%;
   float: left;
 }
-
-.inset-width {}
 
 .outset-width {}
 

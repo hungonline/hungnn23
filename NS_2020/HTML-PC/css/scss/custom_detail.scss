@@ -194,6 +194,7 @@ figure {
     line-height: 40px;
     padding: 0 35px;
     @extend %has_transition;
+    outline: 0;
 
     &:hover {
         background: #178fd6;
@@ -254,7 +255,8 @@ figure {
     text-align: left;
 
     .inner-title {
-        font-weight: 400
+        font-weight: 400;
+        display: inline-block;
     }
 
     .title_bx {

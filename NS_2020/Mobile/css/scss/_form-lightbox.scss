@@ -361,7 +361,7 @@ button::-moz-focus-inner {
   background: #f4f4f4;
   width: auto;
   max-width: 500px;
-  margin: 20px auto;
+  margin: 0px auto;
   overflow: hidden;
 
   p.center {
@@ -429,7 +429,7 @@ button::-moz-focus-inner {
 }
 
 .content_poup {
-  padding: 10px 15px 15px 15px;
+  padding: 15px;
   background: #fff;
   font: 400 px_to_rem(16px) arial;
 
@@ -438,8 +438,8 @@ button::-moz-focus-inner {
   }
 
   .title_new {
-    margin: 0 -15px 15px -15px;
-    padding: 0px 15px 5px 15px;
+    margin: -5px -15px 15px -15px;
+    padding: 0px 15px 10px 15px;
     position: relative;
     font: bold px_to_rem(24px) var(--font-title);
 
