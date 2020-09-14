@@ -470,6 +470,13 @@
 				text-decoration: underline;
 				cursor: pointer;
 			}
+
+			.btn {
+				font-size: 14px;
+				height: 32px;
+				line-height: 34px;
+				border-radius: 6px;
+			}
 		}
 
 		.ct_code {
@@ -583,7 +590,7 @@
 		}
 
 		.ct_size {
-			margin-bottom: 25px;
+			margin-bottom: 10px;
 			font-size: 14px;
 
 			p {
@@ -607,6 +614,7 @@
 					@extend .radius5;
 					line-height: 24px;
 					margin-right: 15px;
+					margin-bottom: 15px;
 					border: 1px solid var(--green1);
 
 					&.active {
