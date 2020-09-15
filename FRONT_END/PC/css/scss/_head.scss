@@ -606,7 +606,7 @@
 	padding: 24px 20px;
 	display: none;
 	position: absolute;
-	top: 90px;
+	top: 88px;
 	left: 0;
 	right: 0;
 	z-index: 4;
@@ -635,11 +635,11 @@
 					display: block;
 					cursor: pointer;
 
-					i {
-						margin-right: 8px;
-						float: left;
-						font-size: 15px;
-						margin-top: -2px;
+					svg {
+						margin-right: 6px;
+						width: 18px;
+						height: 18px;
+						vertical-align: text-bottom;
 					}
 				}
 

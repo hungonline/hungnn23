@@ -791,7 +791,7 @@ span.txt_num_comment {
 
 /*breadcrumb*/
 #breadcrumb {
-	margin: 20px auto 15px;
+	margin: 15px auto 20px;
 
 	&+section {
 		.box_300 {
@@ -800,10 +800,6 @@ span.txt_num_comment {
 	}
 
 	ul {
-		width: calc(100% - 348px);
-		float: left;
-		min-height: 36px;
-
 		li {
 			display: inline-block;
 			margin-right: 15px;

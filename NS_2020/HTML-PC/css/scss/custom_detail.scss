@@ -14,6 +14,35 @@
         }
     }
 
+    &.detail-photo {
+        padding: 0;
+
+        .container {
+            display: flex
+        }
+
+        .item_slide_show {
+            margin-bottom: 20px;
+
+            .desc_cation {
+                p {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .block_thumb_picture {
+            img.lazy {
+                transform: inherit !important;
+                height: auto;
+            }
+        }
+    }
+
+    #breadcrumb {
+        margin-top: 0;
+    }
+
     .header-content {
         .date {
             float: left;
