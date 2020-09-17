@@ -112,7 +112,7 @@ a:hover {
 
 #to_top {
   opacity: .5;
-  background: #999;
+  background: #999 !important;
   display: none;
   border: medium none;
   bottom: 20px;
@@ -242,9 +242,14 @@ html {
   bottom: 7px;
   left: 7px;
   cursor: pointer;
-  height: 30px;
-  width: 30px;
+  height: 32px;
+  width: 28px;
+  background: url(images/icons/video_play.svg) no-repeat center;
   margin: 0;
+
+  use {
+    display: none
+  }
 }
 
 .no_wrap {

@@ -26,15 +26,8 @@
 
             .desc_cation {
                 p {
-                    padding-top: 0;
+                    padding-top: 10px;
                 }
-            }
-        }
-
-        .block_thumb_picture {
-            img.lazy {
-                transform: inherit !important;
-                height: auto;
             }
         }
     }
@@ -1365,6 +1358,7 @@ figure {
     font-size: px_to_rem(17px);
 }
 
+
 .section_desc {
     font-size: px_to_rem(17px);
     font-weight: 700;
@@ -1860,6 +1854,13 @@ figure {
             }
         }
     }
+
+    #boxthamdoykien {
+        .content_box_category {
+            background: none
+        }
+    }
+
 }
 
 .special-column {
@@ -1906,5 +1907,7 @@ figure {
     }
 
 }
+
+
 
 /*END DETAIL LONGFORM 1 */

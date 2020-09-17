@@ -288,8 +288,7 @@ body.fixed {
     }
 
     &.sticky {
-        z-index: 999;
-        top: -1px;
+        z-index: 99;
 
         &--active {
             z-index: 1045;
