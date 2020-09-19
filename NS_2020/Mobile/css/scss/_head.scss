@@ -16,8 +16,8 @@
 
     .sticky:not(.header-top--ver2) & {
         position: absolute;
-        width: 50px;
-        height: 48px;
+        width: 48px;
+        height: 39px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,7 +44,7 @@ body.fixed {
 
 .left-nav {
     position: fixed;
-    top: 46px;
+    top: 38px;
     height: calc(100% - 48px);
     overflow-y: scroll;
     max-width: 540px;
@@ -288,22 +288,11 @@ body.fixed {
     }
 
     &.sticky {
-        z-index: 999;
-        top: -1px;
+        z-index: 99;
 
         &--active {
             z-index: 1045;
             box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-
-            .main-nav {
-                .parent {
-                    li {
-                        a {
-                            line-height: 48px
-                        }
-                    }
-                }
-            }
 
             .home-item {
                 padding-left: 50px;
@@ -312,6 +301,7 @@ body.fixed {
 
             .humberger-btn {
                 left: 0;
+                margin-top: 0;
             }
         }
     }
@@ -338,6 +328,14 @@ body.fixed {
 
                         a {
                             font-weight: bold;
+                        }
+                    }
+
+                    &.first {
+                        padding-right: 0;
+
+                        &::before {
+                            display: none
                         }
                     }
                 }
@@ -423,6 +421,15 @@ body.fixed {
             }
         }
     }
+}
+
+.humberger-btn.active {
+    margin-top: -10px;
+}
+
+.humberger-btn.active~.logo {
+    width: 80px;
+    margin-top: -9px;
 }
 
 .humberger-btn.active~.right-head {

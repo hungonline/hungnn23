@@ -285,7 +285,7 @@
     // Sticky Social
     function myFunction() {
         /**MENU STICKY**/
-        var top_start = $("#breadcrumb, section.featured").position().top - 10;
+        var top_start = $("#header").position().top + 130;
         if ($(window).scrollTop() >= top_start) {
             $('#header_sticky').addClass('show_sticky');
         } else if ($(window).scrollTop() <= top_start) {

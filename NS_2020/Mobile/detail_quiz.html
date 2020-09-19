@@ -382,6 +382,55 @@
                 </div>
             </div>
 
+            <div class="box_category width_common vote_rating_box" id="boxthamdoykien">
+                <div class="width_common title-box-category title-box-small">
+                    <h4 class="inner-title">Thăm dò</h4>
+
+                    <span class="count-vote"><strong>21</strong> biểu quyết</span>
+
+                </div>
+
+                <div class="width_common content-box-category">
+                    <div class="title_bx width_common">cau hoi vote sua</div>
+
+                    <div class="item_row_bx width_common">
+                        <label for="_i93754" class="label_check">
+                            <input onclick="vneVote.CheckThisVote(this)" id="_i93754" name="answer_25235" value="93754"
+                                type="checkbox" class="checkbox_check">
+                            <span>iteam 1</span>
+                        </label>
+                    </div>
+
+                    <div class="item_row_bx width_common">
+                        <label for="_i93755" class="label_check">
+                            <input onclick="vneVote.CheckThisVote(this)" id="_i93755" name="answer_25235" value="93755"
+                                type="checkbox" class="checkbox_check">
+                            <span>iteam 2</span>
+                        </label>
+                    </div>
+
+                    <div class="item_row_bx width_common">
+                        <label for="_i93756" class="label_check">
+                            <input onclick="vneVote.CheckThisVote(this)" id="_i93756" name="answer_25235" value="93756"
+                                type="checkbox" class="checkbox_check">
+                            <span>iteam 3</span>
+                        </label>
+                    </div>
+
+                    <div class="box_button width_common mt5">
+                        <button id="btn_add_vote_25235"
+                            onclick="vneVote.insertVoteMobile(25235); if(typeof(_gaq) != 'undefined'){_gaq.push(['_trackEvent', 'Home', 'Click Biểu quyết', 'Box Thăm dò ý kiến 25235']);}  return false;"
+                            class="btn_vne btn_normal btn_disable btn_vote_rate">Biểu quyết</button>
+                        <a href="javascript:void(0);" id="_btnResult" rel="nofollow"
+                            onclick="vneVote.animateResults(25235); if(typeof(_gaq) != 'undefined'){_gaq.push(['_trackEvent', 'Home', 'Click Xem kết quả', 'Box Thăm dò ý kiến 25235']);} return false;"
+                            class="btn_vne btn_normal btn_view_cancel btn_vote_rate btn_ketqua">Xem kết quả</a>
+                    </div>
+                </div>
+
+                <p class="width_common time-vote">Thời gian từ: 13/5</p>
+
+            </div>
+
             <!--QUIZ TRUE, FALSE 2, ALL QUIZ ON 1 BOX-->
             <div class="quiz_box width_common box_category quiz_box_all_ques">
                 <div class="content_box_category box_bg_gray width_common">
@@ -1428,7 +1477,7 @@
   <!-- build:script -->
   
 <script>
-    $('.main-nav-home').remove();
+
 </script>
 
   <div class="clearfix"></div>

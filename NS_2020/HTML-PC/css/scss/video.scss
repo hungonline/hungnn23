@@ -895,9 +895,7 @@
     }
 
     .block_share {
-      margin-bottom: 10px;
-      border-bottom: 1px solid #e2e2e3;
-      padding-bottom: 10px;
+      margin-bottom: 15px;
 
       .total {
         .bg_agray {
@@ -930,6 +928,11 @@
           font-size: 16px;
         }
       }
+    }
+
+    .block_tag {
+      border-top: 1px solid #e2e2e3;
+      padding-top: 10px;
     }
 
     .filter_coment {
@@ -1120,6 +1123,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   .row {
     margin: 0 -15px;
@@ -1157,6 +1161,102 @@
 .thumb_art.thumb_full {
   width: 100%;
   margin: 0 0 10px 0;
+}
+
+.ic_playlist {
+  width: 30px;
+  height: 25px;
+  background-position: -579px -68px;
+  width: 14px;
+  height: 14px;
+  background: url(images/graphics/icons-video600s.svg) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  background-position: -34px -202px;
+}
+
+.ic_playonlist {
+  width: 25px;
+  height: 32px;
+  background-position: -554px -68px;
+  width: 14px;
+  height: 14px;
+  background: url(images/graphics/icons-video600s.svg) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  background-position: -102px -202px;
+}
+
+
+.label_playlist {
+  width: 75px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+
+  .number_playlist {
+    width: 75px;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    opacity: 0.5;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+
+    .ic_playlist {
+      display: block;
+      margin: 7px auto 0 auto;
+    }
+  }
+}
+
+.thumb_img {
+  &:hover {
+    .label_playlist {
+      width: 100%;
+
+      .number_playlist {
+        opacity: 1;
+        width: 75px;
+      }
+    }
+
+    .label_viewall {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.label_viewall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .box_cat.list_art_common {
@@ -1245,9 +1345,8 @@
   }
 
   .lead_news {
-    font: 400 14px arial;
+    font: 400 14px/1.5 arial;
     color: #333;
-    line-height: 1.3;
   }
 }
 

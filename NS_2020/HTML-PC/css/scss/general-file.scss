@@ -1,0 +1,153 @@
+@import "var.scss";
+//plugin
+@import "lightbox.scss";
+@import "swiper.scss";
+@import "box300.scss";
+
+/*========Notifi Ngôi sao==========*/
+.notifi-ns1 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  padding: 30px;
+  font: 400 17px/25px Arial;
+  color: #000;
+  width: 470px;
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+
+  .logo {
+    width: 90px;
+    display: inline-block;
+  }
+
+  .notifi_footer {
+    margin-top: 20px;
+
+    button {
+      font: 400 16px/18px Arial;
+      color: #000;
+      border-radius: 3px;
+      height: 40px;
+      text-align: center;
+      float: right;
+      background: none;
+
+      &.btn-primary {
+        background: #168FD6;
+        width: 120px;
+        color: #fff;
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid #E5E5E5;
+    position: absolute;
+    top: -20px;
+    left: 50px;
+  }
+
+  &:after {
+    content: "";
+    border-right: 19px solid transparent;
+    border-left: 19px solid transparent;
+    border-bottom: 20px solid #fff;
+    position: absolute;
+    top: -19px;
+    left: 51px;
+  }
+}
+
+.notifi-ns2 {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  width: 340px;
+  background: #FFFFFF;
+  border: 1px solid #F7F7F7;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+
+  .art_item {
+    margin-bottom: 0;
+
+    .thumb_art {
+      width: 100px;
+      margin-right: 10px;
+      margin-bottom: 0 !important
+    }
+
+    .content {
+      .title_news {
+        font: 400 14px/21px Arial;
+
+        a {
+          color: #000
+        }
+      }
+
+      .description {
+        font: 400 14px/21px Arial;
+        color: #000
+      }
+    }
+
+    &.full {
+      .thumb_art {
+        width: 100%;
+        float: none;
+        margin-bottom: 0 !important
+      }
+
+      .content {
+        padding: 10px 12px;
+        margin: 0;
+
+        .title_news {
+          font: 700 16px/24px Arial;
+        }
+      }
+    }
+  }
+
+  .notifi_footer {
+    border-top: 1px solid #E5E5E5;
+    height: 30px;
+    position: relative;
+    color: #828282;
+    font: 400 12px/14px Arial;
+    float: left;
+    width: 100%;
+    padding: 8px 10px;
+
+    .link {
+      color: #828282;
+    }
+
+    .close {
+      font-size: 35px;
+      color: #E5E5E5;
+      font-family: -webkit-body;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 40px;
+      text-align: center;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+/*========End Notifi Ngôi sao==========*/
+
+@import "responsive.scss";

@@ -15,13 +15,14 @@
 	<link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
 		rel="shortcut icon" />
 	<link rel="stylesheet" href="css/font.css" media="all" />
-	<link rel="stylesheet" href="css/general.css" media="all" />
+	<link rel="stylesheet" href="css/general-inline.css" media="all" />
+	<link rel="stylesheet" href="css/general-file.css" media="all" />
 	<link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/detail-inline.css" media="all"
 		rel="stylesheet" />
 	<link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/detail-file.css" media="all"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/custom_detail.css" media="all" />
 	<link rel="stylesheet" href="css/longform.css" media="all" />
+	<link rel="stylesheet" href="css/custom_detail.css" media="all" />
 </head>
 
 <body class="body_pc page_detail detail_longform">
@@ -29,7 +30,7 @@
 	<div class="topbar clearfix" id="topbar">
 		<div class="container">
 			<div class="btn_control_menu"><svg class="icon-ns">
-					<use xlink:href="images/icons.svg#menu-34"></use>
+					<use xlink:href="images/icons/icon.svg#menu-34"></use>
 				</svg></div>
 			<a class="logo" href="#" id="logo"><img alt="gac ma" class="pc-only img-100"
 					src="images/graphics/logo_ns_small%20.png"></a>
@@ -44,7 +45,7 @@
 						<span class="search-btn">
 							<button type="submit">
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#zoom-2"></use>
+									<use xlink:href="images/icons/icon.svg#zoom-2"></use>
 								</svg>
 							</button>
 						</span>
@@ -53,19 +54,19 @@
 				<div class="social-header right">
 					<span class="icon_commend left">
 						<svg class="icon-ns">
-							<use xlink:href="images/icons.svg#ns-comment"></use>
+							<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 						</svg>
 						<span class="comment-count">124</span>
 					</span>
 					<div class="block_share left">
 						<a class="btn_face" href="#"><svg class="icon-ns not-grad">
-								<use xlink:href="images/icons.svg#logo-fb-simple"></use>
+								<use xlink:href="images/icons/icon.svg#logo-fb-simple"></use>
 							</svg></a> <a class="btn_google" href="#"><svg class="icon-ns">
-								<use xlink:href="images/icons.svg#logo-google-plus"></use>
+								<use xlink:href="images/icons/icon.svg#logo-google-plus"></use>
 							</svg></a> <a class="btn_twitter" href="#"><svg class="icon-ns">
-								<use xlink:href="images/icons.svg#logo-twitter"></use>
+								<use xlink:href="images/icons/icon.svg#logo-twitter"></use>
 							</svg></a> <a class="btn_email" href="#"><svg class="icon-ns">
-								<use xlink:href="images/icons.svg#email-83"></use>
+								<use xlink:href="images/icons/icon.svg#email-83"></use>
 							</svg></a> <span class="count_comment" id="total_share_3834581">13</span>
 					</div>
 
@@ -76,7 +77,8 @@
 	<!-- END TOPBAR -->
 
 	<!--MAIN-->
-	<div id="medium_editor" class="width_common longform_wrapper medium-editor-element medium-editor-insert-plugin">
+	<div id="medium_editor"
+		class="width_common longform_wrapper fck_detail medium-editor-element medium-editor-insert-plugin">
 		<div class="section-inner inset-column special-column">
 			<h1>Tháng 10, nhớ mùa thu Hà Nội</h1>
 		</div>
@@ -96,6 +98,49 @@
 				mùa thu bắt đầu từ bao giờ. Chỉ khi nào một sáng tỉnh dậy, bước chân xuống giường thấy se se lạnh, bầu
 				trời cao xanh, nắng nhẹ như rót mật, cảm nhận làn gió heo may thổi nhẹ trên mái tóc, những tán cây hoa
 				sữa trên đường Nguyễn Du bung tỏa hương thơm đầu tiên, thì bạn mới có thể nhận ra: thu đã về.</p>
+
+
+			<div class="width_common box_category vote_rating_box thamdo box_100 _noresult" id="boxthamdoykien">
+				<div class="width_common title-box-category title-box-small">
+					<h4 class="inner-title">Thăm dò</h4>
+
+					<span class="count-vote"><strong>1.240</strong> biểu quyết</span>
+
+				</div>
+				<div class="content_box_category box_bg_gray width_common">
+					<div class="title_bx width_common">Bạn thấy bộ ảnh nào cuốn hút hơn?</div>
+
+					<div class="item_row_bx width_common" style="">
+						<label for="_i111114" class="label_check">
+							<input onclick="vneVote.CheckThisVote(this)" id="_i111114" name="answer_30707"
+								value="111114" type="radio" class="radio_check">
+							<span>Ji Soo</span>
+						</label>
+					</div>
+
+					<div class="item_row_bx width_common" style="">
+						<label for="_i111115" class="label_check">
+							<input onclick="vneVote.CheckThisVote(this)" id="_i111115" name="answer_30707"
+								value="111115" type="radio" class="radio_check">
+							<span>Rosé</span>
+						</label>
+					</div>
+
+					<div class="box_button width_common">
+						<button id="btn_add_vote_30707"
+							onclick="vneVote.insertvoteOK(30707); if(typeof(_gaq) != 'undefined'){_gaq.push(['_trackEvent', 'Home', 'Click Biểu quyết', 'Box Thăm dò ý kiến 30707']);}  return false;"
+							class="btn_vne btn_disable btn_normal btn_vote_rate">Biểu quyết</button>
+						<a href="javascript:void(0);" id="_btnResult" rel="nofollow"
+							onclick="vneVote.animateResults(30707); if(typeof(_gaq) != 'undefined'){_gaq.push(['_trackEvent', 'Home', 'Click Xem kết quả', 'Box Thăm dò ý kiến 30707']);} return false;"
+							class="btn_vne btn_normal btn_view_cancel btn_vote_rate btn_ketqua">Xem kết quả</a>
+					</div>
+				</div>
+
+				<p class="width_common time-vote">Thời gian từ: 14/9</p>
+
+			</div>
+
+
 			<div class="medium-insert-images medium-insert-images-left">
 				<figure><img src="https://i-ngoisao.vnecdn.net/2017/10/09/cuc-8424-1507531075.jpg" alt=""></figure>
 			</div>
@@ -247,24 +292,24 @@
 			<div class="block_share left">
 				<a class="btn_face" href="" onclick="" rel="nofollow" title="Like bài viết">
 					<svg class="icon-ns">
-						<use xlink:href="images/icons.svg#logo-fb-simple" />
+						<use xlink:href="images/icons/icon.svg#logo-fb-simple" />
 					</svg>
 				</a>
 				<a class="btn_google" href="" rel="nofollow" title="Google">
 					<svg class="icon-ns">
-						<use xlink:href="images/icons.svg#logo-google-plus" />
+						<use xlink:href="images/icons/icon.svg#logo-google-plus" />
 					</svg>
 				</a>
 				<a class="btn_twitter" href="javascript:void(0);" id="share_twitter" rel="nofollow" title="Twitter">
 					<svg class="icon-ns">
-						<use xlink:href="images/icons.svg#logo-twitter" />
+						<use xlink:href="images/icons/icon.svg#logo-twitter" />
 					</svg>
 
 				</a>
 				<a class="btn_email" href="javascript:void(0);" rel="nofollow" title="Gửi email">
 
 					<svg class="icon-ns">
-						<use xlink:href="images/icons.svg#email-83" />
+						<use xlink:href="images/icons/icon.svg#email-83" />
 					</svg>
 				</a>
 				<span class="count_comment" id="total_share_3834581">13</span>
@@ -284,7 +329,7 @@
 							<a class="thumb_img thumb_5x3" href="" title="this">
 								<img src="images/graphics/thumb_min.jpg" alt="this">
 								<span class="icon_thumb"><svg class="icon-ns not-grad">
-										<use xlink:href="images/icons.svg#ns-camera"></use>
+										<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 									</svg></span>
 							</a>
 						</div>
@@ -293,11 +338,11 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#ns-camera"></use>
+									<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 								</svg>
 							</h3>
 						</div>
@@ -313,7 +358,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -330,7 +375,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -647,7 +692,7 @@
 							<a class="thumb_img thumb_5x3" href="" title="this">
 								<img src="images/graphics/thumb_min.jpg" alt="this">
 								<span class="icon_thumb"><svg class="icon-ns not-grad">
-										<use xlink:href="images/icons.svg#ns-camera"></use>
+										<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 									</svg></span>
 							</a>
 						</div>
@@ -656,11 +701,11 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#ns-camera"></use>
+									<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 								</svg>
 							</h3>
 						</div>
@@ -676,7 +721,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -693,7 +738,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -704,7 +749,7 @@
 							<a class="thumb_img thumb_5x3" href="" title="this">
 								<img src="images/graphics/thumb_min.jpg" alt="this">
 								<span class="icon_thumb"><svg class="icon-ns not-grad">
-										<use xlink:href="images/icons.svg#ns-camera"></use>
+										<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 									</svg></span>
 							</a>
 						</div>
@@ -713,11 +758,11 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#ns-camera"></use>
+									<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 								</svg>
 							</h3>
 						</div>
@@ -733,7 +778,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -750,7 +795,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -761,7 +806,7 @@
 							<a class="thumb_img thumb_5x3" href="" title="this">
 								<img src="images/graphics/thumb_min.jpg" alt="this">
 								<span class="icon_thumb"><svg class="icon-ns not-grad">
-										<use xlink:href="images/icons.svg#ns-camera"></use>
+										<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 									</svg></span>
 							</a>
 						</div>
@@ -770,11 +815,11 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#ns-camera"></use>
+									<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 								</svg>
 							</h3>
 						</div>
@@ -790,7 +835,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -807,7 +852,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -818,7 +863,7 @@
 							<a class="thumb_img thumb_5x3" href="" title="this">
 								<img src="images/graphics/thumb_min.jpg" alt="this">
 								<span class="icon_thumb"><svg class="icon-ns not-grad">
-										<use xlink:href="images/icons.svg#ns-camera"></use>
+										<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 									</svg></span>
 							</a>
 						</div>
@@ -827,11 +872,11 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#ns-camera"></use>
+									<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 								</svg>
 							</h3>
 						</div>
@@ -847,7 +892,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -864,7 +909,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -875,7 +920,7 @@
 							<a class="thumb_img thumb_5x3" href="" title="this">
 								<img src="images/graphics/thumb_min.jpg" alt="this">
 								<span class="icon_thumb"><svg class="icon-ns not-grad">
-										<use xlink:href="images/icons.svg#ns-camera"></use>
+										<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 									</svg></span>
 							</a>
 						</div>
@@ -884,11 +929,11 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 								<svg class="icon-ns">
-									<use xlink:href="images/icons.svg#ns-camera"></use>
+									<use xlink:href="images/icons/icon.svg#ns-camera"></use>
 								</svg>
 							</h3>
 						</div>
@@ -904,7 +949,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -921,7 +966,7 @@
 								<a href="" title="this">Hoa hậu Kỳ Duyên quyến rũ hơn sau nâng cấp vòng một</a>
 								<span class="icon_commend">
 									<svg class="icon-ns">
-										<use xlink:href="images/icons.svg#ns-comment"></use>
+										<use xlink:href="images/icons/icon.svg#ns-comment"></use>
 									</svg><span class="comment-count">124</span>
 								</span>
 							</h3>
@@ -1101,26 +1146,26 @@
 			<div class="container">
 				<a class="back_home" href="https://ngoisao.net" title="Về trang chủ)">
 					<svg class="icon-ns not-grad">
-						<use xlink:href="images/icons.svg#tail-left"></use>
+						<use xlink:href="images/icons/icon.svg#tail-left"></use>
 					</svg>
 					Về trang chủ
 				</a>
 				<div class="option">
 					<a class="hotline" href="">
 						<svg class="icon-ns not-grad">
-							<use xlink:href="images/icons.svg#phone-call"></use>
+							<use xlink:href="images/icons/icon.svg#phone-call"></use>
 						</svg>
 						Hotline: 01292 333 444
 					</a>
 					<a class="rss" href="https://ngoisao.net/rss">
 						<svg class="icon-ns not-grad">
-							<use xlink:href="images/icons.svg#logo-rss"></use>
+							<use xlink:href="images/icons/icon.svg#logo-rss"></use>
 						</svg>
 						RSS
 					</a>
 					<a class="on_top" href="javascript:void(0);" id="to_top_footer">
 						<svg class="icon-ns not-grad">
-							<use xlink:href="images/icons.svg#tail-up"></use>
+							<use xlink:href="images/icons/icon.svg#tail-up"></use>
 						</svg>
 						Lên đầu trang
 					</a>
@@ -1136,11 +1181,11 @@
 					Email: webmaster@ngoisao.net&nbsp;&nbsp;|&nbsp;&nbsp;Điện thoại: 024 7300 9999 - Ext 4546<br></p>
 				<p class="ads_text"><span class="qc_text">Quảng cáo:</span><span class="hotline"><svg
 							class="icon-ns not-grad">
-							<use xlink:href="images/icons.svg#phone-call"></use>
+							<use xlink:href="images/icons/icon.svg#phone-call"></use>
 						</svg>0914 864 591</span><a class="ads_icon_text"
 						href="https://ds.polyad.net/QC/HN/Ngoisao/Gioithieu/" target="_blank"><svg
 							class="icon-ns not-grad">
-							<use xlink:href="images/icons.svg#phone-call"></use>
+							<use xlink:href="images/icons/icon.svg#phone-call"></use>
 						</svg>Thông tin liên lạc</a></p>
 			</div>
 		</div>
@@ -1151,7 +1196,7 @@
 	<nav id="main_menu" class="main_menu">
 		<div class="header_menu width_common">
 			<span id="auto_close_left_menu_button" class="close_main_menu"><svg class="icon-ns">
-					<use xlink:href="images/icons.svg#simple-remove" /></svg></span>
+					<use xlink:href="images/icons/icon.svg#simple-remove" /></svg></span>
 			<a class="logo" href="#" id="logo"><img alt="gac ma" class="pc-only img-100"
 					src="images/graphics/logo_ns_small%20.png"></a>
 		</div>
@@ -1162,7 +1207,7 @@
 						<input id="auto_search_textbox" maxlength="80" name="q" class="input_form"
 							placeholder="Tìm kiếm" type="search">
 						<button type="submit" id="btn_search_ns" class="btn_search"><svg class="icon-ns">
-								<use xlink:href="images/icons.svg#zoom-2" /></svg></button>
+								<use xlink:href="images/icons/icon.svg#zoom-2" /></svg></button>
 						<button type="reset" class="btn_reset">×</button>
 					</div>
 					<span class="error_mess txt_14">Thông báo lỗi</span>
@@ -1187,13 +1232,13 @@
 				<div class="width_common two_btn">
 					<div class="btn_contact_cm left">
 						<svg class="icon-ns">
-							<use xlink:href="images/icons.svg#phone-call"></use>
+							<use xlink:href="images/icons/icon.svg#phone-call"></use>
 						</svg>Hotline tòa soạn
 						<a href="#" title=""><strong>0822 333 444</strong></a>
 					</div>
 					<div class="btn_contact_cm right">
 						<svg class="icon-ns">
-							<use xlink:href="images/icons.svg#advertising-1"></use>
+							<use xlink:href="images/icons/icon.svg#advertising-1"></use>
 						</svg>Quảng cáo
 						<a href="#" title=""><strong>0914 864 591</strong></a>
 					</div>
@@ -1213,7 +1258,7 @@
 
 
 	<a href="javascript:;" id="to_top"><svg class="icon-ns not-grad">
-			<use xlink:href="images/icons.svg#tail-up" /></svg></a>
+			<use xlink:href="images/icons/icon.svg#tail-up" /></svg></a>
 
 	<!--Jquery lib-->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>

@@ -14,6 +14,28 @@
         }
     }
 
+    &.detail-photo {
+        padding: 0;
+
+        .container {
+            display: flex
+        }
+
+        .item_slide_show {
+            margin-bottom: 20px;
+
+            .desc_cation {
+                p {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    #breadcrumb {
+        margin-top: 0;
+    }
+
     .header-content {
         .date {
             float: left;
@@ -194,6 +216,7 @@ figure {
     line-height: 40px;
     padding: 0 35px;
     @extend %has_transition;
+    outline: 0;
 
     &:hover {
         background: #178fd6;
@@ -254,7 +277,8 @@ figure {
     text-align: left;
 
     .inner-title {
-        font-weight: 400
+        font-weight: 400;
+        display: inline-block;
     }
 
     .title_bx {
@@ -1334,6 +1358,7 @@ figure {
     font-size: px_to_rem(17px);
 }
 
+
 .section_desc {
     font-size: px_to_rem(17px);
     font-weight: 700;
@@ -1829,6 +1854,13 @@ figure {
             }
         }
     }
+
+    #boxthamdoykien {
+        .content_box_category {
+            background: none
+        }
+    }
+
 }
 
 .special-column {
@@ -1875,5 +1907,7 @@ figure {
     }
 
 }
+
+
 
 /*END DETAIL LONGFORM 1 */
