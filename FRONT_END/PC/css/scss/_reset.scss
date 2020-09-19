@@ -249,7 +249,7 @@ button {
 
 #to_top {
   color: #fff;
-  background:#236852;
+  background: #236852;
   font-size: 20px;
   display: none;
   border-radius: 3px;
@@ -661,10 +661,22 @@ html {
 .mt40 {
   margin-top: 40px;
 }
-.m-l-10{margin-left: 10px;}
-.m-l-20{margin-left: 20px;}
-.m-r-10{margin-right: 10px;}
-.m-r-20{margin-right: 20px;}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.m-l-20 {
+  margin-left: 20px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
+}
+
+.m-r-20 {
+  margin-right: 20px;
+}
 
 
 
@@ -756,9 +768,11 @@ html {
 .bg_gray {
   background: #f8f8f6;
 }
-.bg-white{
+
+.bg-white {
   background: #fff;
 }
+
 .txt_000 {
   color: #000
 }
@@ -881,7 +895,12 @@ html {
   height: 100%;
 }
 
+
+
+.thumb_img video,
 .thumb_img iframe {
+  object-fit: cover;
+  object-position: center;
   position: absolute;
   top: 0;
   bottom: 0;

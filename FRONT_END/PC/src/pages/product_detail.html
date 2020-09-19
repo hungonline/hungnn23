@@ -75,10 +75,12 @@
                             <div class="swiper-slide-container">
                                 <div class="video-container" style="display: block;">
                                     <div class="thumb_img video-wrap">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ayGB9a_qtOQ"
-                                            frameborder="0"
-                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen=""></iframe>
+                                        <video id="videoPlayer" class="video">
+                                            <source
+                                                src="https://d2y5sgsy8bbmb8.cloudfront.net/36eeeaa4-0ffa-4751-a854-d4d5c9f3a06a/default.jobtemplate.mp4.480.mp4"
+                                                type="video/mp4">
+                                        </video>
+                                        <div class="playpause"><i class="iconfont-next1"></i></div>
                                     </div>
                                 </div>
                             </div>
@@ -144,9 +146,8 @@
             </div>
         </div>
         <div class="col_right tt_sp_chitiet">
-            <h1 class="title_name">Điện Thoại iPhone XS 512GB - Hàng Chính Hãng</h1>
-            <a class="kt_hang" href="">Kiểm tra trên Amazon</a>
             <div class="sidebar_1">
+                <h1 class="title_name">Điện Thoại iPhone XS 512GB - Hàng Chính Hãng</h1>
                 <div class="sidebar_1_head flex">
                     <div class="ct_star">
                         <svg class="icon-us">
@@ -162,7 +163,7 @@
                             <use xlink:href="images/icons/icon.svg#star-full"></use>
                         </svg>
                         <svg class="icon-us not">
-                            <use xlink:href="images/icons/icon.svg#star-half"></use>
+                            <use xlink:href="images/icons/icon.svg#star-none"></use>
                         </svg>
                     </div>
                     <span class="choice"><img src="images/graphics/amazon-choice.png"></span>
@@ -185,6 +186,11 @@
                         <div class="loadding-new">
                             <div class="sk-child"></div>
                         </div>
+                    </div>
+                    <div class="price">
+                        Giá về tay: <a class="contact btn yellow" href="#">Liên hệ CSKH</a>
+                        <a href="#detail-price-popup" class="detail_price open-popup-link">Chi tiết
+                            giá</a>
                     </div>
                 </div>
                 <div class="ct_note">
@@ -264,66 +270,69 @@
                 </div>
             </div>
             <div class="sidebar_2">
-                <div class="ct_dichvu">
-                    <div class="head">
-                        <p class="info"><svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#exclamation-mark"></use>
-                            </svg>Thông tin người bán</p>
-                        <p class="Store"><a href="">Apple Store</a><span>&nbsp;(277 nhận xét)</span></p>
-                        <div class="ct_star flex">
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#star-full"></use>
-                            </svg>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#star-full"></use>
-                            </svg>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#star-full"></use>
-                            </svg>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#star-full"></use>
-                            </svg>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#star-full"></use>
-                            </svg>
-                            | 100% đánh giá uy tín
+                <a class="kt_hang" href="">Kiểm tra trên Amazon</a>
+                <div class="wrap">
+                    <div class="ct_dichvu">
+                        <div class="head">
+                            <p class="info"><svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#exclamation-mark"></use>
+                                </svg>Thông tin người bán</p>
+                            <p class="Store"><a href="">Apple Store</a><span>&nbsp;(277 nhận xét)</span></p>
+                            <div class="ct_star flex">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full"></use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full"></use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full"></use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full"></use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full"></use>
+                                </svg>
+                                | 100% đánh giá uy tín
+                            </div>
                         </div>
+                        <ul>
+                            <li>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#like"></use>
+                                </svg>
+                                <h4>Chi phí minh bạch</h4>
+                            </li>
+                            <li>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#dam-bao"></use>
+                                </svg>
+                                <h4>Hàng hóa được đảm bảo</h4>
+                            </li>
+                            <li>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#date"></use>
+                                </svg>
+                                <h4>Giao hàng từ 10 - 15 ngày làm việc</h4>
+                            </li>
+                            <li>
+                                <svg class="icon-us" style="width: 35px;height: 35px;">
+                                    <use xlink:href="images/icons/icon.svg#tietkiem"></use>
+                                </svg>
+                                <h4>Mua càng nhiều, tiết kiệm càng nhiều</h4>
+                            </li>
+                        </ul>
                     </div>
-                    <ul>
-                        <li>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#like"></use>
-                            </svg>
-                            <h4>Chi phí minh bạch</h4>
-                        </li>
-                        <li>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#dam-bao"></use>
-                            </svg>
-                            <h4>Hàng hóa được đảm bảo</h4>
-                        </li>
-                        <li>
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#date"></use>
-                            </svg>
-                            <h4>Giao hàng từ 10 - 15 ngày làm việc</h4>
-                        </li>
-                        <li>
-                            <svg class="icon-us" style="width: 35px;height: 35px;">
-                                <use xlink:href="images/icons/icon.svg#tietkiem"></use>
-                            </svg>
-                            <h4>Mua càng nhiều, tiết kiệm càng nhiều</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="ct_hotline">
-                    <span>Hotline</span>
-                    <strong><a href="">
-                            <svg class="icon-us">
-                                <use xlink:href="images/icons/icon.svg#hotline"></use>
-                            </svg>
-                            1900 633 600
-                        </a></strong>
+                    <div class="ct_hotline">
+                        <span>Hotline</span>
+                        <strong><a href="">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#hotline"></use>
+                                </svg>
+                                1900 633 600
+                            </a></strong>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1166,15 +1175,665 @@
     <!-- ĐÁNH GIÁ SẢN PHẨM -->
     <div class="sp_danhgia bg_warp">
         <h2 class="title-label">Đánh giá sản phẩm</h2>
-        <div class="tab-bl flex">
-            <a href="" class="active">Bình luận trên Amazon (100)</a>
-            <a href="">Bình luận trên trang (200)</a>
+        <div class="swiper-container mb30" id="slide-evaluate">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="thumb_img thumb_5x5" href="" title="#">
+                        <img src="images/graphics/thumb_slide.png">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+        <div class="box-evaluate flex mb30">
+            <div class="flex box-evaluate__left">
+                <div class="text">
+                    <h4>Đánh giá</h4>
+                    <span>(27 nhận xét)</span>
+                </div>
+                <div class="point">
+                    <div class="number">4.5/5</div>
+                    <div class="ct_star">
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#star-full"></use>
+                        </svg>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#star-full"></use>
+                        </svg>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#star-full"></use>
+                        </svg>
+                        <svg class="icon-us">
+                            <use xlink:href="images/icons/icon.svg#star-full"></use>
+                        </svg>
+                        <svg class="icon-us not">
+                            <use xlink:href="images/icons/icon.svg#star-none"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex box-evaluate__right">
+                <a class="active" href="#">Tất cả</a>
+                <a href="#">5 Sao (122)</a>
+                <a href="#">4 Sao (122)</a>
+                <a href="#">3 Sao (122)</a>
+                <a href="#">3 Sao (122)</a>
+                <a href="#">2 Sao (122)</a>
+                <a href="#">1 Sao (122)</a>
+                <a href="#">Có bình luận (0)</a>
+            </div>
+        </div>
+        <!-- List Comment -->
+        <div class="list-comment">
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                    <div class="lisst-img">
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                    <div class="lisst-img">
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                    <div class="lisst-img">
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                </div>
+            </div>
+            <div class="item-comment">
+                <div class="info-comment">
+                    <div class="avatar">
+                        <img src="images/graphics/thumb_1x1.jpg">
+                    </div>
+                    <div class="flex">
+                        <div class="name">
+                            <strong>Vivek D</strong>
+                            <div class="ct_star">
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us">
+                                    <use xlink:href="images/icons/icon.svg#star-full">
+                                    </use>
+                                </svg>
+                                <svg class="icon-us not">
+                                    <use xlink:href="images/icons/icon.svg#star-none">
+                                    </use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="note">
+                            <span>Awesome Quality at Great Price</span>
+                            <div class="date">December 14, 2018</div>
+                        </div>
+                    </div>
+                    <div class="txt_12 mt5">Color: BLACK | <a class="color_green" href=""><strong>Verified
+                                Purchase</strong></a></div>
+                </div>
+                <div class="content-comment">
+                    <p>I'm one of the very, very few people who cannot use the apple air pods. No matter how
+                        hard I
+                        try, they fall out of my ear in less than a minute. I thought I would try a
+                        different brand,
+                        and when I put these in my ear, they fell out within seconds. I was about to give
+                        up, pack
+                        up the box, and send it back, but I decided to check out the instruction manual in
+                        case i
+                        was doing something wrong. I’m so happy I did. Turns out there were 4 sizes of
+                        plastic ear
+                        caps included with the earbuds. On my third try, the second smallest ones, I felt
+                        how i
+                        imagine Cinderella felt when she tried on the glass slipper. They were perfect and
+                        no matter
+                        how much I jumped up and down or shook my head, they stayed in place! The quality of
+                        sound
+                        is impeccable, nice highs and lows, with a decent amount of bass. Once I found the
+                        right
+                        match, the fit was extremely comfortable. I love these headphones, they have already
+                        changed
+                        my life for the better!</p>
+                    <div class="lisst-img">
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                        <a href="#"><img src="https://via.placeholder.com/66x88"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul id="pagination" class="pagination mt20">
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#prev2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link icon" href="#">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#prev1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link icon" href="#">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#next1"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">
+                    <svg class="icon-us">
+                        <use xlink:href="images/icons/icon.svg#next2"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        <!-- End List Comment -->
     </div>
 </section>
 
 <!--POPUP THÔNG BÁO mfp-hide-->
-<div id="detail-price-popup" class="white-popup">
+<div id="detail-price-popup" class="mfp-hide white-popup">
     <div class="content_poup">
         <div class="wrap_price">
             <div class="head flex">
