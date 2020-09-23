@@ -1368,6 +1368,11 @@
     height: 42px;
     float: left;
     margin-right: 10px;
+    background: url(images/icons/video_play.svg) no-repeat center;
+
+    use {
+      display: none
+    }
   }
 
   .title_thumb {
