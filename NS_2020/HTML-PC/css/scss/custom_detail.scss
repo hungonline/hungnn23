@@ -88,12 +88,48 @@
 
 .fck_detail {
     font: 400 17px arial;
+
+    div[data-oembed-url],
+    p.Normal {
+        clear: both;
+        margin: 0 0 1em;
+    }
+
+    table.tbl_insert {
+        td {
+            border: 0
+        }
+    }
 }
 
 .thumb-art {
     position: relative;
     float: left;
     overflow: hidden;
+}
+
+.thumb {
+    img {
+        width: 100%;
+        float: left;
+        object-fit: cover;
+    }
+
+    .icon_thumb {
+        background-image: -webkit-linear-gradient(left, #0799ff, #21d4fd);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+
+        svg {
+            color: #fff;
+            margin: 0;
+        }
+    }
 }
 
 figure {
@@ -832,7 +868,8 @@ figure {
     padding-bottom: 20px;
     border-top: 4px solid #eeeeee;
 
-    .text_xemthem {
+    .text_xemthem,
+    .txt_xemthem {
         float: left;
         font-size: px_to_rem(20px);
         margin-bottom: 10px;
@@ -1911,3 +1948,19 @@ figure {
 
 
 /*END DETAIL LONGFORM 1 */
+
+/**TOAN NN3 UPDATE***/
+.box-insert-article {
+    .icon_thumb {
+        background-image: -webkit-gradient(linear, left top, right top, from(#0799ff), to(#21d4fd));
+        background-image: -webkit-linear-gradient(left, #0799ff, #21d4fd);
+        background-image: -o-linear-gradient(left, #0799ff, #21d4fd);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+    }
+}

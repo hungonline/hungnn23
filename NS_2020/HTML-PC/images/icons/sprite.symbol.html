@@ -21,6 +21,7 @@ They might well be outsourced to an external stylesheet of course.
 <style type="text/css">
 	svg-Arrow-Left-1-icon { width: 32px; height: 32px; }
 	svg-Arrow-Right-1-icon { width: 32px; height: 32px; }
+	svg-Comment-Reg-icon { width: 32px; height: 32px; }
 	svg-Facebook-icon { width: 32px; height: 32px; }
 	svg-Flip-Image-icon { width: 32px; height: 32px; }
 	svg-Quote-icon { width: 32px; height: 32px; }
@@ -162,7 +163,10 @@ They might well be outsourced to an external stylesheet of course.
 	svg-square-download-icon { width: 32px; height: 32px; }
 	svg-square-remove-12-icon { width: 32px; height: 32px; }
 	svg-square-upload-icon { width: 32px; height: 32px; }
+	svg-star-full-icon { width: 511px; height: 511px; }
 	svg-star-half-icon { width: 32px; height: 32px; }
+	svg-star-left-icon { width: 32px; height: 32px; }
+	svg-star-right-icon { width: 32px; height: 32px; }
 	svg-stopwatch-icon { width: 32px; height: 32px; }
 	svg-tag-icon { width: 32px; height: 32px; }
 	svg-tail-down-icon { width: 32px; height: 32px; }
@@ -203,6 +207,7 @@ for further details on how to create this embeddable sprite variant.
 <svg width="0" height="0" style="position:absolute">
 		<symbol viewBox="0 0 32 32" id="Arrow-Left-1" xmlns="http://www.w3.org/2000/svg"><path d="M22.2.6l3 2.8L12.6 16l12.6 12.6-3 2.8L6.8 16 22.2.6z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="Arrow-Right-1" xmlns="http://www.w3.org/2000/svg"><path d="M9.8 31.4l-3-2.8L19.4 16 6.8 3.4l3-2.8L25.2 16 9.8 31.4z"/></symbol>
+		<symbol viewBox="0 0 32 32" id="Comment-Reg" xmlns="http://www.w3.org/2000/svg"><path d="M2 0h28a2 2 0 012 2v20a2 2 0 01-2 2H20L8 32v-8H2a2 2 0 01-2-2V2a2 2 0 012-2z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="Facebook" xmlns="http://www.w3.org/2000/svg"><path d="M22.912 10.485L22.33 16h-4.409v16h-6.622V16h-3.3v-5.515h3.3v-3.32c0-4.486 1.865-7.164 7.168-7.164h4.407v5.515h-2.758c-2.058 0-2.195.777-2.195 2.214v2.756h4.99z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="Flip-Image" xmlns="http://www.w3.org/2000/svg"><path d="M10.337 27.604c.228.238.532.396.912.396.304 0 .684-.158.912-.396l3.496-3.802c.456-.554.456-1.347 0-1.822l-3.496-3.802c-.456-.554-1.292-.554-1.824-.079s-.532 1.347-.076 1.901l1.368 1.505H5.852c-1.824 0-3.268-1.505-3.268-3.406s1.444-3.406 3.268-3.406h1.14c.684 0 1.292-.634 1.292-1.347s-.608-1.347-1.292-1.347h-1.14c-3.192 0-5.853 2.693-5.853 6.099 0 3.327 2.584 6.099 5.853 6.099h5.777l-1.368 1.505c-.456.554-.38 1.426.076 1.901zM26.173 12c-.681 0-1.287.623-1.287 1.325s.605 1.325 1.287 1.325c1.816 0 3.254 1.481 3.254 3.351s-1.438 3.351-3.254 3.351h-6.887c-.681 0-1.286.623-1.286 1.325s.605 1.325 1.286 1.325h6.887c3.178 0 5.827-2.649 5.827-6 0-3.273-2.573-6-5.827-6z"/><path d="M11.142 15.852c.639 0 1.207-.592 1.207-1.259V3.039l7.239 2.592V18.74c0 .667.568 1.259 1.207 1.259s1.206-.593 1.206-1.259V4.668c0-.518-.355-1.037-.781-1.185L11.568.076c-.355-.148-.781-.074-1.065.148s-.497.593-.497 1.037v13.257c-.071.741.497 1.333 1.136 1.333zM20.801 26c-.635 0-1.199.527-1.199 1.121v1.714l-8.536.923c-.635.066-1.129.593-1.058 1.253.071.593.564.989 1.199.989h.141l9.595-1.055c.635-.066 1.058-.527 1.058-1.121v-2.703c0-.593-.564-1.121-1.199-1.121z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="Quote" xmlns="http://www.w3.org/2000/svg"><path d="M8.062 26.175c-4.142 0-7.735-2.678-7.735-8.376 0-8.148 7.126-12.935 11.085-13.391l.914 2.222c-2.314 1.425-4.264 3.875-4.081 5.299 2.619.171 6.883 1.539 6.883 6.838.061 4.046-2.375 7.408-7.065 7.408zm16.545 0c-4.142 0-7.735-2.678-7.735-8.376 0-8.148 7.126-12.935 11.085-13.391l.914 2.222c-2.314 1.425-4.263 3.875-4.081 5.299 2.619.171 6.883 1.539 6.883 6.838.061 4.046-2.375 7.408-7.065 7.408z"/></symbol>
@@ -344,7 +349,10 @@ for further details on how to create this embeddable sprite variant.
 		<symbol viewBox="0 0 32 32" id="square-download" xmlns="http://www.w3.org/2000/svg"><path d="M16 24c.6 0 1-.2 1.4-.6L28.8 12 26 9.2l-8 8V0h-4v17.2l-8-8L3.2 12l11.4 11.4c.4.4.8.6 1.4.6z"/><path d="M28 28H4v-6H0v8c0 1.2.8 2 2 2h28c1.2 0 2-.8 2-2v-8h-4v6z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="square-remove-12" xmlns="http://www.w3.org/2000/svg"><path d="M11.8 23l4.2-4.2 4.2 4.2 2.8-2.8-4.2-4.2 4.2-4.2L20.2 9 16 13.2 11.8 9 9 11.8l4.2 4.2L9 20.2z"/><path d="M30 0H2C.8 0 0 .8 0 2v28c0 1.2.8 2 2 2h28c1.2 0 2-.8 2-2V2c0-1.2-.8-2-2-2zm-2 28H4V4h24v24z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="square-upload" xmlns="http://www.w3.org/2000/svg"><path d="M14 6.8V24h4V6.8l8 8 2.8-2.8L17.4.6c-.8-.8-2-.8-2.8 0L3.2 12 6 14.8l8-8z"/><path d="M28 28H4v-6H0v8c0 1.2.8 2 2 2h28c1.2 0 2-.8 2-2v-8h-4v6z"/></symbol>
+		<symbol viewBox="0 -10 511.99 511" id="star-full" xmlns="http://www.w3.org/2000/svg"><path d="M510.652 185.902a27.158 27.158 0 00-23.425-18.71l-147.774-13.419-58.433-136.77C276.71 6.98 266.898.494 255.996.494s-20.715 6.487-25.023 16.534l-58.434 136.746-147.797 13.418a27.208 27.208 0 00-23.402 18.71c-3.371 10.368-.258 21.739 7.957 28.907l111.7 97.96-32.938 145.09c-2.41 10.668 1.73 21.696 10.582 28.094 4.757 3.438 10.324 5.188 15.937 5.188 4.84 0 9.64-1.305 13.95-3.883l127.468-76.184 127.422 76.184c9.324 5.61 21.078 5.097 29.91-1.305a27.223 27.223 0 0010.582-28.094l-32.937-145.09 111.699-97.94a27.224 27.224 0 007.98-28.927zm0 0"/></symbol>
 		<symbol viewBox="0 0 32 32" id="star-half" xmlns="http://www.w3.org/2000/svg"><path d="M16 .73c-.728 0-1.456.342-1.794 1.024l-3.86 7.822-8.634 1.254c-1.634.238-2.296 2.252-1.108 3.412l6.248 6.088-1.474 8.598c-.278 1.628 1.434 2.878 2.902 2.108L16 26.978V.73z"/></symbol>
+		<symbol viewBox="0 0 32 32" id="star-left" xmlns="http://www.w3.org/2000/svg"><path d="M15.195 26.633c.244-.169.525-.254.805-.254V0c-.565 0-1.13.331-1.367.992l-3.098 8.669a1.467 1.467 0 01-1.303.991l-8.836.404c-.861.039-1.398.78-1.398 1.538 0 .429.172.864.553 1.182l6.921 5.762a1.57 1.57 0 01.498 1.603L5.607 30.06c-.361 1.361 1.086 2.461 2.211 1.681l7.375-5.108z"/></symbol>
+		<symbol viewBox="0 0 32 32" id="star-right" xmlns="http://www.w3.org/2000/svg"><path d="M16.805 26.633a1.413 1.413 0 00-.805-.254V0c.565 0 1.13.331 1.367.992l3.097 8.669c.205.574.718.964 1.303.991l8.836.404c.861.039 1.398.78 1.398 1.538 0 .429-.172.864-.553 1.182l-6.921 5.762a1.57 1.57 0 00-.498 1.603l2.363 8.919c.361 1.361-1.086 2.461-2.211 1.681l-7.375-5.108z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="stopwatch" xmlns="http://www.w3.org/2000/svg"><path d="M25.4.6c-.8-.8-2-.8-2.8 0s-.8 2 0 2.8L24.2 5l-1.8 1.8C20 5 17.2 4 14 4 6.2 4 0 10.2 0 18s6.2 14 14 14 14-6.2 14-14c0-3.2-1-6-2.8-8.4L27 7.8l1.6 1.6c.4.4.8.6 1.4.6s1-.2 1.4-.6c.8-.8.8-2 0-2.8l-6-6zM14 28C8.4 28 4 23.6 4 18S8.4 8 14 8s10 4.4 10 10-4.4 10-10 10z"/><path d="M16 12h-4v8h8v-4h-4z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="tag" xmlns="http://www.w3.org/2000/svg"><path d="M31.4 16.6l-16-16C15 .2 14.6 0 14 0H2C.8 0 0 .8 0 2v12c0 .6.2 1 .6 1.4l16 16c.4.4.8.6 1.4.6s1-.2 1.4-.6l12-12c.8-.8.8-2 0-2.8zM8 10c-1.2 0-2-.8-2-2s.8-2 2-2 2 .8 2 2-.8 2-2 2z"/></symbol>
 		<symbol viewBox="0 0 32 32" id="tail-down" xmlns="http://www.w3.org/2000/svg"><path d="M29.4 18.6l-2.8-2.8-8.6 8.6V0h-4v24.4l-8.6-8.6-2.8 2.8L16 32z"/></symbol>
@@ -411,6 +419,17 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>Arrow-Right-1</h2>
+				</li>
+				<li title="Comment-Reg">
+					<div class="icon-box">
+						
+						<!-- Comment-Reg -->
+						<svg class="svg-Comment-Reg-icon">
+							<use xlink:href="#Comment-Reg"></use>
+						</svg>
+						
+					</div>
+					<h2>Comment-Reg</h2>
 				</li>
 				<li title="Facebook">
 					<div class="icon-box">
@@ -1963,6 +1982,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>square-upload</h2>
 				</li>
+				<li title="star-full">
+					<div class="icon-box">
+						
+						<!-- star-full -->
+						<svg class="svg-star-full-icon">
+							<use xlink:href="#star-full"></use>
+						</svg>
+						
+					</div>
+					<h2>star-full</h2>
+				</li>
 				<li title="star-half">
 					<div class="icon-box">
 						
@@ -1973,6 +2003,28 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>star-half</h2>
+				</li>
+				<li title="star-left">
+					<div class="icon-box">
+						
+						<!-- star-left -->
+						<svg class="svg-star-left-icon">
+							<use xlink:href="#star-left"></use>
+						</svg>
+						
+					</div>
+					<h2>star-left</h2>
+				</li>
+				<li title="star-right">
+					<div class="icon-box">
+						
+						<!-- star-right -->
+						<svg class="svg-star-right-icon">
+							<use xlink:href="#star-right"></use>
+						</svg>
+						
+					</div>
+					<h2>star-right</h2>
 				</li>
 				<li title="stopwatch">
 					<div class="icon-box">
@@ -2192,6 +2244,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>Arrow-Right-1</h2>
+				</li>
+				<li title="Comment-Reg">
+					<div class="icon-box">
+						
+						<!-- Comment-Reg -->
+						<svg class="svg-Comment-Reg-icon">
+							<use xlink:href="icon.svg#Comment-Reg"></use>
+						</svg>
+						
+					</div>
+					<h2>Comment-Reg</h2>
 				</li>
 				<li title="Facebook">
 					<div class="icon-box">
@@ -3744,6 +3807,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>square-upload</h2>
 				</li>
+				<li title="star-full">
+					<div class="icon-box">
+						
+						<!-- star-full -->
+						<svg class="svg-star-full-icon">
+							<use xlink:href="icon.svg#star-full"></use>
+						</svg>
+						
+					</div>
+					<h2>star-full</h2>
+				</li>
 				<li title="star-half">
 					<div class="icon-box">
 						
@@ -3754,6 +3828,28 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>star-half</h2>
+				</li>
+				<li title="star-left">
+					<div class="icon-box">
+						
+						<!-- star-left -->
+						<svg class="svg-star-left-icon">
+							<use xlink:href="icon.svg#star-left"></use>
+						</svg>
+						
+					</div>
+					<h2>star-left</h2>
+				</li>
+				<li title="star-right">
+					<div class="icon-box">
+						
+						<!-- star-right -->
+						<svg class="svg-star-right-icon">
+							<use xlink:href="icon.svg#star-right"></use>
+						</svg>
+						
+					</div>
+					<h2>star-right</h2>
 				</li>
 				<li title="stopwatch">
 					<div class="icon-box">
@@ -3939,7 +4035,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Wed, 16 Sep 2020 10:13:03 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Tue, 22 Sep 2020 01:56:51 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>

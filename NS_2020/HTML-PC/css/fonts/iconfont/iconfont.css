@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1600306650642');
-	src: url('iconfont.eot?#iefix-1600306650642') format('embedded-opentype'),
-		url('iconfont.woff2?1600306650642') format('woff2'),
-		url('iconfont.woff?1600306650642') format('woff'),
-		url('iconfont.ttf?1600306650642') format('truetype');
+	src: url('iconfont.eot?1600740463594');
+	src: url('iconfont.eot?#iefix-1600740463594') format('embedded-opentype'),
+		url('iconfont.woff2?1600740463594') format('woff2'),
+		url('iconfont.woff?1600740463594') format('woff'),
+		url('iconfont.ttf?1600740463594') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -140,536 +140,552 @@ Glyphs list
 			content: '\ea1b';
 		}
 
-		 .iconfont-curved-next:before {
+		 .iconfont-Comment-Reg:before {
 			content: '\ea1c';
 		}
 
-		 .iconfont-curved-previous:before {
+		 .iconfont-curved-next:before {
 			content: '\ea1d';
 		}
 
-		 .iconfont-disk-2:before {
+		 .iconfont-curved-previous:before {
 			content: '\ea1e';
 		}
 
-		 .iconfont-eclick:before {
+		 .iconfont-disk-2:before {
 			content: '\ea1f';
 		}
 
-		 .iconfont-edit-75:before {
+		 .iconfont-eclick:before {
 			content: '\ea20';
 		}
 
-		 .iconfont-email-83:before {
+		 .iconfont-edit-75:before {
 			content: '\ea21';
 		}
 
-		 .iconfont-enlarge-45:before {
+		 .iconfont-email-83:before {
 			content: '\ea22';
 		}
 
-		 .iconfont-enlarge-46:before {
+		 .iconfont-enlarge-45:before {
 			content: '\ea23';
 		}
 
-		 .iconfont-eraser-33:before {
+		 .iconfont-enlarge-46:before {
 			content: '\ea24';
 		}
 
-		 .iconfont-Facebook:before {
+		 .iconfont-eraser-33:before {
 			content: '\ea25';
 		}
 
-		 .iconfont-favourite-28:before {
+		 .iconfont-Facebook:before {
 			content: '\ea26';
 		}
 
-		 .iconfont-filter-check:before {
+		 .iconfont-favourite-28:before {
 			content: '\ea27';
 		}
 
-		 .iconfont-Flip-Image:before {
+		 .iconfont-filter-check:before {
 			content: '\ea28';
 		}
 
-		 .iconfont-fullscreen-double-74:before {
+		 .iconfont-Flip-Image:before {
 			content: '\ea29';
 		}
 
-		 .iconfont-funnel-40:before {
+		 .iconfont-fullscreen-double-74:before {
 			content: '\ea2a';
 		}
 
-		 .iconfont-grid-45:before {
+		 .iconfont-funnel-40:before {
 			content: '\ea2b';
 		}
 
-		 .iconfont-grid-48:before {
+		 .iconfont-grid-45:before {
 			content: '\ea2c';
 		}
 
-		 .iconfont-home-1-2:before {
+		 .iconfont-grid-48:before {
 			content: '\ea2d';
 		}
 
-		 .iconfont-ic_closed_caption_24px:before {
+		 .iconfont-home-1-2:before {
 			content: '\ea2e';
 		}
 
-		 .iconfont-image-01:before {
+		 .iconfont-ic_closed_caption_24px:before {
 			content: '\ea2f';
 		}
 
-		 .iconfont-l-facebook:before {
+		 .iconfont-image-01:before {
 			content: '\ea30';
 		}
 
-		 .iconfont-l-google:before {
+		 .iconfont-l-facebook:before {
 			content: '\ea31';
 		}
 
-		 .iconfont-l-pinterest:before {
+		 .iconfont-l-google:before {
 			content: '\ea32';
 		}
 
-		 .iconfont-l-twitter:before {
+		 .iconfont-l-pinterest:before {
 			content: '\ea33';
 		}
 
-		 .iconfont-like-2:before {
+		 .iconfont-l-twitter:before {
 			content: '\ea34';
 		}
 
-		 .iconfont-link-72:before {
+		 .iconfont-like-2:before {
 			content: '\ea35';
 		}
 
-		 .iconfont-lock-open:before {
+		 .iconfont-link-72:before {
 			content: '\ea36';
 		}
 
-		 .iconfont-lock:before {
+		 .iconfont-lock-open:before {
 			content: '\ea37';
 		}
 
-		 .iconfont-log-in:before {
+		 .iconfont-lock:before {
 			content: '\ea38';
 		}
 
-		 .iconfont-log-out:before {
+		 .iconfont-log-in:before {
 			content: '\ea39';
 		}
 
-		 .iconfont-logo-fb-simple:before {
+		 .iconfont-log-out:before {
 			content: '\ea3a';
 		}
 
-		 .iconfont-logo-google-plus:before {
+		 .iconfont-logo-fb-simple:before {
 			content: '\ea3b';
 		}
 
-		 .iconfont-logo-pinterest:before {
+		 .iconfont-logo-google-plus:before {
 			content: '\ea3c';
 		}
 
-		 .iconfont-logo-rss:before {
+		 .iconfont-logo-pinterest:before {
 			content: '\ea3d';
 		}
 
-		 .iconfont-logo-twitter:before {
+		 .iconfont-logo-rss:before {
 			content: '\ea3e';
 		}
 
-		 .iconfont-media-1:before {
+		 .iconfont-logo-twitter:before {
 			content: '\ea3f';
 		}
 
-		 .iconfont-media-2:before {
+		 .iconfont-media-1:before {
 			content: '\ea40';
 		}
 
-		 .iconfont-media-3:before {
+		 .iconfont-media-2:before {
 			content: '\ea41';
 		}
 
-		 .iconfont-media-4:before {
+		 .iconfont-media-3:before {
 			content: '\ea42';
 		}
 
-		 .iconfont-media-5:before {
+		 .iconfont-media-4:before {
 			content: '\ea43';
 		}
 
-		 .iconfont-media-6:before {
+		 .iconfont-media-5:before {
 			content: '\ea44';
 		}
 
-		 .iconfont-media-7:before {
+		 .iconfont-media-6:before {
 			content: '\ea45';
 		}
 
-		 .iconfont-menu-34:before {
+		 .iconfont-media-7:before {
 			content: '\ea46';
 		}
 
-		 .iconfont-menu-bold:before {
+		 .iconfont-menu-34:before {
 			content: '\ea47';
 		}
 
-		 .iconfont-menu-dots:before {
+		 .iconfont-menu-bold:before {
 			content: '\ea48';
 		}
 
-		 .iconfont-minimal-down:before {
+		 .iconfont-menu-dots:before {
 			content: '\ea49';
 		}
 
-		 .iconfont-minimal-left:before {
+		 .iconfont-minimal-down:before {
 			content: '\ea4a';
 		}
 
-		 .iconfont-minimal-right:before {
+		 .iconfont-minimal-left:before {
 			content: '\ea4b';
 		}
 
-		 .iconfont-minimal-up:before {
+		 .iconfont-minimal-right:before {
 			content: '\ea4c';
 		}
 
-		 .iconfont-mobile-button:before {
+		 .iconfont-minimal-up:before {
 			content: '\ea4d';
 		}
 
-		 .iconfont-ns-arrow:before {
+		 .iconfont-mobile-button:before {
 			content: '\ea4e';
 		}
 
-		 .iconfont-ns-camera:before {
+		 .iconfont-ns-arrow:before {
 			content: '\ea4f';
 		}
 
-		 .iconfont-ns-comment:before {
+		 .iconfont-ns-camera:before {
 			content: '\ea50';
 		}
 
-		 .iconfont-ns-flag:before {
+		 .iconfont-ns-comment:before {
 			content: '\ea51';
 		}
 
-		 .iconfont-ns-pick:before {
+		 .iconfont-ns-flag:before {
 			content: '\ea52';
 		}
 
-		 .iconfont-ns-play-2:before {
+		 .iconfont-ns-pick:before {
 			content: '\ea53';
 		}
 
-		 .iconfont-ns-play:before {
+		 .iconfont-ns-play-2:before {
 			content: '\ea54';
 		}
 
-		 .iconfont-ns-quote:before {
+		 .iconfont-ns-play:before {
 			content: '\ea55';
 		}
 
-		 .iconfont-ns-shop:before {
+		 .iconfont-ns-quote:before {
 			content: '\ea56';
 		}
 
-		 .iconfont-ns-video:before {
+		 .iconfont-ns-shop:before {
 			content: '\ea57';
 		}
 
-		 .iconfont-ns-wedding-1:before {
+		 .iconfont-ns-video:before {
 			content: '\ea58';
 		}
 
-		 .iconfont-ns-wedding-2:before {
+		 .iconfont-ns-wedding-1:before {
 			content: '\ea59';
 		}
 
-		 .iconfont-ns-wedding-3:before {
+		 .iconfont-ns-wedding-2:before {
 			content: '\ea5a';
 		}
 
-		 .iconfont-ns-wedding-4:before {
+		 .iconfont-ns-wedding-3:before {
 			content: '\ea5b';
 		}
 
-		 .iconfont-ns-wedding-5:before {
+		 .iconfont-ns-wedding-4:before {
 			content: '\ea5c';
 		}
 
-		 .iconfont-ns-wedding-6:before {
+		 .iconfont-ns-wedding-5:before {
 			content: '\ea5d';
 		}
 
-		 .iconfont-ns-wedding-7:before {
+		 .iconfont-ns-wedding-6:before {
 			content: '\ea5e';
 		}
 
-		 .iconfont-ns-wedding-8:before {
+		 .iconfont-ns-wedding-7:before {
 			content: '\ea5f';
 		}
 
-		 .iconfont-pencil:before {
+		 .iconfont-ns-wedding-8:before {
 			content: '\ea60';
 		}
 
-		 .iconfont-phone-2:before {
+		 .iconfont-pencil:before {
 			content: '\ea61';
 		}
 
-		 .iconfont-phone-call:before {
+		 .iconfont-phone-2:before {
 			content: '\ea62';
 		}
 
-		 .iconfont-pin-3:before {
+		 .iconfont-phone-call:before {
 			content: '\ea63';
 		}
 
-		 .iconfont-play2:before {
+		 .iconfont-pin-3:before {
 			content: '\ea64';
 		}
 
-		 .iconfont-print:before {
+		 .iconfont-play2:before {
 			content: '\ea65';
 		}
 
-		 .iconfont-quite-happy-e:before {
+		 .iconfont-print:before {
 			content: '\ea66';
 		}
 
-		 .iconfont-Quote:before {
+		 .iconfont-quite-happy-e:before {
 			content: '\ea67';
 		}
 
-		 .iconfont-refresh-01:before {
+		 .iconfont-Quote:before {
 			content: '\ea68';
 		}
 
-		 .iconfont-refresh-02:before {
+		 .iconfont-refresh-01:before {
 			content: '\ea69';
 		}
 
-		 .iconfont-refresh-19:before {
+		 .iconfont-refresh-02:before {
 			content: '\ea6a';
 		}
 
-		 .iconfont-replay:before {
+		 .iconfont-refresh-19:before {
 			content: '\ea6b';
 		}
 
-		 .iconfont-round-e-info:before {
+		 .iconfont-replay:before {
 			content: '\ea6c';
 		}
 
-		 .iconfont-search-1:before {
+		 .iconfont-round-e-info:before {
 			content: '\ea6d';
 		}
 
-		 .iconfont-search-2:before {
+		 .iconfont-search-1:before {
 			content: '\ea6e';
 		}
 
-		 .iconfont-select-83:before {
+		 .iconfont-search-2:before {
 			content: '\ea6f';
 		}
 
-		 .iconfont-select-84:before {
+		 .iconfont-select-83:before {
 			content: '\ea70';
 		}
 
-		 .iconfont-send:before {
+		 .iconfont-select-84:before {
 			content: '\ea71';
 		}
 
-		 .iconfont-settings-gear-64-2:before {
+		 .iconfont-send:before {
 			content: '\ea72';
 		}
 
-		 .iconfont-settings-gear-64:before {
+		 .iconfont-settings-gear-64-2:before {
 			content: '\ea73';
 		}
 
-		 .iconfont-shape-star:before {
+		 .iconfont-settings-gear-64:before {
 			content: '\ea74';
 		}
 
-		 .iconfont-share-2:before {
+		 .iconfont-shape-star:before {
 			content: '\ea75';
 		}
 
-		 .iconfont-share-26:before {
+		 .iconfont-share-2:before {
 			content: '\ea76';
 		}
 
-		 .iconfont-share-91:before {
+		 .iconfont-share-26:before {
 			content: '\ea77';
 		}
 
-		 .iconfont-share-92:before {
+		 .iconfont-share-91:before {
 			content: '\ea78';
 		}
 
-		 .iconfont-shuffle-98:before {
+		 .iconfont-share-92:before {
 			content: '\ea79';
 		}
 
-		 .iconfont-simple-add:before {
+		 .iconfont-shuffle-98:before {
 			content: '\ea7a';
 		}
 
-		 .iconfont-simple-remove:before {
+		 .iconfont-simple-add:before {
 			content: '\ea7b';
 		}
 
-		 .iconfont-single-01:before {
+		 .iconfont-simple-remove:before {
 			content: '\ea7c';
 		}
 
-		 .iconfont-single-copy-04:before {
+		 .iconfont-single-01:before {
 			content: '\ea7d';
 		}
 
-		 .iconfont-slider:before {
+		 .iconfont-single-copy-04:before {
 			content: '\ea7e';
 		}
 
-		 .iconfont-small-delete:before {
+		 .iconfont-slider:before {
 			content: '\ea7f';
 		}
 
-		 .iconfont-small-down:before {
+		 .iconfont-small-delete:before {
 			content: '\ea80';
 		}
 
-		 .iconfont-small-left:before {
+		 .iconfont-small-down:before {
 			content: '\ea81';
 		}
 
-		 .iconfont-small-right:before {
+		 .iconfont-small-left:before {
 			content: '\ea82';
 		}
 
-		 .iconfont-small-triangle-down:before {
+		 .iconfont-small-right:before {
 			content: '\ea83';
 		}
 
-		 .iconfont-small-triangle-left:before {
+		 .iconfont-small-triangle-down:before {
 			content: '\ea84';
 		}
 
-		 .iconfont-small-triangle-right:before {
+		 .iconfont-small-triangle-left:before {
 			content: '\ea85';
 		}
 
-		 .iconfont-small-triangle-up:before {
+		 .iconfont-small-triangle-right:before {
 			content: '\ea86';
 		}
 
-		 .iconfont-small-up:before {
+		 .iconfont-small-triangle-up:before {
 			content: '\ea87';
 		}
 
-		 .iconfont-square-add-11:before {
+		 .iconfont-small-up:before {
 			content: '\ea88';
 		}
 
-		 .iconfont-square-delete-13:before {
+		 .iconfont-square-add-11:before {
 			content: '\ea89';
 		}
 
-		 .iconfont-square-download:before {
+		 .iconfont-square-delete-13:before {
 			content: '\ea8a';
 		}
 
-		 .iconfont-square-remove-12:before {
+		 .iconfont-square-download:before {
 			content: '\ea8b';
 		}
 
-		 .iconfont-square-upload:before {
+		 .iconfont-square-remove-12:before {
 			content: '\ea8c';
 		}
 
-		 .iconfont-star-half:before {
+		 .iconfont-square-upload:before {
 			content: '\ea8d';
 		}
 
-		 .iconfont-stopwatch:before {
+		 .iconfont-star-full:before {
 			content: '\ea8e';
 		}
 
-		 .iconfont-tag:before {
+		 .iconfont-star-half:before {
 			content: '\ea8f';
 		}
 
-		 .iconfont-tail-down:before {
+		 .iconfont-star-left:before {
 			content: '\ea90';
 		}
 
-		 .iconfont-tail-left:before {
+		 .iconfont-star-right:before {
 			content: '\ea91';
 		}
 
-		 .iconfont-tail-right:before {
+		 .iconfont-stopwatch:before {
 			content: '\ea92';
 		}
 
-		 .iconfont-tail-up:before {
+		 .iconfont-tag:before {
 			content: '\ea93';
 		}
 
-		 .iconfont-tap-01:before {
+		 .iconfont-tail-down:before {
 			content: '\ea94';
 		}
 
-		 .iconfont-time-3:before {
+		 .iconfont-tail-left:before {
 			content: '\ea95';
 		}
 
-		 .iconfont-trash:before {
+		 .iconfont-tail-right:before {
 			content: '\ea96';
 		}
 
-		 .iconfont-triangle-left:before {
+		 .iconfont-tail-up:before {
 			content: '\ea97';
 		}
 
-		 .iconfont-triangle-right:before {
+		 .iconfont-tap-01:before {
 			content: '\ea98';
 		}
 
-		 .iconfont-tv-2:before {
+		 .iconfont-time-3:before {
 			content: '\ea99';
 		}
 
-		 .iconfont-Twitter:before {
+		 .iconfont-trash:before {
 			content: '\ea9a';
 		}
 
-		 .iconfont-weather-1:before {
+		 .iconfont-triangle-left:before {
 			content: '\ea9b';
 		}
 
-		 .iconfont-Youtube:before {
+		 .iconfont-triangle-right:before {
 			content: '\ea9c';
 		}
 
-		 .iconfont-zoom-2:before {
+		 .iconfont-tv-2:before {
 			content: '\ea9d';
 		}
 
-		 .iconfont-zoom-88:before {
+		 .iconfont-Twitter:before {
 			content: '\ea9e';
 		}
 
-		 .iconfont-zoom-e:before {
+		 .iconfont-weather-1:before {
 			content: '\ea9f';
 		}
 
-		 .iconfont-Zoom:before {
+		 .iconfont-Youtube:before {
 			content: '\eaa0';
+		}
+
+		 .iconfont-zoom-2:before {
+			content: '\eaa1';
+		}
+
+		 .iconfont-zoom-88:before {
+			content: '\eaa2';
+		}
+
+		 .iconfont-zoom-e:before {
+			content: '\eaa3';
+		}
+
+		 .iconfont-Zoom:before {
+			content: '\eaa4';
 		}
 
 		

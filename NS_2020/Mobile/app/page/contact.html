@@ -1,0 +1,73 @@
+<!-- build:title -->Ngôi sao Redesign
+<!-- /build:title -->
+<!-- build:head2 -->
+<link rel="stylesheet" href="css/home.css" media="all" />
+<!-- /build:head2 -->
+
+<!-- build:content -->
+<section class="contact-us">
+    <ul class="form_element">
+        <li>
+            <label class="label_form">Họ tên<sup class="txt_error">*</sup></label>
+            <input class="input_form" type="text">
+            <div class="txt_error">Lỗi</div>
+        </li>
+        <li>
+            <label class="label_form">Email<sup class="txt_error">*</sup></label>
+            <input class="input_form" type="email">
+            <div class="txt_error">Lỗi</div>
+        </li>
+        <li>
+            <label class="label_form">Gửi tới<sup class="txt_error">*</sup></label>
+            <select class="input_form">
+                <option>Ban biên tập</option>
+                <option>Ban Thời sự</option>
+            </select>
+        </li>
+        <li>
+            <label class="label_form">Tiêu đề<sup class="txt_error">*</sup></label>
+            <input class="input_form" type="email">
+            <div class="txt_error">Lỗi</div>
+        </li>
+        <li>
+            <label class="label_form">File đính kèm</label>
+            <input type="file">
+        </li>
+        <li>
+            <label class="label_form">Nội dung</label>
+            <textarea class="input_form input_area"></textarea>
+            <div class="txt_note_form">Số lượng chữ tối thiểu là 5 từ</div>
+        </li>
+        <li>
+            <label class="label_form">Nhập mã xác nhận:</label>
+            <input class="input_30 left input_form" type="text">
+            <div class="capcha" id="showCaptcha_pvtt"><img width="70" height="26"
+                    alt="Mã xác nhận gửi bài viết đến tòa soạn" src="images/graphics/txt_capcha.gif"><br><input
+                    type="hidden" name="captchaID1" id="captchaID1" value="d46f7f064c76f709462a29b7da79772c"></div>
+            <a class="btn_refrest" href="javascript:;" onclick="loadCaptcha();" title="Tạo mã khác"><img
+                    src="images/graphics/refesh.gif"></a>
+            <div class="txt_error">Mã xác nhận không được để trống</div>
+        </li>
+        <li>
+            <button type="button" id="btn_send" class="btn_vne">Gửi</button>
+            <input type="hidden" id="article_id" value="3532491">
+            <a href="#" class="btn_vne txt_clear_all">Xóa trắng</a>
+        </li>
+    </ul>
+    <p class="require_txt">Phần có dấu (*) là thông tin bắt buộc</p>
+</section>
+
+
+<article class="art_item section_padding banner_ads mb20 center">
+    <p class="text_ads mb10" style="color: #56738F;">Quảng cáo</p>
+    <a href="#">
+        <img src="images/graphics/banner_ads.png">
+    </a>
+</article>
+<!-- /build:content -->
+
+<!-- build:script2 -->
+<script>
+
+</script>
+<!-- /build:script2 -->

@@ -27,9 +27,6 @@
     }
 }
 
-
-
-
 .box_tieudiem_home {
     .bg-white {
         padding: 0 12px;
@@ -134,4 +131,125 @@
             }
         }
     }
+}
+
+.tag-navigation {
+    margin-top: 12px;
+    font: 500 20px var(--font-title);
+
+    .title {
+        color: #0963C8;
+        font-size: 20px;
+        font-weight: 500;
+
+        a {
+            color: #0963C8;
+        }
+    }
+}
+
+.page_404 {
+    text-align: center;
+    background: #fff;
+    padding: 45px 12px;
+    color: var(--gray800);
+    font-size: 16px;
+
+    h1 {
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font: 500 18px var(--font-title);
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #168fd6;
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+
+    .search-form {
+        margin-bottom: 16px;
+    }
+
+    .chose_search_404 {
+        display: inline-block;
+
+        label {
+            margin: 0 10px;
+        }
+
+        input {
+            appearance: auto;
+            margin-right: 3px;
+        }
+    }
+}
+
+.page_rss {
+    background: #fff;
+    padding: 24px 12px 10px 12px;
+    color: var(--gray800);
+    font-size: 18px;
+    line-height: 1.5;
+
+    h1 {
+        font: 500 22px var(--font-title);
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font: 500 20px var(--font-title);
+        margin-bottom: 12px;
+    }
+
+    p {
+        margin-bottom: 24px;
+    }
+
+    .list_rss {
+        li {
+            position: relative;
+            padding-right: 40px;
+            border-bottom: 1px solid #D8E1EB;
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+
+            .rss_feed {
+                position: absolute;
+                right: 0;
+                background: #EE802F;
+                border-radius: 1px;
+                width: 24px;
+                height: 24px;
+                line-height: 22px;
+                text-align: center;
+
+                svg {
+                    fill: #fff;
+                }
+            }
+
+            .muc_rss {
+                font-size: 16px;
+            }
+
+            .link_rss {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.contact-us {
+    background: #fff;
+    padding: 24px 12px;
+
+
 }

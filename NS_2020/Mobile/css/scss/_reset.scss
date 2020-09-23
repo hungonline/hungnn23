@@ -16,7 +16,7 @@ body {
 }
 
 body {
-  color: var(--gray900);
+  color: var(--gray800);
   font: 400 px_to_rem(14px) arial;
   text-align: left;
   line-height: 1.4;
@@ -53,7 +53,7 @@ body.hidden {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 a:focus {
@@ -98,10 +98,16 @@ a:hover {
 
 .section {
   position: relative;
+  clear: both;
 }
 
 .section_padding {
   padding: 0 12px;
+  clear: both;
+
+  .search-form {
+    padding: 0
+  }
 }
 
 .bg-white {
@@ -385,6 +391,10 @@ svg.ic,
   margin-bottom: 20px !important;
 }
 
+.mb24 {
+  margin-bottom: 24px;
+}
+
 .mb25 {
   margin-bottom: 25px;
 }
@@ -403,6 +413,10 @@ svg.ic,
 
 .mt10 {
   margin-top: 10px;
+}
+
+.mt12 {
+  margin-top: 12px;
 }
 
 .mt15 {
@@ -734,6 +748,22 @@ svg.ic,
   .box_img_video {
     position: relative;
     padding-bottom: 56.25%;
+
+    img,
+    video,
+    iframe {
+      -o-object-position: top;
+      object-position: top;
+      -o-object-fit: cover;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100% !important;
+      height: 100% !important;
+    }
   }
 }
 

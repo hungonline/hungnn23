@@ -8,13 +8,35 @@
   font: 400 px_to_rem(16px) arial;
 
   li {
-    margin: 0 0 15px 0;
+    margin: 0 0 16px 0;
     position: relative;
 
     &:last-child {
       margin: 0;
     }
   }
+
+  .btn_vne {
+    background: #0963C8;
+    border-radius: 2px;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .txt_clear_all {
+    background: none;
+    color: #999 !important;
+    padding: 12px;
+  }
+}
+
+.require_txt {
+  font-size: 14px;
+  color: #1F3347;
+  border-top: 1px solid #D8E1EB;
+  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .label_form {
@@ -25,17 +47,19 @@
 
 .input_form {
   width: 100%;
-  float: left;
-  border: 1px solid #eee;
-  color: #999;
-  font: 400 px_to_rem(16px) arial;
+  border: 1px solid #D8E1EB;
+  border-radius: 3px;
+  color: #56738F;
+  font: 400 16px arial;
   height: 40px;
   padding: 2px 10px;
   background: #fff;
   outline: none;
+  transition: 0.3s ease;
 
   &:focus {
     color: #333;
+    border: 1px solid #0B84DA;
   }
 }
 
@@ -58,7 +82,7 @@ textarea {
 
 .txt_note_form {
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
   padding-top: 5px;
 }
@@ -67,6 +91,7 @@ textarea {
   .txt_error {
     padding-left: 5px;
     padding-top: 0;
+    color: #0963C8
   }
 }
 
@@ -174,7 +199,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1042;
+  z-index: 1046;
   overflow: hidden;
   position: fixed;
   background: #0b0b0b;
@@ -186,7 +211,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1043;
+  z-index: 1047;
   position: fixed;
   outline: none !important;
   -webkit-backface-visibility: hidden;
@@ -513,6 +538,162 @@ button::-moz-focus-inner {
     color: #fff;
     padding: 0px 30px;
     border-radius: 4px;
+  }
+}
+
+/*Lightbox Đăng nhập*/
+
+/*End Lightbox Đăng nhập*/
+/**VOTE RESULT**/
+
+
+/**RATING RESULT**/
+.rate-popup {
+
+  .box_rating {
+    width: 100% !important;
+    float: left;
+    margin: 0 !important;
+    padding: 15px !important;
+
+    .btn_vne {
+      width: 140px;
+      font-size: 17px;
+    }
+  }
+
+  .box_rating {
+    padding: 0 30px;
+    text-align: center;
+    background: none;
+    border: none;
+  }
+
+  .rating {
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
+
+// .content_border_top {
+//   border-top: 1px solid #e7e7e7;
+// }
+
+// .list_rating_res {
+//   background: #f7f7f7;
+//   border-top: 1px solid #e7e7e7;
+//   border-left: 1px solid #e7e7e7;
+//   border-right: 1px solid #e7e7e7;
+
+//   .row_rating {
+//     height: 50px;
+//     width: 100%;
+//     border-bottom: 1px solid #e7e7e7;
+//     position: relative;
+//     line-height: 50px;
+//     font-size: px_to_rem(16px);
+//     padding-left: 50px;
+
+//     .number_rating_pt {
+//       width: 50px;
+//       height: 49px;
+//       color: #fff;
+//       text-align: center;
+//       line-height: 50px;
+//       background: #c94171;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//     }
+
+//     .number_voted {
+//       height: 50px;
+//       line-height: 50px;
+//       position: absolute;
+//       top: 0;
+//       left: 65px;
+//     }
+
+//     .percent_rating {
+//       float: left;
+//       background: #fbd5e2;
+//       height: 49px;
+//     }
+//   }
+// }
+
+// .social_lightbox li {
+//   display: inline-block;
+//   margin: 5px 1%;
+//   width: 46%;
+//   line-height: 26px;
+// }
+
+// .note_voted {
+//   font-size: px_to_rem(16px);
+//   color: var(--blue);
+//   padding-top: 15px;
+//   margin-top: 15px;
+//   border-top: 1px solid #e7e7e7;
+//   margin-bottom: 15px;
+// }
+
+// .outer_page {
+//   .total_vote {
+//     margin-top: 20px;
+//   }
+
+//   .list_rating_res {
+//     border-top: none;
+//   }
+// }
+/**Upload file**/
+.form_element {
+  #thumbnails {
+    li {
+      width: 30%;
+      float: left;
+      height: 90px;
+      margin: 5px 5px 10px 0;
+      overflow: hidden;
+
+      .wrap {
+        height: 70px;
+        overflow: hidden;
+      }
+
+      .del_action {
+        line-height: 18px;
+        float: right;
+      }
+    }
+
+  }
+}
+
+/*Lightbox model-rating*/
+#model-rating-popup {
+  .title_popup {
+    font: 700 22px arial;
+    color: #222222;
+    padding: 18px 20px;
+  }
+
+  .content_poup {
+    background: #fff;
+    padding: 0px 5px 20px 20px;
+
+    p {
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .scrollbar-inner {
+    max-height: 350px;
+    padding-right: 15px;
   }
 }
 
@@ -886,300 +1067,6 @@ button::-moz-focus-inner {
     display: inline-block;
     padding: 9px 18px;
     margin-bottom: 15px;
-  }
-}
-
-
-/*Lightbox Đăng nhập*/
-.lightbox_dangnhap {
-  .form_element {
-    width: 100%;
-  }
-
-  .login_title {
-    font: 700 14px arial;
-    color: #000;
-    margin-bottom: 10px;
-  }
-
-  .login-left {
-    width: 100%;
-    float: left;
-  }
-
-  .login-right {
-    width: 100%;
-    float: left;
-
-    .login-txt {
-      input {
-        height: 35px;
-        background: #fff;
-        width: 100%;
-        font-size: 14px;
-        padding: 0 10px;
-        margin-bottom: 10px;
-        border: 1px solid #eaeaea;
-      }
-    }
-  }
-
-  .login-btt {
-    text-align: center;
-    margin-top: 10px;
-
-    input {
-      background: #178fd6;
-      font-size: 14px;
-      color: #fff;
-      padding: 8px 20px;
-    }
-  }
-
-  .p_social {
-    font-size: px_to_rem(14px);
-    margin: 20px 0;
-
-    a {
-      width: 134px;
-      height: 30px;
-      line-height: 30px;
-      display: inline-block;
-      text-align: center;
-      color: #fff;
-      margin-bottom: 10px;
-
-      i {
-        color: #fff;
-        float: left;
-        height: 30px;
-        width: 30px;
-        line-height: 30px;
-        border-right: 1px solid rgba(255, 255, 255, 0.27)
-      }
-
-      .icon-ns {
-        color: #fff;
-        margin: 0;
-        width: 14px;
-        height: 14px;
-      }
-    }
-
-    .facebook {
-      background: #3B589C;
-
-    }
-
-    .google {
-      background: #DA4835;
-    }
-  }
-
-  .login-type {
-    font: 700 14px arial;
-    color: #000;
-    margin-bottom: 5px;
-  }
-
-}
-
-/*End Lightbox Đăng nhập*/
-/**VOTE RESULT**/
-.ques_vote {
-  background: #f7f7f7;
-  padding: 15px;
-
-  .text_ques {
-    font: 400 px_to_rem(18px) arial;
-    line-height: $lh;
-  }
-
-  .text_kq {
-    font: 400 px_to_rem(14px) arial;
-    color: #999;
-    display: block;
-    text-transform: uppercase;
-  }
-}
-
-.list_vote_res {
-  li {
-    width: 100%;
-    float: left;
-    margin: 20px 0 0 0;
-
-    p {
-      font-size: 16px;
-      margin-bottom: 5px;
-      width: 100%;
-      float: left;
-      padding-right: 50px;
-    }
-
-    .voting {
-      width: 100%;
-      float: left;
-      position: relative;
-      padding-right: 50px;
-    }
-
-    .process_voting {
-      width: 100%;
-      height: 8px;
-      background: #ccc;
-      border-radius: 10px;
-      display: block;
-      position: relative;
-    }
-
-    .point_rt {
-      position: absolute;
-      top: -4px;
-      right: 0;
-      font-size: px_to_rem(16px);
-      color: var(--blue);
-    }
-
-    .number_voting_bar {
-      background: var(--blue);
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 10px;
-    }
-
-  }
-
-}
-
-.total_vote {
-  font-size: px_to_rem(14px);
-  color: #999;
-  margin-top: 30px;
-}
-
-/**RATING RESULT**/
-.content_border_top {
-  border-top: 1px solid #e7e7e7;
-}
-
-.list_rating_res {
-  background: #f7f7f7;
-  border-top: 1px solid #e7e7e7;
-  border-left: 1px solid #e7e7e7;
-  border-right: 1px solid #e7e7e7;
-
-  .row_rating {
-    height: 50px;
-    width: 100%;
-    border-bottom: 1px solid #e7e7e7;
-    position: relative;
-    line-height: 50px;
-    font-size: px_to_rem(16px);
-    padding-left: 50px;
-
-    .number_rating_pt {
-      width: 50px;
-      height: 49px;
-      color: #fff;
-      text-align: center;
-      line-height: 50px;
-      background: #c94171;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-
-    .number_voted {
-      height: 50px;
-      line-height: 50px;
-      position: absolute;
-      top: 0;
-      left: 65px;
-    }
-
-    .percent_rating {
-      float: left;
-      background: #fbd5e2;
-      height: 49px;
-    }
-  }
-}
-
-.social_lightbox li {
-  display: inline-block;
-  margin: 5px 1%;
-  width: 46%;
-  line-height: 26px;
-}
-
-.note_voted {
-  font-size: px_to_rem(16px);
-  color: var(--blue);
-  padding-top: 15px;
-  margin-top: 15px;
-  border-top: 1px solid #e7e7e7;
-  margin-bottom: 15px;
-}
-
-.outer_page {
-  .total_vote {
-    margin-top: 20px;
-  }
-
-  .list_rating_res {
-    border-top: none;
-  }
-}
-
-/**Upload file**/
-.form_element {
-  #thumbnails {
-    li {
-      width: 30%;
-      float: left;
-      height: 90px;
-      margin: 5px 5px 10px 0;
-      overflow: hidden;
-
-      .wrap {
-        height: 70px;
-        overflow: hidden;
-      }
-
-      .del_action {
-        line-height: 18px;
-        float: right;
-      }
-    }
-
-  }
-}
-
-/*Lightbox model-rating*/
-#model-rating-popup {
-  .title_popup {
-    font: 700 22px arial;
-    color: #222222;
-    padding: 18px 20px;
-  }
-
-  .content_poup {
-    background: #fff;
-    padding: 0px 5px 20px 20px;
-
-    p {
-      margin-bottom: 15px;
-      font-size: 18px;
-      line-height: 24px;
-    }
-  }
-
-  .scrollbar-inner {
-    max-height: 350px;
-    padding-right: 15px;
   }
 }
 
