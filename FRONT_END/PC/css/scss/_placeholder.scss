@@ -6,6 +6,12 @@
   border-radius: 3px;
   *{opacity: 0;}
 }
+.placeholder2{
+  background: #222222;
+  opacity: .1;
+  animation: fading 1.5s infinite;
+  border-radius: 3px;
+}
 .box-placeholder {
   .text {
     display: inline-block;
