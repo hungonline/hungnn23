@@ -6,6 +6,19 @@
   border-radius: 3px;
   *{opacity: 0;}
 }
+.placeholder2{
+  position: relative;border: 0!important;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: rgba(255, 255, 255, .65);
+    z-index: 2;
+  }
+}
 .box-placeholder {
   .text {
     display: inline-block;

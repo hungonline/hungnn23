@@ -1,0 +1,232 @@
+    /**BOX THAM DO Y KIEN**/
+    .vote_rating_box {
+        text-align: left;
+
+        .inner-title {
+            font-weight: 400;
+            display: inline-block;
+        }
+
+        .title_bx {
+            font-family: $font-title;
+            @extend %font-fea;
+            font-size: 15px;
+            line-height: 160%;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .item_row_bx {
+            margin-bottom: 10px !important;
+        }
+
+        .label_check {
+            position: relative;
+            width: 100%;
+            float: left;
+            padding: 7px 12px 7px 36px;
+            font-size: 17px;
+            color: #222;
+            line-height: 150%;
+            cursor: pointer;
+            background: #F3F3F3;
+            border: 1px solid #E5E5E5;
+            border-radius: 3px;
+
+            input.radio_check[type="radio"] {
+                width: 12px;
+                height: 12px;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                position: relative;
+                outline: none;
+                border: none;
+                position: absolute;
+                top: 2px;
+                left: 0;
+
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #BDBDBD;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 12px;
+                    top: 10px;
+                }
+
+                &:checked {
+                    &:before {
+                        border-color: $vne_color;
+                    }
+
+                    &:after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background: $vne_color;
+                        border-radius: 50%;
+                        position: absolute;
+                        left: 15px;
+                        top: 13px;
+                    }
+                }
+            }
+
+
+            input.radio_check[type="checkbox"] {
+                width: 12px;
+                height: 12px;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                position: relative;
+                outline: none;
+                border: none;
+                position: absolute;
+                top: 4px;
+                left: 0;
+
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid #BDBDBD;
+                    position: absolute;
+                    left: 12px;
+                    top: 10px;
+                }
+
+                &:checked {
+                    &:before {
+                        border-color: $vne_color;
+                    }
+
+                    &:after {
+                        position: absolute;
+                        left: 16px;
+                        top: 7px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid $vne_color;
+                        content: '';
+                        border-width: 0 2px 2px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+        }
+
+        .box_button {
+            margin-top: 5px;
+        }
+
+        .btn_vne {
+            width: 120px;
+            padding: 0;
+
+            &.btn_view_cancel {
+                padding: 0 12px;
+            }
+        }
+
+        &.box_vote_home {
+            background: #f7f7f7;
+            border: 1px solid #e5e5e5;
+            padding: 20px;
+
+            .item_row_bx {
+                width: 49%;
+                padding-right: 10px;
+            }
+
+            .btn_vne.btn_disable {
+                background: #e5e5e5;
+                color: #757575;
+            }
+        }
+
+        .kq-vote {
+            margin-top: 5px;
+            margin-bottom: 0;
+            height: 5px;
+            background: #E5E5E5;
+            position: relative;
+
+            strong {
+                font-weight: 400;
+                color: #222;
+            }
+
+            .percent-vote {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #178fd6;
+                border: 3px 0 0 3px;
+            }
+
+            .text-da {
+                position: relative;
+                z-index: 1;
+            }
+
+        }
+
+        .count-vote {
+            font-family: arial;
+            font-size: 12px;
+            line-height: 14px;
+            color: #757575;
+            display: inline-block;
+            /*margin-left: 20px;*/
+            float: right;
+            margin-top: 3px;
+        }
+
+        .txt-kq-vote {
+            align-items: flex-end;
+            font-size: 16px;
+            line-height: 150%;
+
+            .count-vote-kq {
+                margin-left: auto;
+                padding-left: 15px;
+                white-space: nowrap;
+                font-size: 14px;
+            }
+
+            .option-txt {
+                flex-shrink: 1;
+            }
+        }
+
+        .item-kq-vote {
+            margin-bottom: 15px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &.max-vote {
+                .txt-kq-vote {
+                    color: #178fd6;
+                }
+            }
+        }
+
+        .time-vote {
+            font-size: 14px;
+            color: #757575;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+
+    }

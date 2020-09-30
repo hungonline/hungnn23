@@ -114,7 +114,11 @@
       .item_social {
         color: $colormain;
         float: right;
-        margin: 0 0 0 5px;
+        margin: 0 4px;
+
+        svg {
+          margin-left: 0;
+        }
 
         &.item_google {
           display: none;

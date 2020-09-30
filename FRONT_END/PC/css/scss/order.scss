@@ -1531,6 +1531,34 @@
 				}
 			}
 		}
+
+		&.checked {
+			position: relative;
+
+			&::before {
+				content: "";
+				border: 1px solid var(--green2);
+				bottom: 0;
+				left: 0;
+				right: 0;
+				top: 14px;
+				position: absolute;
+				z-index: 1;
+				border-radius: 10px;
+			}
+
+			thead,
+			tbody {
+				position: relative;
+				z-index: 2;
+			}
+
+			&:first-child {
+				&::before {
+					top: 55px
+				}
+			}
+		}
 	}
 
 	.empty {
@@ -1760,10 +1788,14 @@
 			}
 		}
 	}
-	&__2{
-		.tr{
+
+	&__2 {
+		.tr {
 			border-bottom: 0;
-			.td.sp{width: 100%;}
+
+			.td.sp {
+				width: 100%;
+			}
 		}
 	}
 }

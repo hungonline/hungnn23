@@ -8,13 +8,98 @@
     <p><a href="#notice-popup" class="open-popup-link">Lightbox thông báo </a></p>
     <p><a href="#notice-popup2" class="open-popup-link">Lightbox hướng dẫn</a></p>
     <p><a href="#email-popup-2" class="open-popup-link">Lightbox gửi email</a></p>
+    <p><a href="#rate-popup-result" class="open-popup-link">rate-popup-result</a></p>
+    <p><a href="#lightbox_dangnhap" class="open-popup-link">Login</a></p>
+    <p><a href="#lightbox_vipham" class="open-popup-link">Báo cáo vi phạm</a></p>
 </div>
 
 <div id="notice-popup" class="white-popup width-medium mfp-hide">
-    <div class="mfp-content">
-        <div class="inner-popup">
-            <div class="title-popup">Thông báo</div>
-            <div class="content-popup">Hãy chọn 1 mục trước khi biểu quyết</div>
+    <div class="inner-popup">
+        <div class="title_popup">Thông báo</div>
+        <div class="content-popup">Hãy chọn 1 mục trước khi biểu quyết</div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!-- Báo cáo vi phạm -->
+<div id="lightbox_vipham" class="lightbox_vipham white-popup mfp-hide">
+    <div class="inner-popup">
+        <div class="title_popup">Báo vi phạm</div>
+        <div class="content_poup width_common">
+            <ul class="form_element">
+                <li class="width_common"><label class="label_form">Chọn lý do Vi phạm</label><select
+                        class="txt_select_lydo input_form" id="reason" style="visibility: visible;">
+                        <option value="0">Chọn</option>
+                        <option value="1">Xúc phạm, gây hại người khác</option>
+                        <option value="2">Lạc đề</option>
+                        <option value="3">Vi phạm pháp luật</option>
+                        <option value="4">Vi phạm đạo đức, thuần phong mỹ tục</option>
+                        <option value="5">Tố cáo sai sự thật</option>
+                        <option value="6">Vi phạm bản quyền</option>
+                        <option value="7">Để lộ thông tin cá nhân</option>
+                        <option value="8">Spam, rác</option>
+                        <option value="9">Lý do khác</option>
+                    </select>
+                    <div class="width_common txt_error login-desc"></div>
+                </li>
+                <li class="width_common"><label class="label_form">Ý kiến:</label><textarea name="message"
+                        class="input_form input_area"
+                        onfocus="if (this.value == 'Nội dung phản hồi khác') {this.value = '';}"
+                        onblur="if (this.value == '') {this.value = 'Nội dung phản hồi khác';}"
+                        value="Nội dung phản hồi khác">Nội dung phản hồi khác</textarea></li>
+                <li class="width_common"><label class="label_form">Địa chỉ email của bạn:</label><input name="email"
+                        class="input_form" type="email" onfocus="if (this.value == 'Email') {this.value = '';}"
+                        onblur="if (this.value == '') {this.value = 'Email';}" value="Email">
+                    <div class="width_common txt_error login-desc"></div>
+                </li>
+                <li class="width_common"><label class="label_form">Mã xác nhận:</label><input name="txtCaptcha"
+                        maxlength="4" class="input_30 left input_form" type="text">
+                    <div class="input_capcha capcha"><img height="30" width="100"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAABmJLR0QA/wD/AP+gvaeTAAAF40lEQVRoge2ZT0jT/x/HH/urqbmttuln+zjS6lCB/cMyOoQHTxUYRNClQ1RQkNIxpE7RoUPQYQe9aQTFFEWoQ7GDHgqxTgZB1ILpNjYbujmNpdvre/iyzy9/Tr8z1lywB7wZvN7v9+v5+uy59+f9+bynExGhQtmg3+4CKqylpIbodDp0Oh0Aq6urpFIpAESEgYEB2tvbqa2tpa6ujra2Nvr7+8lmsxvm+/TpE1euXEFVVUwmE3a7nXPnzjE+Pl6S6/kT6Ip9y9q1axcA6XSa5eXlDccZjUaqq6s1U7SCdDr0ej2ZTEbLt2/fPurr69Hr9VgsFiwWC8lkkpGREVZWVgCwWCwsLS2xurqKTqejt7eXO3fuYLVa0ev/nhtB0Q2Zn58HwGw2U1tbu6Zv7969AHz9+lWLTU5O0t7ejtFoxOv1cuHCBRYXF3n79i03b94klUrx5MkTDh48SDabJZFIsLCwwN27d4nH47hcLs6cOUMmkyGZTPL582e+ffuGiFBfX08qlcJms2G329m9e/e65nA41sWcTue2mWgsdkKbzbZh369G5Hj+/DkAPT093LhxAwCHw0FLSwsLCwvcvn0bv99Pd3e3Nsfv9xOPx6mpqeH9+/coirIm571793jw4AEdHR2Mjo4Sj8f5/v078Xh8XQsEAnnjdrsdh8OB2+3G6XTS0NCAoig4HA5cLhcNDQ04nU7sdnsxvjaNoq+QrdLa2sr09DTv3r2jvb19Td/MzAwej4fm5mYCgYAWf/jwIb29vVy8eBGfz7cu55cvX9i/fz8Oh4NYLLblmjKZDLFYjLm5OUKhELFYjGg0SiQSYW5ujnA4TDQaJRaLkUwmcTqdNDU14XK5cLvduN1uXC4XqqpqnzU1NQVpF32FbEZuQ//1NxCNRgFobm5eN76hoQGAUCi0Jh4OhwE4evRoXp3cikkmk5tqb1SbwWBAURQURaG1tXXTa/r58yexWIyZmRnC4TChUIhQKMT09DSzs7OEw2FmZ2cxmUyoqorb7UZRFDweD01NTaiqisfjwePxsHPnztIako9r166RyWTyLv2cEVardU381q1bdHV1ceDAgbw5JycnAfB4PEWudj1msxlVVVFVddNxiUSC2dlZQqEQkUiEYDDI1NQUIyMjBINBgsEgBoMBpIQAwhYkBwcHBZDz588XPCedTsupU6cEkO7u7oK1t1rbn2B+fl7KzpClpSUJBALi9XrFbreLwWCQ8fHxgvKHw2Hp6OgQQOrr6yUQCBSsXQ6GiEj5GZIbA4jJZBKfz/efeTOZjHi9XrFarQKI2WyWkZGRLWlXDNmAlpYWaW5uFpPJJICoqirPnj3bcPzHjx/lxIkTWm5FUWRiYmLL2hVD/oN0Oi1DQ0PS2NgogDx9+nTdmNHRUamrqxNAjEaj9PT0SCKR+C3tiiEFMjw8LIAcOXJkXVyv1wsghw4dkg8fPvy2djabrRiSo6+vT/r6+iSbzeads7CwIIBUVVVpsVAopO0Xly5dkuXl5d/SzhGJRCqG5LDZbAJIJBLJOycajQogVqtViz169EgAOXz4sKTT6S1p5zP+9evXZWPIth+D5t62X716lbd/eHgYgOPHj2uxsbExAK5evYrZbC5Ip7q6Gvj3WOX/6e/vL7zgP00p3SfPr3B0dFQAsVgs8vLlS1lZWRERkR8/fsjAwIDU1NQIIGNjY9qcPXv2aE9ULS0tm7Ycx44dE0DOnj0ri4uLIvLv4/Ljx4/FYrGUzQrZdkOy2axcv35d6zMajaIoilRVVWmx+/fvr5mTM6mQlmNoaEh0Op1m/smTJ8XlconBYJA3b95UDPmVbDYrL168kM7OTnG5XGI0GqWxsVG6urrE7/cXTd/n80lbW5vs2LFDnE6ndHZ2ytTUVNHyF4OSHb+n02ntPl4iyb+Skm3qExMTwP821wr5Kcnxu8fj0Y7ST58+XQrJv5aSrJBoNIrdbufy5csMDg6WQvKvZdv/wq2wlm1/MaywloohZUbFkDKjYkiZ8Q/6BrrEN4OblQAAAABJRU5ErkJggg==">
+                    </div><a class="btn_refrest refresh_captcha" href="javascript:;" title="Tạo mã khác"><img
+                            src="https://s.vnecdn.net/vnexpress/i/v41/refesh.gif"></a>
+                    <div class="width_common txt_error login-desc"></div>
+                </li>
+                <li class="width_common"><button type="button" id="btt_send_report_bad"
+                        class="btn_vne btn_sk btn_vne_bold" rel="37048243">Gửi</button></li>
+            </ul>
+        </div>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!-- Login -->
+<div id="lightbox_dangnhap" class="lightbox_dangnhap white-popup mfp-hide">
+    <div class="inner-popup">
+        <div class="title_popup">Đăng nhập</div>
+        <div class="content_poup">
+            <div class="login-left">
+                <p class="login_title">Đăng nhập bằng</p>
+                <p class="p_social"><a href="javascript:;" rel="facebook" class="facebook login-social"><svg
+                            class="icon-ns not-grad">
+                            <use xlink:href="#logo-fb-simple"></use>
+                        </svg> Facebook</a><a href="javascript:;" rel="google" class="google login-social"><svg
+                            class="icon-ns not-grad">
+                            <use xlink:href="#logo-google-plus"></use>
+                        </svg> Google</a></p>
+            </div>
+            <div class="login-right">
+                <p class="login_title">Hoặc nhập thông tin của bạn</p>
+                <ul class="form_element">
+                    <li class=""><input id="txt_fullname" class="input_form" type="text" value="Họ tên"
+                            onfocus="if (this.value == 'Họ tên') {this.value = '';}"
+                            onblur="if (this.value == '') {this.value = 'Họ tên';}">
+                        <div id="error_fullname" class="txt_error"></div>
+                    </li>
+                    <li class=""><input id="txt_email" class="input_form" type="email" value="Email"
+                            onfocus="if (this.value == 'Email') {this.value = '';}"
+                            onblur="if (this.value == '') {this.value = 'Email';}">
+                        <div id="error_email" class=" txt_error"></div>
+                    </li>
+                    <li class=""><button type="button" id="bt_finish" class="btn_vne btn_sk btn_vne_bold">Hoàn
+                            tất</button></li>
+                </ul>
+            </div>
         </div>
     </div>
     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
@@ -24,7 +109,7 @@
 <div id="notice-popup2" class="white-popup mfp-hide no_title">
     <div class="mfp-content">
         <div class="inner-popup">
-            <h2 class="title-popup">Hướng dẫn</h2>
+            <h2 class="title_popup">Hướng dẫn</h2>
             <div class="content-popup">
                 Sử dụng các từ khóa cho trong tiêu đề hoặc nội dung bài viết để tìm kiếm Khi muốn tìm chính xác một
                 cụm
@@ -36,6 +121,57 @@
             </div>
         </div>
     </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<div id="rate-popup-result" class="white-popup rate-popup rate-popup-result mfp-hide no_title">
+    <div class="inner-popup">
+        <div class="title_popup">Kết quả</div>
+        <div class="content-popup clearfix ">
+            <div class="inner-pop-res flexbox width_common">
+                <div class="col-left-res vote_rating_box" id="rs_pop_30707">
+                    <div class="title_bx width_common">Bạn thấy bộ ảnh nào cuốn hút hơn?</div>
+
+                    <div id="rs_111114" class="width_common item-kq-vote">
+                        <div class="width_common txt-kq-vote flexbox">
+                            <span class="option-txt">Ji Soo&nbsp;&nbsp;&nbsp;45%</span>
+                            <span class="count-vote-kq">786 phiếu</span>
+                        </div>
+                        <div class="item_row_bx width_common kq-vote flexbox">
+                            <label class="percent-vote" style="width: 45%;"></label>
+                        </div>
+                    </div>
+
+                    <div id="rs_111115" class="width_common item-kq-vote">
+                        <div class="width_common txt-kq-vote flexbox">
+                            <span class="option-txt">Rosé&nbsp;&nbsp;&nbsp;55%</span>
+                            <span class="count-vote-kq">952 phiếu</span>
+                        </div>
+                        <div class="item_row_bx width_common kq-vote flexbox">
+                            <label class="percent-vote" style="width: 55%;"></label>
+                        </div>
+                    </div>
+
+
+                    <p class="width_common time-vote">Thời gian từ: 14/9</p>
+
+                </div>
+                <div class="col-right-res">
+
+                    <div class="width_common" id="ads_vote_30707" style="text-align:center;">
+                        <div id="VN_PC_Home_Boxthamdo_2019_BTD_1x1">
+                            <script>
+                                googTagCode.display.push('VN_PC_Home_Boxthamdo_2019_BTD_1x1', 2);
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <input type="hidden" id="total_init_30707" name="total_init_30707" value="1.738" style="display:none;">
     <button title="Close (Esc)" type="button" class="mfp-close">×</button>
 </div>
 
@@ -54,7 +190,7 @@
 <div id="email-popup-2" class="email-popup mfp-hide white-popup">
     <div class="mfp-content">
         <div class="inner-popup">
-            <h2 class="title-popup">Gửi Email</h2>
+            <h2 class="title_popup">Gửi Email</h2>
             <div class="content-popup">
                 <form action="" name="send_mai" method="post">
                     <div class="form-group">

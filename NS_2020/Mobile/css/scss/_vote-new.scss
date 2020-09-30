@@ -2,23 +2,28 @@
     .item-result-per {
         width: 100%;
         float: left;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         flex-wrap: wrap;
 
         .text-ans {
-            font-size: 18px;
-            margin-right: 5px;
-            color: #222;
+            font-size: 17px;
+            margin-right: 0;
+            color: #4f4f4f;
+        }
+
+        .number-per {
+            margin-left: 10px;
         }
 
         .count-person {
             text-align: right;
-            font-size: 14px;
-            color: #222;
+            font-size: 17px;
+            color: #4f4f4f;
+            margin-left: auto;
 
             .number-person {
-                font-size: 18px;
-                color: #222;
+                font-size: 17px;
+                color: #4f4f4f;
             }
         }
 
@@ -27,7 +32,7 @@
             font-size: 14px;
             color: $vne_color;
             text-align: right;
-            padding-right: 55px;
+            padding-right: 0;
             position: relative;
 
             .number-per {
@@ -40,11 +45,11 @@
             .main-bar-per {
                 width: 100%;
                 float: left;
-                height: 4px;
+                height: 5px;
                 background: #E5E5E5;
                 border-radius: 3px;
                 position: relative;
-                margin-top: 13px;
+                margin-top: 5px;
 
                 .real-bar-per {
                     position: absolute;
@@ -58,9 +63,13 @@
         }
 
         &.result-of-you {
-            .text-ans {
-                color: #222;
+
+            .text-ans,
+            .count-person,
+            .count-person .number-person {
+                color: #9F224E;
             }
+
         }
     }
 

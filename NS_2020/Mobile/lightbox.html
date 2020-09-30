@@ -299,8 +299,9 @@
     <p><a href="#notice-popup-2" class="open-popup-link">Lightbox gửi thành công</a></p>
     <p><a href="#popup-sn" class="open-popup-link">Lightbox Sinh nhật</a></p>
     <p><a href="#popup-sn1" class="open-popup-link">Lightbox Sinh nhật 2</a></p>
-
     <p><a href="#notice-popup2" class="open-popup-link">Lightbox thông báo</a></p>
+    <p><a href="#light-dangnhap" class="open-popup-link">Lightbox Login</a></p>
+    <p><a href="#light-vipham" class="open-popup-link">Lightbox Báo vi phạm</a></p>
 
 </div>
 
@@ -316,6 +317,83 @@
     <div class="width_common close_pop">
         <button title="Close (Esc)" type="button" class="mfp-close btn_vne btn_gray btn_normal">Đóng</button>
     </div>
+</div>
+
+<!--Lightbox login-->
+<div id="light-dangnhap" class="white-popup lightbox_dangnhap mfp-hide">
+    <div class="title_popup width_common">Đăng nhập</div>
+    <div class="content_poup width_common">
+        <div class="login-left">
+            <p class="login_title">Đăng nhập bằng</p>
+            <p class="p_social"><a href="javascript:;" rel="facebook" class="facebook login-social"><svg
+                        class="icon-ns not-grad">
+                        <use xlink:href="#logo-fb-simple"></use>
+                    </svg> Facebook</a><a href="javascript:;" rel="google" class="google login-social"><svg
+                        class="icon-ns not-grad">
+                        <use xlink:href="#logo-google-plus"></use>
+                    </svg> Google</a></p>
+        </div>
+        <div class="login-right">
+            <div class="content_form">
+                <p class="login-type">Hoặc nhập thông tin của bạn</p>
+                <p class="login-txt"><input id="txt_email" type="text" class="txt-login" value="Email"
+                        onfocus="if (this.value == 'Email') {this.value = '';}"
+                        onblur="if (this.value == '') {this.value = 'Email';}"></p>
+                <p id="error_email" class="login-desc"></p>
+                <p class="login-txt"><input id="txt_fullname" type="text" class="txt-login" value="Họ tên"
+                        onfocus="if (this.value == 'Họ tên') {this.value = '';}"
+                        onblur="if (this.value == '') {this.value = 'Họ tên';}"></p>
+                <p id="error_fullname" class="login-desc"></p>
+                <p class="login-btt"><input id="bt_finish" type="button" value="Hoàn tất" class="btt-complete"></p>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div><button title="Close (Esc)" type="button" class="mfp-close">×</button>
+</div>
+
+<!--Lightbox vi phạm-->
+<div id="light-vipham" class="white-popup lightbox_vipham mfp-hide">
+    <div class="title_popup width_common">Báo vi phạm</div>
+    <div class="content_poup width_common">
+        <ul class="form_element">
+            <li class="width_common"><label class="label_form">Chọn lý do Vi phạm</label><select
+                    class="txt_select_lydo input_form" id="reason" style="visibility: visible;">
+                    <option value="0">Chọn</option>
+                    <option value="1">Xúc phạm, gây hại người khác</option>
+                    <option value="2">Lạc đề</option>
+                    <option value="3">Vi phạm pháp luật</option>
+                    <option value="4">Vi phạm đạo đức, thuần phong mỹ tục</option>
+                    <option value="5">Tố cáo sai sự thật</option>
+                    <option value="6">Vi phạm bản quyền</option>
+                    <option value="7">Để lộ thông tin cá nhân</option>
+                    <option value="8">Spam, rác</option>
+                    <option value="9">Lý do khác</option>
+                </select>
+                <div class="width_common txt_error login-desc"></div>
+            </li>
+            <li class="width_common"><label class="label_form">Ý kiến:</label><textarea name="message"
+                    class="input_form input_area"
+                    onfocus="if (this.value == 'Nội dung phản hồi khác') {this.value = '';}"
+                    onblur="if (this.value == '') {this.value = 'Nội dung phản hồi khác';}"
+                    value="Nội dung phản hồi khác">Nội dung phản hồi khác</textarea></li>
+            <li class="width_common"><label class="label_form">Địa chỉ email của bạn:</label><input name="email"
+                    class="input_form" type="email" onfocus="if (this.value == 'Email') {this.value = '';}"
+                    onblur="if (this.value == '') {this.value = 'Email';}" value="Email">
+                <div class="width_common txt_error login-desc"></div>
+            </li>
+            <li class="width_common"><label class="label_form">Mã xác nhận:</label><input name="txtCaptcha"
+                    maxlength="4" class="input_30 left input_form" type="text">
+                <div class="input_capcha capcha"><img height="30" width="77"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAAeCAYAAABpE5PpAAAABmJLR0QA/wD/AP+gvaeTAAAEuklEQVRoge2YX0hTbRjAf2tb05rTcMmcZjGPF0LR6CIIZ0UE3YggJOhFKKIQixCyi0FeVzeFdJGRFzIEQemim1Cii2imDiVFUpD5D3EHa8Nmm2OrubeLcF8xK51nX34f+8HhnO15n+c858d5Oec9KiGEIMOuOPC3G/gvsq+l3bp1C5VKxdDQUFKssrLyl7EfcbvdOxq3G/atNLfbzaNHj/Zc59mzZwp08zP7UtqXL19obm5mc3NzT3Xevn3L48ePFerqHzSKV1SAe/fu8f79+5RyZVnm4cOHjIyMMDIyQjqec/tO2vT0NHfv3qW8vBy9Xs/Y2Niu8hcWFnjw4EGauvtO2qZnKBTizp07SJKETqfDZDJRV1fHzMzML3M2Nzdpbm4mFovR1dWFTqfb9XmtVivj4+OJzWq17uUytkekgUAgIKxWqwCERqMRZrNZqNVqAYhDhw6JsbGxbfM6OjoEIOx2uxBCCJvNJgDhcrmSxv4ulsq43ZCWO621tZXJyUkuXbrE0tISXq+XtbU1GhsbCYfD3Lx5MylncXGR9vZ2iouLuX//fjraUgzFpS0uLtLT08ORI0fo7++nqKgIAIPBwNOnTzl27Bijo6N4PJ5EjhCC69evEwqF6OzsJCcnR+m2FEVxac+fPycej1NdXU1+fv5PMa1Wi91u5/Lly/h8vsT/TqeTly9fUl9fT1VVldItKY7iT8/JyUng+xv7djgcDhwOR+L36uoqbW1t5Ofn09HRoXQ7aUFxabIsA1BQULCj8Q6Hg7W1NZxO545z/jaKSvv69Stv3rwB4Pbt2/T29iJJEpIkUVZWhiRJSWLm5+cBaGhooKGhYdu6W3etzWbD5XIp2XJKKCpNq9VSU1NDX18f165dw2KxMDc3x6tXr3jy5Anz8/NEo1FKS0spLS1FkiTC4TAmkwm1Wo1Go0GtVifqybJMJBLBbDaTlZWF2WxWst2UUXx6njp1ir6+Pvx+P+3t7Ulxu91OZ2cnZ86cwWAwcO7cOZaXl/F6vXi9XgKBAGazmaKiIoLBIJFIhNraWs6fP09hYSELCwt/fRqrhFB2cTY1NcXp06cxGo3Mzc2Rm5ubiEUiEcrLy1laWsLtdnP27Nmk/Gg0iizLrKys0NLSwuzsLFevXiUejyPLMj6fj48fP7KxsUE8HqesrAyLxYLRaOTo0aMYjUYKCgoSx62trbx7947BwUGuXLmiyDUqLg2gqqqKFy9ecPHiRZxOJyUlJQSDQW7cuEFPTw8nT55kamoKlUr12zqVlZUMDQ3hcrmw2Ww/xSoqKhgeHqa7u5vCwkL8fn9i8/l8fPjwAb/fz8TEBBsbG+j1ekKhEHl5eeTm5mIwGBL7reOtmFarxWAwcPDgQQ4fPkx2djZZWVno9Xq0Wm16FuxdXV1cuHCB169fc/z4cUwmE36/n1gsRl5eHt3d3X8U9icOHPj+iilJUpLQH9kSPzAwgM1mY319nc+fP2+7DwQCrK+vE4vF8Hg8xGIxgsEg0WiUcDhMOBwmGo2mZ+0phBCfPn0SbW1twmKxCJ1OJ06cOCGampqEx+NJ1yn/NdIyPf/v7Msvt/udjLQUyEhLgYy0FMhIS4GMtBTISEuBjLQU+Ab3d+QGZTpuIwAAAABJRU5ErkJggg==">
+                </div><a class="btn_refrest refresh_captcha" href="javascript:;" title="Tạo mã khác"><i
+                        class="ic ic-refresh"></i></a>
+                <div class="width_common txt_error login-desc"></div>
+            </li>
+            <li class="width_common"><button type="button" id="btt_send_report_bad" class="btn_vne btn_sk btn_vne_bold"
+                    rel="37048243">Gửi</button></li>
+        </ul>
+    </div>
+    <button title="Close (Esc)" type="button" class="mfp-close">×</button>
 </div>
 
 <!--Lightbox thông báo-->

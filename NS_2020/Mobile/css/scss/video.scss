@@ -60,28 +60,42 @@
         }
     }
 
-    .info_video_top {
-        border-bottom: 1px solid #D8E1EB;
-        padding: 12px 0 24px 0;
-        margin-bottom: 12px;
+    .author,
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
 
-        .cate_date {
-            color: #56738F;
-            margin-bottom: 15px;
-        }
+    .author {
+        text-align: right
+    }
 
-        .title_news {
-            font: 500 px_to_rem(22px) var(--font-title);
+    .info_below {
+        .info_video_top {
+            border-bottom: 1px solid #D8E1EB;
+            padding: 12px 0 24px 0;
             margin-bottom: 12px;
-        }
 
-        .description {
-            font-size: 16px;
+            .cate_date {
+                color: #56738F;
+                margin-bottom: 15px;
+            }
+
+            .title_news {
+                font: 500 px_to_rem(22px) var(--font-title);
+                margin-bottom: 12px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
         }
     }
 
     .box_sotap {
         margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
 
         .label {
             float: left;
@@ -141,7 +155,7 @@
 .label_playlist {
     width: 40px;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     right: 0;
@@ -152,8 +166,8 @@
         font-size: 14px;
         color: #fff;
         position: absolute;
-        right: 0;
-        bottom: 18px;
+        top: 50%;
+        margin-top: -20px;
     }
 
     .ic_playlist {
@@ -163,5 +177,23 @@
         width: 18px;
         height: 18px;
         background-position: -142px -83px;
+    }
+}
+
+.thumb_big {
+    .label_playlist {
+        width: 60px;
+
+        .number_playlist {
+            width: 60px;
+            font-size: 22px;
+            margin-top: -32px;
+        }
+
+        .ic_playlist {
+            width: 32px;
+            height: 32px;
+            background-position: -34px -202px;
+        }
     }
 }

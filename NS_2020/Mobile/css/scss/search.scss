@@ -45,7 +45,7 @@ $vne_color: #076DB6;
                 height: 32px;
                 line-height: 32px;
                 font-size: 14px;
-                color: #333;
+                color: #1f3347;
                 border: none;
                 -webkit-appearance: none;
                 -moz-appearance: none;
@@ -64,12 +64,6 @@ $vne_color: #076DB6;
                 border-right: 1px solid #7A99B8;
                 border-bottom: 1px solid #7A99B8;
                 transform: rotate(45deg);
-            }
-
-            &.active {
-                select {
-                    color: $vne_color;
-                }
             }
         }
     }
