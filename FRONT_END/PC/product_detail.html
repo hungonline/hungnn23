@@ -731,7 +731,7 @@
         </div>
         <div class="col_right tt_sp_chitiet">
             <h1 class="title_name">Điện Thoại iPhone XS 512GB - Hàng Chính Hãng</h1>
-            <div class="sidebar_1">  
+            <div class="sidebar_1">
                 <div class="sidebar_1_head flex">
                     <div class="ct_star">
                         <svg class="icon-us">
@@ -2539,6 +2539,16 @@
 </div>
 <!--END POPUP THÔNG BÁO-->
 
+<!-- Thông báo thêm sản phẩm thành công -->
+<div class="popup-default add-product-success">
+    <div class="content-popup center">
+        <i class="checked"></i>
+        <div class="mt15">
+            Sản phẩm được thêm thành công
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -2779,6 +2789,12 @@
 <script type="text/javascript" src="js/lightgallery-all.min.js"></script>
 <script>
     $('.header-block').removeClass('sticky')
+    $('.add_to_cart').click(function () {
+        $('.add-product-success').addClass('open');
+        setTimeout(function () {
+            $('.add-product-success').removeClass('open');
+        }, 1500);
+    });
 </script>
 
 </body>

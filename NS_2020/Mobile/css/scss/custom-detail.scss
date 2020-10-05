@@ -116,11 +116,12 @@
     padding: 23px 12px;
     float: left;
     width: 100%;
-
+    overflow: hidden;
 }
 
 .fck_detail {
     float: none;
+    line-height: initial;
 
     table.tplCaption,
     figure.tplCaption {
@@ -417,6 +418,10 @@
 
 .lg-sub-html .ss-scroll {
     display: none !important
+}
+
+.lg-sub-html_wrapper a {
+    color: #39aaff !important;
 }
 
 .list_news_dot {
@@ -747,7 +752,7 @@
     }
 
     .img_quiz {
-        margin-bottom: 12px;
+        margin: 0 -12px 15px -12px;
 
         img {
             float: none;
@@ -845,7 +850,8 @@
     }
 
     .download_app {
-        margin: 0 12px 24px 12px;
+        margin: 10px 12px 24px 12px;
+        float: left;
     }
 
     .report_bad {
