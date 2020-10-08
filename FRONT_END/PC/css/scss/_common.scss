@@ -255,13 +255,15 @@
     position: relative;
     cursor: pointer;
     padding-bottom: 8px;
+
     svg {
         fill: var(--yellow);
         width: 12px;
         height: 12px;
         margin-right: 4px;
     }
-    .ct_star_info{
+
+    .ct_star_info {
         position: absolute;
         z-index: 9;
         height: auto;
@@ -270,16 +272,17 @@
         min-width: 280px;
         background: #fff;
         border: 1px solid #e5e5e5;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 0 0 3px 3px;
         padding: 15px;
         text-align: left;
         opacity: 0;
         visibility: hidden;
         transition-duration: 200ms;
-        transition-property: opacity,top,visible;
-        transition-timing-function: cubic-bezier(.7,1,.7,1);
-        &::before{
+        transition-property: opacity, top, visible;
+        transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+
+        &::before {
             width: 10px;
             height: 10px;
             border: solid #e5e5e5;
@@ -293,38 +296,46 @@
             -ms-transform: rotate(225deg);
             transform: rotate(225deg);
         }
-        .number{
-            font-weight: bold;margin-left: 8px;
+
+        .number {
+            font-weight: bold;
+            margin-left: 8px;
         }
-        .percent-bar{
+
+        .percent-bar {
             display: flex;
             flex-wrap: wrap;
             margin-top: 5px;
-            .number-per{
+
+            .number-per {
                 width: 22%;
                 color: blue;
                 text-align: left;
             }
-            .main-bar-per{
+
+            .main-bar-per {
                 width: 60%;
                 background: #e5e5e5;
                 border: 1px solid #ccc;
                 height: 15px;
-                .percent{
+
+                .percent {
                     background: var(--yellow);
                     height: 13px;
                     display: block;
                 }
             }
-            .count-percent{
+
+            .count-percent {
                 width: 18%;
                 color: blue;
                 text-align: right;
             }
         }
     }
-    &:hover{
-        .ct_star_info{
+
+    &:hover {
+        .ct_star_info {
             opacity: 1;
             visibility: visible;
             top: 20px;
@@ -762,5 +773,67 @@ label.radio {
 
     input:checked~.checkmark:before {
         display: block;
+    }
+}
+
+// Popup default
+.popup-default {
+    background: rgba(0, 0, 0, .7);
+    max-width: 500px;
+    width: 400px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    top: 42%;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 9899;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+
+    &.open {
+        opacity: 1;
+        overflow: visible;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .content-popup {
+        padding: 39px 20px;
+        font-size: 16px;
+    }
+
+    &.add-product-success {
+        .checked {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background: var(--green3);
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 18px;
+                top: 7px;
+                width: 10px;
+                height: 26px;
+                border: solid #fff;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+
+
     }
 }
