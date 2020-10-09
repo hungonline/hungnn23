@@ -641,6 +641,27 @@
     }
 }
 
+.circle_s {
+    position: relative;
+}
+
+.tip {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 24px;
+    line-height: 24px;
+    background: rgb(23, 25, 26);
+    white-space: nowrap;
+    padding: 0px 10px;
+    border-radius: 3px;
+    display: none;
+    color: rgb(255, 255, 255) !important;
+    font-size: 12px !important;
+    text-decoration: none !important;
+}
+
 // LOCATION-STAMP
 .location-stamp {
     color: #4f4f4f;

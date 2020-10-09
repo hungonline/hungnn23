@@ -502,12 +502,56 @@ button::-moz-focus-inner {
 
 .btn_vne {
   background: #178fd6;
-  color: #fff !important;
+  color: #fff;
   font: 700 .8125rem arial;
   padding: 10px 25px;
   border: none;
   cursor: pointer;
   margin: 0;
+
+  &.btn_normal {
+    font-weight: 400;
+  }
+
+  svg.ic {
+    margin-right: 5px;
+    vertical-align: text-top;
+  }
+
+  &.btn_full {
+    width: 100%;
+    text-align: center;
+  }
+
+  &.btn_disable {
+    background: #F7F7F7;
+    color: #BDBDBD !important;
+  }
+
+  &.btn_restart {
+    color: #616161 !important;
+  }
+
+  &.btn_grey {
+    background: #E5E5E5;
+    color: #222;
+  }
+
+  &.btn_blue {
+    background: #076DB6;
+    color: #fff;
+  }
+
+  &.btn_view_cancel {
+    background: none;
+    color: #757575;
+    text-decoration: underline;
+    padding: 0 15px;
+
+    &:hover {
+      color: #087CCE;
+    }
+  }
 }
 
 .no_title {

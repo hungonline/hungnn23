@@ -6,9 +6,17 @@
 
 .thumb {
     img {
-        width: 100%;
-        float: left;
+        -o-object-position: top;
+        object-position: top;
+        -o-object-fit: cover;
         object-fit: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .icon_thumb {
@@ -44,6 +52,10 @@ figure {
     width: 100%;
     float: left;
 
+    .title-news {
+        font-weight: bold
+    }
+
     &:first-of-type {
         border-top: none;
     }
@@ -55,6 +67,7 @@ figure {
         line-height: 1.5
     }
 }
+
 
 // meta-new
 .meta-news {
@@ -153,6 +166,7 @@ figure {
 
     &:hover {
         background: #178fd6;
+        color: #fff
     }
 
     &.btn_normal {
@@ -161,13 +175,16 @@ figure {
 
     &.btn_full {
         width: 100%;
-        float: left;
         text-align: center;
     }
 
     &.btn_disable {
         background: #F7F7F7;
-        color: #BDBDBD;
+        color: #BDBDBD !important;
+    }
+
+    &.btn_restart {
+        color: #616161 !important;
     }
 
     &.btn_grey {
@@ -387,3 +404,5 @@ figure {
         text-align: center;
     }
 }
+
+// Style custom Live
