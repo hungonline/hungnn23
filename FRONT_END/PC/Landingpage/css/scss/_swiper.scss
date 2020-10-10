@@ -163,8 +163,8 @@
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);  
-  width: 36px;
-  height: 36px;
+  width: 76px;
+  height: 68px;
   z-index: 2;
   cursor: pointer;
   outline: 0;
@@ -177,13 +177,13 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   background: url("images/icons/Button-left.png")no-repeat center;
-  left: 0px;
+  left: -90px;
   right: auto;
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background: url("images/icons/Button-right.png")no-repeat center;
-  right: 0px;
+  right: -90px;
   left: auto;
 }
 .swiper-button-prev.swiper-button-white,
