@@ -21,7 +21,7 @@ body {
 
 body {
   color: #242424;
-  background: #f4f4f4;
+  background: #fff;
   font-family: var(--font1);
   text-align: left;
   line-height: 1.313;
@@ -247,20 +247,31 @@ button {
 #to_top {
   color: #00507f;
   font-size: 20px;
+  background: #0c264f;
   display: none;
-  border: 1px solid #ccc;
   border-radius: 3px;
   bottom: 20px;
   cursor: pointer;
   text-align: center;
-  height: 45px;
-  line-height: 45px;
+  height: 40px;
+  line-height: 40px;
   outline: medium none;
   padding: 0;
   position: fixed;
   right: 20px;
   width: 40px;
   z-index: 89;
+  &::before{
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 16px;
+    right: 13px;
+    transform: rotate(45deg);
+  }
 }
 
 img {

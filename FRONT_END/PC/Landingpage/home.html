@@ -11,7 +11,7 @@
     </title>
     <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
         rel="shortcut icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
     <section class="section section_s1 clearfix mb60">
         <div class="container">
             <div class="warp">
-                <div class="row align-center">
+                <div class="row">
                     <div class="col-sm-6 col-lg-4">
                         <img src="images/icons/hang-hoa.png">
                         <p>Hàng hóa được</br> đảm bảo</p>
@@ -49,10 +49,10 @@
     </section>
 
     <section class="section section_s2 clearfix mb60">
+        <h2 class="title_line">
+            <span>Sản phẩm nổi bật</span>
+        </h2>
         <div class="container">
-            <h2 class="title_line">
-                <span>Sản phẩm nổi bật</span>
-            </h2>
             <div class="flex">
                 <div class="col_left">
                     <a class="thumb_img" href="" title="#">
@@ -112,8 +112,8 @@
 
     <section class="section section_s3 clearfix mb60">
         <div class="container">
-            <h2 class="center mb30">
-                <img src="images/graphics/text-sale.png">
+            <h2 class="title mb30">
+                Sản Phẩm Khuyến Mãi
             </h2>
             <div class="list-product flex">
                 <div class="product-item col-4">
@@ -133,8 +133,8 @@
                                 <span class="set">
                                     <img src="images/icons/sale.png">
                                 </span>
-                                <span>Còn lại : 30%</span>
-                                <div class="rest rest_30"></div>
+                                <span>Còn lại : 80%</span>
+                                <div class="rest rest_80"></div>
                             </div>
                             <div class="center mt20">
                                 <a href="#" class="btn">XEM NGAY</a>
@@ -158,8 +158,8 @@
                                 <span class="set">
                                     <img src="images/icons/sale.png">
                                 </span>
-                                <span>Còn lại : 30%</span>
-                                <div class="rest rest_30"></div>
+                                <span>Còn lại : 60%</span>
+                                <div class="rest rest_60"></div>
                             </div>
                             <div class="center mt20">
                                 <a href="#" class="btn">XEM NGAY</a>
@@ -2044,16 +2044,28 @@
     <!--END FOOTER-->
 
     <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+    </a>
     <!--Jquery lib-->
     <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/svgxuse.min.js"></script>
-    <script type="text/javascript" src="js/stickyfill.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollbar.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     <!-- build:script2 -->
+    <script>
+        $(window).scroll(function () {
+        if ($(window).scrollTop() >= 200) {
+            $('#to_top').fadeIn();
+        } else {
+            $('#to_top').fadeOut();
+        }
+        });
+
+        $("#to_top").click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        });
+        return false;
+        });
+    </script>
 </body>
 
 </html>
