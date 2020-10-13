@@ -293,6 +293,40 @@
     }
 }
 
+// Custom detail Live
+.detail-live {
+    .tab-live {
+        a.active {
+            color: $vne_color;
+
+            &:before {
+                background: $vne_color;
+            }
+        }
+    }
+
+    .header-block {
+        .timeline {
+            color: #1f3347 !important;
+            font-weight: bold;
+        }
+    }
+
+    .block-item-timer {
+        span.timeline {
+            color: $vne_color !important;
+        }
+    }
+
+    .btn-view {
+        background: $vne_color;
+    }
+}
+
+.video-js .vjs-play-progress {
+    background-color: #0064b2 !important;
+}
+
 .action_thumb {
     position: absolute;
     top: 16px;

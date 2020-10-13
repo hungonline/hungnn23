@@ -548,6 +548,13 @@ screen and (max-height: 300px) {
 	}
 }
 
+.quiz_tpl_4_full {
+	.title-popup {
+		margin: -20px -20px 20px -20px !important;
+		width: calc(100% + 40px) !important;
+	}
+}
+
 .content-popup {
 	font-size: 18px;
 	line-height: 1.6;
@@ -1043,11 +1050,11 @@ select {
 	font: 400 16px/1.4 Arial;
 }
 
-.white-popup {
-	.width_common {
-		float: none;
-	}
-}
+// .white-popup {
+// 	.width_common {
+// 		float: none;
+// 	}
+// }
 
 .form_box {
 	.title_box_category {

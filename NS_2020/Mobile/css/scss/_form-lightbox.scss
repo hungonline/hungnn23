@@ -466,6 +466,14 @@ button::-moz-focus-inner {
   }
 }
 
+.content-popup {
+  .title_box_category {
+    &::before {
+      display: none
+    }
+  }
+}
+
 .content_poup {
   padding: 15px;
   background: #fff;
@@ -759,11 +767,11 @@ button::-moz-focus-inner {
   background: #fff;
 }
 
-.mfp-content {
-  .width_common {
-    float: none;
-  }
-}
+// .mfp-content {
+//   .width_common {
+//     float: none;
+//   }
+// }
 
 .lightbox_dangnhap,
 .lightbox_vipham {

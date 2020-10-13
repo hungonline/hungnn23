@@ -326,6 +326,7 @@ figure {
     padding-top: 30px;
     padding-bottom: 20px;
     border-top: 4px solid #eeeeee;
+    position: relative;
 
     .text_xemthem,
     .txt_xemthem {
@@ -333,13 +334,15 @@ figure {
         font-size: px_to_rem(20px);
         margin-bottom: 10px;
         font-family: $fontmain;
-        width: 100%;
+        width: 150px;
+        position: absolute;
+        top: 25px;
     }
 
     .list_xemthem_newver {
         float: left;
         width: 100%;
-        padding-left: 65px;
+        padding-left: 165px;
 
         li {
             margin-bottom: 10px;
@@ -374,9 +377,8 @@ figure {
 
     .title {
         float: left;
-        font-size: 1.25rem;
+        font: bold 20px $fontmain;
         margin-bottom: 10px;
-        font-family: iCielDomaineText;
         width: 100%;
     }
 }
