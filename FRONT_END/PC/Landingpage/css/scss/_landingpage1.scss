@@ -551,7 +551,7 @@
         height: 400px;
         position: absolute;
         bottom: -20px;
-        right: 0;
+        right: -50px;
         z-index: -1;
     }
 
@@ -584,13 +584,11 @@
                     -moz-filter: grayscale(100%);
                     -ms-filter: grayscale(100%);
                     -o-filter: grayscale(100%);
-                    opacity: 0.6;
                 }
 
                 &.active {
                     img {
                         filter: grayscale(0%);
-                        opacity: 1;
                     }
                 }
             }
