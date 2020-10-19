@@ -533,6 +533,7 @@ screen and (max-height: 300px) {
 	@extend %font-fea;
 	font-weight: bold;
 	width: calc(100% + 60px);
+	float: none;
 
 	&::before {
 		content: "";
@@ -555,7 +556,8 @@ screen and (max-height: 300px) {
 	}
 }
 
-.content-popup {
+.content-popup,
+.content_poup {
 	font-size: 18px;
 	line-height: 1.6;
 
@@ -1048,6 +1050,12 @@ input[type="tel"],
 textarea,
 select {
 	font: 400 16px/1.4 Arial;
+}
+
+.lightbox_vipham {
+	.width_common {
+		float: none;
+	}
 }
 
 // .white-popup {

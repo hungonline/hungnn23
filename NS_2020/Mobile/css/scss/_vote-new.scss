@@ -250,10 +250,9 @@
     float: left;
     text-align: left;
     background: #F7F7F7;
-    margin: 0 -15px 15px -15px;
+    margin: 0 -15px 0px -15px;
     width: calc(100% + 30px) !important;
     border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
 
     .title-box-category {
         margin-bottom: 10px;
@@ -453,7 +452,7 @@
             }
 
             .percent-vote {
-                background: #B52759;
+                background: #076DB6;
             }
         }
 
@@ -477,7 +476,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background: #B52759;
+            background: #076DB6;
             border: 3px 0 0 3px;
         }
 
@@ -488,7 +487,7 @@
 
         /*&.max-vote{background: #E46793;color: #fff;
             strong{font-weight: 700;color: #fff;} 
-            .percent-vote{background: #B52759;}
+            .percent-vote{background: #076DB6;}
         }*/
 
     }

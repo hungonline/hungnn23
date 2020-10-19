@@ -1069,65 +1069,12 @@ body.body_pc.lg-from-hash.lg-on {
 // End Tin liên quan clone VnE
 article {
 	.ic-live {
-		margin-right: 6px;
-		font-family: arial;
-		font-size: 11px;
-		text-transform: uppercase;
-		height: 15px;
-		line-height: 15px;
-		display: inline-block;
-		vertical-align: middle;
-		color: $colormain;
-	}
-
-	.ic-live:before {
-		-webkit-border-radius: 50%;
-		border-radius: 50%;
-		display: block;
-		position: relative;
-		width: 13px;
-		height: 13px;
-		content: '';
-		background: $colormain;
-		box-shadow: 0 0 0 rgba(23, 143, 214, 0.4);
+		font-size: 0;
+		font-weight: 400;
 		margin-right: 5px;
-		vertical-align: initial;
-		-webkit-animation: live-pulse 1s infinite;
-		-moz-animation: live-pulse 1s infinite;
-		-o-animation: live-pulse 1s infinite;
-		animation: live-pulse 1s infinite;
-		float: left;
-	}
-}
 
-
-@-webkit-keyframes live-pulse {
-	0% {
-		-webkit-box-shadow: 0 0 0 0 rgba(23, 143, 214, 0.4);
-	}
-
-	70% {
-		-webkit-box-shadow: 0 0 0 10px rgba(23, 143, 214, 0);
-	}
-
-	100% {
-		-webkit-box-shadow: 0 0 0 0 rgba(23, 143, 214, 0);
-	}
-}
-
-@keyframes live-pulse {
-	0% {
-		-moz-box-shadow: 0 0 0 0 rgba(23, 143, 214, 0.4);
-		box-shadow: 0 0 0 0 rgba(23, 143, 214, 0.4);
-	}
-
-	70% {
-		-moz-box-shadow: 0 0 0 10px rgba(23, 143, 214, 0);
-		box-shadow: 0 0 0 10px rgba(23, 143, 214, 0);
-	}
-
-	100% {
-		-moz-box-shadow: 0 0 0 0 rgba(23, 143, 214, 0);
-		box-shadow: 0 0 0 0 rgba(23, 143, 214, 0);
+		&::after {
+			font-size: 14px;
+		}
 	}
 }

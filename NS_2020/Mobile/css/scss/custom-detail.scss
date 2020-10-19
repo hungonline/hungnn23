@@ -1,7 +1,6 @@
 @import "var.scss";
-@import "icon-vne.scss";
+// @import "icon-vne.scss";
 @import "swiper.scss";
-@import "vote-new.scss";
 
 #header_sticky {
     width: 100%;
@@ -111,12 +110,37 @@
 
 }
 
+.page-detail {
+    .list-news li {
+        .meta-news {
+            margin-left: 4px;
+
+            svg {
+                fill: #2B9DEE;
+            }
+
+            .count_cmt span {
+                color: #2B9DEE !important
+            }
+        }
+    }
+}
+
 .article_detail {
     background: #fff;
-    padding: 23px 12px;
+    padding: 23px 0;
     float: left;
     width: 100%;
 
+}
+
+.inner_section,
+.section_common {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .fck_detail {
@@ -130,6 +154,10 @@
         td {
             text-align: center;
         }
+    }
+
+    .desc_cation p {
+        font-size: 16px !important;
     }
 
     .box_embed_video_parent {
@@ -261,7 +289,13 @@
     }
 }
 
+.fck_detail_photo {
+    padding: 0 12px;
+}
+
 .detail-photo {
+    padding: 0 12px;
+
     .block_thumb_slide_show {
         height: 0;
 
@@ -295,6 +329,16 @@
 
 // Custom detail Live
 .detail-live {
+    .header-live {
+        .ic-live:after {
+            color: var(--blue)
+        }
+    }
+
+    .wrap-notifile {
+        width: 245px;
+    }
+
     .tab-live {
         a.active {
             color: $vne_color;
@@ -310,6 +354,10 @@
             color: #1f3347 !important;
             font-weight: bold;
         }
+
+        .date {
+            color: var(--blue)
+        }
     }
 
     .block-item-timer {
@@ -320,6 +368,17 @@
 
     .btn-view {
         background: $vne_color;
+    }
+}
+
+.sticky_guicauhoi {
+    .ic-live:before {
+        top: 0px !important;
+        background: var(--blue);
+    }
+
+    .btn_guicauhoi {
+        color: var(--blue)
     }
 }
 
@@ -427,7 +486,7 @@
 }
 
 .block-pin {
-    padding: 0;
+    padding: 0 12px;
 }
 
 .score-table .group-score {
@@ -536,42 +595,6 @@
     }
 }
 
-// .item_social {
-//     float: left;
-//     margin: 0 10px 0 0;
-//     position: relative;
-//     width: 24px;
-//     height: 24px;
-//     text-align: center;
-//     line-height: 23px !important;
-//     border-radius: 50%;
-//     -webkit-border-radius: 50%;
-//     -moz-border-radius: 50%;
-//     font-size: 0 !important;
-
-//     .ic-email {
-//         background-position: -330px -1px;
-//     }
-
-//     &.item_fb {}
-
-//     &.item_twit {}
-
-//     &.item_google {}
-
-//     &.item_social_total,
-//     &.item_email {
-//         background: #d7d7d7;
-//     }
-
-//     &.item_linkedin {
-//         background: #007bb6;
-//     }
-
-//     &.item_pinterest {
-//         background: #cb2027;
-//     }
-// }
 
 .g-before-after .g-img-divider>span {
     width: 34px;
@@ -633,9 +656,9 @@
 
 
 .block-khachmoi {
-    margin: 0 -12px 0 -12px;
+    padding: 15px 12px 0 12px;
     width: calc(100% + 24px);
-    padding: 12px;
+    margin-left: -12px;
 
     .txt-km {
         font-family: var(--font-title);
@@ -654,35 +677,35 @@
     }
 }
 
-[class*='block-khachmoi_'] {
-    width: calc(100% + 18px);
-    margin-bottom: 12px;
-    margin-left: -9px;
-    margin-right: -9px;
+// [class*='block-khachmoi_'] {
+//     width: calc(100% + 18px);
+//     margin-bottom: 12px;
+//     margin-left: -9px;
+//     margin-right: -9px;
 
-    .txt-km {
-        width: 100%;
-        font: bold 20px var(--font-title);
-        margin-bottom: 12px;
-        padding: 0 9px;
-    }
+//     .txt-km {
+//         width: 100%;
+//         font: bold 20px var(--font-title);
+//         margin-bottom: 12px;
+//         padding: 0 9px;
+//     }
 
-    .item-km {
-        width: 50%;
-        padding: 0 9px;
+//     .item-km {
+//         width: 50%;
+//         padding: 0 9px;
 
-        .thumb_art {
-            float: none;
-        }
+//         .thumb_art {
+//             float: none;
+//         }
 
-        .name-km {
-            font-size: 16px;
-            margin-top: 12px;
-            color: #1F3347;
-        }
-    }
+//         .name-km {
+//             font-size: 16px;
+//             margin-top: 12px;
+//             color: #1F3347;
+//         }
+//     }
 
-}
+// }
 
 .block-khachmoi__1 {
     .item-km {
@@ -700,7 +723,8 @@
         margin-right: -12px;
         border-bottom: 0;
 
-        .name {
+        .name,
+        .Interview {
             padding-left: 30px;
             background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='23' height='22' viewBox='0 0 23 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.28524 21.2085C3.38454 21.2085 0.000103951 18.6862 0.000103951 13.3196C0.000103951 5.6453 6.71161 1.13734 10.4402 0.708008L11.3007 2.80099C9.12087 4.14264 7.28524 6.45029 7.45733 7.79195C9.92395 7.95294 13.9394 9.24093 13.9394 14.2319C13.9967 18.0422 11.7022 21.2085 7.28524 21.2085Z' fill='%230C99F4'/%3e%3cpath opacity='0.7' fill-rule='evenodd' clip-rule='evenodd' d='M15.7496 21.2085C11.8489 21.2085 8.46446 18.6862 8.46446 13.3196C8.46446 5.6453 15.176 1.13734 18.9046 0.708008L19.765 2.80099C17.5852 4.14264 15.7496 6.45029 15.9217 7.79195C18.3883 7.95294 22.4037 9.24093 22.4037 14.2319C22.4611 18.0422 20.1666 21.2085 15.7496 21.2085Z' fill='%232BEEDE'/%3e%3c/svg%3e");
             background-repeat: no-repeat;
@@ -713,6 +737,12 @@
         color: #132639;
         font-weight: 500;
         margin-bottom: 16px;
+
+        p {
+            font-family: var(--font-title);
+            font-style: initial;
+            font-size: 18px;
+        }
 
         .name_quess {
             display: block;

@@ -29,6 +29,10 @@ body {
     height: 0;
     overflow: hidden;
   }
+
+  &.show {
+    overflow: hidden;
+  }
 }
 
 .body_mobile {
@@ -633,32 +637,88 @@ svg.ic,
 .ic-live {
   margin-right: 6px;
   font-family: arial;
-  font-size: 11px;
-  text-transform: uppercase;
+  font-size: 0;
   height: 15px;
   line-height: 15px;
   display: inline-block;
   vertical-align: middle;
   color: var(--blue);
-}
 
-.ic-live:before {
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  width: 13px;
-  height: 13px;
-  content: '';
-  background: var(--blue);
-  box-shadow: 0 0 0 rgba(23, 143, 214, 0.4);
-  margin-right: 5px;
-  vertical-align: initial;
-  -webkit-animation: live-pulse 1s infinite;
-  -moz-animation: live-pulse 1s infinite;
-  -o-animation: live-pulse 1s infinite;
-  animation: live-pulse 1s infinite;
-  float: left;
+  &:before {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: var(--blue);
+    box-shadow: 0 0 0 rgba(23, 143, 214, 0.4);
+    margin-right: 5px;
+    vertical-align: initial;
+    -webkit-animation: live-pulse 1s infinite;
+    -moz-animation: live-pulse 1s infinite;
+    -o-animation: live-pulse 1s infinite;
+    animation: live-pulse 1s infinite;
+    float: left;
+    margin-top: 2px;
+  }
+
+  &:after {
+    content: 'Live';
+    font-style: normal;
+    color: var(--blue);
+    font-size: 11px;
+  }
+
+  &.not-start {
+    &:before {
+      background: #757575;
+      box-shadow: 0 0 0 rgba(117, 117, 117, 0.4);
+      -webkit-animation: live-pulse-2 1s infinite;
+      -moz-animation: live-pulse-2 1s infinite;
+      -o-animation: live-pulse-2 1s infinite;
+      animation: live-pulse-2 1s infinite;
+    }
+
+    &:after {
+      content: 'Chưa bắt đầu';
+      color: #222;
+    }
+  }
+
+  &.the-end {
+    &:before {
+      background: #757575;
+      box-shadow: 0 0 0 rgba(117, 117, 117, 0.4);
+      -webkit-animation: live-pulse-2 1s infinite;
+      -moz-animation: live-pulse-2 1s infinite;
+      -o-animation: live-pulse-2 1s infinite;
+      animation: live-pulse-2 1s infinite;
+
+    }
+
+    &:after {
+      content: 'Đã kết thúc' !important;
+      color: #757575;
+    }
+  }
+
+  &.ic-live-title {
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    color: #9F224E !important;
+    margin-right: 5px;
+    font-weight: 700;
+
+    &:after {
+      content: '';
+    }
+
+    &:before {
+      top: 7px;
+    }
+  }
 }
 
 @-webkit-keyframes live-pulse {

@@ -134,6 +134,8 @@ figure {
 .form_main {
     .input_element {
         position: relative;
+        float: left;
+        width: 100%;
     }
 
     .input_main {
@@ -148,6 +150,7 @@ figure {
         font-size: 15px;
         outline: none;
     }
+
 }
 
 .btn_vne {

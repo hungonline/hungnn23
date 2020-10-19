@@ -3,7 +3,6 @@
 @import "comment.scss";
 @import "scrollbar-ss.scss";
 @import "rs-detail.scss";
-@import "icon-vne.scss";
 
 .page-detail {
     &.top-detail {
@@ -118,134 +117,138 @@
             font-family: $font-title;
         }
     }
+}
 
-    .topDetail-bottom {
-        margin-bottom: 20px;
-        display: flex;
-        width: 100%;
+.topDetail-bottom {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.block_share {
+    a {
+        float: left;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin: 0px 0 0 5px;
+        position: relative;
+        color: $colormain;
+
+        &.btn_email {
+            .icon-ns {
+                width: 13px;
+                height: 13px;
+            }
+        }
+
+        .icon-ns {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &:hover {
+            background: #ededed;
+        }
     }
 
-    .block_share {
-        a {
-            float: left;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            margin: 0px 0 0 5px;
-            position: relative;
-            color: $colormain;
+    .count_comment {
+        font-size: 14px;
+        float: left;
+    }
 
-            &.btn_email {
-                .icon-ns {
-                    width: 13px;
-                    height: 13px;
-                }
-            }
+    /*New style*/
+    &--left {
+        float: left;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+
+        .icon_commend {
+            width: auto;
+            height: 40px;
+            padding: 3px 10px;
+            border-radius: 0;
 
             .icon-ns {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-            }
-
-            &:first-of-type {
-                margin-left: 0;
-            }
-
-            &:hover {
-                background: #ededed;
+                float: left;
+                position: relative;
+                margin: 11px 3px 0 0;
             }
         }
 
         .count_comment {
-            font-size: 14px;
-            float: left;
-        }
-
-        /*New style*/
-        &--left {
-            float: left;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-
-            .icon_commend {
-                width: auto;
-                height: 40px;
-                padding: 3px 10px;
-                border-radius: 0;
-
-                .icon-ns {
-                    float: left;
-                    position: relative;
-                    margin: 11px 3px 0 0;
-                }
-            }
-
-            .count_comment {
-                background: transparent;
-                color: #333;
-                font-size: 16px;
-                margin-left: 2px;
-                margin-top: 10px;
-
-                &:after {
-                    display: none;
-                }
-            }
-        }
-
-        &--right {
-            float: right;
+            background: transparent;
+            color: #333;
+            font-size: 16px;
+            margin-left: 2px;
             margin-top: 5px;
 
-            .count_comment {
-                padding: 7px;
-                margin-right: 5px;
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    top: 12px;
-                    margin-top: -4.5px;
-                    right: -5px;
-                    left: auto;
-                    width: 0;
-                    height: 0;
-                    border-bottom: 6px solid transparent;
-                    border-top: 6px solid transparent;
-                    border-left: 6px solid #f6f6f6;
-                    border-right: none;
-                }
-            }
-
-            .total {
-                float: left;
-
-                .bg_agray {
-                    background: #f6f6f6;
-                    position: relative;
-                    float: left;
-                    width: 100%;
-
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        top: 8px;
-                        left: -7px;
-                        width: 0;
-                        height: 0;
-                        border-bottom: 8px solid transparent;
-                        border-top: 8px solid transparent;
-                        border-right: 8px solid #f6f6f6;
-                    }
-                }
+            &:after {
+                display: none;
             }
         }
     }
 
+    &--right {
+        float: right;
+        margin-top: 5px;
+
+        .count_comment {
+            padding: 7px;
+            margin-right: 5px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 12px;
+                margin-top: -4.5px;
+                right: -5px;
+                left: auto;
+                width: 0;
+                height: 0;
+                border-bottom: 6px solid transparent;
+                border-top: 6px solid transparent;
+                border-left: 6px solid #f6f6f6;
+                border-right: none;
+            }
+        }
+
+        .total {
+            float: left;
+
+            .bg_agray {
+                background: #f6f6f6;
+                position: relative;
+                float: left;
+                width: 100%;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    left: -7px;
+                    width: 0;
+                    height: 0;
+                    border-bottom: 8px solid transparent;
+                    border-top: 8px solid transparent;
+                    border-right: 8px solid #f6f6f6;
+                }
+            }
+        }
+    }
+}
+
+.medium-insert-embeds-img-flip .wrap_pic {
+    float: none;
+    clear: both;
 }
 
 // Ngôi sao của năm banner PR
@@ -660,7 +663,7 @@
                 border: 1px solid #eaeaea;
                 height: 33px;
                 width: 140px;
-                padding: 0 15px;
+                padding: 0 35px 0 15px;
                 outline: 0;
                 border-radius: 3px;
                 -webkit-border-radius: 3px;
@@ -798,11 +801,11 @@
 }
 
 .social-header {
-    margin-top: 10px;
 
     .icon_commend {
         padding-right: 15px;
         position: relative;
+        margin-top: 10px;
 
         &:after {
             content: "";
@@ -818,6 +821,11 @@
     .block_share {
         a {
             margin-left: 10px;
+        }
+
+        .count_comment {
+            color: #16b0e7;
+            margin-top: 7px;
         }
     }
 }

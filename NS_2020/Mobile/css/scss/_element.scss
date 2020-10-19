@@ -423,9 +423,16 @@
 
         .thumb_art {
             width: 125px;
+            -webkit-border-radius: 4px;
             border-radius: 4px;
             margin: 0 8px 0 0;
             overflow: hidden;
+
+            video {
+                -webkit-border-radius: 4px;
+                border-radius: 4px;
+                overflow: hidden;
+            }
 
             .icon_thumb {
                 bottom: 0;
