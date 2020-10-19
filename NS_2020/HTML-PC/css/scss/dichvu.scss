@@ -1,6 +1,8 @@
 @import "var.scss";
 @import "comment.scss";
 @import "magnific-popup.scss";
+@import "owl.scss";
+
 $color1:#dc5ca9;
 
 .box_dichvu {
@@ -46,7 +48,7 @@ $color1:#dc5ca9;
 }
 
 .box_service {
-	.swiper-slide {
+	.item {
 		float: left;
 		margin-bottom: 20px;
 
@@ -107,8 +109,6 @@ $color1:#dc5ca9;
 }
 
 .box_slide_service {
-	position: relative;
-
 	&:not(:last-of-type) {
 		padding-bottom: 20px;
 		margin-bottom: 20px;
@@ -121,11 +121,13 @@ $color1:#dc5ca9;
 		line-height: $lh;
 	}
 
-	.swiper-container {
-		padding-right: 120px;
+	.owl-stage {
+		padding-left: 0 !important;
 	}
 
-	.swiper-slide {
+	.item {
+		max-width: 196px;
+
 		h3 {
 			font: 400 px_to_rem(16px) $fontmain;
 			line-height: $lh;
@@ -133,20 +135,27 @@ $color1:#dc5ca9;
 		}
 	}
 
-	.swiper-control {
+	.owl-carousel .owl-item {}
+
+	.owl-nav {
 		&>div {
 			position: absolute;
-			top: 60px;
-			border-radius: 0;
-			width: 30px;
-			height: 70px;
-			line-height: 70px;
+			top: 20px;
+			padding: 26.5px 7px;
 			background: rgba(255, 255, 255, 0.7);
 
 			.icon-ns {
-				color: #dc5ca9;
+				color: #fff;
 				margin: 0;
 			}
+		}
+
+		.owl-prev {
+			left: 0;
+		}
+
+		.owl-next {
+			right: 0
 		}
 	}
 }

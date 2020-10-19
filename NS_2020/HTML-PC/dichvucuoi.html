@@ -241,7 +241,7 @@
         <div class="line_2px"></div>
     </div>
     <div class="box_service flex mt20">
-        <div class="swiper-container">
+        <!-- <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide active">
                     <a href="">
@@ -332,7 +332,98 @@
                     </a>
                 </div>
             </div>
+        </div> -->
+        <div class="owl-carousel">
+            <div class="item active">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-1"></use>
+                        </svg></span>
+                    <h2 class="title">Ăn hỏi</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-2"></use>
+                        </svg></span>
+                    <h2 class="title">Nhà hàng <br> Tiệc cưới</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-3"></use>
+                        </svg></span>
+                    <h2 class="title">Áo cưới <br> Váy vest</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-1"></use>
+                        </svg></span>
+                    <h2 class="title">Ăn hỏi</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-2"></use>
+                        </svg></span>
+                    <h2 class="title">Nhà hàng <br> Tiệc cưới</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-3"></use>
+                        </svg></span>
+                    <h2 class="title">Áo cưới <br> Váy vest</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-4"></use>
+                        </svg></span>
+                    <h2 class="title">Wedding</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-5"></use>
+                        </svg></span>
+                    <h2 class="title">Trang điểm</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-6"></use>
+                        </svg></span>
+                    <h2 class="title">Trang điểm <br> Làm tóc</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-7"></use>
+                        </svg></span>
+                    <h2 class="title">Ăn hỏi</h2>
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <span class="icon_thumb"><svg class="icon_medium not-grad">
+                            <use xlink:href="images/icons.svg#ns-wedding-8"></use>
+                        </svg></span>
+                    <h2 class="title">Ăn hỏi</h2>
+                </a>
+            </div>
         </div>
+
         <div class="line_1px"></div>
         <div class="width_common mt20">
             <p class="intro_text left mb20">Ngoisao.net là nơi cung cấp thông tin dịch vụ cưới tốt nhất bao gồm: Dịch vụ
@@ -813,8 +904,32 @@
 	<script type="text/javascript" src="js/common.js"></script>
 	<!-- build:script -->
 	
+<script src="js/owl.carousel.min.js"></script>
 <script>
-
+    /*SLIDE BOX SERVICE */
+    var owl_slide_service = $('.box_service .owl-carousel');
+    owl_slide_service.owlCarousel({
+        loop: false,
+        margin: 10,
+        autoplay: false,
+        autoplayTimeout: 7000,
+        items: 8,
+        nav: false,
+        dots: false,
+        navElement: 'div',
+        responsive: {
+            740: {
+                items: 5
+            },
+            992: {
+                items: 7
+            },
+            1100: {
+                items: 8
+            },
+        }
+    })
+    /*END SLIDE BOX SERVICE */
 </script>
 
 </body>
