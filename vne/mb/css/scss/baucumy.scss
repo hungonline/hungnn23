@@ -1,0 +1,486 @@
+@import 'var.scss';
+@import 'scrollbar.scss';
+
+$red: #CE1719;
+$blue: #134395;
+
+$font1: 'Muli';
+
+body {
+  color: #333;
+  line-height: 1.45;
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+.preline {
+  white-space: pre-line;
+}
+
+:focus {
+  outline: none;
+}
+
+.baucu-infographic {
+  margin-bottom: 50px;
+  $self: &;
+
+  &__top {
+    position: relative;
+
+    &-whitehouse {
+      position: absolute;
+      width: 323px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 16px;
+    }
+
+    &-item {
+      width: 50%;
+      position: relative;
+
+      &:hover {
+        .baucu-infographic__btn {
+          transform: rotate(-270deg);
+          border-color: transparent transparent transparent #fff;
+          top: 0;
+        }
+
+        .baucu-infographic__bio {
+          display: block;
+        }
+      }
+      &:hover {
+
+        .baucu-infographic__btn--blue {
+          border-color: transparent #fff transparent transparent !important;
+          transform: rotate(270deg) !important;
+          top: -1px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #ce171a;
+    margin-left: calc((340px - 35px)/2);
+    float: left;
+    margin-top: 16px;
+    position: relative;
+    z-index: 2;
+    top: 16px;
+
+    &--blue {
+      border-width: 25px 32px 25px 0;
+      border-color: transparent #134395 transparent transparent;
+      margin-left: auto;
+      float: right;
+      margin-right: calc((340px - 35px)/2);
+    }
+  }
+
+  &__bio {
+    position: absolute;
+    color: #FFFFFF;
+    z-index: 1;
+    bottom: 42px;
+    transform: translate(0, 100%);
+    padding: 48px 0 0 40px;    
+    display: none;
+    min-height: 300px;
+    font-weight: 200;
+
+    ul {
+      border-top: 1px solid #FFFFFF;
+      line-height: calc(23/16);
+      padding: 10px 0;
+
+      li {
+        position: relative;
+        padding: 2px 0 2px 16px;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          left: 0;
+          top: 10px;
+        }
+      }
+    }
+
+    &--red {
+      background: $red;
+
+      ul {
+        padding-right: 20px;
+      }
+    }
+
+    &--blue {
+      background: $blue;
+      right: 0;
+      padding: 48px 40px 0 0;
+
+      ul {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &-icon {
+      text-align: center;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        width: 30%;
+        border-bottom: 1px solid $red;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        top: auto;
+        padding: 0;
+        border-radius: 0;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 30%;
+        border-bottom: 1px solid $blue;
+      }
+    }
+
+    &-text {
+      width: 40%;
+      padding: 0 50px;
+      font-size: 16px;
+      line-height: calc(23/16);
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+
+    > .flexbox:not(.baucu-infographic__item-child) {
+      > #{$self} {
+        &__item {
+          &-title {
+            background: linear-gradient(to right, $red 0%, $blue 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+
+    &-title {
+      width: 20%;
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-title;
+      font-weight: 900;
+      position: relative;
+      align-self: baseline;
+      padding-bottom: 5px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        width: 40%;
+        border-bottom: 1px solid #ce1719;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 40%;
+        border-bottom: 1px solid $blue;
+      }
+    }
+
+    &-child {
+      margin-top: 10px;
+      padding: 15px;
+      background: #F3F3F3;
+      align-items: center;
+
+      #{$self} {
+        &__item {
+          &-title {
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 16px;
+            
+            &::before {
+              width: 80%;
+              left: 10%;
+              top: 38px;
+              border-bottom: 1px solid #c4c4c4;
+              bottom: auto;
+            }
+
+            &::after {
+              display: none;
+            }
+
+            figure {
+              width: 48px;
+              height: 48px;
+              border: 1px solid #C4C4C4;
+              border-radius: 50%;
+              padding: 8px;
+              position: relative;
+              background: #fff;
+              z-index: 1;
+            }
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        background: #FBFBFB;
+      }
+    }
+  }
+
+  &__video {
+    &-title {
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-title;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .baucu-infographic {
+    position: relative;
+
+    &:after {
+      content: "";
+      height: 400px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0;
+    }
+  }
+  .baucu-infographic__list {
+    &::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: #5D668F;
+      position: absolute;
+      left: calc(50% - 3.5px);
+      top: -105px;
+      border-radius: 50%;
+    }
+    &:after {
+      content: "";
+      height: 100px;
+      border-left: 1px solid #5d668f;
+      left: calc(50% - 1px);
+      top: -100px;
+      position: absolute;
+    }
+  }
+  .baucu-infographic__footer {
+    > .flexbox {
+      display: none;
+    }
+  }
+  .baucu-infographic__top-whitehouse {
+    width: 205px;
+    bottom: 86px;
+    z-index: 2;
+  }
+  .baucu-infographic__btn {
+    top: 6px;
+  }
+
+  .baucu-infographic__bio {
+    width: 340px;
+  }
+
+  .baucu-infographic__btn--red {
+    margin-left: calc((340px - 195px)/2);
+  }
+
+  .baucu-infographic__btn--blue {
+    margin-right: calc((340px - 195px)/2);
+  }
+
+  .baucu-infographic__item-icon:after,
+  .baucu-infographic__item-icon:before {
+    width: 50%;
+  }
+  .baucu-infographic__item-icon:before {
+    left: 0;
+    right: auto;
+  }
+  .baucu-infographic__item-icon:after {
+    right: 0;
+    left: auto;
+  }
+  .baucu-infographic__item-title {
+    width: 100%;
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+  }
+
+  .baucu-infographic__item-text {
+    width: 50%;
+    margin-top: 40px;
+    padding: 0 15px;
+  }
+
+  .baucu-infographic__item {
+    position: relative;
+    &::after {
+      content: "";
+      height: 100%;
+      border-left: 1px solid #5D668F;
+      left: calc(50% - 1px);
+      top: 0;
+      position: absolute;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      &:after {
+        border-color: #fff;
+      }
+    }
+  }
+
+  .baucu-infographic__item-child {
+    align-items: baseline;
+    margin-top: 0;
+    // z-index: 2;
+    // position: relative;
+
+    .baucu-infographic__item-text {
+      padding-top: 40px;
+    }
+  }
+
+  .baucu-infographic__item-child .baucu-infographic__item-title {
+    width: calc(100% - 30px);
+  }
+
+  .baucu-infographic__item-icon {
+    margin-bottom: 0;
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .baucu-infographic__item-icon + .flexbox {
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      top: 0;
+      background: #fff;
+    }
+  }
+  .baucu-infographic__item-child .baucu-infographic__item-title {
+    background: #f3f3f3;
+    z-index: 2;
+  }
+  .baucu-infographic__item-child:nth-child(even) .baucu-infographic__item-title {
+    background: #fbfbfb;
+  }
+  .baucu-infographic__bio {
+    z-index: 9;
+  }
+  .baucu-infographic__btn {
+    transform: scale(0.8);
+  }
+  .baucu-infographic__top-item:hover .baucu-infographic__btn{
+    z-index: 10;
+    transform: rotate(-270deg) scale(0.8);
+    top: -5px;
+  }
+  .baucu-infographic__item-child .baucu-infographic__item-title figure {
+    margin-bottom: 5px;
+  }
+  .baucu-infographic__item-title:before,
+  .baucu-infographic__item-title:after {
+    width: 89px;
+  }
+  .baucu-infographic__list {
+    margin-top: 40px;
+  }
+  .baucu-infographic__top-item:hover .baucu-infographic__btn--blue {
+    transform: rotate(270deg) scale(0.8) !important;
+  }
+  .top-header-folder {
+    display: none;
+  }
+  .baucu-infographic__top > .flexbox {
+    position: relative;
+    z-index: 3;
+  }
+  .baucu-infographic__top-item:hover {
+    z-index: 1;
+  }
+}
+
+@media (max-width: 359px) {
+  .baucu-infographic__bio {
+    width: 320px;
+  }
+}

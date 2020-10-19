@@ -1,0 +1,173 @@
+/*background: url("images/graphics/demo.gif") no-repeat 0 0;*/
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+/**Apply: "font-size: px_to_rem(16px)" or "font: 400 px_to_rem(16px) arial;" **/
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.no-flexbox {
+  display: inherit; }
+
+#myvne_taskbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 44px; }
+  #myvne_taskbar ul li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+    #myvne_taskbar ul li a {
+      display: block;
+      padding: 0 5px;
+      line-height: 44px;
+      border-left: 1px solid #e1e1e1;
+      position: relative; }
+      #myvne_taskbar ul li a .badged {
+        position: absolute;
+        font-size: 8px;
+        padding: 2px;
+        line-height: 1;
+        background: #9f224e;
+        color: #fff;
+        top: 2px;
+        right: 2px;
+        border-radius: 2px; }
+      #myvne_taskbar ul li a .ic {
+        vertical-align: middle;
+        font-size: 20px; }
+    #myvne_taskbar ul li .myvne_user_status {
+      display: none;
+      z-index: 999;
+      position: absolute;
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+      top: 43px;
+      right: -1px;
+      min-width: 150px; }
+      #myvne_taskbar ul li .myvne_user_status li {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid #e1e1e1; }
+        #myvne_taskbar ul li .myvne_user_status li a {
+          padding: 8px;
+          display: block;
+          font: 400 14px/15px arial;
+          border: none; }
+          #myvne_taskbar ul li .myvne_user_status li a span {
+            background: #9f224e;
+            color: #fff;
+            padding: 1px 5px;
+            border-radius: 5px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 5px; }
+        #myvne_taskbar ul li .myvne_user_status li:last-child {
+          border-bottom: none; }
+
+#myvne_taskbar ul li.avatar_user {
+  display: none; }
+#myvne_taskbar ul li.icon_user a {
+  padding: 0 12px; }
+#myvne_taskbar ul.loged li.icon_user {
+  display: none; }
+#myvne_taskbar ul.loged li.avatar_user {
+  display: block; }
+  #myvne_taskbar ul.loged li.avatar_user a {
+    padding: 0 5px; }
+  #myvne_taskbar ul.loged li.avatar_user img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%; }
+  #myvne_taskbar ul.loged li.avatar_user .myvne_user_status li a {
+    padding: 8px; }
+
+#myvne_taskbar ul li.icon_notify.active a .ic, #myvne_taskbar ul li.icon_notice.active a .ic {
+  color: #9F224E; }
+
+#myvne_taskbar ul li .myvne_notify_lists {
+  width: 320px;
+  display: none;
+  position: absolute;
+  right: -1px;
+  top: 43px;
+  background: #f8f8f8;
+  border: 1px solid #e1e1e1;
+  border-top: 2px solid #9F224E;
+  max-height: 370px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 99;
+  -webkit-overflow-scrolling: touch; }
+  #myvne_taskbar ul li .myvne_notify_lists li {
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1; }
+    #myvne_taskbar ul li .myvne_notify_lists li a {
+      display: block;
+      font-size: 13px;
+      color: #333;
+      line-height: 17px;
+      padding: 0;
+      border: none; }
+      #myvne_taskbar ul li .myvne_notify_lists li a .eid_logo {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px; }
+      #myvne_taskbar ul li .myvne_notify_lists li a .eid_wrap_info {
+        overflow: hidden;
+        display: inherit; }
+        #myvne_taskbar ul li .myvne_notify_lists li a .eid_wrap_info span {
+          display: block; }
+          #myvne_taskbar ul li .myvne_notify_lists li a .eid_wrap_info span .ic {
+            color: #9F224E;
+            font-size: 11px; }
+        #myvne_taskbar ul li .myvne_notify_lists li a .eid_wrap_info span.eid_time {
+          margin-top: 5px; }
+    #myvne_taskbar ul li .myvne_notify_lists li.xemthem_notify {
+      width: 100%;
+      text-align: center; }
+      #myvne_taskbar ul li .myvne_notify_lists li.xemthem_notify a {
+        display: block; }
+  #myvne_taskbar ul li .myvne_notify_lists li.read {
+    background: #fff; }
+  #myvne_taskbar ul li .myvne_notify_lists .title {
+    width: 100%;
+    float: left;
+    background: #fff;
+    padding: 10px;
+    font-size: 14px; }
+    #myvne_taskbar ul li .myvne_notify_lists .title .eid_left {
+      float: left; }
+    #myvne_taskbar ul li .myvne_notify_lists .title .eid_right {
+      float: right; }
+  #myvne_taskbar ul li .myvne_notify_lists .eid_null {
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    float: left; }
+#myvne_taskbar ul li.icon_notify .myvne_notify_lists {
+  right: -32px; }
+
+/**RESPONSIVE**/
+@media screen and (min-width: 375px) {
+  #myvne_taskbar ul.loged li.avatar_user a {
+    padding: 0 10px; }
+
+  #myvne_taskbar ul li a {
+    padding: 0 12px; }
+
+  #myvne_taskbar ul li.icon_notify .myvne_notify_lists {
+    right: -1px; } }
+
+/*# sourceMappingURL=myvne_taskbar.css.map */

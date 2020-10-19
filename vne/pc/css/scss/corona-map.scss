@@ -1,0 +1,633 @@
+// VIRUS CORONA MAP DETAIL
+.world-corona-detail {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    margin-bottom: 25px;
+
+    img {
+        vertical-align: middle;
+    }
+
+    &__map {
+        position: relative;
+
+        .nation {
+            position: absolute;
+            display: none;
+
+            .dotted {
+                background: #666;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                display: inline-block;
+                cursor: pointer;
+
+                &:hover {
+                    &+.tag_nation {
+                        display: block;
+                    }
+                }
+            }
+
+            .tag_nation {
+                position: absolute;
+                display: none;
+                width: 124px;
+                background: #FFFFFF;
+                padding: 6px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                text-align: center;
+                z-index: 2;
+
+                label {
+                    color: #333333;
+                    font: bold 12px Arial;
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .flex {
+                    justify-content: center;
+
+                    strong {
+                        height: 24px;
+                        min-width: 45px;
+                        font: bold 14px/24px Arial;
+                        color: #FFFFFF;
+                        background: #48B71D;
+                        padding: 0 7px;
+                        text-align: center;
+                        margin: 0 1.5px;
+                    }
+
+                    .infected {
+                        background: #BF3D2D;
+                    }
+
+                    .dead {
+                        background: #8C7D7C;
+                    }
+                }
+            }
+
+            &.china {
+                top: 185px;
+                right: 194px;
+
+                .dotted {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            &.nga {
+                top: 120px;
+                right: 186px;
+            }
+
+            &.hanquoc {
+                top: 215px;
+                right: 190px;
+
+                .dotted {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            &.japan {
+                top: 200px;
+                right: 153px;
+
+                .dotted {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            &.dailoan {
+                top: 255px;
+                right: 207px;
+            }
+
+            &.vietnam {
+                top: 263px;
+                right: 246px;
+            }
+
+            &.philippin {
+                top: 302px;
+                right: 196px;
+            }
+
+            &.campuchia {
+                top: 288px;
+                right: 248px;
+            }
+
+            &.malay {
+                top: 316px;
+                right: 226px;
+            }
+
+            &.singapore {
+                top: 315px;
+                right: 254px;
+            }
+
+            &.thailan {
+                top: 277px;
+                right: 256px;
+            }
+
+            &.australia {
+                bottom: 120px;
+                right: 156px;
+            }
+
+            &.new-zeland {
+                bottom: 80px;
+                right: 66px;
+            }
+
+
+            &.pakistan {
+                top: 244px;
+                right: 346px;
+            }
+
+            &.ando {
+                top: 268px;
+                right: 319px;
+            }
+
+            &.afgha {
+                top: 220px;
+                right: 349px;
+            }
+
+            &.oman {
+                top: 263px;
+                right: 375px;
+            }
+
+            &.qata {
+                top: 251px;
+                right: 388px;
+            }
+
+            &.armen {
+                top: 204px;
+                right: 406px;
+            }
+
+            &.uae {
+                top: 256px;
+                right: 381px;
+            }
+
+            &.nigeria {
+                top: 295px;
+                right: 503px;
+            }
+
+            &.hylap {
+                top: 207px;
+                right: 466px;
+            }
+
+            &.bahrain {
+                top: 247px;
+                right: 391px;
+            }
+
+            &.iraq {
+                top: 227px;
+                right: 408px;
+            }
+
+            &.iran {
+                top: 227px;
+                right: 380px;
+
+                .dotted {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            &.kuwait {
+                top: 237px;
+                right: 400px;
+            }
+
+            &.aicap {
+                top: 246px;
+                right: 445px;
+            }
+
+            &.israel {
+                top: 223px;
+                right: 429px;
+            }
+
+            &.lebanon {
+                top: 233px;
+                right: 433px;
+            }
+
+            &.algeria {
+                top: 233px;
+                right: 514px;
+            }
+
+            &.italy {
+                top: 199px;
+                right: 484px;
+
+                .dotted {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+
+            &.macedonia {
+                top: 199px;
+                right: 466px;
+            }
+
+            &.luxem {
+                top: 171px;
+                right: 507px;
+            }
+
+            &.dominica {
+                top: 270px;
+                right: 707px;
+            }
+
+            &.ecuador {
+                top: 326px;
+                right: 727px;
+            }
+
+            &.mexico {
+                top: 256px;
+                left: 207px;
+            }
+
+            &.brazil {
+                top: 336px;
+                left: 307px;
+            }
+
+            &.my {
+                top: 216px;
+                left: 227px;
+
+                .dotted {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            &.canada {
+                top: 146px;
+                left: 197px;
+            }
+
+            &.tbn {
+                top: 202px;
+                left: 463px;
+
+                .dotted {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+
+            &.halan {
+                top: 163px;
+                left: 485px;
+            }
+
+            &.nauy {
+                top: 130px;
+                left: 494px;
+            }
+
+            &.thuysi {
+                top: 181px;
+                left: 494px;
+            }
+
+            &.ao {
+                top: 179px;
+                left: 510px;
+            }
+
+            &.phap {
+                top: 181px;
+                left: 480px;
+
+                .dotted {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+
+            &.anh {
+                top: 161px;
+                left: 468px;
+            }
+
+            &.duc {
+                top: 164px;
+                left: 498px;
+
+                .dotted {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+
+            &.thuydien {
+                top: 129px;
+                left: 511px;
+            }
+
+            @media (min-width: 1000px) {
+                display: block;
+            }
+        }
+    }
+
+    &__statistical1 {
+        background: #F4F4F4;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+
+        .item {
+            display: inline-block;
+            color: #888888;
+            text-align: center;
+            margin: 0 10px;
+
+            label {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 14px;
+                display: block;
+                margin-bottom: 6px;
+            }
+
+            strong {
+                color: #FFFFFF;
+                font-weight: bold;
+                font-size: 20px;
+                background: #48B71D;
+                height: 38px;
+                line-height: 38px;
+                padding: 0 15px;
+                display: block;
+            }
+
+            &:nth-child(1) {
+                strong {
+                    background: #BF3D2D;
+                }
+            }
+
+            &:nth-child(2) {
+                strong {
+                    background: #666666;
+                }
+            }
+
+            &:nth-child(4) {
+                strong {
+                    background: #C49D3B;
+                }
+            }
+        }
+    }
+
+    &__statistical2 {
+        border: 1px solid #F4F4F4;
+        padding: 44px 20px 20px 20px;
+        background: #fff;
+        .column-gird {
+            column-count: 3;
+            column-gap: 88px;
+            font: 400 13px Arial;
+            color: #333333;
+
+            li {
+                border-bottom: 1px solid #E6E6E6;
+                display: flex;
+                justify-content: space-between;
+                padding: 5px 0;
+
+                .nation {
+                    width: 106px;
+                }
+
+                .infected {
+                    font-weight: bold;
+                    color: #BF3D2D;
+                    text-align: right;
+                }
+
+                .dead {
+                    color: #666666;
+                    font-weight: bold;
+                    text-align: right;
+                }
+
+                &:first-child {
+
+                    .infected,
+                    .dead {
+                        font-weight: 400
+                    }
+
+                    .dead {
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        .table-list {
+            margin: 0 -44px;
+
+            .item {
+                padding: 0 44px;
+                width: 33.33%;
+
+                &:first-child {
+                    table.table {
+                        margin-top: -24px;
+
+                        tr {
+                            &:first-child {
+                                td {
+                                    border-bottom: 0;
+                                }
+
+                                .dead {
+                                    color: #333
+                                }
+
+                                .infected,
+                                .dead {
+                                    font-weight: 400
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        table.table {
+            font: 400 13px Arial;
+            color: #333333;
+            margin: 0;
+            width: 100%;
+
+            tr {
+                td {
+                    border-bottom: 1px solid #E6E6E6;
+                    padding: 4px 0;
+                }
+
+                &:last-child {
+                    td {
+                        border-bottom: 0;
+                    }
+                }
+            }
+
+            .nation {
+                width: 106px;
+            }
+
+            .infected {
+                font-weight: bold;
+                color: #BF3D2D;
+                text-align: right;
+            }
+
+            .dead {
+                color: #666666;
+                font-weight: bold;
+                text-align: right;
+            }
+        }
+
+        .ratio-list {
+            border-top: 1px solid #F4F4F4;
+            padding-top: 20px;
+            margin-top: 20px;
+
+            .flex {
+                margin: 0 -12.5px;
+            }
+
+            .item {
+                width: 25%;
+                padding: 0 12.5px;
+                position: relative;
+                text-align: center;
+                font: 400 13px/1.4 Arial;
+                color: #666666;
+                padding: 20px;
+
+                &::before {
+                    content: "";
+                    background: #F4F4F4;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 12.5px;
+                    right: 12.5px;
+                    z-index: 0;
+                }
+
+                label {
+                    color: #888888;
+                    font: bold 16px Arial;
+                    display: inline-block;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        background: rgba(0, 0, 0, 0.1);
+                        width: 122px;
+                        height: 1px;
+                        position: absolute;
+                        bottom: -5px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                    }
+                }
+
+                .numbers {
+                    color: #BF3D2D;
+                    font: bold 50px Arial;
+                    display: block;
+                    margin: 12px 0;
+                    position: relative;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                p{position: relative;}
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        &__statistical2 {
+            .table-list {
+                margin: 0 -20px;
+
+                .item {
+                    padding: 0 20px;
+                    width: 100%;
+                }
+            }
+
+            table.table tr {
+                .infected {
+                    width: 350px;
+                }
+
+                &:last-child td {
+                    border-bottom: 1px solid #E6E6E6;
+                }
+            }
+
+            .ratio-list {
+                .item {
+                    width: 50%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+

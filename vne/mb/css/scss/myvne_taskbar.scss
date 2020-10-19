@@ -1,0 +1,163 @@
+@import "var.scss";
+#myvne_taskbar{
+  position: absolute; top: 0; right: 0; height: 44px;
+  ul{
+    li{
+      float: left; margin: 0; padding: 0; position: relative;
+      a{
+        display: block; padding: 0 5px; line-height: 44px; border-left: 1px solid #e1e1e1; position: relative;
+        .badged{
+          position: absolute;
+          font-size: 8px;
+          padding: 2px;
+          line-height: 1;
+          background: #9f224e;
+          color: #fff;
+          top: 2px;
+          right: 2px;
+          border-radius: 2px;
+        }
+        .ic{
+          vertical-align: middle;
+          font-size: 20px;
+        }
+      }
+      .myvne_user_status {
+          display: none;
+          z-index: 999;
+          position: absolute;
+          background-color: #fff;
+          border: 1px solid #e1e1e1;
+          top: 43px;
+          right: -1px;
+          min-width: 150px;
+          li{
+            width: 100%; float: left; border-bottom: 1px solid #e1e1e1;
+            a{
+              padding: 8px;
+              display: block;
+              font: 400 14px/15px arial;
+                border: none;
+                span{background: #9f224e; color: #fff; padding: 1px 5px; border-radius: 5px; display: inline-block; vertical-align: middle; margin-left: 5px;}
+              }
+              &:last-child{border-bottom: none;}
+          }
+      }
+
+      }
+  }
+}
+#myvne_taskbar{
+    ul{
+        li.avatar_user{display: none;}
+        li.icon_user a{padding: 0 12px;}
+    }    
+  ul.loged{
+    li.icon_user{
+        display: none;
+    }
+      li.avatar_user{
+          a{padding: 0 5px;}
+          display: block;
+          img{
+              display: inline-block; vertical-align: middle; width: 25px; height: 25px; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%;
+          }
+          .myvne_user_status{
+              li{
+                  a{padding: 8px;}
+              }
+          }  
+      }
+      
+  }
+}
+#myvne_taskbar{
+  ul{
+    li.icon_notify.active, li.icon_notice.active{
+    a{
+      .ic{
+        color: $vne_color;
+      }
+    }
+    }
+
+  }
+}
+#myvne_taskbar{
+  ul{
+    li{
+      .myvne_notify_lists{
+        width: 320px; display: none; position: absolute; right: -1px; top: 43px; background: #f8f8f8; border: 1px solid #e1e1e1; border-top: 2px solid $vne_color; max-height: 370px; overflow-y: auto; overflow-x: hidden; z-index: 99;
+        -webkit-overflow-scrolling: touch;
+        li{
+          padding: 10px;
+          border-bottom: 1px solid #e1e1e1;
+          a{
+            display: block;
+            font-size: 13px;
+            color: #333;
+            line-height: 17px;
+            padding: 0;
+            border: none;
+            .eid_logo{
+                width: 40px; height: 40px; overflow: hidden;
+              float: left;
+              margin-right: 10px;
+            }
+            .eid_wrap_info {
+                overflow: hidden;
+                display: inherit;
+                span{
+                  display: block;
+                  .ic{
+                    color: $vne_color;
+                    font-size: 11px;
+                  }
+                }
+                span.eid_time{
+                  margin-top: 5px;
+                }
+            }
+          }
+          &.xemthem_notify{
+            width: 100%;
+            text-align: center;
+            a{
+              display: block;
+            }
+          }
+        }
+        li.read{
+          background: #fff;
+        }
+          .title{
+                  width: 100%;
+                    float: left;
+                    background: #fff;
+                    padding: 10px;
+                    font-size: 14px;
+          
+              .eid_left{float: left;}
+              .eid_right{float: right;}
+          }
+          .eid_null{font-size: 14px; text-align: center; padding: 20px 0; width: 100%; float: left;}
+      }
+    
+        &.icon_notify{
+            .myvne_notify_lists{
+                right: -32px;
+            }
+        }
+      }
+
+  }
+}
+
+/**RESPONSIVE**/
+@media screen and (min-width: 375px){
+    #myvne_taskbar ul.loged li.avatar_user a{padding: 0 10px;}
+    #myvne_taskbar ul li a{padding: 0 12px;}
+    #myvne_taskbar ul li.icon_notify .myvne_notify_lists{right: -1px;}
+}
+
+

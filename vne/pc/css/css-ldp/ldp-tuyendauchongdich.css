@@ -1,0 +1,128 @@
+/**LDP TUYEN DAU CHONG DICH**/
+/**Edit style default**/
+.title-folder {
+  color: #065B99; }
+
+.sponsor-ldp {
+  align-items: center;
+  font-size: 14px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5; }
+  .sponsor-ldp img {
+    height: 29px;
+    margin-left: 5px; }
+
+.box-tt-ldp {
+  padding: 0; }
+  .box-tt-ldp .sponsor-info.sponsor-full {
+    margin-top: 0;
+    height: 50px; }
+  .box-tt-ldp .txt-tt {
+    font-size: 14px; }
+
+.list-news-five .item-news .title-news {
+  font-size: 16px;
+  line-height: 160%; }
+
+/**Box tri an*/
+.box-trian.box-sponsor-bg .item-news .title-news {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: arial; }
+.box-trian .count-like {
+  font-size: 13px;
+  color: #757575; }
+  .box-trian .count-like .ic {
+    margin-left: 5px;
+    vertical-align: top; }
+.box-trian .author-like {
+  color: #757575;
+  font-size: 13px;
+  line-height: 160%;
+  align-items: center; }
+  .box-trian .author-like .author-cmt, .box-trian .author-like img {
+    margin-left: auto; }
+
+/**Box gay quy tu thien**/
+.box-tu-thien .title-box-category {
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px; }
+.box-tu-thien .title-box-tt {
+  color: #648CFF; }
+
+.box-count-tt {
+  background: #fff;
+  padding: 15px 15px 20px 15px; }
+
+.vnd-count {
+  text-align: center;
+  color: #648CFF; }
+  .vnd-count span {
+    font-size: 32px;
+    font-weight: 700; }
+  .vnd-count sub {
+    font-size: 16px;
+    vertical-align: baseline; }
+
+.processbar-tt {
+  background: rgba(100, 140, 255, 0.2);
+  height: 32px;
+  position: relative; }
+  .processbar-tt .inner-prbar {
+    height: 100%;
+    background: #648CFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    line-height: 32px; }
+
+.count-min-max {
+  align-items: center;
+  font-size: 15px; }
+  .count-min-max .count-max {
+    margin-left: auto; }
+
+.count-person {
+  font-size: 15px;
+  padding-left: 7px;
+  border-left: 1px solid #23A8E8; }
+  .count-person span {
+    color: #23A8E8; }
+
+/**DANH SACH DONG GOP**/
+.table-ungho {
+  width: 100%;
+  float: left; }
+  .table-ungho tr:nth-child(odd) {
+    background: #e2e2e2; }
+  .table-ungho tr:nth-child(even) {
+    background: #f7f7f7; }
+  .table-ungho td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 15px 20px;
+    color: #222;
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    width: 75%; }
+    .table-ungho td.td-money {
+      width: 25%;
+      color: #000; }
+    .table-ungho td.td-dv {
+      width: 75%; }
+  .table-ungho.table-head tr {
+    background: #ccc; }
+  .table-ungho.table-head td {
+    color: #000; }
+
+.wrap-scroll-table-ds {
+  max-height: 500px;
+  overflow: auto; }
+  .wrap-scroll-table-ds .ss-scroll {
+    background: #222; }
+
+/*# sourceMappingURL=ldp-tuyendauchongdich.css.map */

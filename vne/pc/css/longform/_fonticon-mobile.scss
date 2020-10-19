@@ -1,0 +1,599 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "vnexpress-font";
+  src:url("fonts/vnexpress-font.eot");
+  src:url("fonts/vnexpress-font.eot?#iefix") format("embedded-opentype"),
+    url("fonts/vnexpress-font.woff") format("woff"),
+    url("fonts/vnexpress-font.ttf") format("truetype"),
+    url("fonts/vnexpress-font.svg#vnexpress-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "vnexpress-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="ic-"],
+[class*=" ic-"]{
+    font-size: 15px;
+    color: #999;
+}
+[class^="ic-"]:before,
+[class*=" ic-"]:before {
+  font-family: "vnexpress-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ic-android:before {
+  content: "\61";
+}
+.ic-android-2:before {
+  content: "\62";
+}
+.ic-app:before {
+  content: "\63";
+}
+.ic-apple:before {
+  content: "\64";
+}
+.ic-arrow-down:before {
+  content: "\65";
+}
+.ic-arrow-down-2:before {
+  content: "\66";
+}
+.ic-arrow-down-3:before {
+  content: "\67";
+}
+.ic-arrow-left:before {
+  content: "\68";
+}
+.ic-arrow-left-2:before {
+  content: "\69";
+}
+.ic-arrow-left-3:before {
+  content: "\6a";
+}
+.ic-arrow-right:before {
+  content: "\6b";
+}
+.ic-arrow-right-2:before {
+  content: "\6c";
+}
+.ic-arrow-right-3:before {
+  content: "\6d";
+}
+.ic-arrow-up:before {
+  content: "\6e";
+}
+.ic-arrow-up-2:before {
+  content: "\6f";
+}
+.ic-arrow-up-3:before {
+  content: "\70";
+}
+.ic-audio:before {
+  content: "\71";
+}
+.ic-before-n-after:before {
+  content: "\72";
+}
+.ic-bell:before {
+  content: "\73";
+}
+.ic-bell-2:before {
+  content: "\74";
+}
+.ic-best-player:before {
+  content: "\75";
+}
+.ic-book:before {
+  content: "\76";
+}
+.ic-bookmark:before {
+  content: "\77";
+}
+.ic-bookmark-2:before {
+  content: "\78";
+}
+.ic-bookmark-2-o:before {
+  content: "\79";
+}
+.ic-bookmark-o:before {
+  content: "\7a";
+}
+.ic-caret-2-down:before {
+  content: "\41";
+}
+.ic-caret-2-left:before {
+  content: "\42";
+}
+.ic-caret-2-right:before {
+  content: "\43";
+}
+.ic-caret-2-up:before {
+  content: "\44";
+}
+.ic-caret-down:before {
+  content: "\45";
+}
+.ic-caret-down-2:before {
+  content: "\46";
+}
+.ic-caret-left:before {
+  content: "\47";
+}
+.ic-caret-left-2:before {
+  content: "\48";
+}
+.ic-caret-right:before {
+  content: "\49";
+}
+.ic-caret-right-2:before {
+  content: "\4a";
+}
+.ic-caret-up:before {
+  content: "\4b";
+}
+.ic-caret-up-2:before {
+  content: "\4c";
+}
+
+.ic-comment:before {
+  content: "\52";
+}
+.ic-corner-kick:before {
+  content: "\53";
+}
+
+.ic-double-arrow-down:before {
+  content: "\58";
+  font-size: 9px;
+}
+.ic-double-arrow-left:before {
+  content: "\59";
+}
+.ic-double-arrow-right:before {
+  content: "\5a";
+}
+.ic-double-arrow-up:before {
+  content: "\30";
+}
+.ic-edit:before {
+  content: "\31";
+}
+.ic-edit-1:before {
+  content: "\32";
+}
+.ic-email:before {
+  content: "\33";
+}
+.ic-email-outline:before {
+  content: "\34";
+}
+.ic-expand:before {
+  content: "\35";
+}
+.ic-eyes:before {
+  content: "\36";
+}
+.ic-eyes-close:before {
+  content: "\37";
+}
+.ic-facebook:before {
+  content: "\38";
+}
+.ic-false:before {
+  content: "\39";
+}
+.ic-famous-quote:before {
+  content: "\21";
+}
+.ic-flip:before {
+  content: "\22";
+}
+.ic-free-kick:before {
+  content: "\23";
+}
+.ic-globe:before {
+  content: "\24";
+}
+.ic-goal:before {
+  content: "\25";
+}
+.ic-google-plus:before {
+  content: "\26";
+}
+.ic-google-plus-2:before {
+  content: "\27";
+}
+
+.ic-home-2:before {
+  content: "\29";
+}
+.ic-infographic:before {
+  content: "\2a";
+}
+.ic-instagram:before {
+  content: "\2b";
+}
+.ic-linkedin:before {
+  content: "\2c";
+}
+.ic-m-24h:before {
+  content: "\2d";
+}
+.ic-m-audio:before {
+  content: "\2e";
+}
+.ic-m-business:before {
+  content: "\2f";
+}
+.ic-m-car:before {
+  content: "\3a";
+}
+.ic-m-contact:before {
+  content: "\3b";
+}
+.ic-m-ecom:before {
+  content: "\3c";
+}
+.ic-m-education:before {
+  content: "\3d";
+}
+.ic-m-entertainment:before {
+  content: "\3e";
+}
+.ic-m-family:before {
+  content: "\3f";
+}
+.ic-m-fun:before {
+  content: "\40";
+}
+.ic-m-health:before {
+  content: "\5b";
+}
+.ic-m-home:before {
+  content: "\5d";
+}
+.ic-m-infographic:before {
+  content: "\5e";
+}
+.ic-m-law:before {
+  content: "\5f";
+}
+.ic-m-mail:before {
+  content: "\60";
+}
+.ic-m-news:before {
+  content: "\7b";
+}
+.ic-m-opinion:before {
+  content: "\7c";
+}
+.ic-m-photo:before {
+  content: "\7d";
+}
+.ic-m-science:before {
+  content: "\7e";
+}
+.ic-m-social:before {
+  content: "\5c";
+}
+.ic-m-sport:before {
+  content: "\e000";
+}
+.ic-m-talk:before {
+  content: "\e001";
+}
+.ic-m-technology:before {
+  content: "\e002";
+}
+.ic-m-travel:before {
+  content: "\e003";
+}
+.ic-m-twitter:before {
+  content: "\e004";
+}
+.ic-m-video:before {
+  content: "\e005";
+}
+.ic-m-world:before {
+  content: "\e006";
+}
+.ic-main-user:before {
+  content: "\e007";
+}
+.ic-menu:before {
+  content: "\e008";
+}
+.ic-minus:before {
+  content: "\e009";
+}
+.ic-minus-circle:before {
+  content: "\e00a";
+}
+.ic-minus-square:before {
+  content: "\e00b";
+}
+.ic-miss-penalty:before {
+  content: "\e00c";
+}
+.ic-music:before {
+  content: "\e00d";
+}
+.ic-offside:before {
+  content: "\e00e";
+}
+.ic-own-goal:before {
+  content: "\e00f";
+  color: #ed1c24;
+}
+.ic-pause:before {
+  content: "\e010";
+}
+.ic-penalty:before {
+  content: "\e011";
+}
+.ic-photo:before {
+  content: "\e012";
+}
+.ic-pinterest:before {
+  content: "\e013";
+}
+.ic-pinterest-p:before {
+  content: "\e014";
+}
+.ic-play:before {
+  content: "\e015";
+}
+.ic-player:before {
+  content: "\e016";
+}
+.ic-plus:before {
+  content: "\e018";
+}
+.ic-plus-circle:before {
+  content: "\e019";
+}
+.ic-plus-light:before {
+  content: "\e01a";
+}
+.ic-plus-square:before {
+  content: "\e01b";
+}
+
+.ic-red-card:before {
+  content: "\e01e";
+    color: #ec1c24;
+}
+.ic-repeat-all:before {
+  content: "\e01f";
+}
+.ic-reply:before {
+  content: "\e020";
+}
+.ic-reply-all:before {
+  content: "\e021";
+}
+.ic-responsive:before {
+  content: "\e022";
+}
+.ic-rss:before {
+  content: "\e023";
+}
+.ic-search:before {
+  content: "\e024";
+}
+
+.ic-sh-gear:before {
+  content: "\e026";
+}
+.ic-sh-laptop:before {
+  content: "\e027";
+}
+.ic-sh-other:before {
+  content: "\e028";
+}
+.ic-sh-phone:before {
+  content: "\e029";
+}
+.ic-sh-photo-camera:before {
+  content: "\e02a";
+}
+.ic-sh-tablet:before {
+  content: "\e02b";
+}
+.ic-share:before {
+  content: "\e02c";
+}
+.ic-sport-comment:before {
+  content: "\e02d";
+}
+.ic-sport-live-default:before {
+  content: "\e02e";
+}
+.ic-stadium:before {
+  content: "\e02f";
+}
+.ic-star:before {
+  content: "\e030";
+}
+
+.ic-star-half-left:before {
+  content: "\e032";
+}
+.ic-star-half-right:before {
+  content: "\e033";
+}
+.ic-start-match:before {
+  content: "\e035";
+}
+.ic-stop:before {
+  content: "\e036";
+}
+.ic-strategy:before {
+  content: "\e037";
+}
+.ic-substitution:before {
+  content: "\e038";
+}
+.ic-tag:before {
+  content: "\e03a";
+}
+.ic-tags:before {
+  content: "\e03b";
+}
+.ic-true:before {
+  content: "\e03d";
+}
+.ic-twitter:before {
+  content: "\e03e";
+}
+.ic-user:before {
+  content: "\e03f";
+}
+.ic-video:before {
+  content: "\e040";
+}
+.ic-vnexpress:before {
+  content: "\e041";
+  color: #9f224e;
+}
+.ic-window:before {
+  content: "\e042";
+}
+.ic-yellow-card:before {
+  content: "\e043";
+    color: #f4d11f;
+}
+
+.ic-unlike:before {
+  content: "\e045";
+}
+.ic-interactive:before {
+  content: "\e046";
+}
+.ic-like:before {
+  content: "\e047";
+}
+.ic-info-2:before {
+  content: "\e049";
+}
+.ic-print:before {
+  content: "\e04a";
+}
+[class^="ic-comment"]:before,
+[class*=" ic-comment"]:before{
+   color: #9f224e; cursor: pointer;font-size: 12px;
+    
+}
+[class^="ic-comment"],
+[class*=" ic-comment"]{
+    span{padding-left: 3px; font: 400 12px arial;margin-top: -7px;
+    display: inline-block;
+    vertical-align: middle;color: #9f224e;}
+}
+[class^="ic-interactive"]:before,
+[class*=" ic-interactive"]:before{
+   font-size: 22px; line-height: 28px;
+}
+.ic-live {font-size: 9px;text-transform: uppercase;height: 15px;line-height: 15px;display: inline-block;vertical-align: middle;color: #e78dac;}
+.ic-live:before {-webkit-border-radius: 50%;border-radius: 50%;display: block;position: relative;width: 15px;height: 15px;content: '';margin-right: 5px;vertical-align: initial;-webkit-animation: live-pulse 1s infinite;-moz-animation: live-pulse 1s infinite;-o-animation: live-pulse 1s infinite;animation: live-pulse 1s infinite;float: left;}
+@-webkit-keyframes live-pulse{0%{background-color:#e78dac}50%{background-color:white}100%{background-color:#e78dac}}@-moz-keyframes live-pulse{0%{background-color:#e78dac}50%{background-color:white}100%{background-color:#e78dac}}@keyframes live-pulse{0%{background-color:#e78dac}50%{background-color:white}100%{background-color:#e78dac}}
+
+/**END FONT ICON**/
+
+%ic-vne{
+    width: 14px; height: 14px; background: url("#{$url}/graphics/icon_vne.svg") no-repeat; display: inline-block; vertical-align: middle;
+    &:before{display: none;}
+}
+.ic-like,.ic-unlike{
+@extend %ic-vne;    
+  background-position: -95px -63px;
+ width: 13px;
+ height: 12px;
+}
+.ic-unlike{
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+}
+
+.ic-plus-square{
+    @extend %ic-vne; 
+  background-position: -48px 0;
+    width: 12px;height: 12px;
+}
+.ic-minus-square{
+    @extend %ic-vne; 
+    width: 12px;height: 12px;
+  background-position: -60px 0;
+}
+.ic-user{
+    @extend %ic-vne; 
+  background-position: -611px -193px;
+ width: 18px;
+ height: 18px;
+}
+
+.ic-vnexpress{
+    @extend %ic-vne; 
+    width: 16px;height: 18px;
+  background-position: -415px -192px;
+}
+.ic-bell {
+    @extend %ic-vne; 
+  width: 18px;
+height: 18px;
+  background-position: -252px -192px;
+}
+.ic-menu {
+     @extend %ic-vne; 
+    width: 18px;
+    height: 12px;
+  background-position: -18px -195px;
+}
+.ic-search{@extend %ic-vne; width: 17px;height: 18px;
+  background-position: -108px -192px;
+}
+.ic-rss{
+  @extend %ic-vne; background-position: -339px -263px;
+ width: 20px;
+ height: 20px;
+}
+.ic-false {@extend %ic-vne; width: 18px;height: 18px;
+  background-position: -72px -192px;
+}
+.ic-ios{@extend %ic-vne; 
+    width: 20px; height: 24px; background-position: -146px -260px;
+}
+.ic-android{@extend %ic-vne; 
+    width: 22px; height: 24px; background-position: -169px -260px;
+}
+.ic-ads{@extend %ic-vne; width: 16px;height: 16px;background: url(images/graphics/ad.svg) no-repeat 0 0; background-size: contain;}
+.ic-refresh{@extend %ic-vne; width: 18px;height: 18px;background-position: -162px -192px;}
+.ic-sucess{@extend %ic-vne;width: 32px;height: 32px;background-position: 0 -334px;}
+.box_comment_vne .ic-arrow-down {
+    @extend %ic-vne;
+    width: 8px;
+    height: 5px;
+    background-position: -2px -4px;
+}

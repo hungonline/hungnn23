@@ -1,0 +1,717 @@
+@font-face {
+  font-family: "vnexpress-font";
+  src: url("fonts/vnexpress-font.eot");
+  src: url("fonts/vnexpress-font.eot?#iefix") format("embedded-opentype"), url("fonts/vnexpress-font.woff") format("woff"), url("fonts/vnexpress-font.ttf") format("truetype"), url("fonts/vnexpress-font.svg#vnexpress-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 15, C:/xampp/htdocs/medium/_fonticon.scss */
+[data-icon]:before {
+  font-family: "vnexpress-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 27, C:/xampp/htdocs/medium/_fonticon.scss */
+[class^="ic-"],
+[class*=" ic-"] {
+  font-size: 15px;
+  color: #999; }
+
+/* line 32, C:/xampp/htdocs/medium/_fonticon.scss */
+[class^="ic-"]:before,
+[class*=" ic-"]:before {
+  font-family: "vnexpress-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 44, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-android:before {
+  content: "\61"; }
+
+/* line 47, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-android-2:before {
+  content: "\62"; }
+
+/* line 50, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-app:before {
+  content: "\63"; }
+
+/* line 53, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-apple:before {
+  content: "\64"; }
+
+/* line 56, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-down:before {
+  content: "\65"; }
+
+/* line 59, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-down-2:before {
+  content: "\66"; }
+
+/* line 62, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-down-3:before {
+  content: "\67"; }
+
+/* line 65, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-left:before {
+  content: "\68"; }
+
+/* line 68, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-left-2:before {
+  content: "\69"; }
+
+/* line 71, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-left-3:before {
+  content: "\6a"; }
+
+/* line 74, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-right:before {
+  content: "\6b"; }
+
+/* line 77, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-right-2:before {
+  content: "\6c"; }
+
+/* line 80, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-right-3:before {
+  content: "\6d"; }
+
+/* line 83, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-up:before {
+  content: "\6e"; }
+
+/* line 86, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-up-2:before {
+  content: "\6f"; }
+
+/* line 89, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-arrow-up-3:before {
+  content: "\70"; }
+
+/* line 92, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-audio:before {
+  content: "\71"; }
+
+/* line 95, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-before-n-after:before {
+  content: "\72"; }
+
+/* line 98, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-bell:before {
+  content: "\73"; }
+
+/* line 101, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-bell-2:before {
+  content: "\74"; }
+
+/* line 104, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-best-player:before {
+  content: "\75"; }
+
+/* line 107, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-book:before {
+  content: "\76"; }
+
+/* line 110, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-bookmark:before {
+  content: "\77"; }
+
+/* line 113, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-bookmark-2:before {
+  content: "\78"; }
+
+/* line 116, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-bookmark-2-o:before {
+  content: "\79"; }
+
+/* line 119, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-bookmark-o:before {
+  content: "\7a"; }
+
+/* line 122, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-2-down:before {
+  content: "\41"; }
+
+/* line 125, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-2-left:before {
+  content: "\42"; }
+
+/* line 128, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-2-right:before {
+  content: "\43"; }
+
+/* line 131, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-2-up:before {
+  content: "\44"; }
+
+/* line 134, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-down:before {
+  content: "\45"; }
+
+/* line 137, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-down-2:before {
+  content: "\46"; }
+
+/* line 140, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-left:before {
+  content: "\47"; }
+
+/* line 143, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-left-2:before {
+  content: "\48"; }
+
+/* line 146, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-right:before {
+  content: "\49"; }
+
+/* line 149, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-right-2:before {
+  content: "\4a"; }
+
+/* line 152, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-up:before {
+  content: "\4b"; }
+
+/* line 155, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-caret-up-2:before {
+  content: "\4c"; }
+
+/* line 159, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-comment:before {
+  content: "\52"; }
+
+/* line 162, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-corner-kick:before {
+  content: "\53"; }
+
+/* line 166, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-double-arrow-down:before {
+  content: "\58";
+  font-size: 9px; }
+
+/* line 170, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-double-arrow-left:before {
+  content: "\59"; }
+
+/* line 173, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-double-arrow-right:before {
+  content: "\5a"; }
+
+/* line 176, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-double-arrow-up:before {
+  content: "\30"; }
+
+/* line 179, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-edit:before {
+  content: "\31"; }
+
+/* line 182, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-edit-1:before {
+  content: "\32"; }
+
+/* line 185, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-email:before {
+  content: "\33"; }
+
+/* line 188, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-email-outline:before {
+  content: "\34"; }
+
+/* line 191, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-expand:before {
+  content: "\35"; }
+
+/* line 194, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-eyes:before {
+  content: "\36"; }
+
+/* line 197, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-eyes-close:before {
+  content: "\37"; }
+
+/* line 200, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-facebook:before {
+  content: "\38"; }
+
+/* line 203, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-false:before {
+  content: "\39"; }
+
+/* line 206, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-famous-quote:before {
+  content: "\21"; }
+
+/* line 209, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-flip:before {
+  content: "\22"; }
+
+/* line 212, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-free-kick:before {
+  content: "\23"; }
+
+/* line 215, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-globe:before {
+  content: "\24"; }
+
+/* line 218, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-goal:before {
+  content: "\25"; }
+
+/* line 221, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-google-plus:before {
+  content: "\26"; }
+
+/* line 224, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-google-plus-2:before {
+  content: "\27"; }
+
+/* line 228, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-home-2:before {
+  content: "\29"; }
+
+/* line 231, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-infographic:before {
+  content: "\2a"; }
+
+/* line 234, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-instagram:before {
+  content: "\2b"; }
+
+/* line 237, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-linkedin:before {
+  content: "\2c"; }
+
+/* line 240, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-24h:before {
+  content: "\2d"; }
+
+/* line 243, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-audio:before {
+  content: "\2e"; }
+
+/* line 246, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-business:before {
+  content: "\2f"; }
+
+/* line 249, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-car:before {
+  content: "\3a"; }
+
+/* line 252, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-contact:before {
+  content: "\3b"; }
+
+/* line 255, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-ecom:before {
+  content: "\3c"; }
+
+/* line 258, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-education:before {
+  content: "\3d"; }
+
+/* line 261, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-entertainment:before {
+  content: "\3e"; }
+
+/* line 264, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-family:before {
+  content: "\3f"; }
+
+/* line 267, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-fun:before {
+  content: "\40"; }
+
+/* line 270, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-health:before {
+  content: "\5b"; }
+
+/* line 273, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-home:before {
+  content: "\5d"; }
+
+/* line 276, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-infographic:before {
+  content: "\5e"; }
+
+/* line 279, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-law:before {
+  content: "\5f"; }
+
+/* line 282, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-mail:before {
+  content: "\60"; }
+
+/* line 285, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-news:before {
+  content: "\7b"; }
+
+/* line 288, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-opinion:before {
+  content: "\7c"; }
+
+/* line 291, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-photo:before {
+  content: "\7d"; }
+
+/* line 294, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-science:before {
+  content: "\7e"; }
+
+/* line 297, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-social:before {
+  content: "\5c"; }
+
+/* line 300, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-sport:before {
+  content: "\e000"; }
+
+/* line 303, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-talk:before {
+  content: "\e001"; }
+
+/* line 306, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-technology:before {
+  content: "\e002"; }
+
+/* line 309, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-travel:before {
+  content: "\e003"; }
+
+/* line 312, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-twitter:before {
+  content: "\e004"; }
+
+/* line 315, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-video:before {
+  content: "\e005"; }
+
+/* line 318, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-m-world:before {
+  content: "\e006"; }
+
+/* line 321, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-main-user:before {
+  content: "\e007"; }
+
+/* line 324, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-menu:before {
+  content: "\e008"; }
+
+/* line 327, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-minus:before {
+  content: "\e009"; }
+
+/* line 330, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-minus-circle:before {
+  content: "\e00a"; }
+
+/* line 333, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-minus-square:before {
+  content: "\e00b"; }
+
+/* line 336, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-miss-penalty:before {
+  content: "\e00c"; }
+
+/* line 339, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-music:before {
+  content: "\e00d"; }
+
+/* line 342, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-offside:before {
+  content: "\e00e"; }
+
+/* line 345, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-own-goal:before {
+  content: "\e00f";
+  color: #ed1c24; }
+
+/* line 349, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-pause:before {
+  content: "\e010"; }
+
+/* line 352, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-penalty:before {
+  content: "\e011"; }
+
+/* line 355, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-photo:before {
+  content: "\e012"; }
+
+/* line 358, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-pinterest:before {
+  content: "\e013"; }
+
+/* line 361, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-pinterest-p:before {
+  content: "\e014"; }
+
+/* line 364, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-play:before {
+  content: "\e015"; }
+
+/* line 367, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-player:before {
+  content: "\e016"; }
+
+/* line 370, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-plus:before {
+  content: "\e018"; }
+
+/* line 373, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-plus-circle:before {
+  content: "\e019"; }
+
+/* line 376, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-plus-light:before {
+  content: "\e01a"; }
+
+/* line 379, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-plus-square:before {
+  content: "\e01b"; }
+
+/* line 383, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-red-card:before {
+  content: "\e01e";
+  color: #ec1c24; }
+
+/* line 387, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-repeat-all:before {
+  content: "\e01f"; }
+
+/* line 390, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-reply:before {
+  content: "\e020"; }
+
+/* line 393, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-reply-all:before {
+  content: "\e021"; }
+
+/* line 396, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-responsive:before {
+  content: "\e022"; }
+
+/* line 399, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-rss:before {
+  content: "\e023"; }
+
+/* line 402, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-search:before {
+  content: "\e024"; }
+
+/* line 406, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sh-gear:before {
+  content: "\e026"; }
+
+/* line 409, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sh-laptop:before {
+  content: "\e027"; }
+
+/* line 412, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sh-other:before {
+  content: "\e028"; }
+
+/* line 415, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sh-phone:before {
+  content: "\e029"; }
+
+/* line 418, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sh-photo-camera:before {
+  content: "\e02a"; }
+
+/* line 421, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sh-tablet:before {
+  content: "\e02b"; }
+
+/* line 424, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-share:before {
+  content: "\e02c"; }
+
+/* line 427, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sport-comment:before {
+  content: "\e02d"; }
+
+/* line 430, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-sport-live-default:before {
+  content: "\e02e"; }
+
+/* line 433, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-stadium:before {
+  content: "\e02f"; }
+
+/* line 436, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-star:before {
+  content: "\e030"; }
+
+/* line 440, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-star-half-left:before {
+  content: "\e032"; }
+
+/* line 443, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-star-half-right:before {
+  content: "\e033"; }
+
+/* line 446, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-start-match:before {
+  content: "\e035"; }
+
+/* line 449, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-stop:before {
+  content: "\e036"; }
+
+/* line 452, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-strategy:before {
+  content: "\e037"; }
+
+/* line 455, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-substitution:before {
+  content: "\e038"; }
+
+/* line 458, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-tag:before {
+  content: "\e03a"; }
+
+/* line 461, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-tags:before {
+  content: "\e03b"; }
+
+/* line 464, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-true:before {
+  content: "\e03d"; }
+
+/* line 467, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-twitter:before {
+  content: "\e03e"; }
+
+/* line 470, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-user:before {
+  content: "\e03f"; }
+
+/* line 473, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-video:before {
+  content: "\e040"; }
+
+/* line 476, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-vnexpress:before {
+  content: "\e041";
+  color: #9f224e; }
+
+/* line 480, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-window:before {
+  content: "\e042"; }
+
+/* line 483, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-yellow-card:before {
+  content: "\e043";
+  color: #f4d11f; }
+
+/* line 488, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-unlike:before {
+  content: "\e045"; }
+
+/* line 491, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-interactive:before {
+  content: "\e046"; }
+
+/* line 494, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-like:before {
+  content: "\e047"; }
+
+/* line 497, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-info-2:before {
+  content: "\e049"; }
+
+/* line 500, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-print:before {
+  content: "\e04a"; }
+
+/* line 503, C:/xampp/htdocs/medium/_fonticon.scss */
+[class^="ic-comment"]:before,
+[class*=" ic-comment"]:before {
+  color: #9f224e;
+  cursor: pointer;
+  font-size: 12px; }
+
+/* line 510, C:/xampp/htdocs/medium/_fonticon.scss */
+[class^="ic-comment"] span,
+[class*=" ic-comment"] span {
+  padding-left: 3px;
+  font: 400 12px arial;
+  margin-top: -7px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #9f224e; }
+
+/* line 514, C:/xampp/htdocs/medium/_fonticon.scss */
+[class^="ic-interactive"]:before,
+[class*=" ic-interactive"]:before {
+  font-size: 22px;
+  line-height: 28px; }
+
+/* line 518, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-live {
+  font-size: 9px;
+  text-transform: uppercase;
+  height: 15px;
+  line-height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #e78dac; }
+
+/* line 519, C:/xampp/htdocs/medium/_fonticon.scss */
+.ic-live:before {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  content: '';
+  margin-right: 5px;
+  vertical-align: initial;
+  -webkit-animation: live-pulse 1s infinite;
+  -moz-animation: live-pulse 1s infinite;
+  -o-animation: live-pulse 1s infinite;
+  animation: live-pulse 1s infinite;
+  float: left; }
+
+@-webkit-keyframes live-pulse {
+  0% {
+    background-color: #e78dac; }
+  50% {
+    background-color: white; }
+  100% {
+    background-color: #e78dac; } }
+
+@-moz-keyframes live-pulse {
+  0% {
+    background-color: #e78dac; }
+  50% {
+    background-color: white; }
+  100% {
+    background-color: #e78dac; } }
+
+@keyframes live-pulse {
+  0% {
+    background-color: #e78dac; }
+  50% {
+    background-color: white; }
+  100% {
+    background-color: #e78dac; } }
+
+/**END FONT ICON**/
+
+/*# sourceMappingURL=_fonticon.css.map */

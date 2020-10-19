@@ -1,0 +1,396 @@
+/*btn_vne*/
+.btn_vne{
+	background: #9F224E;
+	color: #fff !important;
+	font: 700 12px arial;
+	padding: 5px 18px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+}
+.txt_clear_all{
+	font-size: 11px;
+	text-decoration: underline;
+	color: #666;
+}
+/*end btn_vne*/
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"], 
+textarea, 
+select{
+	font: 400 13px/14px Arial;
+}
+.form_box{
+  .title_box_category{
+    margin: 0;
+  }
+}
+.form_element{
+  font: 400 14px/14px Arial;
+	width: 80%;
+	margin: 0 auto;
+  li{
+    margin: 0 0 10px 0;
+    &:last-child{margin: 0;}
+  }
+}
+.label_form{
+  width: 100%; float: left; padding: 0 0 5px 0;color: #000;
+}
+.input_form{width: 100%; float: left; border: 1px solid silver;
+color: #666;
+font: 400 14px/14px Arial;
+height: 30px;
+padding: 2px 5px;
+background: #fff;
+outline: none;
+}
+.input_area{height: 100px;}
+.txt_error{font: 400 11px arial; color: $vne_color;}
+.input_70{width: 69% !important;}
+.input_30{width: 29% !important;}
+.input_50{width: 49% !important;}
+.capcha{float: left; margin: 3px 10px;}
+.txt_clear_all{
+  background: none;
+  padding: 5px 8px;
+  text-decoration: underline;
+  color: #333 !important;
+}
+/* Scss Document */
+.thamdo{
+    margin-top: 10px;
+    max-width: 100%;
+    label {
+        margin-bottom: 0;
+        font: 400 16px arial;
+        span{width: 100%;}
+    }
+    .btn_vote_rate.btn_ketqua{
+        
+    }
+    button{
+        float: left;
+        margin-left: 0;
+    }
+    &.vote_rating_box{
+        max-width: 100%; text-align: left;
+    }
+}
+.title_box_category{
+    background: #eee;
+    overflow: hidden;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    span{
+        display: inline-block;
+        position: relative;
+        color: #9f224e;
+        font-weight: 700;
+        &:before{
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: #9f224e;
+            position: absolute;
+            top: 0;
+            z-index: 99;
+        }
+        &:after{
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #999;
+            z-index: 9;
+        }
+    }
+}
+.vote_rating_box{
+    max-width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.title_bx{
+    font: 400 16px/30px arial;
+    padding: 0 0 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #dadada;
+    text-align: left;
+}
+.box_bg_gray {
+    background: #f5f5f5;
+    padding: 15px 3%;
+}
+.btn_vote_rate {
+    padding: 8px 18px;
+    border: none;
+    cursor: pointer;
+    font: 700 12px arial;
+    background: #858585;
+    display: inline-block;
+    vertical-align: middle;
+    &.btn_ketqua{
+        color: #9F224E !important;
+        font: 400 14px arial;
+        padding: 8px 10px;
+        background: none;
+    }
+}
+.box_button{
+    margin-top: 15px;
+}
+
+//Popup
+.mfp-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045; }
+.white-popup {
+    position: relative;
+    background: #f4f4f4;
+    /*width: auto;
+    max-width: 40%;*/
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.title_popup {
+    font: 700 16px arial;
+    color: #000;
+    padding: 8px 20px;
+    background: #fff;
+}
+.content_poup {
+    padding: 20px;
+    background: #f4f4f4;
+    font: 400 14px/20px Arial;
+}
+.ques_vote {
+    background: #ededed;
+    padding: 15px 20px;
+    .text_ques {
+        font: 500 14px arial;
+        color: #9f224e;
+        margin-bottom: 5px;
+    }
+    .timevote {
+        font: 400 11px arial;
+        color: #666;
+    }
+}
+.total_vote {
+    float: right;
+    font: 400 11px arial;
+    color: #666;
+    label{
+        font-weight: 700;
+        color: #9f224e;
+    }
+}
+.list_vote{
+    li {
+        width: 100%;
+        float: left;
+        margin: 0 0 10px;
+        padding: 0 0 15px;
+        border-bottom: 1px dotted #ccc;
+    }
+}
+.rsV_left {
+    width: 25%;
+    float: left;
+    font: 12px arial;
+    color: #000;
+    padding-right: 15px;
+}
+.rsV_right {
+    width: 18%;
+    float: right;
+    font: 12px arial;
+    color: #999;
+    text-align: right;
+    label{
+        color: #000;
+    }
+}
+.scroll_color {
+    width: 55%;
+    float: left;
+    margin: 5px 0;
+    height: 5px;
+    background: #ccc;
+    .bg_center_scroll {
+      position: relative;
+      background: $vne_color;
+      float: left;
+      height: 5px;
+      .txt_number_ketqua {
+        display: inline-block;
+        padding: 5px 0 0;
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+        font: 10px arial;
+        color: $vne_color;
+    }
+  }
+}
+.rsV_right {
+    width: 18%;
+    float: right;
+    font: 12px arial;
+    color: #999;
+    text-align: right;
+    label {
+    color: #000;
+    }
+}
+.total_vote {
+    float: right;
+    font: 400 11px arial;
+    color: #666;
+    label {
+      font-weight: 700;
+      color: $vne_color;
+  }
+}
+.total_rate{
+  font-weight: 700;
+  color: $vne_color;
+}
+.list_rating{
+  padding-top: 20px;
+  margin-bottom: 20px;
+	font-size: 0;
+  li{
+    width: 9%;
+    display: inline-block;
+    position: relative;
+    margin-right:1%;
+    counter-increment: num;
+	  &:before{	  	
+		content: counter(num);
+		position: absolute;
+		bottom: -20px;
+		left: 50%;
+		 font: 400 12px arial;
+		  color: #000;
+	  }
+  }
+  .rank_point{
+    height: 10px; background: #ccc;
+  }
+}
+.social_lightbox {
+	li{
+		display: inline-block;
+		margin: 5px 1%;
+		width: 46%;
+		line-height: 26px;
+	}
+	.item_social{
+		width: 26px;
+		height: 26px;
+		border-radius: 100%;
+		margin-right: 10px;
+		display: inline-block;
+		text-align: center;
+		/*line-height: 30px;*/
+		i{
+			color: #fff;
+		}
+	}
+	.item_fb{
+		background: #3067a3;
+	}
+	.item_linkedin{
+		background: #007bb6;
+	}
+	.item_twit{
+		background: #00aced;
+	}
+	.item_pinterest{
+		background: #cb2027;
+		.ic-pinterest-p{
+			background-position: -512px  0;			
+		}
+	}
+	.item_google{
+		background: #dd4b39;
+	}
+	.item_email{
+		background: #d7d7d7;
+	}
+}
+
+.btn_refrest{
+	float: left;
+}
+.content_poup .btn_vne{
+	height: 30px;
+	margin-left: 10px;
+}
+.mfp-close {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0.65;
+    color: #333;
+    font-style: normal;
+    font-size: 28px;
+    font-family: Arial, Baskerville, monospace;
+}
+button.mfp-close {
+    overflow: visible;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    display: block;
+    outline: none;
+    z-index: 1046;
+    touch-action: manipulation;
+    color: #333;
+}
+
+/*Responsive*/
+@media screen and (max-width:768px){
+    .white-popup{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    .rsV_left{
+        float: none;
+        width: 100%;
+    }
+    .scroll_color{
+        width: 100%;
+    }
+    .ques_vote .text_ques{
+        font: 700 18px arial;
+    }
+    .rsV_right, .total_vote{
+        font-size: 12px;
+    }
+    .rsV_left{
+        font-size: 16px;
+    }
+    
+}

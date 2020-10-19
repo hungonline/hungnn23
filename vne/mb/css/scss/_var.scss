@@ -1,0 +1,67 @@
+$vne_color: #9F224E;
+$color-solid:#E5E5E5;
+$url: "images" !default;
+
+/*background: url("#{$url}/graphics/demo.gif") no-repeat 0 0;*/
+@mixin cubic-transition($delay, $duration, $property) {
+  transition: {
+    duration: $duration;
+    property: $property;
+    timing-function: cubic-bezier(.7, 1, .7, 1);
+  }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target==0 {
+    @return 0
+  }
+
+  @return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$lh: 1.5;
+/**Apply: "font-size: px_to_rem(16px)" or "font: 400 px_to_rem(16px) arial;" **/
+
+$font-title: 'Merriweather', serif;
+
+%has_transition {
+  @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+}
+
+%flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.no-flexbox {
+  display: inherit;
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+%font-fea{
+  font-feature-settings: 'pnum' on , 'lnum' on;
+  -webkit-font-feature-settings: 'pnum' on , 'lnum' on;
+  -moz-font-feature-settings: 'pnum' on , 'lnum' on;
+  -ms-font-feature-settings: 'pnum' on , 'lnum' on;
+}

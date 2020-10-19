@@ -1,0 +1,75 @@
+@import 'var.scss';
+
+/**BOX THPT 2020**/
+.box_tracuu_thpt2020{
+  .title-box-thpt{
+    font: normal 20px/160% $font-title;
+  }
+  .lead-box-thpt{margin-top: 5px;
+    font: 400 14px/140% arial;
+    a{color: #076DB6; text-decoration: none;}
+  }
+  .form-box-thpt{display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 15px;}
+  .btn-thpt{width: 120px; height: 40px; line-height: 40px; text-align: center; border: none; background: #B75C00; font: 400 15px/17px arial; color: #fff; border-radius: 3px; cursor: pointer;
+    &.disable{background: #e5e5e5; color: #bdbdbd;cursor: not-allowed;}
+  }
+  .input-div{
+    width: calc((100% - 150px)/2);
+  }
+  .input-thpt{width: 100%; height: 40px; padding: 0 10px; border: 1px solid #E5E5E5; background: #fff;
+    font: 400 15px/17px arial;
+    color: #757575;
+    border-radius: 3px;}
+    &:focus{border: 1px solid #E5E5E5;}
+    .error-mess{
+      font: 400 13px/15px arial; color: #9F224E; width: 100%;float: left; margin-top: 10px;
+    }
+    &.box_tracuu_thpt2020_300{
+      background: #F7F7F7; padding: 15px; border-top: 1px solid #e5e5e5;
+      .title-box-thpt{
+        font: bold 16px/160% $font-title;
+      }
+      .form-box-thpt{justify-content: start;}
+      .input-div{width: 100%;}
+      .input-div + .input-div{margin-top: 15px;}
+      .btn-thpt{margin-top: 15px;} 
+    }
+}
+.popup-thpt{
+  .content-popup{font: 400 16px/130% arial;}
+  font: 400 16px/130% arial; color: #222;
+  p{margin-bottom: 0; clear: both; width: 100%;float: left;}
+  .note-thpt{background: #f7f7f7; color: #333; padding: 15px; margin-top: 12px;
+    a{color: #076DB6; text-decoration: none;}
+    .has-dot{position: relative; padding-left: 15px;
+      &:before{content: ''; width: 7px;height: 7px;background: #c4c4c4; border-radius: 50%; position: absolute; top: 10px; left: 0;}
+    }
+  }
+  .note-app{margin-top: 20px;}
+  .down-app-vne{
+    width: 100%; float: left; margin-top: 15px; height: 40px;text-align: center; font: 400 15px/40px arial; color: #fff; 
+    background: #B75C00;
+    border-radius: 3px;
+  }
+  .down-app-lb{justify-content: center; align-items: center; margin-top: 20px;}
+  .left-app{margin-right: 20px;
+    a{display: block;
+      img{width: 135px;}
+    }
+  }
+  .right-qr{
+    img{width: 140px;}
+  }
+
+}
+
+@media screen and (max-width: 767px){
+  .popup-thpt{
+    .content-popup{padding: 20px;width: 100%;float: left;}
+    .note-thpt{
+      .has-dot{
+        &:before{top: 6px;}
+      }
+    }
+  }
+}

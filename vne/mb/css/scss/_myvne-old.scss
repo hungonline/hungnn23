@@ -1,0 +1,143 @@
+/**My vne**/
+i.ico{
+    background: url(images/icons/icon_login_user.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+i.ico.ico_user_myvne {
+    width: 16px;
+    height: 20px;
+    background-position: -30px -120px;
+    margin-left: 6px;
+}
+#myvne_taskbar{position: absolute; height: 44px; z-index: 99; right: 5px; top: 0;
+    .myvne_container{height: 100%;
+        ul{height: 100%;
+            li{
+                float: right;
+                height: 100%;
+                display: inline-block;
+                vertical-align: top;
+                line-height: 33px;
+    
+                &:first-child{padding-left: 4px;}
+                a{display: block;
+                    &.myvne_icon{
+                            margin-top: 5px;
+                            width: 29px;
+                            height: 29px;
+                            line-height: 35px;
+                    }
+                }
+            }
+        }
+    } 
+    .myvne_form_log{float: left; font-size: 12px;
+        .myvne_user{position: relative;} 
+    } 
+}
+#myvne_taskbar .myvne_contact, #myvne_taskbar .myvne_container ul li.block_search_web, #myvne_taskbar a.myvne_link,#myvne_taskbar .myvne_form_log.logged a.myvne_icon, #myvne_taskbar .myvne_form_log.logged .myvne_avatar span,#myvne_taskbar .myvne_form_log .myvne_avatar,#myvne_taskbar .myvne_container>ul>li a.myvne_link{display: none;}
+#myvne_taskbar .myvne_form_log .myvne_avatar{height: 100%;}
+
+#myvne_taskbar .myvne_form_log.logged .myvne_avatar {
+    display: block;
+    background: none;
+    padding-right: 0;
+    padding: 0 10px;
+    line-height: 44px;
+    img{
+        width: 20px !important; height: 20px !important;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;-moz-border-radius: 50%;-ms-border-radius: 50%;-webkit-border-radius: 50%;
+    }
+}
+
+#myvne_taskbar .myvne_form_log .myvne_user .myvne_user_status {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    top: 44px;
+    right: -4px;
+    min-width: 150px;
+    height: auto;
+    li{
+        padding: 0; width: 100%; float: left; height: auto; border: none;
+        a{
+            line-height: 15px;
+            display: block;
+                padding: 8px;
+    background: #f8f8f8;
+            font-size: 14px;
+        }
+    }
+}
+#myvne_taskbar .myvne_form_log .myvne_notification{padding: 0; position: relative; cursor: pointer;
+    .badged {
+        position: absolute;
+        font-size: 9px;
+        padding: 2px;
+        line-height: 1;
+        background-color: #9f224e;
+        color: #fff;
+        top: 3px;
+        right: 3px;
+    }
+}
+
+#myvne_taskbar .myvne_form_log .myvne_notification .myvne_icon_bell_click {
+    display: block;
+    float: left;
+    line-height: 44px;
+    padding: 0 10px;
+}
+/*#myvne_taskbar .myvne_form_log .myvne_notification .myvne_icon_bell{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+}*/
+#myvne_taskbar .myvne_form_log .myvne_notification.active .myvne_icon_bell{/*color: #9f224e;*/ background-position: -509px -42px;}
+#myvne_taskbar .myvne_form_log .myvne_notification .myvne_content_notification{
+    display: none;
+    position: absolute;
+    width: 320px;
+    right: 0;
+    top: 44px;
+    z-index: 99;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    overflow: auto;
+    max-height: 370px;
+    scroll-behavior: smooth;
+   -ms-overflow-style: -ms-autohiding-scrollbar;
+   -webkit-overflow-scrolling: touch;
+}
+#myvne_taskbar .myvne_form_log .myvne_notification .myvne_content_notification ul>li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    line-height: 15px;
+    width: 100%;
+}
+#myvne_taskbar .myvne_form_log .myvne_notification .myvne_content_notification .myvne_notification-viewmore {
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid #ccc;
+}
+#myvne_taskbar .myvne_form_log .myvne_notification .myvne_content_notification ul>li .myvne_wrap_info {
+    overflow: hidden;
+}
+#myvne_taskbar .myvne_form_log .myvne_notification .myvne_content_notification ul>li .myvne_time {
+    margin-top: 5px;
+}
+i.ico.ico_comment {
+    width: 13px;
+    height: 11px;
+    background-position: -90px 0;
+}
+.myvne_thumb {
+    float: left;
+    margin-right: 10px;
+}

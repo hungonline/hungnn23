@@ -1,0 +1,529 @@
+@import 'var.scss';
+@import 'scrollbar.scss';
+
+$red: #CE1719;
+$blue: #134395;
+
+$font1: 'Muli';
+
+body {
+  color: #333;
+  line-height: 1.45;
+}
+
+figure {
+  margin-bottom: 0;
+}
+
+.preline {
+  white-space: pre-line;
+}
+
+.baucu-infographic {
+  margin-bottom: 50px;
+  $self: &;
+
+  &__top {
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 380px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &-whitehouse {
+      position: absolute;
+      width: 323px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: 16px;
+    }
+
+    &-item {
+      width: 50%;
+      position: relative;
+
+      &:hover {
+        .baucu-infographic__btn {
+          transform: rotate(-270deg);
+          border-color: transparent transparent transparent #fff;
+          top: 0;
+        }
+
+        .baucu-infographic__bio {
+          display: block;
+        }
+      }
+      &:hover {
+
+        .baucu-infographic__btn--blue {
+          border-color: transparent #fff transparent transparent !important;
+          transform: rotate(270deg) !important;
+          top: -1px;
+        }
+      }
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 32px;
+    border-color: transparent transparent transparent #ce171a;
+    margin-left: calc((340px - 35px)/2);
+    float: left;
+    margin-top: 16px;
+    position: relative;
+    z-index: 2;
+    top: 7px;
+
+    &--blue {
+      border-width: 25px 32px 25px 0;
+      border-color: transparent #134395 transparent transparent;
+      margin-left: auto;
+      float: right;
+      margin-right: calc((340px - 35px)/2);
+    }
+  }
+
+  &__bio {
+    position: absolute;
+    color: #FFFFFF;
+    z-index: 1;
+    bottom: 42px;
+    transform: translate(0, 100%);
+    padding: 48px 0 0 40px;
+    display: none;
+    width: 340px;
+    min-height: 300px;
+
+    ul {
+      border-top: 1px solid #FFFFFF;
+      line-height: calc(23/16);
+      padding: 10px 0;
+
+      li {
+        position: relative;
+        padding: 2px 0 2px 16px;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          left: 0;
+          top: 10px;
+        }
+      }
+    }
+
+    &--red {
+      background: $red;
+
+      ul {
+        padding-right: 20px;
+      }
+    }
+
+    &--blue {
+      background: $blue;
+      right: 0;
+      padding: 48px 40px 0 0;
+
+      .baucu-infographic__bio {
+        padding-right: 30px;
+
+        &-inner {
+          padding-right: 10px;
+        }
+      }
+
+      ul {
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &-icon {
+      text-align: center;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        width: 30%;
+        border-bottom: 1px solid $red;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+        top: auto;
+        left: auto;
+        padding: 0;
+        border-radius: 0;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 30%;
+        border-bottom: 1px solid $blue;
+      }
+    }
+
+    &-text {
+      width: 40%;
+      padding: 0 48px;
+      font-size: 16px;
+      line-height: calc(23/16);
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+
+    > .flexbox:not(.baucu-infographic__item-child) {
+      > #{$self} {
+        &__item {
+          &-title {
+            background: linear-gradient(to right, $red 0%, $blue 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+    }
+
+    &-title {
+      width: 20%;
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-title;
+      font-weight: 900;
+      position: relative;
+      align-self: baseline;
+      padding-bottom: 5px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        width: 40%;
+        border-bottom: 1px solid $red;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 40%;
+        border-bottom: 1px solid $blue;
+      }
+    }
+
+    &-child {
+      padding: 15px;
+      background: #F3F3F3;
+      align-items: center;
+
+      #{$self} {
+        &__item {
+          &-title {
+            display: flex;
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 16px;
+            
+            &::before {
+              width: 80%;
+              left: 10%;
+              top: 38px;
+              border-bottom: 1px solid #c4c4c4;
+              bottom: auto;
+            }
+
+            &::after {
+              display: none;
+            }
+
+            figure {
+              width: 48px;
+              height: 48px;
+              border: 1px solid #C4C4C4;
+              border-radius: 50%;
+              padding: 8px;
+              position: relative;
+              background: #fff;
+              z-index: 1;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        background: #FBFBFB;
+      }
+    }
+
+    .flexbox + .baucu-infographic__item-child:nth-child(3) {
+      margin-top: 10px;
+    }
+  }
+
+  &__video {
+    &-title {
+      text-align: center;
+      font-size: 18px;
+      font-family: $font-title;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__footer {
+    @media (min-width: 768px) {
+      > img {
+        display: none;
+      }
+    }
+  }
+}
+
+.ps--active-x>.ps__rail-x, .ps--active-y>.ps__rail-y {
+  background: transparent !important;
+}
+
+.page-detail-kl .top-banner {
+  margin-bottom: 30px !important;
+}
+
+.top-header {
+  margin-top: 16px;
+
+  > .top-header {
+    margin-top: 0;
+  }
+}
+
+ .wow {
+   visibility: hidden;
+ }
+ .wow .baucu-infographic__item-icon:before {
+  opacity: 0;
+}
+
+ .wow .baucu-infographic__item-icon[style*="visibility: visible;"]:before {
+  opacity: 1;
+}
+
+/* Custom Aos Animations */
+
+[data-aos="bounceInLeft"].aos-animate {
+  -webkit-animation-name: bounceInLeft;
+  animation-name: bounceInLeft;
+}
+
+[data-aos="bounceInRight"].aos-animate {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+
+@-webkit-keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0) scaleX(3);
+    transform: translate3d(-3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* End: Custom Aos Animations */
+
+@media (max-width: 1199px) {
+  .baucu-infographic__top-whitehouse {
+    width: 293px;
+    bottom: 22px;
+  }
+  .baucu-infographic__top:after {
+    height: 330px;
+  }
+}
+
+@media (max-width: 991px) {
+  .baucu-infographic__top-whitehouse {
+    width: 200px;
+    bottom: 41px;
+  }
+
+  .baucu-infographic__top:after {
+    height: 265px;
+  }
+}

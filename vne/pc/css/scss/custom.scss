@@ -1,0 +1,29 @@
+@import 'var.scss';
+/**BOX QUOTES**/  
+.box-quotes{
+    margin-bottom: 15px; position: relative; padding-left: 50px;
+    .icon-quote{position: absolute; top: -2px; left: 10px;
+      .ic{width: 24px;height: 24px; fill: #4f4f4f;}
+    }
+  }
+  .item-quote{
+    font-family: $font-title; font-size: 18px; line-height: 32px; font-weight: 700; margin-top: 20px;
+    .author-quote{align-items: center; color: #757575;
+      .social-q{margin-left: auto;
+        .ic{fill: #BDBDBD;}
+          a{margin-left: 15px;
+            &:hover{
+              .ic-facebook{fill: #3B5999;}
+              .ic-twitter{fill: #55ACEE;}
+            }
+          }
+      }
+    }
+  &:last-of-type{padding-bottom: 15px; border-bottom: 1px solid #e5e5e5;}
+  &:first-of-type{margin-top: 0;}
+  }
+  .fck_detail{
+    .item-quote{
+      p{margin-bottom: 5px;}
+    }
+  }

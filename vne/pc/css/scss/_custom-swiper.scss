@@ -1,0 +1,28 @@
+/* Scss Document */
+.swiper-pagination{
+    font-size: 0;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    margin-bottom: 5px;
+}
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    border-radius:0;
+    opacity: 1;
+    background: #E5E5E5;
+    margin: 0 3px !important;
+}
+/*.swiper-pagination-bullet-active{
+    background: $main_color;
+}*/
+.swiper-scrollbar{
+    background: transparent;
+}
+.swiper-container-vertical>.swiper-scrollbar{
+    right: 0;
+}
+.swiper-scrollbar-drag{
+    background: #BDBDBD;
+}
+

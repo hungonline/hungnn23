@@ -1,0 +1,158 @@
+/* Scss Document */
+.box-tuvanonline{
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    border-right: none;
+    .header-box{
+        width: 100%;
+        float: left;
+        height: 33px;
+        line-height: 33px;
+        background: url(images/graphics/bg_head_tuvanonline.jpg) no-repeat;
+        background-size: cover;
+        margin-bottom: 7px;
+        padding-left: 8px;
+        font-size: 14px;
+        a{
+            color: #fff;
+        }
+    }
+    .wrap-info-doc{
+        background: url(images/graphics/2bs.jpg) left top no-repeat;
+        width: 100%;
+        min-height: 205px;
+        float: left;
+        padding-left: 205px;
+        position: relative;
+        bottom: -4px;
+        .avata{
+            float: left;
+            margin-right: 10px;
+        }
+        .info{
+            margin-top: 17px;
+            padding-right: 20px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 1.313;
+        }
+        .position-doc{
+            margin-bottom: 15px;
+        }
+        strong{
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+        }
+    }
+    .btn-send {
+        color: #fff;
+        background: #6ecff6;
+        padding: 3px 36px;
+        border-radius: 7px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .footer-box{
+        width: calc(100% - 20px);
+        float: left;
+        font-size: 15px;
+        line-height: normal;
+        border-top: 1px solid #e2e2e3;
+        padding: 12px  10px 10px;
+        margin: 0 10px;
+    }    
+    &.after{
+        .list_title{
+            margin: 10px 10px 0;
+            a{
+                font-weight: normal;
+                font-style: italic;
+                color: #666;
+            }
+        }
+        .wrap-count-day{
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            margin-top: 7px;
+            .count{
+                display: inline-block;
+                span{
+                    display: inline-block;
+                    background: #6ecff6;
+                    color: #fff;
+                    padding: 1.5px 8px;
+                    margin-right: 5px;
+                    border-radius: 7px;
+                    vertical-align: middle;
+                    strong{
+                        display: inline-block;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    .box-tuvanonline{
+        .btn-send{
+            padding: 5px 8px;
+        }
+        .footer-box{
+            line-height: 18px;
+        }
+        .list_title{            
+            width: calc(100% - 20px);
+            float: left;
+            font-size: 15px;
+            font-weight: bold;
+            border-top: 1px solid #e2e2e3;
+            padding-top: 15px;
+            padding-left: 10px;
+            margin: 10px 10px 0;
+            li{
+                padding-left: 13px;
+                margin-bottom: 10px;
+                width: 100%;
+                float: left;
+                position: relative;
+                &:before{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: #666;
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                }
+            }
+            a{
+                color: #666666;
+            }
+        }
+        .wrap-info-doc{
+            padding-bottom: 15px;
+        }
+        .wrap-count-day{
+            position: absolute;
+            left: 15px;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .box-tuvanonline{
+        .wrap-info-doc{
+            .info{
+                margin-top: 10px;
+            }
+            strong{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

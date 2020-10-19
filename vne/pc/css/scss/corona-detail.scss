@@ -1,0 +1,342 @@
+// CORONA VIRUS
+
+.corona_virus {
+  background: #f7f7f7;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  text-align: center;
+  color: #333333;
+  font-size: 14px;
+  clear: both;
+
+  &_title {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &_location {
+    font-size: 14px;
+    line-height: 16px;
+    border-top: 1px solid #c4c4c4;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: normal;
+    color: #222222;
+  }
+
+  &_tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    li {
+      color: #666666;
+      font-weight: 700;
+      width: 50%;
+      border-bottom: 1px solid #c4c4c4;
+      padding: 10px;
+      cursor: pointer;
+
+      &.active {
+        color: #333333;
+        border-bottom: 2px solid #9f224e;
+      }
+    }
+  }
+
+  &_data {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    >div {
+      width: calc((100% - 20px) / 3);
+      padding: 5px;
+      background: #e5e5e5;
+      font-weight: 700;
+
+      >span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .corona_khoibenh,
+    .corona_nhiembenh,
+    .corona_tuvong {
+      font-size: 20px;
+      line-height: 28px;
+
+      &:after {
+        display: block !important;
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 5px;
+        font-weight: 400;
+      }
+    }
+
+    .corona_nhiembenh {
+      &::after {
+        content: 'Nhiễm' !important;
+      }
+    }
+
+    .corona_tuvong {
+      background: #999999;
+      color: #fff;
+
+      &::after {
+        content: 'Tử vong';
+      }
+    }
+
+    .corona_cachly {
+      &::before {
+        content: 'Cách ly: ';
+        font-weight: 400;
+      }
+    }
+
+    .corona_khoibenh {
+      order: 2;
+
+      &::after {
+        content: 'Khỏi';
+        font-weight: 400;
+      }
+    }
+
+    .corona_nghinhiem {
+      &::before {
+        content: 'Cách ly: ';
+        font-weight: 400;
+      }
+    }
+
+    .corona_cachly,
+    .corona_nghinhiem {
+      display: none !important;
+    }
+  }
+
+  &_source {
+    color: #757575;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 14px;
+
+    @media (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
+}
+  
+  /*.corona_virus_vietnam {
+    &>div {
+      width: calc((100% - 10px) / 2);
+    }
+  
+    .corona_tuvong {
+      display: none;
+    }
+  }*/
+
+// VIRUS CORONA DETAIL
+.box-corona-detail{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.corona_virus--detail {
+  .corona_virus_title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .corona_virus_vietnam {
+    &>div {
+      padding-top: 20px !important;
+    }
+  }
+
+  .corona_virus_content {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .corona_table {
+    flex-grow: 1;
+    margin-right: 22px;
+    font-size: 14px;
+    line-height: 16px;
+    max-height: 209px;
+    overflow: auto;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    table {
+      width: 100%;
+
+      td {
+        padding: 10px;
+        border-top: 1px solid #e5e5e5;
+      }
+
+      th {
+        font-weight: 400;
+        color: #757575;
+        padding: 0 10px 5px 10px;
+
+        &:first-child {
+          text-align: left;
+          padding-left: 0;
+        }
+      }
+
+      tr:first-child {
+        th:first-child {
+          text-align: left;
+        }
+
+        th:not(:first-child) {
+          text-align: right;
+        }
+      }
+
+      tr:not(:first-child) {
+        td:first-child {
+          text-align: left;
+          padding-left: 0;
+        }
+
+        td:not(:first-child) {
+          font-weight: 700;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .corona_virus_tab {
+    margin-top: 10px;
+    margin-bottom: 0;
+    border-top: 1px solid #bdbdbd;
+    justify-content: flex-start;
+
+    li {
+      width: auto;
+      position: relative;
+      border-bottom: none;
+      color: #757575;
+      font-weight: 400;
+      padding: 10px;
+      padding-top: 20px;
+      overflow: visible;
+
+      &.active {
+        color: #222222;
+
+        &:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 10px 0 10px;
+          border-color: #bdbdbd transparent transparent transparent;
+        }
+
+        &:after {
+          position: absolute;
+          top: -2px;
+          left: 0;
+          right: 0;
+          margin: auto;
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 10px 0 10px;
+          border-color: #f7f7f7 transparent transparent transparent;
+        }
+      }
+    }
+  }
+
+  .corona_virus_data {
+    width: 35%;
+
+    >div {
+      font-size: 20px;
+      line-height: 37px;
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      order: -1;
+
+      >div {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      >div {
+        width: 100%;
+        padding: 5px 5px;
+
+        &::after {
+          margin-top: 0;
+        }
+
+        &:nth-child(n + 3) {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .corona_tuvong {
+      background: #999999;
+      display: block !important;
+
+      @media (min-width: 768px) {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+span.corona_note,
+span.corona_note_s {
+    display: none !important;
+}
+
+

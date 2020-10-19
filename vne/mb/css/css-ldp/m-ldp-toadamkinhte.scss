@@ -1,0 +1,153 @@
+@import '../scss/var.scss';
+/**LDP TUYEN DAU CHONG DICH**/
+/**Edit style default**/
+
+.section_gioithieu {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+
+    .short_intro {
+        line-height: 160%;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .title_box_category .text_title_box {
+        color: #222;
+    }
+}
+
+.box-donvidonghanh {
+    .sponsor-full {
+        .txt-tt {
+            text-align: left;
+            font-size: 14px;
+            color: #222;
+            line-height: 160%;
+        }
+
+        &.dvth {
+            margin-top: 0;
+
+            .logo-tt {
+                margin: 0 10px 0 0;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                img {
+                    max-height: 63px;
+                    height: 63px;
+                }
+            }
+        }
+
+        &.ttv {
+            justify-content: left;
+
+            .logo-tt {
+                margin: 0;
+
+                img {
+                    max-height: 64px;
+                    height: 64px;
+                }
+            }
+        }
+
+        &.ttb {
+            justify-content: left;
+
+            .logo-tt {
+                margin: 0;
+
+                img {
+                    max-height: 93px;
+                    height: 93px;
+                }
+            }
+        }
+    }
+}
+
+.box-contact {
+    .short_intro {
+        color: #757575;
+    }
+}
+
+.box-taodam {
+    background: #F7F7F7;
+    padding: 15px;
+    margin-bottom: 0;
+
+    .time-line {
+        color: #4F4F4F;
+        line-height: 1.5;
+        float: left;
+        width: 100%;
+        font-size: 16px;
+        position: relative;
+
+        .scrollbar-inner {
+            max-height: 420px;
+            overflow-y: scroll;
+        }
+
+        &::before {
+            content: "";
+            background: #E5E5E5;
+            width: 2px;
+            position: absolute;
+            top: 15px;
+            bottom: 0;
+            left: 79px;
+        }
+
+        .mounth {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 18px;
+            position: relative;
+            width: 70px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: -14px;
+                top: 8px;
+                background: #E5E5E5;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+            }
+        }
+
+        .item {
+            position: relative;
+            padding-left: 89px;
+            margin-bottom: 15px;
+
+            .date {
+                color: #222222;
+                position: absolute;
+                left: 0;
+                width: 60px;
+                text-align: right;
+
+                &::before {
+                    content: "";
+                    background: #E5E5E5;
+                    width: 8px;
+                    height: 1px;
+                    position: absolute;
+                    right: -21px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}

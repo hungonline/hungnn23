@@ -1,0 +1,29 @@
+.dark-mode{
+    .article_detail{
+        background: #17191A;
+        color: #BDBDBD;
+        .title_news_detail{
+            color: #E5E5E5;
+        }
+        .short_intro{
+            color: #BDBDBD;
+        }
+        .metadate{
+            color: #BDBDBD;
+        }
+        .author_mail p{
+            color: #BDBDBD;
+            strong{
+                color: #fff;
+            }
+        }
+        .list_news_dot li a{
+            color: #39AAFF;
+        }
+    }
+    .desc_cation{
+        p{
+            color: #BDBDBD !important;
+        }
+    }
+}

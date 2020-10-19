@@ -1,0 +1,75 @@
+.lazy-blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+.lazy-unblur {
+  opacity: 0;
+  -webkit-filter: unset;
+  filter: unset;
+  will-change: opacity;
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+.lazier{width:1px;height:1px}
+.thumb-art {
+  position: relative;
+}
+.lazy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*-webkit-filter: blur(3px);
+  filter: blur(3px);*/
+}
+.loaded {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-filter: unset;
+  filter: unset;
+  -webkit-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+}
+/* Animation */
+@keyframes fadeInUp {
+from {
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+}
+to {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+}
+
+@-webkit-keyframes fadeInUp {
+from {
+  -webkit-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+}
+to {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+}
+.animated {
+animation-duration: 1s;
+animation-fill-mode: both;
+-webkit-animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+}
+
+.animatedFadeInUp {
+opacity: 0;
+}
+
+.fadeInUp {
+opacity: 0;
+animation-name: fadeInUp;
+-webkit-animation-name: fadeInUp;
+}

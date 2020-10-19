@@ -1,0 +1,55 @@
+/* Scss Document */
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.no-flexbox {
+  display: inherit; }
+
+/**BOX QUOTES**/
+.box-quotes {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 50px; }
+  .box-quotes .icon-quote {
+    position: absolute;
+    top: -2px;
+    left: 10px; }
+    .box-quotes .icon-quote .ic {
+      width: 24px;
+      height: 24px;
+      fill: #4f4f4f; }
+
+.item-quote {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 20px; }
+  .item-quote .author-quote {
+    align-items: center;
+    color: #757575; }
+    .item-quote .author-quote .social-q {
+      margin-left: auto; }
+      .item-quote .author-quote .social-q .ic {
+        fill: #BDBDBD; }
+      .item-quote .author-quote .social-q a {
+        margin-left: 15px; }
+        .item-quote .author-quote .social-q a:hover .ic-facebook {
+          fill: #3B5999; }
+        .item-quote .author-quote .social-q a:hover .ic-twitter {
+          fill: #55ACEE; }
+  .item-quote:last-of-type {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5; }
+  .item-quote:first-of-type {
+    margin-top: 0; }
+
+.fck_detail .item-quote p {
+  margin-bottom: 5px; }
+
+/*# sourceMappingURL=custom.css.map */

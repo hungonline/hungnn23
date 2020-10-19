@@ -1,0 +1,145 @@
+/* Scss Document */
+@import 'var.scss';
+.page-404{
+    min-height: initial; background: #f7f7f7;     
+    .wrap-form-404{
+        width: 100%;
+        
+        padding: 0 20px;
+        margin: 72px auto 64px auto;
+        max-width: 480px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .icon-404{
+        max-width: 196px;
+        margin: 0 auto 16px;
+        display: block;
+    }
+    .title-404{
+        display: block;
+        font-size: 24px;
+        line-height: 160%;
+        margin-bottom: 30px;
+        font-family: $font-title;
+    }
+    p{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 15px;
+        a{
+            color: #076DB6;
+        }
+    }
+    .input-search-text{
+        position: relative;
+        margin-bottom: 15px;
+        input{
+            border-radius: 100px;
+            padding: 0 20px;color: #757575;
+        }
+        .btn{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 5px;
+            top: 0;
+            background: none;
+            svg{
+                fill:#BDBDBD;
+            }
+        }
+    }
+    .input-radio{
+        margin: 0 15px;
+        position: relative;
+        input[type="radio"]{
+            width: 10px;
+            height: 10px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            position: relative;
+            margin-right: 10px;
+            outline: none;
+            &:before{
+                content: '';
+                width: 12px;
+                height: 12px;
+                border: 1px solid #BDBDBD;
+                border-radius: 50%;
+                position: absolute;
+                left: -3px;
+                top: -3px;
+            }
+            &:checked{
+                &:before{
+                    border-color: $vne_color;
+                }
+                &:after{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background: $vne_color;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                }
+            }
+        }
+    }
+
+    .note-more-news{font-size: 16px; line-height: 150%; font-weight: 700; margin-top: 30px; padding: 0 40px; margin-bottom: 0;}
+}
+.section-suggest-404{background: #fff; padding: 30px 0 60px 0; position: relative;
+    &:before{
+        width: 0;
+        height: 0;
+        border-left: 14px solid transparent;
+        border-right: 14px solid transparent;
+        border-top: 14px solid #f7f7f7;
+        content: '';
+        position: absolute; top: 0; left: 50%; margin-left: -14px;
+    }
+    .container{max-width: 680px;}
+    .list-news-five{
+        .item-news{width: 33.333333%;
+            &:nth-last-of-type(-n+5){margin-bottom: 20px;}
+            &:before{display: none;}
+        }
+    } 
+}
+
+@media screen and (max-width: 480px){
+    .page-404 .note-more-news{padding: 0;}
+    .page-404 .icon-404{max-width: 132px;}
+    .page-404 .wrap-form-404{margin: 40px auto 20px auto;}
+    .page-404 .title-404{font-size: 18px; margin-bottom: 15px;}
+    .page-404 .input-search-text input{font-size: 16px;}
+    .section-suggest-404{padding: 30px 0 0 0;
+        .list-news-five{
+            .item-news{width: 100%; position: relative; margin-bottom: 15px; padding-bottom: 15px; padding-left: 48px;
+                &:after{
+                    content: ''; width: calc(100% - 30px); height: 1px; background: #e5e5e5; position: absolute; bottom: 0; left: 30px;
+                }
+                &:before{
+                    content: ''; width: 8px; height: 8px; border-radius: 50%; background: $vne_color; position: absolute; left: 30px; top: 8px; z-index: 1; display: block;
+                }
+                .title-news{margin-bottom: 0; font-size: 16px; font-weight: 400;}
+                .thumb-art{display: none;}
+                .inner-item-news-five{padding-bottom: 0;}
+                &.off-thumb{
+                    .inner-item-news-five{background: none; padding: 0; height: auto;}
+                }
+                .description{display: none;}
+                p.meta-news{display: none;}
+                &:nth-last-of-type(-n+5){margin-bottom: 15px;}
+                &:nth-of-type(5),&:nth-of-type(4){margin-bottom: 15px; margin-top: 0;}
+                &:last-of-type{
+                    &:after{display: none;}
+                }
+            }
+        } 
+    }
+}
