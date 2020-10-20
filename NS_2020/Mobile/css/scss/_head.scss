@@ -195,6 +195,11 @@ body.fixed {
             li {
                 display: inline-block;
 
+                h1,
+                h2 {
+                    font-size: 14px;
+                }
+
                 a {
                     line-height: 40px;
                     display: inline-block;
