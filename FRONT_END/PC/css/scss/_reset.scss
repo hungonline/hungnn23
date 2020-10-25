@@ -375,7 +375,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 14px;
   width: 100%;
   outline: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   @extend .transition_ease;
 
   &.error {
@@ -392,6 +392,13 @@ input[type="search"]::-webkit-search-results-decoration {
   &:focus {
     border: 1px solid var(--green2);
   }
+}
+
+select.form-control{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(images/icons/down.svg) no-repeat right 16px top 15px;
 }
 
 .confir_res {
