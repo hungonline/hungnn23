@@ -2,6 +2,7 @@
   .store-adsl {
     display: inline-block;
     margin-top: 40px;
+    margin-bottom: 5px;
 
     a {
       font-size: 12px;
@@ -42,14 +43,32 @@
     -ms-transform: translate(-50%, 0%);
   }
 
+  .right-head {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #myvne_taskbar {
+    margin-top: 36px;
+    margin-left: 15px;
+
+    .myvne_form_log {
+      margin-top: -1px;
+    }
+
+    svg {
+      fill: #178fd6
+    }
+  }
+
   .logo-be {
-    float: right;
     width: 90px;
     margin: 30px 15px 0 0px;
   }
 
   #search_ns {
-    float: right;
     position: relative;
     margin-top: 32px;
 
@@ -79,6 +98,7 @@
       }
     }
   }
+
 }
 
 #header_sticky {

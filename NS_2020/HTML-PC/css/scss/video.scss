@@ -1,5 +1,5 @@
 @import "var.scss";
-@import "comment.scss";
+// @import "comment.scss";
 // @import "scrollbar.scss";
 @import "scrollbar-ss.scss";
 // @import "_video2017_v2.scss";
@@ -1138,6 +1138,10 @@
     margin: 0 0 30px 0;
     float: none;
 
+    .title_news {
+      font: 400 18px iCielDomaineText;
+    }
+
     @media (max-width: 768px) {
       width: 50%;
     }
@@ -1448,5 +1452,29 @@
     color: #999;
     font-size: 14px;
     border-radius: 3px;
+  }
+}
+
+.box_comment_vne {
+  .ykien_vne {
+    .left {
+      font: bold 20px iCielDomaineText;
+    }
+  }
+
+  .filter_coment {
+    a.active {
+      color: #178fd6 !important;
+
+      &::after {
+        background: #178fd6;
+        bottom: -13px;
+      }
+    }
+  }
+
+  .btn_vne,
+  .btn_send_comment {
+    background: #178fd6 !important;
   }
 }

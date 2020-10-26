@@ -5,8 +5,13 @@
 @import "vote-new.scss";
 @import "swiper.scss";
 @import "box300.scss";
+@import "taskbar-myvne.scss";
 
 /*========Notifi Ngôi sao==========*/
+.demo-test {
+  opacity: 1;
+}
+
 .notifi-ns1 {
   position: fixed;
   top: 20px;

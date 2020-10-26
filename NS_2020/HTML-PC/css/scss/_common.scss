@@ -756,10 +756,6 @@ span.txt_num_comment {
 	}
 }
 
-#myvne_taskbar {
-	display: none;
-}
-
 .thumb_video {
 	cursor: pointer;
 }
@@ -823,9 +819,17 @@ span.txt_num_comment {
 			line-height: $lh;
 			position: relative;
 
-			&.first-cate {
-				a {
-					font: bold px_to_rem(28px) $fontmain2;
+			label {
+				font: bold px_to_rem(28px) $fontmain;
+				line-height: $lh;
+			}
+
+			&.first-cate,
+			&:first-child {
+
+				a,
+				h1 {
+					font: bold px_to_rem(28px) $fontmain;
 					line-height: $lh;
 					display: inline-block;
 

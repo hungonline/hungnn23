@@ -16,13 +16,19 @@
 	</title>
 	<link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
 		rel="shortcut icon" />
-	<link rel="stylesheet" href="css/font.css" media="all" />
+	<!-- <link rel="stylesheet" href="css/font.css" media="all" /> -->
+	<!-- <link rel="stylesheet" href="css/ici-font.css" media="all" />
+	<link rel="stylesheet" href="css/ici-font-medium.css" media="all" />
+	<link rel="stylesheet" href="css/ici-font-bold.css" media="all" /> -->
+	<link rel="stylesheet" href="css/iCielDomaineText-woff2.css" media="all" />
 	<link rel="stylesheet" href="css/general-inline.css" media="all" />
 	<link rel="stylesheet" href="css/general-file.css" media="all" />
 	
 <link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/detail-inline.css" media="all"
     rel="stylesheet" />
 <link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/detail-file.css" media="all" rel="stylesheet" />
+<link rel="stylesheet" href="https://st-demo.vnecdn.net/vnexpress/restruct/c/v138//v2/wcomment/pc/vne/comment_v4.css"
+    media="all" />
 <link rel="stylesheet" href="css/custom_detail.css" media="all" />
 
 	<!-- build:head -->
@@ -41,23 +47,91 @@
 
 	</div>
 	<header id="header" class="container header">
-		<div class="store-adsl">
-			<a href="" class="store" target="_blank"><svg class="icon-ns not-grad">
-					<use xlink:href="images/icons/icon.svg#ns-shop" /></svg>Store Ngôi Sao</a>
-			<a href="" class="ads" target="_blank"><svg class="icon-ns not-grad">
-					<use xlink:href="images/icons/icon.svg#advertising-2" /></svg>Liên hệ quảng cáo</a>
+		<div class="flex">
+			<div class="store-adsl">
+				<a href="" class="store" target="_blank"><svg class="icon-ns not-grad">
+						<use xlink:href="images/icons/icon.svg#ns-shop" /></svg>Store Ngôi Sao</a>
+				<a href="" class="ads" target="_blank"><svg class="icon-ns not-grad">
+						<use xlink:href="images/icons/icon.svg#advertising-2" /></svg>Liên hệ quảng cáo</a>
+			</div>
+			<h1 class="logo" title="Ngoisao.net – Trang báo về những người nổi tiếng"><a href="" title="this"><img
+						src="images/graphics/logo_ns.svg" alt="Ngoisao.net – Trang báo về những người nổi tiếng"></a>
+			</h1>
+			<div class="right-head">
+				<a class="logo-be" href="" alt="this" title="this" style="width: 141px;margin: 36px 20px 0 0px;"><img
+						src="images/graphics/logo_nscn_20.png" alt="this"></a>
+				<div id="search_ns" action="https://ngoisao.net/search?s=">
+					<input type="text" class="input_search inputS" name="s" onblur="this.placeholder = 'Tìm kiếm'"
+						onfocus="this.placeholder = ''" value="" placeholder="Tìm kiếm">
+					<button type="submit" class="icon_seach_web"><svg class="icon-ns not-grad">
+							<use xlink:href="images/icons/icon.svg#zoom-2" /></svg></button>
+				</div>
+				<!-- After login myvne -->
+				<div id="myvne_taskbar" style="display: none">
+					<div id="myvne" class="myvne_taskbar myvne_login_button">
+						<a href="javascript:void(0);" class="log_txt" title="Đăng nhập">
+							<svg class="ic">
+								<use xlink:href="images/icons/icon.svg#User"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<!-- Before login myvne -->
+				<div id="myvne_taskbar">
+					<div id="myvne" class="myvne_taskbar">
+						<div class="myvne_container" id="myvne_user_logged">
+							<ul class="myvne_form_log logged">
+								<li class="myvne_user" id="myvne_profile_tool"> <a href="javascript:void(0);"
+										id="myvne_avatar_taskbar" class="myvne_avatar"> <span class="avatar_inner"><img
+												src="//a.vnecdn.net/avatar/c60x60/2/7b/8/7791036930_1415714180.jpg"
+												width="25" height="25" alt=""></span> <span class="name_user_av">Nguyễn
+											Như Hùng</span> </a>
+									<ul class="myvne_user_status" style="display:none;">
+										<li class="li_bd li_account"> <span class="avatar_sub"><img
+													src="//a.vnecdn.net/avatar/c60x60/2/7b/8/7791036930_1415714180.jpg"
+													width="25" height="25" alt=""></span> <span class="name_sub">Nguyễn
+												Như Hùng</span> </li>
+										<li><a href="https://my.ione.net/users/feed/1002649849"
+												title="Hoạt động bình luận">Hoạt động
+												bình luận</a></li>
+										<li><a href="https://my.ione.net/users/tin-da-luu" title="Tin đã lưu">Tin đã
+												lưu</a></li>
+										<li class="li_bd"><a href="https://my.ione.net/users/tin-da-doc"
+												title="Tin đã xem">Tin đã
+												xem</a></li>
+										<li class="li_bd"><a id="myvne_update_profile_link"
+												href="https://my.ione.net/users/chi-tiet-tai-khoan"
+												title="Tài khoản của tôi">Tài khoản
+												của tôi</a></li>
+										<li><a href="https://my.ione.net/qua-tang" title="Quà tặng">Quà tặng</a></li>
+										<li class="li_bd"><a href="https://kidlab.vnexpress.net/"
+												title="Kid-lab">Kid-lab</a></li>
+										<li><a href="javascript:void(0);" id="myvne_logout_link">Thoát</a></li>
+									</ul>
+								</li>
+								<li class="myvne_notification" id="myvne_notify_show"> <a
+										class="myvne_icon_bell_click"><svg class="ic ic-bell">
+											<use xlink:href="images/icons/icon.svg#Bell"></use>
+										</svg></a><span id="myvne_notify_area"></span>
+									<div id="myvne_notify_box" class="myvne_content_notification" style="display:none;">
+										<ul id="myvne_notify_lists" class="scrollbar-macosx">
+											<li class="myvne_loading">Loading</li>
+										</ul>
+										<ul id="myvne_notify_viewmore_area" style="display:none"> <span
+												id="myvne_loading_viewmore" style="display: none;">Loading</span> <a
+												href="javascript:void(0);" id="myvne_notify_viewmore"
+												class="myvne_notification-viewmore" style="display:none;">Xem
+												thêm</a> </ul>
+									</div>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
-		<h1 class="logo" title="Ngoisao.net – Trang báo về những người nổi tiếng"><a href="" title="this"><img
-					src="images/graphics/logo_ns.svg" alt="Ngoisao.net – Trang báo về những người nổi tiếng"></a>
-		</h1>
-		<div id="search_ns" action="https://ngoisao.net/search?s=">
-			<input type="text" class="input_search inputS" name="s" onblur="this.placeholder = 'Tìm kiếm'"
-				onfocus="this.placeholder = ''" value="" placeholder="Tìm kiếm">
-			<button type="submit" class="icon_seach_web"><svg class="icon-ns not-grad">
-					<use xlink:href="images/icons/icon.svg#zoom-2" /></svg></button>
-		</div>
-		<a class="logo-be" href="" alt="this" title="this" style="width: 141px;margin: 36px 20px 0 0px;"><img
-				src="images/graphics/logo_nscn_20.png" alt="this"></a>
 		<!--MAIN MENU-->
 		<ul id="main_menu_new" class="container">
 			<li class="active home"><a href="" title="this"><svg class="icon-ns not-grad">
@@ -211,22 +285,23 @@
         <div class="sidebar-1">
             <!-- BREADCRUMB -->
             <section class="container clearfix style1" id="breadcrumb">
-                <ul>
-                    <li>
-                        <h2><a href="#">Video</a></h2>
-                        <svg class="icon-ns">
-                            <use xlink:href="images/icons/icon.svg#minimal-right"></use>
-                        </svg>
+                <ul data-campaign="Header">
+                    <li class=""><a data-medium="Menu-ThoiCuoc" href="/thoi-cuoc" title="Thời cuộc"
+                            data-itm-source="#vn_source=Detail&amp;vn_campaign=Header&amp;vn_medium=Menu-ThoiCuoc&amp;vn_term=Desktop">
+                            Thời cuộc</a>
                     </li>
-                    <li class="c2">
-                        <h3><a href="#">Giải trí</a></h3>
+                    <li>|</li>
+                    <li class="cap_3_2">
+                        <a data-medium="Menu-HinhSu" href="/thoi-cuoc/hinh-su" title="Hình sự"
+                            data-itm-source="#vn_source=Detail&amp;vn_campaign=Header&amp;vn_medium=Menu-HinhSu&amp;vn_term=Desktop">Hình
+                            sự</a>
                     </li>
-                    <li class="c3">
-                        <h3><a href="#">Show truyền hình</a></h3>
-                        <h3><a href="#">Phim</a></h3>
-                        <h3><a href="#">Sao</a></h3>
-                        <h3><a href="#">Nhạc</a></h3>
+                    <li class="cap_3_2">
+                        <a data-medium="Menu-ChuyenLa" href="/thoi-cuoc/chuyen-la" title="Chuyện lạ"
+                            data-itm-source="#vn_source=Detail&amp;vn_campaign=Header&amp;vn_medium=Menu-ChuyenLa&amp;vn_term=Desktop">Chuyện
+                            lạ</a>
                     </li>
+                    <li id="parent_category" class="hide" data-link="https://ngoisao.net"></li>
                 </ul>
             </section>
             <div class="header-content width_common">
@@ -1205,7 +1280,8 @@
                             <span class="count_comment" id="total_share_3834581">124</span>
                             <div class="total">
                                 <div class="bg_agray">
-                                    <a class="btn_face" href="#"><svg class="icon-ns not-grad">
+                                    <a class="btn_face item_fb btn_facebook btn_share" href="#"><svg
+                                            class="icon-ns not-grad">
                                             <use xlink:href="images/icons/icon.svg#logo-fb-simple"></use>
                                         </svg></a>
                                     <a class="btn_twitter" href="#"><svg class="icon-ns not-grad">
@@ -1390,280 +1466,350 @@
             <div class="box_category box_border_top center"><img alt="" src="images/graphics/banner_728x303.jpg"></div>
 
             <!--comment-->
-            <div id="box_comment_vne" class="box_comment_vne width_common">
-                <div class="ykien_vne width_common">
-                    <div class="left"><strong>Ý kiến bạn đọc</strong> (15)</div>
-                    <div class="filter_coment">
-                        <a href="#">Mới nhất</a> |
-                        <a class="active" href="#">Quan tâm nhất</a>
+            <div id="box_comment_vne" class="box_category width_common" data-component-runtime="js"
+                data-component-function="showComment"
+                data-component-input="{&quot;type&quot;:&quot;comment&quot;,&quot;article_id&quot;:&quot;4180273&quot;,&quot;article_type&quot;:&quot;1&quot;,&quot;site_id&quot;:&quot;1002835&quot;,&quot;category_id&quot;:&quot;1002898&quot;,&quot;sign&quot;:&quot;f6c4182807812b485570ba40fcc4221a&quot;,&quot;limit&quot;:24}">
+                <div class="box_comment_vne width_common"
+                    style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+                    <div class="ykien_vne width_common"
+                        style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+                        <div class="left">
+                            <h3 style="display:inline-block;font-weight:bold;" rel="time">Ý kiến</h3> (<label
+                                id="total_comment">6</label>)
+                        </div>
                     </div>
-                </div>
-                <div class="main_show_comment width_common mb10" id="list_comment">
-                    <div class="comment_item width_common">
-                        <p> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm một
-                            chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên chống lại rồi
-                            chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có công bằng ko?
-                            <a href="#" class="icon_show_full_comment">
-                                <svg class="icon-ns not-grad">
-                                    <use xlink:href="images/icons/icon.svg#simple-add" />
+                    <div class="input_comment width_common">
+                        <form id="comment_post_form">
+                            <div class="box-area-input width_common"><textarea id="txtComment"
+                                    class="txt_comment block_input" placeholder="Ý kiến của bạn"
+                                    style="height: 30px; max-height: 30px;"></textarea><span class="note-count-text"
+                                    style="display:none;"><span class="counter_world">0</span> / 1500 ký
+                                    tự</span></div>
+                            <div class="box_emoji"
+                                style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);"><svg
+                                    class="icon icon_emoji emoji-icon">
+                                    <use xlink:href="#emoji-icon"></use>
                                 </svg>
-                            </a>
-                        </p>
-                        <div class="user_status width_common">
-                            <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
-                                target="_blank" title="Xem trang ý kiến của Duy Tuấn"><img class="img_avatar"
-                                    src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a>
-                            <span class="left txt_666 txt_14"><a class="nickname txt_666"
-                                    href="https://my.vnexpress.net/users/feed/1002615300"
-                                    title="Xem trang ý kiến của Duy Tuấn" target="_blank"><b>Duy Tuấn</b></a> - 5’
-                            </span>
-                        </div>
-                        <div class="input_comment reply_input_comment width_common">
-                            <form>
-                                <textarea placeholder="Ý kiến của bạn" class="block_input"></textarea>
-                                <div class="width_common block_relative">
-                                    <div class="right block_btn_send">
-                                        <button type="submit" class="btn_send_comment btn_vne"
-                                            id="comment_post_button">Gửi</button>
-                                    </div>
-                                    <!--<div class="left counter_world" style="display: none;"><strong>20</strong>/1000</div>-->
-                                    <div class="like_google" style="display: block;">
-                                        <div class="google_name"><a class="avata_coment"
-                                                href="https://my.vnexpress.net/users/feed/1003137688"
-                                                target="_blank"><img
-                                                    src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"
-                                                    alt=""></a><span>Toan Nguyen</span></div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="sub_comment width_common clearfix">
-                            <div class="sub_comment_item width_common">
-                                <p><span class="reply_name">@Lưu Thanh Nhân: </span> Nếu chỉ cách chức không thì quá
-                                    nhẹ, phải xử công bằng, quan cũng như dân, làm một chuyện mà gây ảnh hưởng cả
-                                    một gia đình, nhà tan cửa nát, phải đứng lên chống lại rồi chịu tù tội, vậy mà
-                                    người gây ra chỉ có cách chức, kiểm điểm. có công bằng ko? <a href="#"
-                                        class="icon_show_full_comment"><svg class="icon-ns not-grad">
-                                            <use xlink:href="images/icons/icon.svg#simple-add" /></svg></a></p>
-
-                                <div class="user_status width_common">
-                                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
-                                        target="_blank" title="Xem trang ý kiến của Duy Tuấn"><img class="img_avatar"
-                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a>
-                                    <span class="left txt_666 txt_14"><a class="nickname txt_666"
-                                            href="https://my.vnexpress.net/users/feed/1002615300"
-                                            title="Xem trang ý kiến của Duy Tuấn" target="_blank"><b>Duy
-                                                Tuấn</b></a> - 5’</span>
-                                    <p class="txt_666 right block_like_web">
-                                        <a class="txt_666 txt_11 link_thich" href="javascript:;" id="20396428"
-                                            rel="20396428"><span class="like_icon"><svg class="icon-ns not-grad">
-                                                    <use xlink:href="images/icons/icon.svg#favourite-28"></use>
-                                                </svg></span>&nbsp;Thích</a>&nbsp;<a>1,491</a>
-                                        &nbsp;|&nbsp;<a><b>Trả lời</b></a>&nbsp;|&nbsp;<a
-                                            class="share_cmt_fb txt_blue txt_11">Chia
-                                            sẻ <svg class="icon-ns not-grad">
-                                                <use xlink:href="images/icons/icon.svg#small-down" /></svg></a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="sub_comment_item width_common">
-                                <p> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm
-                                    một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên
-                                    chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có
-                                    công bằng ko? <a href="#" class="icon_show_full_comment"><svg
-                                            class="icon-ns not-grad">
-                                            <use xlink:href="images/icons/icon.svg#simple-add" /></svg></a></p>
-                                <div class="user_status width_common">
-                                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
-                                        target="_blank" title="Xem trang ý kiến của Duy Tuấn"><img class="img_avatar"
-                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a>
-                                    <span class="left txt_666 txt_14"><a class="nickname txt_666"
-                                            href="https://my.vnexpress.net/users/feed/1002615300"
-                                            title="Xem trang ý kiến của Duy Tuấn" target="_blank"><b>Duy
-                                                Tuấn</b></a> - 5’</span>
-                                    <p class="txt_666 right block_like_web">
-                                        <a class="txt_666 txt_11 link_thich" href="javascript:;" id="20396428"
-                                            rel="20396428"><span class="like_icon"><svg class="icon-ns not-grad">
-                                                    <use xlink:href="images/icons/icon.svg#favourite-28"></use>
-                                                </svg></span>&nbsp;Thích</a>&nbsp;<a>1,491</a>
-                                        &nbsp;|&nbsp;<a><b>Trả lời</b></a>&nbsp;|&nbsp;<a
-                                            class="share_cmt_fb txt_blue txt_11">Chia
-                                            sẻ <svg class="icon-ns not-grad">
-                                                <use xlink:href="images/icons/icon.svg#small-down" /></svg></a>
-                                    </p>
-                                    <div class="info_avata_cmt" style="display: block;">
-                                        <a href="#" class="avata_coment" target="_blank"><img
-                                                src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"
-                                                alt="Đang tải ảnh đại diện"></a>
-                                        <p><a href="#" target="_blank"><strong>Thanh Hà</strong></a> - <span
-                                                class="txt_666">564 ý
-                                                kiến</span></p>
-                                        <p><a href="#">TQ có rất nhiều phim trường quay phim viễn tưởng, tiếc là họ
-                                                chuộng làm phim cổ hơn.</a></p>
-                                        <p class="txt_666">4 giờ trước</p>
-                                        <p><strong><a href="#">Thất bại của 'thành phố ma' lớn nhất thế
-                                                    giới</a></strong></p>
-                                    </div>
+                                <div class="list_emoji">
+                                    <ul class="ul_emoji">
+                                        <li class="item_emoji" data-emj=":-)"><svg class="icon icon_emoji emoji-1">
+                                                <use xlink:href="#emoji-1"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":-D"><svg class="icon icon_emoji emoji-2">
+                                                <use xlink:href="#emoji-2"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj="xD"><svg class="icon icon_emoji emoji-3">
+                                                <use xlink:href="#emoji-3"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":')"><svg class="icon icon_emoji emoji-4">
+                                                <use xlink:href="#emoji-4"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":P"><svg class="icon icon_emoji emoji-5">
+                                                <use xlink:href="#emoji-5"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=";)"><svg class="icon icon_emoji emoji-6">
+                                                <use xlink:href="#emoji-6"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj="^^"><svg class="icon icon_emoji emoji-7">
+                                                <use xlink:href="#emoji-7"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj="^_^"><svg class="icon icon_emoji emoji-8">
+                                                <use xlink:href="#emoji-8"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj="<3"><svg class="icon icon_emoji emoji-9">
+                                                <use xlink:href="#emoji-9"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":^*"><svg class="icon icon_emoji emoji-10">
+                                                <use xlink:href="#emoji-10"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj="B)"><svg class="icon icon_emoji emoji-11">
+                                                <use xlink:href="#emoji-11"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":|"><svg class="icon icon_emoji emoji-12">
+                                                <use xlink:href="#emoji-12"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":o"><svg class="icon icon_emoji emoji-13">
+                                                <use xlink:href="#emoji-13"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":("><svg class="icon icon_emoji emoji-14">
+                                                <use xlink:href="#emoji-14"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":'("><svg class="icon icon_emoji emoji-15">
+                                                <use xlink:href="#emoji-15"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":-/"><svg class="icon icon_emoji emoji-16">
+                                                <use xlink:href="#emoji-16"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":@"><svg class="icon icon_emoji emoji-17">
+                                                <use xlink:href="#emoji-17"></use>
+                                            </svg></li>
+                                        <li class="item_emoji" data-emj=":VN:"><svg class="icon icon_emoji emoji-18">
+                                                <use xlink:href="#emoji-18"></use>
+                                            </svg></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="txt_view_more width_common"><a href="#" class="txt_blue view_all_reply"
-                                    rel="20396428" data-total=" 31" data-offset="1">Xem tất cả 31 trả lời</a></div>
+                            <div class="width_common block_relative" style="display: none;">
+                                <div class="left block_not_login block_anonymous"></div>
+                                <div class="right block_btn_send"><button type="button" value="Gửi"
+                                        class="btn_send_comment btn_vne" id="comment_post_button">Gửi</button></div>
+                                <div class="like_google"
+                                    style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+                                    <div class="google_name"><a class="avata_coment"
+                                            href="https://my.ngoisao.net/users/feed/1014352662" target="_blank"><img
+                                                src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
+                                                alt="Như Hùng"></a><span>Như Hùng</span></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter_coment width_common"><a href="javascript:;" class="active" rel="like">Quan tâm
+                            nhất</a><a href="javascript:;" class="" rel="time">Mới nhất</a></div>
+                    <div class="loading"
+                        style="text-align: center; padding-top: 15px; width: 100%; float: left; display: none;">
+                        <img class="img_comment_loading"
+                            src="https://st-demo.vnecdn.net/vnexpress/restruct/c/v138//images/graphics/loading1.gif"
+                            style="width:25px;" title="Đang tải dữ liệu" alt="Đang tải dữ liệu"></div>
+                    <div class="view_all_reply_loading"></div>
+                    <div class="width_common" id="box_comment">
+                        <div class="main_show_comment width_common mb10" id="list_comment"
+                            style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1); height: 100%;">
+                            <div class="comment_item width_common" data-time="1603414846">
+                                <div class="user_status"><a class="avata_coment" href="javascript:;">N</a></div>
+                                <div class="content-comment">
+                                    <p class="full_content"><span class="txt-name"><a class="nickname"
+                                                href="javascript:;" title=""><b>Nga Nga</b></a></span>Xinh kiểu hot girl
+                                        thôi, nói xinh hơn Tiểu Vy thì
+                                        không có cửa đâu.</p>
+                                    <p class="block_like_web width_common"><a id="37376887" class="link_thich "
+                                            href="javascript:;" rel="37376887"><span class="total_like"
+                                                href="javascript:;">10</span><i class="ic ic-like"></i></a><a
+                                            id="37376887" class="link_reply" href="javascript:;" rel="37376887"
+                                            parent="37376887">Trả lời</a><a href="javascript:;" rel="37376887"
+                                            class="share_cmt_fb">Chia sẻ</a><span class="time-com">46'</span><a
+                                            class="report-comment" rel="37376887" href="javascript:;">Vi phạm</a></p>
+                                </div>
+                                <div class="sub_comment width_common clearfix"></div>
+                            </div>
+                            <div class="comment_item width_common hight_light_cmt" data-time="1603413806">
+                                <div class="user_status"><a class="avata_coment" href="javascript:;">C</a></div>
+                                <div class="content-comment">
+                                    <p class="full_content"><span class="txt-name"><a class="nickname"
+                                                href="javascript:;" title=""><b>Câu Chuyện Cuộc Sống</b></a></span>Nhìn
+                                        đc thôi, ko có gì đặc biệt. Tiểu
+                                        Vy có gương mặt đẹp và để lại ấn tượng.</p>
+                                    <p class="block_like_web width_common"><a id="37376640" class="link_thich "
+                                            href="javascript:;" rel="37376640"><span class="total_like"
+                                                href="javascript:;">5</span><i class="ic ic-like"></i></a><a
+                                            id="37376640" class="link_reply" href="javascript:;" rel="37376640"
+                                            parent="37376640">Trả lời</a><a href="javascript:;" rel="37376640"
+                                            class="share_cmt_fb">Chia sẻ<span class="block_share_cmt_fb"
+                                                style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1); display: none;"><a
+                                                    data-type="facebook" class="item_social item_fb" href="javascript:;"
+                                                    title="Chia sẻ phản hồi lên facebook"><i
+                                                        class="ic ic-facebook"></i></a><a data-type="twitter"
+                                                    class="item_social item_twit" href="javascript:;"
+                                                    title="Chia sẻ phản hồi lên twitter"><i
+                                                        class="ic ic-twitter"></i></a></span></a><span
+                                            class="time-com">1h</span><a class="report-comment" rel="37376640"
+                                            href="javascript:;">Vi phạm</a></p>
+                                </div>
+                                <div class="sub_comment width_common clearfix">
+                                    <div id="comment_reply_wrapper"
+                                        class="input_comment reply_input_comment width_common"
+                                        style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1); display: none;">
+                                        <form id="comment_reply_form">
+                                            <div class="box-area-input width_common"><textarea id="txtComments"
+                                                    class="txt_comment block_input" placeholder="Ý kiến của bạn"
+                                                    rel="37376640" toogle="0" reply_to="0"
+                                                    style="height: 30px; max-height: 30px;"></textarea><span
+                                                    class="note-count-text" style="display:none;"><span
+                                                        class="counter_world">0</span> / 1500 ký tự</span></div>
+                                            <div class="box_emoji"
+                                                style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+                                                <svg class="icon icon_emoji emoji-icon">
+                                                    <use xlink:href="#emoji-icon"></use>
+                                                </svg>
+                                                <div class="list_emoji">
+                                                    <ul class="ul_emoji">
+                                                        <li class="item_emoji" data-emj=":-)"><svg
+                                                                class="icon icon_emoji emoji-1">
+                                                                <use xlink:href="#emoji-1"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":-D"><svg
+                                                                class="icon icon_emoji emoji-2">
+                                                                <use xlink:href="#emoji-2"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj="xD"><svg
+                                                                class="icon icon_emoji emoji-3">
+                                                                <use xlink:href="#emoji-3"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":')"><svg
+                                                                class="icon icon_emoji emoji-4">
+                                                                <use xlink:href="#emoji-4"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":P"><svg
+                                                                class="icon icon_emoji emoji-5">
+                                                                <use xlink:href="#emoji-5"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=";)"><svg
+                                                                class="icon icon_emoji emoji-6">
+                                                                <use xlink:href="#emoji-6"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj="^^"><svg
+                                                                class="icon icon_emoji emoji-7">
+                                                                <use xlink:href="#emoji-7"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj="^_^"><svg
+                                                                class="icon icon_emoji emoji-8">
+                                                                <use xlink:href="#emoji-8"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj="<3"><svg
+                                                                class="icon icon_emoji emoji-9">
+                                                                <use xlink:href="#emoji-9"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":^*"><svg
+                                                                class="icon icon_emoji emoji-10">
+                                                                <use xlink:href="#emoji-10"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj="B)"><svg
+                                                                class="icon icon_emoji emoji-11">
+                                                                <use xlink:href="#emoji-11"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":|"><svg
+                                                                class="icon icon_emoji emoji-12">
+                                                                <use xlink:href="#emoji-12"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":o"><svg
+                                                                class="icon icon_emoji emoji-13">
+                                                                <use xlink:href="#emoji-13"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":("><svg
+                                                                class="icon icon_emoji emoji-14">
+                                                                <use xlink:href="#emoji-14"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":'("><svg
+                                                                class="icon icon_emoji emoji-15">
+                                                                <use xlink:href="#emoji-15"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":-/"><svg
+                                                                class="icon icon_emoji emoji-16">
+                                                                <use xlink:href="#emoji-16"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":@"><svg
+                                                                class="icon icon_emoji emoji-17">
+                                                                <use xlink:href="#emoji-17"></use>
+                                                            </svg></li>
+                                                        <li class="item_emoji" data-emj=":VN:"><svg
+                                                                class="icon icon_emoji emoji-18">
+                                                                <use xlink:href="#emoji-18"></use>
+                                                            </svg></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="width_common block_relative" style="display: none;">
+                                                <div class="left block_not_login block_anonymous"></div>
+                                                <div class="right"><button type="button" value="Gửi"
+                                                        class="btn_send_comment btn_vne"
+                                                        id="comment_reply_button">Gửi</button>
+                                                </div>
+                                                <div class="like_google"
+                                                    style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+                                                    <div class="google_name"><a class="avata_coment"
+                                                            href="https://my.ngoisao.net/users/feed/1014352662"
+                                                            target="_blank"><img
+                                                                src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
+                                                                alt="Như Hùng"></a><span>Như Hùng</span></div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment_item width_common" data-time="1603414062">
+                                <div class="user_status"><a class="avata_coment" href="javascript:;">c</a></div>
+                                <div class="content-comment">
+                                    <p class="full_content"><span class="txt-name"><a class="nickname"
+                                                href="javascript:;" title=""><b>cucucuhcm</b></a></span>Cẩm Đan đẹp và
+                                        tiểu vy đẹp, mỗi người có nét đẹp
+                                        và tài năng riêng hãy cho các người đẹp 1 lời khen đó là niềm hạnh phúc để phấn
+                                        đấu vươn
+                                        lên, phát huy nét đẹp và tài năng hơn nữa..</p>
+                                    <p class="block_like_web width_common"><a id="37376710" class="link_thich "
+                                            href="javascript:;" rel="37376710"><span class="total_like"
+                                                href="javascript:;">3</span><i class="ic ic-like"></i></a><a
+                                            id="37376710" class="link_reply" href="javascript:;" rel="37376710"
+                                            parent="37376710">Trả lời</a><a href="javascript:;" rel="37376710"
+                                            class="share_cmt_fb">Chia sẻ</a><span class="time-com">59'</span><a
+                                            class="report-comment" rel="37376710" href="javascript:;">Vi phạm</a></p>
+                                </div>
+                                <div class="sub_comment width_common clearfix"></div>
+                            </div>
+                            <div class="comment_item width_common hight_light_cmt" data-time="1603410950">
+                                <div class="user_status"><a class="avata_coment" href="javascript:;">L</a></div>
+                                <div class="content-comment">
+                                    <p class="full_content"><span class="txt-name"><a class="nickname"
+                                                href="javascript:;" title=""><b>Lan Rừng</b></a></span>Cẩm Đan xinh quá,
+                                        nét đẹp giống Tiểu Vy , nét đẹp
+                                        hiện đại hợp với các cuộc thi quốc tế. Hy vọng em xẽ đạt vương miện.</p>
+                                    <p class="block_like_web width_common"><a id="37376210" class="link_thich "
+                                            href="javascript:;" rel="37376210"><span class="total_like"
+                                                href="javascript:;">1</span><i class="ic ic-like"></i></a><a
+                                            id="37376210" class="link_reply" href="javascript:;" rel="37376210"
+                                            parent="37376210">Trả lời</a><a href="javascript:;" rel="37376210"
+                                            class="share_cmt_fb">Chia sẻ</a><span class="time-com">1h</span><a
+                                            class="report-comment" rel="37376210" href="javascript:;">Vi phạm</a></p>
+                                </div>
+                                <div class="sub_comment width_common clearfix"></div>
+                            </div>
+                            <div class="comment_item width_common" data-time="1603399959">
+                                <div class="user_status"><a class="avata_coment" href="javascript:;">K</a></div>
+                                <div class="content-comment">
+                                    <p class="full_content"><span class="txt-name"><a class="nickname"
+                                                href="javascript:;" title=""><b>Kim Oanh</b></a></span>Cẩm Đan là người
+                                        vn đẹp có 102. Chưa thấy ai đẹp
+                                        bằng. Nếu Cẩm Đan kô được chấm làm hoa hậu kì này thì có gì kô hợp ý bgk thôi.
+                                        Nét Cẩm Đan
+                                        đẹp thật hoàn hảo.</p>
+                                    <p class="block_like_web width_common"><a id="37375720" class="link_thich "
+                                            href="javascript:;" rel="37375720"><span class="total_like"
+                                                href="javascript:;">1</span><i class="ic ic-like"></i></a><a
+                                            id="37375720" class="link_reply" href="javascript:;" rel="37375720"
+                                            parent="37375720">Trả lời</a><a href="javascript:;" rel="37375720"
+                                            class="share_cmt_fb">Chia sẻ</a><span class="time-com">4h</span><a
+                                            class="report-comment" rel="37375720" href="javascript:;">Vi phạm</a></p>
+                                </div>
+                                <div class="sub_comment width_common clearfix"></div>
+                            </div>
+                            <div class="comment_item width_common hight_light_cmt" data-time="1603416586"
+                                style="display: none;">
+                                <div class="user_status"><a class="avata_coment" href="javascript:;">D</a></div>
+                                <div class="content-comment">
+                                    <p class="full_content"><span class="txt-name"><a class="nickname"
+                                                href="javascript:;" title=""><b>Duy</b></a></span>Đẹp thì đẹp nhưng nhìn
+                                        ko có duyên và đặc biệt</p>
+                                    <p class="block_like_web width_common"><a id="37377322" class="link_thich "
+                                            href="javascript:;" rel="37377322"><span class="total_like"
+                                                href="javascript:;"></span><i class="ic ic-like"></i></a><a
+                                            id="37377322" class="link_reply" href="javascript:;" rel="37377322"
+                                            parent="37377322">Trả lời</a><a href="javascript:;" rel="37377322"
+                                            class="share_cmt_fb">Chia sẻ</a><span class="time-com">17'</span><a
+                                            class="report-comment" rel="37377322" href="javascript:;">Vi phạm</a></p>
+                                </div>
+                                <div class="sub_comment width_common clearfix"></div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="comment_item hight_light width_common">
-                        <p> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm một
-                            chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên chống lại rồi
-                            chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có công bằng ko? <a href="#"
-                                class="icon_show_full_comment"><svg class="icon-ns not-grad">
-                                    <use xlink:href="images/icons/icon.svg#simple-add" /></svg></a></p>
-                        <div class="user_status width_common">
-                            <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
-                                target="_blank" title="Xem trang ý kiến của Duy Tuấn"><img class="img_avatar"
-                                    src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a>
-                            <span class="left txt_666 txt_14"><a class="nickname txt_666"
-                                    href="https://my.vnexpress.net/users/feed/1002615300"
-                                    title="Xem trang ý kiến của Duy Tuấn" target="_blank"><b>Duy Tuấn</b></a> -
-                                08:08 24/02</span>
-                            <p class="txt_666 right block_like_web">
-                                <a class="txt_666 txt_11 link_thich" href="javascript:;" id="20396428"
-                                    rel="20396428"><span class="like_icon"><svg class="icon-ns not-grad">
-                                            <use xlink:href="images/icons/icon.svg#favourite-28"></use>
-                                        </svg></span>&nbsp;Thích</a>&nbsp;<a>1,491</a> &nbsp;|&nbsp;<a><b>Trả
-                                        lời</b></a>&nbsp;|&nbsp;<a class="share_cmt_fb txt_blue txt_11">Chia sẻ <svg
-                                        class="icon-ns not-grad">
-                                        <use xlink:href="images/icons/icon.svg#small-down" /></svg></a>
-                            </p>
-                        </div>
-                        <div class="sub_comment width_common clearfix">
-                            <div class="sub_comment_item width_common">
-                                <p> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm
-                                    một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên
-                                    chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có
-                                    công bằng ko? <a href="#" class="icon_show_full_comment"><svg
-                                            class="icon-ns not-grad">
-                                            <use xlink:href="images/icons/icon.svg#simple-add" /></svg></a></p>
-                                <div class="user_status width_common">
-                                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
-                                        target="_blank" title="Xem trang ý kiến của Duy Tuấn"><img class="img_avatar"
-                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a>
-                                    <span class="left txt_666 txt_14"><a class="nickname txt_666"
-                                            href="https://my.vnexpress.net/users/feed/1002615300"
-                                            title="Xem trang ý kiến của Duy Tuấn" target="_blank"><b>Duy
-                                                Tuấn</b></a> - 08:08 24/02</span>
-                                    <p class="txt_666 right block_like_web">
-                                        <a class="txt_666 txt_11 link_thich" href="javascript:;" id="20396428"
-                                            rel="20396428"><span class="like_icon"><svg class="icon-ns not-grad">
-                                                    <use xlink:href="images/icons/icon.svg#favourite-28"></use>
-                                                </svg></span>&nbsp;Thích</a>&nbsp;<a>1,491</a>
-                                        &nbsp;|&nbsp;<a><b>Trả lời</b></a>&nbsp;|&nbsp;<a
-                                            class="share_cmt_fb txt_blue txt_11">Chia
-                                            sẻ <svg class="icon-ns not-grad">
-                                                <use xlink:href="images/icons/icon.svg#small-down" /></svg></a>
-                                    </p>
-                                </div>
-                                <div class="input_comment reply_input_comment width_common">
-                                    <form>
-                                        <textarea placeholder="Ý kiến của bạn" class="block_input"></textarea>
-                                        <div class="width_common block_relative">
-                                            <div class="right block_btn_send">
-                                                <button type="submit" class="btn_send_comment btn_vne"
-                                                    id="comment_post_button">Gửi</button>
-                                            </div>
-                                            <!--<div class="left counter_world" style="display: none;"><strong>20</strong>/1000</div>-->
-                                            <div class="like_google" style="display: block;">
-                                                <div class="google_name"><a class="avata_coment"
-                                                        href="https://my.vnexpress.net/users/feed/1003137688"
-                                                        target="_blank"><img
-                                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"
-                                                            alt=""></a><span>Toan Nguyen</span></div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="sub_comment_item width_common">
-                                <p> Nếu chỉ cách chức không thì quá nhẹ, phải xử công bằng, quan cũng như dân, làm
-                                    một chuyện mà gây ảnh hưởng cả một gia đình, nhà tan cửa nát, phải đứng lên
-                                    chống lại rồi chịu tù tội, vậy mà người gây ra chỉ có cách chức, kiểm điểm. có
-                                    công bằng ko? <a href="#" class="icon_show_full_comment"><svg
-                                            class="icon-ns not-grad">
-                                            <use xlink:href="images/icons/icon.svg#simple-add" /></svg></a></p>
-                                <div class="user_status width_common">
-                                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1002615300"
-                                        target="_blank" title="Xem trang ý kiến của Duy Tuấn"><img class="img_avatar"
-                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a>
-                                    <span class="left txt_666 txt_14"><a class="nickname txt_666"
-                                            href="https://my.vnexpress.net/users/feed/1002615300"
-                                            title="Xem trang ý kiến của Duy Tuấn" target="_blank"><b>Duy
-                                                Tuấn</b></a> - 08:08 24/02</span>
-                                    <p class="txt_666 right block_like_web">
-                                        <a class="txt_666 txt_11 link_thich" href="javascript:;" id="20396428"
-                                            rel="20396428"><span class="like_icon"><svg class="icon-ns not-grad">
-                                                    <use xlink:href="images/icons/icon.svg#favourite-28"></use>
-                                                </svg></span>&nbsp;Thích</a>&nbsp;<a>1,491</a>
-                                        &nbsp;|&nbsp;<a><b>Trả lời</b></a>&nbsp;|&nbsp;<a
-                                            class="share_cmt_fb txt_blue txt_11">Chia
-                                            sẻ <svg class="icon-ns not-grad">
-                                                <use xlink:href="images/icons/icon.svg#small-down" /></svg></a>
-                                    </p>
-                                </div>
-                                <div class="input_comment reply_input_comment width_common">
-                                    <form>
-                                        <textarea placeholder="Ý kiến của bạn" class="block_input"></textarea>
-                                        <div class="width_common block_relative">
-                                            <div class="right block_btn_send">
-                                                <button type="submit" class="btn_send_comment btn_vne"
-                                                    id="comment_post_button">Gửi</button>
-                                            </div>
-                                            <!--<div class="left counter_world" style="display: none;"><strong>20</strong>/1000</div>-->
-                                            <div class="like_google" style="display: block;">
-                                                <div class="google_name"><a class="avata_coment"
-                                                        href="https://my.vnexpress.net/users/feed/1003137688"
-                                                        target="_blank"><img
-                                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"
-                                                            alt=""></a><span>Toan Nguyen</span></div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="txt_view_more width_common"><a href="#" class="txt_blue view_all_reply"
-                                    rel="20396428" data-total=" 31" data-offset="1">Xem tất cả 31 trả lời</a></div>
-                        </div>
+                    <div class="view_more_coment width_common mb10"
+                        style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);"><a href="javascript:;"
+                            class="txt_666">Xem thêm</a></div>
+                    <div id="cmt-paginator" class="width_common mt20" style="display: none;">
+                        <p id="pagination" class="pagination mb10"></p>
                     </div>
-
-                </div>
-                <div class="view_more_coment width_common mb10" style="display: block;">
-                    <a class="txt_666" href="javascript:;">Xem thêm</a>
-                </div>
-                <div id="cmt-paginator">
-                    <p class="pagination mb10" id="pagination"><a class="prev" href="#"><i
-                                class="ic ic-caret-left"></i></a> <a class="active" href="#">1</a> <a href="#">2</a>
-                        <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a class="next" href="#"><i
-                                class="ic ic-caret-right"></i></a></p>
-                </div>
-                <div class="input_comment width_common">
-                    <form>
-                        <textarea class="block_input" placeholder="Ý kiến của bạn"></textarea>
-                        <div class="width_common block_relative">
-                            <div class="right block_btn_send">
-                                <button class="btn_send_comment btn_vne" id="comment_post_button"
-                                    type="submit">Gửi</button>
-                            </div>
-                            <!--<div class="left counter_world" style="display: none;"><strong>20</strong>/1000</div>-->
-                            <div class="like_google" style="display: block;">
-                                <div class="google_name">
-                                    <a class="avata_coment" href="https://my.vnexpress.net/users/feed/1003137688"
-                                        target="_blank"><img alt=""
-                                            src="http://a.vnecdn.net/avatar/c60x60/2016/04/07/6209098237_1460016601.jpg"></a><span>Toan
-                                        Nguyen</span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
+
+
             <!--End comment-->
 
             <div class="block_tag width_common box_category" id="box_tag" style="border-bottom:none;padding-bottom:0">

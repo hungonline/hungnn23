@@ -13,8 +13,10 @@ var notify = require('gulp-notify');
 var wait = require('gulp-wait');
 var svgSprite = require('gulp-svg-sprite');
 var template = require('gulp-template-html');
+var purgecss = require('gulp-purgecss');
 var index = require('gulp-index');
 var changed = require('gulp-changed');
+var rename = require('gulp-rename');
 var fs = require('fs');
 
 var argv = require('yargs').argv;
@@ -70,6 +72,31 @@ gulp.task('sass', function () {
     }));
 })
 
+
+// Remove css js
+gulp.task('purgecss', () => {
+  return gulp
+    .src(rootDir + '/css/general-file.css')
+    .pipe(
+      purgecss({
+        content: [`${rootDir}/*.html`, `${rootDir}/js/*.js`],
+        whitelistPatterns: [/^mfp/],
+        whitelistPatternsChildren: [/^featured/],
+        // extractors: [{
+        //   extractor: class TailwindExtractor {
+        //     static extract(content) {
+        //       return content.match(/[A-z0-9-:\/]+/g) || [];
+        //     }
+        //   },
+        //   extensions: ['css', 'html']
+        // }]
+      })
+    )
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(rootDir + '/css'))
+})
 
 
 // SVG Combine
@@ -196,19 +223,27 @@ gulp.task('buildIndex', function () {
 
 // Watchers
 gulp.task('watch', function () {
-  gulp.watch(rootDir + '/css/scss/*.scss', ['sass']);
+  // gulp.watch(rootDir + '/css/scss/*.scss', ['sass']);
+  gulp.watch(rootDir + '/css/scss/*.scss', function (event) {
+    runSequence('sass', 'purgecss');
+  });
   gulp.watch(rootDir + '/images/symbols/elements/**/*.svg', ['svg']);
   gulp.watch(rootDir + '/*.html', browserSync.reload);
   gulp.watch(rootDir + '/js/**/*.js', browserSync.reload);
   gulp.watch(rootDir + '/images/**/*', browserSync.reload);
-  gulp.watch(rootDir + '/app/**/*.html', ['build-template']);
+  // gulp.watch(rootDir + '/app/**/*.html', ['build-template']);
+  gulp.watch(rootDir + '/app/**/*.html', function (event) {
+    runSequence('build-template', 'purgecss');
+  });
+
+
   gulp.watch(rootDir + '/*.html', {
     events: ['add']
   }, ['buildIndex']);
 })
 
 gulp.task('default', function (callback) {
-  runSequence(['sass', 'build-template', 'buildIndex', 'browserSync'], 'watch',
+  runSequence(['sass', 'build-template', 'buildIndex', 'purgecss', 'browserSync'], 'watch',
     callback
   )
 })

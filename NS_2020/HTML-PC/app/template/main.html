@@ -15,7 +15,11 @@
 	</title>
 	<link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
 		rel="shortcut icon" />
-	<link rel="stylesheet" href="css/font.css" media="all" />
+	<!-- <link rel="stylesheet" href="css/font.css" media="all" /> -->
+	<!-- <link rel="stylesheet" href="css/ici-font.css" media="all" />
+	<link rel="stylesheet" href="css/ici-font-medium.css" media="all" />
+	<link rel="stylesheet" href="css/ici-font-bold.css" media="all" /> -->
+	<link rel="stylesheet" href="css/iCielDomaineText-woff2.css" media="all" />
 	<link rel="stylesheet" href="css/general-inline.css" media="all" />
 	<link rel="stylesheet" href="css/general-file.css" media="all" />
 	<!-- build:head2 -->
@@ -35,23 +39,91 @@
 
 	</div>
 	<header id="header" class="container header">
-		<div class="store-adsl">
-			<a href="" class="store" target="_blank"><svg class="icon-ns not-grad">
-					<use xlink:href="images/icons/icon.svg#ns-shop" /></svg>Store Ngôi Sao</a>
-			<a href="" class="ads" target="_blank"><svg class="icon-ns not-grad">
-					<use xlink:href="images/icons/icon.svg#advertising-2" /></svg>Liên hệ quảng cáo</a>
+		<div class="flex">
+			<div class="store-adsl">
+				<a href="" class="store" target="_blank"><svg class="icon-ns not-grad">
+						<use xlink:href="images/icons/icon.svg#ns-shop" /></svg>Store Ngôi Sao</a>
+				<a href="" class="ads" target="_blank"><svg class="icon-ns not-grad">
+						<use xlink:href="images/icons/icon.svg#advertising-2" /></svg>Liên hệ quảng cáo</a>
+			</div>
+			<h1 class="logo" title="Ngoisao.net – Trang báo về những người nổi tiếng"><a href="" title="this"><img
+						src="images/graphics/logo_ns.svg" alt="Ngoisao.net – Trang báo về những người nổi tiếng"></a>
+			</h1>
+			<div class="right-head">
+				<a class="logo-be" href="" alt="this" title="this" style="width: 141px;margin: 36px 20px 0 0px;"><img
+						src="images/graphics/logo_nscn_20.png" alt="this"></a>
+				<div id="search_ns" action="https://ngoisao.net/search?s=">
+					<input type="text" class="input_search inputS" name="s" onblur="this.placeholder = 'Tìm kiếm'"
+						onfocus="this.placeholder = ''" value="" placeholder="Tìm kiếm">
+					<button type="submit" class="icon_seach_web"><svg class="icon-ns not-grad">
+							<use xlink:href="images/icons/icon.svg#zoom-2" /></svg></button>
+				</div>
+				<!-- After login myvne -->
+				<div id="myvne_taskbar" style="display: none">
+					<div id="myvne" class="myvne_taskbar myvne_login_button">
+						<a href="javascript:void(0);" class="log_txt" title="Đăng nhập">
+							<svg class="ic">
+								<use xlink:href="images/icons/icon.svg#User"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<!-- Before login myvne -->
+				<div id="myvne_taskbar">
+					<div id="myvne" class="myvne_taskbar">
+						<div class="myvne_container" id="myvne_user_logged">
+							<ul class="myvne_form_log logged">
+								<li class="myvne_user" id="myvne_profile_tool"> <a href="javascript:void(0);"
+										id="myvne_avatar_taskbar" class="myvne_avatar"> <span class="avatar_inner"><img
+												src="//a.vnecdn.net/avatar/c60x60/2/7b/8/7791036930_1415714180.jpg"
+												width="25" height="25" alt=""></span> <span class="name_user_av">Nguyễn
+											Như Hùng</span> </a>
+									<ul class="myvne_user_status" style="display:none;">
+										<li class="li_bd li_account"> <span class="avatar_sub"><img
+													src="//a.vnecdn.net/avatar/c60x60/2/7b/8/7791036930_1415714180.jpg"
+													width="25" height="25" alt=""></span> <span class="name_sub">Nguyễn
+												Như Hùng</span> </li>
+										<li><a href="https://my.ione.net/users/feed/1002649849"
+												title="Hoạt động bình luận">Hoạt động
+												bình luận</a></li>
+										<li><a href="https://my.ione.net/users/tin-da-luu" title="Tin đã lưu">Tin đã
+												lưu</a></li>
+										<li class="li_bd"><a href="https://my.ione.net/users/tin-da-doc"
+												title="Tin đã xem">Tin đã
+												xem</a></li>
+										<li class="li_bd"><a id="myvne_update_profile_link"
+												href="https://my.ione.net/users/chi-tiet-tai-khoan"
+												title="Tài khoản của tôi">Tài khoản
+												của tôi</a></li>
+										<li><a href="https://my.ione.net/qua-tang" title="Quà tặng">Quà tặng</a></li>
+										<li class="li_bd"><a href="https://kidlab.vnexpress.net/"
+												title="Kid-lab">Kid-lab</a></li>
+										<li><a href="javascript:void(0);" id="myvne_logout_link">Thoát</a></li>
+									</ul>
+								</li>
+								<li class="myvne_notification" id="myvne_notify_show"> <a
+										class="myvne_icon_bell_click"><svg class="ic ic-bell">
+											<use xlink:href="images/icons/icon.svg#Bell"></use>
+										</svg></a><span id="myvne_notify_area"></span>
+									<div id="myvne_notify_box" class="myvne_content_notification" style="display:none;">
+										<ul id="myvne_notify_lists" class="scrollbar-macosx">
+											<li class="myvne_loading">Loading</li>
+										</ul>
+										<ul id="myvne_notify_viewmore_area" style="display:none"> <span
+												id="myvne_loading_viewmore" style="display: none;">Loading</span> <a
+												href="javascript:void(0);" id="myvne_notify_viewmore"
+												class="myvne_notification-viewmore" style="display:none;">Xem
+												thêm</a> </ul>
+									</div>
+								</li>
+							</ul>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
-		<h1 class="logo" title="Ngoisao.net – Trang báo về những người nổi tiếng"><a href="" title="this"><img
-					src="images/graphics/logo_ns.svg" alt="Ngoisao.net – Trang báo về những người nổi tiếng"></a>
-		</h1>
-		<div id="search_ns" action="https://ngoisao.net/search?s=">
-			<input type="text" class="input_search inputS" name="s" onblur="this.placeholder = 'Tìm kiếm'"
-				onfocus="this.placeholder = ''" value="" placeholder="Tìm kiếm">
-			<button type="submit" class="icon_seach_web"><svg class="icon-ns not-grad">
-					<use xlink:href="images/icons/icon.svg#zoom-2" /></svg></button>
-		</div>
-		<a class="logo-be" href="" alt="this" title="this" style="width: 141px;margin: 36px 20px 0 0px;"><img
-				src="images/graphics/logo_nscn_20.png" alt="this"></a>
 		<!--MAIN MENU-->
 		<ul id="main_menu_new" class="container">
 			<li class="active home"><a href="" title="this"><svg class="icon-ns not-grad">
