@@ -221,6 +221,10 @@ button::-moz-focus-inner {
   }
 }
 
+.medium-popup {
+  max-width: 400px;
+}
+
 .mfp-with-zoom.mfp-ready .white-popup {
   opacity: 1;
   -webkit-transform: scale(1);

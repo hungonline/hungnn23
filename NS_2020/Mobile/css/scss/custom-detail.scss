@@ -10,11 +10,6 @@
         padding-top: 6px;
         display: flex;
 
-        .count_share {
-            margin-right: 10px;
-            font: 400 14px/32px arial;
-        }
-
         svg {
             color: #178fd6;
         }
@@ -57,9 +52,38 @@
         }
 
         .count_comment_total {
+            width: auto;
+
             .item_social {
                 background: none;
                 border: 0;
+            }
+
+            .count_comment {
+                display: inline-block;
+                padding: 0 10px;
+                border: 0;
+                background: #f6f6f6;
+                border-radius: 3px;
+                position: relative;
+                margin-right: 12px;
+                float: left;
+                color: #333;
+                margin-left: 0;
+                font: 400 14px/32px arial !important;
+
+                &::before {
+                    right: -5px;
+                    border-left: 5px solid #f6f6f6;
+                    border-top: 5px solid transparent;
+                    border-bottom: 5px solid transparent;
+                    border-right: 0;
+                    left: inherit;
+                }
+
+                &::after {
+                    display: none
+                }
             }
         }
     }

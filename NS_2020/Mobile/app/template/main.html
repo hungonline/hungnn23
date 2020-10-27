@@ -40,7 +40,6 @@
         <a href="#" title="#"><img src="images/graphics/logo_ns.svg" /></a>
       </h1>
       <div class="right-head">
-        <a class="logo-be" href="" alt="this" title="this"><img src="images/graphics/be_logo.png" alt="this"></a>
         <a href="" class="search-btn">
           <svg class="icon-ns">
             <use xlink:href="images/icons/icon.svg#zoom-2"></use>
@@ -49,6 +48,79 @@
             <use xlink:href="images/icons/icon.svg#simple-remove"></use>
           </svg>
         </a>
+        <!-- After login myvne -->
+        <div id="myvne_taskbar" style="display: none">
+          <ul class="myvne_form_log">
+            <li class="myvne_user"><a href="javascript:;" title="Login" class="myvne_icon myvne_login_button"><i
+                  class="ic ic-user"></i></a><i class="icon-arrow"></i></li>
+          </ul>
+        </div>
+
+        <div id="myvne_taskbar" style="transform-origin: 0px 0px; opacity: 1; transform: scale(1, 1);">
+          <ul class="myvne_form_log loged">
+            <li class="myvne_user" id="myvne_profile_tool"> <a href="javascript:void(0);" id="myvne_avatar_taskbar"
+                class="myvne_icon myvne_avatar"><img
+                  src="//a.vnecdn.net/avatar/tmp/2019/06/04/1872462829_1559612315.jpg" width="25" height="25"
+                  alt=""></a> <i class="icon-arrow"></i>
+
+              <div class="block_sub_myvne block_sub_log myvne_user_status_mobile">
+                <div class="width_common header_sub_myvne">
+                  <div class="m_page_title"><strong style="font-size: 20px;">Nguyễn Như Hùng</strong></div>
+                  <div class="pre-text">Tham gia từ 11/11/2014 <a href="https://my.ione.net/users/chi-tiet-tai-khoan"
+                      class="edit_profile">Tài khoản của tôi</a></div>
+                </div>
+                <ul class="menu_profile width_common">
+                  <li><a href="https://my.ione.net/users/feed/1002649849">Bình luận</a></li>
+                  <li><a href="https://my.ione.net/qua-tang">Quà tặng</a></li>
+                  <li><a href="https://my.ione.net/users/tin-da-doc">Tin đã xem</a></li>
+                  <li><a href="https://my.ione.net/users/tin-da-luu">Tin đã lưu</a></li>
+                </ul>
+                <ul class="menu_profile width_common other_link mb15">
+                  <li><a href="https://vnexpress.net/lien-he-toa-soan/">Liên hệ tòa soạn</a></li>
+                  <li><a href="https://eclick.vn/">Liên hệ quảng cáo</a></li>
+                </ul>
+                <div class="box_saved_news" id="box_saved_news">
+                  <div class="head_box width_common">
+                    <div class="left"><strong>Tin mới lưu</strong></div><a
+                      href="https://my.vnexpress.net/users/tin-da-luu" class="right">Xem tất cả (0)</a>
+                  </div>
+                  <ul class="list_news_saved width_common">
+                    <li><a href="https://vnexpress.net/vi-sao-ung-thu-vu-tai-phat-3978323.html">Vì sao ung thư vú tái
+                        phát<span>Sức
+                          khỏe - 12:02 7/9/2019</span></a></li>
+                    <li><a
+                        href="https://vnexpress.net/hamilton-muon-thua-thang-xong-len-sau-chang-dua-phap-3942613.html">Hamilton
+                        muốn thừa thắng xông lên sau chặng đua Pháp<span>Thể thao - 01:07 24/6/2019</span></a></li>
+                    <li><a href="https://vnexpress.net/messi-toi-nho-ronaldo-3902301.html">Messi: 'Tôi nhớ
+                        Ronaldo'<span>Thể thao -
+                          01:09 30/3/2019</span></a></li>
+                  </ul>
+                </div> <a href="javascript:;" id="myvne_logout_link" class="logout_link">Thoát</a> <span
+                  class="close-lb"><i class="ic ic-false"></i></span>
+              </div>
+            </li>
+            <li class="myvne_user notify_myvne " id="myvne_notify_show">
+              <a href="javascript:void(0);" class="myvne_icon myvne_icon_bell_click">
+                <i class="ic ic-bell"></i>
+              </a>
+              <div class="block_sub_myvne block_sub_log" id="myvne_notify_box" style="display: none;">
+                <div class="head_box width_common">
+                  <div class="left"><strong>Thông báo</strong></div>
+                </div>
+                <div class="box_saved_news">
+                  <ul class="list_news_saved width_common" id="myvne_notify_lists"> <a id="myvne_loading_viewmore"
+                      class="logout_link myvne_loading" style="display: none;">Loading</a> </ul> <a
+                    href="javascript:void(0);" id="myvne_notify_viewmore" class="width_common view_more_myvne"
+                    style="display:none;">Xem thêm</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Before login myvne -->
+
+        <!-- <a class="logo-be" href="" alt="this" title="this"><img src="images/graphics/be_logo.png" alt="this"></a> -->
+
       </div>
     </div>
   </section>

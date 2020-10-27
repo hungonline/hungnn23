@@ -188,7 +188,8 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
-.hidden {
+.hidden,
+.grecaptcha-badge {
   display: none !important;
 }
 

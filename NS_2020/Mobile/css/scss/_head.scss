@@ -1,3 +1,5 @@
+@import "myvne-2017.scss";
+
 // left menu 
 .humberger-btn {
     .icon-ns:last-child {
@@ -382,9 +384,21 @@ body.fixed {
 }
 
 .logo-be {
-    width: 66px;
-    position: absolute;
-    right: 40px;
+    width: 72px;
+    padding-left: 10px;
+    position: relative;
+
+    &::before {
+        content: '';
+        height: 22px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
 }
 
 .search-btn {
@@ -397,6 +411,9 @@ body.fixed {
     justify-content: center;
 
     .icon-ns {
+        width: 18px !important;
+        height: 18px !important;
+
         &:last-child {
             display: none;
         }
@@ -472,4 +489,42 @@ body.fixed {
         height: 20px;
         color: #7A99B8
     }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        width: 97px;
+        margin-left: -48px;
+    }
 }
+
+#myvne_taskbar,
+#open_login,
+#open_login {
+    top: -1px;
+    position: relative;
+}
+
+#myvne_taskbar {
+    svg.ic {
+        fill: #7A99B8;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+#myvne_taskbar .block_sub_myvne,
+#open_login .block_sub_myvne,
+#open_login .block_sub_myvne {
+    right: -7px;
+    top: 87px;
+}
+
+// @media (max-width: 340px) {
+//     .header-top {
+//         .logo {
+//             margin-left: 15px;
+//             width: 90px;
+//         }
+//     }
+// }

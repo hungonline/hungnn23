@@ -91,6 +91,18 @@
             width: 100%;
         }
     }
+
+    .related-list {
+        li {
+            font-family: arial
+        }
+    }
+
+    .title-block-live,
+    .tab-comment .header-tab,
+    .tab-live {
+        font-family: arial
+    }
 }
 
 .fck_detail {
@@ -280,6 +292,10 @@
     .btn_vne,
     .btn_send_comment {
         background: #178fd6 !important;
+    }
+
+    .view_more_coment {
+        z-index: 1 !important;
     }
 }
 
