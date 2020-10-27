@@ -576,6 +576,10 @@ svg.ic,
   }
 }
 
+.video-js .vjs-play-progress {
+  background-color: #0064b2 !important;
+}
+
 /*loadding-new and live plus*/
 .loadding-new {
   text-align: center;
@@ -850,3 +854,12 @@ svg.ic,
     display: none !important
   }
 }
+
+.lazy {
+  transform: translateX(0%) !important;
+  left: 0 !important;
+}
+
+// .block_thumb_picture img.lazy {
+//   height: 100%
+// }

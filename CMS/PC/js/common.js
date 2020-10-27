@@ -67,7 +67,7 @@
 		$('.btn_show').click(function () {
 			$('body').addClass('show-menu');
 		});
-		$('.close-menu').click(function () {
+		$('.close-menu,.close-menu2').click(function () {
 			$('body').removeClass('show-menu');
 		});
 

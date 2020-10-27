@@ -155,7 +155,7 @@
     padding: 23px 0;
     float: left;
     width: 100%;
-
+    margin-bottom: 12px;
 }
 
 .inner_section,
@@ -404,10 +404,6 @@
     .btn_guicauhoi {
         color: var(--blue)
     }
-}
-
-.video-js .vjs-play-progress {
-    background-color: #0064b2 !important;
 }
 
 .action_thumb {
@@ -893,21 +889,25 @@
 
 
 .box_comment_vne {
+    padding-top: 15px;
+
+    &::before {
+        content: "";
+        background: -webkit-linear-gradient(left, #0C99F4 0%, #57E5D5 100%);
+        background: linear-gradient(90deg, #0C99F4 0%, #57E5D5 100%);
+        height: 4px;
+        position: absolute;
+        top: 0;
+        left: -12px;
+        right: -12px;
+        z-index: 2;
+    }
+
     .ykien_vne {
         position: relative;
         background: #fff;
         padding: 0 !important;
-
-        &::before {
-            content: "";
-            background: -webkit-linear-gradient(left, #0C99F4 0%, #57E5D5 100%);
-            background: linear-gradient(90deg, #0C99F4 0%, #57E5D5 100%);
-            height: 4px;
-            position: absolute;
-            top: 0;
-            left: -12px;
-            right: -12px;
-        }
+        margin-top: -10px;
 
         .left {
             font: 500 20px var(--font-title);

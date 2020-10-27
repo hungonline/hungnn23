@@ -149,12 +149,44 @@
             border-bottom: 1px solid #49B291;
         }
     }
+
+    &.block {
+        flex-wrap: wrap;
+
+        a {
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid #E1E1E1;
+            font-size: 13px;
+            border-left: 0;
+            padding: 14px 30px 14px 10px;
+            position: relative;
+
+            i {
+                vertical-align: text-bottom;
+                margin-right: 5px;
+            }
+
+            .fa-chevron-right {
+                position: absolute;
+                margin: 0;
+                right: 10px;
+                top: 19px;
+            }
+
+            &.active {
+                border-left: 1px solid #236852;
+                color: #236852;
+                font-weight: bold
+            }
+        }
+    }
 }
 
 
 .title_page {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 .line-bottom {
@@ -350,9 +382,9 @@
 
 .close-menu {
     position: absolute;
-    right: 10px;
+    right: 15px;
     font-size: 25px;
-    top: 7px;
+    top: -5px;
     display: none;
     z-index: 2;
 }
@@ -369,7 +401,7 @@ body.show-menu {
         transform: translate(0%);
         background: #fff;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-        padding: 15px 10px 0 10px;
+        padding: 25px 10px 0 10px;
         width: 300px;
         overflow-y: scroll;
         margin-bottom: 0;

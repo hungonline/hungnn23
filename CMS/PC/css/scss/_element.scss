@@ -470,21 +470,28 @@ label.radio {
         }
 
     }
-    .table-2col{
-        border:1px solid #dee2e6;
-        td{
+
+    .table-2col {
+        border: 1px solid #dee2e6;
+
+        td {
             width: 50%;
             border-left: 1px solid #dee2e6;
-            &:first-child{
+
+            &:first-child {
                 border-left: 0;
             }
         }
-        tr{
-            &:nth-child(2n+1){
-                td{background: #DDDDDD;}
+
+        tr {
+            &:nth-child(2n+1) {
+                td {
+                    background: #DDDDDD;
+                }
             }
         }
     }
+
     .table-product {
         .bg-main2 {
             th {
@@ -551,17 +558,26 @@ label.radio {
     td {
         padding: 12px 15px;
     }
-    td.phi_muaho{
-        &>div{
+
+    td.phi_muaho {
+        &>div {
             display: flex;
             justify-content: flex-end;
         }
-        span{width: 50px;}
-        .price{
-            width: 200px;text-align: right;display: inline-block;margin-right: 10px;
-            
+
+        span {
+            width: 50px;
+        }
+
+        .price {
+            width: 200px;
+            text-align: right;
+            display: inline-block;
+            margin-right: 10px;
+
         }
     }
+
     tr {
         th {
             border-top: 0;
@@ -571,7 +587,8 @@ label.radio {
 
     .name_img {
         width: 165px;
-        .align-center{
+
+        .align-center {
             align-items: flex-start;
         }
     }
@@ -632,15 +649,19 @@ label.radio {
         border-radius: 5px;
     }
 }
-.table-bg-even{
+
+.table-bg-even {
     tbody {
-        tr{
-            &:nth-child(2n){
-                td{background:#ececec}
+        tr {
+            &:nth-child(2n) {
+                td {
+                    background: #ececec
+                }
             }
         }
     }
 }
+
 .percent-bar {
     .main-bar-per {
         background: #C4C4C4;
@@ -1216,6 +1237,25 @@ label.radio {
             }
         }
     }
+
+    &__3 {
+        padding: 0 30px;
+    }
+
+    @media (max-width: 991px) {
+        &__3 {
+            padding: 0
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__3 {
+            .text-right {
+                text-align: left !important;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 //Fillter
@@ -1264,11 +1304,13 @@ label.radio {
 
     @media (max-width: 576px) {
         padding: 15px 10px;
+
         .form-group {
             .lbl {
                 width: 100%;
                 text-align: left;
-                padding-right: 0;margin-bottom: 6px;
+                padding-right: 0;
+                margin-bottom: 6px;
             }
 
             .wrap_input,

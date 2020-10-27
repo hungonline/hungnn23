@@ -407,7 +407,6 @@ html {
 .thumb_16x9 {
 
   img,
-  video,
   iframe {
     -o-object-position: top;
     object-position: top;
@@ -422,6 +421,8 @@ html {
     height: 100%;
   }
 }
+
+
 
 .thumb_5x3,
 .thumb-5x3 {

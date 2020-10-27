@@ -1082,3 +1082,13 @@ article {
 		}
 	}
 }
+
+.lazy {
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.block_thumb_picture img.lazy {
+	height: 100%
+}
