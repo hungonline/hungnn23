@@ -277,7 +277,8 @@ svg.ic,
 }
 
 
-.comment-count {
+.comment-count,
+.count_comment {
   font: 400 px_to_rem(14px) arial;
   margin-left: 3px;
   color: #56738F;
@@ -294,7 +295,8 @@ svg.ic,
   }
 }
 
-.icon_commend {
+.icon_commend,
+.count_comment_total {
   white-space: nowrap;
 
   svg {

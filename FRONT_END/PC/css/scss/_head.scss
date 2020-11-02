@@ -908,3 +908,27 @@
 		}
 	}
 }
+
+@media (max-width: 576px) {
+	.top-bar {
+		display: none
+	}
+
+	.header-block_1 {
+		.logo {
+			width: 125px;
+		}
+	}
+
+	.header-block_3 {
+		width: calc(100% - 137px);
+
+		#search {
+			.input_search {
+				min-width: 100%;
+			}
+		}
+	}
+
+
+}

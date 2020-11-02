@@ -1,308 +1,150 @@
-(function ($) {
-    "use strict";
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    var isMobile = {
-        Android: function () {
-            return navigator.userAgent.match(/Android/i);
-        },
-        BlackBerry: function () {
-            return navigator.userAgent.match(/BlackBerry/i);
-        },
-        iOS: function () {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        },
-        Opera: function () {
-            return navigator.userAgent.match(/Opera Mini/i);
-        },
-        Windows: function () {
-            return navigator.userAgent.match(/IEMobile/i);
-        },
-        any: function () {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-        }
-    }
+(function () {
+    'use strict';
+    console.clear();
+    var doc = NYTG_DOC;
+    balanceText('#interactive-heading');
+    var blocks = jquery('.g-asset');
+    var curVid;
+    var size;
+    var isMobile$1;
 
-    //backToTop
-    function backToTop() {
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= 200) {
-                $('#to_top').fadeIn();
-            } else {
-                $('#to_top').fadeOut();
-            }
-        });
+    function init$1() {
+        size = innerWidth > 1200 ? 1600 : innerWidth > 900 ? 1254 : innerWidth > 640 ? 900 : innerWidth > 460 ? 640 : 360;
+        isMobile$1 = innerWidth < 460;
 
-        $("#to_top").click(function () {
-            $("html, body").animate({
-                scrollTop: 0
-            });
-            return false;
-        });
-    }
-
-    //scrollBar
-    function scrollBar() {
-        var scrollContainer = $(".scrollbar-inner");
-        if (scrollContainer.length > 0) {
-            scrollContainer.scrollbar();
-        }
-    }
-    //resizeSite
-    function resizeSite() {
-        var heightVideo = $('#player_playing').height() - 64;
-        $('.detail_right .scrollbar-inner').height(heightVideo);
-    }
-    //onCLick
-    function onCLick() {
-        $('.search-btn').click(function () {
-            if (!$(this).hasClass('is-clicked')) {
-                $(this).addClass('is-clicked');
-                $('.search-wrap').fadeIn();
-                $('.search-wrap input').focus();
-            } else {
-                $(this).removeClass('is-clicked');
-                $('.search-wrap').fadeOut();
-            }
-        });
-        $(".all-menu-tablet").click(function () {
-            $(this).toggleClass("close-menu-tablet");
-        });
-        $(".all-menu").click(function () {
-            $(".main-nav").toggleClass("show-all-menu");
-        });
-        $('.dark_night').click(function () {
-            if (!$(this).hasClass('active')) {
-                $(this).addClass('active');
-                $('body').addClass('dark_mode');
-            } else {
-                $(this).removeClass('active');
-                $('body').removeClass('dark_mode');
-            }
-        });
-    }
-    //scrollBar
-    function slideSwiper() {
-        var slide_style_slide = new Swiper('.box_style_slide .swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 15,
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-        var quiz_slide = new Swiper('.slide-quiz .swiper-container', {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.swiper-quiz-next',
-                prevEl: '.swiper-quiz-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
-
-
-        /**SLIDE SECTION PHOTO**/
-        var swiper_slide_photo_v2 = new Swiper('#js_slider_photo', {
-            loop: true,
-            navigation: {
-                nextEl: '.swiper-button-next-photo',
-                prevEl: '.swiper-button-prev-photo',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-                // type: 'fraction',
-            },
-        });
-
-        /**SLIDE SECTION SỰ KIỆN**/
-        var swiper_slide_sukien = new Swiper('#js_slider_sukien', {
-            slidesPerView: 2,
-            spaceBetween: 28,
-            navigation: {
-                nextEl: '.swiper-button-next-sukien',
-                prevEl: '.swiper-button-prev-sukien',
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 1,
-                }
-            }
-        });
-        /**SLIDE SECTION KIDLAB**/
-        var swiper_slide_kidlab = new Swiper('#js_slider_kidlab', {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.swiper-button-next-kidlab',
-                prevEl: '.swiper-button-prev-kidlab',
-            },
-        });
-        /**SLIDE SECTION FSELL**/
-        var swiper_slide_fsell = new Swiper('#js_slider_fsell', {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.swiper-button-next-fsell',
-                prevEl: '.swiper-button-prev-fsell',
-            },
-        });
-        /**SLIDE SECTION EWIKI**/
-        var swiper_slide_ewiki = new Swiper('#js_slider_ewiki', {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.swiper-button-next-ewiki',
-                prevEl: '.swiper-button-prev-ewiki',
-            },
-        });
-
-        /**SLIDE BOX TIN EVNE**/
-        var swiper_slide_evne = new Swiper('.news-evne .swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            pagination: {
-                el: '.news-evne .swiper-pagination',
-                clickable: true,
-            },
-        });
-
-        /**SLIDE BOX TIN NGOI SAO**/
-        var swiper_slide_ngoisao = new Swiper('.news-ngoisao .swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            pagination: {
-                el: '.news-ngoisao .swiper-pagination',
-                clickable: true,
-            },
-        });
-
-        /**SLIDE BOX TIN IONE**/
-        var swiper_slide_ione = new Swiper('.news-ione .swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            pagination: {
-                el: '.news-ione .swiper-pagination',
-                clickable: true,
-            },
-        });
-
-        /**SLIDE BOX SHOP VNE**/
-        var swiper_slide_taitro = new Swiper('#js_slider_taitro', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.swiper-button-next-taitro',
-                prevEl: '.swiper-button-prev-taitro',
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-
-                },
-                768: {
-                    slidesPerView: 3,
-
-                },
-            }
-        });
-        /**SLIDE BOX SHOP VNE**/
-        var swiper_slide_shop = new Swiper('#js_slider_shop', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.swiper-button-next-fshop',
-                prevEl: '.swiper-button-prev-fshop',
-            },
-            breakpoints: {
-                1024: {
-                    slidesPerView: 4,
-
-                },
-                768: {
-                    slidesPerView: 3,
-
-                },
-            }
-        });
-
-
-
-
-    }
-    var header = document.getElementById("wrap-main-nav");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("pin");
+        if (isMobile$1) {
+            jquery(".g-freebird").addClass("g-freebird-mobile");
+            jquery(".g-img img").attr("src", "https://static01.nyt.com/newsgraphics/2019/09/11/hurricane-dorian-abaco/3f8765a5dcebd265a939e6cd3ff9ca5621ccaa89/before-mobile.jpg");
         } else {
-            header.classList.remove("pin");
+            jquery(".g-img img").attr("src", "https://static01.nyt.com/newsgraphics/2019/09/11/hurricane-dorian-abaco/3f8765a5dcebd265a939e6cd3ff9ca5621ccaa89/before.jpg");
+            jquery(".g-block-cont video").each(function () {
+                jquery(this).attr("poster", jquery(this).attr("poster").replace("-mobile-360w", "-640w"));
+            });
+            jquery(".g-freebird").removeClass("g-freebird-mobile");
+        }
+        run("start");
+    }
+
+    init$1();
+    jquery(window).on("scroll", run);
+
+    function activate(block, top, start) {
+        jquery(block).css("z-index", 1);
+        jquery(block).addClass('g-active');
+        var vid = jquery(block).find(".g-block-cont").attr("data-vid");
+        var videoEl = jquery(".g-" + vid);
+        if (vid && vid != curVid) {
+            jquery(".g-prev-active").removeClass("g-prev-active g-vid-active");
+            if ((vid != "before" && !videoEl.attr("src")) || start == "start") {
+                if (isMobile$1) {
+                    videoEl.attr("src", "https://int.nyt.com/data/videotape/finished/2019/09/sandbanks/" + vid + "-mobile-" + size + "w.mp4").css("width", "100%");
+                } else {
+                    videoEl.attr("src", "https://int.nyt.com/data/videotape/finished/2019/09/sandbanks/" + vid + "-" + size + "w.mp4");
+                }
+            }
+
+            videoEl.addClass("g-vid-active");
+            jquery(".g-" + curVid).addClass("g-prev-active");
+            curVid = vid;
+        } else if (videoEl && videoEl.get(0) && videoEl.get(0).pause && vid == curVid && top != "top") {
+            videoEl.get(0).pause();
+            videoEl.get(0).currentTime = 0;
+            videoEl.get(0).play();
         }
     }
 
-    //magnificPopup
-    function magnificPopup() {
-        $('.open-popup-link').magnificPopup({
-            type: 'inline',
-            midClick: true,
-            mainClass: 'mfp-with-zoom',
-            fixedContentPos: false,
-            fixedBgPos: true,
-            overflowY: 'auto',
-            closeBtnInside: true,
-            preloader: false,
-            removalDelay: 300,
-        });
-        $('.magnific_popup .magnific_thumb').magnificPopup({
-            type: 'image',
-            midClick: true,
-            mainClass: 'mfp-with-zoom',
-            gallery: {
-                enabled: false,
-            }
-        });
+    var lastY = 0;
+    var credHeightSet = false;
 
-    }
+    function run(start) {
+        var y = getViewportPosition().top;
 
-    function onAccordion() {
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+        if (y < innerHeight) {
+            activate(jquery(".g-asset-0").get(0), "top");
+        } else {
+            lodash.forEach(blocks, function (block) {
+                var t = jquery(block).offset().top;
+                var h = jquery(block).height(); // || 1;
+                if (y >= (t) && y < (t + h + innerHeight)) { //} + ( (innerHeight/2) - ( innerHeight * h ) ) ) {
+                    if (!jquery(block).hasClass('g-active')) {
+                        if (jquery(block).attr("class").indexOf("g-asset-6") > -1) {
+                            jquery(".g-asset-5 .g-block-inner-inner").css("opacity", 0);
+                        } else if (jquery(".g-asset-5 .g-block-inner-inner").css("opacity") == 0) {
+                            jquery(".g-asset-5 .g-block-inner-inner").css("opacity", 1);
+                        }
 
-        for (i = 0; i < acc.length; i++) {
-            if (acc[i].classList.contains('active')) {
-                acc[i].nextElementSibling.style.maxHeight = acc[i].nextElementSibling.scrollHeight + 'px';
-            }
-            acc[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
+                        activate(block, null, "start");
+                    }
                 } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    if (y < lastY) {
+                        jquery(block).css("z-index", 2);
+                    }
+                    jquery(block).removeClass('g-active');
                 }
             });
         }
+
+        if (start == "start") {
+            jquery(".g-img").css("width", jquery(".g-asset-0 video").width()).css("height", jquery(".g-asset-0 video").height());
+            jquery(".g-img .g-credit").css("height", jquery(".g-img img").height());
+            jquery(".video_fallback img").css("width", jquery(".g-asset-0 video").width()).css("height", jquery(".g-asset-0 video").height());
+        }
+
+        if (!credHeightSet) {
+            if ((jquery(".g-img .g-credit").height() != jquery(".g-img img").height())) {
+                jquery(".g-img .g-credit").css("height", jquery(".g-img img").height());
+                credHeightSet = true;
+            }
+        }
+
+        lastY = y;
     }
 
-
-    $(function () {
-        backToTop();
-        scrollBar();
-        onCLick();
-        slideSwiper();
-        magnificPopup();
-        onAccordion();
-        cssVars({});
-    });
-    window.onscroll = function () {
-        myFunction()
+    const scrollPct = function (id, pct) {
+        // if (id == "scrolling_video_2") {
+        // 	if (pct > 0.55 && pct < 0.78) {
+        // 		$("#scrolling_video_2 .g-img").addClass("g-img-show");
+        // 	} else if ($("#scrolling_video_2 .g-img").hasClass("g-img-show")) {
+        // 		$("#scrolling_video_2 .g-img").removeClass("g-img-show");
+        // 	}
+        // }
+        // callback code goes here
     };
-    $(window).on('load resize', function () {
-        resizeSite()
-    });
-})(jQuery);
+
+    // videoScroll.debug (true);
+    // videoScroll.forceFallback (true);
+    videoScroll.init(doc, null, scrollPct);
+
+    var curMobile = isMobile$1;
+    var ow = innerWidth;
+    jquery(window).on("resize", lodash.throttle(function () {
+
+        if (innerWidth != ow) {
+            init$1();
+
+            jquery(".g-block-cont video").each(function () {
+                if (jquery(this).attr("src")) {
+                    var vid = jquery(this).attr("data-src");
+                    if (isMobile$1) {
+                        jquery(this).attr("src", "https://int.nyt.com/data/videotape/finished/2019/09/sandbanks/" + vid + "-mobile-" + size + "w.mp4").css("width", "100%");
+                    } else {
+                        jquery(this).attr("src", "https://int.nyt.com/data/videotape/finished/2019/09/sandbanks/" + vid + "-" + size + "w.mp4");
+                    }
+                }
+
+                if (curMobile && !isMobile$1) {
+                    jquery(this).attr("poster", jquery(this).attr("poster").replace("-mobile-360w", "-640w"));
+                    jquery(".g-img img").attr("src", "https://static01.nyt.com/newsgraphics/2019/09/11/hurricane-dorian-abaco/3f8765a5dcebd265a939e6cd3ff9ca5621ccaa89/before.jpg");
+                    curMobile = isMobile$1;
+                } else if (!curMobile && isMobile$1) {
+                    jquery(this).attr("poster", jquery(this).attr("poster").replace("-640w", "-mobile-360w"));
+                    jquery(".g-img img").attr("src", "https://static01.nyt.com/newsgraphics/2019/09/11/hurricane-dorian-abaco/3f8765a5dcebd265a939e6cd3ff9ca5621ccaa89/before-mobile.jpg");
+                    curMobile = isMobile$1;
+                }
+            });
+            ow = innerWidth;
+        }
+
+    }, 3000));
+
+}());

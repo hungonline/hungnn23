@@ -1471,10 +1471,18 @@
         bottom: -13px;
       }
     }
+
+    a:hover {
+      color: #178fd6 !important;
+    }
   }
 
   .btn_vne,
   .btn_send_comment {
     background: #178fd6 !important;
+  }
+
+  .view_more_coment {
+    z-index: 1 !important;
   }
 }

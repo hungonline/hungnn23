@@ -147,6 +147,10 @@
                 svg {
                     color: #2B9DEE;
                 }
+
+                &:first-child {
+                    margin-left: 0;
+                }
             }
         }
     }
@@ -195,5 +199,96 @@
             height: 32px;
             background-position: -34px -202px;
         }
+    }
+}
+
+//COMMENT CUSTOM
+
+
+.box_comment_vne {
+    .ykien_vne {
+        position: relative;
+        background: #fff;
+        padding: 0 !important;
+        margin-top: -10px;
+
+        .left {
+            font: 500 20px var(--font-title);
+            float: none;
+            padding: 12px 0px;
+            color: #222;
+        }
+
+        .filter_coment_mobile {
+            display: none
+        }
+
+        .filter_coment {
+            margin: 0 0 2px 0 !important;
+            padding-left: 0;
+            height: 48px;
+            line-height: 48px;
+            background: #fff;
+            display: flex;
+            text-align: center;
+            border-top: 1px solid #E5E5E5;
+            border-bottom: 1px solid #E5E5E5;
+            width: 100%;
+
+            a {
+                font: 400 16px Arial;
+                position: relative;
+                line-height: 48px;
+                width: 50%;
+                color: #1F3347;
+
+                &.active {
+                    background: #0B84DA;
+                    color: #fff !important;
+
+                    &::before {
+                        display: none
+                    }
+                }
+            }
+        }
+    }
+
+    .btn_send_comment#comment_post_button {
+        background: #076DB6 !important;
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        padding: 5px 20px;
+    }
+
+    .btn_send_comment {
+        height: 40px;
+    }
+
+    .input_comment span {
+        margin-top: 13px;
+    }
+
+    .like_google .not_login a {
+        color: #076DB6;
+    }
+
+    .input_comment .avata_coment {
+        width: 44px !important;
+        height: 44px !important;
+
+        img {
+            width: 100% !important;
+            height: 100% !important;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+    }
+
+    .input_comment_full {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }

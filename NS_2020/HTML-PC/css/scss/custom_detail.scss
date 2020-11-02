@@ -279,12 +279,21 @@
     }
 
     .filter_coment {
+        background: #fff;
+        height: 31px;
+        padding-bottom: 10px;
+        line-height: 1.4;
+
         a.active {
             color: #178fd6 !important;
 
             &::after {
                 background: #178fd6;
                 bottom: -13px;
+            }
+
+            &::before {
+                display: none
             }
         }
 

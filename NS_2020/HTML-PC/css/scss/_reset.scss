@@ -406,6 +406,7 @@ html {
 .thumb_video,
 .thumb_16x9 {
 
+  video,
   img,
   iframe {
     -o-object-position: top;
@@ -437,6 +438,15 @@ html {
 .thumb_16x9,
 .thumb_video {
   padding-bottom: 56.25%;
+}
+
+.video-js video {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .thumb_video+.title_news {

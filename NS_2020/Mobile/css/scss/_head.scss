@@ -298,7 +298,7 @@ body.fixed {
         z-index: 99;
 
         &--active {
-            z-index: 1045;
+            z-index: 1040;
             box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
 
             .home-item {
@@ -451,10 +451,13 @@ body.fixed {
 
 .search-wrap {
     padding: 10px 0;
-    background: var(--white);
+    background: var(--gray100);
     display: none;
     box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
     -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, .1);
+    position: absolute;
+    width: 100%;
+    z-index: 991;
 
     input {
         font-size: 18px;

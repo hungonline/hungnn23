@@ -455,6 +455,15 @@ select.form-control {
   input:checked~.checkmark {
     border: 1px solid var(--green1);
   }
+
+  input:disabled~.checkmark {
+    border: 1px solid #EBEBEB;
+  }
+
+  input:disabled~.checkmark:after {
+    border: solid #EBEBEB;
+    border-width: 0 1px 1px 0;
+  }
 }
 
 .clearfix {
