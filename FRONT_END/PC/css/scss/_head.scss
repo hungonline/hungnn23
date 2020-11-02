@@ -634,6 +634,7 @@
 					line-height: 40px;
 					display: block;
 					cursor: pointer;
+					transition: .3s;
 
 					svg {
 						margin-right: 6px;
@@ -648,6 +649,7 @@
 					a {
 						background: var(--green1);
 						color: #fff;
+						box-shadow: 0 16px 24px -8px rgba(35, 104, 82, .3);
 					}
 				}
 			}
