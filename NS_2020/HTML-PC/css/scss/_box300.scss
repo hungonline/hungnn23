@@ -66,6 +66,15 @@
 
    .thumb {
       height: 100%;
+
+      .thumb_box11 {
+         display: block
+      }
+
+      img {
+         position: static;
+         width: initial !important;
+      }
    }
 }
 

@@ -1,4 +1,4 @@
-$vne_color: #076DB6;
+$vne_color: #0B84DA;
 $url: "images" !default;
 
 @function px_to_rem($target, $context: $base-size) {
@@ -23,6 +23,9 @@ $lh: 1.4;
   --blue: #2B9DEE;
   --pink: #c85687;
   --border: #E5E5E5;
+  --vne_color: #0B84DA;
+  --ns_color: #0B84DA;
+
 }
 
 @mixin cubic-transition($delay, $duration, $property) {

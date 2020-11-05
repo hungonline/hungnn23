@@ -715,8 +715,10 @@
 
 	.btn-order {
 		background: var(--green1);
-		display: block;
+		display: flex;
 		text-align: center;
+		justify-content: center;
+		align-items: center;
 		line-height: 46px;
 		text-transform: uppercase;
 		font-weight: 500;
@@ -725,6 +727,10 @@
 		height: 46px;
 		margin: 0 -15px -10px -15px;
 		border-radius: 0px 0px 10px 10px;
+
+		svg {
+			margin-right: 5px;
+		}
 	}
 
 	.price {
@@ -1403,9 +1409,11 @@
 			div {
 				margin-bottom: 5px;
 			}
-			.txt_12.color_666{
+
+			.txt_12.color_666 {
 				width: 70%;
 			}
+
 			.ct_tensp {
 				line-height: 1.2;
 				margin-bottom: 5px;

@@ -237,7 +237,7 @@
     }
 
     .btn_vne {
-        background: #076DB6;
+        background: var(--ns_color);
         color: #fff;
         padding: 10px 25px;
         border: none;
@@ -318,7 +318,7 @@
 }
 
 .detail-photo {
-    padding: 0 12px;
+    padding: 23px 0;
 
     .block_thumb_slide_show {
         height: 0;
@@ -551,7 +551,7 @@
         a {
             font: 400 15px/1.6 Arial,
                 serif;
-            color: #076DB6;
+            color: var(--ns_color);
             text-decoration: none;
         }
 
@@ -816,7 +816,7 @@
         padding-top: 12px;
 
         .btn_phanthuong {
-            background: #076DB6;
+            background: var(--ns_color);
         }
     }
 
@@ -909,7 +909,7 @@
 
     .ykien_vne {
         position: relative;
-        background: #fff;
+        background: #fff !important;
         padding: 0 !important;
         margin-top: -10px;
 
@@ -956,13 +956,52 @@
         }
     }
 
+    .comment_item {
+
+        .count_like {
+            svg {
+                fill: var(--ns_color);
+                vertical-align: inherit;
+                width: 14px;
+                height: 14px;
+            }
+        }
+
+        .report_bad {
+            background: none !important;
+            font-size: 14px !important;
+            width: initial !important;
+            height: inherit !important;
+
+            &::before {
+                top: 6px !important;
+            }
+        }
+    }
+
     .btn_send_comment#comment_post_button {
-        background: #076DB6 !important;
+        background: var(--ns_color) !important;
         border-radius: 2px;
         font-size: 14px;
         line-height: 16px;
         font-weight: 400;
         padding: 5px 20px;
+    }
+
+    .input_comment {
+        background: #fff !important;
+        padding: 5px 0 !important;
+
+        textarea {
+            border: 1px solid #E0E6EB !important;
+            border-radius: 3px;
+            resize: none;
+            color: #56738F;
+
+            @include placeholder {
+                color: #56738F !important;
+            }
+        }
     }
 
     .btn_send_comment {
@@ -974,7 +1013,7 @@
     }
 
     .like_google .not_login a {
-        color: #076DB6;
+        color: var(--ns_color);
     }
 
     .input_comment .avata_coment {
@@ -994,47 +1033,57 @@
         margin-left: 0 !important;
     }
 
+    .user_status {
+        .txt_666 {
+            color: #56738F !important;
+
+            .nickname {
+                color: #1F3347 !important
+            }
+        }
+    }
+
 }
 
 
 
-.nytmm-chapter-0 .nytmm-menu-section-0,
-.nytmm-chapter-1 .nytmm-menu-section-1,
-.nytmm-chapter-2 .nytmm-menu-section-2,
-.nytmm-chapter-3 .nytmm-menu-section-3,
-.nytmm-chapter-4 .nytmm-menu-section-4,
-.nytmm-chapter-5 .nytmm-menu-section-5,
-.nytmm-chapter-6 .nytmm-menu-section-6,
-.nytmm-chapter-7 .nytmm-menu-section-7 {
-    color: #333;
-    font-weight: 700 !important;
-}
+// .nytmm-chapter-0 .nytmm-menu-section-0,
+// .nytmm-chapter-1 .nytmm-menu-section-1,
+// .nytmm-chapter-2 .nytmm-menu-section-2,
+// .nytmm-chapter-3 .nytmm-menu-section-3,
+// .nytmm-chapter-4 .nytmm-menu-section-4,
+// .nytmm-chapter-5 .nytmm-menu-section-5,
+// .nytmm-chapter-6 .nytmm-menu-section-6,
+// .nytmm-chapter-7 .nytmm-menu-section-7 {
+//     color: #333;
+//     font-weight: 700 !important;
+// }
 
-.nytmm-chapter-0 .section_1,
-.nytmm-chapter-1 .section_2,
-.nytmm-chapter-2 .section_3,
-.nytmm-chapter-3 .section_4,
-.nytmm-chapter-4 .section_5,
-.nytmm-chapter-5 .section_6,
-.nytmm-chapter-6 .section_7 {
-    opacity: 1 !important;
-    display: block !important;
-}
+// .nytmm-chapter-0 .section_1,
+// .nytmm-chapter-1 .section_2,
+// .nytmm-chapter-2 .section_3,
+// .nytmm-chapter-3 .section_4,
+// .nytmm-chapter-4 .section_5,
+// .nytmm-chapter-5 .section_6,
+// .nytmm-chapter-6 .section_7 {
+//     opacity: 1 !important;
+//     display: block !important;
+// }
 
-#nytmm.nytmm-chapter-1 #nytmm_prev_label_1,
-#nytmm.nytmm-chapter-2 #nytmm_prev_label_2,
-#nytmm.nytmm-chapter-3 #nytmm_prev_label_3,
-#nytmm.nytmm-chapter-4 #nytmm_prev_label_4,
-#nytmm.nytmm-chapter-5 #nytmm_prev_label_5,
-#nytmm.nytmm-chapter-6 #nytmm_prev_label_6,
-#nytmm.nytmm-chapter-0 #nytmm_next_label_1,
-#nytmm.nytmm-chapter-1 #nytmm_next_label_2,
-#nytmm.nytmm-chapter-2 #nytmm_next_label_3,
-#nytmm.nytmm-chapter-3 #nytmm_next_label_4,
-#nytmm.nytmm-chapter-4 #nytmm_next_label_5,
-#nytmm.nytmm-chapter-5 #nytmm_next_label_6 {
-    display: block;
-}
+// #nytmm.nytmm-chapter-1 #nytmm_prev_label_1,
+// #nytmm.nytmm-chapter-2 #nytmm_prev_label_2,
+// #nytmm.nytmm-chapter-3 #nytmm_prev_label_3,
+// #nytmm.nytmm-chapter-4 #nytmm_prev_label_4,
+// #nytmm.nytmm-chapter-5 #nytmm_prev_label_5,
+// #nytmm.nytmm-chapter-6 #nytmm_prev_label_6,
+// #nytmm.nytmm-chapter-0 #nytmm_next_label_1,
+// #nytmm.nytmm-chapter-1 #nytmm_next_label_2,
+// #nytmm.nytmm-chapter-2 #nytmm_next_label_3,
+// #nytmm.nytmm-chapter-3 #nytmm_next_label_4,
+// #nytmm.nytmm-chapter-4 #nytmm_next_label_5,
+// #nytmm.nytmm-chapter-5 #nytmm_next_label_6 {
+//     display: block;
+// }
 
 #medium_editor {
     .short_intro {

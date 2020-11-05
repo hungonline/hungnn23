@@ -72,11 +72,32 @@
 
 .box_quote_home {
     .swiper-container {
-        padding: 0 30px;
+        padding: 0 24px;
         padding-bottom: 3px;
 
         [class*='swiper-slide-shadow-'] {
             background: rgba(255, 255, 255, 0.01);
+        }
+    }
+
+    .swiper-slide {
+        .art_item {
+            .warp {
+                * {
+                    opacity: 0;
+                    transition: opacity .15s;
+                }
+            }
+        }
+
+        &-active {
+            .art_item {
+                .warp {
+                    * {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
 

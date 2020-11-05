@@ -1235,6 +1235,12 @@
 				max-width: 105px;
 				line-height: 26px;
 				margin: 4px auto 0;
+				transition: 0.5s ease;
+
+				&:hover {
+					background: var(--green1);
+					color: #fff
+				}
 			}
 		}
 

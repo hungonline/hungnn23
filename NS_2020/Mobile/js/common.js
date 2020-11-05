@@ -176,7 +176,7 @@
             slidesPerView: 'auto',
             loop: true,
             coverflowEffect: {
-                rotate: 30,
+                rotate: 0,
             },
             autoplay: {
                 delay: 6000,
@@ -208,23 +208,22 @@
     function magnificPopup() {
         $('.open-popup-link').magnificPopup({
             type: 'inline',
-            closeOnContentClick: true,
-            midClick: true,
+            midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             mainClass: 'mfp-with-zoom',
             fixedContentPos: false,
             fixedBgPos: true,
             overflowY: 'auto',
-            closeBtnInside: false,
+            closeBtnInside: true,
             preloader: false,
             removalDelay: 300,
-            callbacks: {
-                open: function () {
-                    $('body').addClass('show');
-                },
-                close: function () {
-                    $('body').removeClass('show');
-                }
-            }
+            // callbacks: {
+            //     open: function () {
+            //         $('body').addClass('show');
+            //     },
+            //     close: function () {
+            //         $('body').removeClass('show');
+            //     }
+            // }
         });
     }
 

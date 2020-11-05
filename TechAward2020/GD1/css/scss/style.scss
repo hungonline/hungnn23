@@ -25,7 +25,11 @@
 }
 
 .mfp-myvne.mfp-wrap {
-    z-index: 9993;
+    z-index: 100001;
+}
+
+.banner-top-home {
+    overflow: hidden;
 }
 
 @media (max-width: 576px) {

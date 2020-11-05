@@ -225,6 +225,10 @@ textarea {
   left: 0;
   top: 0;
   box-sizing: border-box;
+
+  button.mfp-close {
+    display: inline-block !important
+  }
 }
 
 .mfp-container:before {
@@ -326,7 +330,7 @@ button.mfp-close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
-  display: block;
+  display: none !important;
   outline: none;
   z-index: 1046;
   touch-action: manipulation;
@@ -386,7 +390,7 @@ button::-moz-focus-inner {
   background: #f4f4f4;
   width: auto;
   max-width: 500px;
-  margin: 0px auto;
+  margin: 0px auto !important;
   overflow: hidden;
 
   p.center {
@@ -476,7 +480,7 @@ button::-moz-focus-inner {
 
 .content_poup {
   padding: 15px;
-  background: #fff;
+  background: #fff !important;
   font: 400 px_to_rem(16px) arial;
 
   &.popup_padding10 {
@@ -764,7 +768,7 @@ button::-moz-focus-inner {
 
 // CUSTOM POPUP NGÔI SAO
 .white-popup {
-  background: #fff;
+  background: #fff !important;
 }
 
 // .mfp-content {
@@ -1374,7 +1378,7 @@ button::-moz-focus-inner {
     button {
       background: none;
       color: #999;
-      font-size: 30px;
+      font-size: 30px !important;
       font-family: -webkit-body;
       position: absolute;
       padding: 0;
