@@ -23,3 +23,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'SVN-Gilroy';
+    src: url('fonts/SVN-Gilroy.eot');
+    src: url('fonts/SVN-Gilroy.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SVN-Gilroy.woff2') format('woff2'),
+        url('fonts/SVN-Gilroy.woff') format('woff'),
+        url('fonts/SVN-Gilroy.ttf') format('truetype'),
+        url('fonts/SVN-Gilroy.svg#SVN-Gilroy') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

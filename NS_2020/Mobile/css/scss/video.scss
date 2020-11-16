@@ -203,20 +203,29 @@
 }
 
 //COMMENT CUSTOM
-
-
 .box_comment_vne {
+    padding-top: 0;
+
+    &::before {
+        display: none
+    }
+
+    .btn_vne {
+        background: var(--ns_color) !important;
+    }
+
     .ykien_vne {
         position: relative;
-        background: #fff;
+        background: #fff !important;
         padding: 0 !important;
         margin-top: -10px;
 
         .left {
             font: 500 20px var(--font-title);
             float: none;
-            padding: 12px 0px;
+            padding: 12px 10px;
             color: #222;
+            margin: 0 -10px;
         }
 
         .filter_coment_mobile {
@@ -254,13 +263,58 @@
         }
     }
 
+    .comment_item {
+        .link_thich {
+            svg {
+                fill: var(--ns_color);
+                vertical-align: inherit;
+                width: 14px;
+                height: 14px;
+            }
+
+            &.unlike {
+                svg {
+                    fill: #999;
+                }
+            }
+        }
+
+
+        .report_bad {
+            background: none !important;
+            font-size: 14px !important;
+            width: initial !important;
+            height: inherit !important;
+
+            &::before {
+                top: 6px !important;
+            }
+        }
+    }
+
     .btn_send_comment#comment_post_button {
-        background: #076DB6 !important;
+        background: var(--ns_color) !important;
         border-radius: 2px;
         font-size: 14px;
         line-height: 16px;
         font-weight: 400;
         padding: 5px 20px;
+    }
+
+    .input_comment {
+        background: #fff !important;
+        padding: 5px 0 !important;
+
+        textarea {
+            border: 1px solid #E0E6EB !important;
+            border-radius: 3px;
+            resize: none;
+            color: #56738F;
+
+            @include placeholder {
+                color: #56738F !important;
+            }
+        }
     }
 
     .btn_send_comment {
@@ -272,7 +326,7 @@
     }
 
     .like_google .not_login a {
-        color: #076DB6;
+        color: var(--ns_color);
     }
 
     .input_comment .avata_coment {
@@ -290,5 +344,15 @@
     .input_comment_full {
         width: 100% !important;
         margin-left: 0 !important;
+    }
+
+    .user_status {
+        .txt_666 {
+            color: #56738F !important;
+
+            .nickname {
+                color: #1F3347 !important
+            }
+        }
     }
 }

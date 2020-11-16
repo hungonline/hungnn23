@@ -891,6 +891,15 @@
 
 //COMMENT CUSTOM
 
+.section_padding {
+    .box_comment_vne {
+        .ykien_vne {
+            padding: 0 0px 0 0 !important;
+            margin: 0 -12px 0 -12px;
+            width: calc(100% + 24px);
+        }
+    }
+}
 
 .box_comment_vne {
     padding-top: 15px;
@@ -902,9 +911,14 @@
         height: 4px;
         position: absolute;
         top: 0;
-        left: -12px;
-        right: -12px;
+        left: 0;
+        right: 0;
         z-index: 2;
+        border-radius: 4px 4px 0px 0px;
+    }
+
+    .btn_vne {
+        background: var(--ns_color) !important;
     }
 
     .ykien_vne {
@@ -918,7 +932,6 @@
             float: none;
             padding: 12px 10px;
             color: #222;
-            margin: 0 -10px;
         }
 
         .filter_coment_mobile {
@@ -957,15 +970,21 @@
     }
 
     .comment_item {
-
-        .count_like {
+        .link_thich {
             svg {
                 fill: var(--ns_color);
                 vertical-align: inherit;
                 width: 14px;
                 height: 14px;
             }
+
+            &.unlike {
+                svg {
+                    fill: #999;
+                }
+            }
         }
+
 
         .report_bad {
             background: none !important;

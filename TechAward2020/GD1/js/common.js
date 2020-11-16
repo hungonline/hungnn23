@@ -263,7 +263,7 @@
 		});
 	}
 	var header = document.getElementById("wrap-main-nav");
-	var sticky = header.offsetTop;
+	var sticky = header.offsetTop + 20;
 
 	function myFunction() {
 		if (window.pageYOffset > sticky) {
