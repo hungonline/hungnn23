@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="description" content="content">
+    <meta name="keywords" content="Việt Nam">
+    <title>
+        Website SUNHOUSE GROUP
+    </title>
+
+    <link type="image/x-icon" href="http://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico"
+        rel="shortcut icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontAwesome/css/font-awesome.min.css" media="all" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="css/style.css" media="all" />
+    <!-- build:head2 -->
+    <!-- build:head -->
+</head>
+
+<body class="homepage">
+    <section class="top-bar clearfix">
+        <div class="container flex">
+            <a href="javascript:;" class="all-menu"><span class="hamburger"></span></a>
+            <h1 class="logo">
+                <a href="#" title="Sunhouse Group"><img src="images/graphics/Sunhouse.svg" alt="Sunhouse Group"></a>
+            </h1>
+            <div class="social">
+                <a href="#"><img src="images/icons/like-page.svg" alt=""></a>
+                <a href="#"><img src="images/icons/fan-page.svg" alt=""></a>
+            </div>
+            <ul class="main-nav">
+                <li class="active"><a href="#">Chuyện Chất Việt</a></li>
+                <li><a href="#">Máy lọc nước Chất Việt</a></li>
+                <li><a href="#">Bếp đôi điện tử Chất Việt</a></li>
+                <li><a href="#">Quà Chất Việt</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="section_1 clearfix">
+
+    </section>
+
+    <section class="section_2 clearfix">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section class="section_3 clearfix">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section class="section_4 clearfix">
+        <div class="container">
+            <div class="video">
+                <div class="wow fadeInUpSlow">
+                    <h2>NHÀ MÁY THỰC TẾ ẢO</h2>
+                    <p>Tham quan Nhà máy sản xuất SUNHOUSE – nơi sản xuất ra hàng triệu sản phẩm gia
+                        dụng mỗi năm, mang tiện
+                        nghi đến cho triệu gia đình Việt</p>
+                </div>
+                <div class="embed-container wow fadeIn">
+                    <a href="#" class="thumb thumb_16x9">
+                        <img src="images/graphics/thumb_video.jpg" alt="">
+                        <div class="circle pulse2">
+                            <span>Khám </br>phá</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_5 clearfix">
+        <div class="container">
+            <div class="bg-coming">
+                <h2>THAM GIA THỬ THÁCH - NHẬN QUÀ CỰC OÁCH</h2>
+                <div class="img-coming"><img src="images/graphics/coming.png" alt=""></div>
+                <div class="box-countdown">
+                    <div id="countdown" class="flex">&nbsp;</div>
+                </div>
+                <p>Xem thêm thông tin về Chất Việt để sẵn sàng tham gia thử thách</p>
+                <a class="btn-default" href="#">Xem ngay</a>
+            </div>
+            <div class="chat-viet"><img src="images/graphics/chat-viet.png" alt=""></div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 flex">
+                    <div>Hotline: <a class="phone" href="#">1800 6680</a></div>
+                    <div>Theo dõi SUNHOUSE trên</div>
+                    <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-youtube-play"></a>
+                    </div>
+                </div>
+                <div class="col-md-5 copyright">
+                    Copyright © 2020 SunHouse.com.vn. All rights reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <!--Back to top-->
+    <a href="javascript:;" id="to_top">
+        <i class="fa fa-long-arrow-up"></i>
+    </a>
+
+    <!--End Lightbox thông báo-->
+    <!--Jquery lib-->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.wow.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- build:script -->
+
+    <script>
+        /* countdown */
+        var target_date = new Date("Dec 30, 2020").getTime();
+        var days, hours, minutes, seconds;
+        var countdown = document.getElementById("countdown");
+        setInterval(function () {
+            var current_date = new Date().getTime();
+            var seconds_left = (target_date - current_date) / 1000;
+            days = parseInt(seconds_left / 86400);
+            seconds_left = seconds_left % 86400;
+
+            hours = parseInt(seconds_left / 3600);
+            seconds_left = seconds_left % 3600;
+
+            minutes = parseInt(seconds_left / 60);
+            seconds = parseInt(seconds_left % 60);
+            countdown.innerHTML = "<div class='ngay item_countdown'><div class='item_txt'><span>" + days +
+                "</span><div class='text'>Ngày</div></div></div> <div class='gio item_countdown'><div class='item_txt'><span>" +
+                hours +
+                "</span><div class='text'>Giờ</div></div> </div> <div class='phut item_countdown'><div class='item_txt'><span>" +
+                minutes +
+                "</span><div class='text'>Phút</div></div></div> <div class='giay item_countdown'> <div class='item_txt'><span>" +
+                seconds + "</span><div class='text'>Giây</div></div> </div>";
+
+        }, 0);
+    </script>
+
+</body>
+
+</html>
