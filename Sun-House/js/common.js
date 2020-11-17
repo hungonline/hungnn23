@@ -60,10 +60,25 @@
             $(this).toggleClass("close-menu-tablet");
             $(".main-nav").slideToggle("slow", function () {});
         });
+
+        $('.main-nav a[href*=#]').bind('click', function () {
+            $('.main-nav a').removeClass('active');
+            if (!$(this).hasClass('active')) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+            $(".main-nav").slideToggle("slow", function () {});
+            $(".all-menu").removeClass("close-menu-tablet");
+            var target = $(this).attr('href');
+            $('html, body').stop().animate({
+                scrollTop: $(target).offset().top - 30
+            }, 600);
+            return false;
+        });
+
+
     }
-
-
-
 
 
     $(function () {
