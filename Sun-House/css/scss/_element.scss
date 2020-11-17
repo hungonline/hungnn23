@@ -1,8 +1,9 @@
 .top-bar {
-    background: #000000;
-    position: sticky;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
     top: 0;
     z-index: 22;
+    width: 100%;
 
     .container {
         height: 60px;
@@ -17,7 +18,6 @@
         top: 15px;
         width: 190px;
         margin-left: -95px;
-        display: none;
 
         .m-logo {
             display: none
@@ -34,7 +34,7 @@
 
     .main-nav {
         border: 1px solid #4F4F4F;
-        background: #000000;
+        background: rgba(0, 0, 0, .5);
         padding: 2px 12px 12px 12px;
         margin: 0;
         position: absolute;
@@ -186,7 +186,7 @@
     }
 
     .container {
-        margin-top: 95vh;
+        margin-top: 100vh;
     }
 
     .gird {
@@ -216,17 +216,18 @@
             margin-top: 800px;
         }
     }
-
+    @media (max-width: 1199px) {
+        .title{font-size: 30px;}
+    }
     @media (max-width: 1025px) {
-        background-size: 1200px;
         font-size: 16px;
-
+        padding-bottom: 200px;
         .container {
-            margin-top: 500px;
+            margin-top: 600px;
         }
 
         .title {
-            font-size: 20px
+            font-size: 25px
         }
     }
 }
@@ -273,6 +274,9 @@
                 width: 240px;
                 right: 70px;
             }
+            .m_mobile{
+                display: none;
+            }
         }
 
         .info {
@@ -302,14 +306,77 @@
             }
         }
     }
+    @media (max-width: 1199px) {
+        .title{
+            font-size: 22px;
+        }
+        .item-product{
+            .ava{
+                width: 860px;
+                .btn-default{
+                    bottom: 120px;
+                    right: 30px;
+                }
+            }
+            .info{
+                width: 400px;
+                margin-top: 40px;
+                ul{
+                    li{
+                        padding-left: 80px;
+                        margin-bottom: 40px;
+                        .ic{
+                            width: 70px;
+                            top: -10px;
+                        }
+                        h3{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        background: #000000;
+        padding-top: 0;
+        .item-product{
+            .ava{
+                width: 450px;
+                left: 0;
+                img{display: none;width: 100%;}
+               .m_mobile{display: block;}
+               .btn-default{
+                bottom: 40px;
+                left: 450px;
+                margin: 0 -0 0 -200px;
+               }
+            }
+            .info{
+                width: 390px;
+                margin-top: 90px;
+                ul{
+                    li{
+                        padding-left: 60px;
+                        margin-bottom: 50px;
+                        .ic{
+                            width: 50px;
+                            top: -10px;
+                        }
+                        p{display: none;}
+                    }
+                }
+            }
+        }
+    }
 }
 
 // SECION3
 .section_3 {
     background: #000 url(images/graphics/bg3.jpg);
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: cover;
     position: relative;
     padding: 50px 0;
     overflow: hidden;
@@ -375,6 +442,86 @@
             }
         }
     }
+    @media (max-width: 1199px) {
+        padding-bottom: 100px;
+        .title{
+            font-size: 22px;
+        }
+        .item-product{
+            .ava{
+                width: 620px;
+                .btn-default{
+                    left: 30px;
+                }
+            }
+            .info{
+                width: 400px;
+                margin-top: 40px;
+                ul{
+                    li{
+                        padding-left: 80px;
+                        margin-bottom: 40px;
+                        .ic{
+                            width: 70px;
+                            top: -10px;
+                        }
+                        h3{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        padding-bottom: 0;
+        padding-top: 0;
+        .ava-thumb{
+            order: 2;
+        }
+        .content {
+            order: 1;
+        }
+        .item-product{
+            .ava{
+                width: 100%;
+                left: 0;
+                position: static;
+                margin: -30px 0;
+                img{
+                    display: none;
+                    max-width: 100%;
+                    width: 500px;
+                    margin: 0 auto;                   
+                }
+               .m_mobile{display: block;}
+               .btn-default{
+                bottom: 0px;
+                left: 450px;
+                margin: 0 -0 0 -200px;
+               }
+            }
+            .info{
+                width: 100%;
+                margin-top: 20px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 0;
+                    li{
+                        width: 50%;
+                        padding-left: 60px;
+                        margin-bottom: 30px;
+                        .ic{
+                            width: 50px;
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 // SECION4
@@ -382,13 +529,15 @@
     background: url(images/graphics/bg4.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: 1920px;
+    background-size: cover;
     position: relative;
     padding: 400px 0 90px 0;
     overflow: hidden;
     text-align: center;
     font-size: 18px;
-
+    @media (min-width: 1921px) {
+        background-size: 2400px;
+    }    
     .video {
         max-width: 710px;
         margin: 0 auto;
@@ -475,10 +624,12 @@
             }
         }
     }
-
+    @media (max-width: 1991px) {
+        h2{font-size: 22px;}
+    }
     @media (max-width: 991px) {
         font-size: 16px;
-        padding: 50px 0 100px 0;
+        padding: 300px 0 70px 0;
 
         .video {
             padding: 0 20px;
@@ -596,7 +747,7 @@
         margin-bottom: 40px;
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
         padding: 50px 0;
 
         .img-coming {
@@ -703,7 +854,7 @@
         }
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1199px) {
         margin-bottom: 0;
 
         .item_countdown {
@@ -757,7 +908,6 @@
     background: #171717;
     color: #CCCCCC;
     font-size: 18px;
-    border-top: 1px solid rgba(204, 204, 204, 0.2);
     padding: 30px 0;
 
 
