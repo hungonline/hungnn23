@@ -76,14 +76,41 @@
             }, 600);
             return false;
         });
+    }
 
-
+    //swiper
+    function swiper() {
+        var swiper1 = new Swiper('.slide_gird .swiper-container', {
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
     }
 
 
     $(function () {
         backToTop();
         onCLick();
+        swiper();
+    });
+    $(window).on('load', function () {
+        $('.pre-loading').addClass('loaded');
+        $('body').addClass('loaded');
+        if (location.hash) {
+            if ($(window).width() > 767) {
+                $("html, body").animate({
+                    scrollTop: $(location.hash).offset().top - 109
+                }, 500);
+            } else {
+                $("html, body").animate({
+                    scrollTop: $(location.hash).offset().top - 50
+                }, 500);
+            }
+        }
     });
     $(window).on('load resize', function () {
         resizeSite()
