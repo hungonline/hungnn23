@@ -290,13 +290,15 @@
         }
     }
 
-    @media (max-width: 414px) {
+    @media (max-width: 430px) {
+        .container {
+            margin-top: 380px;
+        }
+    }
+
+    @media (max-width: 375px) {
         .container {
             margin-top: 350px;
-        }
-
-        .title {
-            font-size: 20px
         }
     }
 }
@@ -1416,6 +1418,8 @@
         .col-left {
             position: absolute;
             top: -150px;
+            left: 0;
+            right: 0;
         }
 
         .phone {
