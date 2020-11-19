@@ -583,6 +583,10 @@
         }
     }
 
+    .title_award {
+        color: #fff
+    }
+
     .tab-content-slide {
         min-height: 350px;
 
@@ -1018,7 +1022,6 @@
 
 .title_award {
     font: bold 36px "SVN-Gilroy";
-    color: #fff;
     margin-bottom: 50px;
     position: relative;
     margin-left: 20px;
@@ -1521,6 +1524,7 @@
     .title_award {
         text-align: center;
         margin-left: 0;
+        color: #fff;
 
         &::before {
             display: none
@@ -1702,9 +1706,6 @@
         background: #F4F6F8;
         padding: 100px 0 50px 0;
 
-        .title_award {
-            color: #222222;
-        }
 
         .wrapper-box-video {
             .item-news {
@@ -1779,9 +1780,6 @@
     border-bottom: 1px solid #EEEEEE;
     margin-bottom: 24px;
 
-    .title_award {
-        color: #222222;
-    }
 
     .row {
         margin: 0 -12.5px;
@@ -1867,8 +1865,6 @@
     }
 }
 
-.section-gd-home {}
-
 //Lộ trình
 .section_lotrinh {
     padding-top: 126px;
@@ -1894,6 +1890,7 @@
 
     .title_award {
         margin-bottom: 120px;
+        color: #fff
     }
 
     .tab {

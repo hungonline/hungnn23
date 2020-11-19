@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  color: #333;
+  color: #222;
   font: 400 14px $font;
   text-align: left;
 
@@ -170,6 +170,7 @@ html {
   width: 14px;
   height: 14px;
   fill: currentColor;
+  vertical-align: middle;
 }
 
 .center {
@@ -208,6 +209,10 @@ html {
   margin-bottom: 20px;
 }
 
+.mb24 {
+  margin-bottom: 24px !important;
+}
+
 .mb25 {
   margin-bottom: 25px;
 }
@@ -217,7 +222,7 @@ html {
 }
 
 .mb40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .mb60 {

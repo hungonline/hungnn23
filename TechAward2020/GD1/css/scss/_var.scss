@@ -11,6 +11,15 @@ $base-size: 16px;
 $lh: 1.313;
 $lhbody: 1.45;
 
+@function calculateRem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+	font-size: calculateRem($size);
+}
+
 $font1: 'SVN-Gilroy';
 $font:'Roboto',
 sans-serif;

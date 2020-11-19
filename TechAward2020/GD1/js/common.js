@@ -77,6 +77,7 @@
 		if (scrollContainer.length > 0) {
 			scrollContainer.scrollbar();
 		}
+
 	}
 	//magnificPopup
 	function magnificPopup() {
@@ -93,8 +94,8 @@
 		});
 	}
 
-	//Tab_lotrinh
-	function tabLotrinh() {
+	// Onclick
+	function onClick() {
 		$(".section_lotrinh .tab .item").click(function (event) {
 			$(".section_lotrinh .tab .item").removeClass("active")
 			if (!$(this).hasClass("active")) {
@@ -169,6 +170,36 @@
 			event.stopPropagation();
 		});
 
+		//Giai đoạn bình chọn
+		$(".nav2 a").click(function (event) {
+			$(".nav2 a").removeClass("active")
+			if (!$(this).hasClass("active")) {
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+			event.preventDefault();
+			var tab = $(this).attr("href");
+			$(".sub-tab-content >div").not(tab).css("display", "none");
+			$(tab).fadeIn();
+		});
+		$(".nav-pin .level2 a").click(function (event) {
+			$(".nav-pin .level2 a").removeClass("active")
+			if (!$(this).hasClass("active")) {
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+			event.preventDefault();
+			var tab = $(this).attr("href");
+			$(".tab_product .tb-content").not(tab).css("display", "none");
+			$(tab).fadeIn();
+		});
+
+		$(".slide-hangmuc .show").click(function (event) {
+			$(".slide-hangmuc__pin").toggleClass("open");
+		});
+
 
 	}
 
@@ -201,6 +232,15 @@
 				},
 			}
 		});
+
+		var swiper_prize = new Swiper('.slide-prize .swiper-container', {
+			loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
 	}
 
 	function grallerySlide() {
@@ -279,7 +319,7 @@
 		backToTop();
 		scrollBar();
 		magnificPopup();
-		tabLotrinh();
+		onClick();
 		swiper();
 		grallerySlide();
 	});

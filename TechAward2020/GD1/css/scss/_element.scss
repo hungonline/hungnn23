@@ -971,6 +971,14 @@
             border-right: 1px solid #EEEEEE;
             padding: 24px 10px;
 
+            .wrap {
+                transition: transform .2s;
+
+                .btn-skew {
+                    display: none
+                }
+            }
+
             .title {
                 margin-top: 15px;
                 font: 600 16px $font1;
@@ -1009,6 +1017,24 @@
             }
 
             &:hover {
+                .wrap {
+                    transform: scale(1.1);
+                    background: #FFFFFF;
+                    box-shadow: 0px 20px 50px rgba(152, 166, 208, 0.2);
+                    padding: 10px;
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+
+                    .title,
+                    .btn-skew {
+                        transform: scale(0.9);
+                        display: inline-block
+                    }
+                }
+
                 .thumb_img {
                     &::before {
                         opacity: 1;
