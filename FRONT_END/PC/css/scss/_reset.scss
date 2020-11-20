@@ -407,6 +407,10 @@ select.form-control {
   background: url(images/icons/down.svg) no-repeat right 16px top 15px;
 }
 
+textarea.form-control {
+  resize: none
+}
+
 .confir_res {
   padding-left: 30px;
   position: relative;
@@ -861,6 +865,10 @@ html {
     display: inline-block;
     line-height: 0.9;
   }
+}
+
+.relative {
+  position: relative;
 }
 
 .thumb_big {

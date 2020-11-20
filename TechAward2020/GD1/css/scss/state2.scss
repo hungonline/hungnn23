@@ -450,3 +450,63 @@
     }
 
 }
+
+.fillter {
+    z-index: 2;
+
+    .sticky {
+        top: 100px
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        position: relative;
+        background: #fff;
+        color: #666;
+        border: 1px solid #EEEEEE;
+        margin-bottom: 8px;
+        font-size: 16px;
+        padding-left: 60px;
+        height: 50px;
+
+        .icon {
+            background: #F7F7F7;
+            width: 48px;
+            height: 48px;
+            display: block;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+            position: absolute;
+            left: 0;
+            text-align: center;
+            line-height: 48px;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                color: #AAAAAA
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &.active,
+        &:hover {
+            color: #222;
+
+            .icon {
+                background: $color2;
+
+                svg {
+                    color: #000000
+                }
+            }
+        }
+    }
+}
