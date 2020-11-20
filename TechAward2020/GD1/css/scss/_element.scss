@@ -542,13 +542,17 @@
         margin-bottom: 15px;
 
         .thumb_art {
-            width: 104px;
+            width: 115px;
             margin-right: 15px;
             margin-bottom: 0;
         }
 
-        .title-news {
+        .title_news {
             font: 400 14px $font;
+
+            a {
+                color: #201B50
+            }
         }
 
         &:last-child {

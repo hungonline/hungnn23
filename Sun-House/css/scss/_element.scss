@@ -183,7 +183,7 @@
 
 // SECION1
 .section_1 {
-    background: url(images/graphics/bg1-1.jpg);
+    background: url(images/graphics/bg1.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,7 +192,7 @@
     font-size: 18px;
     line-height: 160%;
     overflow: hidden;
-    padding-bottom: 430px;
+    padding-bottom: 150px;
 
     .title {
         font-weight: bold;
@@ -204,7 +204,7 @@
     }
 
     .min-container {
-        max-width: 700px;
+        max-width: 550px;
         margin: 0 auto;
         text-align: center;
     }
@@ -238,6 +238,14 @@
         }
     }
 
+    @media (min-width: 1930px) {
+        padding-bottom: 240px;
+
+        .container {
+            margin-top: 100vh;
+        }
+    }
+
     @media (max-width: 1280px) {
 
         .container {
@@ -253,7 +261,6 @@
 
     @media (max-width: 1025px) {
         font-size: 16px;
-        padding-bottom: 320px;
 
         .container {
             margin-top: 600px;
@@ -261,6 +268,12 @@
 
         .title {
             font-size: 25px
+        }
+    }
+
+    @media (max-width: 991px) {
+        .container {
+            margin-top: 500px;
         }
     }
 
@@ -355,8 +368,35 @@
     background-repeat: no-repeat;
     background-size: 1500px;
     position: relative;
-    padding: 50px 0 200px 0;
-    overflow: hidden;
+    padding: 200px 0 200px 0;
+
+    &::before {
+        content: "";
+        background: url(images/graphics/nuoc-lua.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        height: 300px;
+        top: -170px;
+
+        @media (min-width: 1930px) {
+            height: 380px;
+            top: -220px;
+        }
+
+        @media (max-width: 991px) {
+            background-size: contain;
+            height: 180px;
+            top: -100px;
+        }
+
+        @media (max-width: 576px) {
+            height: 100px;
+            top: -50px;
+        }
+    }
+
 
     article {
         position: relative;
@@ -371,7 +411,7 @@
         color: #fff;
         font-weight: bold;
         font-size: 30px;
-        line-height: 130%;
+        line-height: 140%;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
@@ -482,7 +522,7 @@
 
     @media (max-width: 991px) {
         background: #000000;
-        padding-top: 0;
+        padding-top: 100px;
 
         .item-product {
             .btn-default {
@@ -532,30 +572,30 @@
 
     @media (max-width: 576px) {
         padding-top: 50px;
-        padding-bottom: 110px;
+        padding-bottom: 70px;
         overflow: visible;
 
-        &::before {
-            content: "";
-            background: url(images/graphics/lua.png);
-            background-size: cover;
-            width: 55%;
-            position: absolute;
-            right: 0;
-            height: 70px;
-            top: -40px;
-        }
+        // &::before {
+        //     content: "";
+        //     background: url(images/graphics/lua.png);
+        //     background-size: cover;
+        //     width: 55%;
+        //     position: absolute;
+        //     right: 0;
+        //     height: 70px;
+        //     top: -40px;
+        // }
 
-        &::after {
-            content: "";
-            background: url(images/graphics/nuoc.png) no-repeat;
-            background-size: contain;
-            width: 55%;
-            position: absolute;
-            left: 0;
-            height: 120px;
-            top: -40px;
-        }
+        // &::after {
+        //     content: "";
+        //     background: url(images/graphics/nuoc.png) no-repeat;
+        //     background-size: contain;
+        //     width: 55%;
+        //     position: absolute;
+        //     left: 0;
+        //     height: 120px;
+        //     top: -40px;
+        // }
 
         .title {
             text-align: center;
@@ -622,7 +662,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 50px 0 150px 0;
+    padding: 50px 0 300px 0;
     overflow: hidden;
 
     article {
@@ -638,7 +678,7 @@
         color: #fff;
         font-weight: bold;
         font-size: 30px;
-        line-height: 130%;
+        line-height: 140%;
         text-transform: uppercase;
         margin-bottom: 20px;
     }
@@ -683,7 +723,7 @@
                 li {
                     position: relative;
                     padding-left: 120px;
-                    margin-bottom: 50px;
+                    margin-bottom: 70px;
 
                     .ic {
                         position: absolute;
@@ -701,7 +741,8 @@
 
                     p {
                         font-size: 18px;
-                        color: #fff
+                        color: #fff;
+                        margin-bottom: 0;
                     }
                 }
             }
@@ -748,9 +789,13 @@
         }
     }
 
+    @media (max-width: 1025px) {
+        padding-bottom: 250px;
+    }
+
     @media (max-width: 991px) {
-        padding-bottom: 0;
-        padding-top: 0;
+        padding-top: 30px;
+        padding-bottom: 150px;
 
         .ava-thumb {
             order: 2;
@@ -859,15 +904,42 @@
 
 // SECION4
 .section_4 {
-    background: url(images/graphics/bg4.jpg);
+    background: url(images/graphics/bg4.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding: 400px 0 90px 0;
-    overflow: hidden;
+    padding: 140px 0 90px 0;
     text-align: center;
     font-size: 18px;
+
+    &::before {
+        content: "";
+        background: url(images/graphics/nuoc-lua.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        height: 300px;
+        top: -170px;
+
+        @media (min-width: 1930px) {
+            height: 380px;
+            top: -220px;
+        }
+
+        @media (max-width: 991px) {
+            background-size: contain;
+            height: 180px;
+            top: -100px;
+        }
+
+        @media (max-width: 576px) {
+            height: 100px;
+            top: -50px;
+        }
+    }
+
 
     @media (min-width: 1921px) {
         background-size: 2400px;
@@ -877,10 +949,15 @@
         max-width: 710px;
         margin: 0 auto;
         color: #CCCCCC;
+
+        .fadeInUpSlow {
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
 
     h2 {
-        color: #41FFFF;
+        color: #fff;
         font-weight: bold;
         font-size: 32px;
         text-transform: uppercase;
@@ -893,7 +970,7 @@
 
     .embed-container {
         position: relative;
-        margin-top: 80px;
+        margin-top: 50px;
 
         &::before {
             content: "";
@@ -968,7 +1045,7 @@
 
     @media (max-width: 991px) {
         font-size: 16px;
-        padding: 300px 0 70px 0;
+        padding: 100px 0 70px 0;
 
         .video {
             padding: 0 20px;
@@ -1013,27 +1090,27 @@
         background-size: cover;
         overflow: visible;
 
-        &::after {
-            content: "";
-            background: url(images/graphics/nuoc.png) no-repeat;
-            background-size: contain;
-            width: 55%;
-            position: absolute;
-            left: 0;
-            height: 120px;
-            top: -40px;
-        }
+        // &::after {
+        //     content: "";
+        //     background: url(images/graphics/nuoc.png) no-repeat;
+        //     background-size: contain;
+        //     width: 55%;
+        //     position: absolute;
+        //     left: 0;
+        //     height: 120px;
+        //     top: -40px;
+        // }
 
-        &::before {
-            content: "";
-            background: url(images/graphics/lua.png);
-            background-size: cover;
-            width: 55%;
-            position: absolute;
-            right: 0;
-            height: 70px;
-            top: -40px;
-        }
+        // &::before {
+        //     content: "";
+        //     background: url(images/graphics/lua.png);
+        //     background-size: cover;
+        //     width: 55%;
+        //     position: absolute;
+        //     right: 0;
+        //     height: 70px;
+        //     top: -40px;
+        // }
 
         .embed-container {
             &::before {
@@ -1671,7 +1748,7 @@
 
 @media (max-width: 576px) {
     .hide-mobile {
-        display: none
+        display: none !important
     }
 
     .hide-pc {

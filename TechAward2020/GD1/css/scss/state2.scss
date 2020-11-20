@@ -140,6 +140,10 @@
                             &.active {
                                 .icon {
                                     background: $color2;
+
+                                    svg {
+                                        color: #000
+                                    }
                                 }
 
                                 &:before {
