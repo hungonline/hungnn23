@@ -4,7 +4,11 @@
     padding-top: 40px;
 
     &.wrap-white {
-        background: #fff
+        background: #fff;
+
+        .bg-detail {
+            padding: 0 15px;
+        }
     }
 
     .bg-white {
@@ -1022,33 +1026,35 @@
 
             }
 
-            &:hover {
-                .wrap {
-                    transform: scale(1.1);
-                    background: #FFFFFF;
-                    box-shadow: 0px 20px 50px rgba(152, 166, 208, 0.2);
-                    padding: 10px;
-                    position: absolute;
-                    z-index: 2;
-                    top: 0;
-                    left: 0;
-                    right: 0;
+            @media (min-width: 1200px) {
+                &:hover {
+                    .wrap {
+                        transform: scale(1.1);
+                        background: #FFFFFF;
+                        box-shadow: 0px 20px 50px rgba(152, 166, 208, 0.2);
+                        padding: 10px;
+                        position: absolute;
+                        z-index: 2;
+                        top: 0;
+                        left: 0;
+                        right: 0;
 
-                    .title,
-                    .btn-skew {
-                        transform: scale(0.9);
-                        display: inline-block
+                        .title,
+                        .btn-skew {
+                            transform: scale(0.9);
+                            display: inline-block
+                        }
                     }
-                }
 
-                .thumb_img {
-                    &::before {
+                    .thumb_img {
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+
+                    .view {
                         opacity: 1;
                     }
-                }
-
-                .view {
-                    opacity: 1;
                 }
             }
         }

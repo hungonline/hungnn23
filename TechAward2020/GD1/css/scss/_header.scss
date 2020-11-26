@@ -995,7 +995,7 @@
 
                 &:hover {
                     .level2 {
-                        display: block
+                        display: block !important;
                     }
 
                     &::before {

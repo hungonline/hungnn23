@@ -232,6 +232,11 @@
 				},
 			}
 		});
+		var swiperCateNav = new Swiper('.tab_product_nav .swiper-container', {
+			slidesPerView: "auto",
+			spaceBetween: 0,
+			loop: false,
+		});
 
 		var swiper_prize = new Swiper('.slide-prize .swiper-container', {
 			loop: true,
