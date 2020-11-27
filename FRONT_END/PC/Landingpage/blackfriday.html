@@ -20,6 +20,10 @@
 
 <body>
     <style>
+        .banner-home {
+            overflow: hidden;
+        }
+
         .banner-home::after {
             content: "";
             background: url(images/bfday_images/icon-banner-home.png);
@@ -214,18 +218,44 @@
         .bfday-header-logo {
             height: 150px;
             background: #000;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgba(221, 221, 221, .4);
             text-align: center;
             z-index: 1;
+            display: inherit;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
         }
 
         @media (max-width: 576px) {
+            .bfday-header-logo {
+                height: 60px;
+            }
+
+            .bfday-header-logo img {
+                width: 150px;
+            }
+
+
             .section_s1 img {
                 float: unset;
             }
 
+            .section_s1::before,
+            .section_s1::after {
+                display: none
+            }
+
             .banner-home::after {
-                background: none;
+                display: none
             }
 
             .section_s1 p {
@@ -243,7 +273,7 @@
         }
     </style>
     <section class="section bfday-header-logo">
-        <img style="margin-top: 60px;" src="images/bfday_images/logo-usex-v2.png">
+        <img src="images/bfday_images/logo-usex-v2.png">
     </section>
     <section class="banner-home clearfix">
         <picture>
@@ -284,12 +314,7 @@
                 <ul class="grid-data-voucher">
                     <li class="active">
                         <a href="#">
-                            <img src="images/graphics/code1.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/graphics/code2.png">
+                            <img src="images/graphics/code6.png">
                         </a>
                     </li>
                     <li>
@@ -309,9 +334,17 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/graphics/code6.png">
+                            <img src="images/graphics/code1.png">
                         </a>
                     </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/graphics/code2.png">
+                        </a>
+                    </li>
+
+
+
                 </ul>
             </div>
         </div>
