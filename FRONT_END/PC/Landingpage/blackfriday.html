@@ -32,9 +32,28 @@
             opacity: 0.6;
         }
 
+        .banner-home img {
+            width: 100%;
+        }
+
         .bfday_section_s1 {
             background-image: url(images/bfday_images/banner-blog-voucher-2.png);
             background-color: #060808;
+        }
+
+        .bfday_section_s1 [class*="col-"] {
+            display: inherit;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
         }
 
         .section_s1 .warp {
@@ -151,6 +170,16 @@
             float: left;
         }
 
+        .grid-data-voucher li img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        .grid-data-voucher li.active img {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+        }
+
         footer {
             margin: 0px;
         }
@@ -205,14 +234,22 @@
                 float: unset;
                 text-align: center;
             }
+
+            .grid-data-voucher li {
+                width: 50%;
+                padding: 0 10px;
+                margin-bottom: 20px;
+            }
         }
     </style>
     <section class="section bfday-header-logo">
         <img style="margin-top: 60px;" src="images/bfday_images/logo-usex-v2.png">
     </section>
     <section class="banner-home clearfix">
-        <img class="banner-pc" src="images/bfday_images/banner-landing-page.png" style="width:100%">
-        <img class="banner-mobile" src="images/bfday_images/banner-blog-2.jpg">
+        <picture>
+            <source media="(min-width:650px)" srcset="images/bfday_images/banner-landing-page.png">
+            <img src="images/bfday_images/banner-blog-2.jpg" alt="">
+        </picture>
     </section>
     <!-- MAIN CONTAINER -->
     <section class="section section_s1 bfday_section_s1 clearfix">
@@ -252,27 +289,27 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/graphics/code1.png">
+                            <img src="images/graphics/code2.png">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/graphics/code1.png">
+                            <img src="images/graphics/code3.png">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/graphics/code1.png">
+                            <img src="images/graphics/code4.png">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/graphics/code1.png">
+                            <img src="images/graphics/code5.png">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="images/graphics/code1.png">
+                            <img src="images/graphics/code6.png">
                         </a>
                     </li>
                 </ul>
@@ -2356,7 +2393,6 @@
             $(".tab-container > div").not(tab).css("display", "none");
             $(tab).fadeIn();
         });
-
     </script>
 </body>
 
