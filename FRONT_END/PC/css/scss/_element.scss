@@ -1507,3 +1507,77 @@
 		}
 	}
 }
+
+.check-list-voucher {
+	.confir_res {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 30px rgba(54, 41, 183, 0.07);
+		border-radius: 15px;
+		padding: 0;
+
+		.checkmark {
+			left: inherit;
+			right: 10px;
+			top: 10px;
+			width: 16px;
+			height: 16px;
+
+			&::after {
+				left: 5px;
+				top: 1px;
+				width: 3px;
+				height: 8px;
+			}
+		}
+
+		.code {
+			background: linear-gradient(89.02deg, #236852 37.48%, #3DAB81 96.35%);
+			box-shadow: 0px 4px 30px rgba(54, 41, 183, 0.07);
+			border-radius: 15px;
+			padding: 20px 20px 10px 20px;
+			color: #fff;
+			font-weight: bold;
+			font-size: 28px;
+			text-align: center;
+
+			h4 {
+				font-size: 16px;
+				border: 1px dashed #FFFFFF;
+				border-radius: 4px;
+				margin-bottom: 6px;
+				padding: 2px 5px;
+			}
+		}
+
+		.content {
+			padding-left: 28px;
+			font-size: 13px
+		}
+
+		.if {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			font-size: 13px;
+
+			svg {
+				width: 8px;
+				height: 8px;
+				transform: rotate(-90deg);
+			}
+		}
+
+		&.expired {
+			.code {
+				filter: grayscale(100%);
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+			}
+		}
+	}
+}

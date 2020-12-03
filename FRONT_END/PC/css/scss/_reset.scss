@@ -468,7 +468,30 @@ textarea.form-control {
     border: solid #EBEBEB;
     border-width: 0 1px 1px 0;
   }
+
+  &.circle {
+    .checkmark {
+      border-radius: 50%;
+      border: 1px solid #999999;
+
+      &:hover {
+        border: 1px solid #999999;
+      }
+
+      &:after {
+        border: solid #fff;
+        border-width: 0 1px 1px 0;
+      }
+    }
+
+    input:checked~.checkmark {
+      background: var(--green1);
+      border: 1px solid var(--green1);
+    }
+  }
 }
+
+
 
 .clearfix {
   clear: both;
@@ -617,6 +640,10 @@ html {
   font-size: 14px !important;
 }
 
+.txt_15 {
+  font-size: 15px !important;
+}
+
 .txt_16 {
   font-size: 16px !important;
 }
@@ -697,6 +724,10 @@ html {
 
 .mt40 {
   margin-top: 40px;
+}
+
+.mt60 {
+  margin-top: 60px;
 }
 
 .m-l-10 {
