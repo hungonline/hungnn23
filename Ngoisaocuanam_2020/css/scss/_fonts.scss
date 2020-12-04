@@ -1,0 +1,27 @@
+/* Scss Document */
+//@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900');
+@font-face {
+  font-family: 'AvantGarde';
+  src: url('fonts/AvantGarde.eot');
+  src: url('fonts/AvantGarde.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AvantGarde.woff2') format('woff2'),
+    url('fonts/AvantGarde.woff') format('woff'),
+    url('fonts/AvantGarde.ttf') format('truetype'),
+    url('fonts/AvantGarde.svg#AvantGarde') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AvantGarde-Demi';
+  src: url('fonts/AvantGarde-Demi.eot');
+  src: url('fonts/AvantGarde-Demi.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AvantGarde-Demi.woff2') format('woff2'),
+    url('fonts/AvantGarde-Demi.woff') format('woff'),
+    url('fonts/AvantGarde-Demi.ttf') format('truetype'),
+    url('fonts/AvantGarde-Demi.svg#AvantGarde-Demi') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

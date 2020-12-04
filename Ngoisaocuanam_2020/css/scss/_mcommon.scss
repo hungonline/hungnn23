@@ -1,0 +1,174 @@
+$font1: 'AvantGarde';
+$font2: 'AvantGarde-Demi';
+
+body {
+    max-width: 590px;
+    margin: 0 auto;
+    color: #222;
+
+    &.open {
+        overflow: hidden;
+    }
+}
+
+.section_padding {
+    padding: 0 16px;
+}
+
+.thumb {
+    float: none !important;
+    display: block !important
+}
+
+.thumb img,
+.thumb iframe {
+    border-radius: 0 !important
+}
+
+svg.ic {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.scroll-menu {
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.title-star {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+
+    span {
+        position: relative;
+        font-size: 20px;
+        font-family: $font2;
+        z-index: 1;
+        background: linear-gradient(to right, #613B02 0%, #b59734 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::before {
+            content: "";
+            background: url(images/graphics/ico-bird.svg);
+            background-size: contain;
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            left: -40px;
+        }
+    }
+
+    .title-svg {
+        position: absolute;
+        left: -10px;
+        margin-top: -16px;
+    }
+
+    &.txt-left {
+        text-align: left;
+        padding-left: 40px;
+    }
+}
+
+.title-star2 {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #343A40;
+
+    span {
+        position: relative;
+        font-size: 20px;
+        font-family: $font2;
+
+        &::before {
+            content: "";
+            background: url(images/graphics/ico-bird.svg);
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: -45px;
+        }
+    }
+
+    .title-svg {
+        position: absolute;
+        left: 10px;
+        margin-top: -16px;
+    }
+}
+
+#to_top {
+    opacity: .8;
+    background: #02233b;
+    display: none;
+    border: medium none;
+    bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    height: 30px;
+    line-height: 35px;
+    outline: medium none;
+    padding: 0;
+    position: fixed;
+    right: 16px;
+    width: 30px;
+    z-index: 89;
+    color: #fff
+}
+
+.btn-guibaiviet {
+    width: 88px;
+    height: 98px;
+    position: fixed;
+    right: 0px;
+    bottom: 30%;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='88' height='98' viewBox='0 0 88 98' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg filter='url(%23filter0_d)'%3e%3ccircle cx='49' cy='45' r='25' fill='url(%23paint0_linear)'/%3e%3c/g%3e%3cpath d='M56.8198 31H43.6585C43.6585 32.1092 43.5117 33.2049 43.525 34.3141V35.3016C43.485 35.5045 43.3915 35.5857 43.218 35.6263L39 35.8697V57.9865H56.7931C56.8331 57.8783 56.8198 31 56.8198 31Z' fill='%23F7F7F7'/%3e%3cpath d='M43.6719 31C43.6318 31 39.0133 35.8562 39 35.8697H43.6185H43.6719V32.4744C43.6719 31.9198 43.6719 31.3923 43.6719 31Z' fill='%23613B02'/%3e%3cpath d='M54.7239 41.6455H41.082V42.5248H54.7239V41.6455Z' fill='%23613B02'/%3e%3cpath d='M54.7239 43.8369H41.082V44.7162H54.7239V43.8369Z' fill='%23613B02'/%3e%3cpath d='M54.7239 46.0146H41.082V46.8939H54.7239V46.0146Z' fill='%23613B02'/%3e%3cpath d='M54.7239 48.2061H41.082V49.0853H54.7239V48.2061Z' fill='%23613B02'/%3e%3cpath d='M46.5815 41.6455H41.082V42.5248H46.5815V41.6455Z' fill='white'/%3e%3cpath d='M58.916 48.2742C59.6101 47.2732 60.2909 46.2858 60.9583 45.3118C61.1318 45.0683 61.292 44.8113 61.4655 44.5678C61.6924 44.2567 61.9861 44.1891 62.3065 44.392C62.4666 44.4867 62.6535 44.5813 62.7469 44.7301C62.8537 44.8925 63.0006 45.1765 62.9338 45.2848C62.6669 45.7582 62.9472 46.164 62.9739 46.5969C62.9872 46.7727 62.9739 46.9892 62.8938 47.1244C62.4933 47.7467 62.0528 48.3419 61.639 48.9641C61.4655 49.2211 61.2253 49.3158 60.9583 49.2076C60.8382 49.167 60.718 48.9776 60.7047 48.8559C60.7047 48.7612 60.9049 48.5718 60.985 48.5854C61.2119 48.6124 61.292 48.4771 61.3854 48.3419C61.639 47.9631 61.8793 47.5844 62.1596 47.2327C62.3465 46.9892 62.3999 46.7457 62.2397 46.394C61.5723 47.3544 60.9182 48.2878 60.2508 49.2482C59.8237 48.9235 59.3832 48.6124 58.916 48.2742Z' fill='%23613B02'/%3e%3cpath d='M56.4329 54.5648C56.0458 54.2808 55.6854 54.0237 55.2983 53.7532C56.4596 52.0758 57.5942 50.4391 58.7422 48.7617C59.1293 49.0323 59.4763 49.2757 59.8768 49.5598C58.7288 51.2507 57.5942 52.8875 56.4329 54.5648Z' fill='%23613B02'/%3e%3cpath d='M56.0725 54.9164C55.4452 55.4981 54.8578 56.0257 54.2839 56.5667C54.2572 56.5397 54.2171 56.5262 54.1904 56.4991C54.4841 55.7551 54.7911 55.0111 55.1115 54.2266C55.4452 54.4565 55.7255 54.673 56.0725 54.9164Z' fill='%23613B02'/%3e%3cdefs%3e%3cfilter id='filter0_d' x='0' y='0' width='98' height='98' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3e%3cfeOffset dy='4'/%3e%3cfeGaussianBlur stdDeviation='12'/%3e%3cfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0'/%3e%3cfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3e%3cfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3e%3c/filter%3e%3clinearGradient id='paint0_linear' x1='28.8817' y1='26.8598' x2='98.9709' y2='92.9325' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%23EFD16E'/%3e%3cstop offset='0.776351' stop-color='%23613B02'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: contain;
+    font-size: 0;
+    z-index: 20;
+}
+
+.breadcrum {
+    a {
+        color: #222222;
+        line-height: 40px;
+        margin-right: 24px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            border-top: 1px solid #BDBDBD;
+            border-right: 1px solid #BDBDBD;
+            width: 5px;
+            height: 5px;
+            right: -14px;
+            top: 7px;
+            transform: rotate(45deg);
+        }
+
+        &.active {
+            font-weight: bold;
+
+            &::before {
+                display: none
+            }
+        }
+    }
+}
+
+.art-item {
+    .thumb-art {
+        width: 130px;
+        margin-right: 10px;
+    }
+}
