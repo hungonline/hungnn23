@@ -77,6 +77,26 @@ svg.ic {
     }
 }
 
+.title-no-grad {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+
+    span {
+        background: linear-gradient(to right, #fff 0%, #fff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+    }
+
+    &:before {
+        display: none;
+    }
+
+    .title-svg {
+        margin-top: 0;
+    }
+}
+
 .title-star2 {
     position: relative;
     margin-bottom: 20px;
