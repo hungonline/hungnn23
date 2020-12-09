@@ -115,6 +115,10 @@ body.fixed {
         margin-bottom: 24px;
     }
 
+    &__content {
+        overflow: hidden;
+    }
+
     .list_index {
         border-bottom: 1px solid #D8E1EB;
         align-items: center;
