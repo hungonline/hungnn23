@@ -4,6 +4,55 @@
 // @import "tailwind.scss";
 // @import "head.scss";
 // @import "footer.scss";
-@import "global.scss";
-@import "inline.scss";
-@import "style.scss";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 768px;
+    height: 40px;
+    background-color: #EEE;
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.acion-btn {
+    position: absolute;
+    right: -140px;
+    transition: 0.3s all;
+    display: flex;
+    top: 0;
+
+    .btn {
+        border: 0;
+        cursor: pointer;
+        height: 40px;
+        width: 70px;
+        text-align: center;
+        color: #fff;
+
+        &-delete {
+            background: red;
+        }
+
+        &-active {
+            background: green;
+        }
+    }
+}
