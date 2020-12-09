@@ -46,30 +46,25 @@ body.fixed {
 
 .left-nav {
     position: fixed;
-    top: 38px;
+    top: 0;
     left: 0;
     height: 100%;
     overflow-y: scroll;
     width: 100%;
-    padding: 16px 12px 40px 12px;
+    padding: 0px 12px 40px 12px;
     font-size: 16px;
     z-index: 1042;
     background: #fff;
     will-change: transform;
-    -moz-transition: .4s;
-    -o-transition: .4s;
     -webkit-transition: .4s;
     transition: .4s;
     -webkit-transform: translate(-100%);
     -ms-transform: translate(-100%);
-    -o-transform: translate(-100%);
     transform: translate(-100%);
 
     &.active {
-        border-top: 1px solid #D8E1EB;
         -webkit-transform: translate(0);
         -ms-transform: translate(0);
-        -o-transform: translate(0);
         transform: translate(0);
 
         ~#header_sticky {
@@ -80,6 +75,39 @@ body.fixed {
     &.fadeInDown {
         -webkit-animation-name: fadeInLeft;
         animation-name: fadeInLeft;
+    }
+
+    .header_menu {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 15px;
+        margin-right: -12px;
+        margin-left: -12px;
+        padding: 12px;
+        border-bottom: 1px solid #D8E1EB;
+
+        .humberger-btn {
+            position: absolute;
+            left: 12px;
+            top: 19px;
+
+            svg {
+                width: 20px;
+                height: 20px;
+                color: #7A99B8;
+            }
+        }
+    }
+
+    .block_scoll_menu {
+        scroll-behavior: smooth;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
     }
 
     .search-form {
