@@ -368,6 +368,7 @@
 		$(function () {
 			/*SWIPE ITEM SD*/
 			$('.js-item-sd').swipe({
+				allowPageScroll: "auto",
 				swipeStatus: function (event, phase, direction, distance, duration, fingers, fingerData,
 					currentDirection) {
 					if (direction === 'right') {
@@ -427,6 +428,7 @@
 
 			/*SWIPE ITEM TRUONG BAN*/
 			$('.js-item-tb').swipe({
+				allowPageScroll: "auto",
 				swipeStatus: function (event, phase, direction, distance, duration, fingers, fingerData,
 					currentDirection) {
 					if (direction === 'right') {
