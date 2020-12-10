@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
@@ -12,17 +13,18 @@
 	<link href="css/topic.css" media="all" rel="stylesheet">
 	<title>Newsroom</title>
 </head>
+
 <body>
-	
+
 	<!-- TOPBAR MENU -->
 	<section class="section section_topbar flex">
-			<a href="javascript:;" class="hamburger-btn" title="">
-				<svg class="ic ic-menu">
-                    <use xlink:href="css/images/graphics/icon-vne.svg#Hamburger-Menu"></use>
-                </svg>
-			</a>
-			<a href="#" title="" class="logo"><img src="images/graphics/Logo_Topic_Daily.svg" alt=""></a>
-			<a href="#" title="" class="google-trend">Google Trend</a>
+		<a href="javascript:;" class="hamburger-btn" title="">
+			<svg class="ic ic-menu">
+				<use xlink:href="css/images/graphics/icon-vne.svg#Hamburger-Menu"></use>
+			</svg>
+		</a>
+		<a href="#" title="" class="logo"><img src="images/graphics/Logo_Topic_Daily.svg" alt=""></a>
+		<a href="#" title="" class="google-trend">Google Trend</a>
 	</section>
 
 	<!-- ANNOUNCEMENT-->
@@ -52,11 +54,11 @@
 			<div class="label-date"><strong>Topics 24/11</strong> (18)</div>
 			<a href="javascript:;" class="filter-import">
 				<svg class="ic ic-pin">
-                    <use xlink:href="css/images/graphics/icon-vne.svg#Pin"></use>
+					<use xlink:href="css/images/graphics/icon-vne.svg#Pin"></use>
 				</svg>
 				Important (9)<span class="remove-filter">
 					<svg class="ic ic-close">
-                	    <use xlink:href="css/images/graphics/icon-vne.svg#Close"></use>
+						<use xlink:href="css/images/graphics/icon-vne.svg#Close"></use>
 					</svg>
 				</span>
 			</a>
@@ -72,8 +74,10 @@
 			</a>-->
 		</div>
 		<div class="note-txt-topic clearfix mt10">
-			<p class="item-note-topic"><strong>Thế giới</strong> và <strong>Kinh doanh</strong> làm cùng đề tài <strong>“Trung Quốc trúng thầu xây sân bay ở Campuchia”</strong></p>
-			<p class="item-note-topic"><strong>Thế giới</strong> và <strong>Sức khỏe</strong> làm cùng đề tài <strong>“Covid-19 tại Châu Á”</strong></p>
+			<p class="item-note-topic"><strong>Thế giới</strong> và <strong>Kinh doanh</strong> làm cùng đề tài
+				<strong>“Trung Quốc trúng thầu xây sân bay ở Campuchia”</strong></p>
+			<p class="item-note-topic"><strong>Thế giới</strong> và <strong>Sức khỏe</strong> làm cùng đề tài
+				<strong>“Covid-19 tại Châu Á”</strong></p>
 		</div>
 		<div class="note-type-topic flex mt10">
 			<span class="item-type register">Register</span>
@@ -240,16 +244,16 @@
 			<div class="label-date"><strong>Topics 25/11</strong> (30)</div>
 			<a href="javascript:;" class="filter-import active">
 				<svg class="ic ic-pin">
-                    <use xlink:href="css/images/graphics/icon-vne.svg#Pin"></use>
+					<use xlink:href="css/images/graphics/icon-vne.svg#Pin"></use>
 				</svg>
 				Important (9)<span class="remove-filter">
 					<svg class="ic ic-close">
-                	    <use xlink:href="css/images/graphics/icon-vne.svg#Close"></use>
+						<use xlink:href="css/images/graphics/icon-vne.svg#Close"></use>
 					</svg>
 				</span>
 			</a>
 		</div>
-	
+
 		<!--LIST TOPIC MOI BAN-->
 		<div class="item-topic-vertical clearfix">
 			<p class="label-vertical">Thời sự hà nội (2)</p>
@@ -364,122 +368,122 @@
 		$(function () {
 			/*SWIPE ITEM SD*/
 			$('.js-item-sd').swipe({
-				swipeStatus: function (event, phase, direction, distance, duration, fingers, fingerData, currentDirection) {
-				if (direction === 'right') {
-					if (!$(this).hasClass('active')) return;
+				swipeStatus: function (event, phase, direction, distance, duration, fingers, fingerData,
+					currentDirection) {
+					if (direction === 'right') {
+						if (!$(this).hasClass('active')) return;
 
-					$(this).stop(true).css({
-					transition: 'all .3s ease-out',
-					transform: `translate3d(-${200 - distance}px, 0px, 0px)`,
-					});
-
-					if ((phase === 'cancel' || phase === 'end') && distance >= 120) {
-					$(this).stop(true).css({
-						transform: `translate3d(0px, 0px, 0px)`,
-					});
-
-					setTimeout(() => {
 						$(this).stop(true).css({
-						transition: 'all 0s ease-out',
-						})
-					}, 300);
-					} else if ((phase === 'cancel' || phase === 'end') && distance < 120) {
-					$(this).stop(true).css({
-						transition: 'all .3s ease-out',
-						transform: `translate3d(-230px, 0px, 0px)`,
-					});
-					}
-					
-				}
-				
-				else if (direction === 'left') {
-					if ($(this).hasClass('active')) return;
-					
-					$(this).stop(true).css({
-						transition: 'all 0s ease-out',
-						transform: `translate3d(-${distance}px, 0px, 0px)`,
-					});
-					
+							transition: 'all .3s ease-out',
+							transform: `translate3d(-${200 - distance}px, 0px, 0px)`,
+						});
 
-					$(this).removeClass('active')
-					
+						if ((phase === 'cancel' || phase === 'end') && distance >= 120) {
+							$(this).stop(true).css({
+								transform: `translate3d(0px, 0px, 0px)`,
+							});
 
-					if (phase === 'cancel' && distance < 100) {
+							setTimeout(() => {
+								$(this).stop(true).css({
+									transition: 'all 0s ease-out',
+								})
+							}, 300);
+							$(this).removeClass('active');
+						} else if ((phase === 'cancel' || phase === 'end') && distance < 120) {
+							$(this).stop(true).css({
+								transition: 'all .3s ease-out',
+								transform: `translate3d(-230px, 0px, 0px)`,
+							});
+						}
+
+					} else if (direction === 'left') {
+						if ($(this).hasClass('active')) return;
+
 						$(this).stop(true).css({
 							transition: 'all 0s ease-out',
-							transform: `translate3d(0px, 0px, 0px)`,
+							transform: `translate3d(-${distance}px, 0px, 0px)`,
 						});
-					} else if ((phase === 'cancel' || phase === 'end') && distance >= 100) {
-					$(this).addClass('active');
-					$(this).stop(true).css({
-						transition: 'all .3s ease-out',
-						transform: `translate3d(-230px, 0px, 0px)`,
-					});
+
+
+						$(this).removeClass('active')
+
+
+						if (phase === 'cancel' && distance < 100) {
+							$(this).stop(true).css({
+								transition: 'all 0s ease-out',
+								transform: `translate3d(0px, 0px, 0px)`,
+							});
+						} else if ((phase === 'cancel' || phase === 'end') && distance >= 100) {
+							$(this).addClass('active');
+							$(this).stop(true).css({
+								transition: 'all .3s ease-out',
+								transform: `translate3d(-230px, 0px, 0px)`,
+							});
+						}
 					}
-				}
 				},
 				threshold: 200,
 			});
 
 			/*SWIPE ITEM TRUONG BAN*/
 			$('.js-item-tb').swipe({
-				swipeStatus: function (event, phase, direction, distance, duration, fingers, fingerData, currentDirection) {
-				if (direction === 'right') {
-					if (!$(this).hasClass('active')) return;
+				swipeStatus: function (event, phase, direction, distance, duration, fingers, fingerData,
+					currentDirection) {
+					if (direction === 'right') {
+						if (!$(this).hasClass('active')) return;
 
-					$(this).stop(true).css({
-					transition: 'all .3s ease-out',
-					transform: `translate3d(-${200 - distance}px, 0px, 0px)`,
-					});
-
-					if ((phase === 'cancel' || phase === 'end') && distance >= 120) {
-					$(this).stop(true).css({
-						transform: `translate3d(0px, 0px, 0px)`,
-					});
-
-					setTimeout(() => {
 						$(this).stop(true).css({
-						transition: 'all 0s ease-out',
-						})
-					}, 300);
-					} else if ((phase === 'cancel' || phase === 'end') && distance < 120) {
-					$(this).stop(true).css({
-						transition: 'all .3s ease-out',
-						transform: `translate3d(-300px, 0px, 0px)`,
-					});
-					}
-					
-				}
-				
-				else if (direction === 'left') {
-					if ($(this).hasClass('active')) return;
-					
-					$(this).stop(true).css({
-						transition: 'all 0s ease-out',
-						transform: `translate3d(-${distance}px, 0px, 0px)`,
-					});
-					
+							transition: 'all .3s ease-out',
+							transform: `translate3d(-${200 - distance}px, 0px, 0px)`,
+						});
 
-					$(this).removeClass('active')
-					
+						if ((phase === 'cancel' || phase === 'end') && distance >= 120) {
+							$(this).stop(true).css({
+								transform: `translate3d(0px, 0px, 0px)`,
+							});
 
-					if (phase === 'cancel' && distance < 100) {
+							setTimeout(() => {
+								$(this).stop(true).css({
+									transition: 'all 0s ease-out',
+								})
+							}, 300);
+							$(this).removeClass('active');
+						} else if ((phase === 'cancel' || phase === 'end') && distance < 120) {
+							$(this).stop(true).css({
+								transition: 'all .3s ease-out',
+								transform: `translate3d(-300px, 0px, 0px)`,
+							});
+						}
+
+					} else if (direction === 'left') {
+						if ($(this).hasClass('active')) return;
+
 						$(this).stop(true).css({
 							transition: 'all 0s ease-out',
-							transform: `translate3d(0px, 0px, 0px)`,
+							transform: `translate3d(-${distance}px, 0px, 0px)`,
 						});
-					} else if ((phase === 'cancel' || phase === 'end') && distance >= 100) {
-					$(this).addClass('active');
-					$(this).stop(true).css({
-						transition: 'all .3s ease-out',
-						transform: `translate3d(-300px, 0px, 0px)`,
-					});
+
+
+						$(this).removeClass('active')
+
+
+						if (phase === 'cancel' && distance < 100) {
+							$(this).stop(true).css({
+								transition: 'all 0s ease-out',
+								transform: `translate3d(0px, 0px, 0px)`,
+							});
+						} else if ((phase === 'cancel' || phase === 'end') && distance >= 100) {
+							$(this).addClass('active');
+							$(this).stop(true).css({
+								transition: 'all .3s ease-out',
+								transform: `translate3d(-300px, 0px, 0px)`,
+							});
+						}
 					}
-				}
 				},
 				threshold: 200,
 			});
-			});
+		});
 	</script>
 </body>
 
