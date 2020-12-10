@@ -379,7 +379,7 @@
 							transform: `translate3d(-${200 - distance}px, 0px, 0px)`,
 						});
 
-						if ((phase === 'cancel' || phase === 'end') && distance >= 120) {
+						if ((phase === 'cancel' || phase === 'end') && distance >= 40) {
 							$(this).stop(true).css({
 								transform: `translate3d(0px, 0px, 0px)`,
 							});
@@ -390,7 +390,7 @@
 								})
 							}, 300);
 							$(this).removeClass('active');
-						} else if ((phase === 'cancel' || phase === 'end') && distance < 120) {
+						} else if ((phase === 'cancel' || phase === 'end') && distance < 40) {
 							$(this).stop(true).css({
 								transition: 'all .3s ease-out',
 								transform: `translate3d(-230px, 0px, 0px)`,
@@ -409,12 +409,12 @@
 						$(this).removeClass('active')
 
 
-						if (phase === 'cancel' && distance < 100) {
+						if (phase === 'cancel' && distance < 20) {
 							$(this).stop(true).css({
 								transition: 'all 0s ease-out',
 								transform: `translate3d(0px, 0px, 0px)`,
 							});
-						} else if ((phase === 'cancel' || phase === 'end') && distance >= 100) {
+						} else if ((phase === 'cancel' || phase === 'end') && distance >= 20) {
 							$(this).addClass('active');
 							$(this).stop(true).css({
 								transition: 'all .3s ease-out',
