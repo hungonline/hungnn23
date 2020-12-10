@@ -1,0 +1,56 @@
+/* Scss Document */
+@import 'var.scss';
+.section_announcement{
+    background: #E8E8FF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    p{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+    }
+    .txt-announ{
+        font-weight: 400;
+        font-size: 11px;
+        text-transform: uppercase;
+    }
+    .item-announ{
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #222222;
+        &:last-of-type{
+            margin-bottom: 0;padding-bottom: 0;border-bottom: none;
+        }
+    }
+    .note-announ{
+        font-size: 11px;
+        line-height: 13px;
+        color: #757575;
+        align-items: center;
+        .position-announ{
+            margin-left: auto;
+            position: relative;
+            padding-right: 17px;
+            &:after{
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            &.danger{
+                &:after{
+                    background: #F44336;
+                }
+            }
+
+            &.warning {
+                &:after {
+                    background: #E17417;
+                }
+            }
+        }
+    }
+}

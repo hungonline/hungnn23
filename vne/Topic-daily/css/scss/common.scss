@@ -1,0 +1,141 @@
+/* Scss Document */
+@import 'var.scss';
+@import 'reset.scss';
+.mt30 {
+    margin-top: 30px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+svg.ic {
+    width: 16px;
+    height: 16px;
+    fill: #757575;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.vne{
+    color: #9F224E;
+}
+
+.kinhdoanh {
+    color: #04416d;
+}
+
+.thethao {
+    color: #498523;
+}
+
+.phapluat {
+    color: #6e2c2d;
+}
+
+.giaoduc {
+    color: #B75C00;
+}
+
+.suckhoe {
+    color: #03817B;
+}
+
+.doisong {
+    color: #2D96B5;
+}
+
+.dulich {
+    color: #0072bb;
+}
+
+.khoahoc {
+    color: #867428;
+}
+
+.sohoa {
+    color: #9c6d00;
+}
+
+.xe {
+    color: #5D6C79;
+}
+
+.hai {
+    color: #DC3926;
+}
+
+.section {
+    width: 100%;
+    position: relative;
+    padding: 0 15px;
+}
+
+.sticky{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.button-reg {
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    background: #7989AB;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    z-index: 2;
+
+    .ic {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+    }
+    &.button-reg-center{
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.button-back {
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    background: #E5E5E5;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+    z-index: 2;
+
+    .ic {
+        fill: #fff;
+        width: 24px;
+        height: 24px;
+        transform: rotate(180deg);
+    }
+}
+
+/*.container {
+    width: 100%;
+    max-width: 1780px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    @extend %clearfix;
+}
+
+.min-container {
+    width: 100%;
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    @extend %clearfix;
+}*/

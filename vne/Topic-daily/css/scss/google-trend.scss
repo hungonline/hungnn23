@@ -1,0 +1,98 @@
+/* Scss Document */
+@import 'var.scss';
+.section_googletrend{
+    padding-top: 20px;
+    &:last-of-type{
+        padding-bottom: 80px;
+    }
+}
+.label-date-topic {
+    padding-top: 5px;
+    align-items: center;
+    background: #fff;
+
+    .label-date {
+        font: 400 18px/28.8px $font1;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(79, 79, 79, 0.1);
+    }
+
+    .filter-import {
+        margin-left: auto;
+        font-size: 14px;
+        color: #4F4F4F;
+        padding: 5px;
+        background: #F7F7F7;
+        border-radius: 3px;
+
+        .ic {
+            margin-top: -1px;
+        }
+
+        .ic-pin {
+            fill: #4F4F4F;
+        }
+
+        .ic-close {
+            fill: #bdbdbd;
+        }
+
+        .remove-filter {
+            padding-left: 10px;
+            margin-left: 10px;
+            border-left: 1px solid #BDBDBD;
+            display: none;
+        }
+
+        &.active {
+            color: $vne_color;
+
+            .ic-pin {
+                fill: $vne_color;
+            }
+
+            .remove-filter {
+                display: inline-block;
+            }
+        }
+    }
+}
+.item-trend{
+    background: #F7F7F7;
+    border-radius: 3px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 140%;
+    margin-top: 15px;
+    .label-trend{
+        align-items: top;
+        .tit-trend{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 180%;
+            color: #076DB6;
+            margin-right: 15px;
+        }
+        .count-trend{margin-left: auto;
+            font-size: 16px;
+            line-height: 140%;
+            text-transform: uppercase;
+            padding-top: 4px;
+        }
+    }
+    .title-trend{
+        margin-top: 10px;
+        position: relative;
+        padding-left: 18px;
+        &:before{
+            width: 8px;
+            height: 8px;
+            background: #949494;
+            border-radius: 50%;
+            position: absolute;
+            top: 5px;
+            left: 0;
+            content: '';
+        }
+    }
+}

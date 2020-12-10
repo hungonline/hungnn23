@@ -1,0 +1,57 @@
+/* Scss Document */
+
+$vne_color: #9f224e;
+$vne_color_hover: #087CCE;
+$font1: 'Merriweather', serif;
+
+@function lh($lineheight, $fontsize) {
+    @return $lineheight / $fontsize;
+}
+
+@mixin cubic-transition($delay, $duration, $property) {
+    transition: {
+        duration: $duration;
+        property: $property;
+        timing-function: cubic-bezier(.7, 1, .7, 1);
+    }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+%has_transition {
+    @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+}
+
+%flexbox {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.flexbox {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+.no-flexbox {
+    display: inherit;
+}
+
+%clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+%font-fea {
+    font-feature-settings: 'pnum'on, 'lnum'on;
+    -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+    -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+    -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}

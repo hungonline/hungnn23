@@ -1,0 +1,73 @@
+/* Scss Document */
+@import 'var.scss';
+.section_login{
+    height: 100vh;
+    position: relative;
+    padding: 20% 40px 0 40px;
+    text-align: center;
+}
+.logo-log{
+    img{height: 40px;}
+}
+.note-log{
+    margin-top: 20px;
+    font: normal 15px/160% $font1;
+    color: #000;
+}
+.form-log{
+    margin-top: 55px;
+    .txt_input{
+        background: #FFFFFF;
+        border: 1px solid #BDBDBD;
+        height: 52px;
+        padding: 0 15px;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+}
+.action-log{
+    align-items: center;
+    .recap{
+        width: 170px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background: #F7F7F7;
+        border-radius: 3px;
+        color: #BDBDBD;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .f5_cap{
+        margin-left: 15px;
+        .ic{
+            fill: #BDBDBD;
+            width: 24px;height: 24px;
+        }
+    }
+    .button-log{
+        background: #7989AB;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin-left: auto;
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+    
+    }
+}
+.date-today{
+    font: normal 15px/160% $font1;
+    color: #000;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 17px 10px 0 10px;
+    border-top: 1px solid #000000;
+}
