@@ -24,7 +24,7 @@
 .back-to-tab {
     position: fixed;
     opacity: 0;
-    top: 10px;
+    top: 25px;
     left: 15px;
     right: 15px;
     overflow: hidden;
@@ -51,7 +51,11 @@ body.open {
     }
 
     .back-to-tab {
-        @extend .transition-cm;
+        top: 10px;
+        -moz-transition: .8s;
+        -o-transition: .8s;
+        -webkit-transition: .8s;
+        transition: .8s;
         opacity: 1;
         overflow: visible;
     }
@@ -191,8 +195,8 @@ body.open {
 }
 
 .wrap-list-comment {
-    max-height: 495px;
-    overflow: auto;
+    max-height: calc(100vh - 271px);
+    overflow-y: scroll;
 }
 
 .item-comment {
