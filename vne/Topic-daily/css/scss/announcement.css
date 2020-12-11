@@ -1,0 +1,56 @@
+/* Scss Document */
+/* Scss Document */
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+.flexbox {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.no-flexbox {
+  display: inherit; }
+
+.section_announcement {
+  background: #E8E8FF;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .section_announcement p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%; }
+  .section_announcement .txt-announ {
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: uppercase; }
+  .section_announcement .item-announ {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #222222; }
+    .section_announcement .item-announ:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none; }
+  .section_announcement .note-announ {
+    font-size: 11px;
+    line-height: 13px;
+    color: #757575;
+    align-items: center; }
+    .section_announcement .note-announ .position-announ {
+      margin-left: auto;
+      position: relative;
+      padding-right: 17px; }
+      .section_announcement .note-announ .position-announ:after {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0; }
+      .section_announcement .note-announ .position-announ.danger:after {
+        background: #F44336; }
+      .section_announcement .note-announ .position-announ.warning:after {
+        background: #E17417; }
+
+/*# sourceMappingURL=announcement.css.map */

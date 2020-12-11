@@ -22,6 +22,8 @@ body {
   font: 400 14px 'Arial', serif;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 590px;
+  margin: 0 auto;
 }
 
 /*body::-webkit-scrollbar { 
@@ -155,7 +157,8 @@ figure {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  &.de-flexwrap{
+
+  &.de-flexwrap {
     flex-wrap: nowrap;
   }
 }
