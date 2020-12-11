@@ -196,7 +196,10 @@ body.open {
 
 .wrap-list-comment {
     max-height: calc(100vh - 271px);
-    overflow-y: scroll;
+    scroll-behavior: smooth;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .item-comment {
