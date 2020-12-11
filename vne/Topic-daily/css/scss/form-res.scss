@@ -1,31 +1,36 @@
 /* Scss Document */
 @import 'var.scss';
-.section_register{
+
+.section_register {
     padding-top: 20px;
     padding-bottom: 20px;
-    .wellcome-mess{
+
+    .wellcome-mess {
         font: bold 18px/160% $font1;
     }
-    .ques-today{
+
+    .ques-today {
         font: normal 16px/160% $font1;
     }
 }
-.button-act-reg{
+
+.button-act-reg {
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-    a{
-        width: calc(50% - 7.5px);
-        height: 50px;
-        line-height: 50px;
+
+    a {
+        width: calc(33.33% - 7.5px);
+        height: 40px;
+        line-height: 40px;
         background: #E5E5E5;
         border-radius: 3px;
         text-align: center;
         display: block;
-        font-weight: bold;
         font-size: 14px;
         color: #4f4f4f;
-        &.active{
+
+        &.active {
             background: #7989AB;
             color: #fff;
         }
@@ -44,24 +49,29 @@
         font-size: 16px;
         color: #222;
     }
-    .input_date{
+
+    .input_date {
         padding-right: 40px;
     }
-    .input_area{
+
+    .input_area {
         height: 140px;
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    .box-input{
+
+    .box-input {
         position: relative;
-        .ic-calendar{
+
+        .ic-calendar {
             fill: #222;
             position: absolute;
             top: 18px;
             right: 15px;
         }
     }
-    .note-red{
+
+    .note-red {
         width: 100%;
         float: left;
         text-align: right;
@@ -71,7 +81,7 @@
     }
 }
 
-.tt-menu{
+.tt-menu {
     background: #FFFFFF;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
     border-radius: 3px;
@@ -85,29 +95,34 @@
     z-index: 1;
     max-height: 300px;
     overflow: auto;
-    li{
+
+    li {
         font-size: 16px;
         line-height: 140%;
         padding: 10px 0;
         align-items: center;
-        .name-top-sug{
+
+        .name-top-sug {
             padding-right: 10px;
         }
-        .name-ban-sug{
+
+        .name-ban-sug {
             margin-left: auto;
             font-size: 14px;
         }
-        
+
     }
+
     mark {
         background: $vne_color;
         color: #fff;
         font-weight: 400;
     }
 }
-.box-input{
-    &.active{
-        .tt-menu{
+
+.box-input {
+    &.active {
+        .tt-menu {
             opacity: 1;
             visibility: visible;
             top: 52px;

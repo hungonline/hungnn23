@@ -2,7 +2,8 @@
 
 $vne_color: #9f224e;
 $vne_color_hover: #087CCE;
-$font1: 'Merriweather', serif;
+$font1: 'Merriweather',
+serif;
 
 @function lh($lineheight, $fontsize) {
     @return $lineheight / $fontsize;
@@ -54,4 +55,22 @@ $font1: 'Merriweather', serif;
     -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
     -moz-font-feature-settings: 'pnum'on, 'lnum'on;
     -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+
+    &:-moz-placeholder {
+        @content
+    }
+
+    &::-moz-placeholder {
+        @content
+    }
+
+    &:-ms-input-placeholder {
+        @content
+    }
 }

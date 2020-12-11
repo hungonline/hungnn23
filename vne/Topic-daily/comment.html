@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
@@ -7,33 +8,52 @@
 	<meta charset="utf-8">
 	<link href="css/Merriweather-woff2.css" media="all" rel="stylesheet">
 	<link href="css/common.css" media="all" rel="stylesheet">
-	<link href="css/header.css" media="all" rel="stylesheet">
+	<link href="css/topic.css" media="all" rel="stylesheet">
 	<link href="css/comment.css" media="all" rel="stylesheet">
 	<title>Newsroom</title>
 </head>
+
 <body>
+	<div class="back-to-tab"></div>
+	<div class="item-topic js-item-sd flex">
+		<a href="javascript:;" class="inner-item-topic flex de-flexwrap open-comment">
+			<span class="stt-topic">00</span>
+			<span class="name-topic">Action mở comment</span>
+			<span class="icon-note icon-comment">C</span>
+		</a>
+	</div>
+
 	<!--POPUP DETAIL COMMENT-->
 	<div class="wrap-popup-detail">
-		<div class="header-pop">Topic</div>
+		<div class="header-pop">
+			<a href="javascrip:;" class="close-comment">×</a>
+			Topic
+		</div>
 		<div class="content-pop clearfix">
 			<div class="label-ban flex">
 				<span class="name-ban vne">Thế giới</span>
 				<span class="note-topic">Topic of rejected</span>
 			</div>
-			<div class="item-topic-detail clearfix mt5">
+			<div class="item-topic-detail rejected clearfix mt5">
 				<form action="#" class="form-edit-topic">
-					<input type="text" class="txt_input" id="" name="topic-detail" autocomplete="off" value="Biểu tình ở Hong Kong" readonly>
+					<input type="text" class="txt_input" id="" name="topic-detail" autocomplete="off"
+						value="Biểu tình ở Hong Kong" readonly>
 					<span class="button-action-edit">
 						<svg class="ic ic-edit">
 							<use xlink:href="css/images/graphics/icon-vne.svg#Edit"></use>
+						</svg>
+						<svg class="ic ic-close">
+							<use xlink:href="css/images/graphics/icon-vne.svg#Close"></use>
 						</svg>
 					</span>
 				</form>
 			</div>
 			<div class="wrap-list-comment mt20">
 				<div class="item-comment owner-com">
-					<p class="txt-comment">Đề tài nhạy cảm, các thông tin liên quan đến Hong Kong giờ đang được BTG yêu cầu hạn chế đưa tin</p>
-					<p class="txt-comment">Nếu đưa cần thống nhất trước với Thư ký về nội dung đưa thế nào cho phù hợp</p>
+					<p class="txt-comment">Đề tài nhạy cảm, các thông tin liên quan đến Hong Kong giờ đang được BTG yêu
+						cầu hạn chế đưa tin</p>
+					<p class="txt-comment">Nếu đưa cần thống nhất trước với Thư ký về nội dung đưa thế nào cho phù hợp
+					</p>
 					<p class="txt-comment">Liên hệ trực tiếp với chị để trao đổi 8510</p>
 				</div>
 				<div class="item-comment user-com">
@@ -41,8 +61,10 @@
 						<span class="ava-user">H</span>
 						<span class="name-user">Phạm Hiếu - SD</span>
 					</div>
-					<p class="txt-comment">Đề tài nhạy cảm, các thông tin liên quan đến Hong Kong giờ đang được BTG yêu cầu hạn chế đưa tin</p>
-					<p class="txt-comment">Nếu đưa cần thống nhất trước với Thư ký về nội dung đưa thế nào cho phù hợp</p>
+					<p class="txt-comment">Đề tài nhạy cảm, các thông tin liên quan đến Hong Kong giờ đang được BTG yêu
+						cầu hạn chế đưa tin</p>
+					<p class="txt-comment">Nếu đưa cần thống nhất trước với Thư ký về nội dung đưa thế nào cho phù hợp
+					</p>
 					<p class="txt-comment">Liên hệ trực tiếp với chị để trao đổi 8510</p>
 				</div>
 				<div class="item-comment owner-com">
@@ -50,19 +72,48 @@
 				</div>
 			</div>
 		</div>
+		<div class="form-post-comment">
+			<form action="#">
+				<div class="box-input-comment">
+					<input type="text" class="txt_input" id="" name="txt-comment" autocomplete="off" placeholder="Aa">
+					<button class="btn-send-mess" type="button">Gửi</button>
+				</div>
+			</form>
+		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script>
-		$('form.form-register-topic input[name="keyword"]').on('keyup', (e) => {
-            let query = $(e.currentTarget).val();
-            if (query.length) {
-                $(e.currentTarget).parents('.box-input').addClass('active');
-                return;
-            } else {
-                $(e.currentTarget).parents('.box-input').removeClass('active');
-                return;
-            }
-        });
+		$(function () {
+			/**EDIT TITLE TOPIC**/
+			$('.button-action-edit').click(function () {
+				$('.item-topic-detail').toggleClass('editing');
+				if ($('.form-edit-topic input').prop('readonly')) {
+					$('.form-edit-topic input').prop('readonly', false);
+				} else {
+					$('.form-edit-topic input').prop('readonly', true);
+				}
+			});
+			/**OPEN COMMENT**/
+			$('.open-comment').click(function () {
+				$('body').toggleClass('open');
+			});
+			$('.close-comment,.back-to-tab').click(function () {
+				$('body').removeClass('open');
+			});
+
+			/**OPEN BUTTON SEND COMMENT**/
+			$('.form-post-comment input[name="txt-comment"]').on('keyup', (e) => {
+				let query = $(e.currentTarget).val();
+				if (query.length) {
+					$(e.currentTarget).parents('.box-input-comment').addClass('active');
+					return;
+				} else {
+					$(e.currentTarget).parents('.box-input-comment').removeClass('active');
+					return;
+				}
+			});
+
+		});
 	</script>
 </body>
 

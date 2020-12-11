@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="vi">
+
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
@@ -11,16 +12,17 @@
 	<link href="css/form-res.css" media="all" rel="stylesheet">
 	<title>Newsroom</title>
 </head>
+
 <body>
 	<!-- TOPBAR MENU -->
 	<section class="section section_topbar flex">
-			<a href="javascript:;" class="hamburger-btn" title="">
-				<svg class="ic ic-menu">
-                    <use xlink:href="css/images/graphics/icon-vne.svg#Hamburger-Menu"></use>
-                </svg>
-			</a>
-			<a href="#" title="" class="logo"><img src="images/graphics/Logo_Topic_Daily.svg" alt=""></a>
-			<a href="#" title="" class="google-trend">Google Trend</a>
+		<a href="javascript:;" class="hamburger-btn" title="">
+			<svg class="ic ic-menu">
+				<use xlink:href="css/images/graphics/icon-vne.svg#Hamburger-Menu"></use>
+			</svg>
+		</a>
+		<a href="#" title="" class="logo"><img src="images/graphics/Logo_Topic_Daily.svg" alt=""></a>
+		<a href="#" title="" class="google-trend">Google Trend</a>
 	</section>
 
 	<!--LOGIN-->
@@ -28,8 +30,9 @@
 		<p class="wellcome-mess">Nice day, Nguyễn Hương</p>
 		<p class="ques-today mt5">Your topic registration, today?</p>
 		<div class="button-act-reg flex">
-			<a href="#" class="">Announcement</a>
-			<a href="#" class="active">Topic registration</a>
+			<a href="#" class="active">Announcement</a>
+			<a href="#" class="">Topic</a>
+			<a href="#" class="">Review</a>
 		</div>
 		<div class="form-reg clearfix">
 			<form action="#" class="form-register-topic">
@@ -56,45 +59,48 @@
 					<option value="thuyngan@vnexpress.net">Podcast</option>
 				</select>
 				<div class="box-input clearfix mt20">
-					<input type="text" class="txt_input" id="inp_keyword" name="keyword" placeholder="Đề tài 1" autocomplete="off">
+					<input type="text" class="txt_input" id="inp_keyword" name="keyword" placeholder="Đề tài 1"
+						autocomplete="off">
 					<div class="tt-menu">
 						<div class="tt-dataset tt-dataset-1">
 							<li class="khighlight tt-suggestion tt-selectable flex de-flexwrap">
 								<span class="name-top-sug">
-									<strong class="tt-highlight"><mark
-										data-markjs="true">Covid</mark></strong>-19 tại Tây Ban Nha
+									<strong class="tt-highlight"><mark data-markjs="true">Covid</mark></strong>-19 tại
+									Tây Ban Nha
 								</span>
-								<span class="name-ban-sug vne">Thế giới</span>		
+								<span class="name-ban-sug vne">Thế giới</span>
 							</li>
 							<li class="khighlight tt-suggestion tt-selectable flex de-flexwrap">
 								<span class="name-top-sug">
-									<strong class="tt-highlight"><mark
-										data-markjs="true">Covid</mark></strong>-19 tại Tây Ban Nha
+									<strong class="tt-highlight"><mark data-markjs="true">Covid</mark></strong>-19 tại
+									Tây Ban Nha
 								</span>
-								<span class="name-ban-sug suckhoe">Sức khỏe</span>		
+								<span class="name-ban-sug suckhoe">Sức khỏe</span>
 							</li>
 							<li class="khighlight tt-suggestion tt-selectable flex de-flexwrap">
 								<span class="name-top-sug">
-									<strong class="tt-highlight"><mark
-										data-markjs="true">Covid</mark></strong>-19 tại Tây Ban Nha
+									<strong class="tt-highlight"><mark data-markjs="true">Covid</mark></strong>-19 tại
+									Tây Ban Nha
 								</span>
-								<span class="name-ban-sug sohoa">Số hóa</span>		
+								<span class="name-ban-sug sohoa">Số hóa</span>
 							</li>
 							<li class="khighlight tt-suggestion tt-selectable flex de-flexwrap">
 								<span class="name-top-sug">
-									<strong class="tt-highlight"><mark
-										data-markjs="true">Covid</mark></strong>-19 tại Tây Ban Nha
+									<strong class="tt-highlight"><mark data-markjs="true">Covid</mark></strong>-19 tại
+									Tây Ban Nha
 								</span>
-								<span class="name-ban-sug vne">Thế giới</span>		
-							</li>   
+								<span class="name-ban-sug vne">Thế giới</span>
+							</li>
 						</div>
 					</div>
 				</div>
 				<div class="box-input clearfix mt20">
-					<input type="text" class="txt_input" id="inp_keyword" name="q" placeholder="Đề tài 2" autocomplete="off">
+					<input type="text" class="txt_input" id="inp_keyword" name="q" placeholder="Đề tài 2"
+						autocomplete="off">
 				</div>
 				<div class="box-input clearfix mt20">
-					<input type="text" class="txt_input" id="inp_keyword" name="q" placeholder="Đề tài 3" autocomplete="off">
+					<input type="text" class="txt_input" id="inp_keyword" name="q" placeholder="Đề tài 3"
+						autocomplete="off">
 				</div>
 			</form>
 		</div>
@@ -112,15 +118,15 @@
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script>
 		$('form.form-register-topic input[name="keyword"]').on('keyup', (e) => {
-            let query = $(e.currentTarget).val();
-            if (query.length) {
-                $(e.currentTarget).parents('.box-input').addClass('active');
-                return;
-            } else {
-                $(e.currentTarget).parents('.box-input').removeClass('active');
-                return;
-            }
-        });
+			let query = $(e.currentTarget).val();
+			if (query.length) {
+				$(e.currentTarget).parents('.box-input').addClass('active');
+				return;
+			} else {
+				$(e.currentTarget).parents('.box-input').removeClass('active');
+				return;
+			}
+		});
 	</script>
 </body>
 
