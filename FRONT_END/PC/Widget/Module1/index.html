@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="design 2018">
+    <meta name="keywords" content="design 2018">
+    <title>
+        Widget 1
+    </title>
+</head>
+<style>
+    .widget_01 {
+        font-size: 14px;
+        color: #222;
+        font-family: arial
+    }
+
+    .widget_01 .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .widget_01 .flex {
+        display: inherit;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .space-between {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    .align-center {
+        align-items: center
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .center {
+        text-align: center
+    }
+
+    .mt10 {
+        margin-top: 10px;
+    }
+
+    .mb10 {
+        margin-bottom: 10px;
+    }
+
+    .mt15 {
+        margin-top: 15px;
+    }
+
+    .mb15 {
+        margin-bottom: 15px;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .color_666 {
+        color: #666666;
+    }
+
+    .widget_01 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .widget_01 input {
+        background: #fff;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #e5e5e5;
+        font-size: 15px;
+        padding: 0 12px;
+        outline: none;
+        font-family: arial;
+        transition-duration: 200ms;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(.7, 1, .7, 1);
+    }
+
+    .widget_01 button {
+        font-size: 16px;
+        font-weight: bold;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #fff;
+        background: #37A07F;
+        border-radius: 10px;
+        padding: 0px 20px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease;
+        outline: 0;
+    }
+
+    .widget_01 button img {
+        vertical-align: middle;
+        margin-right: 5px;
+    }
+
+    .widget_01 .box_pin {
+        background: rgba(35, 104, 82, .9) url(images/bg-map.png) no-repeat;
+        background-position: 130px 0px;
+        background-position: calc((100% - 1200px)/2);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .widget_01 .box_pin .container {
+        height: 104px;
+    }
+
+    .widget_01 .box_pin .bao-gia {
+        background: #FFAA00;
+        border-radius: 10px;
+        color: #236852;
+        font-weight: bold;
+        line-height: 50px;
+        padding: 0 55px;
+        position: relative;
+    }
+
+    .widget_01 .box_pin .bao-gia::before {
+        content: "";
+        border-top: 5px solid #FFAA00;
+        border-bottom: 5px solid #FFAA00;
+        border-left: 8px solid #236852;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .color_green {
+        color: #37A07F;
+    }
+
+    .red {
+        color: #DE0028;
+    }
+
+    .modal-popup {
+        position: fixed;
+        top: 30px;
+        left: 50%;
+        margin-left: -250px;
+        outline: 0;
+        max-width: 500px;
+        opacity: 0;
+        overflow: hidden;
+        z-index: -1;
+
+    }
+
+    .modal-popup-width {
+        margin: 0 auto;
+        position: relative;
+        width: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        opacity: 0;
+        transition: -webkit-transform .3s ease-out;
+        transition: transform .3s ease-out;
+        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+        -webkit-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+    }
+
+    .modal-popup-width .close-popup {
+        position: absolute;
+        right: 15px;
+        top: 3px;
+        z-index: 2;
+        font-size: 30px;
+    }
+
+    .modal-popup.show {
+        opacity: 1;
+        overflow: visible;
+        z-index: 1073;
+    }
+
+    .modal-popup.show .modal-popup-width {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #000;
+        opacity: 0;
+        transition: opacity .15s linear;
+    }
+
+    body.open-popup {
+        overflow: hidden;
+    }
+
+    body.open-popup .modal-backdrop {
+        opacity: .5;
+        z-index: 1071;
+    }
+
+    /* body.open-popup .widget_01 .modal-popup {
+        display: block;
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body.open-popup .modal-popup.fade .modal-popup-width {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    } */
+
+
+    .fade.show {
+        opacity: 1
+    }
+
+    .widget_01 .content_poup {
+        padding: 50px 20px 20px 20px;
+        background: #fff;
+        overflow: hidden;
+        line-height: 1.4;
+        position: relative;
+    }
+
+    .content_poup .flex {
+        margin-bottom: 10px;
+    }
+
+    .content_poup ul {
+        border-bottom: 1px solid #EBEBEB;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+
+    .content_poup ul li {
+        position: relative;
+        margin-bottom: 10px;
+        color: #666666;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .content_poup ul li::before {
+        content: "";
+        position: absolute;
+        background: #666;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        left: 4px;
+        top: 7px;
+    }
+</style>
+
+<body style="height: 2000px">
+
+    <!-- để 2000px để demo thôi -->
+    <div class="widget_01">
+        <div class="box_pin">
+            <div class="container flex align-center space-between">
+                <img src="images/logo.png" />
+                <a href="javascript:;" class="bao-gia trigger" data-modal="item">Báo giá sản phẩm</a>
+            </div>
+        </div>
+
+        <!-- POPPUP -->
+        <div class="modal-popup fade">
+            <div class="modal-popup-width">
+                <a class="close-popup" href="javascript:;">×</a>
+                <div class="content_poup">
+                    <div class="flex space-between">
+                        <div><strong>GIÁ SẢN PHẨM TRÊN COSTCO:</strong></div>
+                        <div><strong>$75.99</strong></div>
+                    </div>
+                    <div class="flex space-between">
+                        <div><strong>PHÍ MUA HỘ:</strong></div>
+                        <div><strong>$70</strong></div>
+                    </div>
+                    <ul>
+                        <li class="flex space-between">
+                            <div>Phí vận chuyển pound đầu tiên:</div>
+                            <div>$65</div>
+                        </li>
+                        <li class="flex space-between">
+                            <div>Phí vận chuyển các pound tiếp theo: </div>
+                            <div>$65</div>
+                        </li>
+                        <li class="flex space-between">
+                            <div>Phụ thu hàng hóa đặc biệt:</div>
+                            <div>$65</div>
+                        </li>
+                    </ul>
+                    <div class="flex space-between">
+                        <div><strong>Tổng giá (đã bao gồm thuế, phí):</strong></div>
+                        <div><strong class="color_green">$25.9</strong></div>
+                    </div>
+                    <div class="flex space-between">
+                        <div><strong>Giá về tay:</strong></div>
+                        <div><strong class="red">689.000 đ</strong></div>
+                    </div>
+                    <p class="italic color_666 mt15 mb15">Giá trên là giá cuối cùng, bạn không cần trả thêm
+                        bất kỳ khoản phí
+                        nào khác
+                    </p>
+                    <div class="center">
+                        <button class="btn bg-green" style="width:270px">
+                            <img src="images/ic-cart.png" />
+                            Mua ngay
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop close-popup"></div>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        // const baogia = document.querySelector('.bao-gia');
+        // baogia.addEventListener('click', () => {
+        //     document.querySelector('.modal-popup').classList.add('show');
+        //     document.querySelector('body').classList.add('open-popup');
+        // });
+        // const baogiaclose = document.querySelectorAll('.close-popup');
+        // baogiaclose.addEventListener('click', () => {
+        //     document.querySelector('body').classList.remove('open-popup');
+        //     document.querySelector('.modal-popup').classList.remove('show');
+        // });
+        $(document).ready(function () {
+            $('.bao-gia').click(function () {
+                $('.modal-popup').addClass('show');
+                $('body').toggleClass('open-popup');
+            });
+            $('.close-popup').click(function () {
+                $('.modal-popup').removeClass('show');
+                $('body').removeClass('open-popup');
+            });
+        })
+    </script>
+</body>
+
+</html>
