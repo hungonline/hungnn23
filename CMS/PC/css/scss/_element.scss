@@ -461,6 +461,19 @@ label.radio {
     }
 }
 
+.list-radio {
+    .radio-inline {
+        margin-bottom: 0;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    input {
+        margin-right: 5px;
+    }
+}
+
 .table-default {
     .table {
         margin-bottom: 0;
@@ -488,6 +501,18 @@ label.radio {
                 td {
                     background: #DDDDDD;
                 }
+            }
+        }
+    }
+
+    .table-gird {
+
+        td,
+        th {
+            border-left: 1px solid #dee2e6;
+
+            &:first-child {
+                border-left: 0
             }
         }
     }
@@ -1050,6 +1075,17 @@ label.radio {
     }
 }
 
+.border-hierarchy-tag {
+    border-radius: 3px;
+    border: 1px solid #CCCCCC;
+    padding: 15px;
+    margin: 0;
+
+    .scrollbar-inner {
+        max-height: 200px
+    }
+}
+
 .token-input-list-facebook,
 .token-input-list {
     width: 100% !important;
@@ -1264,7 +1300,6 @@ label.radio {
 }
 
 .fillter-search {
-    margin-bottom: 20px;
     background: #fff;
     width: 100%;
     padding: 25px 10%;
@@ -1280,6 +1315,28 @@ label.radio {
         .wrap_input,
         .datepicker-wrap {
             width: calc(100% - 200px);
+        }
+
+        .end_to_date {
+
+            .item {
+                width: 50%;
+                padding-right: 20px;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+
+            .datepicker-wrap {
+                width: 100%;
+            }
+        }
+    }
+
+    .user-hierarchy-tag {
+        .scrollbar-inner {
+            max-height: 210px
         }
     }
 
@@ -1719,7 +1776,6 @@ label.radio {
             background: #F3F3F3;
             border-bottom: 1px solid #D9D9D9;
             padding: 10px 15px;
-            font-weight: 400;
             margin: -20px -20px 10px -20px;
         }
     }
@@ -2378,7 +2434,40 @@ label.radio {
             font-size: 12px;
         }
     }
+
+    &.list {
+        .item {
+            align-items: center;
+            font-weight: 500;
+            margin-bottom: 30px;
+
+            .border {
+                border: 1px solid #D9D9D9;
+                padding-bottom: 100%;
+                position: relative;
+
+                .thumb_img {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+        }
+
+        .choose-wrap {
+            border: 1px solid #D9D9D9;
+
+            .choose-content {
+                top: 20px;
+                transform: translate(0, 0);
+            }
+        }
+    }
 }
+
 
 .list-choose {
     margin: 0 -5px;
@@ -2461,6 +2550,14 @@ label.radio {
         transform: translate(0, -50%);
     }
 
+    .choose-btn {
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+    }
+
     input {
         display: none;
     }
@@ -2476,6 +2573,7 @@ label.radio {
         margin-top: 10px;
         color: #666;
         font-size: 13px;
+        font-weight: 400
     }
 }
 
@@ -2790,4 +2888,67 @@ label.radio {
 
 .page-link {
     color: var(--color-main);
+}
+
+// Add tags
+.add-tags {
+    border: 1px solid #BABABA;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+
+    label {
+        font-weight: bold
+    }
+
+    .txt-add {
+        position: absolute;
+        top: -11px;
+        background: #fff;
+        padding: 0 5px;
+    }
+
+    .flex {
+        label {
+            width: 90px;
+        }
+    }
+
+    .list-tag {
+        width: calc(100% - 90px);
+        border-radius: 3px;
+        border: 1px solid #CCCCCC;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            background: #D9D9D9;
+            display: inline-block;
+            padding: 0px 10px;
+            line-height: 30px;
+            margin: 0 8px 8px 0;
+            color: #000000;
+        }
+
+        .form-control {
+            width: 170px;
+            border: 0;
+        }
+    }
+}
+
+.action-btn {
+    &>.flex {
+        justify-content: space-between;
+    }
+
+    .btn {
+        margin-left: 10px;
+        margin-bottom: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
 }
