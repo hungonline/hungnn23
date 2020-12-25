@@ -2461,8 +2461,12 @@ label.radio {
             border: 1px solid #D9D9D9;
 
             .choose-content {
-                top: 20px;
+                top: 10px;
                 transform: translate(0, 0);
+
+                span {
+                    font-size: 11px
+                }
             }
         }
     }
