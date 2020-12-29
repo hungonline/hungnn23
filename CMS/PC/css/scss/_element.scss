@@ -2956,3 +2956,67 @@ label.radio {
         }
     }
 }
+
+//LOCTION
+.list-locaion {
+    [class*="col-"] {
+        border-right: 1px solid #e5e5e5;
+
+        &:last-child {
+            border-right: 0
+        }
+    }
+
+    .search-wrapper {
+        display: flex;
+        margin-bottom: 10px;
+
+        .form {
+            width: 100%;
+        }
+
+        .input_search {
+            border: 1px solid #E1E1E1;
+        }
+
+        .add {
+            background: #EBEBEB;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #666;
+            width: 34px;
+            text-align: center;
+            line-height: 34px;
+            margin-left: 8px;
+        }
+    }
+
+    .suggest-locaion {
+        max-height: 300px;
+
+        li {
+            display: block;
+            position: relative;
+
+            a {
+                display: block;
+                padding: 5px 15px;
+            }
+
+            .edit {
+                position: absolute;
+                right: 0;
+                top: 0;
+                opacity: 0;
+            }
+
+            &:hover {
+                background: #F3F3F3;
+
+                .edit {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
