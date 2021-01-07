@@ -1,0 +1,168 @@
+/*background: url("images/graphics/demo.gif") no-repeat 0 0;*/
+/*Apply color suckhoe*/
+.title_box_category .text_title_box {
+  color: #58a12b; }
+.title_box_category .text_title_box::before {
+  background: #58a12b; }
+
+.menu_bread li.start a {
+  color: #58a12b; }
+
+/**THE THAO PAGE**/
+/*thidau_ketqua_column_box*/
+.thumb_5x5 {
+  padding-bottom: 100%;
+  display: block;
+  overflow: hidden;
+  height: 1px;
+  position: relative;
+  width: 100%; }
+
+#thidau_ketqua_column_box {
+  padding: 10px;
+  color: #333;
+  width: 100%;
+  float: left;
+  background: #f7f7f7;
+  /*margin:0 auto;*/
+  position: relative;
+  /*& + article {
+    padding-top: 0;
+  }*/ }
+  #thidau_ketqua_column_box .owl-nav > div {
+    width: 16px;
+    height: 16px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); }
+  #thidau_ketqua_column_box .owl-nav .owl-prev {
+    background: url(images/graphics/result_prev.png) no-repeat center;
+    left: 0; }
+    #thidau_ketqua_column_box .owl-nav .owl-prev.disabled {
+      opacity: 0.5; }
+  #thidau_ketqua_column_box .owl-nav .owl-next {
+    background: url(images/graphics/result_next.png) no-repeat center;
+    right: 0; }
+    #thidau_ketqua_column_box .owl-nav .owl-next.disabled {
+      opacity: 0.5; }
+  #thidau_ketqua_column_box .list_items {
+    float: left;
+    width: 100%; }
+    #thidau_ketqua_column_box .list_items .item {
+      position: relative;
+      overflow: hidden; }
+      #thidau_ketqua_column_box .list_items .item_sublist {
+        float: left;
+        width: 100%; }
+        #thidau_ketqua_column_box .list_items .item_sublist .league_type {
+          margin-bottom: 5px;
+          display: inline-block;
+          font: 700 12px arial;
+          width: 100%; }
+          #thidau_ketqua_column_box .list_items .item_sublist .league_type.type_giai {
+            margin-bottom: 0;
+            margin-top: 5px;
+            font-size: 11px;
+            color: #666;
+            font-weight: 400; }
+            #thidau_ketqua_column_box .list_items .item_sublist .league_type.type_giai .round_giai {
+              color: #999; }
+          #thidau_ketqua_column_box .list_items .item_sublist .league_type .ic-live {
+            font-size: 12px;
+            font-weight: 700;
+            color: #9F224E; }
+            #thidau_ketqua_column_box .list_items .item_sublist .league_type .ic-live:before {
+              width: 12px;
+              height: 12px; }
+        #thidau_ketqua_column_box .list_items .item_sublist_item {
+          text-align: center;
+          float: left;
+          width: 100%; }
+          #thidau_ketqua_column_box .list_items .item_sublist_item:not(:last-child) {
+            border-bottom: 1px solid #eee; }
+          #thidau_ketqua_column_box .list_items .item_sublist_item [class*="clb_"] {
+            width: 38%;
+            float: left; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item [class*="clb_"] .name {
+              margin-top: 7px;
+              color: #333;
+              font-weight: 400;
+              font-size: 14px;
+              width: calc(100% - 40px);
+              float: left;
+              display: table-cell;
+              vertical-align: middle;
+              height: 32px;
+              position: relative;
+              margin-top: 0; }
+              #thidau_ketqua_column_box .list_items .item_sublist_item [class*="clb_"] .name span {
+                max-width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                overflow: hidden;
+                text-overflow: ellipsis; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item [class*="clb_"] .thumb_images {
+              width: 32px; }
+              #thidau_ketqua_column_box .list_items .item_sublist_item [class*="clb_"] .thumb_images img {
+                width: 32px; }
+          #thidau_ketqua_column_box .list_items .item_sublist_item .clb_1 {
+            text-align: right; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .clb_1 .thumb_images {
+              float: right;
+              margin-left: 8px; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .clb_1 .name {
+              float: right; }
+              #thidau_ketqua_column_box .list_items .item_sublist_item .clb_1 .name span {
+                left: auto;
+                right: 0; }
+          #thidau_ketqua_column_box .list_items .item_sublist_item .clb_2 {
+            text-align: left; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .clb_2 .thumb_images {
+              float: left;
+              margin-right: 8px; }
+          #thidau_ketqua_column_box .list_items .item_sublist_item .time {
+            width: 24%;
+            float: left;
+            text-align: center;
+            font-size: 22px; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .time.score {
+              margin-top: 3px; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .time .before_match {
+              display: inline-block;
+              padding: 3px 10px;
+              background-color: #999;
+              font-size: 16px;
+              color: #fff;
+              font-weight: 700;
+              border-radius: 4px; }
+              #thidau_ketqua_column_box .list_items .item_sublist_item .time .before_match.fulltime {
+                background: #58a12b; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .time .minute {
+              font-size: 12px;
+              position: relative;
+              top: -14px;
+              color: #fff; }
+              #thidau_ketqua_column_box .list_items .item_sublist_item .time .minute.live {
+                color: #fff; }
+              #thidau_ketqua_column_box .list_items .item_sublist_item .time .minute:after {
+                content: "";
+                height: 2px;
+                width: 6px;
+                background-color: #eed609;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                bottom: -5px; }
+            #thidau_ketqua_column_box .list_items .item_sublist_item .time strong {
+              font-size: 23px;
+              color: #eed609; }
+
+/*# sourceMappingURL=mthethao.css.map */

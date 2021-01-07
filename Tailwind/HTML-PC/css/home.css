@@ -1,3 +1,0 @@
-*{margin:0;padding:0;box-sizing:border-box}body{max-width:360px;margin:0 auto}.list{margin-top:20px;margin-bottom:20px;max-width:768px;height:40px;background-color:#EEE;text-align:center;font-weight:300;font-size:20px;line-height:36px;position:relative;overflow:hidden;cursor:pointer}.acion-btn{position:absolute;right:-140px;-webkit-transition:0.3s all;transition:0.3s all;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;top:0}.acion-btn .btn{border:0;cursor:pointer;height:40px;width:70px;text-align:center;color:#fff}.acion-btn .btn-delete{background:red}.acion-btn .btn-active{background:green}
-
-/*# sourceMappingURL=maps/home.css.map */
