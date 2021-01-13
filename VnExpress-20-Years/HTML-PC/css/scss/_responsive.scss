@@ -1,0 +1,25 @@
+@media (max-width: 1791px) {
+    .title-cate {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-cate {
+        font-size: 32px;
+    }
+}
+
+.hidden-pc {
+    display: none
+}
+
+@media (max-width: 576px) {
+    .hidden-pc {
+        display: inline-block
+    }
+
+    .hidden-mobile {
+        display: none
+    }
+}
