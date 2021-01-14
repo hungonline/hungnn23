@@ -1,12 +1,25 @@
 @media (max-width: 1791px) {
-    .title-cate {
+
+    .title-cate,
+    .page-loichuc .form_dk h3 {
         font-size: 40px;
+    }
+
+    .title-cate {
+        span {
+            font-size: 24px;
+        }
     }
 }
 
 @media (max-width: 576px) {
-    .title-cate {
+    .page-loichuc .form_dk h3 {
         font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .title-cate {
+        margin-bottom: 20px;
     }
 }
 

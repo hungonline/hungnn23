@@ -39,7 +39,20 @@
             return false;
         });
     }
-
+    //magnificPopup
+    function magnificPopup() {
+        $('.open-popup').magnificPopup({
+            type: 'inline',
+            midClick: true,
+            mainClass: 'mfp-with-zoom',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            removalDelay: 300,
+        });
+    }
     //onCLick
     function onCLick() {
         $('#vibeji-ham').on('click', function () {
@@ -51,6 +64,22 @@
             $(this).toggleClass('active');
             $('.topnav-mobile, #vibeji-ham').removeClass('open');
         });
+        $(".tab-default a").click(function (event) {
+            $(".tab-default a").removeClass("active");
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+            event.preventDefault();
+            var tab = $(this).attr("href");
+            $(".tab-content >div").not(tab).css("display", "none");
+            $(tab).fadeIn();
+            $('.grid').masonry({
+                itemSelector: '.grid-item'
+            });
+        });
+
     }
     //scrollBar
     function slideSwiper() {
@@ -128,6 +157,7 @@
     }
     $(function () {
         backToTop();
+        magnificPopup();
         onCLick();
         slideSwiper();
         cssVars({});
