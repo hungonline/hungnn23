@@ -138,11 +138,6 @@
     @media (max-width: 1791px) {
         .box-content {
             padding: 100px 6.6% 50px 17.86%;
-
-            .title {
-                font-size: 48px;
-                margin-bottom: 20px;
-            }
         }
     }
 
@@ -794,6 +789,7 @@
 
         .title-cate {
             margin-bottom: 20px;
+            font-size: 32px;
 
             br {
                 display: inline-block
@@ -1414,7 +1410,8 @@
     }
 }
 
-#popup-camon {
+#popup-camon,
+#popup-creat {
     background: #F7F4F0;
     padding: 24px;
     text-align: center;
@@ -1435,7 +1432,7 @@
     .btn-close {
         border: 1px solid #AA7D54;
         color: #AA7D54;
-        padding: 5px 25px;
+        padding: 5px 30px;
         display: inline-block;
         font: 600 16px var(--font1);
     }
@@ -1452,4 +1449,20 @@
         padding: 0 30px;
         display: inline-block;
     }
+}
+
+#popup-creat {
+    max-width: 400px;
+
+    .btn-default {
+        background: none;
+        padding: 0;
+    }
+}
+
+.creat-bottom {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9;
 }

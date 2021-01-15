@@ -160,7 +160,7 @@
         magnificPopup();
         onCLick();
         slideSwiper();
-        cssVars({});
+        // cssVars({});
     });
     window.onscroll = function () {
         myFunction()
