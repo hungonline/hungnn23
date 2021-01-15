@@ -1413,3 +1413,43 @@
         }
     }
 }
+
+#popup-camon {
+    background: #F7F4F0;
+    padding: 24px;
+    text-align: center;
+    max-width: 344px;
+
+    .content-popup {
+        font-size: 16px;
+        color: #6B6B6B;
+        line-height: 1.6
+    }
+
+    .title_popup {
+        color: #191919;
+        font: 600 20px var(--font1);
+        margin-bottom: 24px;
+    }
+
+    .btn-close {
+        border: 1px solid #AA7D54;
+        color: #AA7D54;
+        padding: 5px 25px;
+        display: inline-block;
+        font: 600 16px var(--font1);
+    }
+
+    .btn-default {
+        background: #AA7D54;
+        font-weight: 600;
+        font-size: 16px;
+        color: #F9F0E3;
+        font-family: var(--font1);
+        position: relative;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        display: inline-block;
+    }
+}
