@@ -33,6 +33,7 @@
 
         .thumb {
           margin-bottom: 15px;
+          cursor: pointer;
 
           .story {
             position: absolute;
@@ -67,6 +68,7 @@
             height: 48px;
             text-align: center;
             line-height: 48px;
+            cursor: pointer;
 
             svg {
               width: 20px;
