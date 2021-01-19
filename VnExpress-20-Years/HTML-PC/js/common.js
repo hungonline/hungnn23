@@ -82,6 +82,13 @@
 
     }
     //scrollBar
+    function scrollBar() {
+        var scrollContainer = $(".scrollbar-inner");
+        if (scrollContainer.length > 0) {
+            scrollContainer.scrollbar();
+        }
+    }
+
     function slideSwiper() {
         var swiperframe1 = new Swiper('.box-img .swiper-container', {
             speed: 1000,
@@ -157,6 +164,7 @@
     }
     $(function () {
         backToTop();
+        scrollBar();
         magnificPopup();
         onCLick();
         slideSwiper();

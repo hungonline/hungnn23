@@ -27,12 +27,31 @@
     display: none
 }
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
     .hidden-pc {
         display: inline-block
     }
 
     .hidden-mobile {
         display: none
+    }
+
+    .wrap-main-nav {
+        margin-bottom: 20px;
+    }
+
+    #myvne_taskbar.myvne_taskbar_pc {
+        display: inline-block !important
+    }
+
+    .page-detail {
+        &.top-detail {
+            padding-bottom: 70px;
+        }
+    }
+
+    .bg-white {
+        background: none;
+        padding: 0;
     }
 }

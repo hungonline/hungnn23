@@ -1465,3 +1465,115 @@
     right: 24px;
     z-index: 9;
 }
+
+//Custom deail
+.page-detail {
+    padding-bottom: 200px;
+
+
+    .title-detail {
+        font-family: var(--font1);
+    }
+
+    &.top-detail {
+        background: #f7f4f0 url(images/graphics/bg-detail.png) no-repeat bottom;
+        border-bottom: 0;
+
+        .container {
+            background: none
+        }
+    }
+}
+
+.breadcrumb li:first-child {
+    color: var(--color-main);
+}
+
+.bg-white {
+    background: #fff;
+    width: 100%;
+    padding: 0 15px;
+}
+
+
+
+//End Custom deail
+
+.box_sn2019_wrapper {
+    background: url(images/graphics/bg-loichuc2.png) no-repeat top;
+}
+
+.box_sn2019_wrapper .scrollbar-inner>.scroll-element .scroll-bar {
+    width: 4px;
+    opacity: 1;
+}
+
+.box_sn2019_wrapper .bg_link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.box_sn2019 .scroll-wrapper {
+    max-height: 740px;
+    z-index: 3;
+    padding-right: 12px !important;
+    padding-bottom: 15px !important;
+}
+
+.box_sn2019 {
+    position: relative;
+    border: 1px solid #E5E5E5;
+    padding: 40px 5px 0 15px;
+    overflow: hidden;
+
+    .title {
+        font: 400 24px var(--font1);
+        color: #191919;
+        margin-bottom: 15px;
+    }
+
+    .scrollbar-inner {
+        height: 600px;
+
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    .ss-scroll {
+        background: #BDBDBD;
+        width: 5px;
+        opacity: 1 !important;
+        right: calc(-100% - 15px) !important;
+    }
+}
+
+.box_sn2019 .itemt {
+    border-radius: 13px;
+    padding: 13px 10px 10px 10px;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: Arial;
+    color: #000;
+    border: 1px dashed #dfdfdf;
+    margin-bottom: 17.11px;
+}
+
+
+.box_sn2019 .itemt h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box_sn2019 .itemt h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    position: relative;
+    color: #222;
+}
