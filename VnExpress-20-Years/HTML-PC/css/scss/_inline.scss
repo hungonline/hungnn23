@@ -826,6 +826,93 @@
     }
 }
 
+.section-quangcao {
+    margin-bottom: 70px;
+
+    .item-news {
+        &::before {
+            content: "";
+            border: 1px solid #AA7D54;
+            position: absolute;
+            top: 15px;
+            bottom: -15px;
+            right: -15px;
+            left: 15px;
+        }
+
+        .wrap {
+            background: #F2EFE7;
+            border: 2px solid #000000;
+            padding: 8px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumb-art {
+            width: 333px;
+            margin: 0;
+            padding-left: 30px;
+            order: 2;
+        }
+
+        .content {
+            padding: 24px;
+            order: 1;
+            width: calc(100% - 333px);
+            background: url(images/graphics/hac-giay.png) no-repeat bottom right;
+        }
+
+        .title-news {
+            font-size: 28px
+        }
+
+        .description {
+            font-size: 20px;
+            color: #191919;
+            margin-bottom: 15px;
+        }
+
+        .btn-default {
+            background: #AA7D54;
+            font-weight: 600;
+            font-size: 16px;
+            color: #F9F0E3;
+            font-family: var(--font1);
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 30px;
+            display: inline-block;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .item-news {
+            .thumb-art {
+                width: 100%;
+                padding-left: 0;
+                order: 1;
+            }
+
+            .content {
+                padding: 15px;
+                order: 2;
+                width: 100%;
+            }
+
+            .title-news {
+                font-size: 22px
+            }
+
+            .description {
+                font-size: 18px
+            }
+        }
+
+    }
+}
+
 .section-frame5 {
     position: relative;
     padding-bottom: 50px;
@@ -1457,6 +1544,59 @@
     bottom: 24px;
     right: 24px;
     z-index: 9;
+}
+
+#popup-share {
+    max-width: 360px;
+    padding: 23px;
+
+    .title_popup {
+        font: 600 20px var(--font1);
+        margin-bottom: 25px;
+    }
+
+    .social {
+        justify-content: center;
+
+        a {
+            color: #6B6B6B;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 15px 25px 15px;
+        }
+
+        .icon {
+            background: #D8C7AB;
+            width: 48px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 auto;
+
+            svg {
+                fill: #fff
+            }
+        }
+    }
+
+    .copy-link {
+        border: 1px solid #D4D4D4;
+        background: #FAFAFA;
+        padding: 14px 74px 14px 14px;
+        font-size: 14px;
+        position: relative;
+
+        .link {
+            color: #191919;
+        }
+
+        .copy {
+            color: #AA7D54;
+            position: absolute;
+            right: 14px;
+        }
+    }
 }
 
 //Custom deail
