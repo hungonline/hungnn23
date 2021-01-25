@@ -1083,7 +1083,13 @@
     padding: 50px 0 270px 0;
     position: relative;
     overflow: hidden;
+    width: 100%;
 
+    &::after {
+        content: "";
+        clear: both;
+        display: block
+    }
 
 
     &::before {
@@ -1599,6 +1605,19 @@
     }
 }
 
+#comment-popup {
+    max-width: 400px;
+
+}
+
+.white-popup {
+    .title {
+        font: 600 20px var(--font1);
+        margin: 10px 0;
+    }
+}
+
+
 //Custom deail
 .page-detail {
     padding-bottom: 150px;
@@ -1616,6 +1635,12 @@
             background: none
         }
     }
+
+    .container {
+        background: #fff !important;
+        max-width: 1100px;
+    }
+
 }
 
 .breadcrumb li:first-child {
