@@ -978,6 +978,55 @@
             width: 33%;
             background: #070707 url(images/graphics/bg-tacpham.png) no-repeat bottom;
             padding: 65px;
+
+            .social {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                color: #6B6B6B;
+                font-size: 14px;
+
+                .flex {
+                    align-items: center;
+                    margin-right: 15px;
+                    margin-bottom: 0;
+                }
+
+                .number {
+                    margin-left: 5px;
+                }
+
+                a {
+                    color: #6B6B6B;
+                }
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    color: #6B6B6B !important;
+                }
+
+                ul {
+                    li {
+                        display: inline-block;
+
+                        a {
+                            background: #191919;
+                            width: 32px;
+                            height: 32px;
+                            margin: 0 0 0 0 !important;
+                            border-radius: 50%;
+                            justify-content: center;
+
+                            svg {
+                                fill: #AA7D54;
+                                width: 16px !important;
+                                height: 16px !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .title-news {
@@ -1453,6 +1502,55 @@
                         color: #D3BF9F;
                         width: 24px;
                         height: 24px;
+                    }
+                }
+
+                .social {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    color: #6B6B6B;
+                    font-size: 14px;
+
+                    .flex {
+                        align-items: center;
+                        margin-right: 15px;
+                        margin-bottom: 0;
+                    }
+
+                    .number {
+                        margin-left: 5px;
+                    }
+
+                    a {
+                        color: #6B6B6B;
+                    }
+
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        color: #6B6B6B !important;
+                    }
+
+                    ul {
+                        li {
+                            display: inline-block;
+
+                            a {
+                                background: #191919;
+                                width: 32px;
+                                height: 32px;
+                                margin: 0 0 0 0 !important;
+                                border-radius: 50%;
+                                justify-content: center;
+
+                                svg {
+                                    fill: #AA7D54;
+                                    width: 16px !important;
+                                    height: 16px !important;
+                                }
+                            }
+                        }
                     }
                 }
             }
