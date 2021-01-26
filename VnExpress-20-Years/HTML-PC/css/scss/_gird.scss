@@ -117,27 +117,29 @@
               width: 24px;
               height: 24px;
             }
+          }
+        }
+      }
+    }
+  }
 
-            ul {
-              li {
-                display: inline-block;
+  .social {
+    ul {
+      li {
+        display: inline-block;
 
-                a {
-                  background: #F2EFE7;
-                  width: 32px;
-                  height: 32px;
-                  margin: 0 0 0 0 !important;
-                  border-radius: 50%;
-                  justify-content: center;
+        a {
+          background: #F2EFE7;
+          width: 32px;
+          height: 32px;
+          margin: 0 0 0 0 !important;
+          border-radius: 50%;
+          justify-content: center;
 
-                  svg {
-                    fill: #AA7D54;
-                    width: 16px;
-                    height: 16px;
-                  }
-                }
-              }
-            }
+          svg {
+            fill: #AA7D54;
+            width: 16px !important;
+            height: 16px !important;
           }
         }
       }
