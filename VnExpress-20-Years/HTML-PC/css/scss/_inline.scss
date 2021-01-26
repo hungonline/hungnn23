@@ -682,6 +682,28 @@
 
     .list_comment {
         width: calc(100% - 370px);
+        position: relative;
+
+        .grid {
+            max-height: 1000px;
+            overflow: hidden;
+        }
+
+        &::before {
+            content: "";
+            background: linear-gradient(180deg, #F2EFE7 0%, rgba(242, 239, 231, 0) 100%);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .txt_center {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     .form_dk {
@@ -1114,6 +1136,10 @@
 .list-chuyen-nghe {
     .gird {
         margin: 0 -15px;
+
+        .txt_center {
+            width: 100%;
+        }
     }
 
     .item {
@@ -1216,6 +1242,8 @@
         }
 
         .comment-you {
+            margin-bottom: 30px;
+
             .row-gird {
                 margin: 0 -15px;
             }
@@ -1285,19 +1313,24 @@
                             width: 24px;
                             height: 24px;
                         }
+
                     }
                 }
             }
         }
 
         &--header {
-            border-bottom: 1px solid rgba(170, 125, 84, 0.2);
-            margin-bottom: 24px;
+            margin-bottom: 15px;
             justify-content: space-between;
 
             .new {
                 font: 600 16px var(--font1);
                 color: #191919;
+            }
+
+            .head {
+                font: 600 20px/1.3 var(--font1);
+                margin-bottom: 0;
             }
         }
     }
@@ -1496,6 +1529,7 @@
 }
 
 #popup-camon,
+#comment-popup,
 #popup-creat {
     background: #F7F4F0;
     padding: 24px;
@@ -1514,12 +1548,19 @@
         margin-bottom: 24px;
     }
 
-    .btn-close {
+    .mfp-close {
         border: 1px solid #AA7D54;
         color: #AA7D54;
         padding: 5px 30px;
         display: inline-block;
         font: 600 16px var(--font1);
+        background: none;
+        border-radius: 0;
+        position: static;
+        height: 40px;
+        width: 105px;
+        text-align: center;
+
     }
 
     .btn-default {
@@ -1605,10 +1646,7 @@
     }
 }
 
-#comment-popup {
-    max-width: 400px;
-
-}
+#comment-popup {}
 
 .white-popup {
     .title {
@@ -1620,20 +1658,24 @@
 
 //Custom deail
 .page-detail {
-    padding-bottom: 150px;
-
 
     .title-detail {
         font-family: var(--font1);
     }
 
     &.top-detail {
-        background: #f7f4f0 url(images/graphics/bg-detail.png) no-repeat bottom;
         border-bottom: 0;
+        background: none;
 
         .container {
             background: none
         }
+    }
+
+    &.middle-detail {
+        background: #f7f4f0 url(images/graphics/bg-detail.png) no-repeat bottom;
+        border-bottom: 0;
+        padding-bottom: 150px;
     }
 
     .container {
