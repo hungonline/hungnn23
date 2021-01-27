@@ -116,7 +116,8 @@
             spaceBetween: 55,
             speed: 1000,
             autoplay: {
-                delay: 2000,
+                delay: 6000,
+                disableOnInteraction: false,
             },
             navigation: {
                 nextEl: '.swiper-frame3-next',
@@ -131,6 +132,16 @@
                 }
             }
         });
+        $('.section-frame3 .swiper-slide').on('mouseover', function () {
+            swiperframe3.autoplay.stop();
+        });
+
+        $('.section-frame3 .swiper-slide').on('mouseout', function () {
+            swiperframe3.autoplay.start();
+        });
+
+
+
         var swiperframe5 = new Swiper('.slide-img .swiper-container', {
             navigation: {
                 nextEl: '.swiper-frame5-next',

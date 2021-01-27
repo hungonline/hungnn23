@@ -1087,6 +1087,7 @@
 
     .swiper-button-disabled {
         opacity: 0.6;
+        pointer-events: auto;
     }
 
     @media (max-width: 1791px) {
