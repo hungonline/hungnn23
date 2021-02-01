@@ -1529,3 +1529,15 @@ figure.ob {
 //         background-size: contain;
 //     }    
 // }
+
+
+// Box covid
+@import 'box-covid-2021.scss';
+.flex {
+    display: flex;
+    flex-wrap: wrap
+  }
+  
+  .flexbox {
+    display: flex;
+  }

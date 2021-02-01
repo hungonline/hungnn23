@@ -3568,6 +3568,10 @@ body.hidden {
   font: bold 44px/1.6 var(--font1);
   display: block;
   margin-bottom: 10px;
+  font-feature-settings: 'pnum' on , 'lnum' on;
+  -webkit-font-feature-settings: 'pnum' on , 'lnum' on;
+  -moz-font-feature-settings: 'pnum' on , 'lnum' on;
+  -ms-font-feature-settings: 'pnum' on , 'lnum' on;
 }
 
 .box-thongke .item.active {
@@ -3646,7 +3650,7 @@ body.hidden {
 }
 
 .box-thongke-thegioi .item strong {
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .box-thongke-thegioi .item.active span,

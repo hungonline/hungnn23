@@ -9933,11 +9933,26 @@ button::-moz-focus-inner {
   padding-right: 20px;
 
 }
-
-
 // Box đại hội đảng
 .col-daihoidang {
   width: 553px;
   width: calc(100% - 707px);
   margin-bottom: 20px;
+  a{
+    display: block;
+    height: 100%;
+
+  }
+}
+@media (max-width: 1200px) {
+  .col-covid{
+    width: 100%;
+    padding-right: 0;
+  }
+  .col-daihoidang {
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
 }
