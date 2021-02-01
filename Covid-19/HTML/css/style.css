@@ -2558,7 +2558,7 @@ button::-moz-focus-inner {
 
 body.show_main_menu,
 body.hidden {
-  overflow: hidden;
+  overflow: hidden!important;
   height: 100vh;
   position: relative;
 }
@@ -2630,7 +2630,7 @@ body.hidden {
 
 .section_1.white {
   background: #fff;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .search_faq {
@@ -3441,7 +3441,7 @@ body.hidden {
 }
 
 .box-hot-new {
-  background: #F7F7F7;
+
   border-radius: 2px;
   padding: 15px 25px;
   margin-bottom: 24px;
@@ -4373,11 +4373,6 @@ body.hidden {
 }
 
 
-.footer {
-  margin-top: 50px;
-  font-size: 12px;
-  color: #757575;
-}
 
 .footer .flex {
   border-top: 1px solid #E0E0E0;
@@ -5008,35 +5003,6 @@ svg.ic {
   .section_1 {
     padding: 25px 0;
   }
-
-  .footer {
-    text-align: center;
-  }
-
-  .footer .footer_left {
-    width: 100%;
-    display: block;
-  }
-
-  .footer .footer_left .logo {
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
-  }
-
-  .footer .footer_right {
-    width: 100%;
-    display: block;
-    margin-top: 20px;
-  }
-
-  .footer .footer_right .social {
-    margin: 10px 0 0 0;
-  }
-
-  .footer .footer_right .social a {
-    margin: 0 5px;
-  }
 }
 
 @media (max-width: 680px) {
@@ -5099,4 +5065,55 @@ svg.ic {
   }
 }
 
-/*# sourceMappingURL=maps/style.css.map */
+/* Update 2/1/2021 */
+.list_item_panel .item_social{
+  background: none;
+}
+.box-chart-covid{
+  float: none;
+  width: calc(100% + 30px);
+}
+.nav-folder .ul-nav-folder li{
+  margin-right: 15px;
+}
+.nav-folder .ul-nav-folder li a{
+  padding: 12px 10px;
+  color: #757575;
+}
+.nav-folder .ul-nav-folder li a i{
+  margin-right: 5px;
+  font-size: 16px;
+  vertical-align: text-bottom;
+}
+@media (max-width: 600px) {
+  .btn24hqua, .evne{display: none;}
+  .top-header-folder .flexbox{
+    flex-wrap: wrap;
+  }
+  .top-header-folder .title-folder{
+    width: 100%;
+    text-align: center;
+  }
+  .top-header-folder .filter-date-search{
+    display: none;
+  }
+  .top-header-folder .nav-folder ul{
+    border-top: 1px solid #E5E5E5;
+    text-align: center;
+  }
+  .top-header-folder .nav-folder ul li{
+    float: none;
+    display: inline-block;
+  }
+
+  .footer .copyright{
+    padding-top: 20px;
+  }
+  .footer .copyright-footer{
+    flex-wrap: wrap;
+  }
+  .footer .copyright-footer p{
+    width: 100%;
+    padding: 0;
+  }
+}

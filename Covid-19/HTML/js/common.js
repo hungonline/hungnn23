@@ -24,7 +24,7 @@
 
 	//OPEN & CLOSE MAIN MENU*/
 	function closeMenu() {
-		$('.js-headerHamburger').click(function () {
+		$('.all-menu').click(function () {
 			$('body').addClass('show_main_menu');
 		});
 
