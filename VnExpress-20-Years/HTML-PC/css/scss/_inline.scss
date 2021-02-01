@@ -391,7 +391,7 @@
 
     .box-slide-mobile {
         display: none;
-        padding: 0 0 0 15px;
+        padding: 0 15px;
         width: 100%;
         position: relative;
         padding-bottom: 20px;
@@ -408,7 +408,7 @@
         }
 
         .swiper-container {
-            padding: 0 100px 30px 0;
+            padding: 0 0 30px 0;
         }
 
         .item-news {
@@ -433,6 +433,12 @@
 
             @media (max-width: 576px) {
                 display: block
+            }
+        }
+
+        @media (max-width: 576px) {
+            .swiper-container {
+                padding: 0 100px 30px 0;
             }
         }
     }
@@ -704,6 +710,10 @@
                 position: absolute;
                 bottom: 0;
                 z-index: 1;
+
+                @media (max-width: 600px) {
+                    height: 200px;
+                }
             }
         }
     }
@@ -808,7 +818,7 @@
     @media (max-width: 576px) {
         background: #f7f4f0;
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         .title-cate {
             margin-bottom: 20px;
@@ -1122,11 +1132,22 @@
     @media (max-width: 1100px) {
         .item-news {
             .description {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
+                .lc_content {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 4;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 20px;
+                }
+
+                .flex {
+                    margin-bottom: 20px;
+                }
+
+                .author {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -1212,6 +1233,7 @@
         .item-news {
             background: #fff;
             padding: 16px;
+            height: 100%;
 
             .thumb-art {
                 float: right;
@@ -1219,6 +1241,8 @@
                 height: 74px;
                 margin-left: 15px;
                 margin-right: 0;
+                border-radius: 50%;
+                overflow: hidden;
 
                 .thumb {
                     background: none
@@ -1574,6 +1598,26 @@
                 .thumb-art {
                     width: 65%;
                 }
+
+                .description {
+                    .lc_content {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        -webkit-line-clamp: 4;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        margin-bottom: 20px;
+                    }
+
+                    .flex {
+                        margin-bottom: 20px;
+                    }
+
+                    .author {
+                        margin-bottom: 10px;
+                    }
+                }
+
             }
         }
 
@@ -1826,6 +1870,10 @@
 
     .title-detail {
         font-family: var(--font1);
+    }
+
+    .box_comment_vne {
+        margin-bottom: 20px;
     }
 
     &.top-detail {

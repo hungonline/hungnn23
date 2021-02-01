@@ -116,7 +116,7 @@
             spaceBetween: 55,
             speed: 1000,
             autoplay: {
-                delay: 6000,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -132,11 +132,11 @@
                 }
             }
         });
-        $('.section-frame3 .swiper-slide').on('mouseover', function () {
+        $('.section-frame3 .container').on('mouseover', function () {
             swiperframe3.autoplay.stop();
         });
 
-        $('.section-frame3 .swiper-slide').on('mouseout', function () {
+        $('.section-frame3 .container').on('mouseout', function () {
             swiperframe3.autoplay.start();
         });
 
@@ -151,7 +151,7 @@
         var swiperslidemobile = new Swiper('.box-slide-mobile .swiper-container', {
             slidesPerView: 2,
             spaceBetween: 40,
-            loop: true,
+            // loop: true,
             pagination: {
                 el: '.swiper-pagination',
             },
