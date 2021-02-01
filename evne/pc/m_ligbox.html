@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="kcv.net" />
+<title>VnExpress Enternational</title>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" href="css/m_en_general_bk.css" media="all" />
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>	
+</head>
+<body>
+
+	<div id="lb_share_friend" class="main_lighbox">
+		<div class="title_ligbox">Share with your friends <a href="#" class="btn_close_lb"><i class="fa fa-times"></i></a></div>
+		<div class="ct_chose_social">
+				Import contacts and email to friends: 
+				<a href="#"><img src="images/graphics/img_fb.gif" alt=" " /></a>
+				<a href="#"><img src="images/graphics/img_gg.gif" alt=" " /></a>
+		</div>
+		<div class="ct_main_lb">
+			<div class="item_form row">
+				<div class="form_left_lb">To:</div>
+				<div class="form_right_lb">
+					<input class="input_form_lb">
+				</div>
+			</div>
+			<div class="item_form row">
+				<div class="form_left_lb">From:</div>
+				<div class="form_right_lb">
+					<input class="input_form_lb">
+				</div>
+			</div>
+			<div class="item_form row">
+				<div class="form_left_lb">Message:</div>
+				<div class="form_right_lb">
+					<textarea class="input_form_lb"></textarea>
+
+					<div class="row"> 
+						<div class="capcha"><img src="images/graphics/img_capcha.gif" /></div>
+						<input class="input_form_lb input_capcha">
+						<div class="row txt_form">Word verification prevents automated systems from adding spam messages to your email.</div>
+					</div>
+					<button class="btn_send_vne">Send</button>
+
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+    <!--
+    <div id="lb_infomation" class="main_lighbox">
+    	<div class="title_ligbox">Infomation<a href="#" class="btn_close_lb"><i class="fa fa-times"></i></a></div>
+        <div id="login-vne1" class="login-form">
+            <div class="content_ligbox">
+                <div class="login-left">
+                    <!--<p class="login-type login-type-mis">Đăng nhập bằng</p>-->
+                   <!-- <p class="p-social"><a rel="facebook" href="#" class="login-social lg-facebook"></a></p>
+                    <p class="p-social"><a rel="twitter" href="#" class="login-social lg-twitter"></a></p>
+                    <p class="p-social"><a rel="google" href="#" class="login-social lg-google"></a></p>
+                </div>
+                <div class="login-right">
+                    <p class="login-type">Or enter your information</p>
+                    <p class="login-txt"><input id="txt_email" class="txt-login" value="Email (Không hiển thị trên trang)" onfocus="if (this.value == 'Email (Không hiển thị trên trang)') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email (Không hiển thị trên trang)';}" type="text"></p>
+                    <p id="error_email" class="login-desc">Lỗi</p>
+                    <p class="login-txt"><input id="txt_fullname" class="txt-login" value="Họ tên (Hiển thị trên trang)" onfocus="if (this.value == 'Họ tên (Hiển thị trên trang)') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Họ tên (Hiển thị trên trang)';}" type="text"></p>
+                    <p id="error_fullname" class="login-desc">Lỗi</p>
+                    <p class="login-btt"><input id="bt_finish" class="btt-complete" value="Submit" type="button"></p>
+                </div>
+                <div class="close-lb"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    -->
+
+	<div id="lb_apply_job" class="main_lighbox">
+		<div class="title_ligbox">Apply now <a href="#" class="btn_close_lb"><i class="fa fa-times"></i></a></div>
+		<div class="ct_main_lb">
+			<div class="item_form row">
+				<div class="form_left_lb">Position:</div>
+				<div class="form_right_lb">
+					<select class="input_form_lb">
+						<option><b>Reporters</b> for News, Business and Travel&Life:</option>
+						<option>Videographers:</option>
+					</select>
+				</div>
+			</div>
+			<div class="item_form row">
+				<div class="form_left_lb">Email:</div>
+				<div class="form_right_lb">
+					<input class="input_form_lb" type="email">
+				</div>
+				<span class="error_form">Thông báo lỗi</span>
+			</div>
+			<div class="item_form row">
+				<div class="form_left_lb">Mobile phone:</div>
+				<div class="form_right_lb">
+					<input class="input_form_lb" type="phone">
+				</div>
+			</div>
+			<div class="item_form row">
+				<div class="form_left_lb">Portfolio or CV:<i class="right">pdf, jpg, png, zip, rar, xlsx, docx</i></div>
+				<div class="form_right_lb">
+					<div class="fileupload left">
+						<span>Upload file</span>
+						<input type="file" class="upload" />
+					</div>
+					<div class="right note_file_upload">
+						<span>maximum: 100mb</span>
+					</div>
+				</div>
+				<div class="form_right_lb">
+					<div class="fileupload left">
+						<span>Upload file</span>
+						<input type="file" class="upload" />
+					</div>
+					<div class="right note_file_upload">
+						<span class="uploading">Uploading 35%</span>
+					</div>
+				</div>
+				<div class="form_right_lb">
+					<div class="fileupload left">
+						<span>Upload file</span>
+						<input type="file" class="upload" />
+					</div>
+					<div class="right note_file_upload">
+						<span>fime_name.pdf <i>(25mb)</i></span>
+					</div>
+				</div>
+			</div>
+			<div class="item_form row">
+				<div class="form_left_lb">Note:</div>
+				<div class="form_right_lb">
+					<textarea class="input_form_lb"></textarea>
+
+					<button class="btn_send_vne right">Apply</button>
+
+				</div>
+
+			</div>
+			<div class="clearfix"></div>
+			<p class="succes_apply"><i class="fa fa-check-circle"></i> Your application has been submitted successfully.</p>
+			<p class="back_to_home"><a href="#"><i class="fa fa-long-arrow-left"></i> Back to homepage</a></p>
+		</div>
+	</div>
+
+	<!--lightbox vote captcha-->
+	<div class="main_lighbox">
+		<div class="content_poup width_common">
+			<ul class="form_element">
+			  <li class="width_common">
+				  <input class="input_50 left input_form" type="text">
+				  <div class="capcha" id="showCaptcha_pvtt"><img width="70" height="26" alt="Mã xác nhận gửi bài viết đến tòa soạn" src="images/graphics/txt_capcha.gif"><br><input type="hidden" name="captchaID1" id="captchaID1" value="d46f7f064c76f709462a29b7da79772c"></div>
+				  <a class="btn_refrest" href="javascript:;" onclick="loadCaptcha();" title="Tạo mã khác"><img src="http://st.f1.vnecdn.net/responsive/i/v41/graphics/refesh.gif"></a>
+				  <div class="width_common txt_error">Mã xác nhận không được để trống</div>
+			  </li>
+			  <li>
+				<button type="button" id="btn_send" class="btn_vne btn_vne_bold">Hoàn tất</button>
+			  </li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--lightbox vote result-->
+	<div class="main_lighbox">
+	  <div class="ques_vote width_common">
+		<h4 class="text_ques">Bạn trả lời được bao nhiêu câu hỏi?</h4>
+	  </div>
+	  <div class="content_poup width_common">
+		<ul class="width_common list_vote">
+		  <li>
+			<div class="info_result width_common">
+			  <div class="rsV_left">Dưới 5 câu</div>
+			  <div class="scroll_color">
+				<span style="width:33%;" class="bg_center_scroll" percent="33"> &nbsp;<label class="txt_number_ketqua">33%</label></span>
+			  </div>
+			  <div class="rsV_right">
+				<label>8</label> 
+			  </div>
+			</div>
+		  </li>
+
+		  <li>
+			<div class="info_result width_common">
+			  <div class="rsV_left">5-6 câu</div>
+			  <div class="scroll_color">
+				<span style="width:54%;" class="bg_center_scroll" percent="54"> &nbsp;<label class="txt_number_ketqua">54%</label></span>
+			  </div>
+			  <div class="rsV_right">
+				<label>13</label> 
+			  </div>
+			</div>
+		  </li>
+
+		  <li>
+			<div class="info_result width_common">
+			  <div class="rsV_left">Cả 7 câu</div>
+			  <div class="scroll_color">
+				<span style="width:8%;" class="bg_center_scroll" percent="8"> &nbsp;<label class="txt_number_ketqua">8%</label></span>
+			  </div>
+			  <div class="rsV_right">
+				<label>2</label> 
+			  </div>
+			</div>
+		  </li>
+
+		  <li>
+			<div class="info_result width_common">
+			  <div class="rsV_left">Không được câu nào!</div>
+			  <div class="scroll_color">
+				<span style="width: 4%;" class="bg_center_scroll" percent="4"> &nbsp;<label class="txt_number_ketqua">5%</label></span>
+			  </div>
+			  <div class="rsV_right">
+				<label>1</label>
+			  </div>
+			</div>
+		  </li>
+		</ul>
+		<div class="width_common">
+		  <span class="total_vote">Total vote: <label>24 phiếu</label></span>
+		</div>
+	  </div>
+	</div>
+	
+<!-- /page --> 
+	
+</body>
+</html>

@@ -1,0 +1,78 @@
+.icon_live {
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: -5px 0 0 0;
+    text-align: center;
+    line-height: 24px;
+    /*.ic{
+      display: inline-block; vertical-align: middle; font-size: 20px;
+    }*/
+    /*&.icon_dot_live{
+      position: absolute;
+      left: -24px;
+      top: -2px;
+      margin: 0;
+    }
+    &.icon_dot_live::before{
+      width: 5px; height:5px; content: "";
+      border: 1px solid #e0e0e0;
+      position: absolute;
+      top: 50%; margin-top: -2.5px;
+      left: 50%; margin-left: -2.5px;
+      background: #fff;
+    }*/
+}
+/*.high-light .icon_dot_live::before, .container_tab_live ul li.first .icon_dot_live::before{
+  border: 1px solid $vne_color;
+}*/
+/*.fck_detail .container_tab_live p, .fck_detail .container_tab_live .box_category{margin: 0 0 10px 0;}*/
+.box_news_insert{
+    margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e7e7e7;
+  .title_news{line-height: 1.131;
+    /*margin-bottom: 10px;*/
+   a{font: 400 px_to_rem(18px) 'Muli', sans-serif; line-height: 1.131; color: #333; text-decoration: none;}
+}
+    .news_lead{padding: 10px 0; font: 400 px_to_rem(16px) 'Georgia', sans-serif;
+        a{color: #333 !important;}
+    }
+    
+    
+    &:last-child{padding-bottom: 0; border: none;}
+    &.box_bg_gray{
+        .title_news{
+            /*margin-bottom: 10px;*/
+           a{font: 800 px_to_rem(18px) 'Muli', sans-serif; line-height: $lh;}
+        }
+    } 
+}
+.tit_box_insert{font-size: px_to_rem(14px); color: #999; text-align: left;}
+//.slide_stage_padding .owl-stage{width: 100% !important;}
+
+.box_insert_slide{
+    .list_slide .owl-stage {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-box;
+      display: box;
+    }
+
+    .list_slide .owl-carousel{height: 120px;
+        a{display: block;}
+    }
+    
+} 
+.famous_quote{margin-bottom: 15px;
+    .thumb{width: 45%; float: left; margin: 0 10px 0 0;
+        img{width: 100%; float: left;}
+    }
+    .quote_right_icon, .quote_left_icon{display: none;}
+    p{margin-bottom: 0;margin-top: 10px;}
+}
+.box_dotnews_insert{
+    .list_news_dot li{border-left: none !important;
+        &::before{top: 9px;}
+    }
+}
+.info_befo{padding-top: 15px; border-top: 1px solid #e7e7e7;}
+/*End Live container*/

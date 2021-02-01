@@ -1,0 +1,129 @@
+$vne_color: #9f224e;
+$vne_color_hover: #087CCE;
+$font-title: Montserrat,
+sans-serif,
+serif;
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%font-fea {
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+  -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+  -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+@import 'swiper.scss';
+
+.box-covid-2021 {
+  .inner-box-cv {
+    align-items: center;
+    background: #F7F7F7;
+    border: 1px solid #E5E5E5;
+    padding: 15px 142px 15px 15px;
+  }
+
+
+
+  .header-cv {
+    align-items: center;
+    width: 50%;
+  }
+
+  .txt-head {
+    flex-shrink: 1;
+
+    strong {
+      font: bold 18px/23px $font-title;
+      @extend %font-fea;
+    }
+
+    span {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 5px;
+      display: block;
+    }
+  }
+
+  .number-count {
+    font: bold 32px/40px $font-title;
+    margin-left: auto;
+    margin-right: 20px;
+    @extend %font-fea;
+    flex-shrink: 0;
+  }
+
+  .wrap-slide-cv {
+    width: 50%;
+    height: 40px;
+    padding: 0 30px 0 20px;
+    position: relative;
+    overflow: hidden;
+    border-left: 1px solid #BDBDBD;
+
+    .swiper-container {
+      height: 40px;
+    }
+
+    .swiper-slide {
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        margin-top: 8px;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .related {
+    position: absolute;
+  }
+
+  .button-box-cv {
+    background: #E5E5E5;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 17px;
+    position: absolute;
+    outline: none;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+
+    .arrow {
+      border: solid #757575;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 2px;
+    }
+
+    &.button-box-cv-next {
+      top: 21px;
+      line-height: 12px;
+
+      .arrow {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
+
+    &.button-box-cv-prev {
+      .arrow {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+      }
+    }
+  }
+}

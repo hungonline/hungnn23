@@ -1,0 +1,317 @@
+$url: "images" !default;
+/*background: url("#{$url}/graphics/demo.gif") no-repeat 0 0;*/
+.swipebox {
+  overflow: hidden!important;
+  img {
+  max-width: 100%;
+  }
+}
+#swipebox-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999!important;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background: #000;
+   img {
+    border: none!important;
+  }
+}
+
+#swipebox-slider {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  display: none;
+}
+
+#swipebox-slider .slide {
+    background: url("#{$url}/graphics/loading.gif") no-repeat center center;
+  height: 100%;
+  width: 100%;
+  line-height: 1px;
+  text-align: center;
+  display: inline-block;
+}
+
+#swipebox-slider .slide:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+  margin-right: -1px;
+}
+
+#swipebox-slider .slide img {
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+}
+
+#swipebox-description {
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 0;
+}
+
+#swipebox-description.expan_now {
+  height: 100%;
+}
+
+#swipebox-action {
+  bottom: -50px;
+}
+
+#swipebox-action.visible-bars {
+  bottom: 0;
+}
+
+#swipebox-action.force-visible-bars {
+  bottom: 0!important;
+}
+
+#swipebox-caption {
+  top: -50%;
+  text-align: center;
+}
+
+#swipebox-description {
+  bottom: -50%;
+  text-align: center;
+}
+
+#swipebox-caption.visible-bars {
+  top: 0;
+}
+
+#swipebox-close,#swipebox-next,#swipebox-prev {
+  display: none;
+}
+
+#swipebox-close.visible-bars,#swipebox-next.visible-bars,#swipebox-prev.visible-bars {
+  display: block;
+}
+
+#swipebox-description.visible-bars {
+  bottom: 0;
+  text-align: center;
+}
+
+#swipebox-caption.force-visible-bars {
+  top: 0!important;
+}
+
+#swipebox-description.force-visible-bars {
+  bottom: 0!important;
+}
+
+#swipebox-prev,#swipebox-next{
+  background: rgba(0,0,0,0.7);
+    border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  width: 43px;
+  height: 58px;
+  top: 40%;
+  z-index: 2;
+    text-align: center;
+    line-height: 58px;
+    .ic{color: #fff; font-size: 17px; line-height: 58px;}
+}
+
+#swipebox-next {
+    right: 10px;
+}
+
+#swipebox-prev {
+    left: 10px;
+}
+
+#swipebox-close {
+  /*background:url(images/graphics/icon_total_01.png) no-repeat -233px -77px;*/
+        
+  border: none!important;
+  text-decoration: none!important;
+  cursor: pointer;
+  position: absolute;
+  width: 46px;
+    text-align: center;
+  height: 46px;
+  top: 3px;
+  z-index: 3;
+  right: 0;
+    /*.ic{
+       padding: 4px 5px;
+        border: 2px solid #666;
+        border-radius: 50%;
+        vertical-align: middle;
+        line-height: 46px;
+        color: #666;
+    }*/
+    .ic-false{position: absolute; top: 15px;left: 15px;
+        &:before{
+        width: 23px; height: 23px;    
+        border: 2px solid #666;
+        border-radius: 50%;
+        content: "";position: absolute; top: -5px; left: -6px;
+            
+        }
+       
+    }
+}
+
+#swipebox-prev.disabled,
+#swipebox-next.disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: .3;
+}
+
+#swipebox-slider.rightSpring {
+  -moz-animation: rightSpring .3s;
+  -webkit-animation: rightSpring .3s;
+}
+
+#swipebox-slider.leftSpring {
+  -moz-animation: leftSpring .3s;
+  -webkit-animation: leftSpring .3s;
+}
+
+#swipebox-overlay {
+  background: #0d0d0d;
+}
+
+#swipebox-action,#swipebox-caption,#swipebox-description {
+  text-shadow: 1px 1px 1px #000;
+}
+
+#swipebox-action {
+  -webkit-box-shadow: 0 -1px -1px 1px #212121,inset 0 -1px -1px 1px #000;
+  -moz-box-shadow: 0 -1px -1px 1px #212121,inset 0 -1px -1px 1px #000;
+  box-shadow: 0 -1px -1px 1px #212121,inset 0 -1px -1px 1px #000;
+}
+
+#swipebox-caption {
+  color: #fff!important;
+  white-space: normal!important;
+  font-size: 13px;
+  font-family: arial;
+  font-weight: 700;
+  line-height: 13px;
+  display: none!important;
+}
+
+#swipebox-description {
+  color: #fff!important;
+  font-family: arial;
+  font-size: 13px;
+  white-space: normal;
+}
+
+#icon_expan {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+    border: 2px solid #6d6f71;
+    border-radius: 50%;
+  right: 20px;
+  top: 5px;
+    line-height: 18px;
+  z-index: 9999;
+    text-align: center;
+    /*.ic{
+        vertical-align: middle;
+        color: #6d6f71;
+        display: inline-block;
+        font-size: 10px;
+    }*/
+    .ic-caret-up{height: 8px;}
+}
+
+.expan_now {
+  background: #000;
+}
+
+.expan_now .icon_backdetail,.expan_now .icon_totalcomment {
+  display: none;
+}
+
+.decs_cript {
+  margin: 20px 0 0;
+  text-align: left;
+  padding: 25px 10px 10px;
+  background: rgba(0,0,0,0.7);
+}
+
+.decs_cript * {
+  color: #fff!important;
+}
+
+.decs_cript a {
+  text-decoration: underline;
+}
+
+.decs_cript p {
+  display: inline;
+}
+
+.expan_now .decs_cript {
+  height: 85%;
+  overflow: scroll;
+}
+
+.expan_now #icon_expan {
+    .ic{
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+}
+
+.icon_backdetail {
+  height: 26px;
+  background: #1a1a1a;
+  position: absolute;
+  left: 70px !important;
+  top: 5px;
+  padding: 0 10px 0 10px;
+  color: #58595b!important;
+  border-radius: 10px;
+    line-height: 26px;
+    .ic-facebook{background-position: -408px 0;}
+}
+
+.icon_totalcomment {
+  height: 26px;
+  background: #1a1a1a;
+  position: absolute;
+  left: 10px !important;
+  top: 5px;
+  border-radius: 10px;
+  color: #58595b!important;
+  font: 400 11px/26px arial;
+    span{color: #DCDCDC; display: inline-block; vertical-align: middle;padding: 0 4px 0 4px;}
+    /*.ic{
+            color: #DCDCDC;
+            font-size: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+    }*/
+    .ic-comment{width: 12px; margin-right: 2px;}
+}

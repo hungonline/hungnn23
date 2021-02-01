@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'vnexicon';
+    src:    url('fonts/vnexicon.eot?6pp032');
+    src:    url('fonts/vnexicon.eot?6pp032#iefix') format('embedded-opentype'),
+        url('fonts/vnexicon.ttf?6pp032') format('truetype'),
+        url('fonts/vnexicon.woff?6pp032') format('woff'),
+        url('fonts/vnexicon.svg?6pp032#vnexicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i.vnex {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'vnexicon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.vnex-camera:before {
+    content: "\e900";
+}
+.vnex-video:before {
+    content: "\e901";
+}
+.vnex-print:before {
+    content: "\e902";
+}
+.vnex-email:before {
+    content: "\e903";
+}
+.vnex-comment:before {
+    content: "\e904";
+}
+.vnex-bookmark:before {
+    content: "\e905";
+}
+.vnex-star:before {
+    content: "\e906";
+}
+.vnex-share:before {
+    content: "\e907";
+}
+.vnex-link:before {
+    content: "\e908";
+}
+.vnex-clock:before {
+    content: "\e909";
+}
+.vnex-search:before {
+    content: "\e90a";
+}
+.vnex-home:before {
+    content: "\e90b";
+}
+.vnex-config:before {
+    content: "\e90c";
+}
+.vnex-location:before {
+    content: "\e90d";
+}
+.vnex-expand:before {
+    content: "\e90e";
+}
+.vnex-next:before {
+    content: "\e90f";
+}
+.vnex-prev:before {
+    content: "\e910";
+}
+.vnex-play:before {
+    content: "\e911";
+}
+

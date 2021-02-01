@@ -1,0 +1,1151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Light box VNE</title>
+<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css" media="all" />
+<link rel="stylesheet" href="css/en_general_bk.css" media="all" />
+</head>
+<body>
+
+	<ul class="ul-lb">
+    	<li class="login_1">
+        	 Đăng nhập (Facebook - google)
+        </li>
+        <li class="login_2"> 
+        	 Đăng nhập (Google)
+        </li>
+        <li class="login_3"> 
+        	 Đăng nhập hệ thống tư vấn online
+        </li>
+        <li class="login_4"> 
+        	 Thông báo
+        </li>
+        <!-- 25/11 -->
+        <li class="login_5"> 
+        	 Chia sẻ bài viết qua Email
+        </li> 
+        <!-- 03/12 -->
+        <li class="login_6"> 
+        	 Xác nhận
+        </li> 
+        <li class="login_7"> 
+        	 Kết quả bình chọn
+        </li> 
+        <li class="lbox_map"> 
+        	xem ban do
+		</li> 
+
+		
+	</ul>
+	
+	<div id="mail_to_author" class="login-form">
+			<div class="ttOline">
+				Send mail to author
+			</div>
+			<div class="content_ligbox">
+				<div class="complete-form">
+					<p class="login-txt">
+						<span class="label_form">Your messages:</span>
+						<textarea class="txt-login"></textarea>
+					</p>
+					<div class="width_common">
+						<div class="left input_50">
+							<span class="label_form">Email:</span>
+							<p class="login-txt">
+								<input type="text" class="txt-login" value="" />
+							</p>
+							<p class="login-desc">Địa chỉ email không hợp lệ</p>
+						</div>
+						<div class="right input_50">
+							<span class="label_form">Fullname:</span>
+							<p class="login-txt">
+								<input type="text" class="txt-login" value="" />
+							</p>
+							<p class="login-desc">Địa chỉ email không hợp lệ</p>
+						</div>
+					</div>
+					<div class="sercurity">
+						<p class="share_email_label">Enter code</p>
+						<p class="login-txt">
+							<input type="text" class="txt-capcha" />
+							<img src="images/graphics/txt_capcha.gif"/>
+							<img src="images/graphics/refesh.gif"/>
+						</p>
+						<p class="login-desc">Mã xác nhận không đúng</p>
+					</div>
+					<div class="width_common btn_form">
+						<button type="button" class="btt-complete">Send</button>
+						<button type="button" class="btt-complete btt-remove">Deleted</button>
+					</div>
+				</div>
+				<div class="close-lb"></div>
+			</div>
+		</div>
+
+    <div id="baovipham">
+    <div class="ttOline">
+   		Báo vi phạm
+    </div>  
+    <div class="complete-form">  
+    	<div class="item_form">
+        	<p class="share_email_label">Chọn lý do vi phạm</p>	
+           <select class="txt_select_lydo">
+            	<option>Chọn lý do</option>
+            </select>
+            <p class="login-desc width_common">Xin hãy nhập họ tên</p>
+            <div class="clear">&nbsp;</div>
+        </div>
+        
+         <div class="item_form">
+           <textarea name="thongdiep" class="txt-login">Nội dung phản hồi khác</textarea>
+        </div>
+        <div class="item_form">
+        <p class="share_email_label">Địa chỉ email</p>	
+            <input type="text" class="txt-login" value="Email" />
+            <p class="login-desc width_common">Địa chỉ email không hợp lệ</p>
+        </div>
+        <div class="sercurity">					
+        	<p class="share_email_label">Mã xác nhận</p>					
+            <div class="width_common">
+            	<div class="block_inputconfirmcapcha">
+            	<div class="left block_txt_capcha"><input type="text" class="txt-capcha">
+                	 <p class="login-desc width_common">Mã xác nhận không đúng</p>	
+                </div>	
+            	<div class="input_capcha left"><img src="images/graphics/100-30.gif"></div>
+                <a href="#" class="left"><img src="images/graphics/refesh.gif"></a>						
+                </div>
+                <input type="button" value="Hoàn tất" class="btt-complete">					
+            </div>					
+           			
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>  
+    <div class="close-lb"></div>
+    <div class="clear">&nbsp;</div>
+</div>
+    <div id="gopykien">
+    <div class="ttOline">
+   		Đăng ký tham gia 
+    </div>  
+    <div class="complete-form">  
+    	<div class="item_form">
+        	<div class="item_haft left">
+            	<p class="share_email_label">Họ tên <span class="txt_vne">*</span></p>
+            	 <input type="text" class="txt-login" value="Họ tên người gửi" />
+            	 <p class="login-desc width_common">Xin hãy nhập họ tên</p>
+            </div>
+           <div class="item_haft right">
+            	<p class="share_email_label">Tuổi</p>
+            	 <input type="text" class="txt-login" value="Họ tên người gửi" />
+            	 <p class="login-desc width_common">Xin hãy nhập tuổi</p>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div class="item_form">
+        	<div class="item_haft left">
+            	<p class="share_email_label">Email <span class="txt_vne">*</span></p>
+            	 <input type="text" class="txt-login" value="Họ tên người gửi" />
+            	 <p class="login-desc width_common">Xin hãy nhập Email</p>
+            </div>
+           <div class="item_haft right">
+            	<p class="share_email_label">địa chỉ</p>
+            	 <input type="text" class="txt-login" value="Họ tên người gửi" />
+            	 <p class="login-desc width_common">Xin hãy Địa chỉ</p>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div class="item_form">
+        	<p class="share_email_label">Bác sĩ trả lời</p>
+        	<select class="txt_select_bacsi">
+            	<option>Chọn bác sĩ</option>
+            </select>
+            <div class="clear">&nbsp;</div>
+        </div>
+        
+         <div class="item_form">
+         	<p class="share_email_label">Câu hỏi<span class="txt_vne">*</span></p>
+           <textarea name="thongdiep" class="txt-login">Nội dung phản hồi khác</textarea>
+        </div>
+        
+        <div class="sercurity">					
+        	<p class="share_email_label">Mã xác nhận</p>					
+            <div class="width_common">
+            	<div class="block_inputconfirmcapcha">
+            	<div class="left block_txt_capcha"><input type="text" class="txt-capcha">
+                	 <p class="login-desc width_common">Mã xác nhận không đúng</p>	
+                </div>	
+            	<div class="input_capcha left"><img src="images/graphics/100-30.gif"></div>
+                <a href="#" class="left"><img src="images/graphics/refesh.gif"></a>						
+                </div>
+                <input type="button" value="Hoàn tất" class="btt-complete">					
+            </div>					
+           			
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>  
+    <div class="close-lb"></div>
+    <div class="clear">&nbsp;</div>
+</div>
+    
+  <div id="gopykien">
+    <div class="ttOline">
+   		Nhận xét về giao diện mới của VnExpress 
+    </div>  
+    <div class="complete-form">  
+    	<div class="item_form">
+            <input type="text" class="txt-login" value="Họ tên người gửi" />
+            <p class="login-desc width_common">Xin hãy nhập họ tên</p>
+        </div>
+        <div class="item_form">
+            <input type="text" class="txt-login" value="Email" />
+            <p class="login-desc width_common">Địa chỉ email không hợp lệ</p>
+        </div>
+         <div class="item_form">
+           <textarea name="thongdiep" class="txt-login">Nội dung phản hồi khác</textarea>
+        </div>
+        <div class="list_radio width_common">
+        	<div class="bg_line width_common">
+            	<div class="block_radio_col">
+                	<p class="width_common txt_colum_radio">Cấu trúc</p>
+                    <div class="item_radio">
+                    	<input type="radio" id="answear01" name="answear"/>
+                        <label for="answear01">Dễ hiểu</label>
+                    </div>
+                     <div class="item_radio">
+                    	<input type="radio" id="answear02"  name="answear"/>
+                        <label for="answear02">Khó hiểu</label>
+                    </div>
+                     <div class="item_radio">
+                    	<input type="radio" id="answear03"  name="answear"/>
+                        <label for="answear03">Mạch lạc</label>
+                    </div>
+                     <div class="item_radio">
+                    	<input type="radio" id="answear04"  name="answear"/>
+                        <label for="answear04">Rối rắm</label>
+                    </div>
+                </div>
+                <div class="block_radio_col">
+                	<p class="width_common txt_colum_radio">Trình bày bài viết</p>
+                    <div class="item_radio">
+                    	<input type="radio" id="answear05" name="answear"/>
+                        <label for="answear05">Dễ đọc</label>
+                    </div>
+                     <div class="item_radio">
+                    	<input type="radio" id="answear06"  name="answear"/>
+                        <label for="answear06">Khó đọc</label>
+                    </div>
+                </div>
+                <div class="block_radio_col">
+                	<p class="width_common txt_colum_radio">Tìm kiếm thông tin</p>
+                    <div class="item_radio">
+                    	<input type="radio" id="answear07" name="answear"/>
+                        <label for="answear07">Dễ đọc</label>
+                    </div>
+                     <div class="item_radio">
+                    	<input type="radio" id="answear08"  name="answear"/>
+                        <label for="answear08">Khó đọc</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sercurity">					
+        	<p class="share_email_label">Mã xác nhận</p>					
+            <div class="width_common">
+            	<div class="block_inputconfirmcapcha">
+            	<div class="left block_txt_capcha"><input type="text" class="txt-capcha">
+                	 <p class="login-desc width_common">Mã xác nhận không đúng</p>	
+                </div>	
+            	<div class="input_capcha left"><img src="images/graphics/100-30.gif"></div>
+                <a href="#" class="left"><img src="images/graphics/refesh.gif"></a>						
+                </div>
+                <input type="button" value="Hoàn tất" class="btt-complete">					
+            </div>					
+           			
+        </div>
+        <div class="clear">&nbsp;</div>
+    </div>  
+    <div class="close-lb"></div>
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="thoitiet">
+    <div class="title_thoitiet">
+   		<div class="left txt_title_thoitiet">Thời tiết</div>
+        <div class="right txt_666 txt_time_thoitiet">Cập nhật: 13h ngày 02/12/2013</div>
+    </div>  
+    <div class="width_common">  
+    <div class="content_thoitiet">
+   		<div class="block_location">
+        	<div class="location width_common">Khu vực: <strong class="txt_vne">TP Hồ Chí Minh</strong><a href="javascript:;" class="change_location">Thay đổi</a></div>
+            <div class="width_common search_location">
+                	<select class="txt_select_location">
+                    	<option>Hồ chí Minh</option>
+                        <option>Hà Nội</option>
+                    </select>
+            </div>
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div class="block_temp width_common">
+        	<div class="block_info_temp">
+            	<img src="images/graphics/img_blank.gif" width="113" height="92" class="left icon_thoitiet_big tt_big_15" />
+                <div class="txt_doc_big">27</div>
+            </div>
+            <div class="more_info_temp">
+            	<ul class="list_news_dot_3x3_300 txt_14">
+                    <li>
+                    	Trời nắng, nhiều mây, có lúc có mưa rào & dông ở một vài nơi
+                    </li>
+                    <li>
+                    	<span class="txt_666">Độ ẩm:</span> 84%
+                    </li>
+                    <li>
+                    	<span class="txt_666">Hướng gió:</span> Gió Đông Bắc - tốc độ 4m/s
+                     </li>
+                  </ul>
+            </div>
+        </div>
+        <div class="width_common furture_tem">
+        	<p class="txt_14">Dự báo thời tiết 3 ngày tới</p>
+        </div>
+        <div class="width_common">
+        	<div class="block_txt_des_tt">
+            	<div class="txt_thoigian">Thời gian</div>
+            	<div class="txt_nhietdo">Nhiệt độ</div>
+                <div class="txt_thoitiet">Thời tiết</div>
+            </div>
+            <ul class="tt_detail">
+            	<li>
+                	<div class="day width_common">Thứ năm, 03/10/2013</div>
+                    <div class="width_common txt_center">
+                    	<img src="images/graphics/img_blank.gif" class="icon_thoitiet_small tt_small_1" alt=""/>
+                    </div>
+                    <div class="width_common txt_center"><strong>24 - 27°C</strong></div>
+                    <div class="width_common">Đêm không mưa, sáng sớm có sương mù nhẹ, ngày nắng</div>
+                </li>
+                <li>
+                	<div class="day width_common">Thứ năm, 03/10/2013</div>
+                    <div class="width_common txt_center">
+                    	<img src="images/graphics/img_blank.gif" class="icon_thoitiet_small tt_small_1" alt=""/>
+                    </div>
+                    <div class="width_common txt_center"><strong>24 - 27°C</strong></div>
+                    <div class="width_common">Đêm không mưa, sáng sớm có sương mù nhẹ, ngày nắng</div>
+                </li>
+                <li>
+                	<div class="day width_common">Thứ năm, 03/10/2013</div>
+                    <div class="width_common txt_center">
+                    	<img src="images/graphics/img_blank.gif" class="icon_thoitiet_small tt_small_1" alt=""/>
+                    </div>
+                    <div class="width_common txt_center"><strong>24 - 27°C</strong></div>
+                    <div class="width_common">Đêm không mưa, sáng sớm có sương mù nhẹ, ngày nắng</div>
+                </li>
+            </ul>
+        </div>
+        
+        
+    </div> 
+    </div>  
+    <div class="close-lb"></div>
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="ratinglt">
+    <div class="title_thoitiet">
+   		
+          <div class="ttOline">
+				Xác nhận
+			</div>    
+    </div>  
+    <div class="width_common">  
+    	<div class="rating_bar">
+        	<div class="left txt_danhgiacuaban"><strong>Đánh giá của bạn</strong></div>
+        	<div id="rate2" class="rating">
+            <div class="block_one_start">
+            <div class="star star-left"><a title="Give it 0.5/5" href="#0.5" style="width: 100%;">0.5</a></div>
+            <div class="star star-right"><a title="Give it 1/5" href="#1" style="width: 100%;">1</a></div>
+            </div>
+            <div class="block_one_start">
+            <div class="star star-left"><a title="Give it 0.5/5" href="#0.5" style="width: 100%;">0.5</a></div>
+            <div class="star star-right"><a title="Give it 1/5" href="#1" style="width: 100%;">1</a></div>
+            </div>
+            <div class="block_one_start">
+            <div class="star star-left"><a title="Give it 0.5/5" href="#0.5" style="width: 100%;">0.5</a></div>
+            <div class="star star-right"><a title="Give it 1/5" href="#1" style="width: 100%;">1</a></div>
+            </div>
+            <div class="block_one_start">
+            <div class="star star-left"><a title="Give it 0.5/5" href="#0.5" style="width: 100%;">0.5</a></div>
+            <div class="star star-right"><a title="Give it 1/5" href="#1" style="width: 100%;">1</a></div>
+            </div>
+            <div class="block_one_start">
+            <div class="star star-left"><a title="Give it 0.5/5" href="#0.5" style="width: 100%;">0.5</a></div>
+            <div class="star star-right"><a title="Give it 1/5" href="#1" style="width: 100%;">1</a></div>
+            </div>
+            
+        </div>
+        	<div class="left txt_numbdanhgia"><strong>5</strong><span class="txt_666">/10</span></div>
+            <div class="width_common txt_error">Bạn chưa đánh giá</div>
+             <div class="clear">&nbsp;</div>
+        </div>
+        <div class="rating_sercut form_thamgia">
+        	<div class="width_common txt_form txt_14">Nhập mã xác nhận</div>
+             
+        	<div class="width_common">
+            	<div class="block_input_capcha left">
+                    
+                    <input type="text" class="txt_input txt-capcha">
+                   
+                </div>
+                <div class="capcha left"><a href="#"><img width="77" height="30" src="images/graphics/code_image.png"></a></div>
+                <a href="#" class="btn_refrest"><img src="images/graphics/refesh.gif"></a>
+                <input type="button" class="btt-complete" value="Hoàn tất">
+            </div>
+            <div class="width_common login-desc">Mã xác nhận không đúng</div>
+            
+       		
+            
+        	<div class="clear">&nbsp;</div>
+        </div>
+    </div>  
+    <div class="close-lb"></div>
+    <div class="clear">&nbsp;</div>
+</div>
+<div id="ratinglt_result">
+    <div class="title_thoitiet">
+        <div class="ttOline">
+				Kết quả đánh giá
+			</div>
+    </div>  
+    <div class="width_common content_ligbox">  
+    	<div class="block_result_rating">
+    		<div class="width_common title_result">Tổng cộng: <strong class="txt_vne">16.333 phiếu</strong></div>
+            <div class="width_common content_result_rating">
+            	<div class="width_colrating width_common">
+                	<div class="col_rating col1" style="height:10px;">&nbsp;</div>
+                    <div class="col_rating col2" style="height:3px;">&nbsp;</div>
+                    <div class="col_rating col3" style="height:30px;">&nbsp;</div>
+                    <div class="col_rating col4" style="height:3px;">&nbsp;</div>
+                    <div class="col_rating col5" style="height:50px;">&nbsp;</div>
+                    <div class="col_rating col6" style="height:3px;">&nbsp;</div>
+                    <div class="col_rating col7" style="height:100px;">&nbsp;</div>
+                    <div class="col_rating col8" style="height:3px;">&nbsp;</div>
+                    <div class="col_rating col9" style="height:20px;">&nbsp;</div>
+                    <div class="col_rating col10" style="height:3px;">&nbsp;</div>
+                </div>
+                <div class="width_common title_result">Có <strong class="txt_vne">3.100</strong>/16.333 độc giả đã bình chọn <strong class="txt_vne">7 điểm</strong></div>
+            </div>
+            
+            <ul class="num_rating">
+            	<li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+            
+            <div class="clear"></div>	
+        </div>
+        
+    </div>  
+    <div class="close-lb"></div>
+    <div class="clear">&nbsp;</div>
+</div>
+
+<div id="login-vne6" class="login-form">
+	<div class="ttOline">
+    	Xác nhận
+    </div> 
+    <div class="content_ligbox">   
+	<div class="complete-form">        
+        <div class="sercurity">
+        	<p class="input_capcha">Nhập mã xác nhận</p>
+            <p class="login-txt">
+                <input type="text" class="txt-capcha" />
+                <img src="images/100-30.gif" />
+                <img src="images/refesh.gif" />
+                <input type="button" class="btt-complete" value="Hoàn tất" />
+            </p>
+            <p class="login-desc">Mã xác nhận không đúng</p>
+        </div>
+    </div>   
+    <div class="close-lb"></div>
+    </div>
+</div>
+
+<!--<div id="login-vne6" class="login-form">
+	<div class="ttOline">
+    	Xác nhận
+    </div>    
+	<div class="complete-form">        
+        <div class="sercurity">
+        	<p class="input_capcha">Nhập mã xác nhận</p>
+            <p class="login-txt">
+                <input type="text" class="txt-capcha" />
+                <img src="images/100-30.gif" />
+                <img src="images/refesh.gif" />
+                <input type="button" class="btt-complete" value="Hoàn tất" />
+            </p>
+            <p class="login-desc">Mã xác nhận không đúng</p>
+        </div>
+    </div>   
+    <div class="close-lb"></div>
+</div>-->
+
+<!--<div id="login-vne7" class="login-form">
+	<div class="ttOline">
+    	Kết quả bình chọn
+    </div>    
+	<div class="rs_vote">
+    	<p class="question_vote">Bạn đánh giá thế nào về chủ trương bỏ thị đại học hiện nay?</p>
+        <p class="p_infoVote">
+        	<span class="time_vote">Thứ sáu, 15/11/2013 13:59 GMT+7</span>
+            <span class="total_vote">Tổng cộng: <label>16333 phiếu</label></span>
+        </p>
+    </div>  
+    <div class="list_rs width_common">
+    	<ul class="scroll_thongke">
+        	<li>            	
+                <div class="info_result">
+                    <div class="rsV_left">Hợp lý</div>
+                    <div class="rsV_right"><label>2210</label> phiếu</div>
+                    <div class="scroll_color">
+                        <span style="width:62%;" class="bg_center_scroll" percent="92">
+                        	&nbsp;
+                            <label class="txt_number_ketqua">62%</label>
+                        </span>
+                    </div>
+                </div>                    
+            </li>
+            <li>            	
+                <div class="info_result">
+                    <div class="rsV_left">Không hợp lý</div>
+                    <div class="rsV_right"><label>2210</label> phiếu</div>
+                    <div class="scroll_color">
+                        <span style="width:62%;" class="bg_center_scroll" percent="92">
+                        	&nbsp;
+                            <label class="txt_number_ketqua">62%</label>
+                        </span>
+                    </div>
+                </div>                    
+            </li>
+            <li>            	
+                <div class="info_result">
+                    <div class="rsV_left">Hợp lý nhưng không thể làm ngay</div>
+                    <div class="rsV_right"><label>2210</label> phiếu</div>
+                    <div class="scroll_color">
+                        <span style="width:62%;" class="bg_center_scroll" percent="92">
+                        	&nbsp;
+                            <label class="txt_number_ketqua">62%</label>
+                        </span>
+                    </div>
+                </div>                    
+            </li>
+            <li>            	
+                <div class="info_result">
+                    <div class="rsV_left">Không nên làm</div>
+                    <div class="rsV_right"><label>2210</label> phiếu</div>
+                    <div class="scroll_color">
+                        <span style="width:62%;" class="bg_center_scroll" percent="92">
+                        	&nbsp;
+                            <label class="txt_number_ketqua">62%</label>
+                        </span>
+                    </div>
+                </div>                    
+            </li>
+            <li>            	
+                <div class="info_result">
+                    <div class="rsV_left">Quá tệ</div>
+                    <div class="rsV_right"><label>2210</label> phiếu</div>
+                    <div class="scroll_color">
+                        <span style="width:62%;" class="bg_center_scroll" percent="92">
+                        	&nbsp;
+                            <label class="txt_number_ketqua">62%</label>
+                        </span>
+                    </div>
+                </div>                    
+            </li>
+        </ul>
+    </div>
+    <div class="close-lb"></div>
+</div>-->
+<!--<div id="login-vne1" class="login-form">
+	<div class="login-left">
+    	<p class="login-type">Đăng nhập bằng</p>
+        <p class="p-social">
+        	<a href="#" class="login-social lg-facebook"></a>
+        </p>
+        <p class="p-social">
+        	<a href="#" class="login-social lg-google"></a>
+        </p>
+    </div>
+    <div class="login-right">
+    	
+        <p class="login-txt">
+        	<input type="text" class="txt-login" value="Email" />
+        </p>
+        <p class="login-desc">Địa chỉ email không hợp lệ</p>
+        <p class="login-txt">
+        	<input type="text" class="txt-login" value="Họ tên" />
+        </p>
+        <p class="login-desc">Xin hãy nhập họ tên</p>
+        <p class="login-btt">
+        	<input type="button" class="btt-complete" value="Hoàn tất" />
+        </p>
+    </div>
+    <div class="close-lb"></div>
+</div>-->
+
+<!--<div id="login-vne2" class="login-form">
+	<div class="complete-form">
+        <p class="login-type">Hoàn tất thông tin của bạn</p>
+        <div class="login-left">
+            <img src="images/g-48-48.gif" />
+        </div>
+        <div class="login-right">            
+            <p class="login-txt">
+                <input type="text" class="txt-login" value="Email" />
+            </p>
+            <p class="login-desc">Địa chỉ email không hợp lệ</p>
+            <p class="login-txt">
+                <input type="text" class="txt-login" value="Họ tên" />
+            </p>
+            <p class="login-desc">Xin hãy nhập họ tên</p>
+            <p class="login-btt">
+                <input type="button" class="btt-complete" value="Hoàn tất" />
+            </p>
+        </div> 
+    </div>   
+    <div class="close-lb"></div>
+</div>-->
+
+<!--<div id="login-vne3" class="login-form">
+	<div class="ttOline">
+    	Đăng nhập hệ thống tư vấn Online
+    </div>    
+	<div class="complete-form">
+        <p class="login-txt">
+            <input type="text" class="txt-login" value="Email" />
+        </p>
+        <p class="login-desc">Địa chỉ email không hợp lệ</p>
+        <p class="login-txt">
+            <input type="text" class="txt-login" value="Họ tên" />
+        </p>
+        <p class="login-desc">Xin hãy nhập họ tên</p>
+        <div class="sercurity">
+            <p class="login-txt">
+                <input type="text" class="txt-capcha" />
+                <img src="images/100-30.gif" />
+                <img src="images/refesh.gif" />
+                <input type="button" class="btt-complete" value="Hoàn tất" />
+            </p>
+            <p class="login-desc">Mã xác nhận không đúng</p>
+        </div>
+    </div>   
+    <div class="close-lb"></div>
+</div>-->
+
+<!--<div id="login-vne4" class="login-form">
+	<div class="ttOline">
+    	Thông báo
+    </div>    
+	<div class="complete-form">
+        Cảm ơn bạn đã gửi phản hồi thành công
+    </div>   
+    <div class="close-lb"></div>
+</div>-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript">
+	var html_login_1 ='\
+		<div  class="login-form">\
+			<div id="login-vne1" class="content_ligbox">\
+				<div class="login-left">\
+					<p class="login-type">Đăng nhập bằng</p>\
+					<p class="p-social">\
+						<a href="#" class="login-social lg-facebook"><i class="fa fa-facebook"></i>Sign in with Facebook</a>\
+					</p>\
+					<p class="p-social">\
+						<a href="#" class="login-social lg-google"><i class="fa fa-google"></i>Sign in with Google</a>\
+					</p>\
+				</div>\
+				<div class="login-right">\
+					<p class="">Or enter your infomation</p>\
+					<div class="item_login">\
+					<p class="login-txt">\
+						<input type="text" class="txt-login" value="Email" />\
+					</p>\
+					<p class="login-desc">erro email</p>\
+					</div>\
+					<div class="item_login">\
+					<p class="login-txt">\
+						<input type="text" class="txt-login" value="Full Name" />\
+					</p>\
+					<p class="login-desc">erro name</p>\
+					</div>\
+					<p class="login-btt">\
+						<input type="button" class="btt-complete" value="Submit" />\
+					</p>\
+				</div>\
+				<div class="close-lb"></div>\
+				<div class="clear"></div>\
+			</div>\
+		</div>\
+	';
+	
+	var html_login_2 ='\
+		<div  class="login-form">\
+			<div class="ttOline">\
+				Bạn cần lựa chọn một tài khoản để gửi bình luận\
+			</div>\
+		<div id="login-vne2" class="content_ligbox">\
+			<div class="complete-form">\
+				<p class="login-type">Hoàn tất thông tin của bạn</p>\
+				<div class="login-left">\
+					<img src="images/graphics/g-48-48.gif" />\
+				</div>\
+				<div class="login-right">\
+					<div class="item_login">\
+					<p class="login-txt">\
+						<input type="text" class="txt-login" value="Email" />\
+					</p>\
+					<p class="login-desc">Địa chỉ email không hợp lệ</p>\
+					</div>\
+					<div class="item_login">\
+					<p class="login-txt">\
+						<input type="text" class="txt-login" value="Họ tên" />\
+					</p>\
+					<p class="login-desc">Xin hãy nhập họ tên</p>\
+					</div>\
+					<p class="login-btt">\
+						<input type="button" class="btt-complete" value="Hoàn tất" />\
+					</p>\
+				</div>\
+			</div>\
+			<div class="close-lb"></div>\
+			<div class="clear"></div>\
+		</div>\
+	</div>\
+	';
+	
+	
+	var html_login_3 ='\
+		<div id="login-vne3" class="login-form">\
+			<div class="ttOline">\
+				Đăng nhập hệ thống tư vấn Online\
+			</div>\
+			<div class="content_ligbox">\
+			<div class="complete-form ">\
+				<div class="item_login">\
+				<p class="login-txt">\
+					<input type="text" class="txt-login" value="Email" />\
+				</p>\
+				<p class="login-desc">Địa chỉ email không hợp lệ</p>\
+				</div>\
+				<div class="item_login">\
+				<p class="login-txt">\
+					<input type="text" class="txt-login" value="Họ tên" />\
+				</p>\
+				<p class="login-desc">Xin hãy nhập họ tên</p>\
+				</div>\
+				<div class="sercurity">\
+					<p class="login-txt">\
+						<input type="text" class="txt-capcha" />\
+						<img src="images/100-30.gif" />\
+						<img src="images/refesh.gif" />\
+						<input type="button" class="btt-complete" value="Hoàn tất" />\
+					</p>\
+					<p class="login-desc">Mã xác nhận không đúng</p>\
+				</div>\
+			</div>\
+			<div class="close-lb"></div>\
+			<div class="clear"></div>\
+			</div>\
+		</div>\
+	';
+	
+	var html_login_4 ='\
+		<div id="login-vne4" class="login-form">\
+			<div class="ttOline">\
+				Thông báo\
+			</div>\
+			<div class="content_ligbox">\
+			<div class="complete-form">\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+				Cảm ơn bạn đã gửi phản hồi thành công\
+			</div>\
+			<div class="close-lb"></div>\
+			<div class="clear"></div>\
+			</div>\
+		</div>\
+	';
+
+	/*25.11*/
+	var html_login_5 ='\
+		<div id="login-vne5" class="login-form">\
+			<div class="ttOline">\
+				Email\
+			</div>\
+			<div class="content_ligbox">\
+			<div class="complete-form">\
+				<p class="login-txt">\
+					<input type="text" class="txt-login" value="Email" />\
+				</p>\
+				<p class="login-desc">Địa chỉ email không hợp lệ</p>\
+				<p class="login-txt">\
+					<input type="text" class="txt-login" value="Họ tên người gửi" />\
+				</p>\
+				<p class="login-desc">Xin hãy nhập họ tên</p>\
+				<p class="login-txt">\
+					<input type="text" class="txt-login" value="Email người nhận" />\
+				</p>\
+				<p class="login-desc">Địa chỉ email không hợp lệ</p>\
+				<p class="login-txt">\
+					<textarea class="txt-login" name="thongdiep">Thông điệp gửi kèm</textarea>\
+				</p>\
+				<div class="sercurity">\
+					<p class="share_email_label">Mã xác nhận</p>\
+					<p class="login-txt">\
+						<input type="text" class="txt-capcha" />\
+						<img src="images/100-30.gif" />\
+						<img src="images/refesh.gif" />\
+						<input type="button" class="btt-complete" value="Hoàn tất" />\
+					</p>\
+					<p class="login-desc">Mã xác nhận không đúng</p>\
+				</div>\
+			</div>\
+			<div class="close-lb"></div>\
+		</div>\
+		</div>\
+	';
+	
+	var html_login_6 ='\
+	<div id="login-vne6" class="login-form">\
+		<div class="ttOline">\
+			Xác nhận\
+		</div>\
+		<div class="content_ligbox">\
+		<div class="complete-form">\
+			<div class="sercurity">\
+				<p class="input_capcha">Nhập mã xác nhận</p>\
+				<p class="login-txt">\
+					<input type="text" class="txt-capcha" />\
+					<img src="images/100-30.gif" />\
+					<img src="images/refesh.gif" />\
+					<input type="button" class="btt-complete" value="Hoàn tất" />\
+				</p>\
+				<p class="login-desc">Mã xác nhận không đúng</p>\
+			</div>\
+		</div>\
+		<div class="close-lb"></div>\
+		</div>\
+	</div>\
+	';
+	
+	var html_login_7='\
+	<div id="login-vne7" class="login-form">\
+		<div class="ttOline">\
+			Kết quả bình chọn\
+		</div>\
+		<div class="rs_vote">\
+			<p class="question_vote">Bạn đánh giá thế nào về chủ trương bỏ thị đại học hiện nay?</p>\
+			<p class="p_infoVote">\
+				<span class="time_vote">Thứ sáu, 15/11/2013 13:59 GMT+7</span>\
+				<span class="total_vote">Tổng cộng: <label>16333 phiếu</label></span>\
+			</p>\
+		</div>\
+		<div class="complete-form">\
+		<div class="list_rs width_common">\
+			<ul class="scroll_thongke">\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Không hợp lý</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Hợp lý nhưng không thể làm ngay</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Không nên làm</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+				<li>\
+					<div class="info_result">\
+						<div class="rsV_left">Quá tệ</div>\
+						<div class="rsV_right"><label>2210</label> phiếu</div>\
+						<div class="scroll_color">\
+							<span style="width:62%;" class="bg_center_scroll" percent="92">\
+								&nbsp;\
+								<label class="txt_number_ketqua">62%</label>\
+							</span>\
+						</div>\
+					</div>\
+				</li>\
+			</ul>\
+		</div>\
+		</div>\
+		<div class="close-lb"></div>\
+	</div>\
+	';
+	var html_map ='\
+		<div class="login-form">\
+			<div class="ttOline">\
+				Bản đồ\
+			</div>\
+			<div class="complete-form">\
+				<div class="mapgoogle"><img src="images/graphics/img_map.jpg" alt=""= /></div>\
+			</div>\
+			<div class="close-lb"></div>\
+			<div class="clear"></div>\
+		</div>\
+	';
+	var lbox_datlamtranchu ='\
+		<div class="login-form">\
+			<div class="ttOline">\
+				<img src="images/icons/icon_ione_65x24.jpg" alt=""= /> <span class="drash">/</span> Đặt iOne làm trang chủ\
+			</div>\
+			<div class="complete-form">\
+				<div class="mapgoogle"><img src="images/graphics/img_datlamtrangchu.jpg" alt=""= /></div>\
+			</div>\
+			<div class="close-lb"></div>\
+			<div class="clear"></div>\
+		</div>\
+	';
+	var html_camnan ='\
+		<div class="login-form">\
+			<div class="ttOline">\
+				Cẩm nan gởi bài viết\
+			</div>\
+			<div class="content_ligbox">\
+			<div class="complete-form">\
+				<div class="camnan_content">\
+                	<ul class="list_news">\
+                    	<li>\
+                        	<p class="question">\
+                            	Q: Những ai được gửi bài cộng tác cho iOne?\
+							</p>\<p class="answear"><strong>A</strong>: Yêu cầu của chúng tớ rất đơn giản. Chỉ cần bạn là người trẻ hoặc quan tâm đến giới trẻ; bài viết của bạn xoanh quanh đời sống, sở thích của độc giả trẻ đều có thể gửi cho iOne.</p>\
+						</li>\
+                        <li>\
+                        	<p class="question">\
+                            	Q: Những ai được gửi bài cộng tác cho iOne?\
+							</p>\<p class="answear"><strong>A</strong>: Yêu cầu của chúng tớ rất đơn giản. Chỉ cần bạn là người trẻ hoặc quan tâm đến giới trẻ; bài viết của bạn xoanh quanh đời sống, sở thích của độc giả trẻ đều có thể gửi cho iOne.</p>\
+						</li>\
+						<li>\
+                        	<p class="question">\
+                            	Q: Những ai được gửi bài cộng tác cho iOne?\
+							</p>\<p class="answear"><strong>A</strong>: Yêu cầu của chúng tớ rất đơn giản. Chỉ cần bạn là người trẻ hoặc quan tâm đến giới trẻ; bài viết của bạn xoanh quanh đời sống, sở thích của độc giả trẻ đều có thể gửi cho iOne.</p>\
+						</li>\
+						<li>\
+                        	<p class="question">\
+                            	Q: Những ai được gửi bài cộng tác cho iOne?\
+							</p>\<p class="answear"><strong>A</strong>: Yêu cầu của chúng tớ rất đơn giản. Chỉ cần bạn là người trẻ hoặc quan tâm đến giới trẻ; bài viết của bạn xoanh quanh đời sống, sở thích của độc giả trẻ đều có thể gửi cho iOne.</p>\
+						</li>\
+						<li>\
+                        	<p class="question">\
+                            	Q: Những ai được gửi bài cộng tác cho iOne?\
+							</p>\
+							<p class="answear"><strong>A</strong>: Yêu cầu của chúng tớ rất đơn giản. Chỉ cần bạn là người trẻ hoặc quan tâm đến giới trẻ; bài viết của bạn xoanh quanh đời sống, sở thích của độc giả trẻ đều có thể gửi cho iOne.</p>\
+						</li>\
+                    </ul>\
+                </div>\
+			</div>\
+			<div class="close-lb"></div>\
+			<div class="clear"></div>\
+			</div>\
+		</div>\
+	';	
+
+	$('.login_1').click(function(){
+		Sexy.notice(html_login_1,100);		
+	})
+	$('.login_2').click(function(){
+		Sexy.notice(html_login_2);		
+	})
+	$('.login_3').click(function(){
+		Sexy.notice(html_login_3);		
+	})
+	$('.login_4').click(function(){
+		Sexy.notice(html_login_4);		
+	})
+	/*25.11*/
+	$('.login_5').click(function(){
+		Sexy.notice(html_login_5);		
+	})
+	/*03.12*/
+	$('.login_6').click(function(){
+		Sexy.notice(html_login_6);		
+	})
+	$('.login_7').click(function(){
+		Sexy.notice(html_login_7);		
+	})
+	$('.lbox_map').click(function(){
+		Sexy.notice(html_map);		
+	})
+	$('.lbox_datlamtranchu').click(function(){
+		Sexy.notice(lbox_datlamtranchu);		
+	})
+	$('.lbox_camnanbaiviet').click(function(){
+		Sexy.notice(html_camnan);		
+	})
+	$('.lbox_mailtoauthor').click(function(){
+		Sexy.notice(html_mailtoauthor);		
+	})
+	$('.change_location').click(
+		function(){
+			if($('.search_location').css('display')=='block'){
+				$('.search_location').fadeOut();
+				$('.change_location').removeClass('active');
+			}
+			else{
+				$('.search_location').fadeIn();
+				$('.change_location').addClass('active');
+			}
+			
+		}
+	);
+</script>
+<script src="js/rating.js"></script>
+<script>
+$(function(){
+	$('#rate2').rating('www.url.php', {maxvalue:0, curvalue:.5});
+})
+</script>
+
+</body>
+</html>
