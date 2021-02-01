@@ -24,7 +24,7 @@
 
 	//OPEN & CLOSE MAIN MENU*/
 	function closeMenu() {
-		$('.all-menu').click(function () {
+		$('.all-menu-tablet').click(function () {
 			$('body').addClass('show_main_menu');
 		});
 

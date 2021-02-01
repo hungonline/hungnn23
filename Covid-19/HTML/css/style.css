@@ -5085,6 +5085,11 @@ svg.ic {
   font-size: 16px;
   vertical-align: text-bottom;
 }
+
+:root {
+  --color1: #9F224E;
+  --color2: #fff;
+}
 @media (max-width: 600px) {
   .btn24hqua, .evne{display: none;}
   .top-header-folder .flexbox{
