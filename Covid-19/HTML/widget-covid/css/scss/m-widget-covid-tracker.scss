@@ -1,0 +1,233 @@
+/**WIDGET COVID 03**/
+@mixin cubic-transition($delay, $duration, $property) {
+    transition: {
+        duration: $duration;
+        property: $property;
+        timing-function: cubic-bezier(.7, 1, .7, 1);
+    }
+}
+
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+.widget-covid-tracker {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        list-style: none;
+    }
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: calc(100% + 30px); float: left; margin-left: -15px;
+    margin-bottom: 20px;
+    font-family: Arial,
+    sans-serif !important;
+    color: #222;
+    font-size: 14px;
+    border: 1px solid #e5e5e5;
+    background: #f7f7f7;
+    padding: 15px;
+
+    .top-head-cov {
+        width: 100%;
+        float: left;
+        display: flex;
+        font-size: 14px;
+        line-height: 14px;
+        color: #757575;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 10px;
+
+        .txt-top {
+            font-family: "Merriweather", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 150%;
+            color: #222;
+            font-weight: bold;
+        }
+
+        .info-txt-top {
+            width: 100%;
+            line-height: 130%;
+            margin-top: 5px;
+
+            .flash {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 10px;
+                color: #e5e5e5;
+            }
+        }
+    }
+
+    .search-local {
+        width: 100%;
+        float: left;
+        position: relative;
+        padding-right: 50px;
+        border-radius: 3px;
+        border: 1px solid #e5e5e5;
+        margin-top: 10px;
+        background: #fff;
+
+        .input-local {
+            width: 100%;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .button-local {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            text-align: center;
+            line-height: 40px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+            outline: none;
+
+            img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
+        .tt-menu {
+            border: 1px solid #E5E5E5;
+            background: #FFFFFF;
+            padding-top: 15px;
+            position: absolute;
+            width: 100%;
+            top: 45px !important;
+            display: none;
+            z-index: 2 !important;
+            min-height: 300px;
+
+            hr {
+                margin: 15px 0;
+                border: 0;
+                border-bottom: 1px solid #E5E5E5;
+            }
+
+            li {
+                cursor: pointer;
+            }
+
+            .tt-dataset {
+                li {
+                    margin-bottom: 10px;
+                    padding: 5px 25px;
+                    font-size: 16px;
+
+                    a {
+                        color: #222222;
+
+                        &:hover {
+                            color: #9F224E
+                        }
+                    }
+
+                    i {
+                        margin-right: 15px;
+                        color: #757575
+                    }
+                }
+            }
+
+            .tt-dataset-0 {
+                li {
+                    position: relative;
+
+                    &:last-child {
+                        padding-bottom: 15px;
+
+                        &::before {
+                            content: "";
+                            border-top: 1px solid #E5E5E5;
+                            position: absolute;
+                            left: 25px;
+                            right: 25px;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+
+            mark {
+                background: #9F224E;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .form-search.active {
+        .tt-menu {
+            display: block
+        }
+    }
+    .box-quantam{width: 100%; float: left; position: relative;
+        .overlay-link{width: 120px; height: 24px;background: url(images/overlay-next-mobile.png) no-repeat 0 0; outline: none; position: absolute; top: 15px; right: 0;}
+    }
+    .wrap-scroll-faq::-webkit-scrollbar {
+        display: none
+    }
+    .wrap-scroll-faq{width: 100%; float: left; display: flex; position: relative; overflow-x: auto;
+        scroll-behavior: smooth;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+        ul{font-size: 0; display: table;
+            li{display: table-cell; padding: 0 10px; white-space: nowrap;
+                &:first-child{padding-left: 0;}
+                &:last-child{padding-right: 0;}
+                a{
+                    display: block; font-size: 14px; font-weight: 400; padding: 15px 0 10px 0; line-height: 160%; color: #087CCE !important; text-decoration: none !important;
+                }
+            }
+        }
+        
+    }
+}
+
+@import 'placeholder.scss';
+
+.box-placeholder {
+    &.widget-covid-tracker {
+        .top-head-cov {
+            .txt-top.text {
+                height: 20px;
+            }
+
+            .info-txt-top.text {
+                height: 12px;
+                width: 100%;
+            }
+        }
+
+        .search-local {
+            padding-right: 0;
+
+            .text {
+                height: 40px;
+                border-radius: 0;
+            }
+        }
+
+        .box-quantam {margin-top: 10px;
+            .text {
+                height: 40px;
+                border-radius: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"
+        name="viewport">
+    <meta charset="utf-8">
+    <link href="css/m-widget-covid-tracker.css" media="all" rel="stylesheet">
+    <link href="css/swiper.css" media="all" rel="stylesheet">
+    <title>Widget Covid</title>
+</head>
+
+<body>
+    <div style="width: 50%; float: left;">
+        <h1 style="width: 100%; float: left;">Widget 04 PC</h1>
+        <div style="width: 375px; float: left;">
+            <!--GET CODE FROM HERE-->
+            <div class="widget-covid-tracker">
+                <div class="top-head-cov">
+                    <div class="txt-top">Thắc mắc thường gặp về Covid-19</div>
+                </div>
+                <div class="search-local">
+                    <form action="#" class="form-search">
+                        <input id="keywordHeader" class="search-input input-local" type="text" name="keyword"
+                            placeholder="Bạn có thắc mắc gì?" autocomplete="off">
+                        <button class="button-local" type="button"><img src="css/images/Search.svg" alt=""></button>
+                        <div class="tt-menu">
+                            <div class="tt-dataset tt-dataset-0">
+                                <li class="khighlight tt-suggestion tt-selectable"><i class="iconfont-chart"></i>topic :
+                                    Làm gì
+                                    khi <strong class="tt-highlight"><mark data-markjs="true"><mark
+                                                data-markjs="true">th</mark></mark></strong>ấy nguy cơ</li>
+                                <li class="khighlight tt-suggestion tt-selectable">topic : Kiến <strong
+                                        class="tt-highlight"><mark data-markjs="true"><mark
+                                                data-markjs="true">th</mark></mark></strong>ức chung</li>
+                            </div>
+                            <div class="tt-dataset tt-dataset-1">
+                                <li class="khighlight tt-suggestion tt-selectable"><strong class="tt-highlight"><mark
+                                            data-markjs="true">Th</mark></strong>ế nào là tiếp xúc gần?</li>
+                                <li class="khighlight tt-suggestion tt-selectable">nCoV xâm nhập cơ <strong
+                                        class="tt-highlight"><mark data-markjs="true">th</mark></strong>ể người qua
+                                    những đường
+                                    nào?</li>
+                                <li class="khighlight tt-suggestion tt-selectable">Sau khi xâm nhập, nCoV tấn công cơ
+                                    <strong class="tt-highlight"><mark data-markjs="true">th</mark></strong>ể người như
+                                    <strong class="tt-highlight"><mark data-markjs="true">th</mark></strong>ế nào?</li>
+                                <li class="khighlight tt-suggestion tt-selectable">Triệu chứng nhiễm nCoV <strong
+                                        class="tt-highlight"><mark data-markjs="true">th</mark></strong>ường gặp</li>
+                                <li class="khighlight tt-suggestion tt-selectable">Cách phân biệt cúm <strong
+                                        class="tt-highlight"><mark data-markjs="true">th</mark></strong>ường, đau họng
+                                    với cúm
+                                    corona?</li>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="box-quantam">
+                    <div class="wrap-scroll-faq">
+                        <ul>
+                            <li><h3><a href="#">Triệu chứng lây nhiễm</a></h3></li>
+                            <li><h3><a href="#">Điều trị</a></h3></li>
+                            <li><h3><a href="#">Cách ly</a></h3></li>
+                            <li><h3><a href="#">Di chuyển mùa dịch</a></h3></li>
+                            <li><h3><a href="#">Giao tiếp xã hội mùa dịch</a></h3></li>
+                            <li><h3><a href="#">Làm gì khi thấy nguy cơ</a></h3></li>
+                            <li><h3><a href="#">Vệ sinh phòng dịch</a></h3></li>
+                            <li><h3><a href="#">Các mức phạt</a></h3></li>
+                            <li><h3><a href="#">Chính sách cho người lao động</a></h3></li>
+                            <li><h3><a href="#">Kiến thức chung</a></h3></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:;" class="overlay-link"></a>
+                </div>
+
+            </div>
+            <!--END GET CODE-->
+
+            <!--PLACEHOLDER-->
+            <div class="widget-covid-tracker box-placeholder">
+                <div class="top-head-cov">
+    
+                    <p class="info-txt-top text line"></p>
+                </div>
+                <div class="search-local">
+                    <p class="text line"></p>
+                </div>
+                <div class="box-quantam">
+                    <p class="text line"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        /**SLIDE FAQS**/
+        $('.overlay-link').on('click', function(){
+			$(".wrap-scroll-faq").animate({
+			  scrollLeft: $(".wrap-scroll-faq").scrollLeft()+200
+			}, "fast");
+		});
+    </script>
+   
+
+</body>
+
+</html>

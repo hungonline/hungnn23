@@ -1,0 +1,91 @@
+/**
+iconfont Webfont
+*/
+@font-face {
+	font-family: 'iconfont';
+	src: url('iconfont.eot?1597714592953');
+	src: url('iconfont.eot?#iefix-1597714592953') format('embedded-opentype'),
+		url('iconfont.woff2?1597714592953') format('woff2'),
+		url('iconfont.woff?1597714592953') format('woff'),
+		url('iconfont.ttf?1597714592953') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^='iconfont-']:before,
+[class*=' iconfont-']:before {
+	font-family: 'iconfont';
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	font-weight: normal;
+	font-style: normal;
+	speak: none;
+	text-decoration: inherit;
+	font-size: inherit;
+	text-transform: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+ .iconfont-chart:before {
+			content: '\ea01';
+		}
+
+		 .iconfont-down:before {
+			content: '\ea02';
+		}
+
+		 .iconfont-face:before {
+			content: '\ea03';
+		}
+
+		 .iconfont-faq:before {
+			content: '\ea04';
+		}
+
+		 .iconfont-link:before {
+			content: '\ea05';
+		}
+
+		 .iconfont-mail:before {
+			content: '\ea06';
+		}
+
+		 .iconfont-News:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-next:before {
+			content: '\ea08';
+		}
+
+		 .iconfont-Phone:before {
+			content: '\ea09';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea0a';
+		}
+
+		 .iconfont-search2:before {
+			content: '\ea0b';
+		}
+
+		 .iconfont-Tracking:before {
+			content: '\ea0c';
+		}
+
+		 .iconfont-twiter:before {
+			content: '\ea0d';
+		}
+
+		 .iconfont-user:before {
+			content: '\ea0e';
+		}
+
+		
