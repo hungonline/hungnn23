@@ -1,0 +1,100 @@
+$vne_color: #9f224e;
+$vne_color_hover: #087CCE;
+$font-title: iCielDomaineText;
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%font-fea {
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+  -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+  -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}
+@import "scrollbar-ss.scss";
+.box-covid-2021{
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 0;
+  &:after{
+    bottom: auto;
+    top: 0;
+  }
+  .inner-box-cv{
+    background: #F7F7F7;
+    border: 1px solid #E5E5E5;
+    padding: 0 12px 12px 12px;
+  }
+  .header-cv{
+    padding: 10px 0;
+    border-bottom: 1px solid #E5E5E5;
+    align-items: center;
+  }
+  .related{
+    background: #E5E5E5;
+    border-radius: 3px;
+    font-size: 16px;
+    display: block;
+    line-height: 40px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .txt-head{
+    flex-shrink: 1;
+    strong{
+      font: bold 18px/23px $font-title;
+      @extend %font-fea;
+    }
+    span{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 5px;
+      display: block;
+    }
+  }
+  .sum-count{
+    color: #178FD6;
+    font: bold 26px iCielDomaineText;margin-left: 12px;
+  }
+  .number-count {
+    font: bold 32px/40px $font-title;
+    margin-left: auto;
+    @extend %font-fea;
+    flex-shrink: 0;
+  }
+  .tbl-cv{width: 100%; padding-right: 20px;
+    th,td{padding: 6px 0; text-align: right;
+          font-size: 16px;
+          line-height: 18px;
+    }
+    th{
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      padding: 10px 0 5px 0;color: #757575;
+    }
+    .col-prov{
+      width: 44%;
+      text-align: left;
+    }
+    .col-all,
+    .col-today{width: 28%; padding-left: 10px;}
+    .number-up {
+      color: #178FD6;
+    }
+  }
+  .wrap-scroll-tb{
+     height: 80px;
+     padding-right: 20px;
+    .tbl-cv{padding-right: 0;}
+  }
+
+}
