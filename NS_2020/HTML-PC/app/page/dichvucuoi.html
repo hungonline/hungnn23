@@ -266,6 +266,86 @@
     <div class="box_stream">
         <div class="box_slide_service">
             <h3 class="title">Ăn hỏi</h3>
+            <div class="owl-carousel">
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="box_slide_service">
+            <h3 class="title">Ăn hỏi</h3>
+            <div class="owl-carousel">
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+
+                </div>
+                <div class="item">
+                    <a href="" class="thumb_img thumb_5x3" title="">
+                        <img src="https://via.placeholder.com/500x300" alt="this">
+                    </a>
+                    <h3><a href="" title="aaa">Mùng chụp tự bung cao cấp - 1m8 - 3 cửa - trắng viền xanh</a></h3>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="box_slide_service">
+            <h3 class="title">Ăn hỏi</h3>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -385,7 +465,7 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div class="box_300">
         <div class="center box_category hidden320">
@@ -404,29 +484,55 @@
 <!-- build:script2 -->
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    /*SLIDE BOX SERVICE */
-    var owl_slide_service = $('.box_service .owl-carousel');
-    owl_slide_service.owlCarousel({
-        loop: false,
-        margin: 10,
-        autoplay: false,
-        autoplayTimeout: 7000,
-        items: 8,
-        nav: false,
-        dots: false,
-        navElement: 'div',
-        responsive: {
-            740: {
-                items: 5
-            },
-            992: {
-                items: 7
-            },
-            1100: {
-                items: 8
-            },
-        }
+    $(document).ready(function () {
+        var owl_slide_service = $('.box_service .owl-carousel');
+        owl_slide_service.owlCarousel({
+            loop: false,
+            margin: 10,
+            autoplay: false,
+            autoplayTimeout: 7000,
+            items: 8,
+            nav: false,
+            dots: false,
+            navElement: 'div',
+            responsive: {
+                740: {
+                    items: 5
+                },
+                992: {
+                    items: 7
+                },
+                1100: {
+                    items: 8
+                },
+            }
+        })
+
+        var box_slide_service = $('.box_slide_service .owl-carousel');
+        box_slide_service.owlCarousel({
+            autoplay: false,
+            autoplayTimeout: 7000,
+            margin: 20,
+            items: 3,
+            autoWidth: true,
+            nav: true,
+            dots: false,
+            navElement: 'div',
+            responsive: {
+                700: {
+                    items: 2
+                },
+                1100: {
+                    items: 3
+                },
+            }
+        })
+        $(".box_slide_service .owl-prev").html(
+            '<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#small-left"/></svg>');
+        $(".box_slide_service .owl-next").html(
+            '<svg class="icon-ns not-grad"><use xlink:href="images/icons.svg#small-right"/></svg>');
+
+
     })
-    /*END SLIDE BOX SERVICE */
 </script>
 <!-- /build:script2 -->

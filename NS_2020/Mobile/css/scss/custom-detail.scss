@@ -998,7 +998,8 @@
         }
     }
 
-    .btn_send_comment#comment_post_button {
+    .btn_send_comment#comment_post_button,
+    .btn_send_comment#comment_reply_button {
         background: var(--ns_color) !important;
         border-radius: 2px;
         font-size: 14px;
@@ -1116,7 +1117,6 @@
 #myvne_taskbar,
 #open_login {
     position: relative !important;
-    top: -3px !important;
 }
 
 .longform_wrapper {

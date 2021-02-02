@@ -438,19 +438,17 @@ body.fixed {
 }
 
 .logo-be {
-    width: 72px;
+    width: 60px;
     padding-left: 10px;
     position: relative;
+    margin-top: -3px;
 
     &::before {
         content: '';
         height: 22px;
         position: absolute;
         left: 0;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+        top: 5px;
         border-left: 1px solid rgba(0, 0, 0, 0.2);
     }
 }
@@ -549,9 +547,8 @@ body.fixed {
 
     .logo {
         position: absolute;
-        left: 50%;
         width: 97px;
-        margin-left: -48px;
+        left: 50px;
     }
 }
 
@@ -573,8 +570,13 @@ body.fixed {
 #myvne_taskbar .block_sub_myvne,
 #open_login .block_sub_myvne,
 #open_login .block_sub_myvne {
-    right: -7px;
+    right: -67px;
     top: 87px;
+}
+
+#myvne_taskbar ul.myvne_form_log li.notify_myvne .block_sub_myvne,
+#open_login ul.myvne_form_log li.notify_myvne .block_sub_myvne {
+    right: -105px;
 }
 
 // @media (max-width: 340px) {
