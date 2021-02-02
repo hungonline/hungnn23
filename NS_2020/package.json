@@ -29,7 +29,5 @@
     "underscore": "^1.9.1",
     "yargs": "^15.3.1"
   },
-  "dependencies": {
-    "gulp-rename": "^2.0.0"
-  }
+  "dependencies": {}
 }
