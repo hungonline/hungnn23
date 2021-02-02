@@ -21,319 +21,616 @@
     rel="stylesheet" />
 <link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/general-file.css" media="all" rel="stylesheet" />
 
+    <link href="https://s1.vnecdn.net/vnexpress/restruct/c/v560/v2_2019/pc/general-inline.css" media="all"
+    rel="stylesheet" />
+    <link href="https://s1.vnecdn.net/vnexpress/restruct/c/v578/v2_2019/pc/general-file.css" media="all"
+    rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" media="all" />
     <!-- build:head -->
 </head>
 
 <body class="homepage">
-    <section class="center">
-        <img src="images/graphics/banner-top.jpg">
-    </section>
-    <section id="topbar" class="section top_bar">
+    <header class="section top-header" id="top-header">
         <div class="container">
-            <a href="javascript:;" class="js-headerHamburger hamburger">
-                <span class="hamburger__line--one"></span>
-                <span class="hamburger__line--two"></span>
-                <span class="hamburger__line--three"></span>
+            <a href="javascript:;" class="all-menu all-menu-tablet"><span class="hamburger"></span></a>
+            <a href="#" class="logo" style="position: relative;">
+                <img class="parten-noel" src="images/graphics/parten-tet.png" style="width: 130px; position: absolute; top: -8px; left: 25px;">
+                <img src="images/graphics/logo.svg" alt="VNExpress">
             </a>
-            <h1><a href="#" title="Covid-19: Dịch Covid-19 ở Việt Nam" class="logo" id="logo"><img
-                        src="images/graphics/logo.svg" alt="Covid-19: Dịch Covid-19 ở Việt Nam"></a></h1>
-            <div class="date">Thứ sáu, 22/3/2019</div>
-            <div class="block-right flex align-items-center">
-                <div class="mobile-search">
-                    <i class="iconfont-search"></i>
-                </div>
-                <form action="" method="get" id="search" class="search">
-                    <input id="keywordHeader" class="search-input" type="text" name="q" placeholder="Tìm kiếm"
-                        autocomplete="off">
-                    <span class="search-btn">
-                        <button type="submit">
-                            <i class="iconfont-search"></i>
-                        </button>
-                    </span>
+            <span class="time-now">Thứ sáu, 22/3/2019</span>
+            <div class="right">
+                <a href="#" class="btn24hqua"><svg class="ic ic-24h">
+                        <use xlink:href="css/images/graphics/icon-vne.svg#time"></use>
+                    </svg>24h Qua</a>
+                <a href="#" class="evne"><svg class="ic ic-evne">
+                        <use xlink:href="css/images/graphics/icon-vne.svg#letter-E"></use>
+                    </svg>English Edition</a>
+                <form class="search" action="">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <button><svg class="ic ic-search">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#Search"></use>
+                        </svg></button>
                 </form>
-                <div class="block-right__log">
-                    <ul class="form_log">
-                        <li class="user">
-                            <a href="javascript:;">
-                                <span class="icon-user">
-                                    <svg class="icon-svg">
-                                        <use xlink:href="images/icons/icon.svg#user"></use>
-                                    </svg>
-                                </span>
-                                Đăng nhập
-                            </a>
-                        </li>
-                        <li><a href="javascript:;">Đăng ký</a></li>
-                    </ul>
-                    <ul class="form_log success" style="display: none">
-                        <li class="user">
-                            <a href="javascript:;">
-                                <span class="icon-user">
-                                    <img src="images/graphics/thumb_chuyengia.jpg" alt="">
-                                </span>
-                                <span class="name">Nguyễn Như Hùng</span>
-                            </a>
-                        </li>
-                        <li class="notification"><a class="myvne_logout" href="javascript:;">Đăng xuất</a></li>
-                    </ul>
+                <!--<div id="myvne" class="myvne_taskbar">
+                <a href="#" class="log_txt"><svg class="ic ic-user"><use xlink:href="css/images/graphics/icon-vne.svg#User"></use></svg> Đăng nhập</a>
+            </div>-->
+                <div id="myvne_taskbar">
+                    <div id="myvne" class="myvne_taskbar">
+                        <div class="myvne_container" id="myvne_user_logged">
+                            <ul class="myvne_form_log logged">
+                                <li class="myvne_user" id="myvne_profile_tool"> <a href="javascript:void(0);" id="myvne_avatar_taskbar" class="myvne_avatar"><span class="avatar_inner"><img src="//a.vnecdn.net/avatar/tmp/2015/11/10/7317603762_1447129793.png" width="25" height="25" alt=""></span> <span class="name_user_av">Nhật
+                                            Khang</span></a>
+                                    <ul class="myvne_user_status" style="display: none;">
+                                        <li class="li_bd li_account"> <span class="avatar_sub"><img src="//a.vnecdn.net/avatar/tmp/2015/11/10/7317603762_1447129793.png" width="25" height="25" alt=""></span> <span class="name_sub">Nhật
+                                                Khang</span> </li>
+                                        <li><a href="https://my.vnexpress.net/users/feed/1006121328">Hoạt động bình
+                                                luận</a></li>
+                                        <li><a href="https://my.vnexpress.net/users/tin-da-luu">Tin đã lưu <span class="number_sub">(12)</span></a></li>
+                                        <li class="li_bd"><a href="https://my.vnexpress.net/users/tin-da-doc">Tin đã
+                                                xem</a></li>
+                                        <li class="li_bd"><a id="myvne_update_profile_link" href="https://my.vnexpress.net/users/chi-tiet-tai-khoan">Tài khoản của
+                                                tôi</a></li>
+                                        <li class="li_bd"><a href="https://my.vnexpress.net/qua-tang">Quà tặng</a></li>
+                                        <li><a href="javascript:void(0);" id="myvne_logout_link">Thoát</a></li>
+                                    </ul>
+                                </li>
+                                <li class="myvne_notification" id="myvne_notify_show"> <a class="myvne_icon_bell_click">
+                                        <svg class="ic ic-bell">
+                                            <use xlink:href="css/images/graphics/icon-vne.svg#Bell"></use>
+                                        </svg>
+                                        <!--<i class="ic ic-bell myvne_icon_bell"></i>--></a><span id="myvne_notify_area"><span class="badged" id="myvne_notify_count">9+</span></span>
+                                    <div id="myvne_notify_box" class="myvne_content_notification" style="display:none;">
+
+                                        <ul id="myvne_notify_lists" class="scrollbar-macosx ss-container" style="height: 490px;"><div class="ss-wrapper"><div class="ss-content">
+                                            <li class="myvne_nofify_item">
+                                                <a href="https://my.vnexpress.net" data-id="1049979341" onclick="_gaq.push(['_trackEvent', 'AllPage', 'Click thông báo', 'Thông báo Topbar']);">
+                                                    <div class="myvne_wrap_info">
+                                                        <div class="myvne_capital">Quà tặng mới từ chương trình
+                                                            <strong></strong></div>
+                                                        <div class="myvne_time"><i class="ico ico_comment"></i>&nbsp;05:28 11/6 </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </a>
+                                            </li>
+                                            <li class="myvne_nofify_item">
+                                                <a href="https://vnexpress.net/y-kien/ban-nha-dat-chuyen-len-o-chung-cu-vi-hang-xom-hat-karaoke-3917300.html?commentid=30159287" data-id="1049147917" onclick="_gaq.push(['_trackEvent', 'AllPage', 'Click thông báo', 'Thông báo Topbar']);">
+                                                    <div class="myvne_wrap_info">
+                                                        <div class="myvne_capital">Bình luận của bạn đã được đăng trong
+                                                            bài <strong>Bán nhà đất, chuyển lên ở chung cư vì hàng xóm
+                                                                hát karaoke</strong></div>
+                                                        <div class="myvne_time"><i class="ico ico_comment"></i>&nbsp;02:26 6/5</div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </a>
+                                            </li>
+                                            <li class="myvne_nofify_item">
+                                                <a href="https://my.vnexpress.net/qua-tang/suc-khoe-lam-dep/2-000-bo-trang-diem-gia-uu-dai-danh-rieng-cho-doc-gia-vnexpress-1044094992.html" data-id="1044146862" onclick="_gaq.push(['_trackEvent', 'AllPage', 'Click thông báo', 'Thông báo Topbar']);">
+                                                    <div class="myvne_wrap_info">
+                                                        <div class="myvne_capital">Quà tặng mới từ chương trình
+                                                            <strong>2.000 bộ trang điểm giá ưu đãi dành riêng cho độc
+                                                                giả VnExpress</strong></div>
+                                                        <div class="myvne_time"><i class="ico ico_comment"></i>&nbsp;11:09 18/10/2018
+                                                        </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </a>
+                                            </li>
+                                            <li class="myvne_nofify_item">
+                                                <a href="https://my.vnexpress.net/qua-tang/giai-tri-su-kien/chi-mot-ngay-duy-nhat-thu-5-san-deal-dien-thoai-gia-dung-va-thoi-trang-giam-50-1041361130.html" data-id="1042275167" onclick="_gaq.push(['_trackEvent', 'AllPage', 'Click thông báo', 'Thông báo Topbar']);">
+                                                    <div class="myvne_wrap_info">
+                                                        <div class="myvne_capital">Quà tặng mới từ chương trình
+                                                            <strong>Chỉ một ngày duy nhất - Thứ 5 săn deal điện thoại,
+                                                                gia dụng và thời trang giảm 50%</strong></div>
+                                                        <div class="myvne_time"><i class="ico ico_comment"></i>&nbsp;09:30 2/8/2018 </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </a>
+                                            </li>
+                                            <li class="myvne_nofify_item">
+                                                <a href="https://my.vnexpress.net/qua-tang/giai-tri-su-kien/chay-cung-bong-da-san-deal-smart-tv-55-chi-voi-1-trieu-dong-duy-nhat-12h-trua-nay-13-07-1039605239.html" data-id="1040670962" onclick="_gaq.push(['_trackEvent', 'AllPage', 'Click thông báo', 'Thông báo Topbar']);">
+                                                    <div class="myvne_wrap_info">
+                                                        <div class="myvne_capital">Quà tặng mới từ chương trình
+                                                            <strong>Cháy cùng bóng đá - săn deal smart TV 55'' chỉ với 1
+                                                                triệu đồng - duy nhất 12h trưa nay 13/07!</strong></div>
+                                                        <div class="myvne_time"><i class="ico ico_comment"></i>&nbsp;11:47 13/7/2018 </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </a>
+                                            </li>
+                                            <li class="myvne_nofify_item">
+                                                <a href="https://my.vnexpress.net/qua-tang/nha-hang-am-thuc/vnexpress-tang-doc-gia-2000-voucher-dong-gia-35-000d-tai-the-coffee-house-1038190994.html" data-id="1038241580" onclick="_gaq.push(['_trackEvent', 'AllPage', 'Click thông báo', 'Thông báo Topbar']);">
+                                                    <div class="myvne_wrap_info">
+                                                        <div class="myvne_capital">Quà tặng mới từ chương trình
+                                                            <strong>VnExpress tặng độc giả 2000 voucher đồng giá 35.000đ
+                                                                tại The Coffee House</strong></div>
+                                                        <div class="myvne_time"><i class="ico ico_comment"></i>&nbsp;10:21 23/4/2018 </div>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                </a>
+                                            </li>
+                                        </div></div><div class="ss-scroll" style="right: 0px;"></div></ul>
+                                        <ul id="myvne_notify_viewmore_area" style="display: none"> <span id="myvne_loading_viewmore" style="display: none;">Loading</span> <a href="javascript:void(0);" id="myvne_notify_viewmore" class="myvne_notification-viewmore" style="display:none;">Xem thêm</a>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
+    </header>
+    <section class="section wrap-main-nav" id="wrap-main-nav">
+        <nav class="main-nav">
+            <ul class="parent">
+                <li class="home"><a href="#" class="flexbox"><svg class="ic ic-home">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#Home"></use>
+                        </svg><svg class="ic ic-evne">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#letter-E"></use>
+                        </svg></a></li>
+                <li class="newlest"><a href="#" title="">Mới nhất</a></li>
+                <li class=""><a href="#">Video</a></li>
+                <li class=""><a href="#">Thời sự</a></li>
+                <li class=""><a href="#">Góc nhìn</a></li>
+                <li class=""><a href="#">Thế giới</a></li>
+                <li class="kinhdoanh">
+                    <a href="#">Kinh doanh</a>
+                    <ul class="sub">
+                        <li><a href="#">Doanh nghiệp</a></li>
+                        <li><a href="#">Bất động sản</a></li>
+                        <li><a href="#">Ebank</a></li>
+                        <li><a href="#">Thương mại điện tử</a></li>
+                        <li><a href="#">Hàng hóa</a></li>
+                        <li><a href="#">Tiền của tôi</a></li>
+                        <li><a href="#">Chứng khoán</a></li>
+                        <li><a href="#">Quốc tế</a></li>
+                        <li><a href="#">Vĩ mô</a></li>
+                        <li><a href="#">Startup</a></li>
+                    </ul>
+                </li>
+                <li class="giaitri"><a href="#">Giải trí</a></li>
+                <li class="thethao"><a href="#">Thể thao</a></li>
+                <li class="phapluat"><a href="#">Pháp luật</a></li>
+                <li class="giaoduc"><a href="#">Giáo dục</a></li>
+                <li class="suckhoe"><a href="#">Sức khỏe</a></li>
+                <li class="doisong"><a href="#">Đời sống</a></li>
+                <li class="dulich"><a href="#">Du lịch</a></li>
+                <li class="khoahoc"><a href="#">Khoa học</a></li>
+                <li class="sohoa"><a href="#">Số hóa</a></li>
+                <li class="xe"><a href="#">Xe</a></li>
+                <li class=""><a href="#">Ý kiến</a></li>
+                <li class=""><a href="#">Tâm sự</a></li>
+                <li class="cuoi"><a href="#">Cười</a></li>
+                <li class="all-menu has_transition"><a href="javascript:;">Tất cả <span class="hamburger"></span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="wrap-all-menu">
+            <div class="container">
+                <div class="header-menu">
+
+                    <div class="form-search-tablet width_common">
+                        <form action=""><input type="text" class="input_search_tablet"><button><svg class="ic ic-search">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Search"></use>
+                                </svg></button></form>
+                    </div>
+                    <h2 class="name-header">Tất cả chuyên mục</h2>
+                    <a href="javascript:;" class="close-menu">Đóng <span class="icon-close"></span></a>
+                </div>
+                <div class="content-left">
+                    <div class="scroll-wrapper width_common scroll-menu-expand scrollbar-inner ss-container" style="position: relative;"><div class="width_common scroll-menu-expand scrollbar-inner ss-container scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 327px;"><div class="ss-wrapper"><div class="ss-content">
+                        <div class="row-menu">
+                            <ul class="cat-menu">
+                                <li>
+                                    <h6><a href="#">Video</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Thời sự</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Cuộc sống 4.0</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tôi kể</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Nhịp sống</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li>
+                                    <h6><a href="#">Thời sự</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Giao thông</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Nông nghiệp sạch</a></h6>
+                                </li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li>
+                                    <h6><a href="#">Góc nhìn</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tác giả</a></h6>
+                                </li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li>
+                                    <h6><a href="#">Thế giới</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tư liệu</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Phân tích</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Người Việt 5 châu</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Cuộc sống đó đây</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="kinhdoanh">
+                                    <h6><a href="#">Kinh doanh</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Doanh nghiệp</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Bất động sản</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">EBank</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Thương mại điện tử</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="giaitri">
+                                    <h6><a href="#">Giải trí</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Giới sao</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Video</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">The Oscars</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Phim</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="thethao">
+                                    <h6><a href="#">Thể thao</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">AFF Cup</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Video</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Bóng đá</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tennis</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="phapluat">
+                                    <h6><a href="#">Pháp luật</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Hồ sơ phá án</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tư vấn</a></h6>
+                                </li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="giaoduc">
+                                    <h6><a href="#">Giáo dục</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tuyển sinh</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Trắc nghiệm</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Học tiếng Anh</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Du học</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="suckhoe">
+                                    <h6><a href="#">Sức khỏe</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tin tức</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Các bệnh</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Ung thư</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Khỏe đẹp</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="doisong">
+                                    <h6><a href="#">Gia đình</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tổ ấm</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Lối sống</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Nhà</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tiêu dùng</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="dulich">
+                                    <h6><a href="#">Du lịch</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Việt Nam</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Quốc tế</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Dấu chân</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tư vấn</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="khoahoc">
+                                    <h6><a href="#">Khoa học</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Trong nước</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Giải mã</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Thưởng thức</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Chuyện lạ</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="sohoa">
+                                    <h6><a href="#">Số hóa</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Đời sống số</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Sản phẩm</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Điện tử gia dụng</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Kinh nghiệm</a></h6>
+                                </li>
+                                <li class="view-more"><a href="#">Xem thêm</a></li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="xe">
+                                    <h6><a href="#">Xe</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tư vấn</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Bảng giá</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Thị trường</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Diễn đàn</a></h6>
+                                </li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li>
+                                    <h6><a href="#">Cộng đồng</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Câu hỏi hôm nay</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Ý kiến của tôi</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Video</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Quà tặng</a></h6>
+                                </li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li>
+                                    <h6><a href="#">Tâm sự</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Chuyên gia gỡ rối</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Hẹn hò</a></h6>
+                                </li>
+                            </ul>
+                            <ul class="cat-menu">
+                                <li class="cuoi">
+                                    <h6><a href="#">Cười</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Ảnh</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Tiểu phẩm</a></h6>
+                                </li>
+                                <li>
+                                    <h6><a href="#">Video</a></h6>
+                                </li>
+                            </ul>
+                        </div>
+                    </div></div><div class="ss-scroll ss-hidden"></div></div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 88px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 155px; top: 0px;"></div></div></div></div>
+
+                </div>
+                <div class="content-right">
+                    <div class="scroll-wrapper width_common scroll-menu-expand scrollbar-inner ss-container" style="position: relative;"><div class="width_common scroll-menu-expand scrollbar-inner ss-container scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 327px;"><div class="ss-wrapper"><div class="ss-content">
+                        <ul class="type-news">
+                            <li class="item-type">
+                                <h3><a href="">Ảnh</a></h3>
+                            </li>
+                            <li class="item-type">
+                                <h3><a href="">Infographics</a></h3>
+                            </li>
+                            <li class="item-type">
+                                <h3><a href="">Longform</a></h3>
+                            </li>
+                        </ul>
+                        <ul class="list-link">
+                            <li class="link">
+                                <h3><a href="#">FSell</a></h3>
+                            </li>
+                            <li class="link">
+                                <h3><a href="#">Shop VnExpress</a></h3>
+                            </li>
+                            <li class="link">
+                                <h3><a href="#">Startup</a></h3>
+                            </li>
+                            <li class="link">
+                                <h3><a href="#">eLive</a></h3>
+                            </li>
+                            <li class="link">
+                                <h3><a href="#">Pay VnExpress</a></h3>
+                            </li>
+                            <li class="link">
+                                <h3><a href="#">Quà tặng</a></h3>
+                            </li>
+                        </ul>
+                        <ul class="type-news">
+                            <li class="item-type"><a href="#" title="">EStock<span style="font-size: 14px; font-weight: normal; display: block; margin-top: 5px;">Kho
+                                        ảnh VnExpress</span></a></li>
+                        </ul>
+                        <div class="contact">
+                            <p>Liên hệ</p>
+                            <a href="#" class="mail"><svg class="ic ic-mail">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#Mail"></use>
+                                </svg>Tòa soạn</a>
+                            <a href="#" class="ads"><svg class="ic ic-ads">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#QuangCao"></use>
+                                </svg>Quảng cáo</a>
+                        </div>
+                        <div class="contact downloadapp">
+                            <p>Tải ứng dụng</p>
+                            <a href="#" class="app_vne"><svg class="ic ic-vne">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#letter-E"></use>
+                                </svg>VnExpress</a>
+                            <a href="#" class="app_evne"><svg class="ic ic-evne">
+                                    <use xlink:href="css/images/graphics/icon-vne.svg#letter-E-grey"></use>
+                                </svg>International</a>
+                        </div>
+                    </div></div><div class="ss-scroll ss-hidden"></div></div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 98px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 149px; top: 0px;"></div></div></div></div>
+                </div>
+            </div>
+        </section>
     </section>
-    <section class="section top_new sticky">
-        <div class="container flex justify-content-between">
-            <div class="top_new__left">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="iconfont-faq"></i>
-                            <strong>Câu hỏi thường gặp</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="iconfont-Tracking"></i>
-                            <strong>Việt Nam</strong>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <i class="iconfont-link"></i>
-                            <strong>Thế giới</strong>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="iconfont-News"></i>
-                            <strong>Tin tức</strong>
-                        </a>
-                    </li>
+    <section class="section top-header top-header-folder">
+        <div class="container">
+            <div class="width_common top-folder flexbox">
+                <h2 class="title-folder" style="color: #222;">Covid-19</h2>
+                <div class="filter-date-search">
+                    <form class="search" action="">
+                        <input type="text" placeholder="Tìm kiếm trong chuyên mục">
+                        <button><svg class="ic ic-search"><use xlink:href="css/images/graphics/icon-vne.svg#Search"></use></svg></button>
+                    </form>
+                </div>
+            </div>
+            <nav class="width_common nav-folder">
+                <ul class="ul-nav-folder">
+                    <li class="news-covid"><a href="#"><i class="iconfont-News"></i>Tin tức</a></li>
+                    <li class="vn-covid"><a href="#"><i class="iconfont-Tracking"></i>Việt Nam</a></li>
+                    <li class="world-covid active"><a href="#"><i class="iconfont-link"></i>Thế giới</a></li>
                 </ul>
-            </div>
-            <div class="top_new__right">
-                Chia sẻ thông tin
-                <div class="social">
-                    <a href="#" class="face">
-                        <i class="iconfont-face"></i>
-                    </a>
-                    <a href="#" class="twitter">
-                        <i class="iconfont-twiter"></i>
-                    </a>
-                    <a href="#" class="mail">
-                        <i class="iconfont-mail"></i>
-                    </a>
+                <div class="date-data">
+                    Dữ liệu từ 28/1/2021 - Tính đến 13h51, 1/2/2021
                 </div>
-            </div>
+            </nav>
         </div>
     </section>
 
-    <section class="search-pin">
-        <div class="search_faq">
-            <form action="" method="get" id="search" class="search">
-                <span class="search-icon">
-                    <i class="iconfont-search"></i>
-                </span>
-                <input id="keywordHeader" class="search-input" type="text" name="q" placeholder="Bạn có thắc mắc gì?"
-                    autocomplete="off">
-                <div class="tt-menu">
-                    <div class="tt-dataset tt-dataset-0">
-                        <li class="khighlight tt-suggestion tt-selectable"><i class="iconfont-chart"></i>topic : Làm gì
-                            khi <strong class="tt-highlight"><mark data-markjs="true"><mark
-                                        data-markjs="true">th</mark></mark></strong>ấy nguy cơ</li>
-                        <li class="khighlight tt-suggestion tt-selectable">topic : Kiến <strong
-                                class="tt-highlight"><mark data-markjs="true"><mark
-                                        data-markjs="true">th</mark></mark></strong>ức chung</li>
-                    </div>
-                    <div class="tt-dataset tt-dataset-1">
-                        <li class="khighlight tt-suggestion tt-selectable"><strong class="tt-highlight"><mark
-                                    data-markjs="true">Th</mark></strong>ế nào là tiếp xúc gần?</li>
-                        <li class="khighlight tt-suggestion tt-selectable">nCoV xâm nhập cơ <strong
-                                class="tt-highlight"><mark data-markjs="true">th</mark></strong>ể người qua những đường
-                            nào?</li>
-                        <li class="khighlight tt-suggestion tt-selectable">Sau khi xâm nhập, nCoV tấn công cơ <strong
-                                class="tt-highlight"><mark data-markjs="true">th</mark></strong>ể người như <strong
-                                class="tt-highlight"><mark data-markjs="true">th</mark></strong>ế nào?</li>
-                        <li class="khighlight tt-suggestion tt-selectable">Triệu chứng nhiễm nCoV <strong
-                                class="tt-highlight"><mark data-markjs="true">th</mark></strong>ường gặp</li>
-                        <li class="khighlight tt-suggestion tt-selectable">Cách phân biệt cúm <strong
-                                class="tt-highlight"><mark data-markjs="true">th</mark></strong>ường, đau họng với cúm
-                            corona?</li>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
+
     
 <section class="section section_1 white">
     <div class="container">
-        <h2 class="title_cate center">
-            Covid-19 ở Việt Nam
-        </h2>
-        <div class="red center mb20">
-            Tính đến 17h00, 18/3/2020 (Tổng cộng có 134 ca dương tính)
-        </div>
-        <div class="count-covid-thegioi flex">
+        <div class="count-covid-vietnam">
+            <div>Tổng số ca nhiễm</div>
             <div class="item nhiem">
-                <label>Nhiễm</label>
-                <strong>1,056,851</strong>
+                <strong>321</strong>
             </div>
-            <div class="item tuvong">
-                <label>Tử vong</label>
-                <strong>1</strong>
-            </div>
-            <div class="item dieutri">
-                <label>Đang điều trị</label>
-                <strong>42,096</strong>
-            </div>
-            <div class="item khoi">
-                <label>Khỏi</label>
-                <strong>177,132</strong>
+            <div class="date">
+                Hôm nay
+                <strong class="number">+ 34</strong>
             </div>
         </div>
-        <div class="box-hot-new">
-            <marquee direction="left" behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
-                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
-                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
-                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
-                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
-                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
-                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
-            </marquee>
-        </div>
-        <div class="box-hot-new mobile">
-            <div class="mq">
-                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
-                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
-                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
-                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
-                <h2><a href="">Ba bệnh nhân Covid-19 'rất nặng'</a></h2>
-                <h2><a href="">Hà Nội cải tạo bệnh viện dã chiến trong 10 ngày</a></h2>
+        <div class="box-chart-covid row">
+            <div class="col-md-6 col-xs-12 mb30">
+                <h3 class="title-line">Tổng số ca</h3>
+                <div class="placeholder-demo" style="height: 200px"></div>
             </div>
-        </div>
-        <div class="box-chart-covid flex">
-            <div class="map mb24">
+            <div class="col-md-6 col-xs-12 mb30">
+                <h3 class="title-line">Số ca theo ngày</h3>
+                <div class="placeholder-demo" style="height: 200px"></div>
+            </div>
+            <div class="col-xs-12 mb20">
                 <h3 class="title-line">Bản đồ lây nhiễm cộng đồng</h3>
-                <img src="images/graphics/map.png" alt="">
-                <p class="mt10">Dữ liệu từ này 25/7/2020</p>
+                <div class="placeholder-demo" style="height: 400px"></div>
             </div>
-            <div class="chart-warp mb24">
-                <div class="item mb40">
-                    <h3 class="title-line">Số ca đang điều trị</h3>
-                    <div class="placeholder-demo" style="height: 200px"></div>
-                </div>
-                <div class="item mb40">
-                    <h3 class="title-line">Tổng số ca</h3>
-                    <div class="placeholder-demo" style="height: 200px"></div>
-                </div>
-                <div class="item">
-                    <h3 class="title-line">Số ca theo ngày</h3>
-                    <div class="placeholder-demo" style="height: 200px"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section section_container">
-    <div class="container has_border flex">
-        <hgroup class="width_common title-box-category sohoa">
-            <h2 class="parent-cate"><a class="inner-title" href="/so-hoa">Tin tức</a></h2>
-        </hgroup>
-        <div class="width_common section_box_cate flexbox">
-            <div class="col-boxcate colbox-left">
-                <article class="item-news full-thumb">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                            <span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
-                                    <use xlink:href="css/images/graphics/icon-vne.svg#Infographic"></use>
-                                </svg></span>
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Quốc hội xin ý kiến đại biểu về thời gian cấm bán rượu,
-                            bia</a></h4>
-                    <p class="description">Ký giả Gabriel Tan của Fox Sports Asia chọn ra những cầu thủ có ảnh hưởng
-                        lớn nhất đến kết quả trong bốn trận bán kết vừa qua<span class="meta-news"><a href="#"
-                                class="count_cmt"><svg class="ic ic-comment">
-                                    <use xlink:href="css/images/graphics/icon-vne.svg#Comment-Reg"></use>
-                                </svg>84</a></span></p>
-                </article>
-            </div>
-            <div class="col-boxcate colbox-center">
-                <article class="item-news full-thumb">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                            <span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
-                                    <use xlink:href="css/images/graphics/icon-vne.svg#Infographic"></use>
-                                </svg></span>
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Quốc hội xin ý kiến đại biểu về thời gian cấm bán rượu,
-                            bia</a></h4>
-                </article>
-                <article class="item-news full-thumb">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                            <span class="icon_thumb_videophoto"><svg class="ic ic-infographic">
-                                    <use xlink:href="css/images/graphics/icon-vne.svg#Infographic"></use>
-                                </svg></span>
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Quốc hội xin ý kiến đại biểu về thời gian cấm bán rượu,
-                            bia</a></h4>
-                </article>
-            </div>
-            <div class="col-boxcate colbox-right">
-                <article class="item-news">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
-                    </h4>
-                </article>
-                <article class="item-news">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
-                    </h4>
-                </article>
-                <article class="item-news">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
-                    </h4>
-                </article>
-                <article class="item-news">
-                    <div class="thumb-art">
-                        <a href="#" class="thumb thumb-5x3">
-                            <img src="images/graphics/thumb5x3.png" alt="">
-                        </a>
-                    </div>
-                    <h4 class="title-news"><a href="#">Brazil 0-0 Venezuela (hiệp một): Firmino bị hủy bàn thắng</a>
-                    </h4>
-                </article>
-            </div>
-
-
         </div>
     </div>
 </section>
 
 
 <section class="section section_main2">
-    <div class="container has_border">
+    <div class="container">
         <div class="flex justify-content-between mb24">
             <div class="section_main2__left">
                 <div class="wrap-border">
@@ -341,145 +638,178 @@
                     <ul class="list-tinhthanh scrollbar-inner">
                         <li class="flex">
                             <div class="td"></div>
-                            <div class="td"><strong>Nhiễm</strong></div>
-                            <div class="td"><strong>Tử vong</strong></div>
-                            <div class="td"><strong>Khỏi</strong></div>
+                            <div class="td"><strong>Hôm nay</strong></div>
+                            <div class="td"><strong>Tổng</strong></div>
+                            <div class="td"><strong>Ca mắc theo ngày</strong></div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">Hà Nội</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                         <li class="flex">
                             <div class="td">TP Hồ Chí Minh</div>
-                            <div class="td">23</div>
+                            <div class="td">+3</div>
                             <div class="td">0</div>
-                            <div class="td">1</div>
+                            <div class="td">
+                                <img src="images/graphics/chart.png" />
+                            </div>
                         </li>
                     </ul>
-                    <div class="txt_14 mt20" style="color:#4F4F4F">Lưu ý: Các trường hợp trong cụm liên quan đến Trường
-                        hợp
-                        26 và 33 được coi
-                        là ở
-                        Selangor và Kuala
-                        Lumpur.</div>
                 </div>
             </div>
             <div class="section_main2__right">
                 <div class="wrap-border list-hospital">
-                    <h4 class="title-cate">Danh sách bệnh viện</h4>
+                    <h4 class="title-cate">Đường dây nóng</h4>
                     <p>Nếu bạn nghi ngờ mình có thể bị nhiễm bệnh, vui lòng gọi theo số điện thoại đến các cơ sở y tế
-                        tại
-                        đây:</p>
+                        tại đây:</p>
                     <ul class="lever1 mb20">
                         <li>
                             <h3><a href="javascript:;" title="Hà Nội">Hà Nội (7)</a></h3>
@@ -495,7 +825,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bênh viện Bạch Mai</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0969851616</strong></div>
@@ -505,7 +835,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện E</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0912168887</strong></div>
@@ -515,7 +845,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Nhi Trung ương</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0372884712</strong></div>
@@ -525,7 +855,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Phổi Trung ương</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0967941616</strong></div>
@@ -535,7 +865,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Xanh Pôn Hà Nội</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0982414127</strong></div>
@@ -545,7 +875,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Vinmec Hà Nội</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0934472768</strong></div>
@@ -568,7 +898,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Nhiệt đới TP. Hồ Chí Minh</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0967341010</strong></div>
@@ -578,7 +908,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Nhi đồng 1</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0913117965</strong></div>
@@ -588,7 +918,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện Nhi đồng 2</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0798429841</strong></div>
@@ -650,7 +980,7 @@
                             </div>
                             <div class="inf" style="display: none;">
                                 <ul class="lever2">
-                                    <li class="12313">
+                                    <li class="1+313">
                                         <h4>Bệnh viện đa khoa tỉnh Khánh Hoà</h4>
                                         <div class="content" style="display:none;">
                                             <div class="item">Liên hệ: <strong class="red">0965371515</strong></div>
@@ -712,79 +1042,10 @@
                             </div>
                         </li>
                     </ul>
-                    <p class="gray">Xem chi tiết các bệnh viện khác</p>
-                    <ul class="lever2">
-                        <li>
-                            <h4>Bệnh viện Bạch Mai</h4>
-                            <div class="content" style="display: none;">
-                                <div class="item">Liên hệ: <strong class="red">0912 16
-                                        8887</strong></div>
-                            </div>
-                        </li>
-                        <li>
-                            <h4>Bệnh viện Bạch Mai</h4>
-                            <div class="content" style="display: none;">
-                                <div class="item">Liên hệ: <strong class="red">0912 16
-                                        8887</strong></div>
-                            </div>
-                        </li>
-                        <li>
-                            <h4>Bệnh viện Bạch Mai</h4>
-                            <div class="content" style="display: none;">
-                                <div class="item">Liên hệ: <strong class="red">0912 16
-                                        8887</strong></div>
-                            </div>
-                        </li>
-                        <li>
-                            <h4>Bệnh viện Bạch Mai</h4>
-                            <div class="content" style="display: none;">
-                                <div class="item">Liên hệ: <strong class="red">0912 16
-                                        8887</strong></div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-        <div class="box-quantam wrap-border mb30">
-            <h4 class="title_lbl"><a href="#">Những thắc mắc thường gặp về Covid-19 &nbsp;<i
-                        class="iconfont-next"></i></a></h4>
-            <h4 class="lbl"><i class="iconfont-chart"></i>Câu hỏi được quan tâm nhiều:</h4>
-            <ul>
-                <li>
-                    <h3><a href="#" title="">Lây nhiễm</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Chính sách cách ly</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Xét nghiệm Covid như thế nào?</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Cách ly như nào để không lây nhiễm</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Khai báo y tế thế nào</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Lây nhiễm</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Chính sách cách ly</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Xét nghiệm Covid như thế nào?</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Cách ly như nào để không lây nhiễm</a></h3>
-                </li>
-                <li>
-                    <h3><a href="#" title="">Khai báo y tế thế nào</a></h3>
-                </li>
-                <li class="placeholder"><a href="#" title=""></a></li>
-                <li class="placeholder"><a href="#" title=""></a></li>
-            </ul>
-        </div>
+
     </div>
 </section>
 
@@ -792,32 +1053,160 @@
 
 
     <!--FOOTER-->
-    <footer class="footer">
-        <div class="container">
-            <div class="flex justify-content-between">
-                <div class="footer_left">
-                    <a href="#" class="logo" id="logo"><img src="images/graphics/logo.svg" alt="Covid-19"></a>
-                    <div class="content">
-                        <p>© 1997-2020 VnExpress. Toàn bộ bản quyền thuộc VnExpress</p>
-                        <p><strong>Báo tiếng Việt nhiều người xem nhất.</br></strong> Thuộc Bộ Khoa học Công nghệ.</p>
+    <footer class="footer container">
+        <div class="inner-footer width_common">
+            <ul class="list-menu-footer">
+                <li class="item-menu">
+                    <h6><a href="#">Trang chủ</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Video</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Ảnh</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Infographics</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Longform</a></h6>
+                </li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">
+                    <h6><a href="#">Thời sự</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Góc nhìn</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Thế giới</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Pháp luật</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Kinh doanh</a></h6>
+                </li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">
+                    <h6><a href="#">Thể thao</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Giải trí</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Số hóa</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Du lịch</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Xe</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Khoa học</a></h6>
+                </li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">
+                    <h6><a href="#">Giáo dục</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Gia đình</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Sức khỏe</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Cộng đồng</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Tâm sự</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Cười</a></h6>
+                </li>
+            </ul>
+            <ul class="list-menu-footer">
+                <li class="item-menu">
+                    <h6><a href="#">FSell</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Shop VnExpress</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Startup</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">eLive</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Pay VnExpress</a></h6>
+                </li>
+                <li class="item-menu">
+                    <h6><a href="#">Quà tặng</a></h6>
+                </li>
+            </ul>
+            <div class="wrap-contact">
+                <div class="contact downloadapp">
+                    <p>Tải ứng dụng</p>
+                    <a href="#" class="app_vne"><svg class="ic ic-vne">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#letter-E"></use>
+                        </svg>VnExpress</a>
+                    <a href="#" class="app_evne"><svg class="ic ic-evne">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#letter-E-grey"></use>
+                        </svg>International</a>
+                </div>
+                <div class="contact">
+                    <p>Liên hệ</p>
+                    <a href="#" class="mail"><svg class="ic ic-mail">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#Mail"></use>
+                        </svg>Tòa soạn</a>
+                    <a href="#" class="ads"><svg class="ic ic-ads">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#QuangCao"></use>
+                        </svg>Quảng cáo</a>
+                </div>
+                <div class="hotline">
+                    <p>Điện thoại</p>
+                    <div class="left">
+                        <strong>083.888.0123</strong>
+                        <p>(Hà Nội)</p>
+                    </div>
+                    <div class="right">   
+                        <strong>082.233.3555</strong>
+                        <p>(TP. Hồ Chí Minh)</p>
                     </div>
                 </div>
-                <div class="footer_right">
-                    <a class="rss" href="#">RSS</a>
-                    Theo dõi VnExpress trên
-                    <div class="social">
-                        <a href="#" class="face">
-                            <i class="iconfont-face"></i>
-                        </a>
-                        <a href="#" class="twitter">
-                            <i class="iconfont-twiter"></i>
-                        </a>
-                        <a href="#" class="mail">
-                            <i class="iconfont-mail"></i>
-                        </a>
-                    </div>
-                </div>
+
             </div>
+        </div>
+        <div class="copyright width_common">
+            <p><a href="#" class="logo_ft"><img src="images/graphics/logo.svg" alt="VNExpress"></a></p>
+            <div class="right flexbox">
+
+                <a href="#">RSS</a>
+                <span class="txt-follow">Theo dõi VnExpress trên</span>
+                <a href="#" class="social_ft face_ft"><svg class="ic ic-facebook">
+                        <use xlink:href="css/images/graphics/icon-vne.svg#Facebook"></use>
+                    </svg></a>
+                <a href="#" class="social_ft twitter_ft"><svg class="ic ic-twitter">
+                        <use xlink:href="css/images/graphics/icon-vne.svg#Twitter"></use>
+                    </svg></a>
+                <a href="#" class="social_ft youtube_ft"><svg class="ic ic-youtube">
+                        <use xlink:href="css/images/graphics/icon-vne.svg#Youtube"></use>
+                    </svg></a>
+            </div>
+        </div>
+        <div class="copyright-footer mt10 mb20 flexbox width_common">
+            <p>
+               <strong>Báo tiếng Việt nhiều người xem nhất</strong><br><strong>Thuộc Bộ Khoa học Công nghệ</strong><br><strong>Số giấy phép:</strong> 06/GP-BTTTT ngày 03/01/2014
+            </p>
+            <p>
+                <strong>Tổng biên tập:</strong> Phạm Hiếu<br><strong>Địa chỉ:</strong> Tầng 5, Tòa nhà FPT, 17 phố Duy Tân, Cầu Giấy, Hà Nội<br><strong>Điện thoại:</strong> 024 7300 8899 - máy lẻ 4500
+            </p>
+            <p>© 1997-2020. Toàn bộ bản quyền thuộc VnExpress</p>
         </div>
     </footer>
     <!--END FOOTER-->
