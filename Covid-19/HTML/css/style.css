@@ -3767,14 +3767,17 @@ body.hidden {
 
 .list-tinhthanh .td {
   width: 15%;
-  text-align: right;
+  justify-content: flex-end;
   padding: 11px 10px;
   border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .list-tinhthanh .td:first-child {
   width: 40%;
-  text-align: left;
+  justify-content: flex-start;
   padding-left: 0;
 }
 .list-tinhthanh .td:nth-child(2){
@@ -3782,7 +3785,7 @@ body.hidden {
 }
 .list-tinhthanh .td:last-child {
   width: 30%;
-  text-align: center;
+  justify-content: center;
 }
 @media (max-width: 480px) {
   .list-tinhthanh {
