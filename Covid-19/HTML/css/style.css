@@ -2453,6 +2453,12 @@ button::-moz-focus-inner {
   margin-top: 8.5px;
 }
 
+@media (max-width: 979px) {
+  .top_bar .date {
+    display: none;
+  }
+}
+
 .top_bar .logo_mobile {
   display: none;
 }
@@ -2725,6 +2731,12 @@ button::-moz-focus-inner {
   margin-right: 30px;
 }
 
+@media (max-width: 979px) {
+  .top_new__left ul li {
+    margin-right: 15px;
+  }
+}
+
 .top_new__left ul li h3 {
   color: #222;
   padding-right: 10px;
@@ -2745,6 +2757,12 @@ button::-moz-focus-inner {
   position: absolute;
   right: -13px;
   top: 8px;
+}
+
+@media (max-width: 979px) {
+  .top_new__left ul li h3::before {
+    right: -3px;
+  }
 }
 
 .top_new__left ul li a {
@@ -2770,6 +2788,12 @@ button::-moz-focus-inner {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media (max-width: 979px) {
+  .top_new__right {
+    display: none;
+  }
 }
 
 .top_new__right .social {
@@ -3335,6 +3359,12 @@ body.hidden {
 /**END MANI MENU MOBILE**/
 .section.center {
   min-height: 270px;
+}
+
+@media (max-width: 1025px) {
+  .section.center {
+    min-height: 100px;
+  }
 }
 
 .title_cate {
@@ -5767,6 +5797,23 @@ svg.ic {
   .top_new .justify-content-between {
     height: 40px;
   }
+  .top_new__left ul {
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%;
+  }
+  .top_new__left ul li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .top_new__left ul li h3::before {
+    right: -5px;
+  }
   .top_new__right {
     display: none;
   }
@@ -5784,23 +5831,6 @@ svg.ic {
 @media (max-width: 480px) {
   .top_new__left {
     overflow: hidden;
-  }
-  .top_new__left ul {
-    display: block;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    width: 100%;
-  }
-  .top_new__left ul li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  .top_new__left ul li h3::before {
-    right: -5px;
   }
   .section_main {
     margin-top: 30px;

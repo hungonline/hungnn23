@@ -111,6 +111,9 @@
     color: #757575;
     float: left;
     margin-top: 8.5px;
+    @media (max-width: 979px) {
+      display: none;
+    }
   }
   
   .top_bar .logo_mobile {
@@ -401,6 +404,9 @@
   
   .top_new__left ul li {
     margin-right: 30px;
+    @media (max-width: 979px) {
+      margin-right: 15px;
+    }
   }
   .top_new__left ul li h3{
     color: #222;
@@ -421,6 +427,9 @@
     position: absolute;
     right: -13px;
     top: 8px;
+    @media (max-width: 979px) {
+      right: -3px;
+    }
   }
   .top_new__left ul li a {
     color: #757575;
@@ -445,6 +454,9 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    @media (max-width: 979px) {
+      display: none;
+    }
   }
   
   .top_new__right .social {
