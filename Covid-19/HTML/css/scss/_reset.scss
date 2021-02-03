@@ -23,7 +23,12 @@ body {
   position: sticky;
   top: 0;
 }
-
+.title-box-category {
+  font-feature-settings: 'pnum'on, 'lnum'on;
+  -webkit-font-feature-settings: 'pnum'on, 'lnum'on;
+  -moz-font-feature-settings: 'pnum'on, 'lnum'on;
+  -ms-font-feature-settings: 'pnum'on, 'lnum'on;
+}
 #to_top {
   width: 40px;
   height: 40px;
