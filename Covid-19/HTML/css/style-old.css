@@ -17,6 +17,7 @@
 		serif;
 }
 
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
 .flexbox {
   display: -webkit-flex;
   display: -moz-flex;
@@ -25,6 +26,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.no-flexbox {
+  display: inherit;
 }
 
 .title-box-category {
@@ -1291,7 +1296,7 @@ button::-moz-focus-inner {
   padding-left: 13px;
   margin-bottom: 15px;
   font-size: 16px;
-  line-height: lh(18px, 16px);
+  line-height: 1.125;
 }
 
 .list-news-dot li:before {
@@ -1312,7 +1317,7 @@ button::-moz-focus-inner {
 
 .error-text {
   font-size: 13px;
-  line-height: lh(15px, 13px);
+  line-height: 1.15385;
   color: var(--color-vne);
 }
 
@@ -4404,7 +4409,7 @@ li.flex.pin-menu .td {
   margin-left: 20px;
   font-size: 13px;
   color: #4f4f4f;
-  line-height: lh(15px, 13px);
+  line-height: 1.15385;
   font-family: arial;
   font-weight: 400;
   margin-top: 5px;

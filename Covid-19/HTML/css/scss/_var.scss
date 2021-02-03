@@ -98,14 +98,73 @@ $url: "images" !default;
 
 $vne_color: #9f224e;
 $vne_color_hover: #087CCE;
-$vne_hover: #B52759;
 $font-title: 'Merriweather', serif;
+
+$kinhdoanh: #04416d;
+$giaitri: #d71450;
+$thethao: #498523;
+$phapluat: #6e2c2d;
+$giaoduc: #B75C00;
+$suckhoe: #03817B;
+$doisong: #2D96B5;
+$dulich: #0072bb;
+$khoahoc: #867428;
+$sohoa: #9c6d00;
+$xe: #5D6C79;
+$cuoi: #DC3926;
+
+$vne_hover: #B52759;
+$kinhdoanh_hover: #065E9D;
+$giaitri_hover: #EC326B;
+$thethao_hover: #5FAE2E;
+$phapluat_hover: #923A3C;
+$giaoduc_hover: #EB7600;
+$suckhoe_hover: #049B93;
+$doisong_hover: #309FC0;
+$dulich_hover: #0083D6;
+$khoahoc_hover: #AD9634;
+$sohoa_hover: #B88000;
+$xe_hover: #8392A0;
+$cuoi_hover: #E7776A;
+
+$color-solid:#E5E5E5;
+@function lh($lineheight, $fontsize) {
+    @return $lineheight / $fontsize;
+  }
+
+@mixin cubic-transition($delay, $duration, $property) {
+    transition: {
+        duration: $duration;
+        property: $property;
+        timing-function: cubic-bezier(.7,1,.7,1);
+    }
+}
+/* @include cubic-transition($delay: 0, $duration: 200ms, $property: (all)); */
+%has_transition{
+    @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
+  }
+  %flexbox{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
 .flexbox{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+}
+.no-flexbox{display: inherit;}
+
+%clearfix{
+	&:after{
+        content: '';
+        display: table;
+		clear: both;
+	}
 }
 %font-fea{
     font-feature-settings: 'pnum' on , 'lnum' on;
