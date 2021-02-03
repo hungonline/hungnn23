@@ -2652,14 +2652,49 @@ svg.ic {
     }
 }
 
+#container {
+    height: 630px; 
+    min-width: 370px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.c-legend{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 15px;
+    width: 200px;
+}
+
+.c-legend div{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-left: 2px;
+}
+.c-color-1{
+    background-color: #d0ccd0;
+}
+.c-color-2{
+    background-color: #fde5d9;
+}
+.c-color-3{
+    background-color: #f9af91;
+}
+.c-color-4{
+    background-color: #f26a4d;
+}
+.c-color-5{
+    background-color: #e32b26;
+}
+.c-color-6{
+    background-color: #a41e23;
+}
 .tip-chart{
-    background: #FFFFFF;
-    border: 1px solid #E5E5E5;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 3px;
-    padding: 10px;
-    max-width: 130px;
+    max-width: 150px;
+    width: 130px;
     font-size: 10px;
+    position: relative;
     *{
         box-sizing: border-box;
     }
