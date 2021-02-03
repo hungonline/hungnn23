@@ -2050,7 +2050,7 @@ button::-moz-focus-inner {
 .top_new__left ul li a i {
   float: left;
   font-size: 15px;
-  margin: -2px 6px 0 0;
+  margin: -3px 4px 0 0;
 }
 
 .top_new__left ul li.active a {
@@ -2632,6 +2632,10 @@ body.hidden {
 .title_cate {
   font: bold 44px/1.5 var(--font1);
   color: var(--color-vne);
+  br{display: none;}
+  @media (max-width: 414px) {
+    br{display: block;}
+  }
 }
 
 .title_lbl {
@@ -2686,6 +2690,9 @@ body.hidden {
 .section_1.white {
   background: #fff;
   padding: 30px 0;
+  @media (max-width: 414px) {
+    padding: 15px 0;
+  }
 }
 
 .search_faq {
@@ -3243,9 +3250,7 @@ body.hidden {
 
 .title-line {
   font: bold 20px/1.6 var(--font1);
-  border-bottom: 1px solid #E5E5E5;
   margin-bottom: 15px;
-  padding-bottom: 15px;
 }
 
 @media (max-width: 767px) {
@@ -3339,8 +3344,8 @@ body.hidden {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 30px;
-  padding: 12px 10px;
+  margin: 30px 0;
+  padding: 15px 10px;
   position: relative;
 }
 
@@ -3575,19 +3580,11 @@ body.hidden {
 }
 
 .box-chart-covid .title-line {
-  font: 500 24px/1.6 var(--font1);
+  font: bold 24px/1.6 var(--font1);
   position: relative;
   margin: 15px 0;
 }
 
-.box-chart-covid .title-line::before {
-  content: "";
-  width: 48px;
-  height: 2px;
-  position: absolute;
-  top: -15px;
-  background: #9F224E;
-}
 
 @media (max-width: 768px) {
   .box-chart-covid .title-line {
@@ -5141,8 +5138,11 @@ svg.ic {
 
   .top_new__left ul li {
     display: inline-block;
+    margin-right: 15px;
   }
-
+  .top_new__left ul li h3::before{
+    right: -5px;
+  }
   .section_main {
     margin-top: 30px;
   }
@@ -5200,59 +5200,61 @@ svg.ic {
   --color2: #fff;
 }
 .count-covid-vietnam{
-  font-family: "Merriweather",serif;
-  font-size: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   max-width: 800px;
-  margin: 0 auto 30px;
-  padding: 12px 10px;
-}
-.count-covid-vietnam::before {
-  content: "";
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
-  height: 1px;
-  left: 0;
-  right: 0;
-  position: absolute;
-  top: 0;
-}
-.count-covid-vietnam::after {
-  content: "";
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
-  height: 1px;
-  left: 0;
-  right: 0;
-  position: absolute;
-  bottom: 0;
-}
-.count-covid-vietnam .date{
-  margin-left: 10px;
-}
-.count-covid-vietnam .date .number{
-  color: #F3585B;
-  font-size: 22px;
-  font-family: Arial;margin-left: 5px;
-}
-.count-covid-vietnam .item strong {
-  font: bold 22px/1.6 Arial;
-  display: inline-block;
-  line-height: 48px;
-  padding: 0 20px;
-  text-align: center;
-  border-radius: 4px;
-  background: #757575;
-  color: #fff;
-  margin: 3px 12px;
+  margin: 30px auto 30px;
+  padding: 15px 10px;
+  .text{
+    font-family: "Merriweather",serif;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  &::before {
+    content: "";
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    height: 1px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  &::after {
+    content: "";
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #9F224E 51.56%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    height: 1px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+  }
+
+ .item{
+     text-align: center;
+     padding: 0 10px;
+    strong {
+        font: bold 22px/1.6 Arial;
+        display: inline-block;
+        line-height: 48px;
+        padding: 0 10px;
+        text-align: center;
+        border-radius: 4px;
+        background: #F7F7F7;
+        color: #FF0000;
+        min-width: 150px;
+    }
+    &.nhiem strong {
+        background: #F3585B;color: #fff;
+    }
+ }
+
 }
 
-.count-covid-vietnam .item.nhiem strong {
-  background: #F3585B;
-}
+
 
 
 @media (max-width: 600px) {

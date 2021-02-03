@@ -435,10 +435,6 @@
   background: #E5E5E5;
 }
 
-.wrap-main-nav.sticky + .section {
-  margin-top: 50px;
-}
-
 :root {
   --fontmain: Arial;
   --colormain: #27bece;
@@ -1655,7 +1651,7 @@ button::-moz-focus-inner {
 .top_new__left ul li a i {
   float: left;
   font-size: 15px;
-  margin: -2px 6px 0 0;
+  margin: -3px 4px 0 0;
 }
 
 .top_new__left ul li.active a {
@@ -2194,6 +2190,16 @@ body.hidden {
   color: var(--color-vne);
 }
 
+.title_cate br {
+  display: none;
+}
+
+@media (max-width: 414px) {
+  .title_cate br {
+    display: block;
+  }
+}
+
 .title_lbl {
   font: bold 32px/1.6 var(--font1);
   color: #222222;
@@ -2246,6 +2252,12 @@ body.hidden {
 .section_1.white {
   background: #fff;
   padding: 30px 0;
+}
+
+@media (max-width: 414px) {
+  .section_1.white {
+    padding: 15px 0;
+  }
 }
 
 .search_faq {
@@ -2781,9 +2793,7 @@ body.hidden {
 
 .title-line {
   font: bold 20px/1.6 var(--font1);
-  border-bottom: 1px solid #E5E5E5;
   margin-bottom: 15px;
-  padding-bottom: 15px;
 }
 
 @media (max-width: 767px) {
@@ -2874,8 +2884,8 @@ body.hidden {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 30px;
-  padding: 12px 10px;
+  margin: 30px 0;
+  padding: 15px 10px;
   position: relative;
 }
 
@@ -3102,18 +3112,9 @@ body.hidden {
 }
 
 .box-chart-covid .title-line {
-  font: 500 24px/1.6 var(--font1);
+  font: bold 24px/1.6 var(--font1);
   position: relative;
   margin: 15px 0;
-}
-
-.box-chart-covid .title-line::before {
-  content: "";
-  width: 48px;
-  height: 2px;
-  position: absolute;
-  top: -15px;
-  background: #9F224E;
 }
 
 @media (max-width: 768px) {
@@ -4138,6 +4139,10 @@ svg.ic {
   }
   .top_new__left ul li {
     display: inline-block;
+    margin-right: 15px;
+  }
+  .top_new__left ul li h3::before {
+    right: -5px;
   }
   .section_main {
     margin-top: 30px;
@@ -4171,8 +4176,6 @@ svg.ic {
 }
 
 .count-covid-vietnam {
-  font-family: "Merriweather",serif;
-  font-size: 16px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4181,14 +4184,20 @@ svg.ic {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   position: relative;
   max-width: 800px;
-  margin: 0 auto 30px;
-  padding: 12px 10px;
+  margin: 30px auto 30px;
+  padding: 15px 10px;
+}
+
+.count-covid-vietnam .text {
+  font-family: "Merriweather",serif;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
 .count-covid-vietnam::before {
@@ -4213,31 +4222,26 @@ svg.ic {
   bottom: 0;
 }
 
-.count-covid-vietnam .date {
-  margin-left: 10px;
-}
-
-.count-covid-vietnam .date .number {
-  color: #F3585B;
-  font-size: 22px;
-  font-family: Arial;
-  margin-left: 5px;
+.count-covid-vietnam .item {
+  text-align: center;
+  padding: 0 10px;
 }
 
 .count-covid-vietnam .item strong {
   font: bold 22px/1.6 Arial;
   display: inline-block;
   line-height: 48px;
-  padding: 0 20px;
+  padding: 0 10px;
   text-align: center;
   border-radius: 4px;
-  background: #757575;
-  color: #fff;
-  margin: 3px 12px;
+  background: #F7F7F7;
+  color: #FF0000;
+  min-width: 150px;
 }
 
 .count-covid-vietnam .item.nhiem strong {
   background: #F3585B;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
