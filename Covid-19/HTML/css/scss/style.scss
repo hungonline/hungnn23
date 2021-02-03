@@ -2658,6 +2658,9 @@ svg.ic {
     padding: 10px;
     max-width: 130px;
     font-size: 10px;
+    *{
+        box-sizing: border-box;
+    }
     h3{
         font-family: var(--font1);
         border-bottom: 1px solid #E5E5E5;
@@ -2667,6 +2670,7 @@ svg.ic {
     .flex{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .item {
         width: 50%;

@@ -4248,6 +4248,10 @@ svg.ic {
   font-size: 10px;
 }
 
+.tip-chart * {
+  box-sizing: border-box;
+}
+
 .tip-chart h3 {
   font-family: var(--font1);
   border-bottom: 1px solid #E5E5E5;
@@ -4263,6 +4267,10 @@ svg.ic {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tip-chart .item {
