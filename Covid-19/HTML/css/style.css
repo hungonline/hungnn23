@@ -3333,6 +3333,10 @@ body.hidden {
 
 /*End Menu*/
 /**END MANI MENU MOBILE**/
+.section.center {
+  min-height: 270px;
+}
+
 .title_cate {
   font: bold 44px/1.5 var(--font1);
   color: var(--color-vne);
