@@ -4160,7 +4160,6 @@ svg.ic {
 }
 
 /* Update 2/1/2021 */
-
 .list_item_panel .item_social {
   background: none;
 }
@@ -4241,6 +4240,69 @@ svg.ic {
 
 .count-covid-vietnam .item.nhiem strong {
   background: #F3585B;
+  color: #fff;
+}
+
+.tip-chart {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 10px;
+  max-width: 130px;
+  font-size: 10px;
+}
+
+.tip-chart h3 {
+  font-family: var(--font1);
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.tip-chart .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.tip-chart .item {
+  width: 50%;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+
+.tip-chart .item p {
+  margin-bottom: 5px;
+}
+
+.tip-chart .item strong {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 26px;
+  padding: 0 4px;
+  text-align: center;
+  border-radius: 3px;
+  background: #F7F7F7;
+  color: #FF0000;
+  width: 100%;
+}
+
+.tip-chart .item.nhiem strong {
+  background: #E22B26;
+  color: #fff;
+}
+
+.tip-chart .item.danso {
+  width: 100%;
+}
+
+.tip-chart .item.danso strong {
+  background: #ACA1AC;
   color: #fff;
 }
 

@@ -5162,10 +5162,7 @@ svg.ic {
 }
 
 /* Update 2/1/2021 */
-#popup-main-menu{
-    max-width: 1100px;
-    padding: 0;
-}
+
 .list_item_panel .item_social{
   background: none;
 }
@@ -5255,6 +5252,53 @@ svg.ic {
 }
 
 
+.tip-chart{
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    padding: 10px;
+    max-width: 130px;
+    font-size: 10px;
+    h3{
+        font-family: var(--font1);
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item {
+        width: 50%;
+        padding: 0 5px;
+        margin-bottom: 5px;
+        p{margin-bottom: 5px;}
+        strong{
+            font-size: 14px;
+            display: inline-block;
+            line-height: 26px;
+            padding: 0 4px;
+            text-align: center;
+            border-radius: 3px;
+            background: #F7F7F7;
+            color: #FF0000;
+            width: 100%;
+        }
+        &.nhiem{
+            strong{
+                background: #E22B26;color: #fff;
+            }
+        }
+        &.danso{
+            width: 100%;
+            strong{
+                background: #ACA1AC;color: #fff;
+            }
+        }
+    }
+}
 
 
 @media (max-width: 600px) {
