@@ -1324,7 +1324,7 @@ button::-moz-focus-inner {
   font: 400 14px Arial;
   color: #757575;
   float: left;
-  margin-top: 6.5px;
+  margin-top: 8.5px;
 }
 
 .top_bar .block-right {
@@ -1834,11 +1834,11 @@ button::-moz-focus-inner {
   right: 15px;
   cursor: pointer;
   -webkit-transition-duration: 350ms;
-  transition-duration: 350ms;
+          transition-duration: 350ms;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   visibility: visible;
   opacity: 1;
   outline: none;
@@ -2142,7 +2142,7 @@ button::-moz-focus-inner {
 
 body.show_main_menu,
 body.hidden {
-  overflow: hidden !important;
+  overflow: hidden;
   height: 100vh;
   position: relative;
 }

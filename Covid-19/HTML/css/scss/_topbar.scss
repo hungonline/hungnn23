@@ -110,7 +110,7 @@
     font: 400 14px Arial;
     color: #757575;
     float: left;
-    margin-top: 6.5px;
+    margin-top: 8.5px;
   }
   
   .top_bar .logo_mobile {
@@ -370,4 +370,113 @@
     .top_bar .block-right__log .form_log li.user .name {
       font-size: 0;
     }
+  }
+
+
+  .top_new {
+    background: #fff;
+    z-index: 98;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top_new .justify-content-between {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #757575;
+    font-weight: bold;
+    height: 52px;
+  }
+  
+  .top_new__left ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top_new__left ul li {
+    margin-right: 30px;
+  }
+  .top_new__left ul li h3{
+    color: #222;
+    padding-right: 10px;
+    font-size: 16px;
+    position: relative;
+    font-family: var(--font1);
+  }
+  .top_new__left ul li h3::before{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+    transform: rotate(
+  45deg
+  );
+    position: absolute;
+    right: -13px;
+    top: 8px;
+  }
+  .top_new__left ul li a {
+    color: #757575;
+  }
+  
+  .top_new__left ul li a i {
+    float: left;
+    font-size: 15px;
+    margin: -3px 4px 0 0;
+  }
+  
+  .top_new__left ul li.active a {
+    color: var(--color-vne);
+  }
+  
+  .top_new__right {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .top_new__right .social {
+    margin-left: 10px;
+  }
+  
+  .top_new__right .social a {
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    display: inline-block;
+    border-radius: 50%;
+    color: #757575;
+    font-size: 12px;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  
+  .top_new__right .social .face:hover {
+    border: 1px solid #3b5998;
+    color: #3b5998;
+  }
+  
+  .top_new__right .social .twitter:hover {
+    border: 1px solid #00acee;
+    color: #00acee;
+  }
+  
+  .top_new__right .social .mail:hover {
+    border: 1px solid #dd5144;
+    color: #dd5144;
   }
