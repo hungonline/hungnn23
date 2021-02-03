@@ -34,7 +34,7 @@
                 <span class="hamburger__line--three"></span>
             </a>
             <h1><a href="#" title="Covid-19: Dịch Covid-19 ở Việt Nam" class="logo" id="logo"><img src="images/graphics/logo.svg" alt="Covid-19: Dịch Covid-19 ở Việt Nam"></a></h1>
-            <a class="all-menu open-popup-link" href="#popup-main-menu"><span class="hamburger"></span> Danh mục</a>
+            <a class="all-menu hamger-top-head" href="javascript:;"><span class="hamburger"></span> Danh mục</a>
             <div class="date">Thứ sáu, 22/3/2019</div>
             <div class="block-right flex align-items-center">
                 <div class="mobile-search">
@@ -78,8 +78,7 @@
 
         </div>
     </section>
-
-    <section class="section top_new sticky">
+    <section class="section wrap-main-nav top_new sticky">
         <div class="container flex justify-content-between">
             <div class="top_new__left">
                 <ul>
@@ -127,12 +126,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    
-
-
-    <div id="popup-main-menu" class="white-popup mfp-hide">
         <section class="wrap-all-menu">
             <div class="container">
                 <div class="header-menu">
@@ -941,9 +934,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-
+        </section>      
+    </section>
     <!-- build:content -->
 
     <!--FOOTER-->
@@ -1232,16 +1224,20 @@
             }
         });
 
-        $('.open-popup-link').magnificPopup({
-            type: 'inline',
-            midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-            mainClass: 'mfp-with-zoom',
-            fixedContentPos: false,
-            fixedBgPos: true,
-            overflowY: 'auto',
-            closeBtnInside: true,
-            preloader: false,
-            removalDelay: 300,
+
+        /**OPEN MAIN MENU **/
+        $(".all-menu").click(function () {
+            if ($(".wrap-main-nav").hasClass("sticky")) {
+            }
+            $(".wrap-main-nav").toggleClass("show-all-menu");
+            if (!$(".wrap-main-nav").hasClass("show-all-menu")) {
+                $("html").css("overflow", "");
+            }
+        });
+        $(".close-menu").click(function () {
+            $(".wrap-main-nav").removeClass("show-all-menu");
+            $(".all-menu").removeClass("close-menu-tablet");
+            $("html").css("overflow", "");
         });
     </script>
 </body>

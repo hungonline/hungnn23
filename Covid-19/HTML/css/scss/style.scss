@@ -3809,7 +3809,6 @@ body.hidden {
   max-height: 700px;
   margin-right: -10px;
   padding-right: 10px !important;
-  margin-top: -10px;
 }
 
 .list-tinhthanh li:first-child {
@@ -5069,6 +5068,35 @@ svg.ic {
 
   .section_1 {
     padding: 25px 0;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+
+  .footer .footer_left {
+    width: 100%;
+    display: block;
+  }
+
+  .footer .footer_left .logo {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .footer .footer_right {
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .footer .footer_right .social {
+    margin: 10px 0 0 0;
+  }
+
+  .footer .footer_right .social a {
+    margin: 0 5px;
   }
 }
 
