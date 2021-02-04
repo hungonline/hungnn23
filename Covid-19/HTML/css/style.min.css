@@ -2263,10 +2263,10 @@ body.hidden {
 
 @media (max-width: 414px) {
   .section_1.white {
-    padding: 15px 0;
+    padding: 30px 0 15px 0;
   }
   .section_1.white .red.center {
-    display: none;
+    margin-top: 10px;
   }
 }
 
@@ -4264,6 +4264,7 @@ svg.ic {
     width: 100%;
     text-align: center;
     margin: 0 0 10px 0;
+    display: none;
   }
   .count-covid-vietnam .text br {
     display: none;
