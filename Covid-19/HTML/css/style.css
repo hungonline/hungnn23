@@ -3440,6 +3440,9 @@ body.hidden {
   .section_1.white {
     padding: 15px 0;
   }
+  .section_1.white .red.center {
+    display: none;
+  }
 }
 
 .search_faq {
