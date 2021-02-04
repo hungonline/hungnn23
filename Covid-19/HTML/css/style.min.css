@@ -4272,13 +4272,6 @@ svg.ic {
   }
 }
 
-#container {
-  height: 630px;
-  min-width: 370px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .tip-chart {
   width: 120px;
   font-size: 10px;
