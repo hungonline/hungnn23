@@ -4258,6 +4258,7 @@ svg.ic {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    margin: 20px auto 30px;
   }
   .count-covid-vietnam .text {
     width: 100%;
