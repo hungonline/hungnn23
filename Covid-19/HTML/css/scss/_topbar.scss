@@ -70,6 +70,10 @@
   .top_bar .logo {
     width: 150px;
     float: left;
+    position: relative;
+    picture{
+      width: 130px; position: absolute; top: -8px; left: 25px;
+    }
   }
   .top_bar .all-menu{
     float: left;
@@ -328,8 +332,14 @@
   
   @media (max-width: 480px) {
     .top_bar .logo {
-      width: 132px;
-      margin: 0px 0 0 35px;
+      width: 160px;
+      position: absolute;
+      left: 50%;
+      margin-left: -80px;
+      picture{
+        width: 275px;
+        left: -70px;
+      }
     }
   
     .top_bar .block-right__log {
