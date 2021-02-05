@@ -67,7 +67,7 @@ body.hidden {
 }
 
 a {
-    color: #26282B;
+    color: #231f20;
     text-decoration: none;
     outline: none;
 
@@ -475,7 +475,7 @@ html {
 }
 
 .play-icon {
-    background: url(images/icons/play.svg);
+    background: #B76E23;
     position: absolute;
     width: 48px;
     height: 48px;
@@ -485,7 +485,16 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-
+    &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -9px 0 0 -5px;
+        border-top: 10px solid rgba(255, 255, 255, 0);
+        border-bottom: 10px solid rgba(255, 255, 255, 0);
+        border-left: 14px solid #fff;
+    }
     svg {
         color: #fff;
         width: 50px;
