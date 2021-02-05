@@ -1,0 +1,212 @@
+@media (max-width:1600px) {
+    .max-container {
+        padding: 0 40px
+    }
+}
+
+@media (max-width:1169px) {
+    .wrap-main-nav {
+        margin-top: 0;
+    }
+
+    .margin-fixed {
+        margin-top: -80px !important;
+    }
+
+    .title-category {
+        .title {
+            &::before {
+                transform: translateX(0px);
+            }
+        }
+    }
+}
+
+@media (max-width:1025px) {
+    .box_stream {
+        padding-right: 30px;
+    }
+
+    .margin-fixed {
+        margin-top: 0 !important;
+    }
+
+    .banner-home {
+        .item {
+            height: calc(100vh - 80px);
+        }
+
+        &__folder {
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+    .title-category {
+
+        .label {
+            font-size: 14px;
+        }
+
+        .title {
+            font-size: 25px;
+            &::before{
+                top: -2px;
+            }
+            // &::before {
+            //     left: -50px;
+            //     width: 80px;
+            //     height: 80px;
+            //     top: -60px;
+            // }
+        }
+
+        // &__center,
+        // &__v2 {
+        //     .title {
+        //         &::before {
+        //             top: -30px;
+        //         }
+        //     }
+        // }
+    }
+}
+
+@media (max-width:991px) {
+    .page-folder .wrap-main-nav>.container::before {
+        display: none
+    }
+
+    .breadcrumb {
+        margin-bottom: 30px;
+    }
+
+    .box_stream {
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .box_300 {
+        display: none
+    }
+
+    .banner-home {
+        overflow: hidden;
+
+        .item {
+            height: calc(100vh - 55px);
+        }
+    }
+
+    .max-container {
+        padding: 0 15px
+    }
+}
+
+@media (max-width:767px) {
+    .flex-head {
+        display: block;
+
+        .title-category {
+            margin-bottom: 20px;
+
+            .line {
+                width: 70px;
+            }
+        }
+
+        .view-more {
+            font-size: 12px;
+            margin-bottom: 20px;
+            display: block;
+            text-align: right;
+            border-left: 0
+        }
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .banner-home,
+    .section-conso,
+    .section-duan {
+        margin-bottom: 50px;
+    }
+
+    .banner-home {
+        .text-post {
+            font-size: 16px;
+        }
+    }
+
+    .banner-home.max-container {
+        padding: 0
+    }
+}
+
+@media (max-width:576px) {
+    .mb100 {
+        margin-bottom: 50px !important;
+    }
+
+    .banner-home {
+        .item {
+            height: calc(100vh - 55px)
+        }
+
+        .text-post {
+            text-shadow: 1px 1px 1px #000;
+            font-weight: bold;
+            top: 40%;
+            max-width: 320px;
+        }
+
+        .btn-default {
+            height: 38px;
+            line-height: 38px;
+            font-size: 13px;
+            padding: 0 10px;
+            text-shadow: 0px 0px 0px #000;
+            font-weight: 400;
+        }
+
+        &__folder {
+            .item {
+                height: 400px;
+            }
+        }
+    }
+
+    .btn-default.xem-them {
+        height: 48px;
+        line-height: 48px;
+        padding: 0 20px;
+    }
+
+    .box_300 {
+        display: block;
+        padding-left: 0;
+        border-left: 0
+    }
+
+    .title-category {
+        margin-bottom: 20px;
+
+        // &__center,
+        // &__v2 {
+        //     .title {
+        //         &::before {
+        //             top: -20px;
+        //             left: -40px;
+        //             width: 60px;
+        //             height: 60px;
+        //         }
+        //     }
+        // }
+    }
+
+    .tab-duan {
+        margin-top: 40px;
+    }
+}
