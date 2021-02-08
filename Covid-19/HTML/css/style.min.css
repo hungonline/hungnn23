@@ -4309,6 +4309,55 @@ svg.ic {
   }
 }
 
+.c-legend {
+  position: absolute;
+  bottom: 28px;
+  left: 10px;
+  height: 15px;
+}
+
+.c-legend div {
+  width: 45px;
+  height: 15px;
+  float: left;
+  margin-left: 1px;
+  position: relative;
+}
+
+.c-legend div span {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.c-color-1 {
+  background-color: #d0ccd0;
+  display: none;
+}
+
+.c-color-2 {
+  background-color: #FDE5D9;
+}
+
+.c-color-3 {
+  background-color: #F9AF91;
+}
+
+.c-color-4 {
+  background-color: #F26A4D;
+}
+
+.c-color-5 {
+  background-color: #E22B26;
+}
+
+.c-color-6 {
+  background-color: #A41E23;
+}
+
 .tip-chart {
   width: 120px;
   font-size: 10px;
