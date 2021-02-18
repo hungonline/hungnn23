@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1597714592953');
-	src: url('iconfont.eot?#iefix-1597714592953') format('embedded-opentype'),
-		url('iconfont.woff2?1597714592953') format('woff2'),
-		url('iconfont.woff?1597714592953') format('woff'),
-		url('iconfont.ttf?1597714592953') format('truetype');
+	src: url('iconfont.eot?1613636346138');
+	src: url('iconfont.eot?#iefix-1613636346138') format('embedded-opentype'),
+		url('iconfont.woff2?1613636346138') format('woff2'),
+		url('iconfont.woff?1613636346138') format('woff'),
+		url('iconfont.ttf?1613636346138') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -64,28 +64,36 @@ Glyphs list
 			content: '\ea08';
 		}
 
-		 .iconfont-Phone:before {
+		 .iconfont-pause:before {
 			content: '\ea09';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-Phone:before {
 			content: '\ea0a';
 		}
 
-		 .iconfont-search2:before {
+		 .iconfont-play:before {
 			content: '\ea0b';
 		}
 
-		 .iconfont-Tracking:before {
+		 .iconfont-search:before {
 			content: '\ea0c';
 		}
 
-		 .iconfont-twiter:before {
+		 .iconfont-search2:before {
 			content: '\ea0d';
 		}
 
-		 .iconfont-user:before {
+		 .iconfont-Tracking:before {
 			content: '\ea0e';
+		}
+
+		 .iconfont-twiter:before {
+			content: '\ea0f';
+		}
+
+		 .iconfont-user:before {
+			content: '\ea10';
 		}
 
 		

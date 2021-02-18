@@ -9,6 +9,7 @@
 @import "nav.scss";
 @import "topbar.scss";
 @import "menu-vne.scss";
+@import "swiper.scss";
 .section.center{
   min-height: 270px;
   background: #f7f7f7;
@@ -2742,6 +2743,108 @@ svg.ic {
       }
     }
 }
+
+// Highchart
+#play-controls{
+  position: relative;
+  padding: 60px 0 0px 0;
+  #race-status{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #757575;
+    font-size: 16px;
+    .race-status-datetime{
+      display: block;
+      font: bold 24px/1.6 var(--font1);
+      text-align: right;
+    }
+  }
+}
+#play-pause-button {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #333333;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 65px;
+}
+
+#play-range {
+  transform: translateY(2.5px);
+}
+#lineCont {
+  width: 100%;
+  padding-left: 100px;
+}
+
+#line {
+  position: relative;
+  padding-top: 15px;
+  &::before{
+    content: "";
+    height: 2px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 17px;
+    right: 8px;
+    left: 8px;
+  }
+}
+
+#span {
+  display: none;
+  width: 70%;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  color: #F00;
+}
+
+.circle {
+  cursor: pointer;
+}
+.circle:before {
+  content: "";
+  width: 2px;
+  height: 12px;
+  background: #e5e5e5;
+  position: absolute;
+  top: 2px;
+  left: 7px;
+}
+.circle .popupSpan {
+  white-space: nowrap;
+  display: inline-block;
+  color: #757575;
+  font-size: 12px;
+  margin-top: 20px;
+  display: block;
+  transition: all 0.1s ease-out;
+}
+.circle.active::after{
+  content: "";
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 4px solid #757575;
+  position: absolute;
+  top: -13px;
+  left: 4px;
+}
+.circle.hover:before, .circle.active:before {
+  display: block;
+}
+.circle.hover .popupSpan, .circle.active .popupSpan {
+  display: block;
+}
+
 
 @media (max-width: 600px) {
   .btn24hqua, .evne{display: none;}

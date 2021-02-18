@@ -1425,10 +1425,87 @@
                 </div>
             </div>
         </div>
-
+        <div class="wrap-border mb24">
+            <div id="play-controls">
+                <button id="play-pause-button" class="iconfont-play" title="play"></button>
+                <div id="lineCont">
+                   <div id="line" class="swiper-container">
+                       <div class="swiper-wrapper">
+                            <div class="swiper-slide circle active" id="circle0" data-date="20210128">
+                                <div class="popupSpan">28/1</div>
+                            </div>
+                            <div class="swiper-slide circle" id="circle1" data-date="20210129">
+                                <div class="popupSpan">29/1</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle2" data-date="20210130">
+                                <div class="popupSpan">30/1</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle3" data-date="20210131">
+                                <div class="popupSpan">31/1</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle4" data-date="20210201">
+                                <div class="popupSpan">1/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle5" data-date="20210202">
+                                <div class="popupSpan">2/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle6" data-date="20210203">
+                                <div class="popupSpan">3/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle7" data-date="20210204">
+                                <div class="popupSpan">4/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle8" data-date="20210205">
+                                <div class="popupSpan">5/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle9" data-date="20210206">
+                                <div class="popupSpan">6/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle10" data-date="20210207">
+                                <div class="popupSpan">7/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle11" data-date="20210208">
+                                <div class="popupSpan">8/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle12" data-date="20210209">
+                                <div class="popupSpan">9/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle13" data-date="20210210">
+                                <div class="popupSpan">10/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle14" data-date="20210211">
+                                <div class="popupSpan">11/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle15" data-date="20210212">
+                                <div class="popupSpan">12/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle16"  data-date="20210213">
+                                <div class="popupSpan">13/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle17" data-date="20210214">
+                                <div class="popupSpan">14/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle18" data-date="20210215">
+                                <div class="popupSpan">15/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle19"  data-date="20210216">
+                                <div class="popupSpan">16/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle20" data-date="20210217">
+                                <div class="popupSpan">17/2</div>
+                             </div>
+                             <div class="swiper-slide circle" id="circle21" data-date="20210218">
+                                <div class="popupSpan">18/2</div>
+                             </div>
+                       </div>
+                   </div>
+                   <div id="span">Date Placeholder</div>
+                </div>
+                <div id="race-status">            <span class="race-status-datetime">28/1</span>            <span class="race-status-total">Tổng ca nhiễm : <span>557</span></span>        </div>
+             </div>
+        </div>
     </div>
 </section>
-
 
 
 
@@ -1705,6 +1782,7 @@
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     
+<script type="text/javascript" src="js/swiper.min.js"></script>
 <script>
     $('.list-hospital .lever1').find('h3').click(function () {
         if (!$(this).parent('li').hasClass("active")) {
@@ -1732,6 +1810,25 @@
             $(this).parent('li').find('.content').slideUp('fast');
         }
     });
+
+    var swiper = new Swiper('#line.swiper-container', {
+      slidesPerView: 12,
+      breakpoints: {
+        414: {
+          slidesPerView: 3
+        },
+        640: {
+          slidesPerView: 6
+        },
+        768: {
+          slidesPerView: 8
+        },
+        1024: {
+          slidesPerView: 10
+        },
+      }
+    });
+
 </script>
 
     <div class="clearfix"></div>
