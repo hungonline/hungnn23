@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1610509407042');
-	src: url('iconfont.eot?#iefix-1610509407042') format('embedded-opentype'),
-		url('iconfont.woff2?1610509407042') format('woff2'),
-		url('iconfont.woff?1610509407042') format('woff'),
-		url('iconfont.ttf?1610509407042') format('truetype');
+	src: url('iconfont.eot?1613699381769');
+	src: url('iconfont.eot?#iefix-1613699381769') format('embedded-opentype'),
+		url('iconfont.woff2?1613699381769') format('woff2'),
+		url('iconfont.woff?1613699381769') format('woff'),
+		url('iconfont.ttf?1613699381769') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -32,20 +32,40 @@ iconfont Webfont
 /*
 Glyphs list
 */
- .iconfont-like:before {
+ .iconfont-back:before {
 			content: '\ea01';
 		}
 
-		 .iconfont-next:before {
+		 .iconfont-chuyennghe:before {
 			content: '\ea02';
 		}
 
-		 .iconfont-play:before {
+		 .iconfont-comment:before {
 			content: '\ea03';
 		}
 
-		 .iconfont-share:before {
+		 .iconfont-hanhtrinh:before {
 			content: '\ea04';
+		}
+
+		 .iconfont-home:before {
+			content: '\ea05';
+		}
+
+		 .iconfont-like:before {
+			content: '\ea06';
+		}
+
+		 .iconfont-next:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-play:before {
+			content: '\ea08';
+		}
+
+		 .iconfont-share:before {
+			content: '\ea09';
 		}
 
 		

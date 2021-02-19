@@ -34,3 +34,49 @@
         }
     }
 }
+
+.bottom-bar{
+    position: fixed;
+    z-index: 98;
+    bottom: 0;
+    width: 100%;
+    background: rgba(248, 248, 248, 1);
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    a{
+        width: 20%;
+        color: #858585;
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        padding: 10.5px 0;
+        svg,img{
+            width: 20px;
+            height: 20px;
+        }
+        span{
+            display: block;
+            margin-top: 3px;
+        }
+        &.active{
+            color: #AA7D54;
+            &::before{
+                content: "";
+                background: #AA7D54;
+                height: 2px;
+                left: 8px;
+                right: 8px;
+                position: absolute;
+                top: 0;
+            }
+            svg{
+                color: #AA7D54;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        display: flex;
+    }
+}
