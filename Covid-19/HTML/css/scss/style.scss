@@ -2747,11 +2747,11 @@ svg.ic {
 // Highchart
 #play-controls{
   position: relative;
-  padding: 60px 0 0px 0;
+  padding: 0;
   #race-status{
     position: absolute;
     right: 0;
-    top: 0;
+    top: -70px;
     color: #757575;
     font-size: 16px;
     .race-status-datetime{
@@ -2774,7 +2774,8 @@ svg.ic {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 65px;
+  top: 0;
+  left: 30px;
 }
 
 #play-range {

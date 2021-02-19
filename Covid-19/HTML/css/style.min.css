@@ -4666,13 +4666,13 @@ svg.ic {
 
 #play-controls {
   position: relative;
-  padding: 60px 0 0px 0;
+  padding: 0;
 }
 
 #play-controls #race-status {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -70px;
   color: #757575;
   font-size: 16px;
 }
@@ -4705,7 +4705,8 @@ svg.ic {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  top: 65px;
+  top: 0;
+  left: 30px;
 }
 
 #lineCont {
