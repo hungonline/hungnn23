@@ -44,7 +44,7 @@
     height: 60px;
     align-items: center;
     justify-content: center;
-    display: none;
+    display: none!important;
     a{
         width: 20%;
         color: #858585;
@@ -77,6 +77,6 @@
         }
     }
     @media (max-width: 576px) {
-        display: flex;
+        display: flex!important;
     }
 }
