@@ -44,13 +44,26 @@
         align-items: center;
 
         li {
-            margin: 0 25px;
+            margin: 0 15px;
 
             a {
                 color: #191919;
                 font-size: 16px;
                 font-family: var(--font1);
                 position: relative;
+
+                .dotted-svg {
+                    &::before {
+                        left: -7px;
+                    }
+
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
             }
 
             &.active {
