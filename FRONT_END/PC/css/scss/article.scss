@@ -804,6 +804,19 @@ span.spanDateTime i {
                 }
             }
         }
+        .view-more{
+            border: 1px solid var(--green1);
+            color: var(--color1);
+            line-height: 26px;
+            font-size: 13px;
+            padding: 0 15px;
+            display: inline-block;
+            border-radius: 10px;
+            &:hover{
+                background: var(--green1);
+                color: #fff;
+            }
+        }
 	}
 }
 
