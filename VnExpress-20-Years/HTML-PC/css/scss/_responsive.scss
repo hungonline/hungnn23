@@ -13,6 +13,10 @@
 }
 
 @media (max-width: 576px) {
+    .footer {
+        margin-bottom: 80px;
+    }
+
     .page-loichuc .form_dk h3 {
         font-size: 32px;
         margin-bottom: 20px;
@@ -20,6 +24,7 @@
 
     .title-cate {
         margin-bottom: 20px;
+        font-size: 32px
     }
 }
 
