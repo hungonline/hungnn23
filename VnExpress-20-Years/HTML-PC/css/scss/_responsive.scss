@@ -52,7 +52,16 @@
         margin-bottom: 20px;
 
         .right-head {
-            right: -10px
+            font-size: 0;
+
+            .twitter,
+            .face {
+                display: none !important
+            }
+
+            .share {
+                display: block !important
+            }
         }
     }
 
