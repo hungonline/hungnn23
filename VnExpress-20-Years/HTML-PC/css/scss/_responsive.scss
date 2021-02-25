@@ -12,6 +12,12 @@
     }
 }
 
+@media (max-width: 979px) {
+    .title-cate {
+        font-size: 32px
+    }
+}
+
 @media (max-width: 576px) {
     .footer {
         margin-bottom: 80px;
@@ -22,10 +28,7 @@
         margin-bottom: 20px;
     }
 
-    .title-cate {
-        margin-bottom: 20px;
-        font-size: 32px
-    }
+
 }
 
 .hidden-pc {
@@ -55,7 +58,7 @@
 
     .page-detail {
         &.middle-detail {
-            padding-bottom: 70px;
+            padding-bottom: 40px;
         }
     }
 

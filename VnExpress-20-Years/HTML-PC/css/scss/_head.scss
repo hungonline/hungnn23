@@ -6,7 +6,7 @@
     top: 0 !important;
 
     .wrap {
-        max-width: 1792px;
+        max-width: 1800px;
         margin: 0 auto;
         border-bottom: 1px solid #000000;
         position: relative;
@@ -89,6 +89,43 @@
     .right-head {
         position: absolute;
         right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color: #191919;
+        font-size: 16px;
+
+        .social {
+            margin-left: 10px;
+
+            a {
+                background: #fff;
+                width: 30px;
+                height: 30px;
+                margin-left: 2px;
+                line-height: 27px;
+                text-align: center;
+                border: 1px solid #E5E5E5;
+                display: inline-block;
+                border-radius: 50%;
+                color: #757575;
+                font-size: 12px;
+                -webkit-transition: 0.5s ease;
+                transition: 0.5s ease;
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                    fill: #D3BF9F;
+                }
+
+                &:hover {
+                    svg {
+                        fill: #AA7D54;
+                    }
+                }
+            }
+        }
     }
 
     .logo-mobile,
@@ -111,6 +148,8 @@
     }
 
     @media (max-width: 1100px) {
+        padding: 0 15px;
+
         .back-vne {
             span {
                 display: none
@@ -225,7 +264,6 @@
 
     @media (max-width: 576px) {
         border-bottom: 0;
-        padding: 0 15px;
 
         .wrap {
             border-bottom: 1px solid #000000;
