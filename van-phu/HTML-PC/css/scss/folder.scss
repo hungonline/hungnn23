@@ -733,7 +733,8 @@
             top: -90px;
             left: -10px;
             opacity: 0.8;
-            z-index: -1; opacity: 0;
+            z-index: -1;
+            opacity: 0;
         }
     }
 
@@ -859,6 +860,7 @@
                 position: relative;
                 margin-bottom: 16px;
                 padding-left: 45px;
+
                 &::before {
                     content: "";
                     background: url(images/icons/icon-title-new.png) no-repeat center;
@@ -1064,15 +1066,16 @@
             position: relative;
             margin-bottom: 40px;
             margin-top: 60px;
-            padding-left: 45px;
+            padding-left: 60px;
+
             &::before {
                 content: "";
                 background: url(images/icons/icon-title-new.png) no-repeat center;
                 background-size: contain;
-                width: 40px;
+                width: 50px;
                 height: 40px;
                 position: absolute;
-                top: 0px;
+                top: 0;
                 left: 0;
             }
         }
@@ -1113,9 +1116,9 @@
             font-size: 24px;
             padding-right: 32px;
 
-            .title {
-                color: #b66326;
-            }
+            // .title {
+            //     color: #b66326;
+            // }
         }
 
         .row {
@@ -1803,7 +1806,7 @@
         h4 {
             font-weight: 500;
             font-size: 18px;
-            color: #fff;
+            color: #b66326;
         }
 
         @media (max-width:576px) {
@@ -2433,11 +2436,11 @@
     position: relative;
     z-index: 3;
 
-    .title-category {
-        .title {
-            font-size: 24px
-        }
-    }
+    // .title-category {
+    //     .title {
+    //         font-size: 24px
+    //     }
+    // }
 
     .flex {
         margin: 0 -8px
@@ -2660,9 +2663,10 @@
 }
 
 .list-article-v2 {
-    .flex{
+    .flex {
         margin: 0 -40px;
     }
+
     .item-news {
         width: 50%;
         padding: 0 40px;
@@ -2695,18 +2699,20 @@
     }
 
     @media (max-width:1025px) {
-        .flex{
+        .flex {
             margin: 0 -20px;
         }
+
         .item-news {
             padding: 0 20px;
         }
     }
 
     @media (max-width:767px) {
-        .flex{
+        .flex {
             margin: 0;
         }
+
         .item-news {
             width: 100%;
             padding: 0;
