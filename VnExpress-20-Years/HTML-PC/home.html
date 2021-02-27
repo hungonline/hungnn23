@@ -22,7 +22,7 @@
     <link href="https://s1.vnecdn.net/vnexpress/restruct/c/v411/v2_2019/pc/general-file.css" media="all"
         rel="stylesheet" />
     
-
+<link rel="stylesheet" href="css/animation.css" media="all" />
 
     <link rel="stylesheet" href="css/custom.css" media="all" />
 
@@ -40,180 +40,203 @@
                         <use xlink:href="images/icons/icon.svg#next"></use>
                     </svg>
                 </span>
-                <span>Quay lại VnExpress</span>
+                <span>VnExpress</span>
             </a>
             <ul class="menu">
-                <li class="active"><a href="home.html" title="">
+                <!-- <li class="active"><a href="home.html" title="">
                         <span class="dotted-svg">
                             <svg class="icon-svg">
                                 <use xlink:href="images/icons/icon.svg#home"></use>
                             </svg>
                         </span>
-                    </a></li>
+                    </a>
+                </li> -->
+                <li><a href="home.html" title="">Trang chủ</a></li>
                 <li><a href="hanh-trinh.html" title="">Hành trình</a></li>
-                <li><a href="loi-chuc.html" title="">Lời chúc</a></li>
+
                 <li>
                     <a href="home.html" title=""><img src="images/graphics/Logo.svg" /></a>
                 </li>
+                <li><a href="chia-se.html" title="">Chia sẻ</a></li>
 
-                <li><a href="chuyen-nghe.html" title="">Chuyện nghề</a></li>
-                <li><a href="tac-pham.html" title="">Tác phẩm</a></li>
+                <li><a href="loi-chuc.html" title="">Lời chúc</a></li>
+                <!-- <li><a href="tac-pham.html" title="">Sau khuôn hình</a></li> -->
 
             </ul>
             <div class="right-head">
-                <!-- Myvne PC -->
-                <div id="myvne_taskbar" class="myvne_taskbar_pc hidden-mobile">
-                    <div id="myvne" class="myvne_taskbar">
-                        <div class="myvne_container" id="myvne_user_logged">
-                            <ul class="myvne_form_log logged">
-                                <li class="myvne_user" id="myvne_profile_tool">
-                                    <a href="javascript:void(0);" id="myvne_avatar_taskbar" class="myvne_avatar"> <span
-                                            class="avatar_inner"><img
-                                                src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
-                                                width="25" height="25" alt=""></span> <span class="name_user_av">Như
-                                            Hùng</span> </a>
-                                    <ul class="myvne_user_status" style="display:none;">
-                                        <li class="li_bd li_account"> <span class="avatar_sub"><img
+                Chia sẻ
+                <div class="social">
+                    <a href="javascript:void(0);" class="twitter">
+                        <svg class="ic ic-facebook">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#Facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0);" class="face">
+                        <svg class="ic ic-twitter">
+                            <use xlink:href="css/images/graphics/icon-vne.svg#Twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:;" class="share">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#share">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+                <div style="display: none">
+                    <!-- Myvne PC -->
+                    <div id="myvne_taskbar" class="myvne_taskbar_pc hidden-mobile">
+                        <div id="myvne" class="myvne_taskbar">
+                            <div class="myvne_container" id="myvne_user_logged">
+                                <ul class="myvne_form_log logged">
+                                    <li class="myvne_user" id="myvne_profile_tool">
+                                        <a href="javascript:void(0);" id="myvne_avatar_taskbar" class="myvne_avatar">
+                                            <span class="avatar_inner"><img
                                                     src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
-                                                    width="25" height="25" alt=""></span> <span class="name_sub">Như
-                                                Hùng</span> </li>
-                                        <li><a href="https://my.vnexpress.net/users/feed/1014352662"
-                                                title="Hoạt động bình luận">Hoạt
-                                                động bình luận</a></li>
-                                        <li><a href="https://my.vnexpress.net/users/tin-da-luu" title="Tin đã lưu">Tin
-                                                đã lưu</a></li>
-                                        <li class="li_bd"><a href="https://my.vnexpress.net/users/tin-da-doc"
-                                                title="Tin đã xem">Tin đã
-                                                xem</a></li>
-                                        <li class="li_bd"><a id="myvne_update_profile_link"
-                                                href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
-                                                title="Tài khoản của tôi">Tài
-                                                khoản của tôi</a></li>
-                                        <li><a href="https://my.vnexpress.net/qua-tang" title="Quà tặng">Quà tặng</a>
-                                        </li>
-                                        <li class="li_bd"><a href="https://kidlab.vnexpress.net/"
-                                                title="Kid-lab">Kid-lab</a></li>
-                                        <li><a href="javascript:void(0);" id="myvne_logout_link">Thoát</a></li>
-                                    </ul>
-                                </li>
-                                <li class="myvne_notification" id="myvne_notify_show">
-                                    <a class="myvne_icon_bell_click"><svg class="ic ic-bell">
-                                            <use xlink:href="css/images/graphics/icon-vne.svg#Bell">
-                                            </use>
-                                        </svg></a>
-                                    <span id="myvne_notify_area"></span>
-                                    <div id="myvne_notify_box" class="myvne_content_notification" style="display:none;">
-                                        <ul id="myvne_notify_lists" class="scrollbar-macosx">
-                                            <li class="myvne_loading">Loading</li>
+                                                    width="25" height="25" alt=""></span> <span class="name_user_av">Như
+                                                Hùng</span> </a>
+                                        <ul class="myvne_user_status" style="display:none;">
+                                            <li class="li_bd li_account"> <span class="avatar_sub"><img
+                                                        src="//a.vnecdn.net/avatar/c60x60/2016/10/03/6127804949_1475491524.png"
+                                                        width="25" height="25" alt=""></span> <span class="name_sub">Như
+                                                    Hùng</span> </li>
+                                            <li><a href="https://my.vnexpress.net/users/feed/1014352662"
+                                                    title="Hoạt động bình luận">Hoạt
+                                                    động bình luận</a></li>
+                                            <li><a href="https://my.vnexpress.net/users/tin-da-luu"
+                                                    title="Tin đã lưu">Tin
+                                                    đã lưu</a></li>
+                                            <li class="li_bd"><a href="https://my.vnexpress.net/users/tin-da-doc"
+                                                    title="Tin đã xem">Tin đã
+                                                    xem</a></li>
+                                            <li class="li_bd"><a id="myvne_update_profile_link"
+                                                    href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
+                                                    title="Tài khoản của tôi">Tài
+                                                    khoản của tôi</a></li>
+                                            <li><a href="https://my.vnexpress.net/qua-tang" title="Quà tặng">Quà
+                                                    tặng</a>
+                                            </li>
+                                            <li class="li_bd"><a href="https://kidlab.vnexpress.net/"
+                                                    title="Kid-lab">Kid-lab</a></li>
+                                            <li><a href="javascript:void(0);" id="myvne_logout_link">Thoát</a></li>
                                         </ul>
-                                        <ul id="myvne_notify_viewmore_area" style="display:none"> <span
-                                                id="myvne_loading_viewmore" style="display: none;">Loading</span> <a
-                                                href="javascript:void(0);" id="myvne_notify_viewmore"
-                                                class="myvne_notification-viewmore" style="display:none;">Xem
-                                                thêm</a> </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="clear"></div>
+                                    </li>
+                                    <li class="myvne_notification" id="myvne_notify_show">
+                                        <a class="myvne_icon_bell_click"><svg class="ic ic-bell">
+                                                <use xlink:href="css/images/graphics/icon-vne.svg#Bell">
+                                                </use>
+                                            </svg></a>
+                                        <span id="myvne_notify_area"></span>
+                                        <div id="myvne_notify_box" class="myvne_content_notification"
+                                            style="display:none;">
+                                            <ul id="myvne_notify_lists" class="scrollbar-macosx">
+                                                <li class="myvne_loading">Loading</li>
+                                            </ul>
+                                            <ul id="myvne_notify_viewmore_area" style="display:none"> <span
+                                                    id="myvne_loading_viewmore" style="display: none;">Loading</span> <a
+                                                    href="javascript:void(0);" id="myvne_notify_viewmore"
+                                                    class="myvne_notification-viewmore" style="display:none;">Xem
+                                                    thêm</a> </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- End Myvne PC -->
-                <!-- Myvne MB -->
-                <div id="myvne_taskbar" class="myvne_taskbar_pc hidden-pc">
-                    <!-- <ul class="myvne_form_log">
-                        <li class="myvne_user"><a href="javascript:;" title="Login"
-                                class="myvne_icon myvne_login_button"><i class="ic ic-user"></i></a><i
-                                class="icon-arrow"></i></li>
-                    </ul> -->
-                    <ul class="myvne_form_log loged">
-                        <li class="myvne_user">
-                            <a href="javascript:void(0);" id="myvne_avatar_taskbar" class="myvne_icon myvne_avatar">
-                                <span class="av_no_img" style=" text-transform: uppercase; ">K</span>
-                            </a>
-                            <i class="icon-arrow"></i>
-                            <div class="block_sub_myvne block_sub_log myvne_user_status_mobile">
-                                <div class="width_common header_sub_myvne">
-                                    <div class="m_page_title"><strong style="font-size: 20px;">Nguyễn Như Hùng</strong>
+                    <!-- End Myvne PC -->
+                    <!-- Myvne MB -->
+                    <div id="myvne_taskbar" class="myvne_taskbar_pc hidden-pc">
+                        <ul class="myvne_form_log loged">
+                            <li class="myvne_user">
+                                <a href="javascript:void(0);" id="myvne_avatar_taskbar" class="myvne_icon myvne_avatar">
+                                    <span class="av_no_img" style=" text-transform: uppercase; ">K</span>
+                                </a>
+                                <i class="icon-arrow"></i>
+                                <div class="block_sub_myvne block_sub_log myvne_user_status_mobile">
+                                    <div class="width_common header_sub_myvne">
+                                        <div class="m_page_title"><strong style="font-size: 20px;">Nguyễn Như
+                                                Hùng</strong>
+                                        </div>
+                                        <div class="pre-text">Tham gia từ 11/11/2014 <a
+                                                href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
+                                                class="edit_profile">Tài khoản của tôi</a></div>
                                     </div>
-                                    <div class="pre-text">Tham gia từ 11/11/2014 <a
-                                            href="https://my.vnexpress.net/users/chi-tiet-tai-khoan"
-                                            class="edit_profile">Tài khoản của tôi</a></div>
-                                </div>
-                                <ul class="menu_profile width_common">
-                                    <li><a href="https://my.vnexpress.net/users/feed/1002649849">Bình luận</a></li>
-                                    <li><a href="https://my.vnexpress.net/users/tin-da-doc">Tin đã xem</a></li>
-                                    <li><a href="https://my.vnexpress.net/users/tin-da-luu">Tin đã lưu</a></li>
-                                </ul>
-                                <ul class="menu_profile width_common other_link mb15">
-                                    <li><a href="https://vnexpress.net/lien-he-toa-soan/">Liên hệ tòa soạn</a></li>
-                                    <li><a href="https://eclick.vn/">Liên hệ quảng cáo</a></li>
-                                </ul>
-                                <div class="box_saved_news" id="box_saved_news">
-                                    <div class="head_box width_common">
-                                        <div class="left"><strong>Tin mới lưu</strong></div>
-                                        <a href="https://my.vnexpress.net/users/tin-da-luu" class="right">Xem tất cả
-                                            (0)</a>
-                                    </div>
-                                    <ul class="list_news_saved width_common">
-                                        <li><a
-                                                href="https://vnexpress.net/apple-kiem-bon-tien-tu-app-store-4218752.html">Apple
-                                                kiếm bộn tiền từ App
-                                                Store<span>Số hóa - 07:50 10/1</span></a></li>
-                                        <li><a
-                                                href="https://vnexpress.net/facebook-bi-phat-gan-5-trieu-usd-4216801.html">Facebook
-                                                bị phạt gần 5
-                                                triệu USD<span>Số hóa - 10:27 6/1</span></a></li>
-                                        <li><a href="https://vnexpress.net/vi-sao-ung-thu-vu-tai-phat-3978323.html">Vì
-                                                sao ung thư vú tái
-                                                phát<span>Sức khỏe - 12:02 7/9/2019</span></a></li>
+                                    <ul class="menu_profile width_common">
+                                        <li><a href="https://my.vnexpress.net/users/feed/1002649849">Bình luận</a></li>
+                                        <li><a href="https://my.vnexpress.net/users/tin-da-doc">Tin đã xem</a></li>
+                                        <li><a href="https://my.vnexpress.net/users/tin-da-luu">Tin đã lưu</a></li>
                                     </ul>
+                                    <ul class="menu_profile width_common other_link mb15">
+                                        <li><a href="https://vnexpress.net/lien-he-toa-soan/">Liên hệ tòa soạn</a></li>
+                                        <li><a href="https://eclick.vn/">Liên hệ quảng cáo</a></li>
+                                    </ul>
+                                    <div class="box_saved_news" id="box_saved_news">
+                                        <div class="head_box width_common">
+                                            <div class="left"><strong>Tin mới lưu</strong></div>
+                                            <a href="https://my.vnexpress.net/users/tin-da-luu" class="right">Xem tất cả
+                                                (0)</a>
+                                        </div>
+                                        <ul class="list_news_saved width_common">
+                                            <li><a
+                                                    href="https://vnexpress.net/apple-kiem-bon-tien-tu-app-store-4218752.html">Apple
+                                                    kiếm bộn tiền từ App
+                                                    Store<span>Số hóa - 07:50 10/1</span></a></li>
+                                            <li><a
+                                                    href="https://vnexpress.net/facebook-bi-phat-gan-5-trieu-usd-4216801.html">Facebook
+                                                    bị phạt gần 5
+                                                    triệu USD<span>Số hóa - 10:27 6/1</span></a></li>
+                                            <li><a href="https://vnexpress.net/vi-sao-ung-thu-vu-tai-phat-3978323.html">Vì
+                                                    sao ung thư vú tái
+                                                    phát<span>Sức khỏe - 12:02 7/9/2019</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="javascript:;" id="myvne_logout_link" class="logout_link">Thoát</a> <span
+                                        class="close-lb"><i class="ic ic-false"></i></span>
                                 </div>
-                                <a href="javascript:;" id="myvne_logout_link" class="logout_link">Thoát</a> <span
-                                    class="close-lb"><i class="ic ic-false"></i></span>
-                            </div>
 
-                        </li>
-                        <li class="myvne_user notify_myvne ">
-                            <a href="javascript:void(0);" class="myvne_icon myvne_icon_bell_click"><i
-                                    class="ic ic-bell"></i></a>
-                            <i class="icon-arrow"></i>
-                            <div class="block_sub_myvne block_sub_log" id="myvne_notify_box">
-                                <div class="head_box width_common">
-                                    <div class="left"><strong>Thông báo</strong></div>
+                            </li>
+                            <li class="myvne_user notify_myvne ">
+                                <a href="javascript:void(0);" class="myvne_icon myvne_icon_bell_click"><i
+                                        class="ic ic-bell"></i></a>
+                                <i class="icon-arrow"></i>
+                                <div class="block_sub_myvne block_sub_log" id="myvne_notify_box">
+                                    <div class="head_box width_common">
+                                        <div class="left"><strong>Thông báo</strong></div>
+                                    </div>
+                                    <div class="box_saved_news">
+                                        <ul class="list_news_saved width_common" id="myvne_notify_lists">
+                                            <li class="unread">
+                                                <a href=""><strong>1 người</strong>
+                                                    thích bình luận của bạn trong bài
+                                                    <strong>Trang phục khoe eo của dàn
+                                                        sao 'Thanh xuân có bạn'</strong>
+                                                    <span>04:21 27/5/2020</span></a>
+                                            </li>
+                                            <li class="unread">
+                                                <a href=""><strong>1 người</strong>
+                                                    thích bình luận của bạn trong bài
+                                                    <strong>Trang phục khoe eo của dàn
+                                                        sao 'Thanh xuân có bạn'</strong>
+                                                    <span>04:21 27/5/2020</span></a>
+                                            </li>
+                                            <li class="unread">
+                                                <a href=""><strong>1 người</strong>
+                                                    thích bình luận của bạn trong bài
+                                                    <strong>Trang phục khoe eo của dàn
+                                                        sao 'Thanh xuân có bạn'</strong>
+                                                    <span>04:21 27/5/2020</span></a>
+                                            </li>
+                                        </ul>
+                                        <a href="javascript:void(0);" id="myvne_notify_viewmore"
+                                            class="width_common view_more_myvne" style="">Xem thêm</a>
+                                    </div>
                                 </div>
-                                <div class="box_saved_news">
-                                    <ul class="list_news_saved width_common" id="myvne_notify_lists">
-                                        <li class="unread">
-                                            <a href=""><strong>1 người</strong>
-                                                thích bình luận của bạn trong bài
-                                                <strong>Trang phục khoe eo của dàn
-                                                    sao 'Thanh xuân có bạn'</strong>
-                                                <span>04:21 27/5/2020</span></a>
-                                        </li>
-                                        <li class="unread">
-                                            <a href=""><strong>1 người</strong>
-                                                thích bình luận của bạn trong bài
-                                                <strong>Trang phục khoe eo của dàn
-                                                    sao 'Thanh xuân có bạn'</strong>
-                                                <span>04:21 27/5/2020</span></a>
-                                        </li>
-                                        <li class="unread">
-                                            <a href=""><strong>1 người</strong>
-                                                thích bình luận của bạn trong bài
-                                                <strong>Trang phục khoe eo của dàn
-                                                    sao 'Thanh xuân có bạn'</strong>
-                                                <span>04:21 27/5/2020</span></a>
-                                        </li>
-                                    </ul>
-                                    <a href="javascript:void(0);" id="myvne_notify_viewmore"
-                                        class="width_common view_more_myvne" style="">Xem thêm</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Myvne MB -->
                 </div>
-                <!-- End Myvne MB -->
             </div>
         </div>
     </section>
@@ -224,30 +247,326 @@
         <div class="wow fadeInLeftSlow">
             <!-- <label>20 years VnExpress</label> -->
             <h1 class="title">
-                Hành trình </br>20 năm
+                <a href="/" title="">VnExpress tròn </br>20 tuổi</a>
             </h1>
-            <p>Nhân dịp kỷ niệm tròn 15 năm thành lập, Lý Nhã Kỳ kính chúc Ngoisao.net đạt được nhiều thành công
-                hơn nữa
-                để tờ báo là một món ăn tinh thần của tất cả mọi người, trong cũng như ngoài nước. </p>
-            <p>Nhân dịp kỷ niệm tròn 15 năm thành lập, Lý Nhã Kỳ kính chúc Ngoisao.net đạt được nhiều thành công
-                hơn nữa
-                để tờ báo là một món ăn tinh thần của tất cả mọi người, trong cũng như ngoài nước. </p>
-            <!-- <a class="btn-default line hidden-mobile" href="">
+            <p><a href="#">Ra mắt ngày 26/2/2001, VnExpress đã sớm trở thành báo tiếng Việt nhiều người xem nhất và giữ
+                    vững vị trí
+                    đó đến nay. Hiện, báo đón nhận hơn 40 triệu độc giả thường xuyên. Với sứ mệnh phụng sự cộng đồng,
+                    thúc
+                    đẩy tiến bộ xã hội, 20 năm qua,</a></p>
+            <a class="btn-default line hidden-mobile" href="">
                 <div class="bg">
                     Xem thêm
                     <svg class="icon-svg">
                         <use xlink:href="images/icons/icon.svg#next"></use>
                     </svg>
                 </div>
-            </a> -->
+            </a>
         </div>
     </div>
     <div class="box-img">
-        <div class="swiper-container">
+        <div id="ri-grid" class="ri-grid ri-grid-size-2">
+            <!-- <img class="ri-loading-image"
+                src="https://tympanus.net/Development/AnimatedResponsiveImageGrid/images/loading.gif" /> -->
+            <ul>
+                <li><a href="#"><img src="images/medium/1.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/2.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/3.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/4.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/5.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/6.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/7.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/8.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/9.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/10.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/11.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/12.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/13.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/14.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/15.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/16.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/17.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/18.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/19.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/20.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/21.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/22.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/23.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/24.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/25.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/26.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/27.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/28.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/29.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/30.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/31.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/32.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/33.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/34.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/35.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/36.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/37.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/38.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/39.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/40.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/41.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/42.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/43.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/44.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/45.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/46.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/47.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/48.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/49.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/50.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/51.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/52.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/53.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/54.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/1.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/2.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/3.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/4.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/5.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/6.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/7.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/8.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/9.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/10.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/11.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/12.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/13.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/14.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/15.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/16.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/17.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/18.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/19.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/20.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/21.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/22.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/23.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/24.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/25.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/26.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/27.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/28.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/29.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/30.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/31.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/32.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/33.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/34.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/35.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/36.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/37.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/38.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/39.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/40.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/41.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/42.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/43.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/44.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/45.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/46.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/47.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/48.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/49.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/50.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/51.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/52.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/53.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/54.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/46.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/47.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/48.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/49.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/50.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/51.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/52.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/53.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/54.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/46.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/47.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/48.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/49.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/50.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/51.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/52.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/53.jpg" /></a>
+                </li>
+                <li><a href="#"><img src="images/medium/54.jpg" /></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <a class="btn-default line hidden-pc" href="">
+        <div class="bg">
+            Xem thêm
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#next"></use>
+            </svg>
+        </div>
+    </a>
+</section>
+
+<section class="section-frame1 flex clearfix" style="display: none">
+    <div class="box-content">
+        <div class="wow fadeInLeftSlow">
+            <!-- <label>20 years VnExpress</label> -->
+            <h1 class="title">
+                VnExpress tròn </br>20 tuổi
+            </h1>
+            <p>Ra mắt ngày 26/2/2001, VnExpress đã sớm trở thành báo tiếng Việt nhiều người xem nhất và giữ vững vị trí
+                đó đến nay. Hiện, báo đón nhận hơn 40 triệu độc giả thường xuyên. Với sứ mệnh phụng sự cộng đồng, thúc
+                đẩy tiến bộ xã hội, 20 năm qua,</p>
+            <a class="btn-default line hidden-mobile" href="">
+                <div class="bg">
+                    Xem thêm
+                    <svg class="icon-svg">
+                        <use xlink:href="images/icons/icon.svg#next"></use>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="box-img">
+        <div class="thumb thumb_5x3">
+            <picture>
+                <source media="(min-width:576px)" srcset="images/graphics/banner.jpg">
+                <img src="images/graphics/m_banner.jpg" alt="">
+            </picture>
+        </div>
+        <!-- <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="images/graphics/banner.jpg" />
-                    <h3>Ban biên tập tòa soạn báo VnExpress</h3>
+                    <h3>Ban biên tập tòa soạn báo VnExpress Ban biên tập tòa soạn báo VnExpress</h3>
                 </div>
                 <div class="swiper-slide">
                     <img src="https://via.placeholder.com/900x900" />
@@ -258,27 +577,159 @@
                     <h3>Ban biên tập tòa soạn báo VnExpress</h3>
                 </div>
             </div>
-        </div>
-        <div class="swiper-pagination swiper-pagination-frame1"></div>
-        <div class="swiper-button-next swiper-frame1-next">
-            <svg class="icon-svg">
-                <use xlink:href="images/icons/icon.svg#next"></use>
-            </svg>
-        </div>
-        <div class="swiper-button-prev swiper-frame1-prev">
-            <svg class="icon-svg">
-                <use xlink:href="images/icons/icon.svg#next"></use>
-            </svg>
-        </div>
+            <div class="swiper-pagination swiper-pagination-frame1"></div>
+            <div class="swiper-button-next swiper-frame1-next">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#next"></use>
+                </svg>
+            </div>
+            <div class="swiper-button-prev swiper-frame1-prev">
+                <svg class="icon-svg">
+                    <use xlink:href="images/icons/icon.svg#next"></use>
+                </svg>
+            </div>
+        </div> -->
     </div>
     <a class="btn-default line hidden-pc" href="">
         <div class="bg">
-            Khám phá
+            Xem thêm
             <svg class="icon-svg">
                 <use xlink:href="images/icons/icon.svg#next"></use>
             </svg>
         </div>
     </a>
+</section>
+
+<section class="section-video container clearfix">
+    <div class="header flex wow fadeInUpSlow">
+        <h2 class="title-cate">Hành trình 20 năm</h2>
+        <div class="tab-default">
+            <a href="#tab-img" class="active">Hình ảnh</a>
+            <a href="#tab-video">Video</a>
+        </div>
+    </div>
+    <div class="tab-content">
+        <div id="tab-img">
+            <div class="swiper-container">
+                <div class="swiper-pagination swiper-pagination-frame1"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide flex">
+                        <div class="thumb-art width-img">
+                            <span class="thumb thumb_5x3 "><img src="images/graphics/banner2.jpg" /></span>
+                        </div>
+                        <div class="content width-content">
+                            <div class="description">
+                                <p class="hidden-mobile">
+                                    Ngày 26/2/2001, Báo điện tử VnExpress lần đầu tiên xuất hiệntrên internet. Báo có
+                                    khoảng 20 cán bộ, nhân viên làm việc
+                                    tại trụ sở số 75 Trần Hưng Đạo (Hoàn Kiếm, Hà Nội).
+                                </p>
+                                <p class="hidden-pc">
+                                    Ngày 26/2/2001, Báo điện tử VnExpress lần đầu tiên xuất hiệntrên internet. Báo có
+                                    khoảng 20 cán bộ, nhân viên làm việc tại trụ sở số 75 Trần Hưng Đạo (Hoàn Kiếm, Hà
+                                    Nội).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex">
+                        <div class="thumb-art width-img">
+                            <span class="thumb thumb_5x3 "><img src="images/graphics/banner.jpg" /></span>
+                        </div>
+                        <div class="content width-content">
+                            <div class="description">
+                                Chúc mừng sinh nhật Vnexpress. Chúc cho Vnexpress và tập thể anh em làm trong trang báo
+                                có sức khỏe dồi dào để vượt qua mọi dịch bệnh
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide flex">
+                        <div class="thumb-art width-img">
+                            <span class="thumb thumb_5x3 "><img src="images/graphics/banner2.jpg" /></span>
+                        </div>
+                        <div class="content width-content">
+                            <div class="description">
+                                Chúc mừng sinh nhật Vnexpress. Chúc cho Vnexpress và tập thể anh em làm trong trang báo
+                                có sức khỏe dồi dào để vượt qua mọi dịch bệnh, có sức sống mãnh liệt để vượt qua những
+                                gian nan và luôn là người bạn thân thiết, gắn bó mỗi ngày của độc giả chúng tôi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-frame1-next">
+                    <span class="dotted-svg">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#next"></use>
+                        </svg>
+                    </span>
+                </div>
+                <div class="swiper-button-prev swiper-frame1-prev">
+                    <span class="dotted-svg">
+                        <svg class="icon-svg">
+                            <use xlink:href="images/icons/icon.svg#next"></use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="tab-video" style="display:none">
+            <div class="flex">
+                <div class="box-player-video width-img">
+                    <div class="thumb thumb_16x9">
+                        <img src="images/graphics/thumb-video.jpg">
+                    </div>
+                </div>
+                <div class="box-conten-video width-content">
+                    <h3 class="title-news">
+                        <a href="" title="">20 năm VnExpress qua những con số </a>
+                    </h3>
+                    <div class="description">
+                        Nhân dịp kỷ niệm tròn 15 năm thành lập,
+                        Lý Nhã Kỳ kính chúc Ngoisao.net đạt được nhiều thành công hơn nữa để tờ báo là một
+                        món
+                    </div>
+                    <div class="list-video">
+                        <article class="item-news active">
+                            <div class="thumb-art">
+                                <a class="thumb thumb_16x9" href="#" title="sinh-nhat-20">
+                                    <img src="images/graphics/thumb-video.jpg">
+                                    <div class="play">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#play">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <span class="duration-video">02:35</span>
+                                    <span class="playing-txt">Đang phát</span>
+                                </a>
+                            </div>
+                            <h3 class="title-news">
+                                <a href="" title="">20 năm VnExpress qua những con số</a>
+                            </h3>
+                        </article>
+                        <article class="item-news">
+                            <div class="thumb-art">
+                                <a class="thumb thumb_16x9" href="#" title="sinh-nhat-20">
+                                    <img src="images/graphics/thumb-video.jpg">
+                                    <div class="play">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="images/icons/icon.svg#play">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                    <span class="duration-video">02:35</span>
+                                </a>
+                            </div>
+                            <h3 class="title-news">
+                                <a href="" title="">VnExpress & những hoạt động </a>
+                            </h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="section-frame2 flex clearfix" style="display: none">
@@ -389,7 +840,10 @@
     </div>
 </section>
 
-<section class="section-frame2 flex clearfix">
+<section class="section-frame2 clearfix">
+    <div class="container">
+        <h2 class="title-cate wow fadeInUpSlow">Chia sẻ về VnExpress</h2>
+    </div>
     <div class="box-slide-mobile">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -725,7 +1179,7 @@
     <div class="container">
         <div class="head flex">
             <div class="head-left">
-                <h2 class="title-cate wow fadeInUpSlow">Tôi và VnExpress</h2>
+                <!-- <h2 class="title-cate wow fadeInUpSlow">Lời chúc từ độc giả</h2> -->
                 <!-- <div class="loi-chuc">
                     <div class="flex">
                         <div class="text">
@@ -739,9 +1193,9 @@
                     </div>
                 </div> -->
             </div>
-            <div class="img">
+            <!-- <div class="img">
                 <img src="images/graphics/creat.svg" />
-            </div>
+            </div> -->
         </div>
         <div class="content-gird flex">
             <div class="list_comment home">
@@ -1053,10 +1507,10 @@
             </div>
             <div class="form_dk form-default wow fadeInUpSlow">
                 <div class="sticky" style="top: 90px;">
-                    <!-- <h3>Gửi lời chúc tới VnExpress</h3> -->
+                    <!-- <h3>Nội dung chia sẻ</h3> -->
                     <div class="form-group">
                         <div class="line">
-                            <textarea class="form-control" name="" rows="4" placeholder="Gửi lời chúc tới VnExpress"
+                            <textarea class="form-control" name="" rows="4" placeholder="Lời chúc"
                                 style="height: 350px;"></textarea>
                         </div>
                     </div>
@@ -1090,8 +1544,7 @@
 </section>
 
 
-
-<section class="section-frame6">
+<section class="section-frame6" style="display: none">
     <div class="container">
         <h2 class="title-cate wow fadeInUpSlow">Chuyện nghề</h2>
         <div class="list-chuyen-nghe">
@@ -1174,7 +1627,7 @@
     </div>
 </section>
 
-<section class="section-frame5 clearfix">
+<section class="section-frame5 clearfix" style="display: none">
     <div class="slide-img">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -1188,7 +1641,7 @@
                         <div class="content">
                             <div class="wow fadeInRightSlow">
                                 <h3 class="title-news">
-                                    <a href="" title="">Tác phẩm</a>
+                                    <a href="" title="">Sau những khuôn hình</a>
                                 </h3>
                                 <div class="description">
                                     <div class="lc_content">
@@ -1324,14 +1777,14 @@
             <div class="content">
                 <p class="mb10"><img src="images/graphics/hope.svg"></p>
                 <h3 class="title-news">
-                    <a href="" title="">Nếu bạn có ý định tặng hoa/ quà,
-                        VnExpress xin ghi nhận hảo ý và đề nghị chuyển thành đóng góp cho Quỹ HOPE</a>
+                    <a href="" title="">Hoa và quà tặng VnExpress nhân dịp sinh nhật, xin hãy chuyển thành đóng góp cho
+                        Quỹ Hope. Chân thành cảm ơn!</a>
                 </h3>
                 <!-- <div class="description">
                     và đề nghị chuyển hoa/quà thành đóng góp cho quỹ Hope
                 </div> -->
                 <a class="btn-default" href="">
-                    Ủng hộ
+                    Đóng góp
                 </a>
             </div>
         </div>
@@ -1342,14 +1795,17 @@
 
     <div class="topnav-mobile">
         <ul class="menu">
-            <li class="active"><a href="#" title="">Trang chủ</a></li>
-            <li><a href="#" title="">Hành trình</a></li>
-            <li><a href="#" title="">Lời chúc</a></li>
-            <li><a href="#" title="">Tác phẩm</a></li>
+            <li class="active"><a href="home.html" title="">Trang chủ</a></li>
+            <li><a href="hanh-trinh.html" title="">Hành trình</a></li>
+            <li><a href="chia-se.html" title="">Chia sẻ</a></li>
+            <li><a href="loi-chuc.html" title="">Lời chúc</a></li>
         </ul>
     </div>
     <div class="overlay"></div>
     <!--Footer-->
+    <div class="map-footer">
+
+    </div>
     <footer class="footer">
         <div class="container flex">
             <a href="" class="logo-vne"><img src="images/graphics/VnExpress.svg" /></a>
@@ -1388,18 +1844,24 @@
             <span>Chuyện nghế</span>
         </a>
         <a href="/">
-            <img src="images/icons/back.svg">
-            <span>VnExpress</span>
+            <svg class="icon-svg">
+                <use xlink:href="images/icons/icon.svg#tac-pham">
+                </use>
+            </svg>
+            <span>Khuôn hình</span>
         </a>
     </div>
 
 
     <!--Back to top-->
-    <!-- <a href="javascript:;" id="to_top">
-        <img src="images/graphics/creat2.svg" />
-    </a> -->
+    <a href="javascript:;" id="to_top">
+        <svg class="ic ic-arrow-up">
+            <use xlink:href="css/images/graphics/icon-vne.svg#Arrow-Up-1"></use>
+        </svg>
+    </a>
     <a href="#popup-creat" class="open-popup creat-bottom">
         <img src="images/graphics/creat2.svg" />
+        <span>Lời chúc</span>
     </a>
     <div id="popup-creat" class="white-popup width-medium mfp-hide">
         <div class="inner-popup">
@@ -1444,9 +1906,40 @@
     <script type="text/javascript" src="js/common.js"></script>
     <!-- build:script -->
     
-<script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/jquery.gridrotator.js"></script>
+<script type="text/javascript">
+    $(function () {
 
+        $('#ri-grid').gridrotator({
+            rows: 8,
+            columns: 15,
+            animType: 'fadeInOut',
+            animSpeed: 1000,
+            interval: 500,
+            step: 15,
+
+            w1024: {
+                rows: 6,
+                columns: 10
+            },
+            w768: {
+                rows: 7,
+                columns: 8
+            },
+            w480: {
+                rows: 5,
+                columns: 4
+            },
+            w320: {
+                rows: 4,
+                columns: 4
+            }
+        });
+
+    });
 </script>
+
 
     <script>
         jQuery(window).on('load', function () {
@@ -1454,6 +1947,40 @@
                 itemSelector: '.grid-item'
             });
         });
+
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.wrap-main-nav').outerHeight();
+
+        $(window).scroll(function (event) {
+            didScroll = true;
+        });
+
+        setInterval(function () {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+            if (st > lastScrollTop && st > navbarHeight) {
+                // Scroll Down
+                $('.wrap-main-nav').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if (st + $(window).height() < $(document).height()) {
+                    $('.wrap-main-nav').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
     </script>
 
 </body>

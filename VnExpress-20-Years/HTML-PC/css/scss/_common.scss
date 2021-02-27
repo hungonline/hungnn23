@@ -132,10 +132,10 @@ h6 {
         color: #F9F0E3;
         font-family: var(--font1);
         position: relative;
-        height: 49px;
+        height: 46px;
         padding: 0 50px;
         display: inline-block;
-        line-height: 49px;
+        line-height: 46px;
         transition: 0.3s all;
     }
 
@@ -176,9 +176,11 @@ h6 {
 
 .title-cate {
     color: #191919;
-    font-size: 56px;
+    font-size: 40px;
+    text-align: center;
+    display: block;
     font-family: var(--font1);
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     line-height: 1.2;
 
     span {
@@ -187,10 +189,15 @@ h6 {
     }
 }
 
+.max-width {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
 .form-default {
 
     .form-group {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         position: relative;
 
         .form-control {

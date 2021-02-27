@@ -12,15 +12,23 @@
     }
 }
 
+@media (max-width: 979px) {
+    .title-cate {
+        font-size: 32px
+    }
+}
+
 @media (max-width: 576px) {
+    .footer {
+        margin-bottom: 80px;
+    }
+
     .page-loichuc .form_dk h3 {
         font-size: 32px;
         margin-bottom: 20px;
     }
 
-    .title-cate {
-        margin-bottom: 20px;
-    }
+
 }
 
 .hidden-pc {
@@ -44,13 +52,22 @@
         margin-bottom: 20px;
 
         .right-head {
-            right: -10px
+            font-size: 0;
+
+            .twitter,
+            .face {
+                display: none !important
+            }
+
+            .share {
+                display: block !important
+            }
         }
     }
 
     .page-detail {
         &.middle-detail {
-            padding-bottom: 70px;
+            padding-bottom: 40px;
         }
     }
 

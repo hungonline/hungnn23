@@ -90,7 +90,7 @@
     }
 
     function slideSwiper() {
-        var swiperframe1 = new Swiper('.box-img .swiper-container', {
+        var swiperframe1 = new Swiper('.section-video .swiper-container', {
             speed: 1000,
             autoplay: {
                 delay: 7000,
@@ -103,13 +103,17 @@
                 nextEl: '.swiper-frame1-next',
                 prevEl: '.swiper-frame1-prev',
             },
-            breakpoints: {
-                576: {
-                    pagination: {
-                        type: 'bullets',
-                    },
-                }
-            }
+            // breakpoints: {
+            //     768: {
+            //         pagination: {
+            //             type: 'bullets',
+            //         },
+            //     }
+            // },
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
         });
         var swiperframe3 = new Swiper('.section-frame3 .swiper-container', {
             slidesPerView: 3,
@@ -162,11 +166,15 @@
             breakpoints: {
                 414: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 16,
                 },
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 16,
+                },
+                1025: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
                 }
             }
         });
