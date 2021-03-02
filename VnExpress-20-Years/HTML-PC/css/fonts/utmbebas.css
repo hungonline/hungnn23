@@ -1,8 +1,0 @@
-@font-face {
-    font-family: 'UTMBebasRegular';
-    src: url('utmbebas.eot');
-    src: url('utmbebas.eot') format('embedded-opentype'),
-         url('utmbebas.woff') format('woff'),
-         url('utmbebas.ttf') format('truetype'),
-         url('utmbebas.svg#UTMBebasRegular') format('svg');
-}
