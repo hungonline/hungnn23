@@ -23,7 +23,8 @@ body {
 .container {
     position: relative;
 }
-.min-container{
+
+.min-container {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -183,7 +184,7 @@ select.form-control {
     transition: 0.4s ease;
 
     &:hover {
-        background: #9e7c22;
+        background: #D68847;
         color: #fff;
     }
 
@@ -485,7 +486,8 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 1;
-    &::before{
+
+    &::before {
         content: "";
         position: absolute;
         top: 50%;
@@ -495,6 +497,7 @@ html {
         border-bottom: 10px solid rgba(255, 255, 255, 0);
         border-left: 14px solid #fff;
     }
+
     svg {
         color: #fff;
         width: 50px;
