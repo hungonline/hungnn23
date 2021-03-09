@@ -32,7 +32,7 @@
         margin-bottom: 10px;
         display: inline-block;
         position: relative;
-        padding-left: 60px;
+        padding-left: 0;
 
         &::before {
             content: "";
@@ -43,6 +43,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            display: none;
         }
     }
 
@@ -69,7 +70,7 @@
                 position: absolute;
                 bottom: -20px;
                 left: 50%;
-                margin-left: -5px;
+                margin-left: -35px;
             }
         }
     }
@@ -87,8 +88,14 @@
 }
 
 body.home {
-    .title-category .title::before {
-        display: none;
+    .title-category .title {
+        padding-left: 50px;
+
+        &::before {
+            ::before {
+                display: none;
+            }
+        }
     }
 }
 
